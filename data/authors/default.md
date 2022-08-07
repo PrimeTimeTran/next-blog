@@ -1,16 +1,18 @@
 ---
-name: Tails Azimuth
+name: Loi Tran
 avatar: /static/images/avatar.png
-occupation: Professor of Atmospheric Science
+occupation: Amazon Web Services
 company: Stanford University
-email: address@yoursite.com
-twitter: https://twitter.com/Twitter
-linkedin: https://www.linkedin.com
-github: https://github.com
+email: datloiboi@gmail.com
+twitter: https://twitter.com/PrimeTimeTrann
+linkedin: https://www.linkedin.com/in/primetimetran
+github: https://github.com/primeTimeTran
 ---
 
-Tails Azimuth is a professor of atmospheric sciences at the Stanford AI Lab. His research interests includes complexity modelling of tailwinds, headwinds and crosswinds.
+# Loi Tran is professional, developer, and architect
 
-He leads the clean energy group which develops 3D air pollution-climate models, writes differential equation solvers, and manufactures titanium plated air ballons. In his free time he bakes raspberry pi.
+He builds beautifully crafted webpages using HTML, CSS, JS and more.
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed neque elit, tristique placerat feugiat ac, facilisis vitae arcu. Proin eget egestas augue. Praesent ut sem nec arcu pellentesque aliquet. Duis dapibus diam vel metus tempus vulputate.
+His frameworks of choice are Vue, React, Next, and Flutter.
+
+When he's not working he enjoys American 🇺🇸 Football 🏈, Kung Fu 🥋, discussions on philosophy/politics 🤔 and contemplating the meaning of life.
