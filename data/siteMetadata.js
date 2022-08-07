@@ -1,7 +1,7 @@
 const siteMetadata = {
-  title: 'Next.js Starter Blog',
+  title: 'Tech Blog',
   author: 'Loi Tran',
-  headerTitle: 'Loi Tran - Tech Blog',
+  headerTitle: 'Tech Blog',
   description: 'A tech blog for progeny',
   language: 'en-us',
   theme: 'system', // system, dark or light
