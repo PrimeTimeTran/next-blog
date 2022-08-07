@@ -13,8 +13,8 @@ const siteMetadata = {
   email: 'datloiboi@gmail.com',
   github: 'https://github.com/primeTimeTran',
   twitter: 'https://twitter.com/PrimeTimeTrann',
-  facebook: 'https://facebook.com',
-  youtube: 'https://youtube.com',
+  facebook: 'https://www.facebook.com/profile.php?id=100012159429192',
+  youtube: 'https://www.youtube.com/channel/UCjyU8uLVh77b5cc6adkYsow/videos',
   linkedin: 'https://www.linkedin.com/in/primetimetran',
   locale: 'en-US',
   analytics: {
@@ -41,7 +41,7 @@ const siteMetadata = {
     giscusConfig: {
       // Visit the link below, and follow the steps in the 'configuration' section
       // https://giscus.app/
-      rep: 'primetimetran/next-blog',
+      repo: 'primetimetran/next-blog',
       repositoryId: 'R_kgDOHx6cJw',
       category: 'General',
       categoryId: 'DIC_kwDOHx6cJ84CQq_x',
