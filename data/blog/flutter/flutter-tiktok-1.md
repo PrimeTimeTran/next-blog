@@ -10,8 +10,6 @@ summary: 'The steps I would take to clone TikTok using Flutter. Including projec
 
 In this tutorial series we'll clone TikTok using [Flutter](https://flutter.dev/).
 
-![Bottom Tab Nav](/static/gifs/demo.gif)
-
 ![TikTok Demo](https://s8.gifyu.com/images/demo97fa6857e6769736.gif)
 
 Along the way we'll learn how to use the core widgets of Flutter.
@@ -177,7 +175,7 @@ class _DrawerNav extends State<DrawerNav> {
 
 Refresh and we'll our app works and has a bottom navigation bar, **awesome**.
 
-![Bottom Tab Nav](/static/gifs/BottomTabNav.gif)
+![Bottom Tab Nav](https://s4.gifyu.com/images/BottomTabNav.gif)
 
 There's a lot going on so let's review.
 
@@ -382,6 +380,6 @@ class _TikTokPageState extends State<TikTokPage> {
 - **Line 16:** Pass the `PageController` to the `controller` parameter of `PageView`.
 - **Line 19:** Use a loop to create several instances of `MediaContent` for testing.
 
-![Bottom Tab Nav](/static/gifs/PageView.gif)
+![Bottom Tab Nav](https://s4.gifyu.com/images/PageView.gif)
 
 We should now see that we can scroll vertically, **excellent**.
