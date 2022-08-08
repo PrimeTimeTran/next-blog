@@ -5,8 +5,8 @@ const siteMetadata = {
   description: 'A tech blog for progeny',
   language: 'en-us',
   theme: 'system', // system, dark or light
-  siteUrl: 'https://loi-tran-blog.netlify.app',
-  siteRepo: 'https://github.com/timlrx/tailwind-nextjs-starter-blog',
+  siteUrl: 'https://loi-tran-blog.netlify.appg',
+  siteRepo: 'https://github.com/PrimeTimeTran/next-blog',
   siteLogo: '/static/images/logo.png',
   image: '/static/images/avatar.png',
   socialBanner: '/static/images/twitter-card.png',
