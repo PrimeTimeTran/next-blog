@@ -387,3 +387,5 @@ class _TikTokPageState extends State<TikTokPage> {
 ![Bottom Tab Nav](https://s4.gifyu.com/images/PageView.gif)
 
 We should now see that we can scroll vertically, **excellent**.
+
+### Need help? Have a better implementation? Comment below
