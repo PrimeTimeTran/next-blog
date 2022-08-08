@@ -27,6 +27,10 @@ Along the way we'll learn how to use the core widgets of Flutter.
 - [ListView](https://api.flutter.dev/flutter/widgets/ListView-class.html)
 - [GestureDetector](https://api.flutter.dev/flutter/widgets/GestureDetector-class.html)
 
+We'll begin by implementing the navigation features of TikTok.
+
+Specifically, we'll create a [BottomNavigationBar](https://api.flutter.dev/flutter/material/BottomNavigationBar-class.html). This navigation bar will allow the user to access different content on different screens.
+
 ## Create New Project
 
 Instantiate a new project and run it.
@@ -199,9 +203,9 @@ class _TikTokPageState extends State<TikTokPage> {
 
 The `TikTokPage` widget is a placeholder. The interesting part of this widget is that it requires a parameter `color` when created.
 
-- **Line 2:** Define `color` property which `TikTokPage` must receive.
-- **Line 4:** Require `color` parameter when instantiating a new instance of widget.
-- **Line 2:** Consume the `color` parameter within the **build** method of `TikTokPage`, allowing for dynamic background colors.
+- **Line 2:** Define `color` property for the `TikTokPage` class/widget.
+- **Line 4:** Require the `color` parameter in the constructor of the `TikTokPage` widget.
+- **Line 2:** Consume the `color` parameter in the **build** method of `TikTokPage`, producing a dynamic background colors for each page/screen.
 
 This pattern/technique is common with other JS frameworks such as React & Vue as well.
 
