@@ -277,4 +277,4 @@ return SingleChildScrollView(
 
 ![Inbox Page Complete](https://s4.gifyu.com/images/Vertical-scroll.gif)
 
-### Need help? Have a better implementation? Comment below.
+### Need help? Have a better implementation? Comment below
