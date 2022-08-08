@@ -12,6 +12,8 @@ In this tutorial series we'll clone TikTok using [Flutter](https://flutter.dev/)
 
 ![Bottom Tab Nav](/static/gifs/demo.gif)
 
+![TikTok Demo](https://s8.gifyu.com/images/demo97fa6857e6769736.gif)
+
 Along the way we'll learn how to use the core widgets of Flutter.
 
 - [Col](https://api.flutter.dev/flutter/widgets/Column-class.html)
