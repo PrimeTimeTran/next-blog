@@ -10,6 +10,8 @@ summary: 'The steps I would take to clone TikTok using Flutter. Including projec
 
 In this tutorial series we'll clone TikTok using [Flutter](https://flutter.dev/).
 
+![Bottom Tab Nav](/static/gifs/demo.gif)
+
 Along the way we'll learn how to use the core widgets of Flutter.
 
 - [Col](https://api.flutter.dev/flutter/widgets/Column-class.html)
@@ -205,7 +207,7 @@ This pattern/technique is common with other JS frameworks such as React & Vue as
 
 ## Create Bottom Navigator Bar
 
-Most important parameters/properties of the [Bottom Navigation Bar](https://api.flutter.dev/flutter/material/BottomNavigationBar-class.html) we must understand.
+Key use of the [Bottom Navigation Bar](https://api.flutter.dev/flutter/material/BottomNavigationBar-class.html) and it's required parameters/properties.
 
 ```dart {2, 4-10, 12-16, 21, 24, 29-50} showLineNumbers
 class _DrawerNav extends State<DrawerNav> {
