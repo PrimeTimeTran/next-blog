@@ -1,5 +1,5 @@
 ---
-title: How to build Poker with TikTok
+title: How to build Poker with Flutter
 date: '2022-08-07'
 tags: ['Flutter', 'Tutorial']
 draft: true
@@ -8,13 +8,16 @@ summary: 'The steps I took to built a poker game with Flutter'
 
 ## How to build TikTok with Flutter?
 
+- Initialize new project
 - Collect card assets
-- Define structure of data of app
-- Create table
-
-- Create 4 rows
-
-- Create seats
+- Add flutter_svg
+- Update pubspec.yaml with assets/cards
+- Render card to app as example
+- Define structure of data of app, Game & Table widgetts
+- Create table using 5 rows
+- Create placeholder for seats, playinghands, board & prompt,
+- Create Deck of cards logic
+- Deal cards
 
 ```dart
 return Center(
