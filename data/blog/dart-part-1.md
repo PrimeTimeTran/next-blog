@@ -2,7 +2,7 @@
 title: Dart List Methods
 date: '2022-08-07'
 tags: ['Flutter', 'Tutorial']
-draft: false
+draft: true
 summary: 'Important methods in dart'
 ---
 
