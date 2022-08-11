@@ -2,6 +2,9 @@ import { getAllFilesFrontMatter } from '@/lib/mdx'
 import siteMetadata from '@/data/siteMetadata'
 import ListLayout from '@/layouts/ListLayout'
 import { PageSEO } from '@/components/SEO'
+import { useEffect } from 'react'
+
+import { pageview } from '../lib/ga'
 
 export const POSTS_PER_PAGE = 10
 
@@ -17,6 +20,10 @@ export async function getStaticProps() {
 }
 
 export default function Blog({ posts, initialDisplayPosts, pagination }) {
+  useEffect(() => {
+    pageview()
+  }, [])
+
   return (
     <>
       <PageSEO title={`Blog - ${siteMetadata.author}`} description={siteMetadata.description} />
