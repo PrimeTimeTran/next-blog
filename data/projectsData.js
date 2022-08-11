@@ -1,19 +1,23 @@
 const projectsData = [
   {
-    title: 'A Search Engine',
-    description: `What if you could look up any information in the world? Webpages, images, videos
-    and more. Google has many features to help you find exactly what you're looking
-    for.`,
-    imgSrc: '/static/images/google.png',
-    href: 'https://www.google.com',
+    title: 'TikTok',
+    description: `Building generation Z's most popular app using Google's latest mobile 
+    app development technology, Flutter. Mobile first but works on web because of Flutter's 
+    batteries included Progressive Web App(P.W.A.) technology.`,
+    imgSrc: '/static/images/tiktok.jpeg',
+    href: 'https://world-wide-words.netlify.app/',
   },
   {
-    title: 'The Time Machine',
-    description: `Imagine being able to travel back in time or to the future. Simple turn the knob
-    to the desired date and press "Go". No more worrying about lost keys or
-    forgotten headphones with this simple yet affordable solution.`,
-    imgSrc: '/static/images/time-machine.jpg',
-    href: '/blog/the-time-machine',
+    title: "World's Greatest Todo App",
+    description: `Building the world famous todo app using ReactJS, Firebase, Firestore, useHooks, and more.`,
+    imgSrc: '/static/images/todo.jpeg',
+    href: 'https://todolistwithfirebase.netlify.app/',
+  },
+  {
+    title: `Animations`,
+    description: `Build beautiful web pages using just HTML, CSS, JS, & Canvas`,
+    imgSrc: '/static/images/illustrator.jpeg',
+    href: 'https://cs-animations.netlify.app/',
   },
 ]
 
