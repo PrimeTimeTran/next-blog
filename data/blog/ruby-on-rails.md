@@ -1,9 +1,9 @@
 ---
 title: 'What is the decorator design pattern?'
-date: '2022-08-07'
+date: '2017-12-31'
 tags: ['Design Patterns']
 draft: false
-summary: 'Important methods in dart'
+summary: 'What is the decorator design pattern?'
 ---
 
 ## Decorator Design Pattern
@@ -17,8 +17,8 @@ In Ruby & Rails we can use [Draper](https://github.com/drapergem/draper)
 <details>
 <summary>Imagine for example, a User resource in a Ruby on Rails application</summary>
 <pre>
-```ruby showLineNumbers
- frozen_string_literal: true
+```ruby
+ # frozen_string_literal: true
 
 # == Schema Information
 
@@ -152,6 +152,8 @@ def report(params)
 user_reports.create(params)
 end
 
+# OPTIMIZE Find a users existing conversation with another user more efficiently
+
 def find_existing_conversation(id)
 conversation_id =
 private_conversations
@@ -201,7 +203,6 @@ The decorator design pattern is usually used to help us to extract out logic rel
 After adding the gem to our `Gemfile` and bundling we'll see the Draper creates a new file where we can extract out the presentation logic of our resources(as opposed to business logic).
 
 ```ruby
-
 # app/decorators/user.rb
 class UserDecorator < Draper::Decorator
   delegate_all
@@ -210,12 +211,29 @@ class UserDecorator < Draper::Decorator
 end
 ````
 
+After that, we'd just need to call `.decorate` in our controllers before sending the resources to the view layer.
+
+```ruby
+# app/controllers/users_controller.rb
+def index
+  @users = User.all
+end
+
+# becomes
+
+def index
+  @users = User.all.decorate
+end
+```
+
 ### Recap
 
 The Decorator Design Pattern does the following
 
 - Extracts conditional logic out of the front end
 
-- Extracts presentation logic out of our [Active Record](https://guides.rubyonrails.org/active_record_basics.html) models.
+- Extracts presentation logic out of [Active Record](https://guides.rubyonrails.org/active_record_basics.html) models.
 
-- Reduces the need to have helper methods which pollute the global namespace.
+- Reduces the need to for helper methods which pollute the global namespace.
+
+This is an update of a post I made [years ago](https://medium.com/@loivtran/how-do-i-rails-use-the-decorator-design-pattern-in-ruby-programming-to-make-life-easier-536e8fe14546).
