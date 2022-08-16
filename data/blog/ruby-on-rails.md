@@ -8,9 +8,9 @@ summary: 'What is the decorator design pattern?'
 
 ## Decorator Design Pattern
 
-The decorator pattern is used to wrap objects and give them additional functionality.
+The decorator pattern is typically used to give additional functionality to resources.
 
-This is useful when a resource becomes bloated and unwieldy due to all the other requirements our resources have to implement.
+This is useful when a resource becomes bloated and unwieldy due to all the other requirements the resources implement.
 
 In Ruby & Rails we can use [Draper](https://github.com/drapergem/draper)
 
