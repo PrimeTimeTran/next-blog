@@ -16,7 +16,7 @@ I challenged my
 
 104. Maximum Depth of Binary Tree
 
-```python3
+```python
 # Definition for a binary tree node.
 # class TreeNode:
 #     def __init__(self, val=0, left=None, right=None):
@@ -24,53 +24,16 @@ I challenged my
 #         self.left = left
 #         self.right = right
 class Solution:
-
-#   # Recursive dfs, O(n)
-#   def maxDepth(self, root: Optional[TreeNode]) -> int:
-#     if not root:
-#       return 0
-
-#     return 1 + max(self.maxDepth(root.left), self.maxDepth(root.right))
-
-
-#   # Breadth first search
-#   def maxDepth(self, root: Optional[TreeNode]) -> int:
-#     if not root:
-#       return 0
-
-#     level = 0
-#     q = deque([root])
-
-#     while q:
-#       for i in range(len(q)):
-#         node = q.popleft()
-#         if node.left:
-#           q.append(node.left)
-#         if node.right:
-#           q.append(node.right)
-
-#       level += 1
-#     return level
-
-  # Iterative dfs
   def maxDepth(self, root: Optional[TreeNode]) -> int:
-    stack = [[root, 1]]
-    res = 0
+    if not root:
+      return 0
 
-    while stack:
-      node, depth = stack.pop()
-
-      if node:
-        res = max(res, depth)
-        stack.append([node.left, depth + 1])
-        stack.append([node.right, depth + 1])
-
-    return res
+    return 1 + max(self.maxDepth(root.left), self.maxDepth(root.right))
 ```
 
 100. Same Tree
 
-```python3
+```python
 # Definition for a binary tree node.
 # class TreeNode:
 #     def __init__(self, val=0, left=None, right=None):
@@ -80,7 +43,6 @@ class Solution:
 class Solution:
 
   # O(p + q)
-  ˝
   def isSameTree(self, p: Optional[TreeNode], q: Optional[TreeNode]) -> bool:
     if not p and not q:
       return True
@@ -97,7 +59,7 @@ class Solution:
 
 226. Invert Binary Tree
 
-```python3
+```python
 # Definition for a binary tree node.
 # class TreeNode:
 #     def __init__(self, val=0, left=None, right=None):
@@ -117,12 +79,11 @@ class Solution:
     self.invertTree(root.right)
 
     return root
-
 ```
 
 572. Subtree of Another Tree
 
-```python3
+```python
 # Definition for a binary tree node.
 # class TreeNode:
 #     def __init__(self, val=0, left=None, right=None):
@@ -130,34 +91,31 @@ class Solution:
 #         self.left = left
 #         self.right = right
 class Solution:
+  # O(S * T)
+  def isSubtree(self, r: Optional[TreeNode], s: Optional[TreeNode]) -> bool:
+    if not r: return False
 
-    # O(S * T)
-    def isSubtree(self, r: Optional[TreeNode], s: Optional[TreeNode]) -> bool:
-      if not r: return False
+    if self.sameTree(r, s):
+      return True
 
-      if self.sameTree(r, s):
-        return True
-
-      return (self.isSubtree(r.left, s) or self.isSubtree(r.right, s))
-
-
-    def sameTree(self, p: Optional[TreeNode], q: Optional[TreeNode]) -> bool:
-      if not p and not q:
-        return True
-
-      if p and q and p.val == q.val:
-        return (self.sameTree(p.left, q.left) and self.sameTree(p.right, q.right))
-
-      return False
+    return (self.isSubtree(r.left, s) or self.isSubtree(r.right, s))
 
 
+  def sameTree(self, p: Optional[TreeNode], q: Optional[TreeNode]) -> bool:
+    if not p and not q:
+      return True
+
+    if p and q and p.val == q.val:
+      return (self.sameTree(p.left, q.left) and self.sameTree(p.right, q.right))
+
+    return False
 ```
 
 ### LinkedList
 
 21. Merge Two Sorted Lists
 
-```python3
+```python
 # Definition for singly-linked list.
 # class ListNode:
 #     def __init__(self, val=0, next=None):
@@ -189,7 +147,7 @@ class Solution:
 
 206. Reverse LinkedList
 
-```python3
+```python
 # Definition for singly-linked list.
 # class ListNode:
 #     def __init__(self, val=0, next=None):
@@ -210,7 +168,7 @@ class Solution:
 
 141. Linked List Cycle
 
-```python3
+```python
 # Definition for singly-linked list.
 # class ListNode:
 #     def __init__(self, x):
@@ -229,4 +187,10 @@ class Solution:
         return True
 
     return False
+```
+
+19. Remove Nth Node from the End of a Linked List
+
+```python3
+
 ```
