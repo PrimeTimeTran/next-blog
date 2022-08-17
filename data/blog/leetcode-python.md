@@ -3,7 +3,7 @@ title: Learning new languages with Leetcode
 date: '2022-08-15'
 tags: ['Algorithms', 'Data structures', 'Leetcode', 'Python']
 draft: true
-summary: 'Mastering language syntax with Leetcode problems with Python'
+summary: 'Mastering common algorithms & data structures in Python using Leetcode problems'
 ---
 
 ## Learning new languages with Leetcode
@@ -55,6 +55,28 @@ class Solution:
     return (self.isSameTree(p.left, q.left) and self.isSameTree(p.right, q.right))
 ```
 
+572. Subtree of Another Tree
+
+```python
+class Solution:
+  def isSubtree(self, r: Optional[TreeNode], s: Optional[TreeNode]) -> bool:
+    if not r: return False
+
+    if self.sameTree(r, s):
+      return True
+
+    return self.isSubtree(r.left, s) or self.isSubtree(r.right, s)
+
+  def sameTree(self, p, q):
+    if not p and not q:
+      return True
+
+    if p and q and p.val == q.val:
+      return self.sameTree(p.left, q.left) and self.sameTree(p.right, q.right)
+
+    return False
+```
+
 226. Invert Binary Tree
 
 ```python
@@ -71,29 +93,6 @@ class Solution:
     self.invertTree(root.right)
 
     return root
-```
-
-572. Subtree of Another Tree
-
-```python
-class Solution:
-  def isSubtree(self, r: Optional[TreeNode], s: Optional[TreeNode]) -> bool:
-    if not r: return False
-
-    if self.sameTree(r, s):
-      return True
-
-    return (self.isSubtree(r.left, s) or self.isSubtree(r.right, s))
-
-
-  def sameTree(self, p: Optional[TreeNode], q: Optional[TreeNode]) -> bool:
-    if not p and not q:
-      return True
-
-    if p and q and p.val == q.val:
-      return (self.sameTree(p.left, q.left) and self.sameTree(p.right, q.right))
-
-    return False
 ```
 
 235. Lowest Common Ancestor of a Binary Search Tree
@@ -116,22 +115,22 @@ class Solution:
 
 ```python
 class Solution:
-  # BFS
-  # Time O(N)
-  # Memory O(N)
   def levelOrder(self, root: Optional[TreeNode]) -> List[List[int]]:
     res = []
+
     q = deque([root])
 
     while q:
-      qLen = len(q)
       level = []
-      for _ in range(qLen):
+      for _ in range(len(q)):
         node = q.popleft()
+
         if node:
           level.append(node.val)
-          q.append(node.left)
-          q.append(node.right)
+          if node.left:
+            q.append(node.left)
+          if node.right:
+            q.append(node.right)
 
       if level:
         res.append(level)
@@ -154,6 +153,47 @@ class Solution:
     root.right = self.buildTree(preorder[mid + 1:], inorder[mid + 1:])
 
     return root
+```
+
+98. Validate Binary Search Tree
+
+```python
+class Solution:
+  def isValidBST(self, root: Optional[TreeNode]) -> bool:
+
+    def valid(node, left, right):
+      if not node:
+        return True
+
+      if left < node.val and right > node.val:
+        return valid(node.left, left, node.val) and valid(node.right, node.val, right)
+
+      return False
+
+    return valid(root, float('-inf'), float('inf'))
+```
+
+230. Kth Smallest Element in a BST
+
+```python
+class Solution:
+  def kthSmallest(self, root: Optional[TreeNode], k: int) -> int:
+    n = 0
+    stack = []
+    cur = root
+
+    while cur or stack:
+      while cur:
+        stack.append(cur)
+        cur = cur.left
+
+      cur = stack.pop()
+      n += 1
+
+      if n == k:
+          return cur.val
+
+      cur = cur.right
 ```
 
 ### LinkedList
