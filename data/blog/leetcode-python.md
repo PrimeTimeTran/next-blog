@@ -238,7 +238,21 @@ class Codec:
 124. [Binary Tree Maximum Path Sum](https://leetcode.com/problems/binary-tree-maximum-path-sum/)
 
 ```python
+class Solution:
+  def maxPathSum(self, root):
+    def maxSum(root):
+      if not root:
+          return 0
+      l_sum = maxSum(root.left)
+      r_sum = maxSum(root.right)
+      l = max(0, l_sum)
+      r = max(0, r_sum)
+      res[0] = max(res[0], root.val + l + r)
+      return root.val + max(l, r)
 
+    res = [-float('inf')]
+    maxSum(root)
+    return res[0]
 ```
 
 212. [Word Search II](https://leetcode.com/problems/word-search-ii/)
