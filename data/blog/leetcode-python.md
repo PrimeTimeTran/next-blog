@@ -27,7 +27,7 @@ Provided this is a tree
 #         self.right = right
 ```
 
-104. Maximum Depth of Binary Tree
+104. [Maximum Depth of Binary Tree](https://leetcode.com/problems/maximum-depth-of-binary-tree/submissions/)
 
 ```python
 class Solution:
@@ -38,7 +38,7 @@ class Solution:
     return 1 + max(self.maxDepth(root.left), self.maxDepth(root.right))
 ```
 
-100. Same Tree
+100. [Same Tree](https://leetcode.com/problems/same-tree/submissions/)
 
 ```python
 class Solution:
@@ -55,7 +55,7 @@ class Solution:
     return (self.isSameTree(p.left, q.left) and self.isSameTree(p.right, q.right))
 ```
 
-572. Subtree of Another Tree
+572. [Subtree of Another Tree](https://leetcode.com/problems/subtree-of-another-tree/submissions/)
 
 ```python
 class Solution:
@@ -77,7 +77,7 @@ class Solution:
     return False
 ```
 
-226. Invert Binary Tree
+226. [Invert Binary Tree](https://leetcode.com/problems/invert-binary-tree/submissions/)
 
 ```python
 class Solution:
@@ -95,7 +95,7 @@ class Solution:
     return root
 ```
 
-235. Lowest Common Ancestor of a Binary Search Tree
+235. [Lowest Common Ancestor of a Binary Search Tree](https://leetcode.com/problems/lowest-common-ancestor-of-a-binary-search-tree/)
 
 ```python
 class Solution:
@@ -111,7 +111,7 @@ class Solution:
         return cur
 ```
 
-102. Binary Tree Level Order Traversal
+102. [Binary Tree Level Order Traversal](https://leetcode.com/problems/binary-tree-level-order-traversal/submissions/)
 
 ```python
 class Solution:
@@ -138,7 +138,7 @@ class Solution:
     return res
 ```
 
-105. Construct Binary Tree from Preorder and Inorder Traversal
+105. [Construct Binary Tree from Preorder and Inorder Traversal](https://leetcode.com/problems/construct-binary-tree-from-preorder-and-inorder-traversal/)
 
 ```python
 class Solution:
@@ -155,7 +155,7 @@ class Solution:
     return root
 ```
 
-98. Validate Binary Search Tree
+98. [Validate Binary Search Tree](https://leetcode.com/problems/validate-binary-search-tree/)
 
 ```python
 class Solution:
@@ -173,7 +173,7 @@ class Solution:
     return valid(root, float('-inf'), float('inf'))
 ```
 
-230. Kth Smallest Element in a BST
+230. [Kth Smallest Element in a BST](https://leetcode.com/problems/kth-smallest-element-in-a-bst/)
 
 ```python
 class Solution:
@@ -194,6 +194,36 @@ class Solution:
           return cur.val
 
       cur = cur.right
+```
+
+208. [Implement Trie (Prefix Tree)](https://leetcode.com/problems/implement-trie-prefix-tree/)
+
+```python
+
+```
+
+211. [Design Add and Search Words Data Structure](https://leetcode.com/problems/design-add-and-search-words-data-structure/)
+
+```python
+
+```
+
+297. [Serialize and Deserialize Binary Tree](https://leetcode.com/problems/serialize-and-deserialize-binary-tree/)
+
+```python
+
+```
+
+124. [Binary Tree Maximum Path Sum](https://leetcode.com/problems/binary-tree-maximum-path-sum/)
+
+```python
+
+```
+
+212. [Word Search II](https://leetcode.com/problems/word-search-ii/)
+
+```python
+
 ```
 
 ### LinkedList
