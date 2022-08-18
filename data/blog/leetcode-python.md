@@ -208,7 +208,31 @@ class Solution:
 297. [Serialize and Deserialize Binary Tree](https://leetcode.com/problems/serialize-and-deserialize-binary-tree/)
 
 ```python
+class Codec:
+  def serialize(self, root):
+    def doit(node):
+      if node:
+        vals.append(str(node.val))
+        doit(node.left)
+        doit(node.right)
+      else:
+        vals.append("#")
+    vals = []
+    doit(root)
+    return ' '.join(vals)
 
+  def deserialize(self, data):
+    def doit():
+      val = next(vals)
+
+      if val == '#':
+        return None
+      node = TreeNode(int(val))
+      node.left = doit()
+      node.right = doit()
+      return node
+    vals = iter(data.split())
+    return doit()
 ```
 
 124. [Binary Tree Maximum Path Sum](https://leetcode.com/problems/binary-tree-maximum-path-sum/)
