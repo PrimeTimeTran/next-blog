@@ -16,23 +16,23 @@ func main() {
 
 	c := make(chan string)
 
-	for _, link := range links {
-		go checkLink(link, c)
-	}
+    for _, link := range links {
+        go checkLink(link, c)
+    }
 
-	for l := range c {
-		go checkLink(l, c)
-	}
+    for {
+        fmt.Println(<- c)
+    }
 }
 
 func checkLink(l string, c chan string) {
-	_, err := http.Get(l)
+    _, err := http.Get(l)
 
-	if err != nil {
-		fmt.Println(l, " looks to be down!")
-		c <- l
-	}
+    if err != nil {
+        fmt.Println(l, " looks to be down!")
+        c <- l
+    }
 
-	fmt.Println(l, "is up!")
-	c <- l
+    fmt.Println(l, "is up!")
+    c <- l
 }
