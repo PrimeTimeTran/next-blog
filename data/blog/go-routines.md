@@ -67,10 +67,13 @@ func main() {
 
 ### Blocking Operations
 
-Typically, each item will take some time to process though, perhaps by an external API; in this case an HTTP request.
+Typically each item will take some time to process due to some external dependency; in this case an HTTP request inside the body of `checkLink`.
 
-```go
-// Code 👨‍💻
+```go {15} showLineNumbers
+import (
+	"fmt"
+	"net/http"
+)
 
 func main() {
     // Code 👨‍💻
@@ -92,21 +95,21 @@ func checkLink(l string) {
 }
 ```
 
-The program doesn't throw an error. Excellent.
+The processing of each item is handled asynchronously, meaning we wait for the completion of one call to `checkLink` before the start of the subsequent call.
 
-However the processing of each item is handled asynchronously, waiting for the completion of one call to `checkLink` before the start of the subsequent call.
+Ideally, the app should be able to process the elements at the same time, not needing to wait for the response from the dependency.
 
-Ideally, the app should be able to process the elements concurrently.
+In other words, we should be able to begin processing each item in our list regardless of whether or not the previous request is done, the previous API call has **returned**.
 
-In other words, we should be able to begin processing each item in our list regardless of whether or not the previous item is done processing, the previous API call has **returned**.
+This is the concurrency we want.
 
 ### Processing concurrently
 
-We can process the items concurrently by adding the `go` call before each invocation of `checkLink`, telling Go that this function call is a go subroutine.
+We can process the items concurrently by adding a `go` call before each invocation of `checkLink`, telling Go that this function call is a subroutine.
 
 This is us spinning up 5 routines for each element.
 
-```go
+```go {5} showLineNumbers
 func main() {
     // Code 👨‍💻
 
@@ -122,9 +125,9 @@ func checkLink(l string) {
 
 We now see that the program exits without anything printing to the screen.
 
-This is because our main routine started, spun up 5 subroutines, and saw nothing else left to do inside the body of the main program so immediately exited.
+This is because our main routine started, spun up 5 subroutines, saw nothing else left to do inside the body of the main program; so immediately exited.
 
-This happened within a fractions of a second.
+This happened within fractions of a second.
 
 ```go
 func main() {
@@ -150,7 +153,7 @@ If we add a `fmt.Scanln(&input)` which waits for user input we accomplish this.
 
 The main function only exits after the user has interacted with the program.
 
-```go
+```go {7} showLineNumbers
 func main() {
     for _, link := range links {
         go checkLink(link)
@@ -171,11 +174,11 @@ This approach will not work in production environments because we cannot depend 
 
 ### Channels
 
-Using [channels](https://medium.com/nerd-for-tech/learning-go-concurrency-goroutines-channels-8836b3c34152) we can tell our main function to wait to exit while the channel processes.
+By using [channels](https://medium.com/nerd-for-tech/learning-go-concurrency-goroutines-channels-8836b3c34152) we block the app from exiting on line 8.
 
-In other words, channels are blocking
+On lines 17 & 21 we return data from our routine to the main routine.
 
-```go {17, 21} showLineNumbers
+```go {8, 17, 21} showLineNumbers
 func main() {
     c := make(chan string)
 
@@ -200,17 +203,15 @@ func checkLink(l string, c chan string) {
 }
 ```
 
-We've updated `checkLink` to send data back to the main routine with the lines `c <- l` on line's 17 & 21.
-
 If we run the program now, we'll see that the app exits after processing one of the go subroutines.
 
-We need a way to make sure that every subroutine has an opportunity to broadcast it's message to the channel before the main routine exits.
+We need a way to make sure that every subroutine broadcasts it's message to the channel before the main routine exits.
 
 ### Processing each subroutine
 
-We can fix the immediate exit by producing `fmt.Println(<- c)` for each item we need processed using a loop.
+If we use one `fmt.Println(<- c)` for each item, we'll process each item.
 
-```go
+```go {8-10} showLineNumbers
 func main() {
     c := make(chan string)
 
@@ -224,23 +225,15 @@ func main() {
 }
 
 func checkLink(l string, c chan string) {
-    _, err := http.Get(l)
-
-    if err != nil {
-        fmt.Println(l, " looks to be down!")
-        c <- l
-    }
-
-    fmt.Println(l, "is up!")
-    c <- l
+    // Code 👨‍💻
 }
 ```
 
 ### Process
 
-Although that works, a more elegant way of ensuring all subroutines complete their execution is like this
+Although that works, a more elegant way of ensuring all subroutines complete their execution is like this:
 
-```go {} showLineNumbers
+```go {8-10} showLineNumbers
 func main() {
     c := make(chan string)
 
@@ -254,23 +247,17 @@ func main() {
 }
 
 func checkLink(l string, c chan string) {
-    _, err := http.Get(l)
-
-    if err != nil {
-        fmt.Println(l, " looks to be down!")
-        c <- l
-    }
-
-    fmt.Println(l, "is up!")
-    c <- l
+    // Code 👨‍💻
 }
 ```
 
 ### Refactor
 
-Clean up the `<-` syntax by using a range keyword which will
+Clean up the `<-` syntax by using the [range](https://gobyexample.com/range) keyword which behaves like [range](https://www.w3schools.com/python/ref_func_range.asp) in python.
 
-```go {} showLineNumbers
+Each channel message becomes an enumerated item in the loop.
+
+```go {8-10} showLineNumbers
 func main() {
     c := make(chan string)
 
@@ -284,27 +271,25 @@ func main() {
 }
 
 func checkLink(l string, c chan string) {
-    _, err := http.Get(l)
-
-    if err != nil {
-        fmt.Println(l, " looks to be down!")
-        c <- l
-    }
-
-    fmt.Println(l, "is up!")
-    c <- l
+    // Code 👨‍💻
 }
 ```
 
 ### Slow down execution by using a sleep method
 
-This will result in our main routine backing up and lining up all the results from our channel
+If we add a sleep to our main function, we'll see that our go routines become blocked again.
 
-At most, we can only ever run 1 routine at a time.
+This is because we're blocking inside our main function.
 
 ```go {} showLineNumbers
+import (
+    "fmt"
+    "net/http"
+    "time"
+)
+
 func main() {
-    // ...
+    // Code 👨‍💻
 
     for l := range c {
         time.Sleep(time.Second * 5)
@@ -313,27 +298,21 @@ func main() {
 }
 
 func checkLink(l string, c chan string) {
-    // ...
+    // Code 👨‍💻
 }
 ```
 
 ### Using a function literal which
 
-We use a function literal to slow down the execution of our go subroutines.
+We can use an [immediately invoked anonymous function](https://golangbyexample.com/immediately-invoked-function-go/#:~:text=IIF%20or%20Immediately%20Invoked%20Function%20are%20those%20function%20which%20can,end%20brace%20of%20the%20function) to unblock our main function.
+
+If we wrap `Sleep` with the immediately
 
 When we do this, we see that our routines execute concurrently.
 
-Thus, we can continue processing their return values as soon as the subroutine has completed.
+Thus, our individual routines are no longer blocked.
 
-```go {} showLineNumbers
-package main
-
-import (
-    "fmt"
-    "net/http"
-    "time"
-)
-
+```go {5-8} showLineNumbers
 func main() {
     // ...
 
@@ -350,13 +329,17 @@ func checkLink(l string, c chan string) {
 }
 ```
 
-However when we look closely at our output, we'll see that every subroutine is now making a request to only one of our sites.
+Unfortunately however, when we look at our output, we'll see that every subroutine is now processing the same item, the same url, the same `l`.
 
-We're passing by reference when we invoke the anonymous function this way.
+This occurs because we're passing by reference when we invoke the anonymous function this way.
+
+In other words, our subroutine is looking at the latest value of `l` instead of the value of `l` when it was invoked.
 
 ### Pass by value to anon function
 
-```go {} showLineNumbers
+In order to store the value of `l` at the time we invoked the routine we need to refactor to pass `l` to our immediately invoked anonymous function.
+
+```go {7, 9, 10} showLineNumbers
 // ...
 
 func main() {
@@ -374,3 +357,13 @@ func checkLink(l string, c chan string) {
     // ...
 }
 ```
+
+We update the function to receive a `link` and the call to `checkLink` to consume it.
+
+### Conclusion
+
+We've seen achieve multi tasking in Go. By using sub routines we can
+
+- Concurrently process items in our application
+- Leverage the multi core processes of modern computers
+- Speed up the overall run time of our application
