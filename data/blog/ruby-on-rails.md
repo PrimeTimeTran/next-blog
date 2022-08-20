@@ -8,11 +8,11 @@ summary: 'What is the decorator design pattern?'
 
 ## Decorator Design Pattern
 
-The decorator pattern is typically used to give additional functionality to resources.
+The decorator pattern is used to define additional functionality on a resource.
 
 This is useful when a resource becomes bloated and unwieldy due to all the other requirements the resources implement.
 
-In Ruby & Rails we can use [Draper](https://github.com/drapergem/draper)
+In Ruby & Rails the [Draper](https://github.com/drapergem/draper) gem can be used to implement this design pattern.
 
 Imagine for example, a User resource in a Ruby on Rails application
 
@@ -170,6 +170,14 @@ The decorator design pattern is usually used to help us to extract out logic rel
 
 After adding the gem to our `Gemfile` and bundling we'll see the Draper creates a new file where we can extract out the presentation logic of our resources(as opposed to business logic).
 
+We run:
+
+```bash
+rails generate decorator User
+```
+
+And we'll see that a decorator file is generated.
+
 ```ruby
 # app/decorators/user.rb
 class UserDecorator < Draper::Decorator
@@ -194,14 +202,51 @@ def index
 end
 ```
 
-### Recap
+In the decorator we can presentation logic.
 
-The Decorator Design Pattern does the following
+```ruby
+# app/decorators/user.rb
+  def full_name
+    if object.first_name && object.last_name
+      "#{object.first_name} #{object.last_name}"
+    elsif object.first_name
+      object.first_name
+    else
+      'Anonymous'
+    end
+  end
 
-- Extracts conditional logic out of the front end
+  def location
+    if object.city && object.country
+      "#{object.city}, #{object.country}"
+    else
+      object.country
+    end
+  end
 
-- Extracts presentation logic out of [Active Record](https://guides.rubyonrails.org/active_record_basics.html) models.
+  def profile_uploads
+    object.uploads
+  end
+
+  def most_recent_profile_photo
+    if object.uploads[0].present?
+      url_for(object.uploads[0].media)
+    else
+      if object.gender.present?
+        object.gender == 'female' ? 'https://cdn0.iconfinder.com/data/icons/social-messaging-ui-color-shapes/128/user-female-circle-pink-512.png' : 'https://cdn1.iconfinder.com/data/icons/business-charts/512/customer-512.png'
+      else
+        'https://cdn1.iconfinder.com/data/icons/business-charts/512/customer-512.png'
+      end
+    end
+  end
+```
+
+The logic isn't that complicated, but if we performed this type of conditional checks in our partials we might find that the same logic was repeated quickly.
+
+### The Decorator Design Pattern does the following
+
+- Extracts conditional logic out of the front end partials.
+
+- Extracts presentation logic out of [Active Record](https://guides.rubyonrails.org/active_record_basics.html) resources/models.
 
 - Reduces the need to for helper methods which pollute the global namespace.
-
-This is an update of a post I made [years ago](https://medium.com/@loivtran/how-do-i-rails-use-the-decorator-design-pattern-in-ruby-programming-to-make-life-easier-536e8fe14546).
