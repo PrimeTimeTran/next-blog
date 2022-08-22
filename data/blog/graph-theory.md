@@ -1,30 +1,47 @@
 ---
-title: Learning new languages with Leetcode
-date: '2022-08-15'
-tags: ['Algorithms', 'Data structures', 'Leetcode', 'Python']
-draft: true
-summary: 'Mastering common algorithms & data structures in Python using Leetcode problems'
+title: Intro to Graph Theory with Python
+date: '2022-08-21'
+tags: ['Algorithms', 'Data structures', 'Leet Code', 'Python']
+draft: false
+summary: 'Master graph theory and algorithms using Python and Leet Code problems'
 ---
 
-## Learning new languages with Leetcode
+## Intro to Graph Theory with Python
 
-[Leetcode](https://leetcode.com/) is a platform for enhancing technical skills.
+To master algorithms, data structures, and Python I began studying [Leet Code](https://leetcode.com/).
 
-In order to master my knowledge of algorithms, data structures, and Python I've decided to do a ton of problems on LeetCode.
+Here's what I've learned about [graph theory](https://en.wikipedia.org/wiki/Graph_theory#:~:text=In%20mathematics%2C%20graph%20theory%20is,also%20called%20links%20or%20lines) along the way.
 
-Here are solutions to some of their most popular questions.
+[![Watch the video](https://i.imgur.com/EaSxt5l.png)](https://www.youtube.com/watch?v=GiDsjIBOVoA)
+
+Feel free to dive deep intro more advanced content in the video above.
 
 ### Binary Trees
 
-Provided this is a tree
+One of the first data structures in computer science is called a binary tree.
+
+Binary trees start with a node.
+
+The stating node is called a root.
+
+Every node will have a value.
+
+Nodes can have one or more child nodes.
+
+Lines connecting the nodes indicate that their is a parent child relationship.
+
+In binary trees, nodes can have a maximum of 2 children.
+
+The children can also have their own children
+
+Below is a Python Node.
 
 ```python
-# Definition for a binary tree node.
-# class TreeNode:
-#     def __init__(self, val=0, left=None, right=None):
-#         self.val = val
-#         self.left = left
-#         self.right = right
+class Node:
+  def __init__(self, val=0, left=None, right=None):
+    self.val = val
+    self.left = left
+    self.right = right
 ```
 
 104. [Maximum Depth of Binary Tree](https://leetcode.com/problems/maximum-depth-of-binary-tree/submissions/)
@@ -85,9 +102,7 @@ class Solution:
     if not root:
       return None
 
-    tmp = root.left
-    root.left = root.right
-    root.right = tmp
+    root.left, root.right = root.right, root.left
 
     self.invertTree(root.left)
     self.invertTree(root.right)

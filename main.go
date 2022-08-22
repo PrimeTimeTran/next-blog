@@ -2,44 +2,57 @@ package main
 
 import (
 	"fmt"
-	"net/http"
-	"time"
 )
 
-func main() {
-	links := []string{
-		"http://www.facebook.com",
-		"http://www.amazon.com",
-		"http://www.apple.com",
-		"http://www.netflix.com",
-		"http://www.google.com",
+
+func main(){
+	data := make(chan int)
+
+	go func() {
+		for i := 0; i < 1000; i++ {
+			data <- i
+		}
+	}()
+
+	for n := range data {
+		fmt.Println("n = %d\n", n)
 	}
-	c := make(chan string)
-
-	for _, link := range links {
-		go checkLink(link, c)
-	}
-
-    for l := range c {
-        go func(link string) {
-          time.Sleep(time.Second * 5)
-          checkLink(link, c)
-        }(l)
-    }
-
 }
 
-func checkLink(l string, c chan string) {
-	_, err := http.Get(l)
+// func main() {
+// 	links := []string{
+// 		"http://www.facebook.com",
+// 		"http://www.amazon.com",
+// 		"http://www.apple.com",
+// 		"http://www.netflix.com",
+// 		"http://www.google.com",
+// 	}
+// 	c := make(chan string)
 
-	if err != nil {
-		fmt.Println(l, " looks to be down!")
-		c <- l
-	}
+// 	for _, link := range links {
+// 		go checkLink(link, c)
+// 	}
 
-	fmt.Println(l, "is up!")
-	c <- l
-}
+//     for l := range c {
+//         go func(link string) {
+//           time.Sleep(time.Second * 5)
+//           checkLink(link, c)
+//         }(l)
+//     }
+
+// }
+
+// func checkLink(l string, c chan string) {
+// 	_, err := http.Get(l)
+
+// 	if err != nil {
+// 		fmt.Println(l, " looks to be down!")
+// 		c <- l
+// 	}
+
+// 	fmt.Println(l, "is up!")
+// 	c <- l
+// }
 
 // func main() {
 // 	jobs := make(chan int, 100)

@@ -69,7 +69,7 @@ func main() {
 
 Typically each item will take some time to process due to some external dependency; in this case an HTTP request inside the body of `checkLink`.
 
-```go {15} showLineNumbers
+```go {3, 15} showLineNumbers
 import (
 	"fmt"
 	"net/http"
@@ -364,6 +364,49 @@ We update the function to receive a `link` and the call to `checkLink` to consum
 
 We've seen achieve multi tasking in Go. By using sub routines we can
 
-- Concurrently process items in our application
-- Leverage the multi core processes of modern computers
-- Speed up the overall run time of our application
+- Concurrently process items in our application by using multiple threads.
+- Leverage the multi core processes of modern computers.
+- Speed up the overall run time of our application.
+
+```go
+import (
+  "fmt"
+  "time"
+  "net/http"
+)
+
+func main() {
+	links := []string{
+		"http://www.facebook.com",
+		"http://www.amazon.com",
+		"http://www.apple.com",
+		"http://www.netflix.com",
+		"http://www.google.com",
+	}
+	c := make(chan string)
+
+	for _, link := range links {
+		go checkLink(link, c)
+	}
+
+    for l := range c {
+        go func(link string) {
+          time.Sleep(time.Second * 5)
+          checkLink(link, c)
+        }(l)
+    }
+
+}
+
+func checkLink(l string, c chan string) {
+	_, err := http.Get(l)
+
+	if err != nil {
+		fmt.Println(l, " looks to be down!")
+		c <- l
+	}
+
+	fmt.Println(l, "is up!")
+	c <- l
+}
+```
