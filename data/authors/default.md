@@ -1,8 +1,8 @@
 ---
 name: Loi Tran
 avatar: /static/images/avatar.png
-occupation: Amazon Web Services
-company: Stanford University
+occupation: Solution Architect
+company: OSSU
 email: datloiboi@gmail.com
 twitter: https://twitter.com/PrimeTimeTrann
 linkedin: https://www.linkedin.com/in/primetimetran

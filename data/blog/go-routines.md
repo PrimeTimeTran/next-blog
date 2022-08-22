@@ -1,7 +1,7 @@
 ---
 title: What is concurrency in Go?
 date: '2022-08-20'
-tags: ['Go', 'Go Routines']
+tags: ['Go']
 draft: false
 summary: Concurrency is the ability of program to handle multiple tasks simultaneously. Go uses go routines to achieve this, also known as concurrency.
 ---
