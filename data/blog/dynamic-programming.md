@@ -19,6 +19,7 @@ const fib = (n) => {
 ```
 
 Time = O(2^n)
+
 Space = O(n)
 
 Recursive with memoization
@@ -35,9 +36,10 @@ console.log(fib(9))
 ```
 
 Time = O(n)
+
 Space = O(n)
 
-How to determine number of ways to get from top left to bottom right.
+### How to determine number of ways to get from top left to bottom right
 
 ```js
 const gridTraveler = (m, n) => {
@@ -45,9 +47,6 @@ const gridTraveler = (m, n) => {
   if (m === 0 || n === 0) return 0
   return gridTraveler(m - 1, n) + gridTraveler(m, n - 1)
 }
-
-
-
 
 console.log(gridTraveler(1, 1)) 1
 console.log(gridTraveler(2, 3)) 3
@@ -79,10 +78,11 @@ console.log(gridTraveler(8, 8)) // 3432
 console.log(gridTraveler(18, 18)) // 2333606220
 ```
 
-Time = O(2^n)
-Space = O(n)
+Time = O(m \* n)
 
-Can we sum to k from nums
+Space = O(n + m)
+
+### Can we sum to k from nums
 
 ```js
 const canSum = (k, nums) => {
