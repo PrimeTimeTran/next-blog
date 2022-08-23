@@ -7,7 +7,15 @@ summary:
 images: []
 ---
 
-### How to do fibonacci with memoization?
+## Dynamic programming
+
+Dynamic Programming is a technique in computer programming that helps to efficiently solve a class of problems that have overlapping subproblems and optimal substructure property.
+
+### Fibonacci
+
+- Visualize the problem as a tree
+- Implement Tree using recursion
+- Test it
 
 Recursive
 
@@ -16,30 +24,44 @@ const fib = (n) => {
   if (n <= 2) return 1
   return fib(n - 1) + fib(n - 2)
 }
+
+console.log(fib(6)) // 8
+console.log(fib(7)) // 13
+console.log(fib(8)) // 21
+console.log(fib(50)) // 12586269025
 ```
 
 Time = O(2^n)
 
 Space = O(n)
 
-Recursive with memoization
+Memoization
+
+- Add a memo object
+- Add a base case to return memo values
+- Store return values into memo
 
 ```js
 const fib = (n, memo = {}) => {
   if (n in memo) return memo[n]
   if (n <= 2) return 1
-  memo[n] = fib(n - 1, memo) + (fib - 2, memo)
+  memo[n] = fib(n - 1, memo) + fib(n - 2, memo)
   return memo[n]
 }
 
-console.log(fib(9))
+console.log(fib(6)) // 8
+console.log(fib(7)) // 13
+console.log(fib(8)) // 21
+console.log(fib(50)) // 12586369025
 ```
 
 Time = O(n)
 
 Space = O(n)
 
-### How to determine number of ways to get from top left to bottom right
+### GridTraveler
+
+Find number of ways to travel from top left to bottom right corner of grid.
 
 ```js
 const gridTraveler = (m, n) => {
@@ -48,14 +70,15 @@ const gridTraveler = (m, n) => {
   return gridTraveler(m - 1, n) + gridTraveler(m, n - 1)
 }
 
-console.log(gridTraveler(1, 1)) 1
-console.log(gridTraveler(2, 3)) 3
-console.log(gridTraveler(3, 2)) 3
-console.log(gridTraveler(3, 3)) 6
-console.log(gridTraveler(18, 18)) 2333606220
+console.log(gridTraveler(1, 1)) // 1
+console.log(gridTraveler(2, 3)) // 3
+console.log(gridTraveler(3, 2)) // 3
+console.log(gridTraveler(3, 3)) // 6
+console.log(gridTraveler(8, 8)) // 3432
+console.log(gridTraveler(18, 18)) // 2333606220
 ```
 
-Memoized
+Memoization
 
 ```js
 const gridTraveler = (m, n, memo = {}) => {
@@ -82,14 +105,22 @@ Time = O(m \* n)
 
 Space = O(n + m)
 
-### Can we sum to k from nums
+### Cansum
+
+Write a function `canSum(k, nums)` that takes in a target sum and an array of numbers as arguments.
+
+The function should return a boolean indicating whether or not it is possible to generate the targetSum using numbers from the array.
+
+You may use an element of the array as many times as needed.
+
+You may assume that all inputs are non negative.
 
 ```js
-const canSum = (k, nums) => {
-  if (k === 0) return true
-  if (k < 0) return false
+const canSum = (targetSum, nums) => {
+  if (targetSum === 0) return true
+  if (targetSum < 0) return false
   for (let n of nums) {
-    let remainder = k - n
+    let remainder = targetSum - n
     if (canSum(remainder, nums) === true) {
       return true
     }
@@ -106,10 +137,188 @@ console.log(canSum(7, [2, 4])) // false
 console.log(canSum(300, [7, 14])) // false
 ```
 
-O(n^m)
+Time = O(n ^ m)
+
+Space = O(m)
 
 Cansum memoized
 
 ```js
+const canSum = (targetSum, nums, memo = {}) => {
+  if (targetSum in memo) return memo[targetSum]
+  if (targetSum === 0) return true
+  if (targetSum < 0) return false
 
+  for (let n of nums) {
+    const remainder = targetSum - n
+    if (canSum(remainder, nums, memo) === true) {
+      memo[targetSum] = true
+      return true
+    }
+  }
+
+  memo[targetSum] = false
+  return false
+}
+
+console.log(canSum(7, [2, 3])) // true
+console.log(canSum(8, [2, 3, 5])) // true
+console.log(canSum(7, [5, 3, 4, 7])) // true
+console.log(canSum(7, [5, 3, 4, 7])) // true
+
+console.log(canSum(7, [2, 4])) // false
+console.log(canSum(300, [7, 14])) // false
 ```
+
+Time = O(m \* n)
+
+Space = O(m)
+
+### Howsum
+
+Write a function `howSum(targetSum, nums)` that takes inn a targetSum and an array of numbers as arguments.
+
+The function should return an array containing any combination of elements that add up to exactly the targetSum. If there is no combination that adds up to the targetSum, then return null.
+
+If there are multiple combinations possible you may return any single one.
+
+```js
+const howSum = (targetSum, nums) => {
+  if (targetSum === 0) return []
+  if (targetSum < 0) return null
+  for (let n of nums) {
+    const remainder = targetSum - n
+    const remainderResult = howSum(remainder, nums)
+    if (remainderResult !== null) {
+      return [...remainderResult, n]
+    }
+  }
+  return null
+}
+
+console.log(howSum(7, [2, 3])) // [3, 2, 2]
+console.log(howSum(7, [5, 3, 4, 7])) // [4, 3]
+console.log(howSum(7, [2, 4])) // null
+console.log(howSum(8, [2, 3, 5])) // [2, 2, 2, 2]
+console.log(howSum(300, [7, 14])) // []
+```
+
+m = targetSum
+
+n = array length
+
+Time = O(n ^ m \* m)
+
+Space = O(m)
+
+Cansum memoized
+
+```js
+const howSum = (targetSum, nums, memo = {}) => {
+  if (targetSum in memo) return memo[targetSum]
+  if (targetSum === 0) return []
+  if (targetSum < 0) return null
+  for (let n of nums) {
+    const remainder = targetSum - n
+    const remainderResult = howSum(remainder, nums, memo)
+    if (remainderResult !== null) {
+      memo[targetSum] = [...remainderResult, n]
+      return memo[targetSum]
+    }
+  }
+  memo[targetSum] = null
+  return null
+}
+
+console.log(howSum(7, [2, 3])) // [3, 2, 2]
+console.log(howSum(7, [5, 3, 4, 7])) // [4, 3]
+console.log(howSum(7, [2, 4])) // null
+console.log(howSum(8, [2, 3, 5])) // [2, 2, 2, 2]
+console.log(howSum(300, [7, 14])) // []
+```
+
+Time = O(n \* m^2)
+
+Space = O(m^2)
+
+### BestSum
+
+Write a function `bestSum(targetSum, nums)` that takes in a targetSum and an array of numbers as arguments
+
+The function should return an array containing the shortest combination of numbers that add up to exactly the targetSum.
+
+If there is a tie for the shortest combination, you may return any one of the shortest.
+
+```js
+const bestSum = (targetSum, nums) => {
+  if (targetSum === 0) return []
+  if (targetSum < 0) return null
+
+  let shortestCombination = null
+
+  for (let n of nums) {
+    const remainder = targetSum - n
+    const remainderCombination = bestSum(remainder, nums)
+    if (remainderCombination !== null) {
+      const comb = [...remainderCombination, n]
+      if (shortestCombination === null || comb.length < shortestCombination.length) {
+        shortestCombination = comb
+      }
+    }
+  }
+  return shortestCombination
+}
+
+console.log(bestSum(7, [5, 3, 4, 7])) // [7]
+console.log(bestSum(8, [2, 3, 5])) // [3, 5]
+console.log(bestSum(8, [1, 4, 5])) // [4, 4]
+console.log(bestSum(100, [1, 2, 5, 25])) // [25, 25, 25, 25]
+```
+
+Time = O(m \* n^m)
+
+Space = O(m^2)
+
+```js
+const bestSum = (targetSum, nums, memo = {}) => {
+  if (targetSum in memo) return memo[targetSum]
+  if (targetSum === 0) return []
+  if (targetSum < 0) return null
+
+  let smallest = null
+
+  for (let n of nums) {
+    const remainder = targetSum - n
+    const remainderCombination = bestSum(remainder, nums, memo)
+    if (remainderCombination !== null) {
+      const comb = [...remainderCombination, n]
+      if (smallest === null || comb.length < smallest.length) {
+        smallest = comb
+      }
+    }
+  }
+  memo[targetSum] = smallest
+  return smallest
+}
+
+console.log(bestSum(7, [5, 3, 4, 7])) // [7]
+console.log(bestSum(8, [2, 3, 5])) // [3, 5]
+console.log(bestSum(8, [1, 4, 5])) // [4, 4]
+console.log(bestSum(100, [1, 2, 5, 25])) // [25, 25, 25, 25]
+```
+
+Time = O(n \* m ^ 2)
+
+Space = O(m^2)
+
+### Summary
+
+canSum -> "Can you do it? yes/no"
+howSum -> "How can you do it?"
+bestSum -> "What is the 'best' way to do it?"
+
+canSum -> Decision Problem
+howSum -> Combinatoric Problem
+bestSum -> Optimization Problem
+
+Write a
