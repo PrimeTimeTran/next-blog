@@ -321,4 +321,40 @@ canSum -> Decision Problem
 howSum -> Combinatoric Problem
 bestSum -> Optimization Problem
 
+## CanConstruct
+
 Write a
+
+```js
+const canConstruct = (target, wordBank) => {
+  if (target === '') return true
+
+  for (let word of wordBank) {
+    if (target.indexOf(word) === 0) {
+      const suffix = target.slice(word.length)
+      if (canConstruct(suffix, wordBank) === true) {
+        return true
+      }
+    }
+  }
+  return false
+}
+
+console.log(canConstruct('abcdef', ['ab', 'abc', 'cd', 'def', 'abcd', 'ef']))
+console.log(canConstruct('skateboard', ['bo', 'rd', 'ate', 't', 'ska', 'sk', 'boar']))
+console.log(canConstruct('potato', ['p', 'ot', 'eo', 'g', 'a', 't']))
+console.log(
+  canConstruct('eeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeef', [
+    'e',
+    'ee',
+    'eee',
+    'eeee',
+    'eeeee',
+    'eeeeee',
+  ])
+)
+```
+
+Time = O(n \* m ^ 2)
+
+Space = O(m^2)
