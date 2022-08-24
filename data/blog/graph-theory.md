@@ -228,13 +228,78 @@ class Solution:
 208. [Implement Trie (Prefix Tree)](https://leetcode.com/problems/implement-trie-prefix-tree/)
 
 ```python
+class TrieNode:
+  def __init__(self):
+    self.children = {}
+    self.endsWord = False
+
+class Trie:
+  def __init__(self):
+    self.root = TrieNode()
+
+  def insert(self, word):
+    cur = self.root
+    for c in word:
+      if c not in cur.children:
+        cur.children[c] = TrieNode()
+      cur = cur.children[c]
+    cur.endsWord = True
+
+  def search(self, word):
+    cur = self.root
+    for c in word:
+      if c not in cur.children:
+        return False
+      cur = cur.children[c]
+    return cur.endsWord
+
+  def startsWith(self, prefix):
+    cur = self.root
+    for c in prefix:
+      if c not in cur.children:
+        return False
+      cur = cur.children[c]
+    return True
 
 ```
 
 211. [Design Add and Search Words Data Structure](https://leetcode.com/problems/design-add-and-search-words-data-structure/)
 
 ```python
+class TrieNode:
+  def __init__(self):
+    self.children = {}
+    self.word = False
 
+class WordDictionary:
+  def __init__(self):
+    self.root = TrieNode()
+
+  def addWord(self, word: str) -> None:
+    cur = self.root
+    for c in word:
+      if c not in cur.children:
+        cur.children[c] = TrieNode()
+      cur = cur.children[c]
+    cur.word = True
+
+  def search(self, word):
+    stack = [(self.root, word)]
+
+    while stack:
+      node, w = stack.pop()
+      if not w:
+        if node.word:
+          return True
+      elif w[0] == '.':
+        for n in node.children.values():
+          stack.append((n, w[1:]))
+      else:
+        if w[0] in node.children:
+          n = node.children[w[0]]
+          stack.append((n, w[1:]))
+
+    return False
 ```
 
 297. [Serialize and Deserialize Binary Tree](https://leetcode.com/problems/serialize-and-deserialize-binary-tree/)
