@@ -101,11 +101,8 @@ class Solution:
   def sameTree(self, p, q):
     if not p and not q:
       return True
-
     if p and q and p.val == q.val:
-      return self.sameTree(p.left, q.left) and self.sameTree(p.right, q.right)
-
-    return False
+      return self.isSameTree(p.left, q.left) and self.isSameTree(p.right, q.right)
 ```
 
 226. [Invert Binary Tree](https://leetcode.com/problems/invert-binary-tree/submissions/)

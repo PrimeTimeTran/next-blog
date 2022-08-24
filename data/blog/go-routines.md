@@ -18,13 +18,13 @@ Inspiration draw from this more academic blog post! ^[Concurrency in Go https://
 
 ### When we start our app, we spin up a Go routine
 
-The main function/entrypoint of every go application is a [go routine](https://go.dev/tour/concurrency/1).
+The main function/entrypoint of every Go application is a [Go routine](https://go.dev/tour/concurrency/1).
 
 ```go
 package main
 
 func main() {
-  // 👨‍💻
+  // ...
 }
 
 ```
@@ -54,10 +54,10 @@ func main() {
 If we run the code now, we'll see that each print is asynchronously handled and that each item is printed to the screen almost immediately.
 
 ```go
-// Code 👨‍💻
+// ...
 
 func main() {
-  // Code 👨‍💻
+  // ...
 
   for _, link := range links {
     fmt.Println(link)
@@ -67,7 +67,7 @@ func main() {
 
 ### Blocking Operations
 
-Typically each item will take some time to process due to some external dependency; in this case an HTTP request inside the body of `checkLink`.
+We usually do more than print to the screen. The processing will take some time, in this case due to a HTTP request inside the body of `checkLink`.
 
 ```go {3, 15} showLineNumbers
 import (
@@ -76,7 +76,7 @@ import (
 )
 
 func main() {
-    // Code 👨‍💻
+    // ...
 
     for _, link := range links {
         checkLink(link)
@@ -95,11 +95,13 @@ func checkLink(l string) {
 }
 ```
 
-The processing of each item is handled asynchronously, meaning we wait for the completion of one call to `checkLink` before the start of the subsequent call.
+The processing of each item is handled asynchronously, meaning we wait for the completion of one call to `checkLink` before calling it again with a different url.
 
-Ideally, the app should be able to process the elements at the same time, not needing to wait for the response from the dependency.
+Ideally, we should be able to process all elements at the same time, not needing to wait for one element to finish processing before starting the next.
 
-In other words, we should be able to begin processing each item in our list regardless of whether or not the previous request is done, the previous API call has **returned**.
+In other words, we should be able to begin processing each item in our list regardless of whether or not the previous item is done, the previous API call has **returned**.
+
+We should be able to start another request before we get back the response from the previous `checkLink` call.
 
 This is the concurrency we want.
 
@@ -111,7 +113,7 @@ This is us spinning up 5 routines for each element.
 
 ```go {5} showLineNumbers
 func main() {
-    // Code 👨‍💻
+    // ...
 
     for _, link := range links {
         go checkLink(link)
@@ -119,7 +121,7 @@ func main() {
 }
 
 func checkLink(l string) {
-    // Code 👨‍💻
+    // ...
 }
 ```
 
@@ -139,7 +141,7 @@ func main() {
 }
 
 func checkLink(l string) {
-    // Code 👨‍💻
+    // ...
 }
 ```
 
@@ -166,7 +168,7 @@ func main() {
 }
 
 func checkLink(l string) {
-    // Code 👨‍💻
+    // ...
 }
 ```
 
@@ -225,7 +227,7 @@ func main() {
 }
 
 func checkLink(l string, c chan string) {
-    // Code 👨‍💻
+    // ...
 }
 ```
 
@@ -247,7 +249,7 @@ func main() {
 }
 
 func checkLink(l string, c chan string) {
-    // Code 👨‍💻
+    // ...
 }
 ```
 
@@ -271,7 +273,7 @@ func main() {
 }
 
 func checkLink(l string, c chan string) {
-    // Code 👨‍💻
+    // ...
 }
 ```
 
@@ -289,7 +291,7 @@ import (
 )
 
 func main() {
-    // Code 👨‍💻
+    // ...
 
     for l := range c {
         time.Sleep(time.Second * 5)
@@ -298,7 +300,7 @@ func main() {
 }
 
 func checkLink(l string, c chan string) {
-    // Code 👨‍💻
+    // ...
 }
 ```
 
