@@ -67,7 +67,6 @@ let hasPath = (graph, src, dst) => {
   while (q.length > 0) {
     const cur = q.shift()
     if (cur === dst) return true
-
     for (const nei of graph[cur]) {
       q.push(nei)
     }
@@ -100,6 +99,8 @@ console.log(hasPath(graph, 'f', 'k')) // true
 ```
 
 ### Undirected Path
+
+![Can we go from a to b](https://i.imgur.com/UgGlfI9.png)
 
 ```js
 const edges = [
@@ -271,7 +272,6 @@ const shortestPath = (edges, nodeA, nodeB) => {
 
   while (queue.length > 0) {
     const [cur, distance] = queue.shift()
-
     if (cur === nodeB) return distance
     for (const nei of graph[cur]) {
       if (!visited.has(nei)) {
