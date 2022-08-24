@@ -3,15 +3,21 @@ title: Dynamic Programming
 date: '2022-08-23'
 tags: ['Dynamic Programming']
 draft: true
-summary:
-images: []
+summary: A collection of Dynamic Coding problems and their solutions with Big O time complexity. 
+Solutions include not only brute force but optimized solutions as well.
+
 ---
 
 ## Dynamic programming
 
-Dynamic Programming is a technique in computer programming that helps to efficiently solve a class of problems that have overlapping subproblems and optimal substructure property.
+Dynamic Programming is a technique in computer programming that helps to efficiently solve a class of
+problems that have overlapping sub problems and optimal substructure property.
 
 ### Fibonacci
+
+Write a function that takes in a number as an argument.
+
+The function should return the n-th number of the fibonacci sequence.
 
 - Visualize the problem as a tree
 - Implement Tree using recursion
@@ -59,9 +65,9 @@ Time = O(n)
 
 Space = O(n)
 
-### GridTraveler
+### Grid Traveler
 
-Find number of ways to travel from top left to bottom right corner of grid.
+Write a function that returns the number of ways to travel from top left to bottom right corner of grid.
 
 ```js
 const gridTraveler = (m, n) => {
@@ -105,7 +111,7 @@ Time = O(m \* n)
 
 Space = O(n + m)
 
-### Cansum
+### Can Sum
 
 Write a function `canSum(k, nums)` that takes in a target sum and an array of numbers as arguments.
 
@@ -174,9 +180,9 @@ Time = O(m \* n)
 
 Space = O(m)
 
-### Howsum
+### How Sum
 
-Write a function `howSum(targetSum, nums)` that takes inn a targetSum and an array of numbers as arguments.
+Write a function `howSum(targetSum, nums)` that takes in a targetSum and an array of numbers as arguments.
 
 The function should return an array containing any combination of elements that add up to exactly the targetSum. If there is no combination that adds up to the targetSum, then return null.
 
@@ -241,7 +247,7 @@ Time = O(n \* m^2)
 
 Space = O(m^2)
 
-### BestSum
+### Best Sum
 
 Write a function `bestSum(targetSum, nums)` that takes in a targetSum and an array of numbers as arguments
 
@@ -311,7 +317,7 @@ Time = O(n \* m ^ 2)
 
 Space = O(m^2)
 
-### Summary
+#### Summary
 
 canSum -> "Can you do it? yes/no"
 howSum -> "How can you do it?"
@@ -321,7 +327,7 @@ canSum -> Decision Problem
 howSum -> Combinatoric Problem
 bestSum -> Optimization Problem
 
-## CanConstruct
+### Can Construct
 
 Write a
 
@@ -340,7 +346,7 @@ const canConstruct = (target, wordBank) => {
   return false
 }
 
-console.log(canConstruct('abcdef', ['ab', 'abc', 'cd', 'def', 'abcd', 'ef']))
+console.log(canConstruct('abcdef', ['ab', 'cd', 'ef', 'abc', 'def', 'abcd', 'ef']))
 console.log(canConstruct('skateboard', ['bo', 'rd', 'ate', 't', 'ska', 'sk', 'boar']))
 console.log(canConstruct('potato', ['p', 'ot', 'eo', 'g', 'a', 't']))
 console.log(
@@ -355,6 +361,131 @@ console.log(
 )
 ```
 
-Time = O(n \* m ^ 2)
+m = target length
+n = word bank length
+
+Time = O(n^m \* m)
+
+Space = O(m^2)
+
+```js
+const canConstruct = (target, wordBank, memo = {}) => {
+  if (target in memo) return memo[target]
+  if (target === '') return true
+
+  for (let word of wordBank) {
+    if (target.indexOf(word) === 0) {
+      const suffix = target.slice(word.length)
+      if (canConstruct(suffix, wordBank, memo) === true) {
+        memo[target] = true
+        return true
+      }
+    }
+  }
+  memo[target] = false
+  return false
+}
+
+console.log(canConstruct('abcdef', ['ab', 'cd', 'ef', 'abc', 'def', 'abcd', 'ef']))
+console.log(canConstruct('skateboard', ['bo', 'rd', 'ate', 't', 'ska', 'sk', 'boar']))
+console.log(canConstruct('potato', ['p', 'ot', 'eo', 'g', 'a', 't']))
+console.log(
+  canConstruct('eeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeef', [
+    'e',
+    'ee',
+    'eee',
+    'eeee',
+    'eeeee',
+    'eeeeee',
+  ])
+)
+```
+
+m = target length
+n = word bank length
+
+Time = O(n \* m^2)
+
+Space = O(m^2)
+
+### Count Construct
+
+```js
+const countConstruct = (target, wordBank) => {
+  if (target === '') return 1
+
+  let totalCount = 0
+
+  for (let word of wordBank) {
+    if (target.indexOf(word) === 0) {
+      const numWaysForRest = countConstruct(target.slice(word.length), wordBank)
+      totalCount += numWaysForRest
+    }
+  }
+  return totalCount
+}
+
+console.log(countConstruct('purple', ['purp', 'p', 'ur', 'le', 'purpl']))
+console.log(countConstruct('abcdef', ['ab', 'cd', 'ef', 'abc', 'def', 'abcd', 'ef']))
+console.log(countConstruct('skateboard', ['bo', 'rd', 'ate', 't', 'ska', 'sk', 'boar']))
+console.log(countConstruct('potato', ['p', 'ot', 'eo', 'g', 'a', 't']))
+console.log(
+  countConstruct('eeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeef', [
+    'e',
+    'ee',
+    'eee',
+    'eeee',
+    'eeeee',
+    'eeeeee',
+  ])
+)
+```
+
+m = target length
+n = word bank length
+
+Time = O(n \* m^2)
+
+Space = O(m^2)
+
+Memoized
+
+```js
+const countConstruct = (target, wordBank, memo = {}) => {
+  if (target in memo) return memo[target]
+  if (target === '') return 1
+
+  let totalCount = 0
+
+  for (let word of wordBank) {
+    if (target.indexOf(word) === 0) {
+      const numWaysForRest = countConstruct(target.slice(word.length), wordBank, memo)
+      totalCount += numWaysForRest
+    }
+  }
+  memo[target] = totalCount
+  return totalCount
+}
+
+console.log(countConstruct('purple', ['purp', 'p', 'ur', 'le', 'purpl']))
+console.log(countConstruct('abcdef', ['ab', 'cd', 'ef', 'abc', 'def', 'abcd', 'ef']))
+console.log(countConstruct('skateboard', ['bo', 'rd', 'ate', 't', 'ska', 'sk', 'boar']))
+console.log(countConstruct('potato', ['p', 'ot', 'eo', 'g', 'a', 't']))
+console.log(
+  countConstruct('eeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeef', [
+    'e',
+    'ee',
+    'eee',
+    'eeee',
+    'eeeee',
+    'eeeeee',
+  ])
+)
+```
+
+m = target length
+n = word bank length
+
+Time = O(n \* m^2)
 
 Space = O(m^2)
