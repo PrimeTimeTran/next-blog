@@ -2,7 +2,7 @@
 title: Best VSCode hotkeys
 date: '2022--08'
 tags: ['VSCode', 'Tricks']
-draft: true
+draft: false
 summary: Best VSCode hotkeys
 ---
 
