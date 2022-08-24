@@ -10,9 +10,10 @@ summary: A collection of Graph Coding problems and their solutions with Big O ti
 
 ## Iterative
 
-#### Depth First Iterative
+### DFS vs BFS
 
 ```js
+// DFS Iterative
 let depthFirstPrint = (graph, source) => {
   const stack = [source]
 
@@ -97,3 +98,192 @@ const graph = {
 
 console.log(hasPath(graph, 'f', 'k')) // true
 ```
+
+### Undirected Path
+
+```js
+const edges = [
+  ['i', 'j'],
+  ['k', 'i'],
+  ['m', 'k'],
+  ['k', 'l'],
+  ['o', 'n'],
+]
+
+const buildGraph = (edges) => {
+  const graph = {}
+  for (const edge of edges) {
+    const [a, b] = edge
+    if (!(a in graph)) graph[a] = []
+    if (!(b in graph)) graph[b] = []
+    graph[a].push(b)
+    graph[b].push(a)
+  }
+  return graph
+}
+
+const hasPath = (graph, src, dst, visited) => {
+  if (visited.has(src)) return false
+  if (src === dst) return true
+
+  visited.add(src)
+
+  for (const nei of graph[src]) {
+    if (hasPath(graph, nei, dst, visited) === true) {
+      return true
+    }
+  }
+  return false
+}
+
+const unDirectedPath = (edges, nodeA, nodeB) => {
+  const graph = buildGraph(edges)
+  return hasPath(graph, nodeA, nodeB, new Set())
+}
+
+console.log(unDirectedPath(edges, 'i', 'o'))
+console.log(unDirectedPath(edges, 'i', 'j'))
+
+// time = O(e)
+// space = O(n)
+```
+
+### Connected Components
+
+![Number of connected](https://i.imgur.com/YmO5nme.png)
+
+```js
+const graph = {
+  3: [],
+  4: [6],
+  6: [4, 5, 7, 8],
+  8: [6],
+  7: [6],
+  5: [6],
+  1: [2],
+  2: [1],
+}
+
+const connectedComponentsCount = (graph) => {
+  const visited = new Set()
+  let count = 0
+  for (const node in graph) {
+    console.log(visited)
+    if (explore(graph, node, visited) === true) {
+      count += 1
+    }
+  }
+  return count
+}
+
+const explore = (graph, current, visited) => {
+  if (visited.has(String(current))) return false
+
+  visited.add(String(current))
+
+  for (const nei of graph[current]) {
+    explore(graph, nei, visited)
+  }
+  return true
+}
+
+console.log(connectedComponentsCount(graph))
+
+// time = o(e)
+// space = o(n)
+```
+
+### Largest Size
+
+![Shortest](https://i.imgur.com/8cgn2Rl.png)
+
+```js
+const graph = {
+  0: [8, 1, 5],
+  1: [0],
+  5: [0, 8],
+  8: [0, 5],
+  2: [3, 4],
+  3: [2, 4],
+  4: [3, 2],
+}
+
+const largestComponent = (graph) => {
+  const visited = new Set()
+  let longest = 0
+  for (const node in graph) {
+    const size = exploreSize(graph, node, visited)
+    if (size > longest) longest = size
+  }
+
+  return longest
+}
+
+const exploreSize = (graph, cur, visited) => {
+  if (visited.has(String(cur)) === true) return 0
+
+  visited.add(String(cur))
+
+  let size = 1
+
+  for (const nei of graph[cur]) {
+    size += exploreSize(graph, nei, visited)
+  }
+
+  return size
+}
+
+console.log(largestComponent(graph))
+
+// t = o(e)
+// s = o(n)
+```
+
+### Shortest Path
+
+![Shortest](https://i.imgur.com/4qnm7pK.png)
+
+```js
+const edges = [
+  ['w', 'x'],
+  ['x', 'y'],
+  ['z', 'y'],
+  ['z', 'v'],
+  ['w', 'v'],
+]
+
+const buildGraph = (edges) => {
+  const graph = {}
+  for (const edge of edges) {
+    const [a, b] = edge
+    if (!(a in graph)) graph[a] = []
+    if (!(b in graph)) graph[b] = []
+    graph[a].push(b)
+    graph[b].push(a)
+  }
+  return graph
+}
+
+const shortestPath = (edges, nodeA, nodeB) => {
+  const graph = buildGraph(edges)
+  const visited = new Set([nodeA])
+  const queue = [[nodeA, 0]]
+
+  while (queue.length > 0) {
+    const [cur, distance] = queue.shift()
+
+    if (cur === nodeB) return distance
+    for (const nei of graph[cur]) {
+      if (!visited.has(nei)) {
+        visited.add(nei)
+        queue.push([nei, distance + 1])
+      }
+    }
+  }
+  return -1
+}
+
+console.log(shortestPath(edges, 'w', 'z'))
+```
+
+### Island Count
