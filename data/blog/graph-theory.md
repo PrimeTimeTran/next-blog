@@ -2,7 +2,7 @@
 title: Intro to Graph Theory with Python
 date: '2022-08-21'
 tags: ['Algorithms', 'Data structures', 'Leet Code', 'Python']
-
+draft: true
 summary: 'An introduction to graph theory using Leet Code problems and Python'
 ---
 
@@ -14,7 +14,7 @@ Here's what I've learned about [graph theory](https://en.wikipedia.org/wiki/Grap
 
 [![Watch the video](https://i.imgur.com/EaSxt5l.png)](https://www.youtube.com/watch?v=GiDsjIBOVoA)
 
-The content in the video about is much deeper in the field. If you watch it you'll appreciate how simple this post is.
+The content in the video about is much deeper in the field. If you watch it you should appreciate how simple this post is.
 
 ### Binary Trees
 
