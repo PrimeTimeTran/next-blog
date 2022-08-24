@@ -1,6 +1,6 @@
 ---
 title: 'Graph Theory'
-lastmod: '2022-08-21'
+date: '2022-08-21'
 tags: ['Graph']
 draft: true
 summary: 'Exploring Graph Theory'
@@ -97,7 +97,6 @@ let hasPath = (graph, src, dst) => {
 
   while (queue.length > 0) {
     const current = queue.shift()
-    console.log(current)
 
     if (current === dst) return true
 

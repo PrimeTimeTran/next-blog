@@ -3,18 +3,18 @@ title: Intro to Graph Theory with Python
 date: '2022-08-21'
 tags: ['Algorithms', 'Data structures', 'Leet Code', 'Python']
 
-summary: 'Master graph theory and algorithms using Python and Leet Code problems'
+summary: 'An introduction to graph theory using Leet Code problems and Python'
 ---
 
 ## Intro to Graph Theory with Python
 
-To master algorithms, data structures, and Python I began studying [Leet Code](https://leetcode.com/).
+To master algorithms, data structures, and Python I began working on [Leet Code](https://leetcode.com/).
 
 Here's what I've learned about [graph theory](https://en.wikipedia.org/wiki/Graph_theory#:~:text=In%20mathematics%2C%20graph%20theory%20is,also%20called%20links%20or%20lines) along the way.
 
 [![Watch the video](https://i.imgur.com/EaSxt5l.png)](https://www.youtube.com/watch?v=GiDsjIBOVoA)
 
-Feel free to dive deep intro more advanced content in the video above.
+The content in the video about is much deeper in the field. If you watch it you'll appreciate how simple this post is.
 
 ### Binary Trees
 
@@ -22,7 +22,7 @@ One of the first data structures in computer science is called a binary tree.
 
 Binary trees start with a node.
 
-The stating node is called a root.
+The starting node is called the root node.
 
 Every node will have a value.
 
@@ -44,7 +44,15 @@ class Node:
     self.right = right
 ```
 
+Below we'll look at a few Leet Code problems and their solutions.
+
 104. [Maximum Depth of Binary Tree](https://leetcode.com/problems/maximum-depth-of-binary-tree/submissions/)
+
+We use recursion.
+
+Our base case of nodes with no children we return 0.
+
+In the body of the function we return 1 + the max value of the left and right nodes.
 
 ```python
 class Solution:
@@ -56,6 +64,12 @@ class Solution:
 ```
 
 100. [Same Tree](https://leetcode.com/problems/same-tree/submissions/)
+
+We use recursion.
+
+We guard for the base case of either left or right child nodes being null(unbalanced)
+
+We guard for the case in which the value of the left and right nodes not being the same.
 
 ```python
 class Solution:
@@ -73,6 +87,12 @@ class Solution:
 ```
 
 572. [Subtree of Another Tree](https://leetcode.com/problems/subtree-of-another-tree/submissions/)
+
+We use recursion.
+
+We guard for the case we don't have a root node.
+
+We check if the tree is the same using helper method.
 
 ```python
 class Solution:
@@ -95,6 +115,12 @@ class Solution:
 ```
 
 226. [Invert Binary Tree](https://leetcode.com/problems/invert-binary-tree/submissions/)
+
+We use recursion.
+
+We guard the base case of a root's nodes being null.
+
+We swap left and right nodes.
 
 ```python
 class Solution:

@@ -1,9 +1,9 @@
 ---
 title: Best VSCode hotkeys
-date: '2022--08'
+date: '2022-08-23'
 tags: ['VSCode', 'Tricks']
 draft: false
-summary: Best VSCode hotkeys
+summary: VSCode hotkeys I use the most in my daily activity.
 ---
 
 Best VSCode hotkeys

@@ -1,7 +1,6 @@
 ---
 title: 'First thoughts on Defi'
-date: 2022-08-05T15:32:14Z
-lastmod: '2021-02-01'
+date: '2022-08-01'
 tags: ['Crypto', 'Blockchain', 'Typescript']
 draft: true
 summary: 'How to create a crypto wallet'
