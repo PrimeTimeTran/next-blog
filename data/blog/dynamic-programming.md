@@ -3,9 +3,7 @@ title: Dynamic Programming
 date: '2022-08-23'
 tags: ['Dynamic Programming']
 draft: true
-summary: A collection of Dynamic Coding problems and their solutions with Big O time complexity. 
-Solutions include not only brute force but optimized solutions as well.
-
+summary: A collection of Dynamic Coding problems and their solutions with Big O time complexity. Solutions include not only brute force but optimized solutions as well.
 ---
 
 ## Dynamic programming
