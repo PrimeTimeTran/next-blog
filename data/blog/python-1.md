@@ -23,6 +23,7 @@ sentences = "Hi " + "there you go"
 # List
 # Dict
 # Conditionals
+# Comprehensions
 ```
 
 ```python

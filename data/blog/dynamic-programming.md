@@ -6,24 +6,14 @@ draft: true
 summary: A collection of Dynamic Coding problems and their solutions with Big O time complexity. Solutions include not only brute force but optimized solutions as well.
 ---
 
-# Dynamic programming
-
 Dynamic Programming is a technique in computer programming that helps to efficiently solve a class of
 problems that have overlapping sub problems and optimal substructure property.
 
-## Recursive Memoization
-
-### Fibonacci
+## Fibonacci
 
 Write a function that takes in a number as an argument.
 
 The function should return the n-th number of the fibonacci sequence.
-
-- Visualize the problem as a tree
-- Implement Tree using recursion
-- Test it
-
-Recursive
 
 ```js
 const fib = (n) => {
@@ -41,13 +31,8 @@ Time = O(2^n)
 
 Space = O(n)
 
-Memoization
-
-- Add a memo object
-- Add a base case to return memo values
-- Store return values into memo
-
 ```js
+// Memoized
 const fib = (n, memo = {}) => {
   if (n in memo) return memo[n]
   if (n <= 2) return 1
@@ -65,7 +50,7 @@ Time = O(n)
 
 Space = O(n)
 
-### Grid Traveler
+## Grid Traveler
 
 Write a function that returns the number of ways to travel from top left to bottom right corner of grid.
 
@@ -84,9 +69,8 @@ console.log(gridTraveler(8, 8)) // 3432
 console.log(gridTraveler(18, 18)) // 2333606220
 ```
 
-Memoization
-
 ```js
+// Memoized
 const gridTraveler = (m, n, memo = {}) => {
   const key = m + ',' + n
 
@@ -111,7 +95,21 @@ Time = O(m \* n)
 
 Space = O(n + m)
 
-### Can Sum
+### Strategy
+
+1. Make it work
+
+- Visualize the problem as a tree
+- Implement the tree using recursion
+- Test it
+
+2. Make it efficient
+
+- Add a memo object
+- Add a base case to return memo values
+- Store return values into memo
+
+## Can Sum
 
 Write a function `canSum(k, nums)` that takes in a target sum and an array of numbers as arguments.
 
@@ -147,9 +145,9 @@ Time = O(n ^ m)
 
 Space = O(m)
 
-Cansum memoized
-
 ```js
+// Memoized
+
 const canSum = (targetSum, nums, memo = {}) => {
   if (targetSum in memo) return memo[targetSum]
   if (targetSum === 0) return true
@@ -180,7 +178,7 @@ Time = O(m \* n)
 
 Space = O(m)
 
-### How Sum
+## How Sum
 
 Write a function `howSum(targetSum, nums)` that takes in a targetSum and an array of numbers as arguments.
 
@@ -217,9 +215,9 @@ Time = O(n ^ m \* m)
 
 Space = O(m)
 
-Cansum memoized
-
 ```js
+// Memoized
+
 const howSum = (targetSum, nums, memo = {}) => {
   if (targetSum in memo) return memo[targetSum]
   if (targetSum === 0) return []
@@ -247,7 +245,7 @@ Time = O(n \* m^2)
 
 Space = O(m^2)
 
-### Best Sum
+## Best Sum
 
 Write a function `bestSum(targetSum, nums)` that takes in a targetSum and an array of numbers as arguments
 
@@ -286,6 +284,8 @@ Time = O(m \* n^m)
 Space = O(m^2)
 
 ```js
+// Memoized
+
 const bestSum = (targetSum, nums, memo = {}) => {
   if (targetSum in memo) return memo[targetSum]
   if (targetSum === 0) return []
@@ -317,19 +317,17 @@ Time = O(n \* m ^ 2)
 
 Space = O(m^2)
 
-#### Summary
+### Summary
 
-canSum -> "Can you do it? yes/no"
-howSum -> "How can you do it?"
-bestSum -> "What is the 'best' way to do it?"
+canSum -> "Can you do it? yes/no" -> Decision Problem
 
-canSum -> Decision Problem
-howSum -> Combinatoric Problem
-bestSum -> Optimization Problem
+howSum -> "How can you do it?" -> Combinatoric Problem
 
-### Can Construct
+bestSum -> "What is the 'best' way to do it?" -> Optimization Problem
 
-Write a
+## Can Construct
+
+Write a function that takes
 
 ```js
 const canConstruct = (target, wordBank) => {
@@ -369,6 +367,8 @@ Time = O(n^m \* m)
 Space = O(m^2)
 
 ```js
+// Memoized
+
 const canConstruct = (target, wordBank, memo = {}) => {
   if (target in memo) return memo[target]
   if (target === '') return true
@@ -408,7 +408,7 @@ Time = O(n \* m^2)
 
 Space = O(m^2)
 
-### Count Construct
+## Count Construct
 
 ```js
 const countConstruct = (target, wordBank) => {
@@ -448,9 +448,9 @@ Time = O(n \* m^2)
 
 Space = O(m^2)
 
-Memoized
-
 ```js
+// Memoized
+
 const countConstruct = (target, wordBank, memo = {}) => {
   if (target in memo) return memo[target]
   if (target === '') return 1
@@ -490,14 +490,14 @@ Time = O(n \* m^2)
 
 Space = O(m^2)
 
-### All Construct
+## All Construct
 
 Write a function `allConstruct(target, wordBank)` that accepts a target string and an array of strings.
 
 The function should return a 2D array containing all of the ways that the `target` can be constructed by concatenating elements of the `wordBank` array.
 
 ```js
-const allConstruct = (target, wordBank, memo = {}) => {
+const allConstruct = (target, wordBank) => {
   if (target === '') return [[]]
 
   const result = []
@@ -532,6 +532,8 @@ Time = O(n \* m^2)
 Space = O(m^2)
 
 ```js
+// Memoized
+
 const allConstruct = (target, wordBank, memo = {}) => {
   if (target in memo) return memo[target]
   if (target === '') return [[]]
@@ -561,7 +563,9 @@ console.log(allConstruct('', ['dog', 'cat', 'mouse']))
 // [[]]
 ```
 
-## Tabulation Recipe
+## Tabulation
+
+Tabaulation is another technique used to solve dynamic programming problems.
 
 Visualize as a table
 Size the based on inputs
@@ -570,7 +574,7 @@ Seed the trivial answer into the table
 Iterate through the table
 Fill further positions based on the current problem
 
-### Fib Tabulation
+## Fib Tabulation
 
 Write a function `fib(n)` that takes in a number as an argument. The function should return the n-th number of the Fibonacci sequence.
 
@@ -578,8 +582,6 @@ The 0th number of the sequence is 0.
 The 1st number of the sequence is 1.
 
 To generate the next number of the sequence, we sum the previous two.
-
-Iterative solution
 
 ```js
 const fib = (n) => {
@@ -600,7 +602,7 @@ Time = O(n)
 
 Space = O(n)
 
-### Grid Traveler
+## Grid Traveler
 
 Write a function `gridTraveler(m, n)` that calculates how many ways from top left to bottom right of a grid which is m x n spaces large.
 

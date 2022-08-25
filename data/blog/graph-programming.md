@@ -6,7 +6,7 @@ draft: true
 summary: A collection of Graph Coding problems and their solutions with Big O time complexity. Solutions include not only brute force but optimized solutions as well.
 ---
 
-# Graph programming
+## Graph programming
 
 ## Iterative
 
@@ -287,3 +287,102 @@ console.log(shortestPath(edges, 'w', 'z'))
 ```
 
 ### Island Count
+
+![Four islands](https://i.imgur.com/CjvWcib.png)
+
+```js
+const grid = [
+  ['W', 'L', 'W', 'W', 'W'],
+  ['W', 'L', 'W', 'W', 'W'],
+  ['W', 'W', 'W', 'L', 'W'],
+  ['W', 'W', 'L', 'L', 'W'],
+  ['L', 'W', 'W', 'L', 'L'],
+  ['L', 'L', 'W', 'W', 'W'],
+]
+
+const explore = (grid, r, c, visited) => {
+  const rowInbounds = 0 <= r && r < grid.length
+  const colInbounds = 0 <= c && c < grid[0].length
+
+  if (!rowInbounds || !colInbounds) return false
+
+  if (grid[r][c] === 'W') return false
+
+  const post = String(`${r},${c}`)
+  if (visited.has(post)) return false
+  visited.add(post)
+
+  explore(grid, r - 1, c, visited)
+  explore(grid, r + 1, c, visited)
+  explore(grid, r, c - 1, visited)
+  explore(grid, r, c + 1, visited)
+  return true
+}
+
+const islandCount = (grid) => {
+  const visited = new Set()
+  let count = 0
+  for (let r = 0; r < grid.length; r++) {
+    for (let c = 0; c < grid[0].length; c++) {
+      if (explore(grid, r, c, visited) === true) {
+        count += 1
+      }
+    }
+  }
+  return count
+}
+
+console.log(islandCount(grid)) // -> 3
+```
+
+t = o(rc)
+s = o(rc)
+
+### Min Island
+
+```js
+const grid = [
+  ['W', 'L', 'W', 'W', 'W'],
+  ['W', 'L', 'W', 'W', 'W'],
+  ['W', 'W', 'W', 'L', 'W'],
+  ['W', 'W', 'L', 'L', 'W'],
+  ['L', 'W', 'W', 'L', 'L'],
+  ['L', 'L', 'W', 'W', 'W'],
+]
+
+const explore = (grid, r, c, visited) => {
+  const rowInbounds = 0 <= r && r < grid.length
+  const colInbounds = 0 <= c && c < grid[0].length
+
+  if (!rowInbounds || !colInbounds) return 0
+
+  if (grid[r][c] === 'W') return 0
+
+  const post = String(`${r},${c}`)
+  if (visited.has(post)) return 0
+  visited.add(post)
+
+  let sum = 1
+  sum += explore(grid, r - 1, c, visited)
+  sum += explore(grid, r + 1, c, visited)
+  sum += explore(grid, r, c - 1, visited)
+  sum += explore(grid, r, c + 1, visited)
+  return sum
+}
+
+const minimumIsland = (grid) => {
+  const visited = new Set()
+  let minSize = Infinity
+
+  for (let r = 0; r < grid.length; r++) {
+    for (let c = 0; c < grid[0].length; c++) {
+      const size = explore(grid, r, c, visited)
+      if (size > 0 && size < minSize) {
+        minSize = size
+      }
+    }
+  }
+  return minSize
+}
+console.log(minimumIsland(grid)) // -> 2
+```

@@ -1,49 +1,66 @@
 ---
-title: 'Common Python'
+title: 'Sorting Algorithms'
 date: '2022-08-18'
 tags: ['Python']
 draft: true
-summary: 'Common Python'
+summary: 'Sorting Algorithms'
 layout: PostSimple
 bibliography: references-data.bib
 canonicalUrl:
 ---
 
-## Common Python
-
-### Intro
+## Sorting Algorithms
 
 ```python
-foods = ['apple', 'banana', 'carrot']
+nums = [20, 13, 3, 3, 4, 5, 1, 2, 8, 7, 9, 0, 11 ]
 
-vals = iter(foods)
+def bubble_sort(nums):
+  sorted = False
 
-print(next(vals))
-print(next(vals))
-print(next(vals))
-# apple, banana, carrot
-```
+  while not sorted:
+    sorted = True
+    for i in range(0, len(nums) - 1):
+      if nums[i] > nums[i + 1]:
+        sorted = False
+        nums[i], nums[i + 1] = nums[i + 1], nums[i]
 
-Quick sort.
+  return nums
+print('Bubble Sort:', bubble_sort(nums))
 
-```python
+
 def quick_sort(nums):
-  length = len(nums)
-
-  if length <= 1:
+  if len(nums) <= 1:
     return nums
-  pivot = nums.pop()
 
+  pivot = nums.pop()
   left = []
   right = []
 
   for n in nums:
-    if n > pivot:
-      right.append(n)
-    else:
+    if n < pivot:
       left.append(n)
+    else:
+      right.append(n)
 
   return quick_sort(left) + [pivot] + quick_sort(right)
 
-print(quick_sort([13, 3, 3, 4, 5, 1, 2, 8, 7, 9, 0, 11 ]))
+
+print('Quick Sort:', quick_sort(nums))
+
+
+def selection_sort(nums):
+  idx_length = len(nums) - 1
+  for i in range(0, idx_length):
+    min_value = i
+    for j in range(i + 1, len(nums)):
+      if nums[j] < nums[min_value]:
+        min_value = j
+    if min_value != i:
+      nums[min_value], nums[i]  = nums[i], nums[min_value]
+
+  return nums
+
+nums = [20, 13, 3, 3, 4, 5, 1, 2, 8, 7, 9, 0, 11 ]
+
+print('Selection Sort:', selection_sort(nums))
 ```
