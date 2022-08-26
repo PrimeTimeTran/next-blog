@@ -21,13 +21,15 @@ Over the course of my career I've worked in [booking/ticketing](https://vexere.c
 
 In this time I've become proficient with the following languages, tools, and technologies.
 
-#### HTML, CSS, JS, ES6, Ruby, Python, Dart, Java, Go,
+HTML, CSS, JS, ES6, Ruby, Python, Dart, Java, Go,
 
-#### Material, Bootstrap, Vuetify, Tailwind, SCSS, SASS, LESS,
+Material, Bootstrap, Vuetify, Tailwind, SCSS, SASS, LESS,
 
-#### SQL, MySQL, MongoDB, Sequelize, Mongoose, ActiveRecord, GraphQL, Bash, Git,
+SQL, MySQL, MongoDB, Sequelize, Mongoose, ActiveRecord, GraphQL, GRPC, Bash, Git, Docker,
 
-#### Ruby on Rails, Node, React, Vue, React Native, Flutter, Kubernetes & more
+Ruby on Rails, Node, React, Vue, React Native, Flutter, Gatsby, Next, Jekyll, WordPress,
+
+AWS, Firebase, Google Analytics, Heroku, Netlify & more
 
 ---
 

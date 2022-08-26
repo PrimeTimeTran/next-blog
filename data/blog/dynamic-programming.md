@@ -563,7 +563,7 @@ console.log(allConstruct('', ['dog', 'cat', 'mouse']))
 // [[]]
 ```
 
-## Tabulation
+f## Tabulation
 
 Tabaulation is another technique used to solve dynamic programming problems.
 
@@ -635,3 +635,99 @@ console.log(gridTraveler(18, 18)) // 2333606220
 Time = O(mn)
 
 Space = O(mn)
+
+## Can Sum
+
+Write a function `canSum(targetSum, numbers)` that takes in a target sum and an array of numbers as arguments.
+
+The function should return a boolean indicating whether or not it is possible to generate the targetSum using numbers from the array.
+
+You may use an element of the array as many times as needed.
+
+You may assume that all inputs are nonnegative.
+
+```js
+const canSum = (targetSum, numbers) => {
+  const table = Array(targetSum + 1).fill(false)
+  table[0] = true
+
+  for (let i = 0; i <= targetSum; i++) {
+    if (table[i]) {
+      for (const n of numbers) {
+        table[i + n] = true
+      }
+    }
+  }
+  return table[targetSum]
+}
+
+// m = targetSum
+// n = numbers.length
+
+// t = o(mn)
+// s = (m)
+
+console.log(canSum(7, [2, 3])) // true
+console.log(canSum(7, [5, 3, 4])) // true
+console.log(canSum(7, [2, 4])) // false
+console.log(canSum(8, [2, 3, 5])) // true
+console.log(canSum(300, [7, 14])) // false
+```
+
+## How Sum
+
+Write a function `howSum(targetSum, nums)` that takes in a targetSum and an array of numbers as arguments.
+
+The function should return an array containing any combination of elements that add up to exactly the targetSum.
+
+If there is no combination that adds up to the targetSum, then return null.
+
+If there are multiple combinations possible you may return any single one.
+
+```js
+const howSum = (targetSum, nums) => {
+  const table = Array(targetSum + 1).fill(null)
+  table[0] = []
+
+  for (let i = 0; i < targetSum; i++) {
+    if (table[i] !== null) {
+      for (const n of nums) {
+        table[i + n] = [...table[i], n]
+      }
+    }
+  }
+  return table[targetSum]
+}
+
+// t = o(nm ^ 2)
+// s = o(m ^ 2)
+
+console.log(howSum(7, [2, 3])) //  [3, 2, 2]
+console.log(howSum(7, [5, 3, 4, 7])) // [4, 3]
+console.log(howSum(7, [2, 4])) // null
+console.log(howSum(8, [2, 3, 5])) // [2, 2, 2, 2]
+console.log(howSum(300, [7, 14])) // null
+```
+
+## Best Sum
+
+Write a function `bestSum(targetSum, nums)` that takes in a targetSum and an array of numbers as arguments
+
+The function should return an array containing the shortest combination of numbers that add up to exactly the targetSum.
+
+If there is a tie for the shortest combination, you may return any one of the shortest.
+
+```js
+const bestSum = (targetSum, nums) => {
+  const table = Array(targetSum + 1).fill(null)
+}
+
+console.log(bestSum(7, [5, 3, 4, 7])) // [7]
+console.log(bestSum(8, [2, 3, 5])) // [3, 5]
+console.log(bestSum(8, [1, 4, 5])) // [4, 4]
+console.log(bestSum(100, [1, 2, 5, 25])) // [25, 25, 25, 25]
+```
+
+Time = O(m \* n^m)
+
+Space = O(m^2)

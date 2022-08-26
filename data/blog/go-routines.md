@@ -6,8 +6,6 @@ draft: false
 summary: Concurrency is the ability of program to handle multiple tasks simultaneously. Go uses go routines to achieve this, also known as concurrency.
 ---
 
-## Introduction
-
 Modern personal computers have multiple cores and servers on cloud providers such as AWS or GCP can have hundreds. ^[Nearly 200 cores on AWS instances https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/cpu-options-supported-instances-values.html ]
 
 [Go](<https://en.wikipedia.org/wiki/Go_(programming_language)>) was designed with [concurrency](<https://en.wikipedia.org/wiki/Concurrency_(computer_science)#:~:text=In%20computer%20science%2C%20concurrency%20is,without%20affecting%20the%20final%20outcome>) in mind in a way which many older programming languages were not.
