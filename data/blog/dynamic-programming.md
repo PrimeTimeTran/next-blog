@@ -410,6 +410,12 @@ Space = O(m^2)
 
 ## Count Construct
 
+Write a function `countConstruct(target, wordBank)` that accepts a target string and an array of strings.
+
+The function should return the number of ways that the `target` can be constructed by concatenating elements of the `wordBank` array.
+
+You may reuse elements of the word bank as many times as you want.
+
 ```js
 const countConstruct = (target, wordBank) => {
   if (target === '') return 1
@@ -720,14 +726,160 @@ If there is a tie for the shortest combination, you may return any one of the sh
 ```js
 const bestSum = (targetSum, nums) => {
   const table = Array(targetSum + 1).fill(null)
+  table[0] = []
+  for (let i = 0; i < targetSum; i++) {
+    if (table[i] != null) {
+      for (let n of nums) {
+        const newComb = [...table[i], n]
+        if (!table[i + n] || table[i + n].length > newComb.length) {
+          table[i + n] = newComb
+        }
+      }
+    }
+  }
+  return table[targetSum]
 }
 
 console.log(bestSum(7, [5, 3, 4, 7])) // [7]
 console.log(bestSum(8, [2, 3, 5])) // [3, 5]
 console.log(bestSum(8, [1, 4, 5])) // [4, 4]
 console.log(bestSum(100, [1, 2, 5, 25])) // [25, 25, 25, 25]
+
+// t = o(nm ^ 2)
+// s = o(m ^ 2)
 ```
 
 Time = O(m \* n^m)
 
 Space = O(m^2)
+
+## Can Construct
+
+Write a function that takes
+
+```js
+const canConstruct = (target, wordBank) => {
+  const table = Array(target.length + 1).fill(false)
+  table[0] = true
+
+  for (let i = 0; i < target.length; i++) {
+    if (table[i]) {
+      for (let word of wordBank) {
+        if (target.slice(i, i + word.length) === word) {
+          table[i + word.length] = true
+        }
+      }
+    }
+  }
+  return table[target.length]
+}
+
+console.log(canConstruct('abcdef', ['ab', 'cd', 'ef', 'abc', 'def', 'abcd', 'ef'])) // true
+console.log(canConstruct('skateboard', ['bo', 'rd', 'ate', 't', 'ska', 'sk', 'boar'])) // false
+console.log(canConstruct('potato', ['p', 'ot', 'eo', 'g', 'a', 't', 'o'])) // true
+console.log(
+  canConstruct('eeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeef', [
+    'e',
+    'ee',
+    'eee',
+    'eeee',
+    'eeeee',
+    'eeeeee',
+  ])
+) // false
+
+// t = o(nm ^ 2)
+// s = o(m)
+```
+
+## Count Consruct
+
+Write a function `countConstruct(target, wordBank)` that accepts a target string and an array of strings.
+
+The function should return the number of ways that the `target` can be constructed by concatenating elements of the `wordBank` array.
+
+You may reuse elements of the word bank as many times as you want.
+
+```js
+const countConstruct = (target, wordBank) => {
+  const table = Array(target.length + 1).fill(0)
+  table[0] = 1
+
+  for (let i = 0; i < target.length; i++) {
+    for (const word of wordBank) {
+      if (target.slice(i, i + word.length) === word) {
+        table[i + word.length] += table[i]
+      }
+    }
+  }
+
+  return table[target.length]
+}
+
+console.log(countConstruct('purple', ['purp', 'p', 'ur', 'le', 'purpl'])) // 2
+console.log(countConstruct('abcdef', ['ab', 'abc', 'cd', 'def', 'abcd'])) // 1
+console.log(countConstruct('skateboard', ['bo', 'rd', 'ate', 't', 'ska', 'sk', 'boar'])) // 0
+console.log(countConstruct('potato', ['p', 'ot', 'eo', 'g', 'a', 't']))
+console.log(
+  countConstruct('eeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeef', [
+    'e',
+    'ee',
+    'eee',
+    'eeee',
+    'eeeee',
+    'eeeeee',
+  ])
+)
+```
+
+m = target length
+n = word bank length
+
+Time = O(n \* m^2)
+
+Space = O(m)
+
+## All Construct
+
+Write a function `allConstruct(target, wordBank)` that accepts a target string and an array of strings.
+
+The function should return a 2D array containing all of the ways that the `target` can be constructed by concatenating elements of the `wordBank` array.
+
+```js
+const allConstruct = (target, wordBank) => {
+  const table = Array(target.length + 1)
+    .fill()
+    .map(() => [])
+  table[0] = [[]]
+
+  for (let i = 0; i < target.length; i++) {
+    for (const word of wordBank) {
+      if (target.slice(i, i + word.length) === word) {
+        const newComb = table[i].map((arr) => [...arr, word])
+        table[i + word.length].push(...newComb)
+      }
+    }
+  }
+  return table[target.length]
+}
+
+console.log(allConstruct('fish', ['dog', 'cat', 'mouse'])) // [[]]
+console.log(allConstruct('bird', ['bi', 'rd', 'do', 'g'])) // [ [ 'bi', 'rd' ] ]
+console.log(allConstruct('purple', ['purp', 'p', 'ur', 'le', 'purpl']))
+// [
+//   ['purp', 'le'],
+//   ['p', 'ur', 'p', 'le'],
+// ]
+console.log(allConstruct('ape', ['a', 'p', 'e', 'ap', 'pe']))
+// [ [ 'purp', 'le' ], [ 'p', 'ur', 'p', 'le' ] ]
+// []
+// [ [] ]
+// [ [ 'a', 'pe' ], [ 'ap', 'e' ], [ 'a', 'p', 'e' ] ]
+```
+
+m = target length
+n = word bank length
+
+Time = O(n^m)
+
+Space = O(n^m)
