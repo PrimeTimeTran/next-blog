@@ -11,8 +11,16 @@ github: https://github.com/primeTimeTran
 
 # Loi Tran is professional, developer, and architect
 
-He builds beautifully crafted webpages using HTML, CSS, JS and more.
+He builds beautifully crafted webpages 💻 and mobile 📱 apps.
 
-His frameworks of choice are Vue, React, Next, and Flutter.
+---
+
+With nearly a decade of software development experience he's proficient with the following languages and tools:
+
+#### HTML, CSS, JS, ES6, Ruby, Python, Go, Git
+
+#### Ruby on Rails, Node, React, Vue, React Native, Flutter, Kubernetes.
+
+---
 
 When he's not working he enjoys American 🇺🇸 Football 🏈, Kung Fu 🥋, discussions on philosophy/politics 🤔 and contemplating the meaning of life.
