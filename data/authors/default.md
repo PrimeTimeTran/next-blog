@@ -13,13 +13,15 @@ github: https://github.com/primeTimeTran
 
 He builds beautifully crafted webpages 💻 and mobile 📱 apps.
 
+He's an [AWS Certified Cloud Practitioner](https://www.credly.com/badges/c6fa2310-f2ec-4bf3-a43b-0009a3718ef0)
+
 ---
 
 With nearly a decade of software development experience he's proficient with the following languages and tools:
 
-#### HTML, CSS, JS, ES6, Ruby, Python, Go, Git
+#### HTML, CSS, JS, ES6, Ruby, Python, Dart, Java, Go, SQL, MongoDB, Git
 
-#### Ruby on Rails, Node, React, Vue, React Native, Flutter, Kubernetes.
+#### Ruby on Rails, Node, React, Vue, React Native, Flutter, Kubernetes
 
 ---
 
