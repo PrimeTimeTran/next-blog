@@ -6,12 +6,12 @@ draft: true
 summary: A collection of Dynamic Coding problems and their solutions with Big O time complexity. Solutions include not only brute force but optimized solutions as well.
 ---
 
-Dynamic Programming is a technique in computer programming that helps to efficiently solve a class of
+is a technique in computer programming that helps to efficiently solve a class of
 problems that have overlapping sub problems and optimal substructure property.
 
 ## Fibonacci
 
-Write a function that takes in a number as an argument.
+Write a function `fib(n)` that takes in a number as an argument.
 
 The function should return the n-th number of the fibonacci sequence.
 
@@ -21,15 +21,13 @@ const fib = (n) => {
   return fib(n - 1) + fib(n - 2)
 }
 
+// t = O(2^n)
+// s = O(n)
 console.log(fib(6)) // 8
 console.log(fib(7)) // 13
 console.log(fib(8)) // 21
 console.log(fib(50)) // 12586269025
 ```
-
-Time = O(2^n)
-
-Space = O(n)
 
 ```js
 // Memoized
@@ -40,19 +38,17 @@ const fib = (n, memo = {}) => {
   return memo[n]
 }
 
+// t = O(n)
+// s = O(n)
 console.log(fib(6)) // 8
 console.log(fib(7)) // 13
 console.log(fib(8)) // 21
 console.log(fib(50)) // 12586369025
 ```
 
-Time = O(n)
-
-Space = O(n)
-
 ## Grid Traveler
 
-Write a function that returns the number of ways to travel from top left to bottom right corner of grid.
+Write a function `gridTraveler(m, n)` that returns the number of ways to travel from top left to bottom right corner of grid.
 
 ```js
 const gridTraveler = (m, n) => {
@@ -60,7 +56,8 @@ const gridTraveler = (m, n) => {
   if (m === 0 || n === 0) return 0
   return gridTraveler(m - 1, n) + gridTraveler(m, n - 1)
 }
-
+// t = O(2^m+n)
+// s = O(n + m)
 console.log(gridTraveler(1, 1)) // 1
 console.log(gridTraveler(2, 3)) // 3
 console.log(gridTraveler(3, 2)) // 3
@@ -83,6 +80,8 @@ const gridTraveler = (m, n, memo = {}) => {
   return memo[key]
 }
 
+// t = O(m * n)
+// s = O(n + m)
 console.log(gridTraveler(1, 1)) // 1
 console.log(gridTraveler(2, 3)) // 3
 console.log(gridTraveler(3, 2)) // 3
@@ -91,17 +90,13 @@ console.log(gridTraveler(8, 8)) // 3432
 console.log(gridTraveler(18, 18)) // 2333606220
 ```
 
-Time = O(m \* n)
-
-Space = O(n + m)
-
-### Strategy
+### Memoization Recipe
 
 1. Make it work
 
-- Visualize the problem as a tree
-- Implement the tree using recursion
-- Test it
+- visualize the problem as a tree
+- tmplement the tree using recursion
+- test it
 
 2. Make it efficient
 
@@ -111,7 +106,7 @@ Space = O(n + m)
 
 ## Can Sum
 
-Write a function `canSum(k, nums)` that takes in a target sum and an array of numbers as arguments.
+Write a function `canSum(targetSum, nums)` that takes in a target sum and an array of numbers as arguments.
 
 The function should return a boolean indicating whether or not it is possible to generate the targetSum using numbers from the array.
 
@@ -132,18 +127,15 @@ const canSum = (targetSum, nums) => {
   return false
 }
 
+// t = O(n^m)
+// s = O(m)
 console.log(canSum(7, [2, 3])) // true
 console.log(canSum(8, [2, 3, 5])) // true
 console.log(canSum(7, [5, 3, 4, 7])) // true
 console.log(canSum(7, [5, 3, 4, 7])) // true
-
 console.log(canSum(7, [2, 4])) // false
 console.log(canSum(300, [7, 14])) // false
 ```
-
-Time = O(n ^ m)
-
-Space = O(m)
 
 ```js
 // Memoized
@@ -883,3 +875,13 @@ n = word bank length
 Time = O(n^m)
 
 Space = O(n^m)
+
+## Conclusion
+
+Dynamic Programming
+
+- notice any overlapping sub problems
+- decide what is the trivially smallest input
+- think recursively to use memoization
+- think iteratively to use Tabulation
+- draw a strategy first!

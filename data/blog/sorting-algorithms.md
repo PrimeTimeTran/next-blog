@@ -61,7 +61,17 @@ def selection_sort(nums):
 
   return nums
 
-nums = [20, 13, 3, 3, 4, 5, 1, 2, 8, 7, 9, 0, 11 ]
 
 print('Selection Sort:', selection_sort(nums))
+
+
+
+def merge_sort(arr):
+  if len(arr) < 2:
+    return arr
+
+  midIdx = len(arr) // 2
+  leftArr = arr[:midIdx]
+  rightArr = arr[midIdx:]
+  return merge(merge_sort(leftArr), merge_sort(rightArr))
 ```
