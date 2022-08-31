@@ -1,29 +1,41 @@
-const allConstruct = (target, wordBank) => {
-  const table = Array(target.length + 1)
-    .fill()
-    .map(() => [])
-  table[0] = [[]]
+const edges = [
+  ['i', 'j'],
+  ['k', 'i'],
+  ['m', 'k'],
+  ['k', 'l'],
+  ['o', 'n'],
+]
 
-  for (let i = 0; i < target.length; i++) {
-    for (const word of wordBank) {
-      if (target.slice(i, i + word.length) === word) {
-        const newComb = table[i].map((arr) => [...arr, word])
-        table[i + word.length].push(...newComb)
-      }
-    }
+const buildGraph = (edges) => {
+  const graph = {}
+  for (const edge of edges) {
+    const [a, b] = edge
+    if (!(a in graph)) graph[a] = []
+    if (!(b in graph)) graph[b] = []
+    graph[a].push(b)
+    graph[b].push(a)
   }
-  return table[target.length]
+  return graph
 }
 
-console.log(allConstruct('fish', ['dog', 'cat', 'mouse'])) // [[]]
-console.log(allConstruct('bird', ['bi', 'rd', 'do', 'g'])) // []
-console.log(allConstruct('purple', ['purp', 'p', 'ur', 'le', 'purpl']))
-// [
-//   ['purp', 'le'],
-//   ['p', 'ur', 'p', 'le'],
-// ]
-console.log(allConstruct('ape', ['a', 'p', 'e', 'ap', 'pe']))
-// [ [ 'purp', 'le' ], [ 'p', 'ur', 'p', 'le' ] ]
-// []
-// [ [] ]
-// [ [ 'a', 'pe' ], [ 'ap', 'e' ], [ 'a', 'p', 'e' ] ]
+const hasPath = (graph, src, dst, visited) => {
+  if (visited.has(src)) return false
+  if (src === dst) return true
+
+  visited.add(src)
+
+  for (const nei of graph[src]) {
+    if (hasPath(graph, nei, dst, visited) === true) {
+      return true
+    }
+  }
+  return false
+}
+
+const unDirectedPath = (edges, nodeA, nodeB) => {
+  const graph = buildGraph(edges)
+  return hasPath(graph, nodeA, nodeB, new Set())
+}
+
+console.log(unDirectedPath(edges, 'i', 'o'))
+console.log(unDirectedPath(edges, 'i', 'j'))

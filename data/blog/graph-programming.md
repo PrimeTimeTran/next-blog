@@ -188,13 +188,13 @@ const explore = (graph, current, visited) => {
   return true
 }
 
-console.log(connectedComponentsCount(graph))
+console.log(connectedComponentsCount(graph)) // 3
 
 // time = o(e)
 // space = o(n)
 ```
 
-### Largest Size
+### Largest Component
 
 ![Shortest](https://i.imgur.com/8cgn2Rl.png)
 
@@ -292,12 +292,12 @@ console.log(shortestPath(edges, 'w', 'z'))
 
 ```js
 const grid = [
-  ['W', 'L', 'W', 'W', 'W'],
-  ['W', 'L', 'W', 'W', 'W'],
-  ['W', 'W', 'W', 'L', 'W'],
-  ['W', 'W', 'L', 'L', 'W'],
-  ['L', 'W', 'W', 'L', 'L'],
-  ['L', 'L', 'W', 'W', 'W'],
+  ['W', 'L', 'W', 'W', 'L', 'W'],
+  ['L', 'L', 'W', 'W', 'L', 'W'],
+  ['W', 'L', 'W', 'W', 'W', 'W'],
+  ['W', 'W', 'W', 'L', 'L', 'W'],
+  ['W', 'L', 'W', 'L', 'L', 'W'],
+  ['W', 'W', 'W', 'W', 'W', 'W'],
 ]
 
 const explore = (grid, r, c, visited) => {
@@ -331,12 +331,10 @@ const islandCount = (grid) => {
   }
   return count
 }
-
-console.log(islandCount(grid)) // -> 3
+// t = o(rc)
+// s = o(rc)
+console.log(islandCount(grid)) // -> 4
 ```
-
-t = o(rc)
-s = o(rc)
 
 ### Min Island
 

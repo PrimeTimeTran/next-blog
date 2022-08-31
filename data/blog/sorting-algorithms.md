@@ -28,7 +28,6 @@ def bubble_sort(nums):
 
 print('Bubble Sort:', bubble_sort(nums))
 
-
 def quick_sort(nums):
   if len(nums) <= 1:
     return nums
@@ -45,9 +44,7 @@ def quick_sort(nums):
 
   return quick_sort(left) + [pivot] + quick_sort(right)
 
-
 print('Quick Sort:', quick_sort(nums))
-
 
 def selection_sort(nums):
   idx_length = len(nums) - 1
@@ -61,10 +58,7 @@ def selection_sort(nums):
 
   return nums
 
-
 print('Selection Sort:', selection_sort(nums))
-
-
 
 def merge_sort(arr):
   if len(arr) < 2:
@@ -74,4 +68,17 @@ def merge_sort(arr):
   leftArr = arr[:midIdx]
   rightArr = arr[midIdx:]
   return merge(merge_sort(leftArr), merge_sort(rightArr))
+
+def merge(left, right):
+  res = []
+  leftIdx = 0
+  rightIdx =  0
+  while leftIdx < len(left) and rightIdx < len(right):
+    if left[leftIdx] < right[rightIdx]
+      res.push(left[leftIdx])
+      leftIdx += 1
+    else:
+      res.push(right[rightIdx])
+      rightIdx += 1
+
 ```
