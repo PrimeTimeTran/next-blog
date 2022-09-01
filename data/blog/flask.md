@@ -1,6 +1,6 @@
 ---
 title: Flask
-date: '2022-08-20'
+date: '2019-08-20'
 tags: ['Flask', 'Python']
 draft: false
 summary: How to setup a new Flask project which serves as a MVP HTTP server
