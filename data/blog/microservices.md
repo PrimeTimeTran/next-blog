@@ -1,9 +1,9 @@
 ---
-title: 'Micro Service Oriented Architecture'
+title: 'A Micro Service Architecture'
 date: '2022-09-01'
-tags: ['Docker', 'Node', 'Express', 'Micro Services']
+tags: ['Docker', 'Micro Services']
 draft: false
-summary: 'How to create a containerized rest API and web app following the microservice pattern'
+summary: 'How to create a microservice. Example micro service using NPM, ExpressJS, NodeJS, and Docker.'
 layout: PostSimple
 bibliography: references-data.bib
 ---
@@ -174,7 +174,7 @@ PORT=3001 npm start
 
 Refactor client business logic.
 
-```js
+```js {3}
 // ./client/views/layout.jade
 script((type = 'text/javascript')).setInterval(() => {
   fetch('http://localhost:3001/magic')
@@ -272,13 +272,13 @@ npm i nodemon
 
 Configure api service to use nodemon when it starts.
 
-```json {6, 15} showLineNumbers
+```json {6}
 {
   "name": "responder",
   "version": "0.0.0",
   "private": true,
   "scripts": {
-    "start": "nodemon ./bin/www"
+    "start": "nodemon ./bin/www" // Change me
   },
   "dependencies": {
     "cookie-parser": "~1.4.4",
@@ -294,7 +294,7 @@ Configure api service to use nodemon when it starts.
 
 Add volumes inside of docker compose file.
 
-```yaml
+```yaml {15-20}
 version: '3.9'
 services:
   web-app-service:
@@ -309,11 +309,11 @@ services:
     depends_on:
       - web-app-service
 
-    volumes:
-      - ./api:/usr/src/app
+    volumes: # Add us
+      - ./api:/usr/src/app # Add us
 
-volumes:
-  api:
+volumes: # Add us
+  api: # Add us
 ```
 
 You should now see that when you change the list of wizards to one person, the changes are reflected immediately, awesome!
