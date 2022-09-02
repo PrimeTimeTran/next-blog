@@ -1,6 +1,6 @@
 ---
 title: Must know VSCode hotkeys
-date: '2022-08-23'
+date: '2020-02-23'
 tags: ['VSCode', 'Tricks']
 draft: false
 summary: VSCode hotkeys I use the most in my daily activity.

@@ -1,6 +1,6 @@
 ---
 title: Must know Vim Shortcuts
-date: '2022-08-31'
+date: '2020-01-31'
 tags: ['Vim']
 draft: false
 summary: Must know Vim Shortcuts
