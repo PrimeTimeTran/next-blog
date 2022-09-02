@@ -1,7 +1,7 @@
 ---
-title: 'Micro services'
-date: '2021-10-01'
-tags: ['Docker', 'Node', 'Express']
+title: 'Micro Service Oriented Architecture'
+date: '2022-09-01'
+tags: ['Docker', 'Node', 'Express', 'Micro Services']
 draft: false
 summary: 'How to create a containerized rest API and web app following the microservice pattern'
 layout: PostSimple
@@ -243,7 +243,7 @@ We should now see docker running both of our containers.
 
 We can use a docker compose file to run multiple containers if we want.
 
-Create docker-compose.yml file and define two services.
+Create `docker-compose.yml` file and define two services.
 
 ```yaml
 version: '3.9'
@@ -292,7 +292,7 @@ Configure api service to use nodemon when it starts.
 }
 ```
 
-Define volumes inside of dockerfile.
+Add volumes inside of docker compose file.
 
 ```yaml
 version: '3.9'
@@ -315,3 +315,9 @@ services:
 volumes:
   api:
 ```
+
+You should now see that when you change the list of wizards to one person, the changes are reflected immediately, awesome!
+
+Could this article be improved? Please make a suggestion.
+
+Your thoughts and comments are welcome and appreciated.
