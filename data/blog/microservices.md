@@ -10,6 +10,8 @@ bibliography: references-data.bib
 
 ## How to create full stack rest API and web app micro services
 
+![Microservice](https://s1.gifyu.com/images/microservices.gif)
+
 In this tutorial we'll create a full stack web application following the micro service architecture.
 
 We'll use [npm](https://www.npmjs.com/), [express](https://expressjs.com/), and [nodejs](https://nodejs.org/en/) to build a client web app which requests data from an api server.
@@ -316,7 +318,9 @@ volumes: # Add us
   api: # Add us
 ```
 
-You should now see that when you change the list of wizards to one person, the changes are reflected immediately, awesome!
+You should now see that when you change the list of wizards to one person, the changes are reflected immediately, without needing to stop the container, rebuild the image, and restart it, awesome!
+
+![Microservice](https://s1.gifyu.com/images/microservices-end.gif)
 
 Could this article be improved? Please make a suggestion.
 
