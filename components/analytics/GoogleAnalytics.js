@@ -24,6 +24,8 @@ const GAScript = () => {
   )
 }
 
+console.log('GA loaded')
+
 export default GAScript
 
 // https://developers.google.com/analytics/devguides/collection/gtagjs/events
