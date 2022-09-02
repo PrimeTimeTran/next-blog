@@ -1,9 +1,9 @@
 ---
-title: 'Docker'
+title: 'Micro services'
 date: '2021-10-01'
 tags: ['Docker', 'Node', 'Express']
 draft: false
-summary: 'How to create full stack rest API and web app micro services'
+summary: 'How to create a containerized rest API and web app following the microservice pattern'
 layout: PostSimple
 bibliography: references-data.bib
 ---
