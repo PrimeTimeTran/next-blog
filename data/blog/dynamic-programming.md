@@ -3,8 +3,7 @@ title: Dynamic Programming
 date: '2022-08-23'
 tags: ['Dynamic Programming']
 draft: false
-summary: A collection of dynamic coding problems and their solutions with Big O 
-time complexity saved for reference. Solutions include both brute force and optimized solutions.
+summary: A collection of dynamic coding problems and their solutions with Big O time complexity saved for reference. Solutions include both brute force and optimized solutions.
 ---
 
 is a technique in computer programming that helps to efficiently solve a class of
