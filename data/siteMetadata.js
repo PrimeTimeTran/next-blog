@@ -2,7 +2,8 @@ const siteMetadata = {
   title: 'Tech Blog',
   author: 'Loi Tran',
   headerTitle: 'Tech Blog',
-  description: 'A tech blog for progeny',
+  description:
+    'A tech blog documenting some of the various tools and technologies Ive worked on over the years',
   language: 'en-us',
   theme: 'system', // system, dark or light
   siteUrl: 'https://loi-tran-blog.netlify.appg',
