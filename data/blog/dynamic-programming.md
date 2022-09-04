@@ -3,7 +3,8 @@ title: Dynamic Programming
 date: '2022-08-23'
 tags: ['Dynamic Programming']
 draft: false
-summary: A collection of Dynamic Coding problems and their solutions with Big O time complexity. Solutions include not only brute force but optimized solutions as well.
+summary: A collection of dynamic coding problems and their solutions with Big O 
+time complexity saved for reference. Solutions include both brute force and optimized solutions.
 ---
 
 is a technique in computer programming that helps to efficiently solve a class of
@@ -319,7 +320,11 @@ bestSum -> "What is the 'best' way to do it?" -> Optimization Problem
 
 ## Can Construct
 
-Write a function that takes
+Write a function `canConstruct(target, wordBank)` that accepts a target string and an array of strings.
+
+The function should return a boolean indicating whether or not the `target` can be constructed by concatenating elements of the `wordBank` array.
+
+You may reuse elements of `wordBank` as many times as needed.
 
 ```js
 const canConstruct = (target, wordBank) => {
@@ -747,7 +752,11 @@ Space = O(m^2)
 
 ## Can Construct
 
-Write a function that takes
+Write a function `canConstruct(target, wordBank)` that accepts a target string and an array of strings.
+
+The function should return a boolean indicating whether or not the `target` can be constructed by concatenating elements of the `wordBank` array.
+
+You may reuse elements of `wordBank` as many times as needed.
 
 ```js
 const canConstruct = (target, wordBank) => {
