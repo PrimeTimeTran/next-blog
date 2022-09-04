@@ -1,5 +1,11 @@
 const projectsData = [
   {
+    title: `Drone Study Guide`,
+    description: `A study guide for those wanting to prepare for the part 107 exam`,
+    imgSrc: '/static/images/drone.jpeg',
+    href: 'https://www.faapart107pilot.com/',
+  },
+  {
     title: 'TikTok',
     description: `Building generation Z's most popular app using Google's latest mobile 
     app development technology, Flutter. Mobile first but works on web because of Flutter's 
