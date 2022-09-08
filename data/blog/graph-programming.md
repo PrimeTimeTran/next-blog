@@ -1,16 +1,33 @@
 ---
-title: Graph Programming
+title: Graph Theory for Programmers
 date: '2022-08-23'
-tags: ['Graph Programming']
+tags: ['Graph Theory']
 draft: false
 summary: A collection of Graph Coding problems and their solutions with Big O time complexity. Solutions include not only brute force but optimized solutions as well.
 ---
 
-## Graph programming
+## Graph Theory for Programmers
 
-## Iterative
+By solving several coding challenges we'll familiarize ourselves with the following concepts in [graph theory](https://en.wikipedia.org/wiki/Graph_theory#:~:text=In%20mathematics%2C%20graph%20theory%20is,also%20called%20links%20or%20lines).
+
+- nodes ands vertexes
+- directed vs undirected
+- edges
+- dfs
+- bfs
+- adjacency list
+- stack
+- queue
+
+![Directed vs Undirected](https://i.imgur.com/MZCysoV.png)
 
 ### DFS vs BFS
+
+![Graph Traversal](https://i.imgur.com/UT6mMey.png)
+
+We'll start by learning how to traverse the graph.
+
+Assuming we start at `a`, how can we visit every node in our graph?
 
 ```js
 // DFS Iterative
@@ -34,6 +51,21 @@ depthFirstPrint = (graph, source) => {
   }
 }
 
+const graph = {
+  a: ['b', 'c'],
+  b: ['d'],
+  c: ['e'],
+  d: ['f'],
+  e: [],
+  f: [],
+}
+
+depthFirstPrint(graph, 'a')
+```
+
+Two ways to implement DFS traversal of a graph, one iteratively and one recursively.
+
+```js
 // BFS
 const breadthFirstPrint = (graph, source) => {
   const q = [source]
@@ -58,29 +90,35 @@ const graph = {
 breadthFirstPrint(graph, 'a')
 ```
 
+BFS using a queue.
+
 ### Has Path
 
+Identify if there exists a path between two nodes in a graph.
+
+![Graph](https://i.imgur.com/ITnwCMB.png)
+
 ```js
-// BFS
+// DFS
 let hasPath = (graph, src, dst) => {
+  if (src == dst) return true
+
+  for (const nei of graph[src]) {
+    if (hasPath(graph, nei, dst)) {
+      return true
+    }
+  }
+  return false
+}
+
+// BFS
+hasPath = (graph, src, dst) => {
   const q = [src]
   while (q.length > 0) {
     const cur = q.shift()
     if (cur === dst) return true
     for (const nei of graph[cur]) {
       q.push(nei)
-    }
-  }
-  return false
-}
-
-// DFS
-hasPath = (graph, src, dst) => {
-  if (src == dst) return true
-
-  for (const nei of graph[src]) {
-    if (hasPath(graph, nei, dst)) {
-      return true
     }
   }
   return false
@@ -137,19 +175,23 @@ const hasPath = (graph, src, dst, visited) => {
   return false
 }
 
-const unDirectedPath = (edges, nodeA, nodeB) => {
+const undirectedPath = (edges, start, end) => {
   const graph = buildGraph(edges)
-  return hasPath(graph, nodeA, nodeB, new Set())
+  return hasPath(graph, start, end, new Set())
 }
 
-console.log(unDirectedPath(edges, 'i', 'o'))
-console.log(unDirectedPath(edges, 'i', 'j'))
+console.log(undirectedPath(edges, 'i', 'o'))
+console.log(undirectedPath(edges, 'i', 'j'))
 
 // time = O(e)
 // space = O(n)
 ```
 
+Recursive DFS of an undirected graph.
+
 ### Connected Components
+
+Count how many groups of connected nodes we have in the graph.
 
 ![Number of connected](https://i.imgur.com/YmO5nme.png)
 
@@ -169,7 +211,8 @@ const connectedComponentsCount = (graph) => {
   const visited = new Set()
   let count = 0
   for (const node in graph) {
-    console.log(visited)
+    // console.log(visited)
+    console.log(node)
     if (explore(graph, node, visited) === true) {
       count += 1
     }
@@ -384,3 +427,5 @@ const minimumIsland = (grid) => {
 }
 console.log(minimumIsland(grid)) // -> 2
 ```
+
+Shout out to [Free Code Camp](https://www.youtube.com/watch?v=tWVWeAqZ0WU&t=1s&ab_channel=freeCodeCamp.org)

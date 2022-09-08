@@ -31,12 +31,6 @@ source venv/bin/activate
 env | grep VIRTUAL_ENV
 ```
 
-## Create project directory
-
-```bash
-deactivate
-```
-
 ## Install Flask
 
 ```bash
@@ -69,4 +63,10 @@ if __name__ == '__main__':
 
 ```bash
 flask run
+```
+
+## Deactivate environment
+
+```bash
+deactivate
 ```
