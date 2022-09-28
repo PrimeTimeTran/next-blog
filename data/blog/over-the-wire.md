@@ -2,7 +2,7 @@
 title: 'Over the Wire'
 date: '2022-09-27'
 tags: ['Security']
-draft: true
+draft: false
 summary: 'A fun tool for learning information security practices'
 layout: PostSimple
 bibliography: references-data.bib
