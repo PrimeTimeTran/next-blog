@@ -18,23 +18,23 @@ The content in the video about is much deeper in the field. If you watch it you 
 
 ### Binary Trees
 
-One of the first data structures in computer science is called a binary tree.
+An essential data structures in computer science is called the binary tree.
 
 Binary trees start with a node.
 
 The starting node is called the root node.
 
-Every node will have a value.
+Every node has value.
 
 Nodes can have one or more child nodes.
 
-Lines connecting the nodes indicate that their is a parent child relationship.
+Lines connecting the nodes indicate that there is a parent child relationship.
 
 In binary trees, nodes can have a maximum of 2 children.
 
 The children can also have their own children
 
-Below is a Python Node.
+Below is a Python implementation for a Node that a free might have.
 
 ```python
 class Node:
@@ -48,11 +48,7 @@ Below we'll look at a few Leet Code problems and their solutions.
 
 104. [Maximum Depth of Binary Tree](https://leetcode.com/problems/maximum-depth-of-binary-tree/submissions/)
 
-We use recursion.
-
-Our base case of nodes with no children we return 0.
-
-In the body of the function we return 1 + the max value of the left and right nodes.
+In this problem we're suppose to identify the maximum level the tree is. I think of this as being how many generations a tree has(considering parent, child, grandchild hierarchy).
 
 ```python
 class Solution:
@@ -63,13 +59,15 @@ class Solution:
     return 1 + max(self.maxDepth(root.left), self.maxDepth(root.right))
 ```
 
-100. [Same Tree](https://leetcode.com/problems/same-tree/submissions/)
-
 We use recursion.
 
-We guard for the base case of either left or right child nodes being null(unbalanced)
+Our base case of nodes with no children we return 0.
 
-We guard for the case in which the value of the left and right nodes not being the same.
+In the body of the function we return 1 + the max of the left and right nodes where we recursively call maxDepth.
+
+100. [Same Tree](https://leetcode.com/problems/same-tree/submissions/)
+
+In this problem we're given two trees. Our goal is to determine whether or not the tree's are exactly the same. A tree is the same if the structure of the tree and it's node's are exactly the same.
 
 ```python
 class Solution:
@@ -79,6 +77,14 @@ class Solution:
     if p and q and p.val == q.val:
       return self.isSameTree(p.left, q.left) and self.isSameTree(p.right, q.right)
 ```
+
+We use recursion.
+
+We guard for the lack of p and q. This indicates that the p and q tree's node's had the same "children" at this node. In other words we return true if both p and q are null.
+
+Next we guard for the of either left or right child nodes being null(unbalanced) and the values of of p and q being the same at this node.
+
+If the above conditions are met, we recursively call `isSameTree` padding both p's and q's left and right and return their logical operators evaluation.
 
 572. [Subtree of Another Tree](https://leetcode.com/problems/subtree-of-another-tree/submissions/)
 
