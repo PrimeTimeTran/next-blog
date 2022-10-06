@@ -20,32 +20,56 @@ const postDateTemplate = { weekday: 'long', year: 'numeric', month: 'long', day:
 export default function PostLayout({ frontMatter, authorDetails, next, prev, children }) {
   const { slug, fileName, date, title, images, tags } = frontMatter
 
+  function focusLanguageTab(evt, language) {
+    language = language + '-content'
+    var i, tabcontent, tablinks
+
+    document.getElementById(language).parentElement
+
+    tabcontent = document
+      .getElementById(language)
+      .parentElement.getElementsByClassName('tabcontent')
+    for (i = 0; i < tabcontent.length; i++) {
+      tabcontent[i].style.display = 'none'
+    }
+    tablinks = document.getElementById(language).parentElement.getElementsByClassName('tablinks')
+    // tablinks = document.getElementsByClassName('tablinks')
+    for (i = 0; i < tablinks.length; i++) {
+      tablinks[i].className = tablinks[i].className.replace(' active', '')
+    }
+
+    document.getElementById(language).style.display = 'block'
+    evt.currentTarget.className += ' active'
+  }
+
+  function addIdToTabGroups() {
+    var groups = document.getElementsByClassName('tab-group')
+    for (let groupId = 0; groupId < groups.length; groupId++) {
+      var group = groups[groupId]
+      group.id = `tab-group-${groupId}`
+
+      var buttonChildren = group.getElementsByClassName('tablinks')
+      for (var j = 0; j < buttonChildren.length; j++) {
+        var buttonChild = buttonChildren[j]
+        buttonChild.id = `${buttonChild.id}-${groupId}-${j}`
+      }
+
+      var children = group.getElementsByClassName('tabcontent')
+      for (var k = 0; k < children.length; k++) {
+        var child = children[k]
+        child.id = `${groupId}-${k}-content`
+      }
+
+      var buttons = group.children[0].children
+      for (var l = 0; l < buttons.length; l++) {
+        var button = buttons[l]
+        button.addEventListener('click', (e) => focusLanguageTab(e, `${groupId}-${l}`))
+      }
+    }
+  }
+
   useEffect(() => {
-    function openCity(evt, cityName) {
-      console.log('Hi,', evt, cityName)
-      cityName = cityName.split('-')[0]
-      var i, tabcontent, tablinks
-
-      tabcontent = document.getElementsByClassName('tabcontent')
-      for (i = 0; i < tabcontent.length; i++) {
-        tabcontent[i].style.display = 'none'
-      }
-
-      tablinks = document.getElementsByClassName('tablinks')
-      for (i = 0; i < tablinks.length; i++) {
-        tablinks[i].className = tablinks[i].className.replace('active', '')
-      }
-
-      document.getElementById(cityName).style.display = 'block'
-      evt.currentTarget.className += 'active'
-    }
-
-    var tabs = document.getElementsByClassName('tablinks')
-    for (let i = 0; i < tabs.length; i++) {
-      console.log()
-      var t = tabs[i]
-      t.addEventListener('click', (e) => openCity(e, t.id))
-    }
+    addIdToTabGroups()
   }, [])
 
   return (
