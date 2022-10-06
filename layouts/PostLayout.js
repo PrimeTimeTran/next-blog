@@ -7,6 +7,7 @@ import Tag from '@/components/Tag'
 import siteMetadata from '@/data/siteMetadata'
 import Comments from '@/components/comments'
 import ScrollTopAndComment from '@/components/ScrollTopAndComment'
+import { useEffect } from 'react'
 
 const editUrl = (fileName) => `${siteMetadata.siteRepo}/blob/master/data/blog/${fileName}`
 const discussUrl = (slug) =>
@@ -18,6 +19,34 @@ const postDateTemplate = { weekday: 'long', year: 'numeric', month: 'long', day:
 
 export default function PostLayout({ frontMatter, authorDetails, next, prev, children }) {
   const { slug, fileName, date, title, images, tags } = frontMatter
+
+  useEffect(() => {
+    function openCity(evt, cityName) {
+      console.log('Hi,', evt, cityName)
+      cityName = cityName.split('-')[0]
+      var i, tabcontent, tablinks
+
+      tabcontent = document.getElementsByClassName('tabcontent')
+      for (i = 0; i < tabcontent.length; i++) {
+        tabcontent[i].style.display = 'none'
+      }
+
+      tablinks = document.getElementsByClassName('tablinks')
+      for (i = 0; i < tablinks.length; i++) {
+        tablinks[i].className = tablinks[i].className.replace('active', '')
+      }
+
+      document.getElementById(cityName).style.display = 'block'
+      evt.currentTarget.className += 'active'
+    }
+
+    var tabs = document.getElementsByClassName('tablinks')
+    for (let i = 0; i < tabs.length; i++) {
+      console.log()
+      var t = tabs[i]
+      t.addEventListener('click', (e) => openCity(e, t.id))
+    }
+  }, [])
 
   return (
     <SectionContainer>
