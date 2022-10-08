@@ -1,3 +1,4 @@
+import { useEffect } from 'react'
 import Link from '@/components/Link'
 import PageTitle from '@/components/PageTitle'
 import SectionContainer from '@/components/SectionContainer'
@@ -9,6 +10,55 @@ import ScrollTopAndComment from '@/components/ScrollTopAndComment'
 
 export default function PostLayout({ frontMatter, authorDetails, next, prev, children }) {
   const { date, title } = frontMatter
+
+  function focusLanguageTab(evt, language) {
+    language = language + '-content'
+    var i, tabcontent, tablinks, group
+
+    group = document.getElementById(language).parentElement
+
+    tabcontent = group.getElementsByClassName('tabcontent')
+    for (i = 0; i < tabcontent.length; i++) {
+      tabcontent[i].style.display = 'none'
+    }
+    tablinks = group.getElementsByClassName('tablinks')
+    for (i = 0; i < tablinks.length; i++) {
+      tablinks[i].className = tablinks[i].className.replace(' active', '')
+    }
+
+    document.getElementById(language).style.display = 'block'
+    evt.currentTarget.className += ' active'
+  }
+
+  function addIdToTabGroups() {
+    var groups = document.getElementsByClassName('tab-group')
+    for (let groupId = 0; groupId < groups.length; groupId++) {
+      var group = groups[groupId]
+      group.id = `tab-group-${groupId}`
+
+      var buttonChildren = group.getElementsByClassName('tablinks')
+      for (var j = 0; j < buttonChildren.length; j++) {
+        var buttonChild = buttonChildren[j]
+        buttonChild.id += `-${groupId}-${j}`
+      }
+
+      var children = group.getElementsByClassName('tabcontent')
+      for (var k = 0; k < children.length; k++) {
+        var child = children[k]
+        child.id = `${groupId}-${k}-content`
+      }
+
+      var buttons = group.children[0].children
+      for (var l = 0; l < buttons.length; l++) {
+        var button = buttons[l]
+        button.addEventListener('click', (e) => focusLanguageTab(e, `${groupId}-${l}`))
+      }
+    }
+  }
+
+  useEffect(() => {
+    addIdToTabGroups()
+  }, [])
 
   return (
     <SectionContainer>

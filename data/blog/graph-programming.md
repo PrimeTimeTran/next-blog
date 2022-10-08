@@ -1,8 +1,8 @@
 ---
+draft: false
 title: Graph Theory for Programmers
 date: '2022-08-23'
 tags: ['Graph Theory']
-draft: false
 summary: A collection of Graph Coding problems and their solutions with Big O time complexity. Solutions include not only brute force but optimized solutions as well.
 ---
 
@@ -23,11 +23,11 @@ By solving several coding challenges we'll familiarize ourselves with the follow
 
 ### DFS vs BFS
 
-![Graph Traversal](https://i.imgur.com/UT6mMey.png)
-
 We'll start by learning how to traverse the graph.
 
-Assuming we start at `a`, how can we visit every node in our graph?
+![Graph Traversal](https://i.imgur.com/UT6mMey.png)
+
+We may want to traverse the graph differently depending on the graph we have.
 
 ```js
 // DFS Iterative
@@ -63,7 +63,7 @@ const graph = {
 depthFirstPrint(graph, 'a')
 ```
 
-Two ways to implement DFS traversal of a graph, one iteratively and one recursively.
+Two ways to implement DFS traversal of a graph, one iteratively and one recursively. Both of these use a stack.
 
 ```js
 // BFS
