@@ -22,17 +22,15 @@ export default function PostLayout({ frontMatter, authorDetails, next, prev, chi
 
   function focusLanguageTab(evt, language) {
     language = language + '-content'
-    var i, tabcontent, tablinks
+    var i, tabcontent, tablinks, group
 
-    document.getElementById(language).parentElement
+    group = document.getElementById(language).parentElement
 
-    tabcontent = document
-      .getElementById(language)
-      .parentElement.getElementsByClassName('tabcontent')
+    tabcontent = group.getElementsByClassName('tabcontent')
     for (i = 0; i < tabcontent.length; i++) {
       tabcontent[i].style.display = 'none'
     }
-    tablinks = document.getElementById(language).parentElement.getElementsByClassName('tablinks')
+    tablinks = group.getElementsByClassName('tablinks')
     for (i = 0; i < tablinks.length; i++) {
       tablinks[i].className = tablinks[i].className.replace(' active', '')
     }
@@ -50,7 +48,7 @@ export default function PostLayout({ frontMatter, authorDetails, next, prev, chi
       var buttonChildren = group.getElementsByClassName('tablinks')
       for (var j = 0; j < buttonChildren.length; j++) {
         var buttonChild = buttonChildren[j]
-        buttonChild.id = `${buttonChild.id}-${groupId}-${j}`
+        buttonChild.id += `-${groupId}-${j}`
       }
 
       var children = group.getElementsByClassName('tabcontent')
