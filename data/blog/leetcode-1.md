@@ -1,13 +1,13 @@
 ---
 title: 'Data structures & Algorithms'
 date: '2022-10-07'
-tags: ['Data structures', 'Algorithms', 'Leetcode']
+tags: ['Leetcode', Algorithms', 'Data structures', 'JS', 'Python', 'Dart', 'Java']
 draft: false
 summary: 'Solving Leetcode problems in order to master syntax of multiple languages as well as data structures and algorithms'
 bibliography: references-data.bib
 ---
 
-## 1. Two Sum leetcode
+## 1. Two Sum
 
 Given an array of numbers and a target, return the indices of two numbers such
 that they sum to **target**.
@@ -28,7 +28,7 @@ Each key will be a number which we're looking for and it's value will be it's in
     <button id="js" className="tablinks">javascript</button>
     <button id="python" className="tablinks">python</button>
     <button id="dart" className="tablinks">dart</button>
-    <button id="dart" className="tablinks">java</button>
+    <button id="java" className="tablinks">java</button>
   </div>
 
   <div id="js" className="tabcontent" style={{ display: 'block' }}>
@@ -101,7 +101,7 @@ Store this number, `diff` in the hashmap and the current index as it's value.
     <button id="js" className="tablinks">javascript</button>
     <button id="python" className="tablinks">python</button>
     <button id="dart" className="tablinks">dart</button>
-    <button id="dart" className="tablinks">java</button>
+    <button id="java" className="tablinks">java</button>
   </div>
 
   <div id="js" className="tabcontent" style={{ display: 'block' }}>
@@ -180,7 +180,7 @@ the hashmap.
     <button id="js" className="tablinks">javascript</button>
     <button id="python" className="tablinks">python</button>
     <button id="dart" className="tablinks">dart</button>
-    <button id="dart" className="tablinks">java</button>
+    <button id="java" className="tablinks">java</button>
   </div>
 
   <div id="js" className="tabcontent" style={{ display: 'block' }}>
