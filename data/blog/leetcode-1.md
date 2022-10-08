@@ -31,7 +31,7 @@ Each key will be a number which we're looking for and it's value will be it's in
     <button id="java" className="tablinks">java</button>
   </div>
 
-  <div id="js" className="tabcontent" style={{ display: 'block' }}>
+  <div id="js" className="tabcontent">
     ```js
     var twoSum = function (nums, target) {
       let map = new Map()
@@ -104,7 +104,7 @@ Store this number, `diff` in the hashmap and the current index as it's value.
     <button id="java" className="tablinks">java</button>
   </div>
 
-  <div id="js" className="tabcontent" style={{ display: 'block' }}>
+  <div id="js" className="tabcontent">
     ```js
     var twoSum = function (nums, target) {
       let map = new Map()
@@ -183,7 +183,7 @@ the hashmap.
     <button id="java" className="tablinks">java</button>
   </div>
 
-  <div id="js" className="tabcontent" style={{ display: 'block' }}>
+  <div id="js" className="tabcontent">
     ```js
     var twoSum = function (nums, target) {
       let map = new Map()
