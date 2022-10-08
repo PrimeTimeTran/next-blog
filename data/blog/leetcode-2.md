@@ -176,10 +176,23 @@ Return `res`.
   </div>
 </div>
 
-## Final
+## Use i pointer to initialize next pointer and nest loop
 
-We'll add keys to this hashmap as we loop over the items in our numbers array.
-Each key will be a number which we're looking for and it's value will be it's index.
+Set `l` pointer to `i + 1` and `r` to the length of `nums - 1`
+In this way we can work our farthest left pointer from left to right
+and then have the next 2 pointers behave as a sliding window.
+
+Loop while left is smaller than right.
+
+In the loop, sum the values of `nums[i] + nums[l] + nums[r]`.
+
+Check this sum, if it matches `target` return `cur` as we can't get any closer
+to target.
+
+Otherwise compare is it's greater than target of less and increment/decrement
+l and r as appropriate.
+
+Remember, the idea here is we want the sum to be `0`.
 
 <div className="tab-group">
   <div className="tab">
@@ -193,19 +206,16 @@ Each key will be a number which we're looking for and it's value will be it's in
 
   <div id="js" className="tabcontent">
     ```js
-    // 
-    
+    //
+
     var threeSumClosest = function(nums, target) {
       var res = nums[0] + nums[1] + nums[2];
       nums = nums.sort((a, b) => a - b);
-      
+
       for(var i = 0; i < nums.length - 2; i ++) {
-          if (i > 0 && nums[i] == nums[i - 1]) {
-              continue
-          }
           var l = i + 1
           var r = nums.length - 1
-          
+
           while (l < r) {
               var cur = nums[i] + nums[l] + nums[r]
               if (cur == target) return cur
@@ -214,7 +224,206 @@ Each key will be a number which we're looking for and it's value will be it's in
               } else if (cur < target) {
                   l += 1
               }
-              
+          }
+      }
+      return res
+    };
+    ```
+
+  </div>
+
+  <div id="ts" className="tabcontent">
+    ```typescript
+    //
+
+    function threeSumClosest(nums: number[], target: number): number {
+      var res = nums[0] + nums[1] + nums[2];
+      nums = nums.sort((a, b) => a - b);
+
+      for(var i = 0; i < nums.length - 2; i ++) {
+          var l = i + 1
+          var r = nums.length - 1
+
+          while (l < r) {
+              var cur = nums[i] + nums[l] + nums[r]
+              if (cur == target) return cur
+              if (cur > target) {
+                  r -= 1
+              } else if (cur < target) {
+                  l += 1
+              }
+          }
+      }
+      return res
+    };
+    ```
+
+  </div>
+
+  <div id="python" className="tabcontent">
+    ```python
+    #
+
+    class Solution:
+      def threeSumClosest(self, nums: List[int], target: int) -> int:
+          nums.sort()
+          res = nums[0] + nums[len(nums) - 1] + nums[len(nums) - 2]
+
+          for i, n in enumerate(nums):
+              l = i + 1
+              r = len(nums) - 1
+
+              while l < r:
+                  curSum = nums[i] + nums[l] + nums[r]
+
+                  if curSum == target:
+                      return curSum
+                  if curSum > target:
+                      r -= 1
+                  else:
+                      l += 1
+
+          return res
+    ```
+
+  </div>
+
+  <div id="dart" className="tabcontent">
+    ```dart
+    //
+
+    class Solution {
+      int threeSumClosest(List<int> nums, int target) {
+        var res = nums[0] + nums[1] + nums[2];
+        nums.sort();
+
+        for(var i = 0; i < nums.length - 2; i ++) {
+            var l = i + 1;
+            var r = nums.length - 1;
+
+            while (l < r) {
+                var cur = nums[i] + nums[l] + nums[r];
+                if (cur == target) return cur;
+                if (cur > target) {
+                    r -= 1;
+                } else if (cur < target) {
+                    l += 1;
+                }
+            }
+        }
+        return res;
+      }
+    }
+    ```
+
+  </div>
+
+  <div id="java" className="tabcontent">
+    ```java
+    //
+
+    class Solution {
+        public int threeSumClosest(int[] nums, int target) {
+            int res = nums[0] + nums[1] + nums[2];
+            Arrays.sort(nums);
+
+            for (int i = 0; i < nums.length - 2; i++) {
+                int l = i + 1;
+                int r = nums.length - 1;
+
+                while (l < r) {
+                    int cur = nums[i] + nums[l] + nums[r];
+
+                    if (cur > target) {
+                        r -= 1;
+                    } else {
+                        l += 1;
+                    }
+                }
+            }
+
+            return res;
+        }
+    }
+    ```
+
+  </div>
+
+  <div id="go" className="tabcontent">
+    ```go
+    //
+
+    func threeSumClosest(nums []int, target int) int {
+        res := nums[0] + nums[1] + nums[2]
+        sort.Ints(nums[:])
+
+        for i := 0; i < len(nums) - 2; i++ {
+
+            l := i + 1
+            r := len(nums) - 1
+
+            for l < r {
+                cur := nums[i] + nums[l] + nums[r]
+                if cur > target {
+                    r -= 1
+                } else {
+                    l += 1
+                }
+            }
+        }
+
+        return res
+    }
+    ```
+
+  </div>
+</div>
+
+## Check the difference between cur and res
+
+Compare the absolute different of `cur - target`
+and `res - target` to find which is closet to zero.
+If `cur` is smaller then reassign `res` to `cur`.
+
+Use math's absolute in case the value becomes negative.
+
+And finally optimize the outer loop comparing if the previous `i` is the same as this `i`.
+If so, continue to the next iteration.
+
+<div className="tab-group">
+  <div className="tab">
+    <button id="js" className="tablinks">javascript</button>
+    <button id="ts" className="tablinks">typescript</button>
+    <button id="python" className="tablinks">python</button>
+    <button id="dart" className="tablinks">dart</button>
+    <button id="java" className="tablinks">java</button>
+    <button id="go" className="tablinks">go</button>
+  </div>
+
+  <div id="js" className="tabcontent">
+    ```js
+    // Math.abs is helpful here.
+
+    var threeSumClosest = function(nums, target) {
+      var res = nums[0] + nums[1] + nums[2];
+      nums = nums.sort((a, b) => a - b);
+
+      for(var i = 0; i < nums.length - 2; i ++) {
+          if (i > 0 && nums[i] == nums[i - 1]) {
+              continue
+          }
+          var l = i + 1
+          var r = nums.length - 1
+
+          while (l < r) {
+              var cur = nums[i] + nums[l] + nums[r]
+              if (cur == target) return cur
+              if (cur > target) {
+                  r -= 1
+              } else if (cur < target) {
+                  l += 1
+              }
+
               if (Math.abs(cur - target) < Math.abs(res - target)) {
                   res = cur
               }
@@ -223,6 +432,7 @@ Each key will be a number which we're looking for and it's value will be it's in
       return res
     };
     ```
+
   </div>
 
   <div id="ts" className="tabcontent">
@@ -256,15 +466,13 @@ Each key will be a number which we're looking for and it's value will be it's in
       }
       return res
     };
-
-
     ```
 
   </div>
 
   <div id="python" className="tabcontent">
     ```python
-    #
+    # Python has abs as well.
 
     class Solution:
       def threeSumClosest(self, nums: List[int], target: int) -> int:
@@ -374,7 +582,8 @@ Each key will be a number which we're looking for and it's value will be it's in
 
   <div id="go" className="tabcontent">
     ```go
-    //
+    // Go doesn't have built in support for mathematical abs
+    // so we have to implement it ourselves.
 
     func absInt(x int) int {
       return absDiffInt(x, 0)
