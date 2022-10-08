@@ -65,3 +65,10 @@ input:-webkit-autofill:focus {
   padding: 0px !important;
   margin: 0px !important;
 }
+
+.tab-group > .tabcontent {
+  display: block;
+}
+.tab-group > .tabcontent ~ .tabcontent {
+  display: none;
+}

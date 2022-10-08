@@ -1,7 +1,7 @@
 ---
 title: 'Data structures & Algorithms'
 date: '2022-10-07'
-tags: ['Leetcode', Algorithms', 'Data structures', 'JS', 'Python', 'Dart', 'Java']
+tags: ['Leetcode', 'Algorithms', 'Data structures', 'JS', 'Python', 'Dart', 'Java']
 draft: false
 summary: 'Solving Leetcode problems in order to master syntax of multiple languages as well as data structures and algorithms'
 bibliography: references-data.bib
