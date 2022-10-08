@@ -41,17 +41,24 @@ Each key will be a number which we're looking for and it's value will be it's in
 
   <div id="python" className="tabcontent">
     ```python
+    # Python depends on indentation.
+    # Python doesn't use curly braces for it's codeblocks like all the other languages.
+
     class Solution:
       def twoSum(self, nums: List[int], target: int) -> List[int]:
         hashMap = {}
-        
     ```
+
   </div>
 
   <div id="dart" className="tabcontent">
     ```dart
     // Despite the fact we're guaranteed to have at least one pair
     // which sums to target, we must hardcode a return type in Dart.
+
+    // The Dart compiler will complain if we don't.
+    // "A non-null value must be returned since the return type 'List<int>' doesn't allow null"
+
     class Solution {
       List<int> twoSum(List<int> nums, int target) {
         var hm = {};
@@ -59,20 +66,23 @@ Each key will be a number which we're looking for and it's value will be it's in
       }
     }
     ```
+
   </div>
   <div id="java" className="tabcontent">
     ```java
     // In Java we must declare and return a Array, result in this case.
     // This is because of Java being strongly typed.
+
     class Solution {
       public int[] twoSum(int[] nums, int target) {
         int[] result = new int[2];
         Map<Integer, Integer> map = new HashMap<Integer, Integer>();
-        
+
         return result;
       }
     }
     ```
+
   </div>
 </div>
 
