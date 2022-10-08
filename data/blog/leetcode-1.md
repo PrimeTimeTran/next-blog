@@ -1,10 +1,9 @@
 ---
-title: 'Data structures & Algorithms'
-date: '2022-10-07'
-tags: ['Leetcode', 'Algorithms', 'Data structures', 'JS', 'Python', 'Dart', 'Java']
 draft: false
+date: '2022-10-07'
+title: '1. Two Sum | Leetcode | Data Structures & Algorithms'
+tags: ['Leetcode', 'Algorithms', 'Data Structures', 'JS', 'Python', 'Dart', 'Java']
 summary: 'Solving Leetcode problems to syntax of multiple languages and data structures & algorithms.'
-bibliography: references-data.bib
 ---
 
 ## 1. Two Sum
@@ -205,15 +204,16 @@ the hashmap.
     class Solution:
       def twoSum(self, nums: List[int], target: int) -> List[int]:
         hashMap = {}
-        
+
         for i, num in enumerate(nums):
           diff = target - num
-          
+
           if diff in hashMap:
             return [hashMap[diff], i]
-          
+
           hashMap[num] = i
     ```
+
   </div>
 
   <div id="dart" className="tabcontent">

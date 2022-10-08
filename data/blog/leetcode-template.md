@@ -19,39 +19,12 @@ summary: 'Solving Leetcode problems to syntax of multiple languages and data str
 
 ## 16. 3Sum Closest
 
-Given an integer array nums of length `n` and an integer `target`, find three integers
-in nums such that the sum is _closest_ to target.
-
-Return the _sum_ of the three integers.
-
-You may assume that each input would have exactly _one_ solution.
-
 ### Solution
 
-Solve this problem by using three _pointers_.
-
-First sort input `nums`.
-
-Define default `res` and initialize it's values to any 3 combination of nums.
-
-Loop from 0 to the end of nums. This loops index, `i`, is the first pointer.
-
-Within that loop, we initialize the next two _pointers_, `left` and `right`
-
-Loop while `l` is smaller than `r`
-
-Sum the values of nums[i] + nums[l] + nums[r] and compare it to target
-
-If the sum larger than `target`, decrement `r`. Otherwise increment `l`
-
-Check if the value of `cur` minus `target` is less than `res` minus `target`.
-
-If so, reassign `res` to `cur`
+Iterate input nums. Use the target and current num to identify sought value. Add
+sought value and index to hash map if not found. If found return indices.
 
 ## Declare Hashmap
-
-We'll add keys to this hashmap as we loop over the items in our numbers array.
-Each key will be a number which we're looking for and it's value will be it's index.
 
 <div className="tab-group">
   <div className="tab">

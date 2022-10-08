@@ -1,12 +1,12 @@
 ---
 draft: false
 date: '2022-10-08'
-title: 'Data structures & Algorithms | 16. 3Sum Closest Leetcode'
+title: '16. 3Sum Closest | Leetcode | Data Structures & Algorithms'
 tags:
   [
     'Leetcode',
     'Algorithms',
-    'Data structures',
+    'Data Structures',
     'Javascript',
     'Typescript',
     'Python',
@@ -48,7 +48,135 @@ Check if the value of `cur` minus `target` is less than `res` minus `target`.
 
 If so, reassign `res` to `cur`
 
-## Declare Hashmap
+## Define response var, sort nums, iterate, return res
+
+Initialize a var to `res` to update while iterating input `nums`.
+
+Iterate the input `nums`. The incrementor `i` will be the first pointer.
+
+Return `res`.
+
+<div className="tab-group">
+  <div className="tab">
+    <button id="js" className="tablinks">javascript</button>
+    <button id="ts" className="tablinks">typescript</button>
+    <button id="python" className="tablinks">python</button>
+    <button id="dart" className="tablinks">dart</button>
+    <button id="java" className="tablinks">java</button>
+    <button id="go" className="tablinks">go</button>
+  </div>
+
+  <div id="js" className="tabcontent">
+    ```js
+    // JS syntax is simple relative to TS
+
+    var threeSumClosest = function(nums, target) {
+      var res = nums[0] + nums[1] + nums[2];
+      nums = nums.sort((a, b) => a - b);
+
+      for (var i = 0; i < nums.length - 2; i ++) {
+      }
+      return res
+    };
+    ```
+
+  </div>
+
+  <div id="ts" className="tabcontent">
+    ```typescript
+    // We TS we can see that our parameters are the local var's name, a colon,
+    // then type.
+
+    // "nums: number[]" meaning the var we get is nums, it's type is number[]
+
+    function threeSumClosest(nums: number[], target: number): number {
+      var res = nums[0] + nums[1] + nums[2];
+      nums = nums.sort((a, b) => a - b);
+
+      for(var i = 0; i < nums.length - 2; i ++) {
+      }
+      return res
+    };
+
+    ```
+
+  </div>
+
+  <div id="python" className="tabcontent">
+    ```python
+    # In python3 there is typing for the function's signature and return value
+
+    class Solution:
+      def threeSumClosest(self, nums: List[int], target: int) -> int:
+          nums.sort()
+          res = nums[0] + nums[len(nums) - 1] + nums[len(nums) - 2]
+
+          for i, n in enumerate(nums):
+
+          return res
+    ```
+
+  </div>
+
+  <div id="dart" className="tabcontent">
+    ```dart
+    // Dart requires typing on return value, the 'int' before threeSumClosest
+    // It's parameters are also typed. The 'int' before target
+
+    class Solution {
+      int threeSumClosest(List<int> nums, int target) {
+        var res = nums[0] + nums[1] + nums[2];
+        nums.sort();
+
+        for(var i = 0; i < nums.length - 2; i ++) {
+        }
+        return res;
+      }
+    }
+    ```
+
+  </div>
+
+  <div id="java" className="tabcontent">
+    ```java
+    // Java requires typing for variable initializations in conjunction with
+    // function signature typing.
+
+    class Solution {
+        public int threeSumClosest(int[] nums, int target) {
+            int res = nums[0] + nums[1] + nums[2];
+            Arrays.sort(nums);
+
+            for (int i = 0; i < nums.length - 2; i++) {
+            }
+
+            return res;
+        }
+    }
+    ```
+
+  </div>
+
+  <div id="go" className="tabcontent">
+    ```go
+    // := allows Go to infer type of 'res'
+    // from the type of the expression on the right.
+
+    func threeSumClosest(nums []int, target int) int {
+        res := nums[0] + nums[1] + nums[2]
+        sort.Ints(nums[:])
+
+        for i := 0; i < len(nums) - 2; i++ {
+        }
+
+        return res
+    }
+    ```
+
+  </div>
+</div>
+
+## Final
 
 We'll add keys to this hashmap as we loop over the items in our numbers array.
 Each key will be a number which we're looking for and it's value will be it's index.
