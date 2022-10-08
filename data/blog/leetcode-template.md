@@ -65,9 +65,10 @@ Each key will be a number which we're looking for and it's value will be it's in
 
   <div id="js" className="tabcontent">
     ```js
-    // 
-    
+    //
+
     ```
+
   </div>
 
   <div id="ts" className="tabcontent">

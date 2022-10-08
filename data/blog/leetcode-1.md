@@ -5,8 +5,6 @@ tags: ['Leetcode', 'Algorithms', 'Data structures', 'JS', 'Python', 'Dart', 'Jav
 draft: false
 summary: 'Solving Leetcode problems to syntax of multiple languages and data structures & algorithms.'
 bibliography: references-data.bib
-# layout: PostSimple
-# layout: PostSimple
 ---
 
 ## 1. Two Sum
@@ -59,7 +57,8 @@ Each key will be a number which we're looking for and it's value will be it's in
     // which sums to target, we must hardcode a return type in Dart.
 
     // The Dart compiler will complain if we don't.
-    // "A non-null value must be returned since the return type 'List<int>' doesn't allow null"
+    // "A non-null value must be returned since the return type 'List<int>'
+    // doesn't allow null"
 
     class Solution {
       List<int> twoSum(List<int> nums, int target) {
