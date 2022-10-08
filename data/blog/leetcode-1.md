@@ -3,7 +3,7 @@ title: 'Data structures & Algorithms'
 date: '2022-10-07'
 tags: ['Data structures', 'Algorithms', 'Leetcode']
 draft: false
-summary: 'Two sum'
+summary: 'Solving Leetcode problems in order to master syntax of multiple languages as well as data structures and algorithms'
 bibliography: references-data.bib
 ---
 
