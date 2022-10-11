@@ -54,23 +54,21 @@ reassign the left edge of the window to the current value of right.
   <div id="js" className="tabcontent">
     ```js
     //
-    var maxProfit = function(prices) {
-      var profit = 0;
-      var l = 0;
-      var r = 1;
-      
+    var maxProfit = function (prices) {
+      var l = 0
+      var r = 1
+      var profit = 0
       while (r < prices.length) {
         if (prices[r] > prices[l]) {
-          var cur = prices[r] - prices[l];
+          var cur = prices[r] - prices[l]
           profit = Math.max(cur, profit)
         } else {
-          l = r;
+          l = r
         }
         r += 1
-        
       }
       return profit
-    };
+    }
     ```
 
   </div>
@@ -79,19 +77,19 @@ reassign the left edge of the window to the current value of right.
     ```typescript
     //
     function maxProfit(prices: number[]): number {
-      var maxProfit = 0
       var l = 0
-      var r = 1;
+      var r = 1
+      var profit = 0
       while (r < prices.length) {
         if (prices[r] > prices[l]) {
-          var curProfit = prices[r] - prices[l]
-          maxProfit = Math.max(curProfit, maxProfit)
+          var cur = prices[r] - prices[l]
+          profit = Math.max(cur, profit)
         } else {
           l = r
         }
         r += 1
       }
-      return maxProfit
+      return profit
     };
     ```
 
@@ -102,20 +100,16 @@ reassign the left edge of the window to the current value of right.
     #
     class Solution:
       def maxProfit(self, prices: List[int]) -> int:
-        res = 0
-        l, r = 0, 1
-        
+        profit, l, r = 0, 0, 1
         while r < len(prices):
           if prices[r] > prices[l]:
-            profit = prices[r] - prices[l]
-            res = max(res, profit)
-            
+            cur = prices[r] - prices[l]
+            profit = max(profit, cur)
           else:
             l = r
           r += 1
-        return res
+        return profit
     ```
-
   </div>
 
   <div id="dart" className="tabcontent">
@@ -125,19 +119,17 @@ reassign the left edge of the window to the current value of right.
       int maxProfit(List<int> prices) {
         var l = 0;
         var r = 1;
-        var curMax = 0;
-          
+        var profit = 0;
         while (r < prices.length) {
-            if (prices[l] < prices[r]) {
-                var profit = prices[r] - prices[l];
-                curMax = max(curMax, profit);
-            } else {
-                l = r;
-            }
-            r += 1;
+          if (prices[l] < prices[r]) {
+            var cur = prices[r] - prices[l];
+            profit = max(cur, profit);
+          } else {
+            l = r;
+          }
+          r += 1;
         }
-          
-        return curMax;
+        return profit;
       }
     }
     ```
@@ -147,31 +139,24 @@ reassign the left edge of the window to the current value of right.
   <div id="java" className="tabcontent">
     ```java
     //
+
     import java.util.Collections;
 
     class Solution {
       public int maxProfit(int[] prices) {
-        int maxProfit = 0;
         int l = 0;
         int r = 1;
-
+        int profit = 0;
         while (r < prices.length) {
           if (prices[r] > prices[l]) {
-            int curProfit = prices[r] - prices[l];
-            int max;
-            if (curProfit > maxProfit) {
-              max = curProfit;
-            } else {
-              max = maxProfit;
-            }
-
-            maxProfit = max;
+            int cur = prices[r] - prices[l];
+            profit = Math.max(cur, profit);
           } else {
             l = r;
           }
           r += 1;
         }
-        return maxProfit;
+        return profit;
       }
     }
     ```
@@ -180,7 +165,9 @@ reassign the left edge of the window to the current value of right.
 
   <div id="go" className="tabcontent">
     ```go
-    //
+    // Go doesn't have a built in function for identifying max of two ints
+    // So we have to implement it ourselves
+
     func Max(x, y int) int {
       if x < y {
         return y
@@ -189,20 +176,18 @@ reassign the left edge of the window to the current value of right.
     }
 
     func maxProfit(prices []int) int {
-      l, r := 0, 1
-      maxProfit := 0
+      profit, l, r := 0, 0, 1
 
       for r < len(prices) {
         if prices[l] < prices[r] {
-          profit := prices[r] - prices[l]
-          maxProfit = Max(maxProfit, profit)
+          cur := prices[r] - prices[l]
+          profit = Max(profit, cur)
         } else {
           l = r
         }
-
         r += 1
       }
-      return maxProfit
+      return profit
     }
     ```
 
