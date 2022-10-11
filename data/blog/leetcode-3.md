@@ -54,23 +54,23 @@ reassign the left edge of the window to the current value of right.
   <div id="js" className="tabcontent">
     ```js
     //
-    var maxProfit = function (prices) {
-      var maxProfit = 0
-      var l = 0
-      var r = 1
-
+    var maxProfit = function(prices) {
+      var profit = 0;
+      var l = 0;
+      var r = 1;
+      
       while (r < prices.length) {
         if (prices[r] > prices[l]) {
-          var max
-          var curProfit = prices[r] - prices[l]
-          maxProfit = Math.max(curProfit, maxProfit)
+          var cur = prices[r] - prices[l];
+          profit = Math.max(cur, profit)
         } else {
-          l = r
+          l = r;
         }
         r += 1
+        
       }
-      return maxProfit
-    }
+      return profit
+    };
     ```
 
   </div>
@@ -79,21 +79,19 @@ reassign the left edge of the window to the current value of right.
     ```typescript
     //
     function maxProfit(prices: number[]): number {
-      let res = 0
-      let l = 0
-      let r = 1
-      
+      var maxProfit = 0
+      var l = 0
+      var r = 1;
       while (r < prices.length) {
-        if (prices[l] < prices[r]) {
-          let profit = prices[r] - prices[l]
-          
-          res = Math.max(res, profit)
+        if (prices[r] > prices[l]) {
+          var curProfit = prices[r] - prices[l]
+          maxProfit = Math.max(curProfit, maxProfit)
         } else {
           l = r
         }
         r += 1
       }
-      return res
+      return maxProfit
     };
     ```
 
