@@ -9,12 +9,12 @@ tags:
     'Data Structures',
     'Javascript',
     'Typescript',
-    'Python',
     'Dart',
     'Java',
+    'Python',
     'Go',
   ]
-summary: 'Solving Leetcode problems to syntax of multiple languages and data structures & algorithms.'
+summary: 'Solving programming problems in multiple languages to master syntax, data structures, and algorithms.'
 ---
 
 ## 1. Two Sum
@@ -36,27 +36,31 @@ Each key will be a number which we're looking for and it's value will be it's in
 <div className="tab-group">
   <div className="tab">
     <button id="js" className="tablinks">javascript</button>
-    <button id="python" className="tablinks">python</button>
+    <button id="ts" className="tablinks">typescript</button>
     <button id="dart" className="tablinks">dart</button>
     <button id="java" className="tablinks">java</button>
+    <button id="python" className="tablinks">python</button>
+    <button id="go" className="tablinks">go</button>
   </div>
 
   <div id="js" className="tabcontent">
     ```js
+    //
+
     var twoSum = function (nums, target) {
       let map = new Map()
     }
     ```
+
   </div>
 
-  <div id="python" className="tabcontent">
-    ```python
-    # Python depends on indentation.
-    # Python doesn't use curly braces for it's codeblocks like all the other languages.
+  <div id="ts" className="tabcontent">
+    ```typescript
+    //
 
-    class Solution:
-      def twoSum(self, nums: List[int], target: int) -> List[int]:
-        hashMap = {}
+    function twoSum(nums: number[], target: number): number[] {
+      const map = new Map()
+    };
     ```
 
   </div>
@@ -79,6 +83,7 @@ Each key will be a number which we're looking for and it's value will be it's in
     ```
 
   </div>
+
   <div id="java" className="tabcontent">
     ```java
     // In Java we must declare and return a Array, result in this case.
@@ -91,6 +96,30 @@ Each key will be a number which we're looking for and it's value will be it's in
 
         return result;
       }
+    }
+    ```
+
+  </div>
+
+  <div id="python" className="tabcontent">
+    ```python
+    # Python depends on indentation.
+    # Python doesn't use curly braces for it's codeblocks like all the other languages.
+
+    class Solution:
+      def twoSum(self, nums: List[int], target: int) -> List[int]:
+        hashMap = {}
+    ```
+
+  </div>
+
+  <div id="go" className="tabcontent">
+    ```go
+    //
+
+    func twoSum(nums []int, target int) []int {
+      dict := make(map[int]int)
+      return make([]int, 0, 0)
     }
     ```
 
@@ -110,9 +139,11 @@ Store this number, `diff` in the hashmap and the current index as it's value.
 <div className="tab-group">
   <div className="tab">
     <button id="js" className="tablinks">javascript</button>
-    <button id="python" className="tablinks">python</button>
+    <button id="ts" className="tablinks">typescript</button>
     <button id="dart" className="tablinks">dart</button>
     <button id="java" className="tablinks">java</button>
+    <button id="python" className="tablinks">python</button>
+    <button id="go" className="tablinks">go</button>
   </div>
 
   <div id="js" className="tabcontent">
@@ -130,16 +161,21 @@ Store this number, `diff` in the hashmap and the current index as it's value.
 
   </div>
 
-  <div id="python" className="tabcontent">
-    ```python
-    class Solution:
-      def twoSum(self, nums: List[int], target: int) -> List[int]:
-        hashMap = {}
+  <div id="ts" className="tabcontent">
+    ```typescript
+    //
 
-        for i, num in enumerate(nums):
-          diff = target - num
-
-          hashMap[num] = i
+    function twoSum(nums: number[], target: number): number[] {
+      const map = new Map()
+      for (let i = 0; i < nums.length; i++) {
+        const num = nums[i]
+        const diff = target - num
+        if (map.has(num)){
+          return [map.get(num), i]
+        }
+        map.set(diff, i)
+      }
+    };
     ```
 
   </div>
@@ -162,6 +198,7 @@ Store this number, `diff` in the hashmap and the current index as it's value.
     ```
 
   </div>
+
   <div id="java" className="tabcontent">
     ```java
     class Solution {
@@ -178,6 +215,37 @@ Store this number, `diff` in the hashmap and the current index as it's value.
     ```
 
   </div>
+
+  <div id="python" className="tabcontent">
+    ```python
+    class Solution:
+      def twoSum(self, nums: List[int], target: int) -> List[int]:
+        hashMap = {}
+
+        for i, num in enumerate(nums):
+          diff = target - num
+
+          hashMap[num] = i
+    ```
+
+  </div>
+
+  <div id="go" className="tabcontent">
+    ```go
+    //
+
+    func twoSum(nums []int, target int) []int {
+      dict := make(map[int]int)
+      for idx, num := range nums {
+        diff := target - num
+
+        dict[num] = idx
+      }
+      return make([]int, 0, 0)
+    }
+    ```
+
+  </div>
 </div>
 
 ## Check for diff in hashmap
@@ -189,9 +257,11 @@ the hashmap.
 <div className="tab-group">
   <div className="tab">
     <button id="js" className="tablinks">javascript</button>
-    <button id="python" className="tablinks">python</button>
+    <button id="ts" className="tablinks">typescript</button>
     <button id="dart" className="tablinks">dart</button>
     <button id="java" className="tablinks">java</button>
+    <button id="python" className="tablinks">python</button>
+    <button id="go" className="tablinks">go</button>
   </div>
 
   <div id="js" className="tabcontent">
@@ -210,19 +280,21 @@ the hashmap.
     ```
   </div>
 
-  <div id="python" className="tabcontent">
-    ```python
-    class Solution:
-      def twoSum(self, nums: List[int], target: int) -> List[int]:
-        hashMap = {}
+  <div id="ts" className="tabcontent">
+    ```typescript
+    //
 
-        for i, num in enumerate(nums):
-          diff = target - num
-
-          if diff in hashMap:
-            return [hashMap[diff], i]
-
-          hashMap[num] = i
+    function twoSum(nums: number[], target: number): number[] {
+      const map = new Map()
+      for (let i = 0; i < nums.length; i++) {
+        const num = nums[i]
+        const diff = target - num
+        if (map.has(num)){
+          return [map.get(num), i]
+        }
+        map.set(diff, i)
+      }
+    };
     ```
 
   </div>
@@ -245,6 +317,7 @@ the hashmap.
     ```
 
   </div>
+
   <div id="java" className="tabcontent">
     ```java
     class Solution {
@@ -263,6 +336,42 @@ the hashmap.
       }
     }
     ```
+  </div>
+
+  <div id="python" className="tabcontent">
+    ```python
+    class Solution:
+      def twoSum(self, nums: List[int], target: int) -> List[int]:
+        hashMap = {}
+
+        for i, num in enumerate(nums):
+          diff = target - num
+
+          if diff in hashMap:
+            return [hashMap[diff], i]
+
+          hashMap[num] = i
+    ```
+
+  </div>
+
+  <div id="go" className="tabcontent">
+    ```go
+    //
+
+    func twoSum(nums []int, target int) []int {
+      dict := make(map[int]int)
+      for idx, num := range nums {
+        diff := target - num
+        if _, ok := dict[diff]; ok {
+          return []int{dict[diff], idx}
+        }
+        dict[num] = idx
+      }
+      return make([]int, 0, 0)
+    }
+    ```
+
   </div>
 </div>
 

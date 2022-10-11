@@ -9,12 +9,12 @@ tags:
     'Data Structures',
     'Javascript',
     'Typescript',
-    'Python',
     'Dart',
     'Java',
+    'Python',
     'Go',
   ]
-summary: 'Solving Leetcode problems to syntax of multiple languages and data structures & algorithms.'
+summary: 'Solving programming problems in multiple languages to master syntax, data structures, and algorithms.'
 ---
 
 ## 16. 3Sum Closest
@@ -30,29 +30,32 @@ You may assume that each input would have exactly _one_ solution.
 
 Solve this problem by using three _pointers_.
 
-First sort input `nums`.
+Sort input `nums`.
 
-Define default `res` and initialize it's values to any 3 combination of nums.
+Define `res` and initialize it's values to any 3 combination of nums. It'll hold
+our sought value.
 
-Loop from 0 to the end of nums. This loops index, `i`, is the first pointer.
+Iterate the nums var. This loop's index, `i`, is the first pointer.
 
-Within that loop, we initialize the next two _pointers_, `left` and `right`
+Within that loop, we initialize the next two _pointers_, `left` and `right`.
 
-Loop while `l` is smaller than `r`
+Loop while `l` is smaller than `r`.
 
-Sum the values of nums[i] + nums[l] + nums[r] and compare it to target
+Sum the values of nums[i] + nums[l] + nums[r] and compare it to `target`.
 
-If the sum larger than `target`, decrement `r`. Otherwise increment `l`
+If the sum larger than `target`, decrement `r`. Otherwise increment `l`.
 
-Check if the value of `cur` minus `target` is less than `res` minus `target`.
+Check if the diff absolute value of `cur` minus `target` is less than diff of
+absolute value of `res` minus `target`.
 
-If so, reassign `res` to `cur`
+If so, reassign `res` to `cur`.
 
 ## Define response var, sort nums, iterate, return res
 
-Initialize a var to `res` to update while iterating input `nums`.
+Initialize var which holds sought value, `res`, which we update while iterating
+through input `nums`.
 
-Iterate the input `nums`. The incrementor `i` will be the first pointer.
+Iterate the `nums` input. This loops incrementor `i` will be the first pointer.
 
 Return `res`.
 

@@ -9,12 +9,12 @@ tags:
     'Data structures',
     'Javascript',
     'Typescript',
-    'Python',
     'Dart',
     'Java',
+    'Python',
     'Go',
   ]
-summary: 'Solving Leetcode problems to syntax of multiple languages and data structures & algorithms.'
+summary: 'Solving programming problems in multiple languages to master syntax, data structures, and algorithms.'
 ---
 
 ## 16. 3Sum Closest
@@ -30,9 +30,9 @@ sought value and index to hash map if not found. If found return indices.
   <div className="tab">
     <button id="js" className="tablinks">javascript</button>
     <button id="ts" className="tablinks">typescript</button>
-    <button id="python" className="tablinks">python</button>
     <button id="dart" className="tablinks">dart</button>
     <button id="java" className="tablinks">java</button>
+    <button id="python" className="tablinks">python</button>
     <button id="go" className="tablinks">go</button>
   </div>
 
@@ -52,14 +52,6 @@ sought value and index to hash map if not found. If found return indices.
 
   </div>
 
-  <div id="python" className="tabcontent">
-    ```python
-    #
-
-    ```
-
-  </div>
-
   <div id="dart" className="tabcontent">
     ```dart
     //
@@ -71,6 +63,14 @@ sought value and index to hash map if not found. If found return indices.
   <div id="java" className="tabcontent">
     ```java
     //
+
+    ```
+
+  </div>
+
+  <div id="python" className="tabcontent">
+    ```python
+    #
 
     ```
 
