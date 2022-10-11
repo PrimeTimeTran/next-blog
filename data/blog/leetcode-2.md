@@ -60,9 +60,9 @@ Return `res`.
   <div className="tab">
     <button id="js" className="tablinks">javascript</button>
     <button id="ts" className="tablinks">typescript</button>
-    <button id="python" className="tablinks">python</button>
     <button id="dart" className="tablinks">dart</button>
     <button id="java" className="tablinks">java</button>
+    <button id="python" className="tablinks">python</button>
     <button id="go" className="tablinks">go</button>
   </div>
 
@@ -84,36 +84,16 @@ Return `res`.
 
   <div id="ts" className="tabcontent">
     ```typescript
-    // We TS we can see that our parameters are the local var's name, a colon,
-    // then type.
-
-    // "nums: number[]" meaning the var we get is nums, it's type is number[]
+    // "nums: number[]" means input param is 'nums', it's type is number[]
 
     function threeSumClosest(nums: number[], target: number): number {
       var res = nums[0] + nums[1] + nums[2];
       nums = nums.sort((a, b) => a - b);
 
-      for(var i = 0; i < nums.length - 2; i ++) {
+      for (var i = 0; i < nums.length - 2; i ++) {
       }
       return res
     };
-
-    ```
-
-  </div>
-
-  <div id="python" className="tabcontent">
-    ```python
-    # In python3 there is typing for the function's signature and return value
-
-    class Solution:
-      def threeSumClosest(self, nums: List[int], target: int) -> int:
-          nums.sort()
-          res = nums[0] + nums[len(nums) - 1] + nums[len(nums) - 2]
-
-          for i, n in enumerate(nums):
-
-          return res
     ```
 
   </div>
@@ -128,7 +108,7 @@ Return `res`.
         var res = nums[0] + nums[1] + nums[2];
         nums.sort();
 
-        for(var i = 0; i < nums.length - 2; i ++) {
+        for (var i = 0; i < nums.length - 2; i ++) {
         }
         return res;
       }
@@ -153,6 +133,22 @@ Return `res`.
             return res;
         }
     }
+    ```
+
+  </div>
+
+  <div id="python" className="tabcontent">
+    ```python
+    # In python3 there is typing for the function's signature and return value
+
+    class Solution:
+      def threeSumClosest(self, nums: List[int], target: int) -> int:
+          nums.sort()
+          res = nums[0] + nums[len(nums) - 1] + nums[len(nums) - 2]
+
+          for i, n in enumerate(nums):
+
+          return res
     ```
 
   </div>
@@ -198,9 +194,9 @@ Remember, the idea here is we want the sum to be `0`.
   <div className="tab">
     <button id="js" className="tablinks">javascript</button>
     <button id="ts" className="tablinks">typescript</button>
-    <button id="python" className="tablinks">python</button>
     <button id="dart" className="tablinks">dart</button>
     <button id="java" className="tablinks">java</button>
+    <button id="python" className="tablinks">python</button>
     <button id="go" className="tablinks">go</button>
   </div>
 
@@ -256,34 +252,6 @@ Remember, the idea here is we want the sum to be `0`.
       }
       return res
     };
-    ```
-
-  </div>
-
-  <div id="python" className="tabcontent">
-    ```python
-    #
-
-    class Solution:
-      def threeSumClosest(self, nums: List[int], target: int) -> int:
-          nums.sort()
-          res = nums[0] + nums[len(nums) - 1] + nums[len(nums) - 2]
-
-          for i, n in enumerate(nums):
-              l = i + 1
-              r = len(nums) - 1
-
-              while l < r:
-                  curSum = nums[i] + nums[l] + nums[r]
-
-                  if curSum == target:
-                      return curSum
-                  if curSum > target:
-                      r -= 1
-                  else:
-                      l += 1
-
-          return res
     ```
 
   </div>
@@ -349,6 +317,34 @@ Remember, the idea here is we want the sum to be `0`.
 
   </div>
 
+  <div id="python" className="tabcontent">
+    ```python
+    #
+
+    class Solution:
+      def threeSumClosest(self, nums: List[int], target: int) -> int:
+          nums.sort()
+          res = nums[0] + nums[len(nums) - 1] + nums[len(nums) - 2]
+
+          for i, n in enumerate(nums):
+              l = i + 1
+              r = len(nums) - 1
+
+              while l < r:
+                  curSum = nums[i] + nums[l] + nums[r]
+
+                  if curSum == target:
+                      return curSum
+                  if curSum > target:
+                      r -= 1
+                  else:
+                      l += 1
+
+          return res
+    ```
+
+  </div>
+
   <div id="go" className="tabcontent">
     ```go
     //
@@ -394,9 +390,9 @@ If so, continue to the next iteration.
   <div className="tab">
     <button id="js" className="tablinks">javascript</button>
     <button id="ts" className="tablinks">typescript</button>
-    <button id="python" className="tablinks">python</button>
     <button id="dart" className="tablinks">dart</button>
     <button id="java" className="tablinks">java</button>
+    <button id="python" className="tablinks">python</button>
     <button id="go" className="tablinks">go</button>
   </div>
 
@@ -408,7 +404,7 @@ If so, continue to the next iteration.
       var res = nums[0] + nums[1] + nums[2];
       nums = nums.sort((a, b) => a - b);
 
-      for(var i = 0; i < nums.length - 2; i ++) {
+      for (var i = 0; i < nums.length - 2; i ++) {
           if (i > 0 && nums[i] == nums[i - 1]) {
               continue
           }
@@ -443,7 +439,7 @@ If so, continue to the next iteration.
       var res = nums[0] + nums[1] + nums[2];
       nums = nums.sort((a, b) => a - b);
 
-      for(var i = 0; i < nums.length - 2; i ++) {
+      for (var i = 0; i < nums.length - 2; i ++) {
           if (i > 0 && nums[i] == nums[i - 1]) {
               continue
           }
@@ -470,40 +466,6 @@ If so, continue to the next iteration.
 
   </div>
 
-  <div id="python" className="tabcontent">
-    ```python
-    # Python has abs as well.
-
-    class Solution:
-      def threeSumClosest(self, nums: List[int], target: int) -> int:
-          nums.sort()
-          res = nums[0] + nums[len(nums) - 1] + nums[len(nums) - 2]
-
-
-          for i, n in enumerate(nums):
-              if (i > 0) and nums[i - 1] == nums[i]:
-                  continue
-              l = i + 1
-              r = len(nums) - 1
-
-              while l < r:
-                  curSum = nums[i] + nums[l] + nums[r]
-
-                  if curSum == target:
-                      return curSum
-                  if curSum > target:
-                      r -= 1
-                  else:
-                      l += 1
-
-                  if abs(curSum - target) < abs(res - target):
-                      res = curSum
-
-          return res
-    ```
-
-  </div>
-
   <div id="dart" className="tabcontent">
     ```dart
     //
@@ -513,7 +475,7 @@ If so, continue to the next iteration.
         var res = nums[0] + nums[1] + nums[2];
         nums.sort();
 
-        for(var i = 0; i < nums.length - 2; i ++) {
+        for (var i = 0; i < nums.length - 2; i ++) {
             if (i > 0 && nums[i] == nums[i - 1]) {
                 continue;
             }
@@ -576,6 +538,39 @@ If so, continue to the next iteration.
             return res;
         }
     }
+    ```
+
+  </div>
+
+  <div id="python" className="tabcontent">
+    ```python
+    # Python has abs as well.
+
+    class Solution:
+      def threeSumClosest(self, nums: List[int], target: int) -> int:
+          nums.sort()
+          res = nums[0] + nums[len(nums) - 1] + nums[len(nums) - 2]
+
+          for i, n in enumerate(nums):
+              if (i > 0) and nums[i - 1] == nums[i]:
+                  continue
+              l = i + 1
+              r = len(nums) - 1
+
+              while l < r:
+                  curSum = nums[i] + nums[l] + nums[r]
+
+                  if curSum == target:
+                      return curSum
+                  if curSum > target:
+                      r -= 1
+                  else:
+                      l += 1
+
+                  if abs(curSum - target) < abs(res - target):
+                      res = curSum
+
+          return res
     ```
 
   </div>
