@@ -34,10 +34,13 @@ Use a sliding window moving from left to right.
 
 In the event that a value on the right is larger than the left, compute the profit
 and compare to current max profit. If it's larger
-reassign the max profit
+reassign the max profit to the current max profit
 
-In the event the value on the left of the window is larger,
-reassign the left edge of the window to the current value of right.
+If the left value of the window is larger than the right, update left to the
+current value of right. This has the effect of "closing" the window and starting
+over from the current value of right.
+
+In this way we guarantee we always make a profit.
 
 ## Initialize variables
 
