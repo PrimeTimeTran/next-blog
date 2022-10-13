@@ -41,6 +41,236 @@ reassign the left edge of the window to the current value of right.
 
 ## Initialize variables
 
+Declare the variables we need to create our window. Also
+declare profit defaulted to 0 and return it at the end of the function.
+
+<div className="tab-group">
+  <div className="tab">
+    <button id="js" className="tablinks">javascript</button>
+    <button id="ts" className="tablinks">typescript</button>
+    <button id="python" className="tablinks">python</button>
+    <button id="dart" className="tablinks">dart</button>
+    <button id="java" className="tablinks">java</button>
+    <button id="go" className="tablinks">go</button>
+  </div>
+
+  <div id="js" className="tabcontent">
+    ```js
+    //
+
+    var maxProfit = function (prices) {
+      var l = 0
+      var r = 1
+      var profit = 0
+
+      return profit
+    }
+    ```
+
+  </div>
+
+  <div id="ts" className="tabcontent">
+    ```typescript
+    //
+
+    function maxProfit(prices: number[]): number {
+      var l = 0
+      var r = 1
+      var profit = 0
+
+      return profit
+    };
+    ```
+
+  </div>
+
+  <div id="python" className="tabcontent">
+    ```python
+    #
+    class Solution:
+      def maxProfit(self, prices: List[int]) -> int:
+        profit, l, r = 0, 0, 1
+
+        return profit
+    ```
+
+  </div>
+
+  <div id="dart" className="tabcontent">
+    ```dart
+    //
+    class Solution {
+      int maxProfit(List<int> prices) {
+        var l = 0;
+        var r = 1;
+        var profit = 0;
+
+        return profit;
+      }
+    }
+    ```
+
+  </div>
+
+  <div id="java" className="tabcontent">
+    ```java
+    //
+
+    import java.util.Collections;
+
+    class Solution {
+      public int maxProfit(int[] prices) {
+        int l = 0;
+        int r = 1;
+        int profit = 0;
+
+        return profit;
+      }
+    }
+    ```
+
+  </div>
+
+  <div id="go" className="tabcontent">
+    ```go
+    //
+
+    func maxProfit(prices []int) int {
+      profit, l, r := 0, 0, 1
+
+      return profit
+    }
+    ```
+
+  </div>
+</div>
+
+## Loop prices from left to right
+
+Loop prices using our right pointer, `r`. On each iteration we increase r, growing
+our "window" into the input array.
+
+<div className="tab-group">
+  <div className="tab">
+    <button id="js" className="tablinks">javascript</button>
+    <button id="ts" className="tablinks">typescript</button>
+    <button id="python" className="tablinks">python</button>
+    <button id="dart" className="tablinks">dart</button>
+    <button id="java" className="tablinks">java</button>
+    <button id="go" className="tablinks">go</button>
+  </div>
+
+  <div id="js" className="tabcontent">
+    ```js
+    //
+    var maxProfit = function (prices) {
+      var l = 0
+      var r = 1
+      var profit = 0
+      while (r < prices.length) {
+        r += 1
+      }
+      return profit
+    }
+    ```
+
+  </div>
+
+  <div id="ts" className="tabcontent">
+    ```typescript
+    //
+    function maxProfit(prices: number[]): number {
+      var l = 0
+      var r = 1
+      var profit = 0
+      while (r < prices.length) {
+        r += 1
+      }
+      return profit
+    };
+    ```
+
+  </div>
+
+  <div id="python" className="tabcontent">
+    ```python
+    #
+    class Solution:
+      def maxProfit(self, prices: List[int]) -> int:
+        profit, l, r = 0, 0, 1
+        while r < len(prices):
+          r += 1
+        return profit
+    ```
+  </div>
+
+  <div id="dart" className="tabcontent">
+    ```dart
+    //
+    class Solution {
+      int maxProfit(List<int> prices) {
+        var l = 0;
+        var r = 1;
+        var profit = 0;
+        while (r < prices.length) {
+          r += 1;
+        }
+        return profit;
+      }
+    }
+    ```
+
+  </div>
+
+  <div id="java" className="tabcontent">
+    ```java
+    //
+
+    import java.util.Collections;
+
+    class Solution {
+      public int maxProfit(int[] prices) {
+        int l = 0;
+        int r = 1;
+        int profit = 0;
+        while (r < prices.length) {
+          r += 1;
+        }
+        return profit;
+      }
+    }
+    ```
+
+  </div>
+
+  <div id="go" className="tabcontent">
+    ```go
+    //
+
+    func maxProfit(prices []int) int {
+      profit, l, r := 0, 0, 1
+
+      for r < len(prices) {
+        r += 1
+      }
+      return profit
+    }
+    ```
+
+  </div>
+</div>
+
+## Check difference of future price and current price
+
+Use the right pointer, `r`, to grab that future price and compare it using
+the left pointer, `l`, to the previous price.
+
+Compare the current difference to previous differences. The difference _is_
+our profit.
+
+On each iteration we use a built in `Math.max` function(or custom one) to reassign
+`profit`.
+
 <div className="tab-group">
   <div className="tab">
     <button id="js" className="tablinks">javascript</button>
