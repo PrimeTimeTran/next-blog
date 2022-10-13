@@ -2,7 +2,7 @@
 title: 'Java & Springboot'
 date: '2022-10-14'
 tags: ['Java', 'Spring Boot']
-draft: true
+draft: false
 summary: 'Requirements for setting up Java working environment using VSCode'
 layout: PostSimple
 bibliography: references-data.bib
