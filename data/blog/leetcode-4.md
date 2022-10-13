@@ -1,7 +1,7 @@
 ---
 draft: false
 date: '2022-10-13'
-title: 'Data structures & Algorithms'
+title: '217. Contains Duplicate'
 tags:
   [
     'Leetcode',
