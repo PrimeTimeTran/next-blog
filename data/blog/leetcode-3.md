@@ -116,8 +116,6 @@ declare profit defaulted to 0 and return it at the end of the function.
     ```java
     //
 
-    import java.util.Collections;
-
     class Solution {
       public int maxProfit(int[] prices) {
         int l = 0;
