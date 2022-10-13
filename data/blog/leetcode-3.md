@@ -187,6 +187,7 @@ our "window" into the input array.
   <div id="ts" className="tabcontent">
     ```typescript
     //
+
     function maxProfit(prices: number[]): number {
       var l = 0
       var r = 1
@@ -202,7 +203,8 @@ our "window" into the input array.
 
   <div id="python" className="tabcontent">
     ```python
-    #
+    # To find the length of a list in Python we use len()
+
     class Solution:
       def maxProfit(self, prices: List[int]) -> int:
         profit, l, r = 0, 0, 1
@@ -210,6 +212,7 @@ our "window" into the input array.
           r += 1
         return profit
     ```
+
   </div>
 
   <div id="dart" className="tabcontent">
@@ -234,8 +237,6 @@ our "window" into the input array.
     ```java
     //
 
-    import java.util.Collections;
-
     class Solution {
       public int maxProfit(int[] prices) {
         int l = 0;
@@ -253,7 +254,8 @@ our "window" into the input array.
 
   <div id="go" className="tabcontent">
     ```go
-    //
+    // Go has no 'while' loop. To mimic a while loop use a for loop
+    // with an explicitly declared iterator r, incrementing in the loop's body.
 
     func maxProfit(prices []int) int {
       profit, l, r := 0, 0, 1
@@ -291,7 +293,9 @@ On each iteration we use a built in `Math.max` function(or custom one) to reassi
 
   <div id="js" className="tabcontent">
     ```js
-    //
+    // Math.max is built into javascript and can be used to find
+    // the largest value between multiple values.
+
     var maxProfit = function (prices) {
       var l = 0
       var r = 1
@@ -313,7 +317,8 @@ On each iteration we use a built in `Math.max` function(or custom one) to reassi
 
   <div id="ts" className="tabcontent">
     ```typescript
-    //
+    // Typescript also has a Math.max builtin function.
+
     function maxProfit(prices: number[]): number {
       var l = 0
       var r = 1
@@ -335,7 +340,8 @@ On each iteration we use a built in `Math.max` function(or custom one) to reassi
 
   <div id="python" className="tabcontent">
     ```python
-    #
+    # Python has max().
+
     class Solution:
       def maxProfit(self, prices: List[int]) -> int:
         profit, l, r = 0, 0, 1
@@ -348,11 +354,12 @@ On each iteration we use a built in `Math.max` function(or custom one) to reassi
           r += 1
         return profit
     ```
+
   </div>
 
   <div id="dart" className="tabcontent">
     ```dart
-    //
+    // Dart has max() as well.
 
     class Solution {
       int maxProfit(List<int> prices) {
@@ -377,7 +384,7 @@ On each iteration we use a built in `Math.max` function(or custom one) to reassi
 
   <div id="java" className="tabcontent">
     ```java
-    //
+    // Java also has a builtin Math.max
 
     class Solution {
       public int maxProfit(int[] prices) {
