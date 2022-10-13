@@ -71,7 +71,7 @@ declare profit defaulted to 0 and return it at the end of the function.
 
   <div id="ts" className="tabcontent">
     ```typescript
-    //
+    // Typescript requires type annotation on function parameters.
 
     function maxProfit(prices: number[]): number {
       var l = 0
@@ -79,14 +79,16 @@ declare profit defaulted to 0 and return it at the end of the function.
       var profit = 0
 
       return profit
-    };
+    }
     ```
 
   </div>
 
   <div id="python" className="tabcontent">
     ```python
-    #
+    # Python isn't a curly brace language.
+    # It also has multi variable assignment.
+
     class Solution:
       def maxProfit(self, prices: List[int]) -> int:
         profit, l, r = 0, 0, 1
@@ -98,7 +100,11 @@ declare profit defaulted to 0 and return it at the end of the function.
 
   <div id="dart" className="tabcontent">
     ```dart
-    //
+    // Dart requires semicolons at the end of line and type annotation for function
+    // parameters.
+
+    // For variable declarations dart can infer type
+
     class Solution {
       int maxProfit(List<int> prices) {
         var l = 0;
@@ -114,7 +120,10 @@ declare profit defaulted to 0 and return it at the end of the function.
 
   <div id="java" className="tabcontent">
     ```java
-    //
+    // Java requires semicolons at the end of line and type annotation for function
+    // parameters.
+
+    // There isn't inferred type in Java, we must explicitly type variables.
 
     class Solution {
       public int maxProfit(int[] prices) {
@@ -131,7 +140,7 @@ declare profit defaulted to 0 and return it at the end of the function.
 
   <div id="go" className="tabcontent">
     ```go
-    //
+    // Go has multi variable assignment and inferred type using the ':='
 
     func maxProfit(prices []int) int {
       profit, l, r := 0, 0, 1
@@ -161,6 +170,7 @@ our "window" into the input array.
   <div id="js" className="tabcontent">
     ```js
     //
+
     var maxProfit = function (prices) {
       var l = 0
       var r = 1
@@ -185,7 +195,7 @@ our "window" into the input array.
         r += 1
       }
       return profit
-    };
+    }
     ```
 
   </div>
@@ -318,7 +328,7 @@ On each iteration we use a built in `Math.max` function(or custom one) to reassi
         r += 1
       }
       return profit
-    };
+    }
     ```
 
   </div>
@@ -343,6 +353,7 @@ On each iteration we use a built in `Math.max` function(or custom one) to reassi
   <div id="dart" className="tabcontent">
     ```dart
     //
+
     class Solution {
       int maxProfit(List<int> prices) {
         var l = 0;
@@ -367,8 +378,6 @@ On each iteration we use a built in `Math.max` function(or custom one) to reassi
   <div id="java" className="tabcontent">
     ```java
     //
-
-    import java.util.Collections;
 
     class Solution {
       public int maxProfit(int[] prices) {
