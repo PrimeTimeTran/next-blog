@@ -1,7 +1,7 @@
 ---
 draft: false
 date: '2022-10-08'
-title: '16. 3Sum Closest | Leetcode | Data Structures & Algorithms'
+title: '16. 3Sum Closest'
 tags:
   [
     'Leetcode',
