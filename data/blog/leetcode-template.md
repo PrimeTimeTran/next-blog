@@ -1,6 +1,6 @@
 ---
 draft: true
-date: '2022-10-08'
+date: '2022-10-13'
 title: 'Data structures & Algorithms'
 tags:
   [

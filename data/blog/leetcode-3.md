@@ -411,7 +411,7 @@ On each iteration we use a built in `Math.max` function(or custom one) to reassi
   </div>
 
   <div id="go" className="tabcontent">
-    ```go {} showLineNumbers
+    ```go {} showLineNumbers`
     // Go doesn't have a built in function for identifying max of two ints
     // So we have to implement it ourselves
 

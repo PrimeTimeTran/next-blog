@@ -19,22 +19,23 @@ summary: 'Solving programming problems in multiple languages to master syntax, d
 
 ## 217. Contains Duplicate
 
-Given an integer array nums, return true if any value appears at least twice in
-the array, and return false if every element is distinct.
+Given an integer array `nums`, return `true` if any value appears at least _twice_
+in the array, and return `false` if every element is _distinct_.
 
 ### Solution
 
-Loop through the array nums.
+Loop through the array `nums`.
 
-Check if the number has been seen before in a hashmap.
+Check if the number has been `seen` before in a hashmap.
 
-If so return true, otherwise add it to a hashmap we use to keep track of seen values.
+If so return `true`, otherwise add it to a hashmap we use to keep track of `seen`
+values.
 
 Return false if the loop exits without returning.
 
 ## Declare Hashmap
 
-Declare hashmap, `seen`, which is used to mark which numbers we've _seen_.
+Declare hashmap, `seen`, which is used to mark which numbers we've seen.
 
 Return at the end of the function `false` because if we exit the loop without
 returning, then we have no duplicate values.
@@ -50,7 +51,7 @@ returning, then we have no duplicate values.
   </div>
 
   <div id="js" className="tabcontent">
-    ```js {5, 7} showLineNumbers
+    ```js {4, 6} showLineNumbers
     // We can use a simple javascript object for our hashmap.
 
     var containsDuplicate = function(nums) {
