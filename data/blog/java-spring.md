@@ -49,7 +49,8 @@ https://marketplace.visualstudio.com/items?itemName=vscjava.vscode-java-pack
 
 ### Install Spring Initializr for VSCode
 
-This extension allows you to generate new spring projects sorta like `npx create-react-app` allows you to generate new React projects.
+This extension allows you to generate new spring projects sorta like
+`npx create-react-app` allows you to generate new React projects.
 
 https://code.visualstudio.com/docs/java/java-spring-boot
 
@@ -83,26 +84,6 @@ it's similar to Ruby on Rails/Django/.Net
 │                   └── restapi
 │                       └── demo
 │                           └── DemoApplicationTests.java
-└── target
-    ├── classes
-    │   ├── application.properties
-    │   └── com
-    │       └── example
-    │           └── restapi
-    │               └── demo
-    │                   ├── DemoApplication.class
-    │                   ├── Greeting.class
-    │                   └── GreetingController.class
-    ├── generated-sources
-    │   └── annotations
-    ├── generated-test-sources
-    │   └── test-annotations
-    └── test-classes
-        └── com
-            └── example
-                └── restapi
-                    └── demo
-                        └── DemoApplicationTests.class
 ```
 
 ### The most important file is `DemoApplication.java` which is the entrypoint to
