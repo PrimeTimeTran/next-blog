@@ -64,7 +64,7 @@ returning, then we have no duplicate values.
   </div>
 
   <div id="ts" className="tabcontent">
-    ```typescript {3, 5} showLineNumbers
+    ```typescript {4, 6} showLineNumbers
     // Typescript requires typing of input parameters.
 
     function containsDuplicate(nums: number[]): boolean {
@@ -77,7 +77,7 @@ returning, then we have no duplicate values.
   </div>
 
   <div id="dart" className="tabcontent">
-    ```dart {4, 6} showLineNumbers
+    ```dart {6, 8} showLineNumbers
     // Dart also requires typing of input parameters.
     // In this case, List<int>.
 
@@ -93,7 +93,7 @@ returning, then we have no duplicate values.
   </div>
 
   <div id="java" className="tabcontent">
-    ```java {4, 6}showLineNumbers
+    ```java {5, 7}showLineNumbers
     // Java also requires typing of input parameters.
 
     class Solution {
@@ -172,7 +172,7 @@ If it doesn't then add the number as a key in the hash map with a value of true.
   </div>
 
   <div id="ts" className="tabcontent">
-    ```typescript {5-10} showLineNumbers
+    ```typescript {6-11} showLineNumbers
     //
 
     function containsDuplicate(nums: number[]): boolean {
@@ -191,7 +191,7 @@ If it doesn't then add the number as a key in the hash map with a value of true.
   </div>
 
   <div id="dart" className="tabcontent">
-    ```dart {5-11} showLineNumbers
+    ```dart {7-13} showLineNumbers
     // Dart will throw an error if we don't explicitly
     // check seen[n] != null. Because null is not subtype of bool.
 
@@ -213,7 +213,7 @@ If it doesn't then add the number as a key in the hash map with a value of true.
   </div>
 
   <div id="java" className="tabcontent">
-    ```java {6-12}showLineNumbers
+    ```java {8-14}showLineNumbers
     // In Java we can't check a hashmaps key's using the index like syntax of JS/TS.
     // We have to use .containsKey(value)
 
@@ -237,7 +237,7 @@ If it doesn't then add the number as a key in the hash map with a value of true.
   </div>
 
   <div id="python" className="tabcontent">
-    ```python {7-11} showLineNumbers
+    ```python {8-12} showLineNumbers
     # In Python as well we have to safeguard.
     # Except we do so by using n in seen.
 
@@ -257,7 +257,7 @@ If it doesn't then add the number as a key in the hash map with a value of true.
   </div>
 
   <div id="go" className="tabcontent">
-    ```go {5-11} showLineNumbers
+    ```go {6-12} showLineNumbers
     // In Go we don't have a for of loop but we can accomplish it using range
     // We also have a more verbose way of checking if a value is in our hashmap.
 
