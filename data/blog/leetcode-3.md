@@ -58,7 +58,7 @@ declare profit defaulted to 0 and return it at the end of the function.
   </div>
 
   <div id="js" className="tabcontent">
-    ```js
+    ```js {} showLineNumbers
     //
 
     var maxProfit = function (prices) {
@@ -73,7 +73,7 @@ declare profit defaulted to 0 and return it at the end of the function.
   </div>
 
   <div id="ts" className="tabcontent">
-    ```typescript
+    ```typescript {} showLineNumbers
     // Typescript requires type annotation on function parameters.
 
     function maxProfit(prices: number[]): number {
@@ -88,7 +88,7 @@ declare profit defaulted to 0 and return it at the end of the function.
   </div>
 
   <div id="python" className="tabcontent">
-    ```python
+    ```python {} showLineNumbers
     # Python isn't a curly brace language.
     # It also has multi variable assignment.
 
@@ -102,7 +102,7 @@ declare profit defaulted to 0 and return it at the end of the function.
   </div>
 
   <div id="dart" className="tabcontent">
-    ```dart
+    ```dart {} showLineNumbers
     // Dart requires semicolons at the end of line and type annotation for function
     // parameters.
 
@@ -122,7 +122,7 @@ declare profit defaulted to 0 and return it at the end of the function.
   </div>
 
   <div id="java" className="tabcontent">
-    ```java
+    ```java {} showLineNumbers
     // Java requires semicolons at the end of line and type annotation for function
     // parameters.
 
@@ -142,7 +142,7 @@ declare profit defaulted to 0 and return it at the end of the function.
   </div>
 
   <div id="go" className="tabcontent">
-    ```go
+    ```go {} showLineNumbers
     // Go has multi variable assignment and inferred type using the ':='
 
     func maxProfit(prices []int) int {
@@ -171,7 +171,7 @@ our "window" into the input array.
   </div>
 
   <div id="js" className="tabcontent">
-    ```js
+    ```js {} showLineNumbers
     //
 
     var maxProfit = function (prices) {
@@ -188,7 +188,7 @@ our "window" into the input array.
   </div>
 
   <div id="ts" className="tabcontent">
-    ```typescript
+    ```typescript {} showLineNumbers
     //
 
     function maxProfit(prices: number[]): number {
@@ -205,7 +205,7 @@ our "window" into the input array.
   </div>
 
   <div id="python" className="tabcontent">
-    ```python
+    ```python {} showLineNumbers
     # To find the length of a list in Python we use len()
 
     class Solution:
@@ -219,7 +219,7 @@ our "window" into the input array.
   </div>
 
   <div id="dart" className="tabcontent">
-    ```dart
+    ```dart {} showLineNumbers
     //
     class Solution {
       int maxProfit(List<int> prices) {
@@ -237,7 +237,7 @@ our "window" into the input array.
   </div>
 
   <div id="java" className="tabcontent">
-    ```java
+    ```java {} showLineNumbers
     //
 
     class Solution {
@@ -256,7 +256,7 @@ our "window" into the input array.
   </div>
 
   <div id="go" className="tabcontent">
-    ```go
+    ```go {} showLineNumbers
     // Go has no 'while' loop. To mimic a while loop use a for loop
     // with an explicitly declared iterator r, incrementing in the loop's body.
 
@@ -295,7 +295,7 @@ On each iteration we use a built in `Math.max` function(or custom one) to reassi
   </div>
 
   <div id="js" className="tabcontent">
-    ```js
+    ```js {} showLineNumbers
     // Math.max is built into javascript and can be used to find
     // the largest value between multiple values.
 
@@ -319,7 +319,7 @@ On each iteration we use a built in `Math.max` function(or custom one) to reassi
   </div>
 
   <div id="ts" className="tabcontent">
-    ```typescript
+    ```typescript {} showLineNumbers
     // Typescript also has a Math.max builtin function.
 
     function maxProfit(prices: number[]): number {
@@ -342,7 +342,7 @@ On each iteration we use a built in `Math.max` function(or custom one) to reassi
   </div>
 
   <div id="python" className="tabcontent">
-    ```python
+    ```python {} showLineNumbers
     # Python has max().
 
     class Solution:
@@ -361,7 +361,7 @@ On each iteration we use a built in `Math.max` function(or custom one) to reassi
   </div>
 
   <div id="dart" className="tabcontent">
-    ```dart
+    ```dart {} showLineNumbers
     // Dart has max() as well.
 
     class Solution {
@@ -386,7 +386,7 @@ On each iteration we use a built in `Math.max` function(or custom one) to reassi
   </div>
 
   <div id="java" className="tabcontent">
-    ```java
+    ```java {} showLineNumbers
     // Java also has a builtin Math.max
 
     class Solution {
@@ -411,7 +411,7 @@ On each iteration we use a built in `Math.max` function(or custom one) to reassi
   </div>
 
   <div id="go" className="tabcontent">
-    ```go
+    ```go {} showLineNumbers
     // Go doesn't have a built in function for identifying max of two ints
     // So we have to implement it ourselves
 

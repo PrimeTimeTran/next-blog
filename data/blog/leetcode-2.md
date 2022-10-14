@@ -70,7 +70,7 @@ Return `res`.
   </div>
 
   <div id="js" className="tabcontent">
-    ```js
+    ```js {} showLineNumbers
     // JS syntax is simple relative to TS
 
     var threeSumClosest = function(nums, target) {
@@ -86,7 +86,7 @@ Return `res`.
   </div>
 
   <div id="ts" className="tabcontent">
-    ```typescript
+    ```typescript {} showLineNumbers
     // "nums: number[]" means input param is 'nums', it's type is number[]
 
     function threeSumClosest(nums: number[], target: number): number {
@@ -102,7 +102,7 @@ Return `res`.
   </div>
 
   <div id="dart" className="tabcontent">
-    ```dart
+    ```dart {} showLineNumbers
     // Dart requires typing on return value, the 'int' before threeSumClosest
     // It's parameters are also typed. The 'int' before target
 
@@ -121,7 +121,7 @@ Return `res`.
   </div>
 
   <div id="java" className="tabcontent">
-    ```java
+    ```java {} showLineNumbers
     // Java requires typing for variable initializations in conjunction with
     // function signature typing.
 
@@ -141,7 +141,7 @@ Return `res`.
   </div>
 
   <div id="python" className="tabcontent">
-    ```python
+    ```python {} showLineNumbers
     # In python3 there is typing for the function's signature and return value
 
     class Solution:
@@ -157,7 +157,7 @@ Return `res`.
   </div>
 
   <div id="go" className="tabcontent">
-    ```go
+    ```go {} showLineNumbers
     // := allows Go to infer type of 'res'
     // from the type of the expression on the right.
 
@@ -204,7 +204,7 @@ Remember, the idea here is we want the sum to be `0`.
   </div>
 
   <div id="js" className="tabcontent">
-    ```js
+    ```js {} showLineNumbers
     //
 
     var threeSumClosest = function(nums, target) {
@@ -232,7 +232,7 @@ Remember, the idea here is we want the sum to be `0`.
   </div>
 
   <div id="ts" className="tabcontent">
-    ```typescript
+    ```typescript {} showLineNumbers
     //
 
     function threeSumClosest(nums: number[], target: number): number {
@@ -260,7 +260,7 @@ Remember, the idea here is we want the sum to be `0`.
   </div>
 
   <div id="dart" className="tabcontent">
-    ```dart
+    ```dart {} showLineNumbers
     //
 
     class Solution {
@@ -290,7 +290,7 @@ Remember, the idea here is we want the sum to be `0`.
   </div>
 
   <div id="java" className="tabcontent">
-    ```java
+    ```java {} showLineNumbers
     //
 
     class Solution {
@@ -321,7 +321,7 @@ Remember, the idea here is we want the sum to be `0`.
   </div>
 
   <div id="python" className="tabcontent">
-    ```python
+    ```python {} showLineNumbers
     #
 
     class Solution:
@@ -349,7 +349,7 @@ Remember, the idea here is we want the sum to be `0`.
   </div>
 
   <div id="go" className="tabcontent">
-    ```go
+    ```go {} showLineNumbers
     //
 
     func threeSumClosest(nums []int, target int) int {
@@ -400,7 +400,7 @@ If so, continue to the next iteration.
   </div>
 
   <div id="js" className="tabcontent">
-    ```js
+    ```js {} showLineNumbers
     // Math.abs is helpful here.
 
     var threeSumClosest = function(nums, target) {
@@ -435,7 +435,7 @@ If so, continue to the next iteration.
   </div>
 
   <div id="ts" className="tabcontent">
-    ```typescript
+    ```typescript {} showLineNumbers
     //
 
     function threeSumClosest(nums: number[], target: number): number {
@@ -470,7 +470,7 @@ If so, continue to the next iteration.
   </div>
 
   <div id="dart" className="tabcontent">
-    ```dart
+    ```dart {} showLineNumbers
     //
 
     class Solution {
@@ -507,7 +507,7 @@ If so, continue to the next iteration.
   </div>
 
   <div id="java" className="tabcontent">
-    ```java
+    ```java {} showLineNumbers
     //
 
     class Solution {
@@ -546,7 +546,7 @@ If so, continue to the next iteration.
   </div>
 
   <div id="python" className="tabcontent">
-    ```python
+    ```python {} showLineNumbers
     # Python has abs as well.
 
     class Solution:
@@ -579,7 +579,7 @@ If so, continue to the next iteration.
   </div>
 
   <div id="go" className="tabcontent">
-    ```go
+    ```go {} showLineNumbers
     // Go doesn't have built in support for mathematical abs
     // so we have to implement it ourselves.
 
