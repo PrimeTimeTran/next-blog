@@ -162,13 +162,13 @@ Return `res`.
     // from the type of the expression on the right.
 
     func threeSumClosest(nums []int, target int) int {
-        res := nums[0] + nums[1] + nums[2]
-        sort.Ints(nums[:])
+      res := nums[0] + nums[1] + nums[2]
+      sort.Ints(nums[:])
 
-        for i := 0; i < len(nums) - 2; i++ {
-        }
+      for i := 0; i < len(nums) - 2; i++ {
+      }
 
-        return res
+      return res
     }
     ```
 
@@ -211,19 +211,19 @@ Remember, the idea here is we want the sum to be `0`.
       var res = nums[0] + nums[1] + nums[2];
       nums = nums.sort((a, b) => a - b);
 
-      for(var i = 0; i < nums.length - 2; i ++) {
-          var l = i + 1
-          var r = nums.length - 1
+      for (var i = 0; i < nums.length - 2; i ++) {
+        var l = i + 1
+        var r = nums.length - 1
 
-          while (l < r) {
-              var cur = nums[i] + nums[l] + nums[r]
-              if (cur == target) return cur
-              if (cur > target) {
-                  r -= 1
-              } else if (cur < target) {
-                  l += 1
-              }
+        while (l < r) {
+          var cur = nums[i] + nums[l] + nums[r]
+          if (cur == target) return cur
+          if (cur > target) {
+            r -= 1
+          } else if (cur < target) {
+            l += 1
           }
+        }
       }
       return res
     };
@@ -239,19 +239,19 @@ Remember, the idea here is we want the sum to be `0`.
       var res = nums[0] + nums[1] + nums[2];
       nums = nums.sort((a, b) => a - b);
 
-      for(var i = 0; i < nums.length - 2; i ++) {
-          var l = i + 1
-          var r = nums.length - 1
+      for (var i = 0; i < nums.length - 2; i ++) {
+        var l = i + 1
+        var r = nums.length - 1
 
-          while (l < r) {
-              var cur = nums[i] + nums[l] + nums[r]
-              if (cur == target) return cur
-              if (cur > target) {
-                  r -= 1
-              } else if (cur < target) {
-                  l += 1
-              }
+        while (l < r) {
+          var cur = nums[i] + nums[l] + nums[r]
+          if (cur == target) return cur
+          if (cur > target) {
+            r -= 1
+          } else if (cur < target) {
+            l += 1
           }
+        }
       }
       return res
     };
@@ -269,18 +269,18 @@ Remember, the idea here is we want the sum to be `0`.
         nums.sort();
 
         for(var i = 0; i < nums.length - 2; i ++) {
-            var l = i + 1;
-            var r = nums.length - 1;
+          var l = i + 1;
+          var r = nums.length - 1;
 
-            while (l < r) {
-                var cur = nums[i] + nums[l] + nums[r];
-                if (cur == target) return cur;
-                if (cur > target) {
-                    r -= 1;
-                } else if (cur < target) {
-                    l += 1;
-                }
+          while (l < r) {
+            var cur = nums[i] + nums[l] + nums[r];
+            if (cur == target) return cur;
+            if (cur > target) {
+              r -= 1;
+            } else if (cur < target) {
+              l += 1;
             }
+          }
         }
         return res;
       }
@@ -353,25 +353,24 @@ Remember, the idea here is we want the sum to be `0`.
     //
 
     func threeSumClosest(nums []int, target int) int {
-        res := nums[0] + nums[1] + nums[2]
-        sort.Ints(nums[:])
+      res := nums[0] + nums[1] + nums[2]
+      sort.Ints(nums[:])
 
-        for i := 0; i < len(nums) - 2; i++ {
+      for i := 0; i < len(nums) - 2; i++ {
+        l := i + 1
+        r := len(nums) - 1
 
-            l := i + 1
-            r := len(nums) - 1
-
-            for l < r {
-                cur := nums[i] + nums[l] + nums[r]
-                if cur > target {
-                    r -= 1
-                } else {
-                    l += 1
-                }
-            }
+        for l < r {
+          cur := nums[i] + nums[l] + nums[r]
+          if cur > target {
+            r -= 1
+          } else {
+            l += 1
+          }
         }
+      }
 
-        return res
+      return res
     }
     ```
 
@@ -408,25 +407,25 @@ If so, continue to the next iteration.
       nums = nums.sort((a, b) => a - b);
 
       for (var i = 0; i < nums.length - 2; i ++) {
-          if (i > 0 && nums[i] == nums[i - 1]) {
-              continue
-          }
-          var l = i + 1
-          var r = nums.length - 1
+        if (i > 0 && nums[i] == nums[i - 1]) {
+          continue
+        }
+        var l = i + 1
+        var r = nums.length - 1
 
-          while (l < r) {
-              var cur = nums[i] + nums[l] + nums[r]
-              if (cur == target) return cur
-              if (cur > target) {
-                  r -= 1
-              } else if (cur < target) {
-                  l += 1
-              }
-
-              if (Math.abs(cur - target) < Math.abs(res - target)) {
-                  res = cur
-              }
+        while (l < r) {
+          var cur = nums[i] + nums[l] + nums[r]
+          if (cur == target) return cur
+          if (cur > target) {
+            r -= 1
+          } else if (cur < target) {
+            l += 1
           }
+
+          if (Math.abs(cur - target) < Math.abs(res - target)) {
+            res = cur
+          }
+        }
       }
       return res
     };
@@ -450,17 +449,17 @@ If so, continue to the next iteration.
           var r = nums.length - 1
 
           while (l < r) {
-              var cur = nums[i] + nums[l] + nums[r]
-              if (cur == target) return cur
-              if (cur > target) {
-                  r -= 1
-              } else if (cur < target) {
-                  l += 1
-              }
+            var cur = nums[i] + nums[l] + nums[r]
+            if (cur == target) return cur
+            if (cur > target) {
+              r -= 1
+            } else if (cur < target) {
+              l += 1
+            }
 
-              if (Math.abs(cur - target) < Math.abs(res - target)) {
-                  res = cur
-              }
+            if (Math.abs(cur - target) < Math.abs(res - target)) {
+              res = cur
+            }
           }
       }
       return res
@@ -479,25 +478,25 @@ If so, continue to the next iteration.
         nums.sort();
 
         for (var i = 0; i < nums.length - 2; i ++) {
-            if (i > 0 && nums[i] == nums[i - 1]) {
-                continue;
-            }
-            var l = i + 1;
-            var r = nums.length - 1;
+          if (i > 0 && nums[i] == nums[i - 1]) {
+              continue;
+          }
+          var l = i + 1;
+          var r = nums.length - 1;
 
-            while (l < r) {
-                var cur = nums[i] + nums[l] + nums[r];
-                if (cur == target) return cur;
-                if (cur > target) {
-                    r -= 1;
-                } else if (cur < target) {
-                    l += 1;
-                }
-
-                if ((cur - target).abs() < (res - target).abs()) {
-                    res = cur;
-                }
+          while (l < r) {
+            var cur = nums[i] + nums[l] + nums[r];
+            if (cur == target) return cur;
+            if (cur > target) {
+              r -= 1;
+            } else if (cur < target) {
+              l += 1;
             }
+
+            if ((cur - target).abs() < (res - target).abs()) {
+              res = cur;
+            }
+          }
         }
         return res;
       }
@@ -599,25 +598,25 @@ If so, continue to the next iteration.
         sort.Ints(nums[:])
 
         for i := 0; i < len(nums) - 2; i++ {
-            if i > 0 && nums[i] == nums[i - 1] {
-                continue
+          if i > 0 && nums[i] == nums[i - 1] {
+              continue
+          }
+
+          l := i + 1
+          r := len(nums) - 1
+
+          for l < r {
+            cur := nums[i] + nums[l] + nums[r]
+            if cur > target {
+              r -= 1
+            } else {
+              l += 1
             }
 
-            l := i + 1
-            r := len(nums) - 1
-
-            for l < r {
-                cur := nums[i] + nums[l] + nums[r]
-                if cur > target {
-                    r -= 1
-                } else {
-                    l += 1
-                }
-
-                if absInt(cur - target) < absInt(res - target) {
-                    res = cur
-                }
+            if absInt(cur - target) < absInt(res - target) {
+              res = cur
             }
+          }
         }
 
         return res
