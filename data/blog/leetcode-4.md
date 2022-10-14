@@ -59,7 +59,6 @@ returning, then we have no duplicate values.
 
       return false
     }
-
     ```
 
   </div>
