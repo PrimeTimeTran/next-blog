@@ -37,7 +37,7 @@ sought value and index to hash map if not found. If found return indices.
   </div>
 
   <div id="js" className="tabcontent">
-    ```js
+    ```js {} showLineNumbers
     //
 
     ```
@@ -45,7 +45,7 @@ sought value and index to hash map if not found. If found return indices.
   </div>
 
   <div id="ts" className="tabcontent">
-    ```typescript
+    ```typescript {} showLineNumbers
     //
 
     ```
@@ -53,7 +53,7 @@ sought value and index to hash map if not found. If found return indices.
   </div>
 
   <div id="dart" className="tabcontent">
-    ```dart
+    ```dart {} showLineNumbers
     //
 
     ```
@@ -61,7 +61,7 @@ sought value and index to hash map if not found. If found return indices.
   </div>
 
   <div id="java" className="tabcontent">
-    ```java
+    ```java {} showLineNumbers
     //
 
     ```
@@ -69,7 +69,7 @@ sought value and index to hash map if not found. If found return indices.
   </div>
 
   <div id="python" className="tabcontent">
-    ```python
+    ```python {} showLineNumbers
     #
 
     ```
@@ -77,7 +77,7 @@ sought value and index to hash map if not found. If found return indices.
   </div>
 
   <div id="go" className="tabcontent">
-    ```go
+    ```go {} showLineNumbers
     //
 
     ```

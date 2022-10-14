@@ -24,10 +24,20 @@ the array, and return false if every element is distinct.
 
 ### Solution
 
-Iterate input nums. Use the target and current num to identify sought value. Add
-sought value and index to hash map if not found. If found return indices.
+Loop through the array nums.
+
+Check if the number has been seen before in a hashmap.
+
+If so return true, otherwise add it to a hashmap we use to keep track of seen values.
+
+Return false if the loop exits without returning.
 
 ## Declare Hashmap
+
+Declare hashmap, `seen`, which is used to mark which numbers we've _seen_.
+
+Return at the end of the function `false` because if we exit the loop without
+returning, then we have no duplicate values.
 
 <div className="tab-group">
   <div className="tab">
@@ -40,18 +50,119 @@ sought value and index to hash map if not found. If found return indices.
   </div>
 
   <div id="js" className="tabcontent">
-    ```js
-    // The for of loop in javascript allows us to loop over items
-    // in an array easily.
+    ```js {5, 7} showLineNumbers
+    // We can use a simple javascript object for our hashmap.
 
     var containsDuplicate = function(nums) {
-      var hashMap = {}
+      var seen = {}
 
-      for (let n of nums) {
-        if (hashMap[n]) {
-          return true;
+      return false
+    }
+
+    ```
+
+  </div>
+
+  <div id="ts" className="tabcontent">
+    ```typescript {3, 5} showLineNumbers
+    // Typescript requires typing of input parameters.
+
+    function containsDuplicate(nums: number[]): boolean {
+      var seen = {}
+
+      return false
+    }
+    ```
+
+  </div>
+
+  <div id="dart" className="tabcontent">
+    ```dart {4, 6} showLineNumbers
+    // Dart also requires typing of input parameters.
+    // In this case, List<int>.
+
+    class Solution {
+      bool containsDuplicate(List<int> nums) {
+        var seen = {};
+
+        return false;
+      }
+    }
+    ```
+
+  </div>
+
+  <div id="java" className="tabcontent">
+    ```java {4, 6}showLineNumbers
+    // Java also requires typing of input parameters.
+
+    class Solution {
+      public boolean containsDuplicate(int[] nums) {
+        Map seen = new HashMap<>();
+
+        return false;
+      }
+    }
+    ```
+
+  </div>
+
+  <div id="python" className="tabcontent">
+    ```python {5, 7} showLineNumbers
+    # Python doesn't require type of keywords such as var
+
+    class Solution:
+      def containsDuplicate(self, nums: List[int]) -> bool:
+        seen = {}
+
+        return False
+    ```
+
+  </div>
+
+  <div id="go" className="tabcontent">
+    ```go {4, 6} showLineNumbers
+    // Although Go requires typing we infer the type using :=
+
+    func containsDuplicate(nums []int) bool {
+      seen := make(map[int]bool)
+
+      return false
+    }
+    ```
+
+  </div>
+</div>
+
+## Check if current number in hash map
+
+Check if the hashmap contains the current number. If it does return true.
+
+If it doesn't then add the number as a key in the hash map with a value of true.
+
+<div className="tab-group">
+  <div className="tab">
+    <button id="js" className="tablinks">javascript</button>
+    <button id="ts" className="tablinks">typescript</button>
+    <button id="dart" className="tablinks">dart</button>
+    <button id="java" className="tablinks">java</button>
+    <button id="python" className="tablinks">python</button>
+    <button id="go" className="tablinks">go</button>
+  </div>
+
+  <div id="js" className="tabcontent">
+    ```js {7-12} showLineNumbers
+    // Javascript has a for of which helps us loop
+    // each n in nums easily
+
+    var containsDuplicate = function(nums) {
+      var seen = {}
+
+      for (var n of nums) {
+        if (seen[n]) {
+          return true
         }
-        hashMap[n] = true;
+        seen[n] = true
       }
       return false
     }
@@ -61,16 +172,17 @@ sought value and index to hash map if not found. If found return indices.
   </div>
 
   <div id="ts" className="tabcontent">
-    ```typescript
+    ```typescript {5-10} showLineNumbers
     //
-    function containsDuplicate(nums: number[]): boolean {
-      var hashMap = {}
 
-      for(let n of nums) {
-        if (hashMap[n]) {
+    function containsDuplicate(nums: number[]): boolean {
+      var seen = {}
+
+      for (var n of nums) {
+        if (seen[n]) {
           return true
         }
-        hashMap[n] = true
+        seen[n] = true
       }
       return false
     }
@@ -79,17 +191,18 @@ sought value and index to hash map if not found. If found return indices.
   </div>
 
   <div id="dart" className="tabcontent">
-    ```dart
-    //
+    ```dart {5-11} showLineNumbers
+    // Dart will throw an error if we don't explicitly
+    // check seen[n] != null. Because null is not subtype of bool.
+
     class Solution {
       bool containsDuplicate(List<int> nums) {
-        var hashMap = {};
-        for(var i = 0; i < nums.length; i++) {
-          var num = nums[i];
-          if (hashMap[num] != null) {
+        var seen = {};
+        for (var n in nums) {
+          if (seen[n] != null) {
             return true;
           } else {
-            hashMap[num] = true;
+            seen[n] = true;
           }
         }
         return false;
@@ -100,21 +213,20 @@ sought value and index to hash map if not found. If found return indices.
   </div>
 
   <div id="java" className="tabcontent">
-    ```java
-    //
+    ```java {6-12}showLineNumbers
+    // In Java we can't check a hashmaps key's using the index like syntax of JS/TS.
+    // We have to use .containsKey(value)
+
     class Solution {
       public boolean containsDuplicate(int[] nums) {
-        int idx = 0;
-        Map hashMap = new HashMap<>();
+        Map seen = new HashMap<>();
 
-        while(idx < nums.length) {
-          if (hashMap.containsKey(nums[idx])) {
+        for (int n : nums) {
+          if (seen.containsKey(n)) {
             return true;
           } else {
-            hashMap.put(nums[idx], true);
+            seen.put(n, true);
           }
-
-          idx++;
         }
 
         return false;
@@ -125,18 +237,19 @@ sought value and index to hash map if not found. If found return indices.
   </div>
 
   <div id="python" className="tabcontent">
-    ```python
-    #
+    ```python {7-11} showLineNumbers
+    # In Python as well we have to safeguard.
+    # Except we do so by using n in seen.
 
     class Solution:
       def containsDuplicate(self, nums: List[int]) -> bool:
-        res = {}
+        seen = {}
 
         for n in nums:
-          if n in res:
+          if n in seen:
             return True
           else:
-            res[n] = True
+            seen[n] = True
         return False
 
     ```
@@ -144,16 +257,17 @@ sought value and index to hash map if not found. If found return indices.
   </div>
 
   <div id="go" className="tabcontent">
-    ```go
-    //
+    ```go {5-11} showLineNumbers
+    // In Go we don't have a for of loop but we can accomplish it using range
+    // We also have a more verbose way of checking if a value is in our hashmap.
 
     func containsDuplicate(nums []int) bool {
-      hashMap := make(map[int]bool)
-      for i := 0; i < len(nums); i++ {
-        if _, ok := hashMap[nums[i]]; ok {
+      seen := make(map[int]bool)
+      for _, n := range nums {
+        if _, ok := seen[n]; ok {
           return true
         } else {
-          hashMap[nums[i]] = true
+          seen[n] = true
         }
       }
       return false
