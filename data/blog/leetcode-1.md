@@ -44,29 +44,29 @@ Each key will be a number which we're looking for and it's value will be it's in
   </div>
 
   <div id="js" className="tabcontent">
-    ```js
+    ```js {} showLineNumbers
     //
 
     var twoSum = function (nums, target) {
-      let map = new Map()
+      var map = {}
     }
     ```
 
   </div>
 
   <div id="ts" className="tabcontent">
-    ```typescript
+    ```typescript {} showLineNumbers
     //
 
     function twoSum(nums: number[], target: number): number[] {
-      const map = new Map()
-    };
+      var map = {}
+    }
     ```
 
   </div>
 
   <div id="dart" className="tabcontent">
-    ```dart
+    ```dart {} showLineNumbers
     // Despite the fact we're guaranteed to have at least one pair
     // which sums to target, we must hardcode a return type in Dart.
 
@@ -85,7 +85,7 @@ Each key will be a number which we're looking for and it's value will be it's in
   </div>
 
   <div id="java" className="tabcontent">
-    ```java
+    ```java {} showLineNumbers
     // In Java we must declare and return a Array, result in this case.
     // This is because of Java being strongly typed.
 
@@ -102,7 +102,7 @@ Each key will be a number which we're looking for and it's value will be it's in
   </div>
 
   <div id="python" className="tabcontent">
-    ```python
+    ```python {} showLineNumbers
     # Python depends on indentation.
     # Python doesn't use curly braces for it's codeblocks like all the other languages.
 
@@ -114,7 +114,7 @@ Each key will be a number which we're looking for and it's value will be it's in
   </div>
 
   <div id="go" className="tabcontent">
-    ```go
+    ```go {} showLineNumbers
     //
 
     func twoSum(nums []int, target int) []int {
@@ -147,9 +147,9 @@ Store this number, `diff` in the hashmap and the current index as it's value.
   </div>
 
   <div id="js" className="tabcontent">
-    ```js
+    ```js {} showLineNumbers
     var twoSum = function (nums, target) {
-      let map = new Map()
+      var map = {}
       for(let i = 0; i < nums.length; i++) {
         let num = nums[i]
         let diff = target - num
@@ -162,11 +162,11 @@ Store this number, `diff` in the hashmap and the current index as it's value.
   </div>
 
   <div id="ts" className="tabcontent">
-    ```typescript
+    ```typescript {} showLineNumbers
     //
 
     function twoSum(nums: number[], target: number): number[] {
-      const map = new Map()
+      var map = {}
       for (let i = 0; i < nums.length; i++) {
         const num = nums[i]
         const diff = target - num
@@ -175,13 +175,13 @@ Store this number, `diff` in the hashmap and the current index as it's value.
         }
         map.set(diff, i)
       }
-    };
+    }
     ```
 
   </div>
 
   <div id="dart" className="tabcontent">
-    ```dart
+    ```dart {} showLineNumbers
     class Solution {
       List<int> twoSum(List<int> nums, int target) {
         var hm = {};
@@ -200,7 +200,7 @@ Store this number, `diff` in the hashmap and the current index as it's value.
   </div>
 
   <div id="java" className="tabcontent">
-    ```java
+    ```java {} showLineNumbers
     class Solution {
       public int[] twoSum(int[] nums, int target) {
         int[] result = new int[2];
@@ -217,7 +217,7 @@ Store this number, `diff` in the hashmap and the current index as it's value.
   </div>
 
   <div id="python" className="tabcontent">
-    ```python
+    ```python {} showLineNumbers
     class Solution:
       def twoSum(self, nums: List[int], target: int) -> List[int]:
         hashMap = {}
@@ -231,7 +231,7 @@ Store this number, `diff` in the hashmap and the current index as it's value.
   </div>
 
   <div id="go" className="tabcontent">
-    ```go
+    ```go {} showLineNumbers
     //
 
     func twoSum(nums []int, target int) []int {
@@ -265,9 +265,9 @@ the hashmap.
   </div>
 
   <div id="js" className="tabcontent">
-    ```js
+    ```js {} showLineNumbers
     var twoSum = function (nums, target) {
-      let map = new Map()
+      var map = {}
       for(let i = 0; i < nums.length; i++) {
         let num = nums[i]
         let diff = target - num
@@ -281,11 +281,11 @@ the hashmap.
   </div>
 
   <div id="ts" className="tabcontent">
-    ```typescript
+    ```typescript {} showLineNumbers
     //
 
     function twoSum(nums: number[], target: number): number[] {
-      const map = new Map()
+      var map = {}
       for (let i = 0; i < nums.length; i++) {
         const num = nums[i]
         const diff = target - num
@@ -294,13 +294,13 @@ the hashmap.
         }
         map.set(diff, i)
       }
-    };
+    }
     ```
 
   </div>
 
   <div id="dart" className="tabcontent">
-    ```dart
+    ```dart {} showLineNumbers
     class Solution {
       List<int> twoSum(List<int> nums, int target) {
         var hm = {};
@@ -319,7 +319,7 @@ the hashmap.
   </div>
 
   <div id="java" className="tabcontent">
-    ```java
+    ```java {} showLineNumbers
     class Solution {
       public int[] twoSum(int[] nums, int target) {
         int[] result = new int[2];
@@ -339,7 +339,7 @@ the hashmap.
   </div>
 
   <div id="python" className="tabcontent">
-    ```python
+    ```python {} showLineNumbers
     class Solution:
       def twoSum(self, nums: List[int], target: int) -> List[int]:
         hashMap = {}
@@ -356,7 +356,7 @@ the hashmap.
   </div>
 
   <div id="go" className="tabcontent">
-    ```go
+    ```go {} showLineNumbers
     //
 
     func twoSum(nums []int, target int) []int {

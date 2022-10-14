@@ -1,5 +1,5 @@
 ---
-title: 'Java & Spring Boot'
+title: 'Setup Java & Spring Boot'
 date: '2022-10-14'
 tags: ['Java', 'Spring Boot']
 draft: false
@@ -9,7 +9,7 @@ bibliography: references-data.bib
 canonicalUrl:
 ---
 
-## Java & Spring Boot
+## Setup Java & Spring Boot
 
 ### Intro
 
@@ -26,7 +26,7 @@ that level.
 Lastly I've built a few simple Android applications(Udemy tutorials).
 
 So I decided to setup Spring Boot on my local in order to build my confidence.
-
+E
 There are a ton of recommended IDEs for Java but I went with VSCode because it's
 what I'm familiar with and I wanted to move quickly.
 
