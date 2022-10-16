@@ -25,6 +25,12 @@ const projectsData = [
     imgSrc: '/static/images/illustrator.jpeg',
     href: 'https://cs-animations.netlify.app/',
   },
+  {
+    title: `Matrix Visualizer`,
+    description: `A visualizer for searching through a matrix for a value`,
+    imgSrc: '/static/images/matrix.jpeg',
+    href: 'https://ts-algo-visualiser.netlify.app/',
+  },
 ]
 
 export default projectsData
