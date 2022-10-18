@@ -26,7 +26,7 @@ climb to the top?
 
 ### Solution
 
-Keep a running total of number of distinct paths it took us to get to our
+Keep a running total of number of distinct jumps it took us to get to our
 previous two stairs. Add them
 
 ## Declare Hashmap
