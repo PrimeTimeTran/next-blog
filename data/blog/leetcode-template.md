@@ -1,6 +1,6 @@
 ---
 draft: true
-date: '2022-10-13'
+date: '2022-10-17'
 title: 'Data structures & Algorithms'
 tags:
   [
@@ -17,12 +17,11 @@ tags:
 summary: 'Solving programming problems in multiple languages to master syntax, data structures, and algorithms.'
 ---
 
-## 16. 3Sum Closest
+## 16. Title
 
 ### Solution
 
-Iterate input nums. Use the target and current num to identify sought value. Add
-sought value and index to hash map if not found. If found return indices.
+Short description
 
 ## Declare Hashmap
 
