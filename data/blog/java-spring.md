@@ -166,4 +166,4 @@ public class GreetingController {
 
 ```
 
-![Spring](../../public/static/images/spring.png)
+![Spring](/static/images/spring.png)
