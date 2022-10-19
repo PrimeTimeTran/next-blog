@@ -9,12 +9,11 @@ bibliography: references-data.bib
 canonicalUrl:
 ---
 
-## Setup Java & Spring Boot
+A Bank of America recruiter reach out to me today asking if I'd be
+interested in an opportunity there.
 
-### Intro
-
-I had a Bank of America recruiter reach out to me today asking me if I'd be
-interested in an opportunity there. He mentioned Java & Spring were requirements
+He mentioned [Java](https://www.java.com/en/)
+& [Spring Boot](https://spring.io/projects/spring-boot) were requirements
 for the role.
 
 I've used Java to implement a few native modules in React Native in the past.
@@ -23,23 +22,24 @@ I've also used it on Leetcode because it's a popular language
 in enterprise applications and I want to one day be able to work on
 that level.
 
-Lastly I've built a few simple Android applications(Udemy tutorials).
+Lastly I've built a few simple [Android](https://www.android.com/) applications(Udemy tutorials).
 
-So I decided to setup Spring Boot on my local in order to build my confidence.
-E
-There are a ton of recommended IDEs for Java but I went with VSCode because it's
+So I decided to setup a new Spring Boot project on my local in order to
+familiarize myself with it.
+
+There are many recommended IDEs for Java but I went with VSCode because it's
 what I'm familiar with and I wanted to move quickly.
 
 I ended up having to install the following to be able to run it using VSCode
 and find a running web server at `http://localhost:8080`.
 
-I had to take these steps.
+Here are the steps I took to **Hello World** Spring Boot
 
-### Download and install Java SDK on my local.
+### Download and install Java SDK on my local
 
 https://www.oracle.com/java/technologies/downloads/
 
-### Define path to the Java executable inside bash profile.
+### Define path to the Java executable inside bash profile
 
 `JAVA_HOME="/Library/Java/JavaVirtualMachines/jdk-19.jdk/Contents/Home" PATH="${JAVA_HOME}/bin:${PATH}" export PATH`
 
@@ -49,7 +49,7 @@ https://marketplace.visualstudio.com/items?itemName=vscjava.vscode-java-pack
 
 ### Install Spring Initializr for VSCode
 
-This extension allows you to generate new spring projects sorta like
+This extension allows you to generate new Spring projects sorta like
 `npx create-react-app` allows you to generate new React projects.
 
 https://code.visualstudio.com/docs/java/java-spring-boot
@@ -88,9 +88,11 @@ it's similar to Ruby on Rails/Django/.Net
 
 The directory is familiar to Android developers as both Android and Spring use [Gradle](https://gradle.org/)
 
-### The most important file is `DemoApplication.java` which is the entrypoint to
-
+The most important file is `DemoApplication.java` which is the entrypoint to
 our application.
+
+### Define new route/api/endpoint
+
 In order to create additional endpoints we just have to define a controller at
 the same path as this file. In my case I created `GreetingController.java`.
 
