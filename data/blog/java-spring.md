@@ -86,6 +86,8 @@ it's similar to Ruby on Rails/Django/.Net
 │                           └── DemoApplicationTests.java
 ```
 
+The directory is familiar to Android developers as both Android and Spring use [Gradle](https://gradle.org/)
+
 ### The most important file is `DemoApplication.java` which is the entrypoint to
 
 our application.
@@ -165,5 +167,7 @@ public class GreetingController {
 }
 
 ```
+
+### Should now see logs in the console
 
 ![Spring](/static/images/spring.png)
