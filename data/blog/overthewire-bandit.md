@@ -15,35 +15,96 @@ canonicalUrl:
 
 ## Bandit
 
+## How to SSH into a remote machine
+
 0 - bandit0
-`ssh bandit5@bandit.labs.overthewire.org -p 2220`
-How to SSH into a remote machine
 
-1 - NH2SXQwcBdpmTEzi3bvBHMM9H66vVXjL
-How to handle dash file names.
-Must use entire file path when cat the file
+```sh
+ssh bandit0@bandit.labs.overthewire.org -p 2220
+bandit0
+```
 
-2 - rRGizSaX8Mk1RTb1CNQoXTcYZWU6lgzi
-How to handle spaces in file names.
+## How to handle dash file names
+
+1 - bandit1
+
+```sh
+ssh bandit1@bandit.labs.overthewire.org -p 2220
+NH2SXQwcBdpmTEzi3bvBHMM9H66vVXjL
+```
+
+Must use entire file path `/home/bandit1` or relative path with `./-`
+when using `cat`
+
+## How to handle spaces in file names
+
+2 - bandit2
+
+```ssh
+bandit2@bandit.labs.overthewire.org -p 2220
+rRGizSaX8Mk1RTb1CNQoXTcYZWU6lgzi
+```
+
 Must use escape slash before the spaces.
 
-3 - aBZ0W5EmUfAf7kHTQeOwd8bauFJ2lAiG
-`ls -al`
-How to view hidden files. file in directory to view hidden files
+`cat ./spaces\ in\ this\ filename `
 
-4 - 2EW7BBsr6aMMoJ2HjW067dm8EgX26xNe
-`file ./-file*`
+## How to view hidden files. file in directory to view hidden files
+
+3 - bandit3
+
+```sh
+bandit3@bandit.labs.overthewire.org -p 2220
+aBZ0W5EmUfAf7kHTQeOwd8bauFJ2lAiG
+```
+
+How to view hidden files
+
+`ls -al`
+
+## How to identify human readable files. ASCII text files
+
+4 - bandit4
+
+`ssh bandit4@bandit.labs.overthewire.org -p 2220`
+
+`2EW7BBsr6aMMoJ2HjW067dm8EgX26xNe`
+
 How to identify human readable files. ASCII text files.
 
-5 - lrIWWI6bB37kxfiCQZqUdOIYfr6eEeqR
-`find ./ -type f -size 1033c ! -executable`
-Search system for file depending on parameters
+`file ./-file*`
 
-6 - P4L4vucdmLnm8I7Vl7jG1ApGSfjYKqJU
-`find / -user bandit7 -group bandit6 -size 33c`
-Search from root directory. Find file fitting certain parameters.
+## Search system for file depending on parameters
 
-`cat /var/lib/dpkg/info/bandit7.password`
+5 - bandit5
+
+```
+ssh bandit5@bandit.labs.overthewire.org -p 2220
+lrIWWI6bB37kxfiCQZqUdOIYfr6eEeqR
+```
+
+Search in this path for file meeting parameters
+
+```
+find ./ -type f -size 1033c ! -executable
+```
+
+## Search from root directory. Find file fitting certain parameters
+
+6 - bandit6
+
+```sh
+ssh bandit6@bandit.labs.overthewire.org -p 2220
+P4L4vucdmLnm8I7Vl7jG1ApGSfjYKqJU
+```
+
+Search from root directory for file meeting specific parameters
+
+```
+find / -user bandit7 -group bandit6 -size 33c
+```
+
+cat /var/lib/dpkg/info/bandit7.password
 View specific file we got from the previous output
 
 7 - z7WtoNQU2XfjmMtWA8u5rN4vzqu4v99S
