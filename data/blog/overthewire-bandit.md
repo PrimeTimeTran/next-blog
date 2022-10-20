@@ -151,9 +151,36 @@ vBgsyi/sN3RqRBcGU40fOoZyfAMT8s1m/uYv52O6IgeuZ/ujbjY=
 `ssh -i bandit.key bandit17@bandit.labs.overthewire.org -p 2220`
 
 17 -
-18 -
-19 -  
-20 -
+There are 2 files in the homedirectory: passwords.old and passwords.new. The password for the next level is in passwords.new and is the only line that has been changed between passwords.old and passwords.new
+
+```
+diff passwords.new passwords.old
+```
+
+18 - hga5tuuCLF6fFzUpnagiMN8ssu9LFrdg
+The password for the next level is stored in a file readme in the homedirectory. Unfortunately, someone has modified .bashrc to log you out when you log in with SSH.
+
+```
+ssh bandit18@bandit.labs.overthewire.org -p 2220 "cat ~/readme"
+```
+
+19 - awhqfNnAbc1naukrpqDYcF95h7HoMTrC
+
+To gain access to the next level, you should use the setuid binary in the homedirectory. Execute it without arguments to find out how to use it. The password for this level can be found in the usual place (/etc/bandit_pass), after you have used the setuid binary.
+
+```
+ls -al ./bandit20-do
+./bandit20-do
+./bandit20-do id
+ls /etc/bandit_pass/bandit*
+ls /etc/bandit_pass/bandit20
+cat /etc/bandit_pass/bandit20
+./bandit20-do cat /etc/bandit_pass/bandit20
+```
+
+20 - VxCazJaVykI6W36BkBU0mJTCM8rR95XT
+There is a setuid binary in the homedirectory that does the following: it makes a connection to localhost on the port you specify as a commandline argument. It then reads a line of text from the connection and compares it to the password in the previous level (bandit20). If the password is correct, it will transmit the password for the next level (bandit21).
+
 21 -
 22 -
 23 -
