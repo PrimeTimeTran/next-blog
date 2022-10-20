@@ -13,20 +13,14 @@ canonicalUrl:
 
 ### Intro
 
-## Bandit
-
-## How to SSH into a remote machine
-
-0 - bandit0
+## Bandit0 - How to SSH into a remote machine
 
 ```sh
 ssh bandit0@bandit.labs.overthewire.org -p 2220
 bandit0
 ```
 
-## How to handle dash file names
-
-1 - bandit1
+## Bandit1 - How to handle dash file names
 
 ```sh
 ssh bandit1@bandit.labs.overthewire.org -p 2220
@@ -36,9 +30,7 @@ NH2SXQwcBdpmTEzi3bvBHMM9H66vVXjL
 Must use entire file path `/home/bandit1` or relative path with `./-`
 when using `cat`
 
-## How to handle spaces in file names
-
-2 - bandit2
+## Bandit2 - How to handle spaces in file names
 
 ```ssh
 bandit2@bandit.labs.overthewire.org -p 2220
@@ -49,9 +41,7 @@ Must use escape slash before the spaces.
 
 `cat ./spaces\ in\ this\ filename `
 
-## How to view hidden files. file in directory to view hidden files
-
-3 - bandit3
+## Bandit3 - How to view hidden files. file in directory to view hidden files
 
 ```sh
 bandit3@bandit.labs.overthewire.org -p 2220
@@ -62,9 +52,7 @@ How to view hidden files
 
 `ls -al`
 
-## How to identify human readable files. ASCII text files
-
-4 - bandit4
+## Bandit4 - How to identify human readable files. ASCII text files
 
 `ssh bandit4@bandit.labs.overthewire.org -p 2220`
 
@@ -74,9 +62,7 @@ How to identify human readable files. ASCII text files.
 
 `file ./-file*`
 
-## Search system for file depending on parameters
-
-5 - bandit5
+## Bandit5 - Search system for file depending on parameters
 
 ```
 ssh bandit5@bandit.labs.overthewire.org -p 2220
@@ -89,9 +75,7 @@ Search in this path for file meeting parameters
 find ./ -type f -size 1033c ! -executable
 ```
 
-## Search from root directory. Find file fitting certain parameters
-
-6 - bandit6
+## Bandit6 - Search from root directory. Find file fitting certain parameters
 
 ```sh
 ssh bandit6@bandit.labs.overthewire.org -p 2220
@@ -104,35 +88,91 @@ Search from root directory for file meeting specific parameters
 find / -user bandit7 -group bandit6 -size 33c
 ```
 
-cat /var/lib/dpkg/info/bandit7.password
 View specific file we got from the previous output
 
-7 - z7WtoNQU2XfjmMtWA8u5rN4vzqu4v99S
-`grep millionth data.txt`
+```
+cat /var/lib/dpkg/info/bandit7.password
+```
+
+## Bandit7 - Grep a large file for a specific string on a line
+
+```sh
+ssh bandit7@bandit.labs.overthewire.org -p 2220
+z7WtoNQU2XfjmMtWA8u5rN4vzqu4v99S
+```
+
 Grep a large file for a specific string on a line.
 
-8 - TESKZC0XvTetK0S9xNwm25STk5iWrBvP
-`sort data.txt | uniq -u`
-Sort the lines of the file based on the ones that are identical then grab only the unique one
+```sh
+grep millionth data.txt
+```
 
-9 - EN632PlfYiZbn3PhVK3XOGSlNInNE00t
-`cat data.txt | strings -e s | grep ==`
+## Bandit8 - Sort the lines of the file based on the ones that are identical then grab only the unique one
+
+```sh
+ssh bandit8@bandit.labs.overthewire.org -p 2220
+TESKZC0XvTetK0S9xNwm25STk5iWrBvP
+```
+
+Sort the lines of the file based on the ones that are identical then grab
+only the unique one.
+
+```sh
+sort data.txt | uniq -u
+```
+
+## Bandit9 - Use strings to print the sequence of printable characters in files.
+
+```sh
+ssh bandit9@bandit.labs.overthewire.org -p 2220
+EN632PlfYiZbn3PhVK3XOGSlNInNE00t
+```
+
 Use strings to print the sequence of printable characters in files.
 
-10 - G7w8LIi6J3kTb8A7j9LgrywtEUlyyp6s
-`cat data.txt | base64 -d`
-Decode from base64.
+```sh
+cat data.txt | strings -e s | grep ==
+```
 
-11 - 6zPeziLdR2RKNdNYFNb6nVCKzphlXHBM
+## Bandit10 - Decode from base64
+
+```sh
+ssh bandit10@bandit.labs.overthewire.org -p 2220
+G7w8LIi6J3kTb8A7j9LgrywtEUlyyp6s
+```
+
+```sh
+cat data.txt | base64 -d
+```
+
+## Bandit11 - The password for the next level is stored in the file data.txt, where all lowercase (a-z) and uppercase (A-Z) letters have been rotated by 13 positions
+
+```sh
+ssh bandit11@bandit.labs.overthewire.org -p 2220
+6zPeziLdR2RKNdNYFNb6nVCKzphlXHBM
+```
+
 The password for the next level is stored in the file data.txt, where all lowercase (a-z) and uppercase (A-Z) letters have been rotated by 13 positions
 
-`cat data.txt | tr "A-Za-z" "N-ZA-Mn-za-m"`
 Rotate chars by 13 using a special command
 
-12 - JVNBBFSmZwKKOP0XbFXOoW8chDz5yVRv
+```sh
+cat data.txt | tr "A-Za-z" "N-ZA-Mn-za-m"
+```
+
+## Bandit12 - Create directory for tmp stuff, copy data.txt over, and move into that directory.
+
 The password for the next level is stored in the file data.txt, which is a hexdump of a file that has been repeatedly compressed. For this level it may be useful to create a directory under /tmp in which you can work using mkdir. For example: mkdir /tmp/myname123. Then copy the datafile using cp, and rename it using mv (read the manpages!)
 
-`mkdir -p /tmp/workhere && cp data.txt /tmp/workhere && cd /tmp/workhere`
+```sh
+ssh bandit12@bandit.labs.overthewire.org -p 2220
+JVNBBFSmZwKKOP0XbFXOoW8chDz5yVRv
+```
+
+```sh
+mkdir -p /tmp/workhere && cp data.txt /tmp/workhere && cd /tmp/workhere
+```
+
 Create directory for tmp stuff, copy data.txt over, and move into that directory.
 
 `cat data.txt | xxd -r > data`
