@@ -175,12 +175,20 @@ mkdir -p /tmp/workhere && cp data.txt /tmp/workhere && cd /tmp/workhere
 
 Create directory for tmp stuff, copy data.txt over, and move into that directory.
 
-`cat data.txt | xxd -r > data`
+```sh
+cat data.txt | xxd -r > data
+```
+
 Reverse hex dump
 
-`mv data data2.gz`
+```
+mv data data2.gz
+```
 
-`gzip -d data2.gz`
+```sh
+gzip -d data2.gz
+```
+
 We change the suffix of data back to .gz, which means the file would be renamed to data2.gz. Then, we use gzip to decompress the file. Afterward, we use the file command to check the information of data2 again.
 
 `mv data2 data3.bz`

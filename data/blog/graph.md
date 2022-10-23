@@ -12,8 +12,6 @@ bibliography: references-data.bib
 
 ### Intro
 
-###
-
 ```js
 const airports = ['ATL', 'PEK', 'DXB', 'LAX', 'HND', 'ORD', 'LHR', 'HKG', 'PVG', 'CDG']
 ```
