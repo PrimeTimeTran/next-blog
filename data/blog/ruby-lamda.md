@@ -17,7 +17,7 @@ The following code throws an error because ruby's scoping.
 
 ```ruby
 def outer()
-  foo = 'bar'
+  foo = 42
   def inner()
     puts foo
   end
@@ -31,7 +31,7 @@ To fix it we can use a lambda
 
 ```ruby
 def outer()
-  foo = 'bar'
+  foo = 42
   inner = lambda do
     puts foo
   end
@@ -44,21 +44,23 @@ Define the lambda and call it.
 If we need to pass it an argument we use the following syntax.
 
 ```ruby
-def outer()
-  foo = 'bar'
+def outer(x)
+  foo = 42
   inner = lambda do |x|
     puts foo, x
   end
-  inner.call('Hello')
+  inner.call(x)
 end
 ```
 
-<!-- go = 'hello'
+And finally, if you want to pass a value into your closure, you do the following.
 
-def print_once
-  puts 'Before'
-  yield
-  puts 'After'
+```ruby
+def outer(y)
+  foo = 42
+  inner = lambda do |x|
+    puts foo + x
+  end
+  inner.call(y)
 end
-
-print_once { puts "Block is being run" } -->
+```
