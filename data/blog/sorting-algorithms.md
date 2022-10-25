@@ -2,7 +2,7 @@
 title: 'Sorting Algorithms'
 date: '2022-08-18'
 tags: ['Python']
-draft: false
+draft: true
 summary: 'Sorting Algorithms'
 layout: PostSimple
 bibliography: references-data.bib
@@ -134,7 +134,7 @@ canonicalUrl:
     ```python {} showLineNumbers
     #
     nums = [20, 13, 3, 3, 4, 5, 1, 2, 8, 7, 9, 0, 11 ]
-    
+
     def quick_sort(nums):
       if len(nums) <= 1:
         return nums
