@@ -70,8 +70,10 @@ Return `res`.
   </div>
 
   <div id="js" className="tabcontent">
-    ```js {} showLineNumbers
-    // JS syntax is simple relative to TS
+    ```js {5,6} showLineNumbers
+    // JS syntax is simpler than typed languages
+    // Input parameters and variables don't
+    // require type annotation
 
     var threeSumClosest = function(nums, target) {
       var res = nums[0] + nums[1] + nums[2];
@@ -86,7 +88,7 @@ Return `res`.
   </div>
 
   <div id="ts" className="tabcontent">
-    ```typescript {} showLineNumbers
+    ```typescript {3} showLineNumbers
     // "nums: number[]" means input param is 'nums', it's type is number[]
 
     function threeSumClosest(nums: number[], target: number): number {
@@ -121,9 +123,9 @@ Return `res`.
   </div>
 
   <div id="java" className="tabcontent">
-    ```java {} showLineNumbers
-    // Java requires typing for variable initializations in conjunction with
-    // function signature typing.
+    ```java {5} showLineNumbers
+    // Java requires typing of input parameters and variables
+    // Unlike TS the type comes before the param in function signature.
 
     class Solution {
         public int threeSumClosest(int[] nums, int target) {
@@ -142,7 +144,7 @@ Return `res`.
 
   <div id="python" className="tabcontent">
     ```python {} showLineNumbers
-    # In python3 there is typing for the function's signature and return value
+    # In Python3 typing for the function's signature and return value are optional
 
     class Solution:
       def threeSumClosest(self, nums: List[int], target: int) -> int:
@@ -157,9 +159,11 @@ Return `res`.
   </div>
 
   <div id="go" className="tabcontent">
-    ```go {} showLineNumbers
+    ```go {6} showLineNumbers
     // := allows Go to infer type of 'res'
     // from the type of the expression on the right.
+
+    // Go also has type annotation on the right of the signature(like TS)
 
     func threeSumClosest(nums []int, target int) int {
       res := nums[0] + nums[1] + nums[2]

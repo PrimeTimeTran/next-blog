@@ -21,15 +21,16 @@ summary: 'Solving programming problems in multiple languages to master syntax, d
 
 You are climbing a staircase. It takes n steps to reach the top.
 
-Each time you can either climb `1` or `2` steps. In how many _distinct_ ways can you
-climb to the top?
+Each time you can either climb `1` or `2` steps. In how many _distinct_ ways can
+you climb to the top?
 
 ### Solution
 
 Keep a running total of number of _distinct_ jumps it took us to get to our
 previous two stairs.
 
-On each loop, sum the values of the two previous stairs as the latest stair's value, our running total.
+On each loop, sum the values of the two previous stairs as the latest stair's
+value, our running total.
 
 ## Setup base cases
 
