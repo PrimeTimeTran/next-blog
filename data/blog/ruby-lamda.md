@@ -1,5 +1,5 @@
 ---
-title: 'Lambdas for closure'
+title: 'How to create a closure in Ruby'
 date: '2022-10-24'
 tags: ['Ruby']
 draft: false
@@ -25,7 +25,7 @@ def outer()
 end
 ```
 
-`NameError (undefined local variable or method `foo' for main:Object)`
+`NameError (undefined local variable or method 'foo' for main:Object)`s
 
 To fix it we can use a lambda
 
@@ -52,3 +52,13 @@ def outer()
   inner.call('Hello')
 end
 ```
+
+<!-- go = 'hello'
+
+def print_once
+  puts 'Before'
+  yield
+  puts 'After'
+end
+
+print_once { puts "Block is being run" } -->
