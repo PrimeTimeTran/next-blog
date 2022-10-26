@@ -212,21 +212,19 @@ canonicalUrl:
   <div id="python" className="tabcontent">
     ```python {} showLineNumbers
     #
-    nums = [20, 13, 3, 3, 4, 5, 1, 2, 8, 7, 9, 0, 11 ]
-
+    nums = [20, 13, 3, 3, 4, 5, 1, 2, 8, 7, 9, 0, 11]
     def selection_sort(nums):
-      idx_length = len(nums) - 1
-      for i in range(0, idx_length):
-        min_value = i
-        for j in range(i + 1, len(nums)):
-          if nums[j] < nums[min_value]:
-            min_value = j
-        if min_value != i:
-          nums[min_value], nums[i]  = nums[i], nums[min_value]
+        for i in range(len(nums)):
+            min = i
+            for j in range(i + 1, len(nums)):
+                if nums[j] < nums[min]:
+                    min = j
+            if min != i:
+                nums[min], nums[i] = nums[i], nums[min]
 
-      return nums
-
+        return nums
     print('Selection Sort:', selection_sort(nums))
+
     ```
 
   </div>
