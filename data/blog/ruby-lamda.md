@@ -65,3 +65,8 @@ def outer(y)
   inner.call(y)
 end
 ```
+
+This technique is useful in situations where we want to define functions
+which have access to variables without having to pass the variables explicitly.
+
+For example, in solving [Leetcode problem #200 number of Islands](https://loi-tran-blog.netlify.app/blog/leetcode/leetcode-7)
