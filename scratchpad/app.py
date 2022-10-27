@@ -1,35 +1,13 @@
-# x = 1
-# print(bin(x))
-# print(x)
+x = 1
+y = 1
+z = 0
+result = 0
 
-# x = x << 4
-# print(bin(x))
-# print(x)
+while z < 4000000:
+   z = (x+y)
+   if z % 2 == 0:
+      result += z
+   x = y
+   y = z
 
-# x = x << 4
-# print(bin(x))
-# print(x)
-
-# x = x << 4
-# print(bin(x))
-# print(x)
-
-# a = 3
-# b = 2
-
-# print(a & b)
-# print((a & b) << 1)
-
-
-# n = int(10110100)
-
-n = 15
-print(bin(n))
-print(bin(n-1))
-n = n & n-1
-print(bin(n))
-n = n & n-1
-print(bin(n))
-n = n & n-1
-print(bin(n))
-print(n)
+print(result)

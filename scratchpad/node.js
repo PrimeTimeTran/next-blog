@@ -86,3 +86,35 @@ console.log(discountPrice(string8, 0.15))
 // }
 
 // console.log(isPrime(2))
+
+var numIslands = function (grid) {
+  var m = grid.length
+  var n = grid[0].length
+  var seen = new Set()
+  function dfs(r, c) {
+    if (r < 0 || c < 0 || r > m - 1 || c > n - 1) return false
+    if (seen.has(`${r},${c}`)) return false
+    if (grid[r][c] == 0) return false
+
+    seen.add(`${r},${c}`)
+
+    dfs(r + 1, c)
+    dfs(r - 1, c)
+    dfs(r, c + 1)
+    dfs(r, c - 1)
+
+    return true
+  }
+
+  var count = 0
+
+  for (var r = 0; r < m; r++) {
+    for (var c = 0; c < n; c++) {
+      if (dfs(r, c)) {
+        count += 1
+      }
+    }
+  }
+
+  return count
+}
