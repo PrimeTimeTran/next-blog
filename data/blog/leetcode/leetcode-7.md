@@ -159,6 +159,7 @@ This will be what holds the number of islands
     //
 
     import "fmt"
+
     func numIslands(grid [][]byte) int {
       count := 0
       m := len(grid)
@@ -359,6 +360,7 @@ If `dfs()` returns true increment `count`.
     //
 
     import "fmt"
+
     func numIslands(grid [][]byte) int {
       count := 0
       m := len(grid)
@@ -597,6 +599,7 @@ If it isn't, then we exit the function, not incrementing the count.
     //
 
     import "fmt"
+
     func numIslands(grid [][]byte) int {
       count := 0
       m := len(grid)
@@ -895,6 +898,7 @@ outer nested loop knows to increment the count.
     //
 
     import "fmt"
+
     func numIslands(grid [][]byte) int {
       count := 0
       m := len(grid)
