@@ -93,13 +93,13 @@ This will be what holds the number of islands
 
     class Solution {
       int numIslands(List<List<String>> grid) {
-            var m = grid.length;
-            var n = grid[0].length;
-            var seen = new Set();
+        var m = grid.length;
+        var n = grid[0].length;
+        var seen = new Set();
 
-            var count = 0;
+        var count = 0;
 
-            return count;
+        return count;
       }
     }
     ```
@@ -260,23 +260,23 @@ If `dfs()` returns true increment `count`.
 
   class Solution {
     int numIslands(List<List<String>> grid) {
-          var m = grid.length;
-          var n = grid[0].length;
-          var seen = new Set();
-          dfs(r,c) {
+      var m = grid.length;
+      var n = grid[0].length;
+      var seen = new Set();
+      dfs(r,c) {
+      }
+
+      var count = 0;
+
+      for (var r = 0; r < m; r++) {
+        for (var c = 0; c < n; c++) {
+          if (dfs(r, c)) {
+            count += 1;
           }
+        }
+      }
 
-          var count = 0;
-
-          for (var r = 0; r < m; r++) {
-              for (var c = 0; c < n; c++) {
-                  if (dfs(r, c)) {
-                      count += 1;
-                  }
-              }
-          }
-
-          return count;
+      return count;
     }
   }
   ```
@@ -478,33 +478,33 @@ If it isn't, then we exit the function, not incrementing the count.
 
   class Solution {
     int numIslands(List<List<String>> grid) {
-          var m = grid.length;
-          var n = grid[0].length;
-          var seen = new Set();
-          dfs(r,c) {
-              if (r < 0 || c < 0 || r == m || c == n) {
-                  return false;
-              }
-              if (seen.contains('$r,$c')) {
-                  return false;
-              }
+      var m = grid.length;
+      var n = grid[0].length;
+      var seen = new Set();
+      dfs(r,c) {
+        if (r < 0 || c < 0 || r == m || c == n) {
+          return false;
+        }
+        if (seen.contains('$r,$c')) {
+          return false;
+        }
 
-              if (grid[r][c] == '0') {
-                  return false;
-              }
+        if (grid[r][c] == '0') {
+          return false;
+        }
+      }
+
+      var count = 0;
+
+      for (var r = 0; r < m; r++) {
+        for (var c = 0; c < n; c++) {
+          if (dfs(r, c)) {
+            count += 1;
           }
+        }
+      }
 
-          var count = 0;
-
-          for (var r = 0; r < m; r++) {
-              for (var c = 0; c < n; c++) {
-                  if (dfs(r, c)) {
-                      count += 1;
-                  }
-              }
-          }
-
-          return count;
+      return count;
     }
   }
   ```
@@ -745,42 +745,42 @@ outer nested loop knows to increment the count.
 
     class Solution {
       int numIslands(List<List<String>> grid) {
-            var m = grid.length;
-            var n = grid[0].length;
-            var seen = new Set();
-            dfs(r,c) {
-                if (r < 0 || c < 0 || r == m || c == n) {
-                    return false;
-                }
-                if (seen.contains('$r,$c')) {
-                    return false;
-                }
+        var m = grid.length;
+        var n = grid[0].length;
+        var seen = new Set();
+        dfs(r,c) {
+          if (r < 0 || c < 0 || r == m || c == n) {
+            return false;
+          }
+          if (seen.contains('$r,$c')) {
+            return false;
+          }
 
-                if (grid[r][c] == '0') {
-                    return false;
-                }
+          if (grid[r][c] == '0') {
+            return false;
+          }
 
-                seen.add('$r,$c');
+          seen.add('$r,$c');
 
-                dfs(r + 1, c);
-                dfs(r - 1, c);
-                dfs(r, c + 1);
-                dfs(r, c - 1);
+          dfs(r + 1, c);
+          dfs(r - 1, c);
+          dfs(r, c + 1);
+          dfs(r, c - 1);
 
-                return true;
+          return true;
+        }
+
+        var count = 0;
+
+        for (var r = 0; r < m; r++) {
+          for (var c = 0; c < n; c++) {
+            if (dfs(r, c)) {
+              count += 1;
             }
+          }
+        }
 
-            var count = 0;
-
-            for (var r = 0; r < m; r++) {
-                for (var c = 0; c < n; c++) {
-                    if (dfs(r, c)) {
-                        count += 1;
-                    }
-                }
-            }
-
-            return count;
+        return count;
       }
     }
     ```
