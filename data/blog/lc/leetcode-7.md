@@ -1,7 +1,7 @@
 ---
-draft: true
-date: '2022-10-17'
-title: 'Data structures & Algorithms'
+draft: false
+date: '2022-10-26'
+title: '200. Number of Islands'
 tags:
   [
     'Leetcode',
@@ -13,15 +13,26 @@ tags:
     'Java',
     'Python',
     'Go',
+    'Ruby',
   ]
 summary: 'Solving programming problems in multiple languages to master syntax, data structures, and algorithms.'
 ---
 
-## 16. Title
+## 200. Number of Islands
+
+Given an m x n 2D binary grid grid which represents a map of '1's (land) and
+'0's (water), return the number of islands.
+
+An island is surrounded by water and is formed by connecting adjacent lands
+horizontally or vertically. You may assume all four edges of the grid are all
+surrounded by water.
 
 ### Solution
 
-Short description
+Identify islands using nested loops. When an island
+is found mark it and it's adjacent nodes as seen using a set.
+
+Increment count when island found.
 
 ## Declare Hashmap
 
@@ -111,7 +122,8 @@ Short description
       return count;
 
 };
-```
+
+````
 
   </div>
 
@@ -177,7 +189,7 @@ Short description
 
         for (int r = 0; r < m; r++) {
           for (int c = 0; c < n; c++) {
-            if (dfs(r, c, seen, grid) && grid[r][c] == '1') {
+            if (dfs(r, c, seen, grid)) {
               count += 1;
             }
           }
@@ -189,7 +201,7 @@ Short description
       public boolean dfs(int r, int c, Set<String> seen, char[][] grid) {
         boolean out = r < 0 || c < 0 || r == grid.length || c == grid[0].length;
         if (out) return false;
-        if ((grid[r][c] + "").equals("0")) return false;
+        if (Character.toString(grid[r][c]).equals("0")) return false;
         String coords = String.format("%s,%s", r, c);
         if (seen.contains(coords)) return false;
         seen.add(coords);
@@ -201,9 +213,8 @@ Short description
 
         return true;
       }
-
-}
-```
+  }
+````
 
   </div>
 
