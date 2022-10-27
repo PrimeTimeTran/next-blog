@@ -32,6 +32,7 @@ Short description
     <button id="dart" className="tablinks">dart</button>
     <button id="java" className="tablinks">java</button>
     <button id="python" className="tablinks">python</button>
+    <button id="ruby" className="tablinks">ruby</button>
     <button id="go" className="tablinks">go</button>
   </div>
 
@@ -69,6 +70,14 @@ Short description
 
   <div id="python" className="tabcontent">
     ```python {} showLineNumbers
+    #
+
+    ```
+
+  </div>
+
+  <div id="ruby" className="tabcontent">
+    ```ruby {} showLineNumbers
     #
 
     ```
