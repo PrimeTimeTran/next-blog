@@ -3,7 +3,8 @@ title: 'How to create a closure in Ruby'
 date: '2022-10-24'
 tags: ['Ruby']
 draft: false
-summary: 'Lambda'
+summary: 'How to create a function which has access to variables defined outside
+its block scope'
 layout: PostSimple
 bibliography: references-data.bib
 canonicalUrl:
