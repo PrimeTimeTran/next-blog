@@ -1,6 +1,6 @@
 ---
 draft: true
-date: '2022-10-17'
+date: '2022-10-28'
 title: 'Data structures & Algorithms'
 tags:
   [
@@ -12,7 +12,6 @@ tags:
     'Dart',
     'Java',
     'Python',
-    'Ruby'
     'Go',
   ]
 summary: 'Solving programming problems in multiple languages to master syntax, data structures, and algorithms.'
