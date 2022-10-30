@@ -1,7 +1,7 @@
 ---
 draft: true
-date: '2022-10-28'
-title: 'Data structures & Algorithms'
+date: '2022-10-30'
+title: '920 · Meeting Rooms'
 tags:
   [
     'Leetcode',
@@ -12,12 +12,16 @@ tags:
     'Dart',
     'Java',
     'Python',
+    'Ruby',
     'Go',
   ]
 summary: 'Solving programming problems in multiple languages to master syntax, data structures, and algorithms.'
 ---
 
-## 16. Title
+## 920 · Meeting Rooms
+
+Given an array of meeting time intervals consisting of start and end times
+[[s1,e1],[s2,e2],...] (si < ei), determine if a person could attend all meetings.
 
 ### Solution
 
@@ -71,7 +75,15 @@ Short description
   <div id="python" className="tabcontent">
     ```python {} showLineNumbers
     #
-
+    class Solution:
+      def can_attend_meetings(self, intervals: List[Interval]) -> bool:
+          intervals.sort(key=lambda i : i.start)
+          for i in range(1, len(intervals)):
+              i1 = intervals[i-1]
+              i2 = intervals[i]
+              if i1.end > i2.start:
+                  return False
+          return True
     ```
 
   </div>
@@ -87,7 +99,6 @@ Short description
   <div id="go" className="tabcontent">
     ```go {} showLineNumbers
     //
-
     ```
 
   </div>
