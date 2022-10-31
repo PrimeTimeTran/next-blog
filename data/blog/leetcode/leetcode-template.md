@@ -12,7 +12,7 @@ tags:
     'Dart',
     'Java',
     'Python',
-    'Ruby'
+    'Ruby',
     'Go',
   ]
 summary: 'Solving programming problems in multiple languages to master syntax, data structures, and algorithms.'
