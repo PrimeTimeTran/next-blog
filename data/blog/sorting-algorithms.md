@@ -285,28 +285,34 @@ canonicalUrl:
   <div id="python" className="tabcontent">
     ```python {} showLineNumbers
     #
-    nums = [20, 13, 3, 3, 4, 5, 1, 2, 8, 7, 9, 0, 11 ]
-
+    nums = [20, 13, 3, 3, 4, 5, 1, 2, 8, 7, 9, 0, 11]
     def merge_sort(arr):
-      if len(arr) < 2:
-        return arr
+        if len(arr) < 2:
+            return arr
 
-      midIdx = len(arr) // 2
-      leftArr = arr[:midIdx]
-      rightArr = arr[midIdx:]
-      return merge(merge_sort(leftArr), merge_sort(rightArr))
+        midIdx = len(arr) // 2
+        print(midIdx)
+        l = arr[:midIdx]
+        r = arr[midIdx:]
+        return merge(merge_sort(l), merge_sort(r))
+
 
     def merge(left, right):
-      res = []
-      leftIdx = 0
-      rightIdx =  0
-      while leftIdx < len(left) and rightIdx < len(right):
-        if left[leftIdx] < right[rightIdx]
-          res.push(left[leftIdx])
-          leftIdx += 1
-        else:
-          res.push(right[rightIdx])
-          rightIdx += 1
+        res = []
+        l = r = 0
+        while l < len(left) and r < len(right):
+            if left[l] < right[r]:
+                res.append(left[l])
+                l += 1
+            else:
+                res.append(right[r])
+                r += 1
+
+        res.extend(left[l:])
+        res.extend(right[r:])
+
+        return res
+    print(merge_sort(nums))
     ```
 
   </div>
