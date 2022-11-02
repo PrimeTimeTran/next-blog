@@ -158,8 +158,6 @@ This will be what holds the number of islands
     ```go {} showLineNumbers
     //
 
-    import "fmt"
-
     func numIslands(grid [][]byte) int {
       count := 0
       m := len(grid)
@@ -201,8 +199,8 @@ If `dfs()` returns true increment `count`.
       var m = grid.length
       var n = grid[0].length
       var seen = new Set()
-      function dfs(r, c) {
 
+      function dfs(r, c) {
       }
 
       var count = 0
@@ -229,6 +227,7 @@ If `dfs()` returns true increment `count`.
       var m = grid.length
       var n = grid[0].length
       var seen = new Set()
+
       function dfs(r,c) {
       }
 
@@ -257,6 +256,7 @@ If `dfs()` returns true increment `count`.
         var m = grid.length;
         var n = grid[0].length;
         var seen = new Set();
+
         dfs(r,c) {
         }
 
@@ -359,8 +359,6 @@ If `dfs()` returns true increment `count`.
     ```go {} showLineNumbers
     //
 
-    import "fmt"
-
     func numIslands(grid [][]byte) int {
       count := 0
       m := len(grid)
@@ -439,6 +437,7 @@ If it isn't, then we exit the function, not incrementing the count.
   <div id="ts" className="tabcontent">
     ```typescript {} showLineNumbers
     //
+
     function numIslands(grid: string[][]): number {
       var m = grid.length
       var n = grid[0].length
@@ -597,8 +596,6 @@ If it isn't, then we exit the function, not incrementing the count.
   <div id="go" className="tabcontent">
     ```go {} showLineNumbers
     //
-
-    import "fmt"
 
     func numIslands(grid [][]byte) int {
       count := 0
@@ -896,7 +893,6 @@ outer nested loop knows to increment the count.
   <div id="go" className="tabcontent">
     ```go {} showLineNumbers
     //
-
     import "fmt"
 
     func numIslands(grid [][]byte) int {
