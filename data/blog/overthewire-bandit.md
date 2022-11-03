@@ -398,10 +398,60 @@ cat /etc/bandit_pass/bandit20
 ```
 
 20 - VxCazJaVykI6W36BkBU0mJTCM8rR95XT
-There is a setuid binary in the homedirectory that does the following: it makes a connection to localhost on the port you specify as a commandline argument. It then reads a line of text from the connection and compares it to the password in the previous level (bandit20). If the password is correct, it will transmit the password for the next level (bandit21).
 
-21 -
+```sh
+ssh bandit20@bandit.labs.overthewire.org -p 2220
+```
+
+```sh
+VxCazJaVykI6W36BkBU0mJTCM8rR95XT
+```
+
+There is a setuid binary in the homedirectory that does the following: it makes
+a connection to localhost on the port you specify as a commandline argument. It
+then reads a line of text from the connection and compares it to the password in
+the previous level (bandit20). If the password is correct, it will transmit the
+password for the next level (bandit21).
+
+```sh
+echo -n 'VxCazJaVykI6W36BkBU0mJTCM8rR95XT' | nc -l -p 1234 &
+```
+
+```sh
+
+```
+
+21 - Find password inside of cron job
+
+```ssh
+ssh bandit21@bandit.labs.overthewire.org -p 2220
+```
+
+```sh
+NvEJF7oVjkddltPSrdKEFOllh9V1IBcq
+```
+
+```sh
+cd /etc/cron.d
+
+cat cronjob_bandit22
+```
+
+```sh
+cat /usr/bin/cronjob_bandit22.sh
+cat /tmp/t7O6lds9S0RqQh9aMcz6ShpAoZKF7fgv
+```
+
 22 -
+
+```ssh
+ssh bandit22@bandit.labs.overthewire.org -p 2220
+```
+
+```sh
+WdDozAdTM2z9DiFEQ2mGlwngMfj4EZff
+```
+
 23 -
 24 -
 25 -
