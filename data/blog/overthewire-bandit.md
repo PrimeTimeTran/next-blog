@@ -1,9 +1,9 @@
 ---
-title: 'Data structures & Algorithms'
-date: '2022-10-18'
-tags: ['Data structures', 'Algorithms', 'Leetcode']
-draft: true
-summary: 'Two sum'
+title: 'Over The Wire - Bandit'
+date: '2022-11-02'
+tags: ['Infosec']
+draft: false
+summary: 'Over The Wire - Bandit'
 layout: PostSimple
 bibliography: references-data.bib
 canonicalUrl:
@@ -13,42 +13,37 @@ canonicalUrl:
 
 ### Intro
 
+An overview of the techniques to overcome each level of over the wire's bandit.
+
 ## Bandit0 - How to SSH into a remote machine
 
-```sh
-ssh bandit0@bandit.labs.overthewire.org -p 2220
-bandit0
-```
+`ssh bandit0@bandit.labs.overthewire.org -p 2220`
+`bandit0`
+
+Use SSH cli command with username, host and port.
 
 ## Bandit1 - How to handle dash file names
 
-```sh
-ssh bandit1@bandit.labs.overthewire.org -p 2220
-NH2SXQwcBdpmTEzi3bvBHMM9H66vVXjL
-```
+`ssh bandit1@bandit.labs.overthewire.org -p 2220`
+`NH2SXQwcBdpmTEzi3bvBHMM9H66vVXjL`
 
-Must use entire file path `/home/bandit1` or relative path with `./-`
-when using `cat`
+Use cat with an absolute or relative path `/home/bandit1` or or `./-`
 
 ## Bandit2 - How to handle spaces in file names
 
-```ssh
-bandit2@bandit.labs.overthewire.org -p 2220
-rRGizSaX8Mk1RTb1CNQoXTcYZWU6lgzi
-```
+`ssh bandit2@bandit.labs.overthewire.org -p 2220`
+`rRGizSaX8Mk1RTb1CNQoXTcYZWU6lgzi`
 
-Must use escape slash before the spaces.
+Use escape character before spaces
 
 `cat ./spaces\ in\ this\ filename `
 
 ## Bandit3 - How to view hidden files. file in directory to view hidden files
 
-```sh
-bandit3@bandit.labs.overthewire.org -p 2220
-aBZ0W5EmUfAf7kHTQeOwd8bauFJ2lAiG
-```
+`ssh bandit3@bandit.labs.overthewire.org -p 2220`
+`aBZ0W5EmUfAf7kHTQeOwd8bauFJ2lAiG`
 
-How to view hidden files
+Search for hidden files.
 
 `ls -al`
 
@@ -64,14 +59,17 @@ How to identify human readable files. ASCII text files.
 
 ## Bandit5 - Search system for file depending on parameters
 
-```
+```bash
 ssh bandit5@bandit.labs.overthewire.org -p 2220
+```
+
+```bash
 lrIWWI6bB37kxfiCQZqUdOIYfr6eEeqR
 ```
 
-Search in this path for file meeting parameters
+Search a path for file meeting parameters. After finding the file then cat it.
 
-```
+```bash
 find ./ -type f -size 1033c ! -executable
 ```
 
@@ -79,18 +77,21 @@ find ./ -type f -size 1033c ! -executable
 
 ```sh
 ssh bandit6@bandit.labs.overthewire.org -p 2220
+```
+
+```sh
 P4L4vucdmLnm8I7Vl7jG1ApGSfjYKqJU
 ```
 
 Search from root directory for file meeting specific parameters
 
-```
+```sh
 find / -user bandit7 -group bandit6 -size 33c
 ```
 
 View specific file we got from the previous output
 
-```
+```sh
 cat /var/lib/dpkg/info/bandit7.password
 ```
 
@@ -98,19 +99,25 @@ cat /var/lib/dpkg/info/bandit7.password
 
 ```sh
 ssh bandit7@bandit.labs.overthewire.org -p 2220
+```
+
+```sh
 z7WtoNQU2XfjmMtWA8u5rN4vzqu4v99S
 ```
 
 Grep a large file for a specific string on a line.
 
 ```sh
-grep millionth data.txt
+grep -n millionth data.txt
 ```
 
 ## Bandit8 - Sort the lines of the file based on the ones that are identical then grab only the unique one
 
 ```sh
 ssh bandit8@bandit.labs.overthewire.org -p 2220
+```
+
+```sh
 TESKZC0XvTetK0S9xNwm25STk5iWrBvP
 ```
 
@@ -125,6 +132,9 @@ sort data.txt | uniq -u
 
 ```sh
 ssh bandit9@bandit.labs.overthewire.org -p 2220
+```
+
+```sh
 EN632PlfYiZbn3PhVK3XOGSlNInNE00t
 ```
 
@@ -138,6 +148,9 @@ cat data.txt | strings -e s | grep ==
 
 ```sh
 ssh bandit10@bandit.labs.overthewire.org -p 2220
+```
+
+```sh
 G7w8LIi6J3kTb8A7j9LgrywtEUlyyp6s
 ```
 
@@ -149,6 +162,9 @@ cat data.txt | base64 -d
 
 ```sh
 ssh bandit11@bandit.labs.overthewire.org -p 2220
+```
+
+```sh
 6zPeziLdR2RKNdNYFNb6nVCKzphlXHBM
 ```
 
@@ -166,6 +182,9 @@ The password for the next level is stored in the file data.txt, which is a hexdu
 
 ```sh
 ssh bandit12@bandit.labs.overthewire.org -p 2220
+```
+
+```sh
 JVNBBFSmZwKKOP0XbFXOoW8chDz5yVRv
 ```
 
@@ -189,7 +208,9 @@ mv data data2.gz
 gzip -d data2.gz
 ```
 
-We change the suffix of data back to .gz, which means the file would be renamed to data2.gz. Then, we use gzip to decompress the file. Afterward, we use the file command to check the information of data2 again.
+We change the suffix of data back to .gz, which means the file would be renamed
+to data2.gz. Then, we use gzip to decompress the file. Afterward, we use the file
+command to check the information of data2 again.
 
 `mv data2 data3.bz`
 `bzip2 -d data3.bz`
@@ -198,36 +219,100 @@ We change the suffix of data back to .gz, which means the file would be renamed 
 Run this loop a few times uncompressing
 
 13 - wbWdlBxEir4CaE8LaPhauuOo6pwRmrDw
-The password for the next level is stored in /etc/bandit_pass/bandit14 and can only be read by user bandit14. For this level, you don’t get the next password, but you get a private SSH key that can be used to log into the next level. Note: localhost is a hostname that refers to the machine you are working on
 
-https://mayadevbe.me/posts/overthewire/bandit/level14/
+The password for the next level is stored in /etc/bandit_pass/bandit14 and can
+only be read by user bandit14. For this level, you don’t get the next password,
+but you get a private SSH key that can be used to log into the next level. Note:
+localhost is a hostname that refers to the machine you are working on
 
-Copy SSH to our local machine then mod it
+```sh
+ssh bandit13@bandit.labs.overthewire.org -p 2220
+```
 
-`chmod 700 sshkey.private`
+```sh
+wbWdlBxEir4CaE8LaPhauuOo6pwRmrDw
+```
 
-Use it to SSH into another machine
+Use private key on bandit13 to ssh into bandit14
 
 `ssh -i sshkey.private bandit14@bandit.labs.overthewire.org -p 2220`
 
-14 - fGrHPx402xGC7U7rXKDaxiWFTOiF0ENq
-The password for the next level can be retrieved by submitting the password of the current level to port 30000 on localhost.
+Now check the file in this machine, `/etc/bandit_pass/bandit14`
 
-`echo "fGrHPx402xGC7U7rXKDaxiWFTOiF0ENq" | nc localhost 30000`
+14 - Use NC to send messages to local http server
 
-15 - jN2kgmIXJ6fShzhT2avhotn4Zcka6tnt
-The password for the next level can be retrieved by submitting the password of the current level to port 30001 on localhost using SSL encryption.
+The password for the next level can be retrieved by submitting the password of
+the current level to port 30000 on localhost.
 
-Helpful note: Getting “HEARTBEATING” and “Read R BLOCK”? Use -ign_eof and read the “CONNECTED COMMANDS” section in the manpage. Next to ‘R’ and ‘Q’, the ‘B’ command also works in this version of that command…
+```sh
+ssh bandit14@bandit.labs.overthewire.org -p 2220
+```
 
-`openssl s_client -connect localhost:30001`
+```sh
+fGrHPx402xGC7U7rXKDaxiWFTOiF0ENq
+```
+
+```sh
+echo "fGrHPx402xGC7U7rXKDaxiWFTOiF0ENq" | nc localhost 30000
+```
+
+15 - Use OpenSSL to connect
+
+```sh
+ssh bandit15@bandit.labs.overthewire.org -p 2220
+```
+
+```sh
+jN2kgmIXJ6fShzhT2avhotn4Zcka6tnt
+```
+
+The password for the next level can be retrieved by submitting the password of
+the current level to port 30001 on localhost using SSL encryption.
+
+Helpful note: Getting “HEARTBEATING” and “Read R BLOCK”? Use -ign_eof and read the
+“CONNECTED COMMANDS” section in the manpage. Next to ‘R’ and ‘Q’, the ‘B’ command
+also works in this version of that command…
+
+```sh
+openssl s_client -connect localhost:30001
+```
+
+Connect to the server and then enter the password to the current level.
+
+```sh
+jN2kgmIXJ6fShzhT2avhotn4Zcka6tnt
+```
 
 16 - JQttfApK4SeyHwDlI9SXGR50qclOAil1
-The credentials for the next level can be retrieved by submitting the password of the current level to a port on localhost in the range 31000 to 32000. First find out which of these ports have a server listening on them. Then find out which of those speak SSL and which don’t. There is only 1 server that will give the next credentials, the others will simply send back to you whatever you send to it.
 
-After getting the key you should create a bandit.key on local and then chmod it. Afterwards use the key to ssh into a remote machine for 17
-
+```sh
+ssh bandit16@bandit.labs.overthewire.org -p 2220
 ```
+
+```sh
+JQttfApK4SeyHwDlI9SXGR50qclOAil1
+```
+
+The credentials for the next level can be retrieved by submitting the password
+of the current level to a port on localhost in the range 31000 to 32000. First
+find out which of these ports have a server listening on them. Then find out which
+of those speak SSL and which don’t. There is only 1 server that will give the
+next credentials, the others will simply send back to you whatever you send to it.
+
+After getting the key you should create a bandit.key on local and then chmod it.
+Afterwards use the key to ssh into a remote machine for 17
+
+Use `nmap` to identify open ports.
+
+```sh
+cat /etc/bandit_pass/bandit16 | openssl s_client -connect localhost:31046 -quiet
+cat /etc/bandit_pass/bandit16 | openssl s_client -connect localhost:31518 -quiet
+cat /etc/bandit_pass/bandit16 | openssl s_client -connect localhost:31691 -quiet
+cat /etc/bandit_pass/bandit16 | openssl s_client -connect localhost:31790 -quiet
+cat /etc/bandit_pass/bandit16 | openssl s_client -connect localhost:31960 -quiet
+```
+
+```sh
 -----BEGIN RSA PRIVATE KEY-----
 MIIEogIBAAKCAQEAvmOkuifmMg6HL2YPIOjon6iWfbp7c3jx34YkYWqUH57SUdyJ
 imZzeyGC0gtZPGujUSxiJSWI/oTqexh+cAMTSMlOJf7+BrJObArnxd9Y7YT2bRPQ
@@ -257,7 +342,13 @@ vBgsyi/sN3RqRBcGU40fOoZyfAMT8s1m/uYv52O6IgeuZ/ujbjY=
 -----END RSA PRIVATE KEY-----
 ```
 
-`ssh -i bandit.key bandit17@bandit.labs.overthewire.org -p 2220`
+Save key to a localf ile named `bandit.key`
+
+`chmod 400 bandit.key`
+
+```sh
+ssh -i bandit.key bandit17@bandit.labs.overthewire.org -p 2220
+```
 
 17 -
 There are 2 files in the homedirectory: passwords.old and passwords.new. The password for the next level is in passwords.new and is the only line that has been changed between passwords.old and passwords.new
@@ -269,8 +360,12 @@ diff passwords.new passwords.old
 18 - hga5tuuCLF6fFzUpnagiMN8ssu9LFrdg
 The password for the next level is stored in a file readme in the homedirectory. Unfortunately, someone has modified .bashrc to log you out when you log in with SSH.
 
-```
+```ssh
 ssh bandit18@bandit.labs.overthewire.org -p 2220 "cat ~/readme"
+```
+
+```sh
+hga5tuuCLF6fFzUpnagiMN8ssu9LFrdg
 ```
 
 19 - awhqfNnAbc1naukrpqDYcF95h7HoMTrC
