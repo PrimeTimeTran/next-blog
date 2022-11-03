@@ -2,7 +2,7 @@
 title: 'Over The Wire - Bandit'
 date: '2022-11-02'
 tags: ['Infosec']
-draft: false
+draft: true
 summary: 'Over The Wire - Bandit'
 layout: PostSimple
 bibliography: references-data.bib
@@ -342,7 +342,7 @@ vBgsyi/sN3RqRBcGU40fOoZyfAMT8s1m/uYv52O6IgeuZ/ujbjY=
 -----END RSA PRIVATE KEY-----
 ```
 
-Save key to a localf ile named `bandit.key`
+Save key to a local file named `bandit.key`
 
 `chmod 400 bandit.key`
 
