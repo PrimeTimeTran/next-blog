@@ -283,7 +283,7 @@ Connect to the server and then enter the password to the current level.
 jN2kgmIXJ6fShzhT2avhotn4Zcka6tnt
 ```
 
-16 - JQttfApK4SeyHwDlI9SXGR50qclOAil1
+16 - Use nmap to identify open ports and openssl to send them passwords
 
 ```sh
 ssh bandit16@bandit.labs.overthewire.org -p 2220
@@ -351,9 +351,11 @@ ssh -i bandit.key bandit17@bandit.labs.overthewire.org -p 2220
 ```
 
 17 -
-There are 2 files in the homedirectory: passwords.old and passwords.new. The password for the next level is in passwords.new and is the only line that has been changed between passwords.old and passwords.new
+There are 2 files in the homedirectory: passwords.old and passwords.new. The password
+for the next level is in passwords.new and is the only line that has been changed
+between passwords.old and passwords.new
 
-```
+```sh
 diff passwords.new passwords.old
 ```
 
@@ -368,9 +370,22 @@ ssh bandit18@bandit.labs.overthewire.org -p 2220 "cat ~/readme"
 hga5tuuCLF6fFzUpnagiMN8ssu9LFrdg
 ```
 
-19 - awhqfNnAbc1naukrpqDYcF95h7HoMTrC
+Issue cat command with logic to read the password before being logged out.
 
-To gain access to the next level, you should use the setuid binary in the homedirectory. Execute it without arguments to find out how to use it. The password for this level can be found in the usual place (/etc/bandit_pass), after you have used the setuid binary.
+19 - Use a binary to access a file as a different user.
+
+```ssh
+ssh bandit19@bandit.labs.overthewire.org -p 2220
+```
+
+```sh
+awhqfNnAbc1naukrpqDYcF95h7HoMTrC
+```
+
+To gain access to the next level, you should use the setuid binary in the
+homedirectory. Execute it without arguments to find out how to use it. The password
+for this level can be found in the usual place (/etc/bandit_pass), after you have
+used the setuid binary.
 
 ```
 ls -al ./bandit20-do
