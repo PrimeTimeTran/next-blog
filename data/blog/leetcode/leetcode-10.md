@@ -1,7 +1,7 @@
 ---
 draft: true
 date: '2022-11-02'
-title: '178 · Graph Valid Tree'
+title: '178. Graph Valid Tree'
 tags:
   [
     'Leetcode',

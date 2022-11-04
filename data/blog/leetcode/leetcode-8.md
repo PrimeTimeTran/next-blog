@@ -1,7 +1,7 @@
 ---
 draft: true
 date: '2022-10-30'
-title: '920 · Meeting Rooms'
+title: '920. Meeting Rooms'
 tags:
   [
     'Leetcode',
