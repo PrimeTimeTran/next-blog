@@ -28,6 +28,7 @@ import heapq
 nums = [99, 54, 12, 47, 41, 23, 45, 43, 37, 98, 100, 101]
 a, b, c, d, e = heapq.nlargest(5, nums)
 print(a, b, c, d, e)
+# 101 100 99 98 54
 ```
 
 ### We can use `heapq.nsmallest(k, nums)` as well
@@ -38,4 +39,5 @@ import heapq
 nums = [99, 54, 12, 47, 41, 23, 45, 43, 37, 98, 100, 101]
 a, b, c, d, e = heapq.nsmallest(5, nums)
 print(a, b, c, d, e)
+# 12 23 37 41 43
 ```
