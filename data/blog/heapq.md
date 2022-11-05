@@ -20,7 +20,7 @@ to accomplish this easily.
 nums = [99, 54, 12, 47, 41, 23, 45, 43, 37, 98, 100, 101]
 ```
 
-### Using `heapq.nlargest(k, nums)` we can easily find the values we're looking for.
+### Use `heapq.nlargest(k, nums)` to find largest values
 
 ```python
 import heapq
@@ -31,13 +31,21 @@ print(a, b, c, d, e)
 # 101 100 99 98 54
 ```
 
-### We can use `heapq.nsmallest(k, nums)` as well
+### Use `heapq.nsmallest(k, nums)` to find smallest values
 
 ```python
-import heapq
-
 nums = [99, 54, 12, 47, 41, 23, 45, 43, 37, 98, 100, 101]
 a, b, c, d, e = heapq.nsmallest(5, nums)
 print(a, b, c, d, e)
 # 12 23 37 41 43
+```
+
+### Use `heapq.heapify(nums)` will create a heap for us
+
+```python
+nums = [99, 54, 12, 47, 41, 23, 45, 43, 37, 98, 100, 101]
+heapq.heapify(nums)
+print(nums)
+
+# [12, 37, 23, 43, 41, 99, 45, 54, 47, 98, 100, 101]
 ```
