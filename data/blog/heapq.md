@@ -11,7 +11,7 @@ canonicalUrl:
 
 ## Heapq
 
-We often need to find the largest and smallest values in a list. We can use heapq
+We often need to find the largest and smallest values in a list. We can use [heapq](https://docs.python.org/3/library/heapq.html)
 to accomplish this easily.
 
 ### How to get the five largest numbers from this list?
