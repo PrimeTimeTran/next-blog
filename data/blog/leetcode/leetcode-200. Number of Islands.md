@@ -131,8 +131,7 @@ This will be what holds the number of islands
     class Solution:
       def numIslands(self, grid: List[List[str]]) -> int:
         seen = set()
-        m = len(grid)
-        n = len(grid[0])
+        m, n = len(grid), len(grid[0])
 
         count = 0
 
@@ -313,8 +312,7 @@ If `dfs()` returns true increment `count`.
     class Solution:
       def numIslands(self, grid: List[List[str]]) -> int:
         seen = set()
-        m = len(grid)
-        n = len(grid[0])
+        m, n = len(grid), len(grid[0])
 
         def dfs(r, c):
           pass
@@ -411,7 +409,7 @@ If it isn't, then we exit the function, not incrementing the count.
       var n = grid[0].length
       var seen = new Set()
       function dfs(r, c) {
-        var out = r < 0 || c < 0 || r > m - 1 || c > n - 1
+        var out = r < 0 || c < 0 || r == m || c == n
         if (out) return false
         if (seen.has(`${r},${c}`)) return false
         if (grid[r][c] == 0) return false
@@ -664,7 +662,7 @@ outer nested loop knows to increment the count.
       var n = grid[0].length
       var seen = new Set()
       function dfs(r, c) {
-        var out = r < 0 || c < 0 || r > m - 1 || c > n - 1
+        var out = r < 0 || c < 0 || r == m || c == n
         if (out) return false
         if (seen.has(`${r},${c}`)) return false
         if (grid[r][c] == 0) return false
@@ -828,8 +826,8 @@ outer nested loop knows to increment the count.
     class Solution:
       def numIslands(self, grid: List[List[str]]) -> int:
         seen = set()
-        m = len(grid)
-        n = len(grid[0])
+        m, n = len(grid), len(grid[0])
+
 
         def dfs(r, c):
           out = r<0 or c<0 or r==m or c==n
