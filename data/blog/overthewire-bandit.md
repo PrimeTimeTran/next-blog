@@ -36,7 +36,7 @@ Use cat with an absolute or relative path `/home/bandit1` or or `./-`
 
 Use escape character before spaces
 
-`cat ./spaces\ in\ this\ filename `
+`cat ./spaces\ in\ this\ filename`
 
 ## Bandit3 - How to view hidden files. file in directory to view hidden files
 
@@ -111,7 +111,7 @@ Grep a large file for a specific string on a line.
 grep -n millionth data.txt
 ```
 
-## Bandit8 - Sort the lines of the file based on the ones that are identical then grab only the unique one
+## Bandit8 - Sort lines of file on the identicals then grab only the unique one
 
 ```sh
 ssh bandit8@bandit.labs.overthewire.org -p 2220
@@ -128,7 +128,7 @@ only the unique one.
 sort data.txt | uniq -u
 ```
 
-## Bandit9 - Use strings to print the sequence of printable characters in files.
+## Bandit9 - Use strings to print the sequence of printable characters in files
 
 ```sh
 ssh bandit9@bandit.labs.overthewire.org -p 2220
@@ -158,7 +158,7 @@ G7w8LIi6J3kTb8A7j9LgrywtEUlyyp6s
 cat data.txt | base64 -d
 ```
 
-## Bandit11 - The password for the next level is stored in the file data.txt, where all lowercase (a-z) and uppercase (A-Z) letters have been rotated by 13 positions
+## Bandit11 - PW in data.txt, where all lowercase (a-z) and uppercase (A-Z) letters have been rotated by 13 positions
 
 ```sh
 ssh bandit11@bandit.labs.overthewire.org -p 2220
@@ -168,7 +168,8 @@ ssh bandit11@bandit.labs.overthewire.org -p 2220
 6zPeziLdR2RKNdNYFNb6nVCKzphlXHBM
 ```
 
-The password for the next level is stored in the file data.txt, where all lowercase (a-z) and uppercase (A-Z) letters have been rotated by 13 positions
+The password for the next level is stored in the file data.txt, where all
+lowercase (a-z) and uppercase (A-Z) letters have been rotated by 13 positions
 
 Rotate chars by 13 using a special command
 
@@ -176,9 +177,13 @@ Rotate chars by 13 using a special command
 cat data.txt | tr "A-Za-z" "N-ZA-Mn-za-m"
 ```
 
-## Bandit12 - Create directory for tmp stuff, copy data.txt over, and move into that directory.
+## Bandit12 - Create directory for tmp stuff, copy data.txt over, and move into that directory
 
-The password for the next level is stored in the file data.txt, which is a hexdump of a file that has been repeatedly compressed. For this level it may be useful to create a directory under /tmp in which you can work using mkdir. For example: mkdir /tmp/myname123. Then copy the datafile using cp, and rename it using mv (read the manpages!)
+The password for the next level is stored in the file data.txt, which is a hexdump
+of a file that has been repeatedly compressed. For this level it may be useful to
+create a directory under /tmp in which you can work using mkdir. For example:
+mkdir /tmp/myname123. Then copy the datafile using cp, and rename it using mv
+(read the manpages!)
 
 ```sh
 ssh bandit12@bandit.labs.overthewire.org -p 2220
@@ -200,7 +205,7 @@ cat data.txt | xxd -r > data
 
 Reverse hex dump
 
-```
+```sh
 mv data data2.gz
 ```
 
@@ -360,7 +365,8 @@ diff passwords.new passwords.old
 ```
 
 18 - hga5tuuCLF6fFzUpnagiMN8ssu9LFrdg
-The password for the next level is stored in a file readme in the homedirectory. Unfortunately, someone has modified .bashrc to log you out when you log in with SSH.
+The password for the next level is stored in a file readme in the homedirectory.
+Unfortunately, someone has modified .bashrc to log you out when you log in with SSH.
 
 ```ssh
 ssh bandit18@bandit.labs.overthewire.org -p 2220 "cat ~/readme"
@@ -387,7 +393,7 @@ homedirectory. Execute it without arguments to find out how to use it. The passw
 for this level can be found in the usual place (/etc/bandit_pass), after you have
 used the setuid binary.
 
-```
+```sh
 ls -al ./bandit20-do
 ./bandit20-do
 ./bandit20-do id
