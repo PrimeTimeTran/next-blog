@@ -542,8 +542,7 @@ If it isn't, then we exit the function, not incrementing the count.
     class Solution:
       def numIslands(self, grid: List[List[str]]) -> int:
         seen = set()
-        m = len(grid)
-        n = len(grid[0])
+        m, n = len(grid), len(grid[0])
 
         def dfs(r, c):
           out = r<0 or c<0 or r==m or c==n
