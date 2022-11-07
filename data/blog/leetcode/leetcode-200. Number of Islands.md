@@ -827,7 +827,6 @@ outer nested loop knows to increment the count.
         seen = set()
         m, n = len(grid), len(grid[0])
 
-
         def dfs(r, c):
           out = r<0 or c<0 or r==m or c==n
           if out or (r, c) in seen or grid[r][c] == '0':
