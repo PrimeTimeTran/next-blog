@@ -2,7 +2,7 @@
 title: 'Over The Wire - Bandit'
 date: '2022-11-02'
 tags: ['Infosec']
-draft: false
+draft: true
 summary: 'Over The Wire - Bandit'
 layout: PostSimple
 bibliography: references-data.bib
