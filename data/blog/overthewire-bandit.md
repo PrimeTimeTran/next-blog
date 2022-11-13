@@ -2,7 +2,7 @@
 title: 'Over The Wire - Bandit'
 date: '2022-11-02'
 tags: ['Infosec']
-draft: true
+draft: false
 summary: 'Over The Wire - Bandit'
 layout: PostSimple
 bibliography: references-data.bib
@@ -15,47 +15,82 @@ canonicalUrl:
 
 An overview of the techniques to overcome each level of over the wire's bandit.
 
-## Bandit0 - How to SSH into a remote machine
+## Bandit0 - SSH to remote machine
 
-`ssh bandit0@bandit.labs.overthewire.org -p 2220`
-`bandit0`
-
+How to SSH into a remote machine.
 Use SSH cli command with username, host and port.
+
+```sh
+ssh bandit0@bandit.labs.overthewire.org -p 2220
+```
+
+```sh
+bandit0
+```
 
 ## Bandit1 - How to handle dash file names
 
-`ssh bandit1@bandit.labs.overthewire.org -p 2220`
-`NH2SXQwcBdpmTEzi3bvBHMM9H66vVXjL`
-
 Use cat with an absolute or relative path `/home/bandit1` or or `./-`
+
+```sh
+ssh bandit1@bandit.labs.overthewire.org -p 2220
+```
+
+```sh
+NH2SXQwcBdpmTEzi3bvBHMM9H66vVXjL
+```
+
+```sh
+cat ./-
+```
 
 ## Bandit2 - How to handle spaces in file names
 
-`ssh bandit2@bandit.labs.overthewire.org -p 2220`
-`rRGizSaX8Mk1RTb1CNQoXTcYZWU6lgzi`
-
 Use escape character before spaces
 
-`cat ./spaces\ in\ this\ filename`
+```sh
+ssh bandit2@bandit.labs.overthewire.org -p 2220
+```
+
+```sh
+rRGizSaX8Mk1RTb1CNQoXTcYZWU6lgzi
+```
+
+```sh
+cat ./spaces\ in\ this\ filename
+```
 
 ## Bandit3 - How to view hidden files. file in directory to view hidden files
 
-`ssh bandit3@bandit.labs.overthewire.org -p 2220`
-`aBZ0W5EmUfAf7kHTQeOwd8bauFJ2lAiG`
-
 Search for hidden files.
 
-`ls -al`
+```sh
+ssh bandit3@bandit.labs.overthewire.org -p 2220
+```
+
+```sh
+aBZ0W5EmUfAf7kHTQeOwd8bauFJ2lAiG
+```
+
+```sh
+ls -al
+```
 
 ## Bandit4 - How to identify human readable files. ASCII text files
 
-`ssh bandit4@bandit.labs.overthewire.org -p 2220`
-
-`2EW7BBsr6aMMoJ2HjW067dm8EgX26xNe`
-
 How to identify human readable files. ASCII text files.
 
-`file ./-file*`
+```sh
+ssh bandit4@bandit.labs.overthewire.org -p 2220
+```
+
+```sh
+2EW7BBsr6aMMoJ2HjW067dm8EgX26xNe
+```
+
+```sh
+file ./-file*
+```
 
 ## Bandit5 - Search system for file depending on parameters
 
