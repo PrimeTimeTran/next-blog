@@ -2,7 +2,7 @@
 title: 'Over The Wire - Bandit'
 date: '2022-11-02'
 tags: ['Infosec']
-draft: true
+draft: false
 summary: 'Over The Wire - Bandit'
 layout: PostSimple
 bibliography: references-data.bib
@@ -15,7 +15,9 @@ canonicalUrl:
 
 An overview of the techniques to overcome each level of over the wire's bandit.
 
-## Bandit0 - SSH to remote machine
+Working through these exercises gives us knowledge of linux, bash, file system, networking and more.
+
+## 0 - SSH to remote machine
 
 How to SSH into a remote machine.
 Use SSH cli command with username, host and port.
@@ -28,9 +30,9 @@ ssh bandit0@bandit.labs.overthewire.org -p 2220
 bandit0
 ```
 
-## Bandit1 - How to handle dash file names
+## 1 - How to handle dash file names
 
-Use cat with an absolute or relative path `/home/bandit1` or or `./-`
+Use `cat` with an absolute or relative path `cat /home/bandit1` or or `./-`
 
 ```sh
 ssh bandit1@bandit.labs.overthewire.org -p 2220
@@ -44,9 +46,9 @@ NH2SXQwcBdpmTEzi3bvBHMM9H66vVXjL
 cat ./-
 ```
 
-## Bandit2 - How to handle spaces in file names
+## 2 - How to handle spaces in file names
 
-Use escape character before spaces
+Use escape character before spaces in file names.
 
 ```sh
 ssh bandit2@bandit.labs.overthewire.org -p 2220
@@ -60,9 +62,9 @@ rRGizSaX8Mk1RTb1CNQoXTcYZWU6lgzi
 cat ./spaces\ in\ this\ filename
 ```
 
-## Bandit3 - How to view hidden files. file in directory to view hidden files
+## 3 - How to view hidden files
 
-Search for hidden files.
+Search for hidden files using `ls` with `-al` flags.
 
 ```sh
 ssh bandit3@bandit.labs.overthewire.org -p 2220
@@ -76,9 +78,9 @@ aBZ0W5EmUfAf7kHTQeOwd8bauFJ2lAiG
 ls -al
 ```
 
-## Bandit4 - How to identify human readable files. ASCII text files
+## 4 - How to identify human readable files
 
-How to identify human readable files. ASCII text files.
+Identify ASCII text files using `file` command.
 
 ```sh
 ssh bandit4@bandit.labs.overthewire.org -p 2220
@@ -92,23 +94,23 @@ ssh bandit4@bandit.labs.overthewire.org -p 2220
 file ./-file*
 ```
 
-## Bandit5 - Search system for file depending on parameters
+## 5 - Search system for file depending on parameters
 
-```bash
+```sh
 ssh bandit5@bandit.labs.overthewire.org -p 2220
 ```
 
-```bash
+```sh
 lrIWWI6bB37kxfiCQZqUdOIYfr6eEeqR
 ```
 
 Search a path for file meeting parameters. After finding the file then cat it.
 
-```bash
+```sh
 find ./ -type f -size 1033c ! -executable
 ```
 
-## Bandit6 - Search from root directory. Find file fitting certain parameters
+## 6 - Search for files beloning to specific user and group
 
 ```sh
 ssh bandit6@bandit.labs.overthewire.org -p 2220
@@ -118,7 +120,9 @@ ssh bandit6@bandit.labs.overthewire.org -p 2220
 P4L4vucdmLnm8I7Vl7jG1ApGSfjYKqJU
 ```
 
-Search from root directory for file meeting specific parameters
+Search from root directory for file meeting specific parameters.
+
+Specifically user, group, size
 
 ```sh
 find / -user bandit7 -group bandit6 -size 33c
@@ -130,7 +134,7 @@ View specific file we got from the previous output
 cat /var/lib/dpkg/info/bandit7.password
 ```
 
-## Bandit7 - Grep a large file for a specific string on a line
+## 7 - Find specific text in a file
 
 ```sh
 ssh bandit7@bandit.labs.overthewire.org -p 2220
@@ -140,13 +144,18 @@ ssh bandit7@bandit.labs.overthewire.org -p 2220
 z7WtoNQU2XfjmMtWA8u5rN4vzqu4v99S
 ```
 
-Grep a large file for a specific string on a line.
+Using `grep` we can find lines containing specific strings.
+
+Include line numbers with `-n`.
 
 ```sh
 grep -n millionth data.txt
 ```
 
-## Bandit8 - Sort lines of file on the identicals then grab only the unique one
+## 8 - How to organize/filter lines in a long file
+
+The password for the next level is stored in the file data.txt and is the only
+line of text that occurs only once
 
 ```sh
 ssh bandit8@bandit.labs.overthewire.org -p 2220
@@ -156,14 +165,16 @@ ssh bandit8@bandit.labs.overthewire.org -p 2220
 TESKZC0XvTetK0S9xNwm25STk5iWrBvP
 ```
 
-Sort the lines of the file based on the ones that are identical then grab
-only the unique one.
+Sort the lines lexicographically and only grab unique lines.
 
 ```sh
 sort data.txt | uniq -u
 ```
 
-## Bandit9 - Use strings to print the sequence of printable characters in files
+## 9 - How to parse binary data to human readable format
+
+The password for the next level is stored in the file data.txt in one of the few
+human-readable strings, preceded by several ‘=’ characters.
 
 ```sh
 ssh bandit9@bandit.labs.overthewire.org -p 2220
@@ -179,7 +190,10 @@ Use strings to print the sequence of printable characters in files.
 cat data.txt | strings -e s | grep ==
 ```
 
-## Bandit10 - Decode from base64
+## 10 - How to decode from base64
+
+The password for the next level is stored in the file data.txt, which contains
+base64 encoded data
 
 ```sh
 ssh bandit10@bandit.labs.overthewire.org -p 2220
@@ -193,7 +207,10 @@ G7w8LIi6J3kTb8A7j9LgrywtEUlyyp6s
 cat data.txt | base64 -d
 ```
 
-## Bandit11 - PW in data.txt, where all lowercase (a-z) and uppercase (A-Z) letters have been rotated by 13 positions
+## 11 - How to translate file output using TR command
+
+The password for the next level is stored in the file data.txt, where all lowercase
+(a-z) and uppercase (A-Z) letters have been rotated by 13 positions
 
 ```sh
 ssh bandit11@bandit.labs.overthewire.org -p 2220
@@ -203,16 +220,13 @@ ssh bandit11@bandit.labs.overthewire.org -p 2220
 6zPeziLdR2RKNdNYFNb6nVCKzphlXHBM
 ```
 
-The password for the next level is stored in the file data.txt, where all
-lowercase (a-z) and uppercase (A-Z) letters have been rotated by 13 positions
-
 Rotate chars by 13 using a special command
 
 ```sh
 cat data.txt | tr "A-Za-z" "N-ZA-Mn-za-m"
 ```
 
-## Bandit12 - Create directory for tmp stuff, copy data.txt over, and move into that directory
+## 12 - How to investigate contents of binary files
 
 The password for the next level is stored in the file data.txt, which is a hexdump
 of a file that has been repeatedly compressed. For this level it may be useful to
@@ -258,7 +272,7 @@ command to check the information of data2 again.
 
 Run this loop a few times uncompressing
 
-13 - wbWdlBxEir4CaE8LaPhauuOo6pwRmrDw
+## 13 - wbWdlBxEir4CaE8LaPhauuOo6pwRmrDw
 
 The password for the next level is stored in /etc/bandit_pass/bandit14 and can
 only be read by user bandit14. For this level, you don’t get the next password,
@@ -279,7 +293,7 @@ Use private key on bandit13 to ssh into bandit14
 
 Now check the file in this machine, `/etc/bandit_pass/bandit14`
 
-14 - Use NC to send messages to local http server
+## 14 - Use NC to send messages to local http server
 
 The password for the next level can be retrieved by submitting the password of
 the current level to port 30000 on localhost.
@@ -296,7 +310,7 @@ fGrHPx402xGC7U7rXKDaxiWFTOiF0ENq
 echo "fGrHPx402xGC7U7rXKDaxiWFTOiF0ENq" | nc localhost 30000
 ```
 
-15 - Use OpenSSL to connect
+## 15 - Use OpenSSL to connect
 
 ```sh
 ssh bandit15@bandit.labs.overthewire.org -p 2220
@@ -323,7 +337,7 @@ Connect to the server and then enter the password to the current level.
 jN2kgmIXJ6fShzhT2avhotn4Zcka6tnt
 ```
 
-16 - Use nmap to identify open ports and openssl to send them passwords
+## 16 - Use nmap to identify open ports and openssl to send them passwords
 
 ```sh
 ssh bandit16@bandit.labs.overthewire.org -p 2220
@@ -390,7 +404,8 @@ Save key to a local file named `bandit.key`
 ssh -i bandit.key bandit17@bandit.labs.overthewire.org -p 2220
 ```
 
-17 -
+## 17 -
+
 There are 2 files in the homedirectory: passwords.old and passwords.new. The password
 for the next level is in passwords.new and is the only line that has been changed
 between passwords.old and passwords.new
@@ -399,7 +414,8 @@ between passwords.old and passwords.new
 diff passwords.new passwords.old
 ```
 
-18 - hga5tuuCLF6fFzUpnagiMN8ssu9LFrdg
+## 18 - hga5tuuCLF6fFzUpnagiMN8ssu9LFrdg
+
 The password for the next level is stored in a file readme in the homedirectory.
 Unfortunately, someone has modified .bashrc to log you out when you log in with SSH.
 
@@ -413,7 +429,7 @@ hga5tuuCLF6fFzUpnagiMN8ssu9LFrdg
 
 Issue cat command with logic to read the password before being logged out.
 
-19 - Use a binary to access a file as a different user.
+## 19 - Use a binary to access a file as a different user.
 
 ```ssh
 ssh bandit19@bandit.labs.overthewire.org -p 2220
@@ -438,7 +454,7 @@ cat /etc/bandit_pass/bandit20
 ./bandit20-do cat /etc/bandit_pass/bandit20
 ```
 
-20 - VxCazJaVykI6W36BkBU0mJTCM8rR95XT
+## 20 - VxCazJaVykI6W36BkBU0mJTCM8rR95XT
 
 ```sh
 ssh bandit20@bandit.labs.overthewire.org -p 2220
@@ -462,7 +478,7 @@ echo -n 'VxCazJaVykI6W36BkBU0mJTCM8rR95XT' | nc -l -p 1234 &
 
 ```
 
-21 - Find password inside of cron job
+## 21 - Find password inside of cron job
 
 ```ssh
 ssh bandit21@bandit.labs.overthewire.org -p 2220
@@ -483,7 +499,7 @@ cat /usr/bin/cronjob_bandit22.sh
 cat /tmp/t7O6lds9S0RqQh9aMcz6ShpAoZKF7fgv
 ```
 
-22 -
+## 22 -
 
 Learn how to read a bash script
 
@@ -510,7 +526,7 @@ echo "Copying passwordfile /etc/bandit_pass/$myname to /tmp/$mytarget"
 cat /etc/bandit_pass/$myname > /tmp/$mytarget
 ```
 
-23 - Create a script
+## 23 - Create a script
 
 A program is running automatically at regular intervals from cron, the time-based
 job scheduler. Look in /etc/cron.d/ for the configuration and see what command is
@@ -571,7 +587,7 @@ cp script.sh /var/spool/bandit24/foo
 chmod 777 /tmp/rand
 ```
 
-24 -
+## 24 -
 
 ```ssh
 ssh bandit24@bandit.labs.overthewire.org -p 2220
@@ -581,4 +597,4 @@ ssh bandit24@bandit.labs.overthewire.org -p 2220
 VAfGXJ1PBSsPSnvsjI8p759leLZ9GGar
 ```
 
-25 -
+## 25 -
