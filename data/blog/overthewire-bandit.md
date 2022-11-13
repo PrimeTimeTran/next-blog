@@ -272,7 +272,7 @@ command to check the information of data2 again.
 
 Run this loop a few times uncompressing
 
-## 13 - wbWdlBxEir4CaE8LaPhauuOo6pwRmrDw
+## 13 - How to use a private key to ssh into a remote machine
 
 The password for the next level is stored in /etc/bandit_pass/bandit14 and can
 only be read by user bandit14. For this level, you don’t get the next password,
@@ -287,11 +287,17 @@ ssh bandit13@bandit.labs.overthewire.org -p 2220
 wbWdlBxEir4CaE8LaPhauuOo6pwRmrDw
 ```
 
-Use private key on bandit13 to ssh into bandit14
+Use private key on bandit13 to ssh into bandit14.
 
-`ssh -i sshkey.private bandit14@bandit.labs.overthewire.org -p 2220`
+```sh
+ssh -i sshkey.private bandit14@bandit.labs.overthewire.org -p 2220
+```
 
-Now check the file in this machine, `/etc/bandit_pass/bandit14`
+Check the file in this machine.
+
+```sh
+cat /etc/bandit_pass/bandit14
+```
 
 ## 14 - Use NC to send messages to local http server
 
@@ -306,11 +312,20 @@ ssh bandit14@bandit.labs.overthewire.org -p 2220
 fGrHPx402xGC7U7rXKDaxiWFTOiF0ENq
 ```
 
+Echo the password to this level to port 30000 using `nc`
+
 ```sh
 echo "fGrHPx402xGC7U7rXKDaxiWFTOiF0ENq" | nc localhost 30000
 ```
 
 ## 15 - Use OpenSSL to connect
+
+The password for the next level can be retrieved by submitting the password of the
+current level to port 30001 on localhost using SSL encryption.
+
+Helpful note: Getting “HEARTBEATING” and “Read R BLOCK”? Use -ign_eof and read the
+“CONNECTED COMMANDS” section in the manpage. Next to ‘R’ and ‘Q’, the ‘B’ command
+also works in this version of that command…
 
 ```sh
 ssh bandit15@bandit.labs.overthewire.org -p 2220
@@ -320,32 +335,21 @@ ssh bandit15@bandit.labs.overthewire.org -p 2220
 jN2kgmIXJ6fShzhT2avhotn4Zcka6tnt
 ```
 
-The password for the next level can be retrieved by submitting the password of
-the current level to port 30001 on localhost using SSL encryption.
-
-Helpful note: Getting “HEARTBEATING” and “Read R BLOCK”? Use -ign_eof and read the
-“CONNECTED COMMANDS” section in the manpage. Next to ‘R’ and ‘Q’, the ‘B’ command
-also works in this version of that command…
+Open ssl connection
 
 ```sh
 openssl s_client -connect localhost:30001
 ```
 
-Connect to the server and then enter the password to the current level.
+Submit password through SSL connection
 
 ```sh
 jN2kgmIXJ6fShzhT2avhotn4Zcka6tnt
 ```
 
-## 16 - Use nmap to identify open ports and openssl to send them passwords
+## 16 - How to check for open ports and create a ssh key
 
-```sh
-ssh bandit16@bandit.labs.overthewire.org -p 2220
-```
-
-```sh
-JQttfApK4SeyHwDlI9SXGR50qclOAil1
-```
+Use nmap to identify open ports and openssl to send them passwords
 
 The credentials for the next level can be retrieved by submitting the password
 of the current level to a port on localhost in the range 31000 to 32000. First
@@ -356,7 +360,19 @@ next credentials, the others will simply send back to you whatever you send to i
 After getting the key you should create a bandit.key on local and then chmod it.
 Afterwards use the key to ssh into a remote machine for 17
 
+```sh
+ssh bandit16@bandit.labs.overthewire.org -p 2220
+```
+
+```sh
+JQttfApK4SeyHwDlI9SXGR50qclOAil1
+```
+
 Use `nmap` to identify open ports.
+
+```sh
+nmap -p 31000-32000 localhost
+```
 
 ```sh
 cat /etc/bandit_pass/bandit16 | openssl s_client -connect localhost:31046 -quiet
@@ -396,15 +412,26 @@ vBgsyi/sN3RqRBcGU40fOoZyfAMT8s1m/uYv52O6IgeuZ/ujbjY=
 -----END RSA PRIVATE KEY-----
 ```
 
-Save key to a local file named `bandit.key`
+Save key to a local file named
 
-`chmod 400 bandit.key`
+```sh
+bandit.key
+```
+
+Use `chmod 400` to give user read permission and remove all other permissions to
+bandit.key.
+
+```sh
+chmod 400 bandit.key
+```
+
+Use the created key to ssh into next level .
 
 ```sh
 ssh -i bandit.key bandit17@bandit.labs.overthewire.org -p 2220
 ```
 
-## 17 -
+## 17 - How to check for differences in two files
 
 There are 2 files in the homedirectory: passwords.old and passwords.new. The password
 for the next level is in passwords.new and is the only line that has been changed
