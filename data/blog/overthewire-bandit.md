@@ -3,7 +3,7 @@ title: 'Over The Wire - Bandit'
 date: '2022-11-02'
 tags: ['Infosec']
 draft: false
-summary: 'Over The Wire - Bandit'
+summary: 'The wargames offered by the OverTheWire community can help you to learn and practice security concepts in the form of fun-filled games.'
 layout: PostSimple
 bibliography: references-data.bib
 canonicalUrl:
@@ -454,9 +454,18 @@ ssh bandit18@bandit.labs.overthewire.org -p 2220 "cat ~/readme"
 hga5tuuCLF6fFzUpnagiMN8ssu9LFrdg
 ```
 
-Issue cat command with logic to read the password before being logged out.
+Issue cat command with initial logic command to read before being logged out.
 
-## 19 - Use a binary to access a file as a different user.
+```sh
+ssh bandit18@bandit.labs.overthewire.org -p 2220 "cat ~/readme"
+```
+
+## 19 - Use a binary to access a file as a different user
+
+To gain access to the next level, you should use the setuid binary in the homedirectory.
+Execute it without arguments to find out how to use it. The password for this
+level can be found in the usual place (/etc/bandit_pass), after you have used the
+setuid binary.
 
 ```ssh
 ssh bandit19@bandit.labs.overthewire.org -p 2220
@@ -466,10 +475,9 @@ ssh bandit19@bandit.labs.overthewire.org -p 2220
 awhqfNnAbc1naukrpqDYcF95h7HoMTrC
 ```
 
-To gain access to the next level, you should use the setuid binary in the
-homedirectory. Execute it without arguments to find out how to use it. The password
-for this level can be found in the usual place (/etc/bandit_pass), after you have
-used the setuid binary.
+Use another user's permissions to run an executable.
+
+Use the binary to run commands on other files as bandit20.
 
 ```sh
 ls -al ./bandit20-do
@@ -483,6 +491,12 @@ cat /etc/bandit_pass/bandit20
 
 ## 20 - VxCazJaVykI6W36BkBU0mJTCM8rR95XT
 
+There is a setuid binary in the homedirectory that does the following: it makes
+a connection to localhost on the port you specify as a commandline argument. It
+then reads a line of text from the connection and compares it to the password in
+the previous level (bandit20). If the password is correct, it will transmit the
+password for the next level (bandit21).
+
 ```sh
 ssh bandit20@bandit.labs.overthewire.org -p 2220
 ```
@@ -491,18 +505,15 @@ ssh bandit20@bandit.labs.overthewire.org -p 2220
 VxCazJaVykI6W36BkBU0mJTCM8rR95XT
 ```
 
-There is a setuid binary in the homedirectory that does the following: it makes
-a connection to localhost on the port you specify as a commandline argument. It
-then reads a line of text from the connection and compares it to the password in
-the previous level (bandit20). If the password is correct, it will transmit the
-password for the next level (bandit21).
+1. Set up an nc listener on one terminal.
+2. Connect to it using another terminal.
 
 ```sh
 echo -n 'VxCazJaVykI6W36BkBU0mJTCM8rR95XT' | nc -l -p 1234 &
 ```
 
 ```sh
-
+./suconnect 1234
 ```
 
 ## 21 - Find password inside of cron job
