@@ -1,9 +1,9 @@
 ---
 title: 'Useful Heap Methods'
 date: '2022-11-05'
-tags: ['Data structures', 'Heaps']
+tags: ['Data structures', 'Heaps', 'Python']
 draft: false
-summary: 'Two sum'
+summary: 'A few methods on the heap datastructure'
 layout: PostSimple
 bibliography: references-data.bib
 canonicalUrl:
@@ -39,6 +39,8 @@ a, b, c, d, e = heapq.nsmallest(5, nums)
 print(a, b, c, d, e)
 # 12 23 37 41 43
 ```
+
+The return of both these methods are not unlike destructuring.
 
 ### Use `heapq.heapify(nums)` will create a heap for us
 
