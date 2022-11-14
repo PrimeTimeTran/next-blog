@@ -32,7 +32,8 @@ bandit0
 
 ## 1 - How to handle dash file names
 
-Use `cat` with an absolute or relative path `cat /home/bandit1` or or `./-`
+The password for the next level is stored in a file called - located in the home
+directory
 
 ```sh
 ssh bandit1@bandit.labs.overthewire.org -p 2220
@@ -42,13 +43,18 @@ ssh bandit1@bandit.labs.overthewire.org -p 2220
 NH2SXQwcBdpmTEzi3bvBHMM9H66vVXjL
 ```
 
+Use `cat` with an absolute or relative path `cat /home/bandit1` and `cat ./-` respectively.
+
 ```sh
+cat /home/bandit1
+# or
 cat ./-
 ```
 
 ## 2 - How to handle spaces in file names
 
-Use escape character before spaces in file names.
+The password for the next level is stored in a file called spaces in this filename
+located in the home directory
 
 ```sh
 ssh bandit2@bandit.labs.overthewire.org -p 2220
@@ -58,13 +64,16 @@ ssh bandit2@bandit.labs.overthewire.org -p 2220
 rRGizSaX8Mk1RTb1CNQoXTcYZWU6lgzi
 ```
 
+Use escape character before spaces in file names.
+
 ```sh
 cat ./spaces\ in\ this\ filename
 ```
 
 ## 3 - How to view hidden files
 
-Search for hidden files using `ls` with `-al` flags.
+The password for the next level is stored in the only human-readable file in the
+inhere directory. Tip: if your terminal is messed up, try the “reset” command.
 
 ```sh
 ssh bandit3@bandit.labs.overthewire.org -p 2220
@@ -73,6 +82,8 @@ ssh bandit3@bandit.labs.overthewire.org -p 2220
 ```sh
 aBZ0W5EmUfAf7kHTQeOwd8bauFJ2lAiG
 ```
+
+Use `ls` with `-al` flags to include hidden files in output.
 
 ```sh
 ls -al
@@ -94,7 +105,10 @@ ssh bandit4@bandit.labs.overthewire.org -p 2220
 file ./-file*
 ```
 
-## 5 - Search system for file depending on parameters
+## 5 - Search for files matching criteria/flags
+
+The password for the next level is stored in a file somewhere under the inhere
+directory and has all of the following properties:
 
 ```sh
 ssh bandit5@bandit.labs.overthewire.org -p 2220
