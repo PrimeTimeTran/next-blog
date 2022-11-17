@@ -85,10 +85,17 @@ if people[0]['ss']:
 
 ```
 
-```python
+Generate a 2d matrix
 
+```python
+m = 10
+n = 10
+matrix = [[0 for j in range(n)] for i in range(m)]
 ```
 
-```python
+Generate the alphabet
 
+```python
+import string
+print(string.ascii_lowercase)
 ```

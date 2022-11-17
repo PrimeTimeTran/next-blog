@@ -15,7 +15,8 @@ canonicalUrl:
 
 An overview of the techniques to overcome each level of over the wire's bandit.
 
-Working through these exercises gives us knowledge of linux, bash, file system, networking and more.
+Working through these exercises gives us knowledge of linux, bash, file system,
+networking and more.
 
 ## 0 - SSH to remote machine
 
@@ -519,18 +520,44 @@ ssh bandit20@bandit.labs.overthewire.org -p 2220
 VxCazJaVykI6W36BkBU0mJTCM8rR95XT
 ```
 
+Two techniques, one using 2 socket connections.
+
 1. Set up an nc listener on one terminal.
-2. Connect to it using another terminal.
+
+```sh
+nc -lp 6000
+```
+
+2. Connect to listening port
+
+```sh
+./suconnect 6000
+```
+
+3. Enter password in original nc port listener and watch pw
+   get spit out of other terminal.
+
+```sh
+VxCazJaVykI6W36BkBU0mJTCM8rR95XT
+```
+
+Start background process
 
 ```sh
 echo -n 'VxCazJaVykI6W36BkBU0mJTCM8rR95XT' | nc -l -p 1234 &
 ```
+
+Now try to connect to background process.
 
 ```sh
 ./suconnect 1234
 ```
 
 ## 21 - Find password inside of cron job
+
+A program is running automatically at regular intervals from cron, the time-based
+job scheduler. Look in /etc/cron.d/ for the configuration and see what command
+is being executed.
 
 ```ssh
 ssh bandit21@bandit.labs.overthewire.org -p 2220
