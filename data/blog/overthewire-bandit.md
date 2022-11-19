@@ -592,6 +592,7 @@ WdDozAdTM2z9DiFEQ2mGlwngMfj4EZff
 
 ```sh
 cat /usr/bin/cronjob_bandit23.sh
+/usr/bin/cronjob_bandit23.sh
 ```
 
 ```bash
@@ -603,6 +604,15 @@ mytarget=$(echo I am user $myname | md5sum | cut -d ' ' -f 1)
 echo "Copying passwordfile /etc/bandit_pass/$myname to /tmp/$mytarget"
 
 cat /etc/bandit_pass/$myname > /tmp/$mytarget
+```
+
+From the script, we know that the password for next level stored in the file named
+with $mytarget. And we need to set $myname to bandit23 to fetch the correct filename.
+
+```sh
+myname=bandit23
+echo I am user $myname | md5sum | cut -d ' ' -f 1
+cat /tmp/8ca319486bfbbc3663ea0fbe81326349
 ```
 
 ## 23 - Create a script
