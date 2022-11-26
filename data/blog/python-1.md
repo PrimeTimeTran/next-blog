@@ -26,21 +26,31 @@ sentences = "Hi " + "there you go"
 # Comprehensions
 ```
 
+Iterate list using iterator.
+
 ```python
 animals = ['cat', 'dog', 'bat']
-
 
 for i in range(len(animals)):
   print(animals[i])
 ```
 
-Prefer using
+Iterate list `in` keyword.
 
 ```python
 animals = ['cat', 'dog', 'bat']
 
 for animal in animals:
   print(animal)
+```
+
+Iterate list using `enumerate` to get iterator and element.
+
+```python
+animals = ['cat', 'dog', 'bat']
+
+for i, animal in enumerate(animals):
+  print(i, animal)
 ```
 
 ```python
@@ -61,8 +71,12 @@ if people[0]['ss']:
   print(people[0]['name'])
 ```
 
-```python
+Sort a dict on keys.
 
+```python
+leaders = {4: "Yang Zhou", 2: "Elon Musk", 3: "Tim Cook", 1: "Warren Buffett"}
+leaders = sorted(leaders.items(), key=lambda x: x[0])
+print(leaders)
 ```
 
 ```python
