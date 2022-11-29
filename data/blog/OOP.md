@@ -1,8 +1,8 @@
 ---
 title: 'Object Oriented Programming'
-date: '2022-10-07'
+date: '2021-10-07'
 tags: ['OOP']
-draft: true
+draft: false
 summary: 'The principles which guide object oriented programming'
 layout: PostSimple
 bibliography: references-data.bib
