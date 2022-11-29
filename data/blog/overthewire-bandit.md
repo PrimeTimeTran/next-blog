@@ -1,9 +1,9 @@
 ---
 title: 'Over The Wire - Bandit'
 date: '2022-11-02'
-tags: ['Infosec']
+tags: ['Infosec', 'Linux']
 draft: false
-summary: 'The wargames offered by the OverTheWire community can help you to learn and practice security concepts in the form of fun-filled games.'
+summary: 'Walkthrough of each level of Over the Wire Bandit. It CLI game to master Linux, SSH, and much mores'
 layout: PostSimple
 bibliography: references-data.bib
 canonicalUrl:
