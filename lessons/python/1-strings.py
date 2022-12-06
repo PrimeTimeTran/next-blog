@@ -34,7 +34,11 @@ print(name.capitalize())
 
 phrase = "the fox jumped over the lazy dog"
 
+print(phrase.find('t'))
 print(phrase.find('fox'))
+print(phrase.find('ape'))
+
+
 print(phrase[4:7])
 
 print(phrase.replace('fox', 'wizard'))

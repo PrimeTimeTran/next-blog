@@ -1,9 +1,17 @@
+# input vs output
+
+
 def greet():
   print('Hello World')
 
 
+greet
+
 greet()
 
+greet()
+greet()
+greet()
 
 def greetWorld():
   print('Hello World')
@@ -12,11 +20,11 @@ def greetWorld():
 greetWorld()
 
 
-def greetYouTube():
-  print('Hello YouTube')
+def greetGlobe():
+  print('Hello Globe')
 
 
-greetYouTube()
+greetGlobe()
 
 def greeter(entity):
   print('Hello ' + entity)
@@ -30,14 +38,14 @@ def add(a, b):
   print(a+b)
 
 
-add(4, 1)
+add(0, 1)
 
 
-def addThree(a, b, c):
+def add(a, b, c):
   print(a+b+c)
 
 
-addThree(2, 2, 2)
+add(2, 2, 2)
 
 
 def subtract(a, b=1):
@@ -57,6 +65,8 @@ addAll(10, 10)
 addAll(10, 10, 10)
 
 
+
+# Unit of action with nothing returned
 returnedValue = addAll(1, 1)
 print(returnedValue)
 

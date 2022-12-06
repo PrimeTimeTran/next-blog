@@ -35,3 +35,8 @@ print(ws)
 print(ws.index('Draco'))
 
 print('Draco'.index('r'))
+
+
+print(ws[::-1])
+
+
