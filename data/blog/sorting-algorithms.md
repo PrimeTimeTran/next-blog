@@ -2,7 +2,7 @@
 title: 'Sorting Algorithms'
 date: '2022-08-18'
 tags: ['Python']
-draft: true
+draft: False
 summary: 'Sorting Algorithms'
 layout: PostSimple
 bibliography: references-data.bib
