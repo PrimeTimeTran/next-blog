@@ -2,13 +2,13 @@
 
 print("Hello World")
 
-print('Hello World')
+print('Hola World')
 
 print('Hello World\'s')
 
-print("Hello World's")
+print('Hello \'YouTube\'')
 
-print("Hello \"YouTube\"")
+print("Hello World's")
 
 name = 'Harry'
 
@@ -37,6 +37,10 @@ phrase = "the fox jumped over the lazy dog"
 print(phrase.find('t'))
 print(phrase.find('fox'))
 print(phrase.find('ape'))
+
+print(phrase[0])
+print(phrase[1])
+print(phrase[2])
 
 
 print(phrase[4:7])
