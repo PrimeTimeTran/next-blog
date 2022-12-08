@@ -61,3 +61,5 @@ amplify/team-provider-info.json
 
 .vscode/
 amplify/
+
+./lessons/python/__pycache__
