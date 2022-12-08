@@ -28,12 +28,12 @@ print('{} and {} know magic.'.format(name, name2))
 
 print(len(name))
 print(name.index('H'))
-print(name.lower())
-print(name.upper())
-print(name.capitalize())
+print(name.index('r'))
 
-phrase = "the fox jumped over the lazy dog"
-
+phrase = "The fox jumped over the lazy dog"
+print(phrase.lower())
+print(phrase.upper())
+print('lowercase'.capitalize())
 print(phrase.find('t'))
 print(phrase.find('fox'))
 print(phrase.find('ape'))
@@ -41,7 +41,6 @@ print(phrase.find('ape'))
 print(phrase[0])
 print(phrase[1])
 print(phrase[2])
-
 
 print(phrase[4:7])
 
