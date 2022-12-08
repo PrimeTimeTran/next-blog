@@ -63,3 +63,4 @@ amplify/team-provider-info.json
 amplify/
 
 ./lessons/python/__pycache__
+/lessons/python/__pycache__
