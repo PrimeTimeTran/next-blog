@@ -21,32 +21,32 @@ while len(wizards) > 0:
   print(wizards)
   wizards.pop()
 
-for c in "Alphabet":
+for c in "alphabet":
   print(c)
 
-for i, c in enumerate("Alphabet"):
+for i, c in enumerate("alphabet"):
   print(i, c)
 
 for n in set([1, 2, 3]):
   print(n)
 
-states = {
-  "FL": "Florida",
-  "CA": "California",
-  "AK": "Alaska"
+fruits = {
+  "🍊": "orange",
+  "🍎": "apple",
+  "🍉": "watermelon",
 }
 
-for s in states:
-  print(s)
+for f in fruits:
+  print(f)
 
-for s in states.values():
-  print(s)
+for f in fruits.values():
+  print(f)
 
-for s in states.items():
-  print(s)
+for f in fruits.items():
+  print(f)
 
-for k, v in states.items():
+for k, v in fruits.items():
   print(k, v)
 
-for i, [k,v] in enumerate(states.items()):
+for i, [k,v] in enumerate(fruits.items()):
   print(i, k, v)
