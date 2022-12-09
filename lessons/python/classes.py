@@ -6,18 +6,15 @@ class Person:
   def printname(self):
     print(self.firstname, self.lastname)
 
-
-class Student(Person):
+class Programmer(Person):
   pass
 
+programmer = Programmer('Alan', 'Turing')
+programmer.printname()
 
-s1 = Student("Harry", "Potter")
-s1.printname()
-
-
-class Student(Person):
+class Wizard(Person):
   def patronus(self):
-    print("expecto")
+    print("Expecto Patronus")
 
-
-s1.patronis()
+s1 = Wizard("Harry", "Potter")
+s1.patronus()
