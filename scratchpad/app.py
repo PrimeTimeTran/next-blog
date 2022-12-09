@@ -1,1 +1,1 @@
-print('R'.lower())
+arr = [1, 2, 3]

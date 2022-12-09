@@ -1,6 +1,3 @@
-
-
-
 # Roses are red
 
 print('Hello World')
