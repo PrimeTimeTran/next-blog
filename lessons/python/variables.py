@@ -1,8 +1,6 @@
-protocol = 'https://'
-website = 'youtube'
-domain = '.com'
+language = 'python is easy'
 
-print(protocol+website+domain)
+print(language)
 
 two = 2
 five = 5
