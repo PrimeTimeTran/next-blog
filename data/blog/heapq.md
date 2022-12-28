@@ -40,7 +40,7 @@ print(a, b, c, d, e)
 # 12 23 37 41 43
 ```
 
-The return of both these methods are not unlike destructuring.
+The return of both these methods are unpacked/destructured values.
 
 ### Use `heapq.heapify(nums)` will create a heap for us
 
@@ -52,19 +52,35 @@ print(nums)
 # [12, 37, 23, 43, 41, 99, 45, 54, 47, 98, 100, 101]
 ```
 
-### Create a maxheap
+### Create a heap
+
+By default python creates a min heap, a heap with the smallest values first(at the root).
 
 ```python
-listForTree = [1,2,3,4,5,6,7,8,9,10,11,12,13,14,15]
-heapq._heapify_max(listForTree)
+heap = [10, 1, 2, 3, 4, 5]
+
+heapq.heapify(heap)
+
+print(heap[0]) # 1
+heapq.heappop(heap)
+print(heap[0]) # 2
 ```
 
-### Remove from top of maxheap
+### Max Heap
+
+The root has the largest values
 
 ```python
-listForTree = [1,2,3,4,5,6,7,8,9,10,11,12,13,14,15]
-heapq._heapify_max(listForTree)
-heapq._heappop_max(listForTree) # pop from maxheap
+import heapq
+
+heap = [10, 1, 2, 3, 4, 5]
+
+heapq._heapify_max(heap)
+
+print(heap[0]) # 10
+heapq._heappop_max(heap)
+print(heap[0]) # 5
+
 ```
 
 ### Print heap as a tree
