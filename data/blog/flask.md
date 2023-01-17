@@ -70,3 +70,9 @@ flask run
 ```bash
 deactivate
 ```
+
+## Debug
+
+```bash
+export FLASK_DEBUG=true
+```
