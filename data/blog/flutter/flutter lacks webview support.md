@@ -1,5 +1,5 @@
 ---
-title: How to build Poker with Flutter
+title: Flutter Sucks 1
 date: '2023-01-20'
 tags: ['Flutter', 'TIL']
 draft: false
