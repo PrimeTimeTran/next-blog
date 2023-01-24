@@ -26,6 +26,12 @@ const projectsData = [
     href: 'https://cs-animations.netlify.app/',
   },
   {
+    title: `Semantic Stoic`,
+    description: `A Duolingo/Mental health app`,
+    imgSrc: '/static/images/semantic-stoic.png',
+    href: 'https://semantic-stoic.web.app/',
+  },
+  {
     title: `Matrix Visualizer`,
     description: `A visualizer for searching through a matrix for a value`,
     imgSrc: '/static/images/matrix.jpeg',

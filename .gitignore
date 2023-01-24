@@ -64,3 +64,4 @@ amplify/
 
 ./lessons/python/__pycache__
 /lessons/python/__pycache__
+/python/venv/*
