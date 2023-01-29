@@ -2,7 +2,7 @@
 title: Semantic Stoic
 date: '2023-01-29'
 tags: ['Flutter']
-draft: true
+draft: false
 summary: 'Building a Duolingo/Quizlet/Leetcode/Tiktok Clone'
 ---
 
