@@ -14,7 +14,7 @@ Start local cluster
 minikube start
 ```
 
-Check kubertnetes version
+Check kubernetes version
 
 ```sh
 kubectl version

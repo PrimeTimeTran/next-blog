@@ -4,7 +4,6 @@ date: '2022-10-17'
 layout: PostSimple
 title: 'Regular Expressions'
 tags: ['Regular Expressions']
-# bibliography: references-data.bib
 summary: 'Regular Expressions for strings'
 canonicalUrl:
 ---
