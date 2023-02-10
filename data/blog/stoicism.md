@@ -3,7 +3,7 @@ title: 'Stoicism'
 date: '2020-03-02'
 tags: ['Life']
 draft: false
-summary: 'A philosophy I've been trying to live by for a few years now.'
+summary: 'A philosophy Ive been trying to live by for a few years now.'
 layout: PostSimple
 bibliography: references-data.bib
 canonicalUrl:
