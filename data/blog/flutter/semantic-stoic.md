@@ -3,11 +3,11 @@ title: Semantic Stoic
 date: '2023-01-29'
 tags: ['Flutter']
 draft: false
-summary: 'Building a Duolingo/Quizlet/Leetcode/Tiktok Clone'
+summary: 'Building a Duolingo/Quizlet/Leetcode/Tiktok Clone with Flutter'
 ---
 
 Duolingo/Quizlet/Leetcode/TikTok are all apps I've used in the past and thought
-were kinda cool but cold be improved.
+were kinda cool but could be improved.
 
 I decided to build an app which will combine elements of all of these apps
 into a self improvement platform.
@@ -26,3 +26,12 @@ The MVP is building using Flutter & Firebase.
 
 Here using Google Analytics I've found that four days after launching the site,
 we have 110 users from 24 different countries. Yay!
+
+If you'd like to see the code check it out [here](https://github.com/PrimeTimeTran/semantics).
+
+### Translations
+
+I found a list of Stoic quotes on [Github](https://gist.github.com/miharekar/d57b58b017c457cd18062a1c36d82e02).
+
+I wrote a [python script](https://github.com/PrimeTimeTran/semantics/blob/main/python/translate.py)
+which reads the json file and uses googletrans to produce the translations.
