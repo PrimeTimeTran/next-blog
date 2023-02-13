@@ -3,7 +3,7 @@ title: 'Stoicism'
 date: '2020-03-02'
 tags: ['Life']
 draft: false
-summary: 'A philosophy Ive been trying to live by for a few years now.'
+summary: 'A way to live life which gives us a sense of control over the chaotic world. A philosophy which has stood the test of time and has been followed by emperors, presidents, politicians, athletes, artists and business tycoons alike.'
 layout: PostSimple
 bibliography: references-data.bib
 canonicalUrl:
