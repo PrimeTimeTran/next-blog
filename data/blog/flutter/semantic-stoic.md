@@ -3,7 +3,7 @@ title: Semantic Stoic
 date: '2023-01-29'
 tags: ['Flutter']
 draft: false
-summary: 'Building a Duolingo/Quizlet/Leetcode/Tiktok Clone with Flutter'
+summary: 'Building a Duolingo/Quizlet/Leetcode/TikTok side project because I thought these apps were all awesome and wanted to combine attributes of each one of them into a single learning platform.'
 ---
 
 Duolingo/Quizlet/Leetcode/TikTok are all apps I've used in the past and thought
@@ -27,7 +27,14 @@ The MVP is building using Flutter & Firebase.
 Here using Google Analytics I've found that four days after launching the site,
 we have 110 users from 24 different countries. Yay!
 
-If you'd like to see the code check it out [here](https://github.com/PrimeTimeTran/semantics).
+Read code [here](https://github.com/PrimeTimeTran/semantics).
+
+## Dependencies
+
+- Dart
+- Flutter
+- Firebase
+-
 
 ### Translations
 
