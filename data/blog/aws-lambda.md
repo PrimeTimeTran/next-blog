@@ -1,6 +1,6 @@
 ---
 title: 'Serverless CRUD app with AWS Lambda and DynamoDB'
-date: '2022-10-07'
+date: '2023-02-14'
 tags: ['AWS', 'Serverless', 'Lambda', 'DynamoDB']
 draft: false
 summary: 'How to use AWS Lambda and DynamoDB'
