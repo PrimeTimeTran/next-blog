@@ -15,7 +15,7 @@ canonicalUrl:
 
 How to use AWS Lambda and DynamoDB as the backend for client web and mobile applications.
 
-Summary of this [tutorial](https://docs.aws.amazon.com/apigateway/latest/developerguide/http-api-dynamo-db.html)s
+Summary of this [tutorial](https://docs.aws.amazon.com/apigateway/latest/developerguide/http-api-dynamo-db.html)
 
 ### Steps
 
