@@ -27,13 +27,13 @@ Summary of this [tutorial](https://docs.aws.amazon.com/apigateway/latest/develop
 
 ## Test the API endpoints
 
-GET
+API Gateway url/entry point.
 `https://pmojoazrx3.execute-api.us-east-1.amazonaws.com/`
 
-AppID
+API Gateway ID
 `pmojoazrx3`
 
-Region/Availability Zone
+Region
 `us-east-1`
 
 CREATE
@@ -45,7 +45,13 @@ curl -X "PUT" -H "Content-Type: application/json" -d "{\"id\": \"3\", \"price\":
 ```
 
 GET
-`curl https://pmojoazrx3.execute-api.us-east-1.amazonaws.com/items`
+
+```
+curl https://pmojoazrx3.execute-api.us-east-1.amazonaws.com/items
+```
 
 DELETE item
-`curl -X "DELETE" https://pmojoazrx3.execute-api.us-east-1.amazonaws.com/items/123`
+
+```
+curl -X "DELETE" https://pmojoazrx3.execute-api.us-east-1.amazonaws.com/items/123
+```
