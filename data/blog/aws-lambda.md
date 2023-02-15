@@ -37,9 +37,12 @@ Region/Availability Zone
 `us-east-1`
 
 CREATE
+
+```
 curl -X "PUT" -H "Content-Type: application/json" -d "{\"id\": \"1\", \"price\": 0.99, \"name\": \"my next item\"}" https://pmojoazrx3.execute-api.us-east-1.amazonaws.com/items
 curl -X "PUT" -H "Content-Type: application/json" -d "{\"id\": \"2\", \"price\": 10.99, \"name\": \"my next item\"}" https://pmojoazrx3.execute-api.us-east-1.amazonaws.com/items
 curl -X "PUT" -H "Content-Type: application/json" -d "{\"id\": \"3\", \"price\": 100.99, \"name\": \"my next item\"}" https://pmojoazrx3.execute-api.us-east-1.amazonaws.com/items
+```
 
 GET
 `curl https://pmojoazrx3.execute-api.us-east-1.amazonaws.com/items`
