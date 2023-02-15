@@ -1,8 +1,8 @@
 ---
-title: ''
+title: 'Serverless CRUD app with AWS Lambda and DynamoDB'
 date: '2022-10-07'
-tags: ['']
-draft: true
+tags: ['AWS', 'Serverless', 'Lambda', 'DynamoDB']
+draft: false
 summary: 'How to use AWS Lambda and DynamoDB'
 layout: PostSimple
 bibliography: references-data.bib
