@@ -1,7 +1,7 @@
 const siteMetadata = {
-  title: 'Tech Blog',
+  title: 'Blog',
   author: 'Loi Tran',
-  headerTitle: 'Tech Blog',
+  headerTitle: 'Blog',
   description:
     'A tech blog documenting some of the various tools and technologies Ive worked on over the years',
   language: 'en-us',
