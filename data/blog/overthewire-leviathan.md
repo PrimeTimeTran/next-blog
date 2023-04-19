@@ -132,12 +132,68 @@ ln -s /etc/leviathan_pass/leviathan6 /tmp/file.log
 
 Create a link to `leviathan6` from `file.log` which executes when we run the `leviathan5` bin.
 
-## Level 6 - Analyze file for SUID binaries
+## Level 6 - Hack password in register using gdb
 
 ```
-ssh leviathan5@leviathan.labs.overthewire.org -p 2223
+ssh leviathan6@leviathan.labs.overthewire.org -p 2223
 ```
 
 ```
 YZ55XPVk2l
+```
+
+Debug the script at assembly level using `gdb`
+
+```
+gdb --args leviathan6 0000
+```
+
+View every assembly level instruction in the script.
+
+```
+disassemble main
+```
+
+Set a breakpoint
+
+```
+break *0x0804922a
+```
+
+Run the program
+
+```
+run
+```
+
+See what values are contained within the registers
+
+```
+info registers
+```
+
+Make the comparison like the command would and check the output
+
+```
+print $ebp-0xc
+x 0xffffd4cc
+print/d 0x00001bd3
+
+7123
+```
+
+```
+
+```
+
+## Level 7 - Analyze file for SUID binaries
+
+```
+ssh leviathan7@leviathan.labs.overthewire.org -p 2223
+```
+
+Incredible.
+
+```
+8GpZ5f8Hze
 ```
