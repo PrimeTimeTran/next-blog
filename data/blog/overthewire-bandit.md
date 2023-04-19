@@ -895,7 +895,7 @@ ssh bandit32@bandit.labs.overthewire.org -p 2220
 rmCBvG56y58BXzv98yZGdO7ATVL5dW8y
 ```
 
-## 33 -
+## 33 - Final level
 
 After all this git stuff its time for another escape. Good luck!
 
