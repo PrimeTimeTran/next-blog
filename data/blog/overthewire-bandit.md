@@ -15,8 +15,7 @@ canonicalUrl:
 
 An overview of the techniques to overcome each level of over the wire's bandit.
 
-Working through these exercises gives us knowledge of linux, bash, file system,
-networking and more.
+Fundamentals of linux, bash, file system, net cat, cronjobs and more.
 
 ## 0 - SSH to remote machine
 
@@ -734,7 +733,7 @@ cat possibilities.txt | nc localhost 30002 > result.txt
 
 Our script will brute force all possible solutions.
 
-## 25 - Work in progress
+## 25 - Change editor modes in order to enter a shell
 
 Logging in to bandit26 from bandit25 should be fairly easy… The shell for user bandit26 is not /bin/bash, but something else. Find out what it is, how it works and how to break out of it.
 
@@ -744,4 +743,166 @@ ssh bandit25@bandit.labs.overthewire.org -p 2220
 
 ```
 p7TaowMYrmu23Ol8hiZh9UvD0O9hpx8d
+```
+
+```
+ssh -i bandit26.sshkey bandit26@localhost -p 2220
+```
+
+SSH into bandit25 using the key provided. It will use another shell by default.
+We can use the `more` shell with vim mode to read out of it with command.
+
+```
+:e /etc/bandit_pass/bandit26
+```
+
+## 26 - Use more to get a shell and run a script
+
+Good job getting a shell! Now hurry and grab the password for bandit27!
+
+```ssh
+ssh bandit26@bandit.labs.overthewire.org -p 2220
+```
+
+```
+c7GvcKlw9mC7aUQaPx7nwFstuAIBw1o1
+
+```
+
+```
+:set shell=/bin/bash
+```
+
+```
+:shell
+```
+
+```sh
+./bandit27-do cat /etc/bandit_pass/bandit27
+```
+
+## 27 - Clone repo using ssh connection
+
+There is a git repository at ssh://bandit27-git@localhost/home/bandit27-git/repo.
+The password for the user bandit27-git is the same as for the user bandit27.
+
+Clone the repository and find the password for the next level.
+
+```ssh
+ssh bandit27@bandit.labs.overthewire.org -p 2220
+```
+
+```
+YnQpBuifNMas1hcUFk70ZmqkhUU2EuaS
+```
+
+Clone repo and read password for the next level. Make sure you add a port.
+
+```ssh
+git clone ssh://bandit27-git@localhost:2220/home/bandit27-git/repo
+```
+
+## 28 - Find password in previous commit
+
+There is a git repository at ssh://bandit28-git@localhost/home/bandit28-git/repo.
+The password for the user bandit28-git is the same as for the user bandit28.
+
+Clone the repository and find the password for the next level.
+
+```ssh
+ssh bandit28@bandit.labs.overthewire.org -p 2220
+```
+
+```
+AVanL161y9rsbcJIsFHuw35rjaOM19nR
+```
+
+```
+git clone ssh://bandit28-git@localhost:2220/home/bandit28-git/repo
+```
+
+```
+git checkout COMMIT
+
+```
+
+## 29 - Get pw on different branches
+
+There is a git repository at ssh://bandit29-git@localhost/home/bandit29-git/repo.
+The password for the user bandit29-git is the same as for the user bandit29.
+
+Clone the repository and find the password for the next level.
+
+```ssh
+ssh bandit29@bandit.labs.overthewire.org -p 2220
+```
+
+```
+tQKvmcwNYcFS6vmPHIUSI3ShmsrQZK8S
+```
+
+```
+git clone ssh://bandit29-git@localhost:2220/home/bandit29-git/repo
+```
+
+## 30 - Get pw from tags on git
+
+There is a git repository at ssh://bandit30-git@localhost/home/bandit30-git/repo.
+The password for the user bandit30-git is the same as for the user bandit30.
+
+Clone the repository and find the password for the next level.
+
+```ssh
+ssh bandit30@bandit.labs.overthewire.org -p 2220
+```
+
+```
+xbhV3HpNGlTIdnjUrdAlPzc2L6y9EOnS
+```
+
+```
+git clone ssh://bandit30-git@localhost:2220/home/bandit30-git/repo
+```
+
+## 31 - Get pw by committing file and pushing to remote.
+
+There is a git repository at ssh://bandit31-git@localhost/home/bandit31-git/repo.
+The password for the user bandit31-git is the same as for the user bandit31.
+
+Clone the repository and find the password for the next level.
+
+```ssh
+ssh bandit31@bandit.labs.overthewire.org -p 2220
+```
+
+```
+OoffzGDlzhAlerFJ2cAiz1D41JW1Mhmt
+```
+
+```
+git clone ssh://bandit31-git@localhost:2220/home/bandit31-git/repo
+```
+
+## 32 - Use $0 to reference current shell
+
+After all this git stuff its time for another escape. Good luck!
+
+```ssh
+ssh bandit32@bandit.labs.overthewire.org -p 2220
+```
+
+```
+rmCBvG56y58BXzv98yZGdO7ATVL5dW8y
+```
+
+## 33 -
+
+After all this git stuff its time for another escape. Good luck!
+
+```ssh
+ssh bandit33@bandit.labs.overthewire.org -p 2220
+```
+
+```
+odHo63fHiFqcWWJG9rLiLDtPm45KzUKy
 ```
