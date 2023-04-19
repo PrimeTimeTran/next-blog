@@ -63,3 +63,11 @@ Must know Vim Shortcuts
 - Undo last command
 
   `u`
+
+Copy from vim editor to system clipboard and then paste
+
+```
+"*y
+```
+
+then paste using cmd+v or ctrl+v

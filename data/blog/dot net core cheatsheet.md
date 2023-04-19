@@ -17,6 +17,8 @@ Developed by Microsoft .NET is a free, cross-platform, open source developer pla
 
 ## Initialize
 
+[Official Instructions](https://learn.microsoft.com/en-us/aspnet/core/getting-started/?view=aspnetcore-7.0&tabs=macos)
+
 - dotnet new _template_
 - dotnet run
 

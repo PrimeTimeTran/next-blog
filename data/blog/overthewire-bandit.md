@@ -1,9 +1,9 @@
 ---
 title: 'Over The Wire - Bandit'
 date: '2022-11-02'
-tags: ['Infosec', 'Linux']
+tags: ['Info Sec', 'Linux']
 draft: false
-summary: 'Walkthrough of each level of Over the Wire Bandit. It CLI game to master Linux, SSH, and much mores'
+summary: 'Walkthrough of each level of Over the Wire's Bandit series. Its a CLI game which helps players master Linux, SSH, and much more.'
 layout: PostSimple
 bibliography: references-data.bib
 canonicalUrl:
@@ -33,7 +33,7 @@ bandit0
 
 ## 1 - How to handle dash file names
 
-The password for the next level is stored in a file called - located in the home
+The password for the next level is stored in a file called `-` located in the home
 directory
 
 ```sh
@@ -105,6 +105,8 @@ ssh bandit4@bandit.labs.overthewire.org -p 2220
 ```sh
 file ./-file*
 ```
+
+Use file command to identify file types.
 
 ## 5 - Search for files matching criteria/flags
 
@@ -469,7 +471,7 @@ ssh bandit18@bandit.labs.overthewire.org -p 2220 "cat ~/readme"
 hga5tuuCLF6fFzUpnagiMN8ssu9LFrdg
 ```
 
-Issue cat command with initial logic command to read before being logged out.
+SSH in and invoke command immediately.
 
 ```sh
 ssh bandit18@bandit.labs.overthewire.org -p 2220 "cat ~/readme"
@@ -506,7 +508,7 @@ cat /etc/bandit_pass/bandit20
 
 ## 20 - VxCazJaVykI6W36BkBU0mJTCM8rR95XT
 
-There is a setuid binary in the homedirectory that does the following: it makes
+There is a set uid binary in the home directory that does the following: it makes
 a connection to localhost on the port you specify as a commandline argument. It
 then reads a line of text from the connection and compares it to the password in
 the previous level (bandit20). If the password is correct, it will transmit the
@@ -567,20 +569,28 @@ ssh bandit21@bandit.labs.overthewire.org -p 2220
 NvEJF7oVjkddltPSrdKEFOllh9V1IBcq
 ```
 
+Checkout the directory where cron jobs are saved.
+
+The cronjob for bandit22 runs a bash script which redirects the output to be thrown away.
+
 ```sh
 cd /etc/cron.d
-
 cat cronjob_bandit22
 ```
+
+The bash script will create a file that can be rw by owner and r by group and others.
+We copy the contents of etc to that tmp file.
 
 ```sh
 cat /usr/bin/cronjob_bandit22.sh
 cat /tmp/t7O6lds9S0RqQh9aMcz6ShpAoZKF7fgv
 ```
 
-## 22 -
+## 22 - How to set variables in bash?
 
-Learn how to read a bash script
+A program is running automatically at regular intervals from cron, the time-based job scheduler. Look in /etc/cron.d/ for the configuration and see what command is being executed.
+
+NOTE: Looking at shell scripts written by other people is a very useful skill. The script for this level is intentionally made easy to read. If you are having problems understanding what it does, try executing it to see the debug information it prints.
 
 ```ssh
 ssh bandit22@bandit.labs.overthewire.org -p 2220
@@ -607,13 +617,15 @@ cat /etc/bandit_pass/$myname > /tmp/$mytarget
 ```
 
 From the script, we know that the password for next level stored in the file named
-with $mytarget. And we need to set $myname to bandit23 to fetch the correct filename.
+with $mytarget which is defined above as a md5sum. And we need to set $myname to bandit23 to fetch the correct filename.
 
 ```sh
 myname=bandit23
 echo I am user $myname | md5sum | cut -d ' ' -f 1
 cat /tmp/8ca319486bfbbc3663ea0fbe81326349
 ```
+
+We define a variable then use it to
 
 ## 23 - Create a script
 
@@ -666,17 +678,29 @@ cd /tmp/rand
 touch script.sh
 ```
 
+Create a script in the tmp folder which will be ran by the cron job.
+
 ```sh
 #!/bin/bash
 cat /etc/bandit_pass/bandit24 > /tmp/rand/password
 ```
+
+The script reads out the password from bandit24 and then puts it inside our tmp file.
+
+We do this because we cannot directly access /etc/bandit_pass/bandit24
 
 ```sh
 cp script.sh /var/spool/bandit24/foo
 chmod 777 /tmp/rand
 ```
 
-## 24 -
+Move our script to the dir where the original script will run and change
+permissions on the current dir.
+
+## 24 - Loop with bash
+
+A daemon is listening on port 30002 and will give you the password for bandit25 if given the password for bandit24 and a secret numeric 4-digit pincode. There is no way to retrieve the pincode except by going through all of the 10000 combinations, called brute-forcing.
+You do not need to create new connections each time
 
 ```ssh
 ssh bandit24@bandit.labs.overthewire.org -p 2220
@@ -686,4 +710,39 @@ ssh bandit24@bandit.labs.overthewire.org -p 2220
 VAfGXJ1PBSsPSnvsjI8p759leLZ9GGar
 ```
 
+```
+nc localhost 30002
+```
+
+```
+mktemp -d
+cd /tmp/tmp.3YQNHtW1Uu
+nano brute_force_pin.sh
+chmod +x brute_force_pin.sh
+```
+
+```
+#!/bin/bash
+
+for i in {0000..9999}
+do
+        echo VAfGXJ1PBSsPSnvsjI8p759leLZ9GGar $i >> possibilities.txt
+done
+
+cat possibilities.txt | nc localhost 30002 > result.txt
+```
+
+Our script will brute force all possible solutions.
+
 ## 25 -
+
+Logging in to bandit26 from bandit25 should be fairly easy… The shell for user bandit26 is not /bin/bash, but something else. Find out what it is, how it works and how to break out of it.
+
+```ssh
+ssh bandit25@bandit.labs.overthewire.org -p 2220
+```
+
+```
+p7TaowMYrmu23Ol8hiZh9UvD0O9hpx8d
+
+```
