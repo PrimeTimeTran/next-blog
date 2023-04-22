@@ -35,7 +35,7 @@ h4ubbcXrWqsTo7GGnnUMLppXbOogfBZ7
 
 Pw isn't on the page but a resource file, `users.txt`.
 
-<http://natas2.natas.labs.overthewire.org/files/users.txt>
+http://natas2.natas.labs.overthewire.org/files/users.txt
 
 ## Level 3
 
@@ -43,9 +43,9 @@ G6ctbMJ5Nb4cbFwhpMPSvxGHhQ7I6W8Q
 
 Pw isn't inside that file but robots.txt, a disallowed route
 
-<http://natas3.natas.labs.overthewire.org/robots.txt>
+`http://natas3.natas.labs.overthewire.org/robots.txt`
 
-<http://natas3.natas.labs.overthewire.org/s3cr3t/users.txt>
+`http://natas3.natas.labs.overthewire.org/s3cr3t/users.txt`
 
 ## level 4
 
@@ -69,7 +69,7 @@ document.cookie="loggedin=1"
 fOIvE0MDtPTgRhqmmvvAOt2EfXR6uQgR
 
 Checkout a file that is included in the source code that the page points to.
-<http://natas6.natas.labs.overthewire.org/includes/secret.inc>
+`http://natas6.natas.labs.overthewire.org/includes/secret.inc`
 
 ## level 7
 
@@ -77,7 +77,7 @@ jmxSiH3SP6Sonf8dv66ng8v1cIEdjXWr
 
 We can trick the server into showing us the page at that path using a query parameter.
 
-<http://natas7.natas.labs.overthewire.org/index.php?page=/etc/natas_webpass/natas8>
+`http://natas7.natas.labs.overthewire.org/index.php?page=/etc/natas_webpass/natas8`
 
 ## level 8
 
@@ -89,7 +89,7 @@ Use tehplayground.com to reverse engineer the encoded password thats being compa
 
 Sda6t0vkOPkM8YeOZkAGVhFoaplvlJFd
 
-<https://www.alevsk.com/2020/01/ctf-overthewire-natas9/>
+`https://www.alevsk.com/2020/01/ctf-overthewire-natas9/`
 
 Use command injection
 
