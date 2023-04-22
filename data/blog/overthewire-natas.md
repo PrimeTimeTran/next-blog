@@ -3,8 +3,7 @@ title: 'Over The Wire - Natas'
 date: '2023-04-19'
 tags: ['Info Sec', 'Linux']
 draft: false
-summary: 'Walkthrough of each level of Over the Wire's Leviathan series. Its a CLI game which helps players master Linux, SSH, and much more.'
-layout: PostSimple
+summary: 'Walkthrough of each level of Over the Wire's Natas series. It's a game which helps players master web server vulnerabilities testing'
 bibliography: references-data.bib
 canonicalUrl:
 ---
@@ -91,3 +90,13 @@ To read from a file on the server
 ## level 10
 
 D44EcsFkLxPIkAAKLosx8z3hxX1Z4MCE
+
+Search for this value
+a /etc/natas_webpass/natas11
+
+Use the logic of the function to invoke grep command and search for pw in a file
+on the server
+
+## level 11
+
+1KFqoJXi6hRaPluAmk8ESDW4fSysRoIg
