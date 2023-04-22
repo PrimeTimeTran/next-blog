@@ -12,7 +12,7 @@ layout: PostSimple
 
 Natas teaches the basics of serverside web-security.
 Each level of natas consists of its own website located
-<http://natasX.natas.labs.overthewire.org>.
+`http://natasX.natas.labs.overthewire.org`.
 
 The server is a PHP server.
 
