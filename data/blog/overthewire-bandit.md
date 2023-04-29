@@ -8,17 +8,22 @@ layout: PostSimple
 bibliography: references-data.bib
 ---
 
-## 1. Over the wire
+## Over the Wire Bandit
 
-### Intro
+A walkthrough and review of Over the Wire Bandit.
 
-An overview of the techniques to overcome each level of over the wire's bandit.
+By completing this series of challenges we learn fundamentals of linux, bash,
+file system, net cat, cronjobs and more.
 
-Fundamentals of linux, bash, file system, net cat, cronjobs and more.
+For each challenge we SSH into a remote server and must find a hidden PW somewhere
+on the file system.
+
+Each password grants access to the next server/challenge.
 
 ## 0 - SSH to remote machine
 
 How to SSH into a remote machine.
+
 Use SSH cli command with username, host and port.
 
 ```sh
@@ -63,7 +68,7 @@ ssh bandit2@bandit.labs.overthewire.org -p 2220
 rRGizSaX8Mk1RTb1CNQoXTcYZWU6lgzi
 ```
 
-Use escape character before spaces in file names.
+Use escape character `\` before spaces in file names.
 
 ```sh
 cat ./spaces\ in\ this\ filename
