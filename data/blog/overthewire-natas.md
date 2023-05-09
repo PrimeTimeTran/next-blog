@@ -8,9 +8,9 @@ bibliography: references-data.bib
 layout: PostSimple
 ---
 
-# Natas
+## Natas
 
-Natas teaches the basics of serverside web-security.
+Natas teaches the basics of server side web-security.
 Each level of natas consists of its own website located
 `http://natasX.natas.labs.overthewire.org`.
 

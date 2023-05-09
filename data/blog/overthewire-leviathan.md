@@ -10,41 +10,57 @@ layout: PostSimple
 
 ## Level 0
 
-```
+```sh
 ssh leviathan0@leviathan.labs.overthewire.org -p 2223
 ```
 
-```
+```sh
 leviathan0
 ```
 
+Find the password by searching hidden directories and
+then greping for the name of the next challenge in files.
+
+`grep leviathan1 bookmarks.html`
+
 ## Level 1
 
-`ltrace` prints the function calls which script invokes. It analyzes the program.
+We have a bin file owned by leviathan2
 
-```
+```sh
 ssh leviathan1@leviathan.labs.overthewire.org -p 2223
 ```
 
-```
+```sh
 PPIfmI1qsA
 ```
 
+`ltrace` prints the function calls which script invokes. It analyzes the program.
+
+Afterwards we see a hardcoded output.
+
+If we run the file again and then enter the hardcoded password
+we'll see we've switched users.
+
+Now we can check for the password inside of `/etc/leviathan_pass?leviathan2
+
 ## Level 2
 
-```
+```sh
 ssh leviathan2@leviathan.labs.overthewire.org -p 2223
 ```
 
-```
+```sh
 mEh5PNl10e
 ```
 
-```
-mktemp -d
-touch /tmp/tmp.s7E8Gz5BRw/"test file.txt"
+Exploit a flaw in the executable.
 
-ltrace ./printfile /tmp/tmp.s7E8Gz5BRw/"test file.txt"
+```sh
+mktemp -d
+touch /tmp/tmp.POGVtTjK6O/"pass file.txt"
+
+ltrace ./printfile /tmp/tmp.POGVtTjK6O/"pass file.txt"
 ```
 
 Link file which points to
