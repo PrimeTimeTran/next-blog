@@ -28,7 +28,7 @@ for proficiently at using that framework.
 - Navigation
 
   - Bottom tab
-    <img src="https://s12.gifyu.com/images/RPReplay_Final1683706146.gif"  width="120" height="120">
+    <img src="https://s12.gifyu.com/images/RPReplay_Final1683706146.gif"  width="120" height="120" />
 
   - Drawer/Sidebar
   - Stack
