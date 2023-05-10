@@ -1,9 +1,9 @@
 ---
-title: 'Mobile Requirements'
-date: '2022-10-07'
-tags: ['']
-draft: true
-summary: ''
+title: 'Fundamental Mobile Developer Skills'
+date: '2023-05-10'
+tags: ['Mobile Developer']
+draft: false
+summary: 'A list of the necessary skills to qualify as a mobile develop in a framework'
 layout: PostSimple
 bibliography: references-data.bib
 canonicalUrl:
@@ -12,22 +12,20 @@ canonicalUrl:
 ## Mobile Developer Checklist
 
 A list of skills/concepts I think it's important to understand before
-identifying myself as knowledge in a mobile development framework.
-
-Whether it be
+identifying myself as knowledgeable in that framework.
 
 - React Native
 - Flutter
 - Android
 - iOS
 
-I have to know how to do each of these things before I can confidently say I know the framework.
-
 ### Intro
 
 - Navigation
 
   - Bottom tab
+    ![iOS Tabs](https://s11.gifyu.com/images/tab-navigator.gif)
+
   - Drawer/Sidebar
   - Stack
 
