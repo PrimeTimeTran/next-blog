@@ -28,7 +28,7 @@ for proficiently at using that framework.
 - Navigation
 
   - Bottom tab
-    ![iOS Tabs](https://s11.gifyu.com/images/tab-navigator.gif)
+    ![iOS Tabs](https://s12.gifyu.com/images/RPReplay_Final1683706146.gif)
 
   - Drawer/Sidebar
   - Stack
