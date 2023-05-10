@@ -11,13 +11,17 @@ canonicalUrl:
 
 ## Mobile Developer Checklist
 
-A list of skills/concepts I think it's important to understand before
-identifying myself as knowledgeable in that framework.
+A list of skills/concepts I believe are fundamental to understand before
+identifying myself as knowledgeable in a mobile framework.
 
-- React Native
-- Flutter
-- Android
-- iOS
+React Native, Flutter, Android, iOS. All frameworks I've used over the years.
+
+Each with their own programming languages, apis, tools, and conventions which have
+evolved over the years.
+
+Whether it's JS/TS for React Native, Dart for Flutter, Obj-C/Swift for iOS,
+Java/Kotlin for Android; the same skills are necessary
+for proficiently at using that framework.
 
 ### Intro
 
@@ -37,3 +41,5 @@ identifying myself as knowledgeable in that framework.
 - Fetch data
 
 - Store global state
+
+- Importing/exporting files/libraries
