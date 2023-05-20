@@ -1,9 +1,9 @@
 ---
-title: 'Royal Stock Exchange - A Stock Exchange in .NET'
+title: 'Royal Stock Exchange'
 date: '2023-05-20'
 tags: ['.NET', 'Always be learning']
 draft: false
-summary: 'Personal & Professional growth via building a stock exchange in .NET'
+summary: 'Personal & Professional growth via building a stock exchange in .NET, Flutter, & more'
 layout: PostSimple
 bibliography: references-data.bib
 canonicalUrl:
@@ -106,12 +106,25 @@ Here's a step-by-step explanation of what happens in the method:
 
 - The method iterates over each buy order in the buyOrders list.
 - For each buy order, it iterates over each sell order in the sellOrders list.
-- It checks if the buy order and sell order match based on the stock symbol, the buy order price is greater than or equal to the sell order price, and both the buy and sell orders have a quantity greater than zero. This ensures that a trade can be executed between these orders.
-- If the conditions are met, it determines the trade quantity as the minimum of the buy order quantity and the sell order quantity. This ensures that trades are executed based on the available quantity from both sides.
-- It calculates the trade price as the average of the buy order price and the sell order price. This ensures a fair trade price between the buyer and the seller.
-- It creates Stock objects to represent the stocks bought and sold in the trade, with the trade price and trade quantity.
-- It adds the bought stock to the buyer's portfolio (buyOrder.Trader.Portfolio) and the sold stock to the seller's portfolio (sellOrder.Trader.Portfolio).
-- It updates the buyer's balance by deducting the trade price multiplied by the trade quantity (buyOrder.Trader.Balance -= tradePrice \* tradeQuantity).
-- It updates the seller's balance by adding the trade price multiplied by the trade quantity (sellOrder.Trader.Balance += tradePrice \* tradeQuantity).
-- It reduces the trade quantity from both the buy order and sell order (buyOrder.Quantity -= tradeQuantity and sellOrder.Quantity -= tradeQuantity).
-- After executing all trades, it removes the buy orders and sell orders from the order book where the quantity has become zero (buyOrders.RemoveAll(o => o.Quantity == 0) and sellOrders.RemoveAll(o => o.Quantity == 0)).
+- It checks if the buy order and sell order match based on the stock symbol, the
+  buy order price is greater than or equal to the sell order price, and both the buy
+  and sell orders have a quantity greater than zero. This ensures that a trade can
+  be executed between these orders.
+- If the conditions are met, it determines the trade quantity as the minimum of
+  the buy order quantity and the sell order quantity. This ensures that trades are
+  executed based on the available quantity from both sides.
+- It calculates the trade price as the average of the buy order price and the sell
+  order price. This ensures a fair trade price between the buyer and the seller.
+- It creates Stock objects to represent the stocks bought and sold in the trade,
+  with the trade price and trade quantity.
+- It adds the bought stock to the buyer's portfolio (buyOrder.Trader.Portfolio)
+  and the sold stock to the seller's portfolio (sellOrder.Trader.Portfolio).
+- It updates the buyer's balance by deducting the trade price multiplied by the
+  trade quantity (buyOrder.Trader.Balance -= tradePrice \* tradeQuantity).
+- It updates the seller's balance by adding the trade price multiplied by the trade
+  quantity (sellOrder.Trader.Balance += tradePrice \* tradeQuantity).
+- It reduces the trade quantity from both the buy order and sell order
+  (buyOrder.Quantity -= tradeQuantity and sellOrder.Quantity -= tradeQuantity).
+- After executing all trades, it removes the buy orders and sell orders from the
+  order book where the quantity has become zero (buyOrders.RemoveAll(o => o.Quantity == 0)
+  and sellOrders.RemoveAll(o => o.Quantity == 0)).
