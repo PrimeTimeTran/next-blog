@@ -44,4 +44,4 @@ learning of .NET as well as finance.
 
 Today I initialized a project using [Rider](https://www.jetbrains.com/rider/).
 
-![Classes](https://monosnap.com/file/r4rwLh5k9tlB7Sk9hqFJGlugzWSC8m)
+![Classes](https://i.imgur.com/0W4x6gq.png)
