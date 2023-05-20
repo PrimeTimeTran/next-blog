@@ -32,10 +32,12 @@ myself.
 
 To that end, I've decided to build a stock exchange, Royal Stock Exchange.
 
-Technology:
+Some of the things I hope to learn more of are:
 
-- .NET server
-- Flutter client
+- .NET
+- Flutter
+- Finance/trading
+- Rider
 
 I'll be documenting my research and process along the way to hopefully cement my
 learning of .NET as well as finance.

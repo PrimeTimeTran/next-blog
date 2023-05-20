@@ -1,7 +1,7 @@
 ---
 title: 'Virtual Machines(VM) on ARM64 MacOS'
 date: '2023-05-13'
-tags: ['Infosec', 'VMs']
+tags: ['Infosec', 'VMs', '.NET']
 draft: false
 summary: 'How to install a virtual machine on an M1 Mac/ARM64 machine'
 layout: PostSimple
@@ -11,22 +11,23 @@ canonicalUrl:
 
 ## UTM
 
-[UTM](https://mac.getutm.app/) is tool for running VMs on ARM64 architecture
-and more.
+.NET Framework only runs on Windows.
 
-I need a windows machine to run .NET Framework(which only runs on Windows).
+So you've got a few choices to choose from if you need to work with it.
 
-Although I do have a windows machine I decided to install Windows on my M1 laptop
-because I don't want to have to carry around multiple machines in the future.
+- Purchase a Windows machine
+- Use a [Desktop as a Service](https://www.g2.com/products/amazon-workspaces/reviews) like Amazon Workspaces
+- Install Windows in VM
 
-I'm writing this post because although these are many other tools for installing
-VMs available, this seemed to be the easiest one for ARM64 architecture;
-at least for now.
+I decided to go with the **last** option.
 
-It's been awesome, I was able to setup a Windows & Kali machine in about 2 hours(including
-download times.)
+Although these are many other tools for installing VMs available, [UTM](https://mac.getutm.app/)
+seemed to be the easiest one for ARM64 architecture(perhaps the only one).
 
-![Demo](https://i.imgur.com/GDBypIB.png)
+I was able to setup a Windows & Kali machine in about 2 hours(including
+download times) so I'd highly recommend it if you have the same requirements.
+
+![Preview](https://i.imgur.com/yqq6jIG.png)
 
 I decided to go ahead and install Kali too to practice my infosec skills
 as well since I was already in the neighborhood.
