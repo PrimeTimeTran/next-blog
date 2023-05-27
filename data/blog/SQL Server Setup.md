@@ -11,7 +11,9 @@ canonicalUrl:
 
 ## Intro
 
-How to setup dev DB in .NET world. SQL Server is the preferrred
+Because SQL Server is the preferred DB in the .NET world here's
+a quick walk through of how to set it up and ensure it's working
+properly.
 
 Use [Docker SQL Server](https://github.com/microsoft/mssql-docker/issues/668)
 
