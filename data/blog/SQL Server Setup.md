@@ -13,7 +13,8 @@ canonicalUrl:
 
 SQL Server setup guide.
 
-> SQL Server is TSQL. [Learn the differences of SQL and TSQL](https://www.dataquest.io/blog/sql-vs-t-sql/).
+**Note:** SQL Server being TSQL variant uses a different syntax.
+{: .note}
 
 ## Tools
 
