@@ -11,7 +11,7 @@ canonicalUrl:
 
 ## Intro
 
-SQL Server setup guide. SQL Server uses TSQL, a SQL variant.
+A SQL Server setup guide.
 
 ## Tools
 
@@ -35,7 +35,8 @@ docker run -d --name mssql-server --platform linux/arm64/v8 -e ACCEPT_EULA=Y -e 
 sqlcmd -U sa -P reallyStrongPwd123 -S 127.0.0.1,1433 -C
 ```
 
-- Create database. In TSQL world we have run run `GO` [after each query](https://stackoverflow.com/questions/2299249/what-is-the-use-of-go-in-sql-server-management-studio-transact-sql).
+- Create database. SQL Server uses TSQL, a SQL variant. Run `GO` after each query
+  for it to execute.
 
 ```sql
 create database RSE;
