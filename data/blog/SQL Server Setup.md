@@ -13,12 +13,12 @@ canonicalUrl:
 
 A SQL Server setup guide.
 
+Shout out this [blog post](https://www.mssqltips.com/sqlservertip/7432/sql-cheat-sheet-sql-server-tsql-commands/).
+
 ## Tools
 
 - Docker
 - [SQL Server(using Azure SQL Edge image)](https://hub.docker.com/_/microsoft-azure-sql-edge)
-
-Shout out this [blog post](https://www.mssqltips.com/sqlservertip/7432/sql-cheat-sheet-sql-server-tsql-commands/).
 
 ## Instructions
 
