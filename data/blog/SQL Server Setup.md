@@ -11,10 +11,7 @@ canonicalUrl:
 
 ## Intro
 
-SQL Server setup guide.
-
-**Note:** SQL Server being TSQL variant uses a different syntax.
-{: .note}
+SQL Server setup guide. SQL Server uses TSQL, a SQL variant.
 
 ## Tools
 
