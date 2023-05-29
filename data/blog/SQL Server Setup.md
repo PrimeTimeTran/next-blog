@@ -3,7 +3,7 @@ title: 'SQL Server setup using Azure SQL Edge Docker image'
 date: '2023-05-26'
 tags: ['SQL Server']
 draft: false
-summary: 'How to setup SQL Server using Azure SQL Edge docker image and check its working correctly. Also info on SQL vs TSQL'
+summary: 'How to setup SQL Server using Azure SQL Edge docker image and check its working correctly. Snippets of TSQL'
 layout: PostSimple
 bibliography: references-data.bib
 canonicalUrl:
@@ -11,9 +11,7 @@ canonicalUrl:
 
 ## Intro
 
-Because SQL Server is the preferred DB in the .NET world here's
-a quick walk through of how to set it up and ensure it's working
-properly.
+SQL Server setup guide.
 
 > SQL Server is TSQL. [Learn the differences of SQL and TSQL](https://www.dataquest.io/blog/sql-vs-t-sql/).
 
