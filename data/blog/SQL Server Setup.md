@@ -19,13 +19,14 @@ SQL Server setup guide.
 ## Tools
 
 - Docker
-- [Azure SQL Edge(SQL Server)](https://hub.docker.com/_/microsoft-azure-sql-edge)
+- [SQL Server(using Azure SQL Edge image)](https://hub.docker.com/_/microsoft-azure-sql-edge)
 
 Shout out this [blog post](https://www.mssqltips.com/sqlservertip/7432/sql-cheat-sheet-sql-server-tsql-commands/).
 
 ## Instructions
 
-- Run SQL Sever container using Docker image.
+- Run SQL Sever container using Docker image. Specifically for M1
+  architecture with the `--platform linux/arm64/v8` flag.
 
 ```ssh
 docker run -d --name mssql-server --platform linux/arm64/v8 -e ACCEPT_EULA=Y -e SA_PASSWORD=reallyStrongPwd123 -p 1433:1433 mcr.microsoft.com/azure-sql-edge
