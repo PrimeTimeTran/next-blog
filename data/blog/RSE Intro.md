@@ -1,5 +1,5 @@
 ---
-title: 'Royal Stock Exchange'
+title: 'Royal Stock Exchange(RSE) - Part 1'
 date: '2023-05-20'
 tags: ['.NET', 'Always be learning']
 draft: false
@@ -9,100 +9,100 @@ bibliography: references-data.bib
 canonicalUrl:
 ---
 
-## Royal Stock Exchange - A .NET project for career development & personal growth
+## Royal Stock Exchange(RSE) - A project for career & personal growth
 
-For years I had the belief that as a software developer, I should focus on being
-the best developer I can be, and that'd be my ticket to financial success.
+Decided to build a stock exchange.
 
-We can't do everything after all, we only have [so many fcuks to give.](https://www.amazon.com/Subtle-Art-Not-Giving-Counterintuitive/dp/0062457713)
-
-That being said, I've decided in order to achieve some of my financial goals,
-I should learn finance/trading.
-
-Specifically day trading.
-
-At the very least, I'll have a better idea of what people in finance
-are talking about when I'm with VCs and people in the industry.
-
-In the middle of the road, I'll be a more compelling hire at a finance company
-in the future.
-
-And the best, I'll be able to make enough money trading to retire early/work for
-myself.
-
-To that end, I've decided to build a stock exchange, Royal Stock Exchange.
-
-Some of the things I hope to learn more of are:
+I plan to master along the following:
 
 - .NET
+- Azure
 - Flutter
 - Finance/trading
-- Rider
 
-I'll be documenting my research and process along the way to hopefully cement my
-learning of .NET as well as finance.
+Documenting the journey.
 
-### Intro
+### Royal Stock Exchange(RSE) - Part 1
 
-Today I initialized a project using [Rider](https://www.jetbrains.com/rider/) as
-a WebAPI ASP.NET 7 project.
+- [Repo](https://github.com/primetimetran/net-royalstockexchange)
 
-The code is [here](https://github.com/primetimetran/net-royalstockexchange).
+### Tools
 
-![Classes](https://i.imgur.com/0W4x6gq.png)
+- [Azure](https://azure.microsoft.com/en-us)
+- [Rider](https://www.jetbrains.com/rider/)
+- [Flutter](https://flutter.dev/)
+- [SQL Server](https://learn.microsoft.com/en-us/sql/linux/quickstart-install-connect-docker?view=sql-server-ver16&pivots=cs1-bash)
+- [Entity Framework](https://learn.microsoft.com/en-us/aspnet/entity-framework)
+- [Azure Data Studio](https://azure.microsoft.com/en-us/products/data-studio)
+- [.NET 7 Core - Web API](https://dotnet.microsoft.com/en-us/download/dotnet/7.0)
 
-I also added logic for reconciling all buy and sell orders via
-an OrderBook class with a function `ExecuteTrades()` [here](https://github.com/PrimeTimeTran/net-RoyalStockExchange/commit/564a4462af1b56513a8620ccb41ef970758bb79f#diff-51857f13a155d63e43a2af7b6d682d0f3caab40cacc14f9c1c62ff3d2123bb82R22-R66).
+### Initial Observations
 
-```csharp
-public void ExecuteTrades()
-{
-    foreach (Order buyOrder in buyOrders)
-    {
-        foreach (Order sellOrder in sellOrders)
-        {
-            if (buyOrder.Ticker.Symbol == sellOrder.Ticker.Symbol && buyOrder.Price >= sellOrder.Price && buyOrder.Quantity > 0 && sellOrder.Quantity > 0)
-            {
-                int tradeQuantity = Math.Min(buyOrder.Quantity, sellOrder.Quantity);
-                decimal tradePrice = (buyOrder.Price + sellOrder.Price) / 2;
+- C# is verbose compared to Ruby, JS, Python. Must define everything in classes.
 
-                Stock boughtStock = new Stock
-                {
-                    Ticker = buyOrder.Ticker,
-                    Price = tradePrice,
-                    Quantity = tradeQuantity
-                };
+  ![Classes](https://i.imgur.com/0W4x6gq.png)
 
-                Stock soldStock = new Stock
-                {
-                    Ticker = sellOrder.Ticker,
-                    Price = tradePrice,
-                    Quantity = tradeQuantity
-                };
+- Visual Studio/Rider can scaffold things like models & controllers quick and
+  easy like Rails.
 
-                buyOrder.Trader.Portfolio.Add(boughtStock);
-                sellOrder.Trader.Portfolio.Add(soldStock);
+  ![Preview](https://i.imgur.com/y9zmnWw.png)
 
-                buyOrder.Trader.Balance -= tradePrice * tradeQuantity;
-                sellOrder.Trader.Balance += tradePrice * tradeQuantity;
+- API Documentation is generated using OpenAPI & Swagger. Cool.
 
-                buyOrder.Quantity -= tradeQuantity;
-                sellOrder.Quantity -= tradeQuantity;
+  ![Preview](https://i.imgur.com/CSuaHCs.png)
 
-                if (buyOrder.Quantity == 0)
-                {
-                    break; // Exit the inner loop if the buy order is completely filled
-                }
-            }
-        }
-    }
+- This is going to be a challenging project, implementing all the logic required
+  for an exchange. Reconciling order books for example.
 
-    buyOrders.RemoveAll(o => o.Quantity == 0);
-    sellOrders.RemoveAll(o => o.Quantity == 0);
-}
-```
+  ```csharp
+  public void ExecuteTrades()
+  {
+      foreach (Order buyOrder in buyOrders)
+      {
+          foreach (Order sellOrder in sellOrders)
+          {
+              if (buyOrder.Ticker.Symbol == sellOrder.Ticker.Symbol && buyOrder.Price >= sellOrder.Price && buyOrder.Quantity > 0 && sellOrder.Quantity > 0)
+              {
+                  int tradeQuantity = Math.Min(buyOrder.Quantity, sellOrder.Quantity);
+                  decimal tradePrice = (buyOrder.Price + sellOrder.Price) / 2;
 
-Here's a step-by-step explanation of what happens in the method:
+                  Stock boughtStock = new Stock
+                  {
+                      Ticker = buyOrder.Ticker,
+                      Price = tradePrice,
+                      Quantity = tradeQuantity
+                  };
+
+                  Stock soldStock = new Stock
+                  {
+                      Ticker = sellOrder.Ticker,
+                      Price = tradePrice,
+                      Quantity = tradeQuantity
+                  };
+
+                  buyOrder.Trader.Portfolio.Add(boughtStock);
+                  sellOrder.Trader.Portfolio.Add(soldStock);
+
+                  buyOrder.Trader.Balance -= tradePrice * tradeQuantity;
+                  sellOrder.Trader.Balance += tradePrice * tradeQuantity;
+
+                  buyOrder.Quantity -= tradeQuantity;
+                  sellOrder.Quantity -= tradeQuantity;
+
+                  if (buyOrder.Quantity == 0)
+                  {
+                      break; // Exit the inner loop if the buy order is completely filled
+                  }
+              }
+          }
+      }
+
+      buyOrders.RemoveAll(o => o.Quantity == 0);
+      sellOrders.RemoveAll(o => o.Quantity == 0);
+  }
+  ```
+
+Overview:
 
 - The method iterates over each buy order in the buyOrders list.
 - For each buy order, it iterates over each sell order in the sellOrders list.
