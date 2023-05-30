@@ -9,7 +9,7 @@ linkedin: https://www.linkedin.com/in/primetimetran
 github: https://github.com/primetimetran
 ---
 
-# Loi Tran is professional, developer, and architect
+# Loi Tran is developer, and architect
 
 I build beautifully crafted webpages 💻 and mobile 📱 apps.
 
@@ -25,15 +25,18 @@ HTML, CSS, JS, ES6, Ruby, Python, Dart, Java, Go,
 
 Material, Bootstrap, Vuetify, Tailwind, SCSS, SASS, LESS,
 
-SQL, MySQL, MongoDB, Sequelize, Mongoose, ActiveRecord, GraphQL, GRPC, Bash, Git, Docker,
+SQL, MySQL, MongoDB, Sequelize, Mongoose, ActiveRecord, GraphQL, GRPC, Bash, Git,
+Docker,
 
 Ruby on Rails, Node, React, Vue, React Native, Flutter, Gatsby, Next, Jekyll, WordPress,
 
-AWS, Firebase, Google Analytics, Heroku, Netlify & more
+AWS, Firebase, Google Analytics, Heroku, Netlify & more.
 
 ---
 
-The proudest moment in my professional career was working with Facebook to teach hundreds of students mobile
-development with [React Native](https://reactnative.dev/) in their [developer circles program](https://developers.facebook.com/developercircles/).
+The proudest moment in my professional career was working with Facebook to teach
+hundreds of students mobile development with [React Native](https://reactnative.dev/)
+in their [developer circles program](https://developers.facebook.com/developercircles/).
 
-When I'm not working I enjoy American 🇺🇸 Football 🏈, Kung Fu 🥋, discussions on philosophy/politics 🤔 and contemplating the meaning of life.
+When I'm not working I enjoy learning about personal finance & growth, as well as
+entrepreneurship.
