@@ -61,11 +61,11 @@ Shout out this [blog post](https://www.mssqltips.com/sqlservertip/7432/sql-cheat
 
   ```sql
   CREATE TABLE [dbo].[Employees](
-  [EmpNum] [int] PRIMARY KEY,
-  [FirstName] [nvarchar](30) NOT NULL,
-  [LastName] [nvarchar](30) NOT NULL,
-  [MiddleInitial] [nchar](1) NULL,
-  [Job] [int] NOT NULL
+    [EmpNum] [int] PRIMARY KEY,
+    [FirstName] [nvarchar](30) NOT NULL,
+    [LastName] [nvarchar](30) NOT NULL,
+    [MiddleInitial] [nchar](1) NULL,
+    [Job] [int] NOT NULL
   );
   GO
   ```

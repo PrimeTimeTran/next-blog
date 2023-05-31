@@ -9,7 +9,7 @@ bibliography: references-data.bib
 canonicalUrl:
 ---
 
-## Commiting part of a file to Git
+## Committing part of a file to Git
 
 Using the following command we can commit finished work and leave the rest of
 the file for later.
