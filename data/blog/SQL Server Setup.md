@@ -95,4 +95,4 @@ Shout out this [blog post](https://www.mssqltips.com/sqlservertip/7432/sql-cheat
 
 - Voila!
 
-![previews](https://d1ro8r1rbfn3jf.cloudfront.net/ms_580754/Ecm3OtY0Kxml0eCK6GZFFJdwLfl9hL/Monosnap%2BStatusIndicator%2B2023-05-29%2B18-39-07.png?Expires=1685401200&Signature=zQPiPV6W2S7dbuHDbd8d1h25PONvCZVWIWSdUlCask40RmctDDKJylT0vpCqrLUADpSP90XjeBLqk-hpQbFROqq0kRZ8Z0DlG1BBysv5VAfXA2gIVdOs3ncXh9bXnXlVG5zxOvtwOzivYIWrEdXouU3hHgHX-bE9rdpLQ1jtZlMvgq~6qu~YoG7ke13RfRCijtbavPn-YtQnlWzf1CxCR5mgqejjOBOPnBMbpiF~T5rwXVzmYSYbTuZ2EkdkE1XEYXAx73-~ZG9kGBVqFFK8IWJ-AWCQHerUuxnKWWRDUn4tFzPslfJV~n~CFH0T7Lumv1kIHDtm7pFYNfozn-C0XA__&Key-Pair-Id=APKAJBCGYQYURKHBGCOA)
+![previews](https://i.imgur.com/QGasihe.png)
