@@ -15,9 +15,15 @@ It's always a good idea to have some reasonable dummy data for testing.
 
 I always find it useful to create a script to run on my machine in order
 to not only generate data which I can query, but to help in the process
-of actually building it.
+of actually building/understanding my db schema.
 
-- Always I start off by wiping my db clean.
+An app at scale will need custom SQL queries without an ORM eventually.
+It's not a waste of time to write a few to populate our DB before diving
+into an ORM, defining classes, or adding migration headaches to our list of problems.
+
+## Steps
+
+- I start off by wiping my db clean/dropping tables.
 
   ```sql
   DROP TABLE IF EXISTS Users;
