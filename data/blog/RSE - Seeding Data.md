@@ -11,6 +11,8 @@ canonicalUrl:
 
 ## How I'd seed data on a dev machine using SQL
 
+Picking up from [Part 1 of Royal Stock Exchange](https://loi-tran-blog.netlify.app/blog/RSE%20Intro).
+
 It's always a good idea to have some reasonable dummy data for testing.
 
 I always find it useful to create a script to run on my machine in order
@@ -159,3 +161,5 @@ into an ORM, defining classes, or adding migration headaches to our list of prob
 
 Now we've got some data. Yay
 ![preview](https://i.imgur.com/XEW82M2.png)
+
+Read about what we're working toward eventually in [Part 1 of Royal Stock Exchange](https://loi-tran-blog.netlify.app/blog/RSE%20Intro).
