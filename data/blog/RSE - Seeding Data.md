@@ -1,9 +1,9 @@
 ---
-title: 'Seeding Stock Market data in SQL'
+title: 'Royal Stock Exchange(RSE) - Seeding Stock Market data in SQL - Part 2'
 date: '2023-06-1'
 tags: ['SQL', 'SQL Server']
 draft: false
-summary: 'Royal Stock Exchange - Seeding Data'
+summary: 'Seeding database records for our clients, understanding our records data types, and validating/designing relationships between resources.'
 layout: PostSimple
 bibliography: references-data.bib
 canonicalUrl:
