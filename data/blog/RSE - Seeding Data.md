@@ -158,4 +158,4 @@ into an ORM, defining classes, or adding migration headaches to our list of prob
       ```
 
 Now we've got some data. Yay
-![preview](https://i.imgur.com/zBJzw07.png)
+![preview](https://i.imgur.com/XEW82M2.png)
