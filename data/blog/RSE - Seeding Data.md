@@ -76,7 +76,6 @@ into an ORM, defining classes, or adding migration headaches to our list of prob
       Symbol NVARCHAR(20)
   );
 
-
   INSERT INTO Stocks (Name, Price, Quantity, Symbol)
   VALUES
       ('AT&T', 15.81, 75, 'T'),
@@ -157,3 +156,6 @@ into an ORM, defining classes, or adding migration headaches to our list of prob
           SET @weekAgo = DATEADD(HOUR, 1, @weekAgo);
       END;
       ```
+
+Now we've got some data. Yay
+![preview](https://i.imgur.com/zBJzw07.png)
