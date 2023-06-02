@@ -25,7 +25,7 @@ into an ORM, defining classes, or adding migration headaches to our list of prob
 
 ## Steps
 
-- I start off by wiping my db clean/dropping tables.
+- Start off by wiping my db clean/dropping tables.
 
   ```sql
   DROP TABLE IF EXISTS Users;
