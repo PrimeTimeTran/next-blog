@@ -1,9 +1,9 @@
 ---
-title: 'Royal Stock Exchange(RSE) - Part 1'
+title: 'Royal Stock Exchange(RSE) - Building a Full Stack Stock Exchange - Part 1'
 date: '2023-05-20'
 tags: ['.NET', 'Always be learning']
 draft: false
-summary: 'Personal & Professional growth via building a stock exchange in .NET, Flutter, & more'
+summary: 'Personal & Professional growth via building a stock exchange with .NET, Entity Framework, Flutter, Azure & more.'
 layout: PostSimple
 bibliography: references-data.bib
 canonicalUrl:
