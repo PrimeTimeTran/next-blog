@@ -96,66 +96,66 @@ into an ORM, defining classes, or adding migration headaches to our list of prob
   - Define variables which we'll update for each time series item.
   - Run a loop which creates a `Price` item and inserts it into the db.
 
-    ```sql
-    CREATE TABLE Prices (
-        Id INT PRIMARY KEY IDENTITY(1, 1),
-        StockId INT NOT NULL,
-        TransactionCount INT NOT NULL,
-        DateOfAggregation DATETIME NOT NULL,
-        o DECIMAL(18, 2) NOT NULL,              -- open
-        l DECIMAL(18, 2) NOT NULL,              -- lo
-        h DECIMAL(18, 2) NOT NULL,              -- hi
-        c DECIMAL(18, 2) NOT NULL,              -- close
-        v DECIMAL(18, 2) NOT NULL,              -- volume
-        vwa DECIMAL(18, 2) NOT NULL             -- volume weighted average
-    );
+  ```sql
+  CREATE TABLE Prices (
+      Id INT PRIMARY KEY IDENTITY(1, 1),
+      StockId INT NOT NULL,
+      TransactionCount INT NOT NULL,
+      DateOfAggregation DATETIME NOT NULL,
+      o DECIMAL(18, 2) NOT NULL,              -- open
+      l DECIMAL(18, 2) NOT NULL,              -- lo
+      h DECIMAL(18, 2) NOT NULL,              -- hi
+      c DECIMAL(18, 2) NOT NULL,              -- close
+      v DECIMAL(18, 2) NOT NULL,              -- volume
+      vwa DECIMAL(18, 2) NOT NULL             -- volume weighted average
+  );
 
-    DECLARE @count INT = 0;
-    DECLARE @weekAgo DATETIME = GETDATE() - 7;
+  DECLARE @count INT = 0;
+  DECLARE @weekAgo DATETIME = GETDATE() - 7;
 
-    DECLARE @price DECIMAL(10, 2) = 27.00;
-    DECLARE @open DECIMAL(10, 2) = @price;
-    DECLARE @lo DECIMAL(10, 2) = 0.0;
-    DECLARE @hi DECIMAL(10, 2) = 0.0;
-    DECLARE @close DECIMAL(10, 2) = 0.0;
+  DECLARE @price DECIMAL(10, 2) = 27.00;
+  DECLARE @open DECIMAL(10, 2) = @price;
+  DECLARE @lo DECIMAL(10, 2) = 0.0;
+  DECLARE @hi DECIMAL(10, 2) = 0.0;
+  DECLARE @close DECIMAL(10, 2) = 0.0;
 
-    WHILE @count < 30
-    BEGIN
-        SET @price = @price -0.10 + (RAND() * (.10 - (-0.10)));
-        SET @close = @price;
+  WHILE @count < 30
+  BEGIN
+      SET @price = @price -0.10 + (RAND() * (.10 - (-0.10)));
+      SET @close = @price;
 
-        SET @lo = @price -0.05 + (RAND() * (-0.1));
-        SET @hi = @price -0.05 + (RAND() * (.1));
+      SET @lo = @price -0.05 + (RAND() * (-0.1));
+      SET @hi = @price -0.05 + (RAND() * (.1));
 
-        INSERT INTO Prices (
-            StockId,
-            TransactionCount,
-            DateOfAggregation,
-            o,
-            l,
-            v,
-            h,
-            c,
-            vwa
-        )
-        VALUES (
-            1,
-            100,
-            @weekAgo,
-            @open,
-            CASE WHEN @open < @lo THEN @open ELSE @lo END,
-            1000,
-            CASE WHEN @close > @hi THEN @close ELSE @hi END,
-            @close,
-            140
-        );
+      INSERT INTO Prices (
+          StockId,
+          TransactionCount,
+          DateOfAggregation,
+          o,
+          l,
+          v,
+          h,
+          c,
+          vwa
+      )
+      VALUES (
+          1,
+          100,
+          @weekAgo,
+          @open,
+          CASE WHEN @open < @lo THEN @open ELSE @lo END,
+          1000,
+          CASE WHEN @close > @hi THEN @close ELSE @hi END,
+          @close,
+          140
+      );
 
-        SET @open = @close;
+      SET @open = @close;
 
-        SET @count = @count + 1;
-        SET @weekAgo = DATEADD(HOUR, 1, @weekAgo);
-    END;
-    ```
+      SET @count = @count + 1;
+      SET @weekAgo = DATEADD(HOUR, 1, @weekAgo);
+  END;
+  ```
 
 Now we've got some data. Yay
 ![preview](https://i.imgur.com/XEW82M2.png)

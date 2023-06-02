@@ -20,7 +20,7 @@ Shout out this [blog post](https://www.mssqltips.com/sqlservertip/7432/sql-cheat
 - Docker
 - [SQL Server(using Azure SQL Edge image)](https://hub.docker.com/_/microsoft-azure-sql-edge)
 
-## Instructions
+## Steps
 
 - Run SQL Sever container using Docker image. Specifically for M1
   architecture with the `--platform linux/arm64/v8` flag.
