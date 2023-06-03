@@ -11,120 +11,63 @@ canonicalUrl:
 
 ## Royal Stock Exchange(RSE) - A project for career & personal growth
 
-Decided to build a stock exchange.
+Decided to build a stock exchange. I plan to master along the following:
 
-I plan to master along the following:
-
-- .NET
-- Azure
-- Flutter
-- Finance/trading
-
-Documenting the journey.
-
-### Royal Stock Exchange(RSE) - Part 1
-
-- [Repo](https://github.com/primetimetran/net-royalstockexchange)
-
-### Tools
-
+- [.NET](https://dotnet.microsoft.com/en-us/download/dotnet/7.0)
+- [Flutter](https://flutter.dev/)
 - [Azure](https://azure.microsoft.com/en-us)
 - [Rider](https://www.jetbrains.com/rider/)
-- [Flutter](https://flutter.dev/)
 - [SQL Server](https://learn.microsoft.com/en-us/sql/linux/quickstart-install-connect-docker?view=sql-server-ver16&pivots=cs1-bash)
 - [Entity Framework](https://learn.microsoft.com/en-us/aspnet/entity-framework)
 - [Azure Data Studio](https://azure.microsoft.com/en-us/products/data-studio)
-- [.NET 7 Core - Web API](https://dotnet.microsoft.com/en-us/download/dotnet/7.0)
 
-### Initial Observations
+Most importantly I want to learn about the finance industry. I use to think I'd
+make a million dollars by building an app, don't split energy learning about finance
+while develop myself as an engineer.
 
-- C# is verbose compared to Ruby, JS, Python. Must define everything in classes.
+My thinking has evolved. I've come to see that finance is it's own industry
+that has a countless use cases for IT.
 
-  ![Classes](https://i.imgur.com/0W4x6gq.png)
+Not to mention the number of fintech companies that exist. NYSE, Fidelity, Coinbase,
+Robinhood, WeBull, Interactive Brokers, E-Trade, Charles Schwab, the list goes on...
 
-- Visual Studio/Rider can scaffold things like models & controllers quick and
-  easy like Rails.
+### Royal Stock Exchange(RSE) - Part 1
 
-  ![Preview](https://i.imgur.com/y9zmnWw.png)
+- [Github Server Repo](https://github.com/primetimetran/net-royalstockexchange)
 
-- API Documentation is generated using OpenAPI & Swagger. Cool.
+### Initial thoughts
 
-  ![Preview](https://i.imgur.com/CSuaHCs.png)
+- .NET projects/solutions are collections of smaller "projects".
 
-- This is going to be a challenging project, implementing all the logic required
-  for an exchange. Reconciling order books for example.
+  - If you're from Node.JS/Rails, this means each project has it's own package.json/Gemfile/dependencies.
+
+  - Notice each project has it's own "Dependencies" directory. API/Common/DataAccess/Services/Tests.
+
+  ![Project structure](https://i.imgur.com/b6vGlJl.png)
+
+- We have to stop and restart the solution on each C# change. This is due to it
+  being compiled.
+
+- Defining of Tables/Models/Entities is verbose.
 
   ```csharp
-  public void ExecuteTrades()
+  namespace DataAccess.Entities;
+  public class Stock
   {
-      foreach (Order buyOrder in buyOrders)
+      public Stock(string name)
       {
-          foreach (Order sellOrder in sellOrders)
-          {
-              if (buyOrder.Ticker.Symbol == sellOrder.Ticker.Symbol && buyOrder.Price >= sellOrder.Price && buyOrder.Quantity > 0 && sellOrder.Quantity > 0)
-              {
-                  int tradeQuantity = Math.Min(buyOrder.Quantity, sellOrder.Quantity);
-                  decimal tradePrice = (buyOrder.Price + sellOrder.Price) / 2;
-
-                  Stock boughtStock = new Stock
-                  {
-                      Ticker = buyOrder.Ticker,
-                      Price = tradePrice,
-                      Quantity = tradeQuantity
-                  };
-
-                  Stock soldStock = new Stock
-                  {
-                      Ticker = sellOrder.Ticker,
-                      Price = tradePrice,
-                      Quantity = tradeQuantity
-                  };
-
-                  buyOrder.Trader.Portfolio.Add(boughtStock);
-                  sellOrder.Trader.Portfolio.Add(soldStock);
-
-                  buyOrder.Trader.Balance -= tradePrice * tradeQuantity;
-                  sellOrder.Trader.Balance += tradePrice * tradeQuantity;
-
-                  buyOrder.Quantity -= tradeQuantity;
-                  sellOrder.Quantity -= tradeQuantity;
-
-                  if (buyOrder.Quantity == 0)
-                  {
-                      break; // Exit the inner loop if the buy order is completely filled
-                  }
-              }
-          }
+          Name = name;
       }
 
-      buyOrders.RemoveAll(o => o.Quantity == 0);
-      sellOrders.RemoveAll(o => o.Quantity == 0);
+      public int Id { get; set; }
+      public string Name { get; set; }
+      public decimal Price { get; set; }
+      public int Quantity { get; set; }
   }
   ```
 
-Overview:
+- I'm going to use a few patterns in this project.
 
-- The method iterates over each buy order in the buyOrders list.
-- For each buy order, it iterates over each sell order in the sellOrders list.
-- It checks if the buy order and sell order match based on the stock symbol, the
-  buy order price is greater than or equal to the sell order price, and both the buy
-  and sell orders have a quantity greater than zero. This ensures that a trade can
-  be executed between these orders.
-- If the conditions are met, it determines the trade quantity as the minimum of
-  the buy order quantity and the sell order quantity. This ensures that trades are
-  executed based on the available quantity from both sides.
-- It calculates the trade price as the average of the buy order price and the sell
-  order price. This ensures a fair trade price between the buyer and the seller.
-- It creates Stock objects to represent the stocks bought and sold in the trade,
-  with the trade price and trade quantity.
-- It adds the bought stock to the buyer's portfolio (buyOrder.Trader.Portfolio)
-  and the sold stock to the seller's portfolio (sellOrder.Trader.Portfolio).
-- It updates the buyer's balance by deducting the trade price multiplied by the
-  trade quantity (buyOrder.Trader.Balance -= tradePrice \* tradeQuantity).
-- It updates the seller's balance by adding the trade price multiplied by the trade
-  quantity (sellOrder.Trader.Balance += tradePrice \* tradeQuantity).
-- It reduces the trade quantity from both the buy order and sell order
-  (buyOrder.Quantity -= tradeQuantity and sellOrder.Quantity -= tradeQuantity).
-- After executing all trades, it removes the buy orders and sell orders from the
-  order book where the quantity has become zero (buyOrders.RemoveAll(o => o.Quantity == 0)
-  and sellOrders.RemoveAll(o => o.Quantity == 0)).
+  - [MVC](https://learn.microsoft.com/en-us/aspnet/mvc/overview/older-versions-1/getting-started-with-mvc/getting-started-with-mvc-part1)
+  - [Service](https://learn.microsoft.com/en-us/aspnet/mvc/overview/older-versions-1/models-data/validating-with-a-service-layer-cs)
+  - [Repository](https://learn.microsoft.com/en-us/dotnet/architecture/microservices/microservice-ddd-cqrs-patterns/infrastructure-persistence-layer-design)
