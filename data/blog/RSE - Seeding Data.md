@@ -11,6 +11,8 @@ canonicalUrl:
 
 ## Royal Stock Exchange(RSE) - Seeding Stock Market data in SQL - pt 2
 
+[Part 1](https://loi-tran-blog.netlify.app/blog/RSE%20-%20intro)
+
 Picking up from [Part 1 of Royal Stock Exchange](https://loi-tran-blog.netlify.app/blog/RSE%20Intro).
 
 It's always a good idea to have some reasonable dummy data for testing.
