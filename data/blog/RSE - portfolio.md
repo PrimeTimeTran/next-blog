@@ -2,8 +2,8 @@
 title: 'Royal Stock Exchange(RSE) - First "Demoable" Work - pt 3'
 date: '2023-06-11'
 tags: ['SQL', '.NET', 'Flutter']
-draft: true
-summary: ''
+draft: false
+summary: 'Basic functionality of a stock exchange including Carousel Ticker, Line & Candlestick Charts, Portfolio page/screen & more.'
 layout: PostSimple
 bibliography: references-data.bib
 canonicalUrl:
@@ -27,6 +27,8 @@ A 10,000-foot overview of technologies chosen:
 - Azure
 
 The order I've done things(more or less)
+
+![Preview](https://s12.gifyu.com/images/SuOwK.gif)
 
 - Write scripts for seeding the DB so I can quickly drop and populate with new schemas and structures. I've found this to be profoundly helpful long term because it forces me to contemplate the relationships between my resources deeply.
   https://shorturl.at/jGIK6
