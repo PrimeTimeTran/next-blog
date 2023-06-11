@@ -9,7 +9,7 @@ bibliography: references-data.bib
 canonicalUrl:
 ---
 
-## How I'd seed data on a dev machine using SQL
+## Royal Stock Exchange(RSE) - Seeding Stock Market data in SQL - pt 2
 
 Picking up from [Part 1 of Royal Stock Exchange](https://loi-tran-blog.netlify.app/blog/RSE%20Intro).
 
