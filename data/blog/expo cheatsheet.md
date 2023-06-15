@@ -1,6 +1,6 @@
 ---
 title: 'Expo Cheat Sheet'
-date: '2023-05-31'
+date: '2023-05-1'
 tags: ['Expo', 'React Native', 'iOS', 'Android']
 draft: false
 summary: ''
@@ -14,21 +14,34 @@ canonicalUrl:
 Commands I use often developing [React Native](https://reactnative.dev/)
 development with [Expo](https://expo.dev/).
 
-## Development
+### Bare Workflow
 
-- Start dev client(bare workflow).
+- Build then run Android and Dev dev clients on devices respectively.
+
+  ```sh
+  npx expo run:android --device
+  npx expo run:ios -d
+  ```
+
+  Specify product flavor development build type debug.
+
+  `npx expo run:android --device --variant=developmentDebug`
+
+### Development
+
+- Start expo client(managed workflow).
+
+  ```sh
+  npx expo start
+  ```
+
+- Start dev client bundler(bare workflow).
 
   ```sh
   npx expo start --dev-client
   ```
 
-- Start dev client(bare workflow).
-
-  ```sh
-  npx expo start --dev-client
-  ```
-
-## Build
+### Build
 
 - Create iOS build. By default kicks off the build on [EAS](https://expo.dev/eas)
   with production profile.
@@ -43,7 +56,7 @@ development with [Expo](https://expo.dev/).
   eas build -p ios -e development
   ```
 
-- Create an iOS build on my local machine.
+- Create an iOS build on local machine.
 
   ```sh
   eas build -p ios --local
@@ -53,12 +66,4 @@ development with [Expo](https://expo.dev/).
 
   ```sh
   eas build:view
-  ```
-
-## Android
-
-- Run Android and with option to select device.
-
-  ```sh
-  npx expo run:android --device
   ```
