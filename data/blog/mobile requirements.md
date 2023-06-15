@@ -36,16 +36,22 @@ for proficiently at using that framework.
   - Change text/image/icon size
   - Change text/image/icon color
 
-- Fetch data
+- Fetch data.
 
-- Store global state
+- Store global state.
 
-- Importing/exporting files/libraries
+- Importing/exporting files/libraries.
 
-- How to run emulator/simulator on local & device
+- How to run emulator/simulator on local & device.
 
-- How to create development vs release builds
+- How to create development vs release builds.
 
-- How to provision profiles on both iOS and Android
+- How to provision profiles on both iOS and Android.
 
-- Schemes & Variants for iOS and Android respectively
+- Configure schemes & variants for iOS and Android respectively.
+
+- How to build development & release builds.
+
+- How to troubleshoot connectivity issues.
+
+- How to view request logs.
