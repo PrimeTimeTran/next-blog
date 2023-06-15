@@ -1,7 +1,7 @@
 ---
 title: 'Royal Stock Exchange(RSE) - First "Demo-able" Work - Part 3'
 date: '2023-06-11'
-tags: ['SQL', '.NET', 'Flutter']
+tags: ['.NET', 'SQL', 'Flutter']
 draft: false
 summary: 'Basic functionality of a stock exchange including Carousel Ticker, Line & Candlestick Charts, Portfolio page/screen & more.'
 layout: PostSimple
