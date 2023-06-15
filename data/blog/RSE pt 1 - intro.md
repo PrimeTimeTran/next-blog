@@ -4,7 +4,6 @@ date: '2023-05-20'
 tags: ['.NET', 'Flutter', 'Trading', 'Finance', 'SQL', 'Entity Framework', 'Always be learning']
 draft: false
 summary: 'Personal & Professional growth via building a stock exchange with .NET, Entity Framework, Flutter, Azure & more.'
-layout: PostSimple
 bibliography: references-data.bib
 canonicalUrl:
 ---

@@ -4,7 +4,6 @@ date: '2023-06-12'
 tags: ['SQL', 'Redis', 'ElasticSearch']
 draft: false
 summary: '10,000 ft overview on how we plan to scale to our first 1,000,000 concurrent users'
-layout: PostSimple
 bibliography: references-data.bib
 canonicalUrl:
 ---

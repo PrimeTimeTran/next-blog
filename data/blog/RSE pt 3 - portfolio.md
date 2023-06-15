@@ -4,7 +4,6 @@ date: '2023-06-11'
 tags: ['.NET', 'SQL', 'Flutter']
 draft: false
 summary: 'Basic functionality of a stock exchange including Carousel Ticker, Line & Candlestick Charts, Portfolio page/screen & more.'
-layout: PostSimple
 bibliography: references-data.bib
 canonicalUrl:
 ---

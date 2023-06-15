@@ -4,7 +4,6 @@ date: '2023-06-1'
 tags: ['SQL', 'SQL Server']
 draft: false
 summary: 'Seeding database records for our clients, understanding our records data types, and validating/designing relationships between resources.'
-layout: PostSimple
 bibliography: references-data.bib
 canonicalUrl:
 ---
