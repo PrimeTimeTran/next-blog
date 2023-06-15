@@ -11,4 +11,6 @@ canonicalUrl:
 
 ## Royal Stock Exchange(RSE) - Flutter Time Series with Sync Fusion Charts - Part 5
 
-[Previous: Part 4](https://loi-tran-blog.netlify.app/blog/RSE%20Intro).
+[Previous: Part 4](https://loi-tran-blog.netlify.app/blog/rse%20pt%204%20-%20scaling)
+
+![preview](https://s11.gifyu.com/images/SQLgu.gif)

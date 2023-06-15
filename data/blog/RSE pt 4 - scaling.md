@@ -11,7 +11,7 @@ canonicalUrl:
 
 ## Royal Stock Exchange(RSE) - How to Scale Our System? - Part 4
 
-[Previous: Part 3](https://loi-tran-blog.netlify.app/blog/RSE%20Intro).
+[Previous: Part 3](https://loi-tran-blog.netlify.app/blog/rse%20pt%203%20-%20portfolio)
 
 Scaling systems to accommodate large amounts of data and millions of concurrent users is a complex and challenging task.
 
@@ -212,3 +212,5 @@ It's important to note that scaling to millions of concurrent users is a complex
 At the end of the day we don't know until we have to do it. No system was built at scale from day one. They were built through iterations over time.
 
 Although we'll never know until we "have to" do it, I believe we've got a solid plan on hot to scale RSE for the forseeable future, which is all I can hope for.
+
+[Next: Part 5](https://loi-tran-blog.netlify.app/blog/rse%20pt%205%20-%20preview)
