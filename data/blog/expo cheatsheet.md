@@ -14,11 +14,21 @@ canonicalUrl:
 Commands I use often developing [React Native](https://reactnative.dev/)
 development with [Expo](https://expo.dev/).
 
+## Development
+
 - Start dev client(bare workflow).
 
   ```sh
   npx expo start --dev-client
   ```
+
+- Start dev client(bare workflow).
+
+  ```sh
+  npx expo start --dev-client
+  ```
+
+## Build
 
 - Create iOS build. By default kicks off the build on [EAS](https://expo.dev/eas)
   with production profile.
@@ -43,4 +53,12 @@ development with [Expo](https://expo.dev/).
 
   ```sh
   eas build:view
+  ```
+
+## Android
+
+- Run Android and with option to select device.
+
+  ```sh
+  npx expo run:android --device
   ```

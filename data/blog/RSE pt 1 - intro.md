@@ -1,5 +1,5 @@
 ---
-title: 'Royal Stock Exchange(RSE) - Building a Full Stack Stock Exchange - pt 1'
+title: 'Royal Stock Exchange(RSE) - Building a Full Stack Stock Exchange - Part 1'
 date: '2023-05-20'
 tags: ['.NET', 'Always be learning']
 draft: false
@@ -9,7 +9,7 @@ bibliography: references-data.bib
 canonicalUrl:
 ---
 
-## Royal Stock Exchange(RSE) - Building a Full Stack Stock Exchange - pt 1
+## Royal Stock Exchange(RSE) - Building a Full Stack Stock Exchange - Part 1
 
 Decided to build a stock exchange. I plan to master along the following:
 

@@ -1,5 +1,5 @@
 ---
-title: 'Royal Stock Exchange(RSE) - First "Demoable" Work - pt 3'
+title: 'Royal Stock Exchange(RSE) - First "Demo-able" Work - Part 3'
 date: '2023-06-11'
 tags: ['SQL', '.NET', 'Flutter']
 draft: false
@@ -9,12 +9,9 @@ bibliography: references-data.bib
 canonicalUrl:
 ---
 
-## Royal Stock Exchange(RSE) - First "Demoable" Work - pt 3
+## Royal Stock Exchange(RSE) - First "Demo-able" Work - Part 3
 
-[Part 1](https://loi-tran-blog.netlify.app/blog/RSE%20-%20intro)
-[Part 2](https://loi-tran-blog.netlify.app/blog/RSE%20-%20Seeding%20Data)
-
-![Preview](https://s12.gifyu.com/images/SuONu.gif)
+[Previous: Part 2](https://loi-tran-blog.netlify.app/blog/RSE%20Intro).
 
 I've found a passion for learning about finance/trading recently.
 
