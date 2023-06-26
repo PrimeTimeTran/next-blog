@@ -10,8 +10,6 @@ canonicalUrl:
 
 ## Royal Stock Exchange(RSE) - First "Demo-able" Work - Part 3
 
-[Previous: Part 2](https://loi-tran-blog.netlify.app/blog/rse%20pt%202%20-%20seeding%20data).
-
 I've found a passion for learning about finance/trading recently.
 
 Trying to kill two birds with one stone whilst studying the industry/field/skill, I decided to build an app.
@@ -46,5 +44,3 @@ The order I've done things(more or less):
 Thanks for your time reading and stay safe~!
 
 #net, #sql, #flutter, #azure, #git, #csharp, #dart, #entityframework , #reactnative, #programmer, #programming, #coder, #dev, #developer, #learning, #softwaredevelopment, #softwareengineering, #softwareengineer, #engineer, #finance, #tradingstrategies, #crypto, #btc, #stocks, #stockmarket, #options, #optionstrading, #optionstrader, #database, #data
-
-[Next: Part 4](https://loi-tran-blog.netlify.app/blog/rse%20pt%204%20-%20scaling)

@@ -10,6 +10,15 @@ canonicalUrl:
 
 ## Royal Stock Exchange(RSE) - Flutter Time Series with Sync Fusion Charts - Part 5
 
-[Previous: Part 4](https://loi-tran-blog.netlify.app/blog/rse%20pt%204%20-%20scaling)
+A month into building RSE we've accomplished a lot.
 
-![preview](https://s11.gifyu.com/images/SQLgu.gif)
+![Web Dark preview](https://s12.gifyu.com/images/SQiM7.gif)
+
+Here we have a web version of the app which demonstrates fetching data from our
+api and rendering a chart to the screen.
+
+It also fetches user portfolio data which renders to the screen as a doughnut graph.
+
+![Android Light Preview](https://s11.gifyu.com/images/SQiSR.gif)
+
+Here we have an Android demo. It's in light mode for this demo.

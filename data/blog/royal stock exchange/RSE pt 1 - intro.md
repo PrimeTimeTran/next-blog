@@ -70,5 +70,3 @@ Robinhood, WeBull, Interactive Brokers, E-Trade, Charles Schwab, the list goes o
   - [MVC](https://learn.microsoft.com/en-us/aspnet/mvc/overview/older-versions-1/getting-started-with-mvc/getting-started-with-mvc-part1)
   - [Service](https://learn.microsoft.com/en-us/aspnet/mvc/overview/older-versions-1/models-data/validating-with-a-service-layer-cs)
   - [Repository](https://learn.microsoft.com/en-us/dotnet/architecture/microservices/microservice-ddd-cqrs-patterns/infrastructure-persistence-layer-design)
-
-[Next: Part 2](https://loi-tran-blog.netlify.app/blog/rse%20pt%202%20-%20seeding%20data)

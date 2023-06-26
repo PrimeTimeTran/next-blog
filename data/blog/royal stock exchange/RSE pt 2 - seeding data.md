@@ -10,8 +10,6 @@ canonicalUrl:
 
 ## Royal Stock Exchange(RSE) - Seeding Stock Market data in SQL - Part 2
 
-[Previous: Part 1](https://loi-tran-blog.netlify.app/blog/rse%20pt%201%20-%20intro)
-
 It's always a good idea to have some reasonable dummy data for testing.
 
 I always find it useful to create a script to run on my machine in order
@@ -158,5 +156,3 @@ into an ORM, defining classes, or adding migration headaches to our list of prob
 
 Now we've got some data. Yay
 ![preview](https://i.imgur.com/XEW82M2.png)
-
-[Next: Part 3](https://loi-tran-blog.netlify.app/blog/rse%20pt%203%20-%20portfolio)
