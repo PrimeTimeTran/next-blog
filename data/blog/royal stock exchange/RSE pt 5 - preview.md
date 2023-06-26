@@ -29,3 +29,7 @@ A month into building RSE we've accomplished a lot on the UI side.
 
 - Mobile UI on top of responsive.
 - Light mode demoed on an Android Pixel 6 device.
+
+![iOS Dark Preview](https://s12.gifyu.com/images/SQi3X.gif)
+
+- iOS Demo with theme change.
