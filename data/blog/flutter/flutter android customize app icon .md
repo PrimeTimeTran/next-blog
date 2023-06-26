@@ -1,6 +1,6 @@
 ---
 title: 'How to change Android app icon name programmatically based on the build type?'
-date: '2023-06-26'
+date: '2021-03-21'
 tags: ['Flutter', 'Android']
 draft: false
 summary: 'Change icon name based on build helping to identify which app is installed on our device quick & easy.'
