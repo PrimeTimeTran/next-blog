@@ -1,7 +1,7 @@
 ---
 title: 'Log JSON file load time in Flutter using Firebase - Unsolved Mysteries'
 date: '2023-07-02'
-tags: ['dart', 'flutter']
+tags: ['Flutter', 'Firebase', 'Dart', 'Async/Await']
 draft: false
 summary: "Usually an easy process but not always. 
 With Flutter & Firebase logging hasn't been straight forward. 
