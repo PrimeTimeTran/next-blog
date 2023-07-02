@@ -28,11 +28,10 @@ Future<dynamic> loadJsonFile(String path) async {
       debugPrint('Error loading JSON file: $e');
     }
   }
-  return null;
 }
 ```
 
-To troubleshoot I added a Firebase event to log how long the loading takes.
+To troubleshoot I add a logging function `logJsonLoadTime()` to the body of `loadJsonFile()`.
 
 ```dart
 Future<dynamic> loadJsonFile(String path) async {
@@ -50,12 +49,12 @@ Future<dynamic> loadJsonFile(String path) async {
       debugPrint('Error loading JSON file: $e');
     }
   }
-  return null;
 }
 ```
 
-The event `logJsonLoadTime()` sends an event to firebase with a few params
-but most importantly `duration`.
+The Firebase event `load_time_json_file` is sent within
+that function `logJsonLoadTime()` and sends a few params to it; most
+importantly `duration`.
 
 ```dart
 void logJsonLoadTime(String duration) async {
@@ -72,16 +71,16 @@ void logJsonLoadTime(String duration) async {
 }
 ```
 
-I can see the event on Firebase here.
+I see the event `load_time_json_file` logged to Firebase here.
 ![preview1](https://i.imgur.com/3KjHh9I.png)
 
-I can see the parameters stored here.
+I see the parameters here.
 ![preview1](https://i.imgur.com/UVKWMzT.png)
 
-Yet I see the duration is always 0:00:00.
+Yet I see the duration is always `0:00:00`.
 ![preview1](https://i.imgur.com/coI0NnJ.png)
 
-Here's `formatTime()` implemented & tested with both `async/await` & `then` syntax.
+Here's `formatTime()` implemented with both `then` & `async/await` syntax to test.
 
 ```dart
 // main.dart
@@ -105,10 +104,6 @@ void main() async {
     return Future.delayed(Duration(seconds: 2), () => "Partly cloudy");
   }
 
-  Future<String> getWeatherForecast2() async {
-    return Future.delayed(Duration(seconds: 2), () => "Partly cloudy");
-  }
-
   DateTime startTime = DateTime.now();
   getWeatherForecast().then((value) {
     DateTime endTime = DateTime.now();
@@ -116,7 +111,7 @@ void main() async {
   });
 
   DateTime startTime2 = DateTime.now();
-  var second = await getWeatherForecast2();
+  await getWeatherForecast();
   DateTime endTime2 = DateTime.now();
   print(formatTime(startTime2, endTime2));
 }
@@ -130,4 +125,4 @@ $ dart run main.dart
 0:00:02
 ```
 
-It's a mystery to me why on Firebase I see `0:00:00` logged to the console.
+It's an **unsolved mystery** why I see `0:00:00` logged on Firebase.
