@@ -3,18 +3,23 @@ title: 'Log JSON file load time in Flutter using Firebase - Unsolved Mysteries'
 date: '2023-07-02'
 tags: ['dart', 'flutter']
 draft: false
-summary: "Logging how long it takes to execute a function is usually a straight forward process. Checking the JSON load time
-of a file on Flutter using async/await & Firebase hasn't been as straight forward as I would've liked"
+summary: "Usually an easy process but not always. 
+With Flutter & Firebase logging hasn't been straight forward. 
+The steps I've taken and the behavior I'm observing logging the duration of rootBundle.load() to Firebase."
 bibliography: references-data.bib
 canonicalUrl:
 ---
 
-## Log JSON file load time in Flutter using Firebase - Unsolved Mysteries
+## Log Function Execution Duration
+
+A function that works perfectly in debug is acting up in release.
 
 I have a helper `loadJsonFile()` which loads a local json file
 from disk at `path` and returns it.
 
 The function works great in iOS, Android & Web debug but only iOS & Web in release.
+
+On Android I'm experiencing [this problem](https://stackoverflow.com/questions/64214102/is-it-slow-to-read-data-from-a-json-file-with-rootbundle-loadstring).
 
 ```dart
 Future<dynamic> loadJsonFile(String path) async {
