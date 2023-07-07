@@ -1,7 +1,7 @@
 ---
 title: Must know Vim Shortcuts
 date: '2020-01-31'
-tags: ['Vim']
+tags: ['Vim', 'Shortcuts', 'Hotkeys']
 draft: false
 summary: Must know Vim Shortcuts
 ---
@@ -64,10 +64,18 @@ Must know Vim Shortcuts
 
   `u`
 
-Copy from vim editor to system clipboard and then paste
+- Copy from vim editor to system clipboard and to paste
 
-```
-"*y
-```
+`" * y`
 
-then paste using cmd+v or ctrl+v
+- Move line up one line
+
+  `ddkP`
+
+- Move line down one line
+
+  `ddp`
+
+- Copy selected to global clipboard
+
+  `"*y`
