@@ -6,7 +6,7 @@ import { useEffect } from 'react'
 
 import { pageview } from '../lib/ga'
 
-export const POSTS_PER_PAGE = 10
+export const POSTS_PER_PAGE = 20
 
 export async function getStaticProps() {
   const posts = await getAllFilesFrontMatter('blog')
