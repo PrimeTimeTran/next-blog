@@ -19,7 +19,7 @@ canonicalUrl:
 
 `cd helloworld`
 
-```
+```sh
 .
 ├── helloworld
 │   ├── __init__.py
@@ -40,6 +40,7 @@ Create a new app.
 
 Creates a new app
 
+```sh
 .
 ├── hello
 │ ├── **init**.py
@@ -60,12 +61,13 @@ Creates a new app
 ├── tests.py
 ├── urls.py
 └── views.py
+```
 
 Add new app hello to list of apps inside of helloworld.
 
 `./helloworld/settings.py`
 
-```
+```py
 INSTALLED_APPS = [
     'hello',
     'django.contrib.admin',
@@ -79,6 +81,7 @@ INSTALLED_APPS = [
 
 Eventually we'll define views insiide of templates with view partials.
 
+```sh
 .
 ├── hello
 │ ├── templates
@@ -98,3 +101,4 @@ Eventually we'll define views insiide of templates with view partials.
 ├── tests.py
 ├── urls.py
 └── views.py
+```
