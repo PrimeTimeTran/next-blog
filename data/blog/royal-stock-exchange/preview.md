@@ -1,7 +1,7 @@
 ---
 title: 'Royal Stock Exchange(RSE) - Flutter Time Series with Sync Fusion Charts - Part 5'
 date: '2023-06-15'
-tags: ['Flutter', 'SyncFusion Charts', 'Mobile']
+tags: ['Flutter', 'Mobile']
 draft: false
 summary: 'Seeding database records for our clients, understanding our records data types, and validating/designing relationships between resources.'
 bibliography: references-data.bib

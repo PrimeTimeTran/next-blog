@@ -1,7 +1,7 @@
 ---
 title: 'Fundamental Mobile Developer Skills'
 date: '2023-05-10'
-tags: ['Mobile Developer']
+tags: ['Mobile']
 draft: false
 summary: 'A list of the necessary skills to qualify as a mobile develop in a framework'
 layout: PostSimple

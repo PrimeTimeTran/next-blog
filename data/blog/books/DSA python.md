@@ -1,7 +1,7 @@
 ---
 title: 'Data Structures & Algorithms in Python'
 date: '2023-02-25'
-tags: ['DSA', 'Python', 'Books']
+tags: ['Book Review', 'DSA', 'Python']
 draft: false
 summary: 'Overview of a new book I got.'
 layout: PostSimple

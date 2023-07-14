@@ -67,3 +67,6 @@ amplify/
 /python/venv/*
 
 NOTES.md
+/notes
+/scratchpads
+.prettierrc

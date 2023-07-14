@@ -343,16 +343,7 @@ const canConstruct = (target, wordBank) => {
 console.log(canConstruct('abcdef', ['ab', 'cd', 'ef', 'abc', 'def', 'abcd', 'ef']))
 console.log(canConstruct('skateboard', ['bo', 'rd', 'ate', 't', 'ska', 'sk', 'boar']))
 console.log(canConstruct('potato', ['p', 'ot', 'eo', 'g', 'a', 't']))
-console.log(
-  canConstruct('eeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeef', [
-    'e',
-    'ee',
-    'eee',
-    'eeee',
-    'eeeee',
-    'eeeeee',
-  ])
-)
+console.log(canConstruct('eeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeef', ['e', 'ee', 'eee', 'eeee', 'eeeee', 'eeeeee']))
 ```
 
 m = target length
@@ -385,16 +376,7 @@ const canConstruct = (target, wordBank, memo = {}) => {
 console.log(canConstruct('abcdef', ['ab', 'cd', 'ef', 'abc', 'def', 'abcd', 'ef']))
 console.log(canConstruct('skateboard', ['bo', 'rd', 'ate', 't', 'ska', 'sk', 'boar']))
 console.log(canConstruct('potato', ['p', 'ot', 'eo', 'g', 'a', 't']))
-console.log(
-  canConstruct('eeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeef', [
-    'e',
-    'ee',
-    'eee',
-    'eeee',
-    'eeeee',
-    'eeeeee',
-  ])
-)
+console.log(canConstruct('eeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeef', ['e', 'ee', 'eee', 'eeee', 'eeeee', 'eeeeee']))
 ```
 
 m = target length
@@ -431,16 +413,7 @@ console.log(countConstruct('purple', ['purp', 'p', 'ur', 'le', 'purpl']))
 console.log(countConstruct('abcdef', ['ab', 'cd', 'ef', 'abc', 'def', 'abcd', 'ef']))
 console.log(countConstruct('skateboard', ['bo', 'rd', 'ate', 't', 'ska', 'sk', 'boar']))
 console.log(countConstruct('potato', ['p', 'ot', 'eo', 'g', 'a', 't']))
-console.log(
-  countConstruct('eeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeef', [
-    'e',
-    'ee',
-    'eee',
-    'eeee',
-    'eeeee',
-    'eeeeee',
-  ])
-)
+console.log(countConstruct('eeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeef', ['e', 'ee', 'eee', 'eeee', 'eeeee', 'eeeeee']))
 ```
 
 m = target length
@@ -473,16 +446,7 @@ console.log(countConstruct('purple', ['purp', 'p', 'ur', 'le', 'purpl']))
 console.log(countConstruct('abcdef', ['ab', 'cd', 'ef', 'abc', 'def', 'abcd', 'ef']))
 console.log(countConstruct('skateboard', ['bo', 'rd', 'ate', 't', 'ska', 'sk', 'boar']))
 console.log(countConstruct('potato', ['p', 'ot', 'eo', 'g', 'a', 't']))
-console.log(
-  countConstruct('eeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeef', [
-    'e',
-    'ee',
-    'eee',
-    'eeee',
-    'eeeee',
-    'eeeeee',
-  ])
-)
+console.log(countConstruct('eeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeef', ['e', 'ee', 'eee', 'eeee', 'eeeee', 'eeeeee']))
 ```
 
 m = target length
@@ -777,16 +741,7 @@ const canConstruct = (target, wordBank) => {
 console.log(canConstruct('abcdef', ['ab', 'cd', 'ef', 'abc', 'def', 'abcd', 'ef'])) // true
 console.log(canConstruct('skateboard', ['bo', 'rd', 'ate', 't', 'ska', 'sk', 'boar'])) // false
 console.log(canConstruct('potato', ['p', 'ot', 'eo', 'g', 'a', 't', 'o'])) // true
-console.log(
-  canConstruct('eeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeef', [
-    'e',
-    'ee',
-    'eee',
-    'eeee',
-    'eeeee',
-    'eeeeee',
-  ])
-) // false
+console.log(canConstruct('eeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeef', ['e', 'ee', 'eee', 'eeee', 'eeeee', 'eeeeee'])) // false
 
 // t = o(nm ^ 2)
 // s = o(m)
@@ -820,16 +775,7 @@ console.log(countConstruct('purple', ['purp', 'p', 'ur', 'le', 'purpl'])) // 2
 console.log(countConstruct('abcdef', ['ab', 'abc', 'cd', 'def', 'abcd'])) // 1
 console.log(countConstruct('skateboard', ['bo', 'rd', 'ate', 't', 'ska', 'sk', 'boar'])) // 0
 console.log(countConstruct('potato', ['p', 'ot', 'eo', 'g', 'a', 't']))
-console.log(
-  countConstruct('eeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeef', [
-    'e',
-    'ee',
-    'eee',
-    'eeee',
-    'eeeee',
-    'eeeeee',
-  ])
-)
+console.log(countConstruct('eeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeef', ['e', 'ee', 'eee', 'eeee', 'eeeee', 'eeeeee']))
 ```
 
 m = target length

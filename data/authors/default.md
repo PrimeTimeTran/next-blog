@@ -15,13 +15,15 @@ I build beautifully crafted webpages 💻 and mobile 📱 apps.
 
 I'm an [AWS Certified Cloud Practitioner](https://www.credly.com/badges/c6fa2310-f2ec-4bf3-a43b-0009a3718ef0).
 
-Over the course of my career I've worked in [booking/ticketing](https://vexere.com/), [telemedicine for medical imagining](https://scanlabmr.com/), and [education](https://www.coderschool.vn/en).
+I've worked in [booking/ticketing](https://vexere.com/),
+[telemedicine](https://scanlabmr.com/), [education](https://www.coderschool.vn/en)
+& more.
 
 ---
 
 In this time I've become proficient with the following languages, tools, and technologies.
 
-HTML, CSS, JS, ES6, Ruby, Python, Dart, Java, Go,
+HTML, CSS, JS, ES6, Ruby, Python, Dart, Java, Go, Linux,
 
 Material, Bootstrap, Vuetify, Tailwind, SCSS, SASS, LESS,
 
@@ -30,13 +32,14 @@ Docker,
 
 Ruby on Rails, Node, React, Vue, React Native, Flutter, Gatsby, Next, Jekyll, WordPress,
 
-AWS, Firebase, Google Analytics, Heroku, Netlify & more.
+AWS, Firebase, Google Analytics, Heroku, Netlify Github Actions & more.
 
 ---
 
-The proudest moment in my professional career was working with Facebook to teach
-hundreds of students mobile development with [React Native](https://reactnative.dev/)
-in their [developer circles program](https://developers.facebook.com/developercircles/).
+The proudest moment in my professional career was working with Facebook at
+[CoderSchool](https://www.coderschool.vn/en) to teach hundreds of students mobile
+development with [React Native](https://reactnative.dev/) in their
+[developer circles program](https://developers.facebook.com/developercircles/).
 
 When I'm not working I enjoy learning about personal finance & growth, as well as
 entrepreneurship.

@@ -1,9 +1,9 @@
 ---
-title: 'How to stage part of a dirty file'
-date: '2023-04-28'
-tags: ['git']
+title: How to stage part of a dirty file
+date: 2023-04-28
+tags: ['Git']
 draft: false
-summary: 'When we want to commit part of a file to git we can!'
+summary: When we want to commit part of a file to git we can!
 layout: PostSimple
 bibliography: references-data.bib
 canonicalUrl:

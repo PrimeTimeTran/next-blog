@@ -1,7 +1,7 @@
 ---
-title: 'Expo Cheat Sheet'
+title: Expo Cheat Sheet
 date: '2023-05-1'
-tags: ['Expo', 'React Native', 'iOS', 'Android']
+tags: ['Shortcuts', 'Hotkeys', 'Cheat Sheet', 'Expo']
 draft: false
 summary: ''
 layout: PostSimple

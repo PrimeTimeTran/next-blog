@@ -1,14 +1,14 @@
 ---
-title: 'My Favorite IntelliJ shortcuts'
-date: '2022-07-07'
-tags: ['IntelliJ', 'Android Studio', 'Rider', 'Shortcuts', 'Hotkeys']
+title: Best JetBrains shortcuts
+date: 2022-07-07
+tags: ['Shortcuts', 'Hotkeys', 'Cheat Sheet', 'JetBrains']
 draft: false
-summary: ''
+summary: Must know JetBrains/Android Studio/Rider shortcuts.
 bibliography: references-data.bib
 canonicalUrl:
 ---
 
-##
+## Must know JetBrains/Android Studio shortcuts
 
 - Cmd + E
 
