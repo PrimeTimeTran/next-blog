@@ -1,9 +1,9 @@
 ---
-title: "Why Flutter is the future of web & mobile development(that's a shot at React/React Native/Vue/Angular if that wasn't clear)"
+title: 'React Native vs Flutter: Why Flutter is better than React Native'
 date: '2023-08-06'
-tags: ['Flutter']
+tags: ['Flutter', 'React Native']
 draft: false
-summary: 'Flutter development simplifies mobile & web development in many ways. I explain why.'
+summary: 'Flutter development simplifies mobile & web development in many ways. In this post I explain why with a few examples and sources. Learn the things which make Flutter superior to React Native.'
 bibliography: references-data.bib
 canonicalUrl:
 ---
