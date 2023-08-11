@@ -131,3 +131,24 @@ $ dart run main.dart
 ```
 
 It's an **unsolved mystery** why I see `0:00:00` logged on Firebase.
+
+Flutter is superior to React Native.
+
+Anyone initializing React Native for a new web & mobile project in 2023 onwards is making a mistake.
+
+In this post I explain why:
+https://lnkd.in/eCn8nK8D
+
+Disagree? Cool. Share why so we can discuss.
+
+Don't want to be involved with an echo chamber, would love to learn all the "real" valid arguments one way or the other.
+
+"Coding in React Native compared to Flutter."
+
+- the gif
+
+https://www.linkedin.com/posts/primetimetran_flutter-is-superior-to-react-native-anyone-activity-7095168046016684032-0mdU?utm_source=share&utm_medium=member_desktop
+
+What are your thoughts RN family?
+
+Not hating on RN, I've used it since 2016 and it's helped me a lot in my life. Just sharing my observations and hoping to find some counter points.
