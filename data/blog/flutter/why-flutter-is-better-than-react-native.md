@@ -90,7 +90,7 @@ Repeated, verbose code.
 
 ##### In Flutter, all variables defined in one file are immediately available in the importing file.
 
-![demo](/static/assets/import-export.gif)
+![demo](https://s11.gifyu.com/images/SgHWj.gif)
 
 #### No missing imports
 
