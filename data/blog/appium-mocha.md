@@ -20,12 +20,12 @@ With [Appium](https://appium.io/docs/en/2.1/) we automate any behavior a user ca
 
 In this walkthrough we'll complete the following automation tests for our app's Auth screen.
 
-- [✔] should display header
-- [✔] should change colors when clicked
+- [✔] should (load successfully)
+- [✔] should respond to user interaction
 - [✔] should display an error message when an invalid email is entered
 - [✔] should display an error message when an invalid password is entered
 - [✔] should not display an error message when valid email & password is entered
-- [✔] should navigate to success screen after form is submitted
+- [✔] should navigate to success screen after form is submitted with valid email & password
 
 ## Dependencies
 
@@ -35,17 +35,16 @@ In this walkthrough we'll complete the following automation tests for our app's 
 
 ## Initialize Project
 
-Initialize new project/repo. Install dependencies. Switch to bare workflow
+Initialize new project/repo. Install dependencies. Switch to bare workflow.
 
 ```sh
 npx create-expo-app mobile-testing
 cd mobile-testing
 npm install --save-dev sharp-cli
 npx expo prebuild
-
 ```
 
-Answer yes to package name on android and ios
+Answer yes to package name on Android & iOS.
 
 ## Setup Appium
 
@@ -57,6 +56,10 @@ npm install appium-webdriver appium-webdriveragent
 appium
 ```
 
+You should now see the Appium server start & keep it open/running in a separate terminal window/pane so it can listen for new session requests.
+
+![appium server](https://i.imgur.com/VOAK3Hr.png)
+
 ## Setup Android Integration Test
 
 ```sh
@@ -64,13 +67,13 @@ mkdir integration
 touch integration/android.js
 ```
 
-Appium doesn't support a hybrid driver. We have to initialize and run tests for Android & iOS separately.
+Appium doesn't support a hybrid driver for React Native yet. We have to initialize and run tests for Android & iOS separately.
 
 ```js
 const { remote } = require('webdriverio')
 
-// capabilities configures the driver driver below
-// Some configs are platform, activity, package, and automation name
+// Configure the driver driver
+// Configs such as platform, activity, package, and automation name
 
 const capabilities = {
   platformName: 'Android',
@@ -87,13 +90,19 @@ const wdOpts = {
   port: parseInt(process.env.APPIUM_PORT, 10) || 4723,
 }
 
-// The driver.$(...) syntax is a selector which selects/identifies a UI element
-// on the screen to test against. In this case we look for a text element with "Open up App.js to start"
+// driver.$(...) is used to identify/select UI elements to test.
+// In this case we select the default text of a new RN project, "Open up App.js to start" & then click it.
 
 async function runTest() {
   const driver = await remote(wdOpts)
   try {
     var el = await driver.$(`//*[contains(@text, "Open up App.js to start")]`)
+    await el.click()
+    await driver.pause(1000)
+    await el.click()
+    await driver.pause(1000)
+    await el.click()
+    await driver.pause(1000)
     await el.click()
   } catch {
     console.log('Error: Running Tests')
@@ -106,15 +115,16 @@ runTest().catch(console.error)
 ## Install development build on Android emulator and run first test
 
 ```sh
-emulator -avd Pixel_6_Pro_API_33 # Switch Pixel_6_Pro_API_33 to your preferred Android emulator
-npx expo run:android # Install the Expo dev client on the device
+# Switch Pixel_6_Pro_API_33 to your preferred Android emulator
+emulator -avd Pixel_6_Pro_API_33
+
+# Install the Expo dev client on the device
+npx expo run:android
 expo start
 node integration/android.js
 ```
 
-You should see that the log process opens up the Android app, runs the test, and then successfully exits; very nice.
-
-The Appium logs printing something like below. The most important thing, the ending 200.
+The Appium logs printing something like below. The most important thing being the ending **200** status code.
 
 ```sh
 [HTTP] <-- POST /session/f4622dcd-58a3-409d-afc4-45b7ad9eeb91/element/00000000-0000-001a-ffff-ffff0000000e/click 200 264 ms - 14
@@ -122,13 +132,13 @@ The Appium logs printing something like below. The most important thing, the end
 
 And the console which you ran `node integration/android.js` exiting without big red error messages.
 
-## Add logic to change color of text on
+## Add logic to change color of text on click/press
 
 Appium can change the state of our application by performing any behavior a user would, pressing on a UI element as an example.
 
 ```js
-// This post assumes you know React Native well.
-// In summary, we add state to the App component for keeping track of the number of presses on the default/header text.
+// This post assumes React Native experience.
+// We add state to the App component for keeping track of the number of presses on the default/header text.
 // If the number of presses is even, we change the header text to blue.
 
 import { useState } from 'react'
@@ -168,7 +178,7 @@ Run the tests and observe the resulting behavior.
 node integration/android.js
 ```
 
-Pay close attention, the text will go from blue to black immediately after the app loads; incredible.
+You should see that the log process opens up the Android app, runs the automation, and the header text switch between blue and black; **excellent**.
 
 ## Add pauses & more clicks
 
@@ -203,14 +213,6 @@ async function runTest() {
     await el.click()
     await driver.pause(1000)
     await el.click()
-    await driver.pause(1000)
-    await el.click()
-    await driver.pause(1000)
-    await el.click()
-    await driver.pause(1000)
-    await el.click()
-    await driver.pause(1000)
-    await el.click()
   } catch {
     console.log('Error: Running Tests')
   }
@@ -219,15 +221,15 @@ async function runTest() {
 runTest().catch(console.error)
 ```
 
-We'll now see the header text oscillate between black & blue; incredible.
+We'll now see the header text oscillate between black & blue on clicks of the header text; **incredible**.
 
-Lessons learned with Appium:
+Lessons learned about Appium:
 
-- We can automate starting the app.
-- We can automate finding text.
-- We can automate changing state by mimicking user behavior such as clicks/presses.
+- We can automate app open.
+- We can automate text search.
+- We can automate mimicking user behavior such as button clicks/presses.
 
-## Add a real world example of something we'd like to automate the testing of
+## Add Form for Integration Testing
 
 Forms are everywhere in the wild. Let's automate finding a text input, filling it with data, submitting, and the resulting behavior.
 
@@ -243,71 +245,33 @@ import { useState } from 'react'
 import { StatusBar } from 'expo-status-bar'
 import { Text, View, TextInput, StyleSheet, TouchableOpacity } from 'react-native'
 
-function validEmail(email) {
-  return String(email)
-    .toLowerCase()
-    .match(
-      /^(([^<>()[\]\\.,;:\s@"]+(\.[^<>()[\]\\.,;:\s@"]+)\*)|.(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/
-    )
-}
-
-function validPassword(pw) {
-  return (
-    /[A-Z]/.test(pw) &&
-    /[a-z]/.test(pw) &&
-    /[0-9]/.test(pw) &&
-    /[^a-za-z0-9]/.test(pw) &&
-    pw.length > 4
-  )
-}
-
-const defaultForm = {
-  error: {
-    email: false,
-    password: false,
-  },
+async function onSignIn(data) {
+  fetch('https://httpbin.org/post', {
+    method: 'POST',
+    body: JSON.stringfy(data),
+  })
 }
 
 export default function App() {
   const [count, setCount] = useState(0)
-  const [form, setForm] = useState(defaultForm)
+  const [form, setForm] = useState({})
   const [success, setSuccess] = useState(false)
 
-  const onSubmit = () => {
+  const onSubmit = async () => {
     const errors = {}
     try {
-      if (!validEmail(form['email'])) {
-        errors['email'] = true
+      // Submit email and password. If everything goes
+      // well server side clear the form & navigate the user to a new screen.
+      const resp = await onSignIn({ email, password })
+      if (resp.code == 200) {
+        setForm({})
+        setSuccess(true)
       }
-      if (!validPassword(form['password'])) {
-        errors['password'] = true
-      }
-      if (Object.keys(errors).length > 0) {
-        setForm({
-          ...form,
-          error: {
-            ...form.error,
-            ...errors,
-          },
-        })
-        return
-      }
-      setForm(defaultForm)
-      setSuccess(true)
     } catch (error) {
       console.error('Error: fillAndSubmitForm', error)
     } finally {
     }
   }
-
-  if (success)
-    return (
-      <View style={styles.container}>
-        <Text style={styles.success} accessibilityLabel="Success">
-          Success!
-        </Text>
-      </View>
-    )
 
   return (
     <View style={styles.container}>
@@ -322,13 +286,6 @@ export default function App() {
         accessibilityLabel="emailTextInput"
         onChangeText={(text) => setForm({ ...form, email: text })}
       />
-      <View style={styles.prompt}>
-        {form.error.email && (
-          <Text style={styles.error} accessibilityLabel="promptEmail">
-            Enter valid email
-          </Text>
-        )}
-      </View>
       <TextInput
         type="password"
         placeholder="*******"
@@ -338,13 +295,6 @@ export default function App() {
         accessibilityLabel="passwordTextInput"
         onChangeText={(text) => setForm({ ...form, password: text })}
       />
-      <View style={styles.prompt}>
-        {form.error.password && (
-          <Text style={styles.error} accessibilityLabel="promptPassword">
-            Enter valid password
-          </Text>
-        )}
-      </View>
       <TouchableOpacity onPress={onSubmit} style={styles.button} accessibilityLabel="submitButton">
         <Text style={{ color: 'white', fontWeight: 'bold', fontSize: 20 }}>Submit</Text>
       </TouchableOpacity>
@@ -473,7 +423,9 @@ When we run our tests now, we should see:
 - Submits the the data
 - Changes to a screen which indicates a successfully submitted form.
 
-## Handle success & failure in UI
+## Handle Invalid Email & Password Client Side.
+
+Although having the server validate works, it's almost always a better idea to validate user import client side.
 
 Run test again and notice we're navigated to the success screen. Incredible!
 
@@ -499,17 +451,198 @@ How might we validate the app/ui behaved correctly given a user entered an inval
 
 ## Add iOS Tests
 
-appium driver install xcuitest
-npx expo run:ios
+As any experienced React Native or Flutter developer knows, both iOS & Android need to be tested because they'll both require platform specific code for a meaningfully large project.
+
+> ⚠️ You need an Apple Developer account to finish the rest of the tutorial.
+
+## Set iOS project team
+
+Open XCode and select your development team.
+
+![Development Team](https://i.imgur.com/krkqivV.png)
+
 Clean build folder on XCode
-Select any ios simulator device (arm64, x86_64)
-Build
-cd ~/Library/Developer/Xcode/DerivedData/bttesting-bzxocugyfrvpjfhfuzmjukoowyvy/Build/Products/Debug-iphonesimulator
+Select any iOS simulator device (arm64, x86_64) & build
+
+cd ~/Library/Developer/Xcode/DerivedData/mobiletesting-bzxocugyfrvpjfhfuzmjukoowyvy/Build/Products/Debug-iphonesimulator
 
 Create Payload dir
-Copy bttesting
-compress folder and rename to test.ipa
+Copy mobiletesting.app
+Compress folder and rename to integration.ipa
 
-Mv to working directory
+Mv to working directory of mobile-testing
+
+Copy over integration/ios.js
+
+```js
+const assert = require('assert')
+const { remote } = require('webdriverio')
+
+const capabilities = {
+  platformName: 'iOS',
+  'appium:platformVersion': '16.4',
+  'appium:automationName': 'XCUITest',
+  'appium:deviceName': 'iPhone 14 Pro Max',
+  'appium:bundleId': 'com.primetimetran.mobiletesting',
+  'appium:app': `${process.env.HOME}/Desktop/work/mobiletesting/integration.ipa`,
+}
+
+const wdOpts = {
+  capabilities,
+  logLevel: 'error',
+  port: parseInt(process.env.APPIUM_PORT, 10) || 4723,
+  hostname: process.env.APPIUM_HOST || 'localhost',
+}
+
+describe('Auth screen', function () {
+  let driver
+
+  beforeEach(async function () {
+    this.timeout(20000)
+    driver = await remote(wdOpts)
+  })
+
+  afterEach(async function () {
+    if (driver) {
+      await driver.deleteSession()
+    }
+  })
+
+  it('should display header', async function () {
+    this.timeout(9000)
+    try {
+      const el = await driver.$(`~Open App`)
+      await el.waitForExist({ timeout: 10000 })
+      assert(el, 'Expected element to exist')
+    } catch (error) {
+      throw new Error('Error: should have header visible', error)
+    }
+  })
+
+  it('should change colors when clicked', async function () {
+    this.timeout(9000)
+    try {
+      const el = await driver.$(`~Open App`)
+      await driver.pause(1000)
+      await el.click()
+      await driver.pause(1000)
+      await el.click()
+      await driver.pause(1000)
+      await el.click()
+      await driver.pause(1000)
+      await el.click()
+      await driver.pause(1000)
+      await el.click()
+      assert(el, 'Expected element to exist')
+    } catch (error) {
+      throw new Error('Error: should change colors when clicked', error)
+    }
+  })
+
+  it('should display an error message when an invalid email is entered', async function () {
+    this.timeout(9000)
+    try {
+      const el = await driver.$(`~emailTextInput`)
+      await el.setValue('loi@coderschool')
+
+      const el2 = await driver.$(`~passwordTextInput`)
+      await el2.setValue('Abc123!')
+
+      const button = await driver.$(`~submitButton`)
+      await button.click()
+      const prompt = await driver.$(`~promptEmail`)
+      assert(prompt.elementId, 'Expected prompt to exist')
+    } catch (error) {
+      throw new Error('Error: should change colors when clicked', error)
+    }
+  })
+
+  it('should display an error message when an invalid password is entered', async function () {
+    this.timeout(9000)
+    try {
+      const el = await driver.$(`~emailTextInput`)
+      await el.setValue('loi@coderschool.com')
+
+      const el2 = await driver.$(`~passwordTextInput`)
+      await el2.setValue('Abc123')
+
+      const button = await driver.$(`~submitButton`)
+      await button.click()
+      const prompt = await driver.$(`~promptPassword`)
+      assert(prompt.elementId, 'Expected prompt to exist')
+    } catch (error) {
+      throw new Error('Error: should change colors when clicked', error)
+    }
+  })
+
+  it('should not display an error message when valid email & password is entered', async function () {
+    this.timeout(9000)
+    try {
+      const el = await driver.$(`~emailTextInput`)
+      await el.setValue('loi@coderschool.com')
+
+      const el2 = await driver.$(`~passwordTextInput`)
+      await el2.setValue('Abc123!')
+
+      const button = await driver.$(`~submitButton`)
+      await button.click()
+      const prompt = await driver.$(`~promptEmail`)
+      assert(!prompt.elementId, 'Expected prompt not to exist')
+
+      const prompt2 = await driver.$(`~promptPassword`)
+      assert(!prompt2.elementId, 'Expected prompt2 not to exist')
+    } catch (error) {
+      throw new Error('Error: should change colors when clicked', error)
+    }
+  })
+
+  it('should navigate to success screen after form is submitted', async function () {
+    this.timeout(9000)
+    try {
+      const el = await driver.$(`~emailTextInput`)
+      await el.setValue('loi@coderschool.com')
+
+      const el2 = await driver.$(`~passwordTextInput`)
+      await el2.setValue('Abc123!')
+
+      const button = await driver.$(`~submitButton`)
+      await button.click()
+      const prompt = await driver.$(`~promptEmail`)
+      assert(!prompt.elementId, 'Expected prompt not to exist')
+
+      const prompt2 = await driver.$(`~promptPassword`)
+      assert(!prompt2.elementId, 'Expected prompt2 not to exist')
+
+      const prompt3 = await driver.$(`~Success`)
+      assert(prompt3.elementId, 'Expected prompt to exist')
+    } catch (error) {
+      throw new Error('Error: should change colors when clicked', error)
+    }
+  })
+})
+```
+
+Install new dependencies
+
+```sh
+npm install --save-dev mocha mocha-html-reporter mochawesome
+```
+
+Install iOS driver and install the development build/package/bundle.
+
+```sh
+appium driver install xcuitest
+npx expo run:ios
+```
 
 Run tests
+
+```sh
+npx mocha integration/ios.js
+```
+
+Generate browser report for project managers, executives, clients.
+
+```sh
+mocha --reporter mochawesome --reporter-options reportDir=./custom-output integration/ios.js
+```
