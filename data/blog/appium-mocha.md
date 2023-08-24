@@ -1,7 +1,7 @@
 ---
 title: 'Automated Integration Testing - Mobile - Appium & Mocha'
 date: '2023-08-20'
-tags: ['Appium', 'Mocha', 'React Native', 'Mobile']
+tags: ['Appium', 'Mocha', 'Automation', 'React Native', 'Mobile']
 draft: false
 summary: 'Manually repeating these tests is costly and time consuming. Once created, automated tests can be run over and over again at no additional cost and they are much faster than manual tests. Automated software testing can reduce the time to run repetitive tests from days to hours.'
 bibliography: references-data.bib
@@ -646,3 +646,7 @@ Generate browser report for project managers, executives, clients.
 ```sh
 mocha --reporter mochawesome --reporter-options reportDir=./custom-output integration/ios.js
 ```
+
+## Refactor Android Test Suite
+
+To test your knowledge of Appium & Mocha refactor the Android test suite to also include the `describe()` syntax of Mocha.
