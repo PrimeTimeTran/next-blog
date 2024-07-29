@@ -3,7 +3,7 @@ name: Loi Tran
 avatar: /static/images/avatar.png
 occupation: Solution Architect
 company: OSSU
-email: datloiboi@gmail.com
+email: primetimetran@gmail.com
 twitter: https://twitter.com/PrimeTimeTrann
 linkedin: https://www.linkedin.com/in/primetimetran
 github: https://github.com/primetimetran
