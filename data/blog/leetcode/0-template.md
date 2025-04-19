@@ -83,3 +83,57 @@ Short description
 ### Questions? Concerns?
 
 Please comment a better solution if you have one.
+
+<div className="tab-group">
+  <div className="tab">
+    <button id="#1" className="tablinks">Brute Force - No DP</button>
+    <button id="#2" className="tablinks">Top Down - Memo</button>
+    <button id="#3" className="tablinks">Bottom Up - Tab</button>
+  </div>
+
+  <div id="#1" className="tabcontent">
+    ```js {} showLineNumbers
+
+    ```
+
+  </div>
+
+  <div id="#2" className="tabcontent">
+    ```js {} showLineNumbers
+
+    ```
+
+  </div>
+  <div id="#3" className="tabcontent">
+    ```js {} showLineNumbers
+
+    ```
+
+  </div>
+</div>
+
+<div className="tab-group">
+  <div className="tab">
+    <button id="#1" className="tablinks">Brute Force/No DP</button>
+    <button id="#2" className="tablinks">Top Down Memo</button>
+    <button id="#3" className="tablinks">Bottom Up - Tab</button>
+  </div>
+  <div id="#1" className="tabcontent">
+    ```js {} showLineNumbers
+    ```
+  </div>
+
+  <div id="#2" className="tabcontent">
+    ```js {} showLineNumbers
+
+    ```
+
+  </div>
+
+  <div id="#3" className="tabcontent">
+    ```js {} showLineNumbers
+
+    ```
+
+  </div>
+</div>

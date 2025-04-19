@@ -1,23 +1,23 @@
-const bestSum = (target, nums) => {
-  if (target === 0) return []
-  if (target < 0) return null
+const canSum = (target, nums) => {
+  const dp = Array(target + 1).fill(false)
+  dp[0] = true
 
-  let shortestCombination = null
-
-  for (let n of nums) {
-    const remainder = target - n
-    const remainderCombination = bestSum(remainder, nums)
-    if (remainderCombination !== null) {
-      const comb = [...remainderCombination, n]
-      if (shortestCombination === null || comb.length < shortestCombination.length) {
-        shortestCombination = comb
+  for (let i = 0; i <= target; i++) {
+    if (dp[i]) {
+      for (let n of nums) {
+        if (i + n <= target) {
+          dp[i + n] = true
+        }
       }
     }
   }
-  return shortestCombination
+
+  return dp[target]
 }
 
-console.log(bestSum(7, [5, 3, 4, 7])) // [7]
-console.log(bestSum(8, [2, 3, 5])) // [3, 5]
-console.log(bestSum(8, [1, 4, 5])) // [4, 4]
-console.log(bestSum(100, [1, 2, 5, 25])) // [25, 25, 25, 25]
+console.log(canSum(7, [2, 3])) // true
+console.log(canSum(8, [2, 3, 5])) // true
+console.log(canSum(7, [5, 3, 4, 7])) // true
+console.log(canSum(7, [5, 3, 4, 7])) // true
+console.log(canSum(7, [2, 4])) // false
+console.log(canSum(300, [7, 14])) // false
