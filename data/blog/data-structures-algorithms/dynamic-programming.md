@@ -22,11 +22,12 @@ We're going to solve the following problems using brute force, memoization, & ta
 - [6. Can Construct](#6-can-construct)
 - [7. Count Construct](#7-count-construct)
 - [8. All Construct](#8-all-construct)
-- | Approach               | Recursion | Cache/Table | Time  | Space        | Description                                     |
-  | :--------------------- | :-------- | :---------- | :---- | :----------- | :---------------------------------------------- |
-  | Brute Force (No DP)    | ❌        | ❌          | O(2ⁿ) | O(n)         | Tries all possibilities without storing results |
-  | Top-Down (Memoization) | ✅        | ✅          | O(n)  | O(n) or more | Recursively solves subproblems, caching results |
-  | Bottom-Up (Tabulation) | ❌        | ✅          | O(n)  | O(n)         | Iteratively builds solution from base cases     |
+
+| Approach               | Recursion | Cache/Table | Time  | Space        | Description                                     |
+| :--------------------- | :-------- | :---------- | :---- | :----------- | :---------------------------------------------- |
+| Brute Force (No DP)    | ❌        | ❌          | O(2ⁿ) | O(n)         | Tries all possibilities without storing results |
+| Top-Down (Memoization) | ✅        | ✅          | O(n)  | O(n) or more | Recursively solves subproblems, caching results |
+| Bottom-Up (Tabulation) | ❌        | ✅          | O(n)  | O(n)         | Iteratively builds solution from base cases     |
 
 In the following problems we'll come up with a solution using no DP, Top-Down Memoization, & Bottom-Up Tabulation as
 they're the most easily understandable techniques.
