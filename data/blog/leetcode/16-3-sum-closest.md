@@ -71,9 +71,8 @@ Return `res`.
 
   <div id="js" className="tabcontent">
     ```js {5,6} showLineNumbers
-    // JS syntax is simpler than typed languages
-    // Input parameters and variables don't
-    // require type annotation
+    // JS syntax is more flexible than statically typed languages
+    // Input parameters don't require type annotation
 
     var threeSumClosest = function(nums, target) {
       var res = nums[0] + nums[1] + nums[2];
@@ -89,7 +88,7 @@ Return `res`.
 
   <div id="ts" className="tabcontent">
     ```typescript {3} showLineNumbers
-    // "nums: number[]" means input param is 'nums', it's type is number[]
+    // "nums: number[]" means input param is 'nums' is a list of numbers
 
     function threeSumClosest(nums: number[], target: number): number {
       var res = nums[0] + nums[1] + nums[2];
@@ -105,7 +104,7 @@ Return `res`.
 
   <div id="dart" className="tabcontent">
     ```dart {} showLineNumbers
-    // Dart requires typing on return value, the 'int' before threeSumClosest
+    // Dart requires typing return value, the 'int' before threeSumClosest.
     // It's parameters are also typed. The 'int' before target
 
     class Solution {
@@ -209,8 +208,6 @@ Remember, the idea here is we want the sum to be `0`.
 
   <div id="js" className="tabcontent">
     ```js {} showLineNumbers
-    //
-
     var threeSumClosest = function(nums, target) {
       var res = nums[0] + nums[1] + nums[2];
       nums = nums.sort((a, b) => a - b);
@@ -237,8 +234,6 @@ Remember, the idea here is we want the sum to be `0`.
 
   <div id="ts" className="tabcontent">
     ```typescript {} showLineNumbers
-    //
-
     function threeSumClosest(nums: number[], target: number): number {
       var res = nums[0] + nums[1] + nums[2];
       nums = nums.sort((a, b) => a - b);
@@ -265,8 +260,6 @@ Remember, the idea here is we want the sum to be `0`.
 
   <div id="dart" className="tabcontent">
     ```dart {} showLineNumbers
-    //
-
     class Solution {
       int threeSumClosest(List<int> nums, int target) {
         var res = nums[0] + nums[1] + nums[2];
@@ -295,8 +288,6 @@ Remember, the idea here is we want the sum to be `0`.
 
   <div id="java" className="tabcontent">
     ```java {} showLineNumbers
-    //
-
     class Solution {
         public int threeSumClosest(int[] nums, int target) {
             int res = nums[0] + nums[1] + nums[2];

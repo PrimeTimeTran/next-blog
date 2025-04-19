@@ -17,7 +17,7 @@ tags:
 summary: 'Solving programming problems in multiple languages to master syntax, data structures, and algorithms.'
 ---
 
-## 1. Two Sum
+## Description
 
 Given an array of numbers and a target, return the indices of two numbers such
 that they sum to **target**.
@@ -45,8 +45,6 @@ Each key will be a number which we're looking for and it's value will be it's in
 
   <div id="js" className="tabcontent">
     ```js {} showLineNumbers
-    //
-
     var twoSum = function (nums, target) {
       var map = {}
     }
@@ -56,8 +54,6 @@ Each key will be a number which we're looking for and it's value will be it's in
 
   <div id="ts" className="tabcontent">
     ```typescript {} showLineNumbers
-    //
-
     function twoSum(nums: number[], target: number): number[] {
       var map = {}
     }
@@ -67,13 +63,6 @@ Each key will be a number which we're looking for and it's value will be it's in
 
   <div id="dart" className="tabcontent">
     ```dart {} showLineNumbers
-    // Despite the fact we're guaranteed to have at least one pair
-    // which sums to target, we must hardcode a return type in Dart.
-
-    // The Dart compiler will complain if we don't.
-    // "A non-null value must be returned since the return type 'List<int>'
-    // doesn't allow null"
-
     class Solution {
       List<int> twoSum(List<int> nums, int target) {
         var hm = {};
@@ -86,9 +75,6 @@ Each key will be a number which we're looking for and it's value will be it's in
 
   <div id="java" className="tabcontent">
     ```java {} showLineNumbers
-    // In Java we must declare and return a Array, result in this case.
-    // This is because of Java being strongly typed.
-
     class Solution {
       public int[] twoSum(int[] nums, int target) {
         int[] result = new int[2];
@@ -103,9 +89,6 @@ Each key will be a number which we're looking for and it's value will be it's in
 
   <div id="python" className="tabcontent">
     ```python {} showLineNumbers
-    # Python depends on indentation.
-    # Python doesn't use curly braces for it's codeblocks like all the other languages.
-
     class Solution:
       def twoSum(self, nums: List[int], target: int) -> List[int]:
         hashMap = {}
@@ -115,8 +98,6 @@ Each key will be a number which we're looking for and it's value will be it's in
 
   <div id="go" className="tabcontent">
     ```go {} showLineNumbers
-    //
-
     func twoSum(nums []int, target int) []int {
       dict := make(map[int]int)
       return make([]int, 0, 0)
@@ -163,8 +144,6 @@ Store this number, `diff` in the hashmap and the current index as it's value.
 
   <div id="ts" className="tabcontent">
     ```typescript {} showLineNumbers
-    //
-
     function twoSum(nums: number[], target: number): number[] {
       var map = {}
       for (let i = 0; i < nums.length; i++) {
@@ -232,8 +211,6 @@ Store this number, `diff` in the hashmap and the current index as it's value.
 
   <div id="go" className="tabcontent">
     ```go {} showLineNumbers
-    //
-
     func twoSum(nums []int, target int) []int {
       dict := make(map[int]int)
       for idx, num := range nums {
@@ -282,8 +259,6 @@ the hashmap.
 
   <div id="ts" className="tabcontent">
     ```typescript {} showLineNumbers
-    //
-
     function twoSum(nums: number[], target: number): number[] {
       var map = {}
       for (let i = 0; i < nums.length; i++) {
@@ -357,8 +332,6 @@ the hashmap.
 
   <div id="go" className="tabcontent">
     ```go {} showLineNumbers
-    //
-
     func twoSum(nums []int, target int) []int {
       dict := make(map[int]int)
       for idx, num := range nums {
@@ -371,7 +344,6 @@ the hashmap.
       return make([]int, 0, 0)
     }
     ```
-
   </div>
 </div>
 

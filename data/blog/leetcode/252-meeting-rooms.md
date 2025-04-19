@@ -1,7 +1,7 @@
 ---
 draft: true
-date: '2022-11-06'
-title: '463. Island Perimeter'
+date: '2022-10-30'
+title: '252. Meeting Rooms'
 tags:
   [
     'Leetcode',
@@ -18,13 +18,10 @@ tags:
 summary: 'Solving programming problems in multiple languages to master syntax, data structures, and algorithms.'
 ---
 
-## 463. Island Perimeter
+## 252 · Meeting Rooms
 
-You are given row x col grid representing a map where grid[i][j] = 1 represents land and grid[i][j] = 0 represents water.
-
-Grid cells are connected horizontally/vertically (not diagonally). The grid is completely surrounded by water, and there is exactly one island (i.e., one or more connected land cells).
-
-The island doesn't have "lakes", meaning the water inside isn't connected to the water around the island. One cell is a square with side length 1. The grid is rectangular, width and height don't exceed 100. Determine the perimeter of the island.
+Given an array of meeting time intervals consisting of start and end times
+[[s1,e1],[s2,e2],...] (si < ei), determine if a person could attend all meetings.
 
 ### Solution
 
@@ -78,25 +75,15 @@ Short description
   <div id="python" className="tabcontent">
     ```python {} showLineNumbers
     #
-
     class Solution:
-      def islandPerimeter(self, grid: List[List[int]]) -> int:
-        seen = set()
-        m,n=len(grid),len(grid[0])
-
-        def dfs(r,c):
-          out = r < 0 or c < 0 or r == m or c == n
-          if out or grid[r][c] == 0:
-            return 1
-          if (r,c) in seen:
-            return 0
-          seen.add((r,c))
-          return dfs(r+1,c) + dfs(r-1,c) + dfs(r,c+1) + dfs(r,c-1)
-
-        for r in range(m):
-          for c in range(n):
-            if grid[r][c]:
-              return dfs(r,c)
+      def can_attend_meetings(self, intervals: List[Interval]) -> bool:
+          intervals.sort(key=lambda i : i.start)
+          for i in range(1, len(intervals)):
+              i1 = intervals[i-1]
+              i2 = intervals[i]
+              if i1.end > i2.start:
+                  return False
+          return True
     ```
 
   </div>
@@ -112,7 +99,6 @@ Short description
   <div id="go" className="tabcontent">
     ```go {} showLineNumbers
     //
-
     ```
 
   </div>

@@ -49,8 +49,8 @@ input:-webkit-autofill:focus {
 
 /* Create an active/current tablink class */
 .tab button.active {
+  color: green;
   background-color: #ccc;
-  color: red;
 }
 
 /* Style the tab content */

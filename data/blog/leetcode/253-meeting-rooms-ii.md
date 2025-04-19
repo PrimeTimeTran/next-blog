@@ -1,7 +1,7 @@
 ---
 draft: true
 date: '2022-10-30'
-title: '920. Meeting Rooms'
+title: '253. Meeting Rooms II'
 tags:
   [
     'Leetcode',
@@ -18,10 +18,10 @@ tags:
 summary: 'Solving programming problems in multiple languages to master syntax, data structures, and algorithms.'
 ---
 
-## 920 · Meeting Rooms
+## 253 · Meeting Rooms II
 
 Given an array of meeting time intervals consisting of start and end times
-[[s1,e1],[s2,e2],...] (si < ei), determine if a person could attend all meetings.
+[[s1,e1],[s2,e2],...] (si < ei), find the minimum number of conference rooms required.)
 
 ### Solution
 
@@ -76,14 +76,20 @@ Short description
     ```python {} showLineNumbers
     #
     class Solution:
-      def can_attend_meetings(self, intervals: List[Interval]) -> bool:
-          intervals.sort(key=lambda i : i.start)
-          for i in range(1, len(intervals)):
-              i1 = intervals[i-1]
-              i2 = intervals[i]
-              if i1.end > i2.start:
-                  return False
-          return True
+      def min_meeting_rooms(self, intervals: List[Interval]) -> int:
+          start = sorted([i.start for i in intervals])
+          end = sorted([i.end for i in intervals])
+          res, count = 0,0
+          s,e =0,0
+          while s < len(intervals):
+              if start[s] < end[e]:
+                  s+=1
+                  count +=1
+              else:
+                  e+=1
+                  count-=1
+              res = max(res, count)
+          return res
     ```
 
   </div>
@@ -99,6 +105,7 @@ Short description
   <div id="go" className="tabcontent">
     ```go {} showLineNumbers
     //
+
     ```
 
   </div>
