@@ -1,17 +1,15 @@
 const projectsData = [
   {
-    title: `Drone Study Guide`,
-    description: `A study guide for those wanting to prepare for the part 107 exam`,
+    title: `Seep Deep`,
+    description: `A LeetCode like platform for mastering DSAs, Databases, & Calculus`,
     imgSrc: '/static/images/drone.jpeg',
-    href: 'https://www.faapart107pilot.com/',
+    href: 'https://www.seepdeep.com/maths',
   },
   {
-    title: 'TikTok',
-    description: `Building generation Z's most popular app using Google's latest mobile 
-    app development technology, Flutter. Mobile first but works on web because of Flutter's 
-    batteries included Progressive Web App(P.W.A.) technology.`,
+    title: 'Turboship',
+    description: `A scaffolding tool for generating NuxtJS, React Native, & Flutter code complete with models, APIs, & more after defining resources/models/entities.`,
     imgSrc: '/static/images/tiktok.jpeg',
-    href: 'https://world-wide-words.netlify.app/',
+    href: 'https://turboship.netlify.app',
   },
   {
     title: "World's Greatest Todo App",
@@ -24,18 +22,6 @@ const projectsData = [
     description: `Build beautiful web pages using just HTML, CSS, JS, & Canvas`,
     imgSrc: '/static/images/illustrator.jpeg',
     href: 'https://cs-animations.netlify.app/',
-  },
-  {
-    title: `Semantic Stoic`,
-    description: `A Duolingo/Mental health app`,
-    imgSrc: '/static/images/semantic-stoic.png',
-    href: 'https://semantic-stoic.web.app/',
-  },
-  {
-    title: `Matrix Visualizer`,
-    description: `A visualizer for searching through a matrix for a value`,
-    imgSrc: '/static/images/matrix.jpeg',
-    href: 'https://ts-algo-visualiser.netlify.app/',
   },
 ]
 
