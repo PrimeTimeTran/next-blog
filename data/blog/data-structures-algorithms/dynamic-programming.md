@@ -6,8 +6,24 @@ tags: ['Dynamic Programming']
 summary: A collection of dynamic coding problems and their solutions with Big O time complexity saved for reference. Solutions include both brute force and optimized solutions.
 ---
 
-is a technique in computer programming that helps to efficiently solve a class of
-problems that have overlapping sub problems and optimal substructure property.
+# Introduction
+
+Dynamic Programming(DP) is a problem-solving approach in computer science that optimizes recursive solutions by storing the results of subproblems to avoid recalculating them.
+
+## Types of DP
+
+The classes of DP solutions
+
+| Approach                       | Recursion | Table/Cache   | Space        | Time     |
+| :----------------------------- | :-------- | :------------ | :----------- | :------- |
+| Top-Down (Memoization)         | ✅        | ✅            | O(n) or more | O(n)     |
+| Bottom-Up (Tabulation)         | ❌        | ✅            | O(n)         | O(n)     |
+| Bottom-Up + Space Optimization | ❌        | ✅ (partial)  | O(1)         | O(n)     |
+| Matrix Exponentiation          | ❌        | ✅ (implicit) | O(1)         | O(log n) |
+| Bitmask DP                     | ✅/❌     | ✅            | O(2ⁿ·n)      | O(2ⁿ·n)  |
+| Recursive DP + Pruning         | ✅        | ✅/❌         | varies       | varies   |
+
+The following are a few canonical examples of DP.
 
 ## Fibonacci
 
@@ -15,22 +31,30 @@ Write a function `fib(n)` that takes in a number as an argument.
 
 The function should return the n-th number of the fibonacci sequence.
 
-```js
+### Solution 1. No DP
+
+This exponential recursive solution takes a substantial amount of time to complete when `n` grows large due to many repetitive computations we make.
+
+```js showLineNumbers
+// time = O(2ⁿ)
+// space = O(n)
 const fib = (n) => {
   if (n <= 2) return 1
   return fib(n - 1) + fib(n - 2)
 }
 
-// t = O(2^n)
-// s = O(n)
-console.log(fib(6)) // 8
-console.log(fib(7)) // 13
-console.log(fib(8)) // 21
 console.log(fib(50)) // 12586269025
 ```
 
-```js
-// Memoized
+### Solution 2. Top Down Memoization
+
+Storing the results of computations in `memo` improves the performance substantially.
+
+Memo starts as an empty dictionary but is filled with values from the first branch of our recursive calls(meaning that subsequent branches don't recompute the same value both grab it from the `memo` object).
+
+```js showLineNumbers
+// time = O(n)
+// space = O(n)
 const fib = (n, memo = {}) => {
   if (n in memo) return memo[n]
   if (n <= 2) return 1
@@ -38,36 +62,56 @@ const fib = (n, memo = {}) => {
   return memo[n]
 }
 
-// t = O(n)
-// s = O(n)
-console.log(fib(6)) // 8
-console.log(fib(7)) // 13
-console.log(fib(8)) // 21
-console.log(fib(50)) // 12586369025
+console.log(fib(50))
+```
+
+### Solution 3. Bottom Up Tabulation
+
+In this case we don't utilize recursion but tabulation to store values. We loop until we reach `n` at which point the `n` index contains our answer.
+
+```js showLineNumbers
+// time = O(n)
+// space = O(n)
+const fib = (n) => {
+  if (n <= 2) return 1
+  const dp = [0, 1, 1]
+  for (let i = 3; i <= n; i++) {
+    dp[i] = dp[i - 1] + dp[i - 2]
+  }
+  return dp[n]
+}
+
+console.log(fib(50))
 ```
 
 ## Grid Traveler
 
 Write a function `gridTraveler(m, n)` that returns the number of ways to travel from top left to bottom right corner of grid.
 
+### Solution 1. No DP
+
+We start from the end and work back by subtracting from `m` & `n`.
+When we reach our base case of being in the top left(m == 1 && n == 1) we increment the count of how many unique ways we can traverse the grid.
+
 ```js
+// time = O(2ᵐ⁺ⁿ)
+// space = O(m+n)
 const gridTraveler = (m, n) => {
   if (m === 1 && n === 1) return 1
   if (m === 0 || n === 0) return 0
   return gridTraveler(m - 1, n) + gridTraveler(m, n - 1)
 }
-// t = O(2^m+n)
-// s = O(n + m)
-console.log(gridTraveler(1, 1)) // 1
-console.log(gridTraveler(2, 3)) // 3
-console.log(gridTraveler(3, 2)) // 3
-console.log(gridTraveler(3, 3)) // 6
-console.log(gridTraveler(8, 8)) // 3432
+
 console.log(gridTraveler(18, 18)) // 2333606220
 ```
 
+### Solution 2. Top Down Memoization
+
+By storing each cell's number of unique paths to reach the beginning we don't repeat computations and thus improve the performance of our algorithm a lot.
+
 ```js
-// Memoized
+// time = O(m * n)
+// space = O(m * n)
 const gridTraveler = (m, n, memo = {}) => {
   const key = m + ',' + n
 
@@ -80,14 +124,31 @@ const gridTraveler = (m, n, memo = {}) => {
   return memo[key]
 }
 
-// t = O(m * n)
-// s = O(n + m)
-console.log(gridTraveler(1, 1)) // 1
-console.log(gridTraveler(2, 3)) // 3
-console.log(gridTraveler(3, 2)) // 3
-console.log(gridTraveler(3, 3)) // 6
-console.log(gridTraveler(8, 8)) // 3432
-console.log(gridTraveler(18, 18)) // 2333606220
+console.log(gridTraveler(18, 18))
+```
+
+### Solution 3. Bottom Up Tabulation
+
+Using a 2d array we start each cell as 0 and then carry the values right & down(up) toward the bottom right. In each cell we sum the cell from which we just came and the cell in which we land. Thus by the end we have our solution.
+
+```js
+// time = O(m × n)
+// space = O(m × n)
+const gridTraveler = (m, n) => {
+  const dp = Array(m + 1)
+    .fill()
+    .map(() => Array(n + 1).fill(0))
+
+  dp[1][1] = 1
+
+  for (let i = 1; i <= m; i++) {
+    for (let j = 1; j <= n; j++) {
+      if (i + 1 <= m) dp[i + 1][j] += dp[i][j]
+      if (j + 1 <= n) dp[i][j + 1] += dp[i][j]
+    }
+  }
+  return dp[m][n]
+}
 ```
 
 ### Memoization Recipe
@@ -95,7 +156,7 @@ console.log(gridTraveler(18, 18)) // 2333606220
 1. Make it work
 
 - visualize the problem as a tree
-- tmplement the tree using recursion
+- implement the tree using recursion
 - test it
 
 2. Make it efficient
@@ -343,7 +404,16 @@ const canConstruct = (target, wordBank) => {
 console.log(canConstruct('abcdef', ['ab', 'cd', 'ef', 'abc', 'def', 'abcd', 'ef']))
 console.log(canConstruct('skateboard', ['bo', 'rd', 'ate', 't', 'ska', 'sk', 'boar']))
 console.log(canConstruct('potato', ['p', 'ot', 'eo', 'g', 'a', 't']))
-console.log(canConstruct('eeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeef', ['e', 'ee', 'eee', 'eeee', 'eeeee', 'eeeeee']))
+console.log(
+  canConstruct('eeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeef', [
+    'e',
+    'ee',
+    'eee',
+    'eeee',
+    'eeeee',
+    'eeeeee',
+  ])
+)
 ```
 
 m = target length
@@ -376,7 +446,16 @@ const canConstruct = (target, wordBank, memo = {}) => {
 console.log(canConstruct('abcdef', ['ab', 'cd', 'ef', 'abc', 'def', 'abcd', 'ef']))
 console.log(canConstruct('skateboard', ['bo', 'rd', 'ate', 't', 'ska', 'sk', 'boar']))
 console.log(canConstruct('potato', ['p', 'ot', 'eo', 'g', 'a', 't']))
-console.log(canConstruct('eeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeef', ['e', 'ee', 'eee', 'eeee', 'eeeee', 'eeeeee']))
+console.log(
+  canConstruct('eeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeef', [
+    'e',
+    'ee',
+    'eee',
+    'eeee',
+    'eeeee',
+    'eeeeee',
+  ])
+)
 ```
 
 m = target length
@@ -413,7 +492,16 @@ console.log(countConstruct('purple', ['purp', 'p', 'ur', 'le', 'purpl']))
 console.log(countConstruct('abcdef', ['ab', 'cd', 'ef', 'abc', 'def', 'abcd', 'ef']))
 console.log(countConstruct('skateboard', ['bo', 'rd', 'ate', 't', 'ska', 'sk', 'boar']))
 console.log(countConstruct('potato', ['p', 'ot', 'eo', 'g', 'a', 't']))
-console.log(countConstruct('eeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeef', ['e', 'ee', 'eee', 'eeee', 'eeeee', 'eeeeee']))
+console.log(
+  countConstruct('eeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeef', [
+    'e',
+    'ee',
+    'eee',
+    'eeee',
+    'eeeee',
+    'eeeeee',
+  ])
+)
 ```
 
 m = target length
@@ -446,7 +534,16 @@ console.log(countConstruct('purple', ['purp', 'p', 'ur', 'le', 'purpl']))
 console.log(countConstruct('abcdef', ['ab', 'cd', 'ef', 'abc', 'def', 'abcd', 'ef']))
 console.log(countConstruct('skateboard', ['bo', 'rd', 'ate', 't', 'ska', 'sk', 'boar']))
 console.log(countConstruct('potato', ['p', 'ot', 'eo', 'g', 'a', 't']))
-console.log(countConstruct('eeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeef', ['e', 'ee', 'eee', 'eeee', 'eeeee', 'eeeeee']))
+console.log(
+  countConstruct('eeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeef', [
+    'e',
+    'ee',
+    'eee',
+    'eeee',
+    'eeeee',
+    'eeeeee',
+  ])
+)
 ```
 
 m = target length
@@ -741,7 +838,16 @@ const canConstruct = (target, wordBank) => {
 console.log(canConstruct('abcdef', ['ab', 'cd', 'ef', 'abc', 'def', 'abcd', 'ef'])) // true
 console.log(canConstruct('skateboard', ['bo', 'rd', 'ate', 't', 'ska', 'sk', 'boar'])) // false
 console.log(canConstruct('potato', ['p', 'ot', 'eo', 'g', 'a', 't', 'o'])) // true
-console.log(canConstruct('eeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeef', ['e', 'ee', 'eee', 'eeee', 'eeeee', 'eeeeee'])) // false
+console.log(
+  canConstruct('eeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeef', [
+    'e',
+    'ee',
+    'eee',
+    'eeee',
+    'eeeee',
+    'eeeeee',
+  ])
+) // false
 
 // t = o(nm ^ 2)
 // s = o(m)
@@ -775,7 +881,16 @@ console.log(countConstruct('purple', ['purp', 'p', 'ur', 'le', 'purpl'])) // 2
 console.log(countConstruct('abcdef', ['ab', 'abc', 'cd', 'def', 'abcd'])) // 1
 console.log(countConstruct('skateboard', ['bo', 'rd', 'ate', 't', 'ska', 'sk', 'boar'])) // 0
 console.log(countConstruct('potato', ['p', 'ot', 'eo', 'g', 'a', 't']))
-console.log(countConstruct('eeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeef', ['e', 'ee', 'eee', 'eeee', 'eeeee', 'eeeeee']))
+console.log(
+  countConstruct('eeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeef', [
+    'e',
+    'ee',
+    'eee',
+    'eeee',
+    'eeeee',
+    'eeeeee',
+  ])
+)
 ```
 
 m = target length
