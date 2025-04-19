@@ -23,9 +23,10 @@ The classes of DP solutions
 | Bitmask DP                     | ✅/❌     | ✅            | O(2ⁿ·n)      | O(2ⁿ·n)  |
 | Recursive DP + Pruning         | ✅        | ✅/❌         | varies       | varies   |
 
-The following are a few canonical examples of DP.
+In the following problems we'll come up with a solution using no DP, Top-Down Memoization, & Bottom-Up Tabulation as
+they're the most easily understandable techniques.
 
-## Fibonacci
+## 1. Fibonacci
 
 Write a function `fib(n)` that takes in a number as an argument.
 
@@ -84,7 +85,7 @@ const fib = (n) => {
 console.log(fib(50))
 ```
 
-## Grid Traveler
+## 2. Grid Traveler
 
 Write a function `gridTraveler(m, n)` that returns the number of ways to travel from top left to bottom right corner of grid.
 
@@ -93,7 +94,7 @@ Write a function `gridTraveler(m, n)` that returns the number of ways to travel 
 We start from the end and work back by subtracting from `m` & `n`.
 When we reach our base case of being in the top left(m == 1 && n == 1) we increment the count of how many unique ways we can traverse the grid.
 
-```js
+```js showLineNumbers
 // time = O(2ᵐ⁺ⁿ)
 // space = O(m+n)
 const gridTraveler = (m, n) => {
@@ -109,7 +110,7 @@ console.log(gridTraveler(18, 18)) // 2333606220
 
 By storing each cell's number of unique paths to reach the beginning we don't repeat computations and thus improve the performance of our algorithm a lot.
 
-```js
+```js showLineNumbers
 // time = O(m * n)
 // space = O(m * n)
 const gridTraveler = (m, n, memo = {}) => {
@@ -131,7 +132,7 @@ console.log(gridTraveler(18, 18))
 
 Using a 2d array we start each cell as 0 and then carry the values right & down(up) toward the bottom right. In each cell we sum the cell from which we just came and the cell in which we land. Thus by the end we have our solution.
 
-```js
+```js showLineNumbers
 // time = O(m × n)
 // space = O(m × n)
 const gridTraveler = (m, n) => {
@@ -151,45 +152,32 @@ const gridTraveler = (m, n) => {
 }
 ```
 
-### Memoization Recipe
-
-1. Make it work
-
-- visualize the problem as a tree
-- implement the tree using recursion
-- test it
-
-2. Make it efficient
-
-- Add a memo object
-- Add a base case to return memo values
-- Store return values into memo
-
-## Can Sum
+## 3. Can Sum
 
 Write a function `canSum(targetSum, nums)` that takes in a target sum and an array of numbers as arguments.
 
-The function should return a boolean indicating whether or not it is possible to generate the targetSum using numbers from the array.
+The function should return a boolean indicating whether or not it is possible to generate the `targetSum` using `numbers` from the array.
 
 You may use an element of the array as many times as needed.
 
 You may assume that all inputs are non negative.
 
-```js
+### Solution 1. No DP
+
+```js showLineNumbers
+// time = O(nᵐ)
+// space = O(m)
 const canSum = (targetSum, nums) => {
   if (targetSum === 0) return true
   if (targetSum < 0) return false
-  for (let n of nums) {
-    let remainder = targetSum - n
+  for (const n of nums) {
+    const remainder = targetSum - n
     if (canSum(remainder, nums) === true) {
       return true
     }
   }
   return false
 }
-
-// t = O(n^m)
-// s = O(m)
 console.log(canSum(7, [2, 3])) // true
 console.log(canSum(8, [2, 3, 5])) // true
 console.log(canSum(7, [5, 3, 4, 7])) // true
@@ -198,9 +186,11 @@ console.log(canSum(7, [2, 4])) // false
 console.log(canSum(300, [7, 14])) // false
 ```
 
-```js
-// Memoized
+### Solution 2. Top Down Memoization
 
+```js showLineNumbers
+// time = O(n * m)
+// space = O(m)
 const canSum = (targetSum, nums, memo = {}) => {
   if (targetSum in memo) return memo[targetSum]
   if (targetSum === 0) return true
@@ -222,32 +212,59 @@ console.log(canSum(7, [2, 3])) // true
 console.log(canSum(8, [2, 3, 5])) // true
 console.log(canSum(7, [5, 3, 4, 7])) // true
 console.log(canSum(7, [5, 3, 4, 7])) // true
-
 console.log(canSum(7, [2, 4])) // false
 console.log(canSum(300, [7, 14])) // false
 ```
 
-Time = O(m \* n)
+### Solution 3. Bottom Up Tabulation
 
-Space = O(m)
+```js showLineNumbers
+const canSum = (targetSum, nums) => {
+  const dp = Array(targetSum + 1).fill(false)
+  dp[0] = true
 
-## How Sum
+  for (let i = 0; i <= targetSum; i++) {
+    if (dp[i]) {
+      for (let n of nums) {
+        if (i + n <= targetSum) {
+          dp[i + n] = true
+        }
+      }
+    }
+  }
 
-Write a function `howSum(targetSum, nums)` that takes in a targetSum and an array of numbers as arguments.
+  return dp[targetSum]
+}
 
-The function should return an array containing any combination of elements that add up to exactly the targetSum. If there is no combination that adds up to the targetSum, then return null.
+console.log(canSum(7, [2, 3])) // true
+console.log(canSum(8, [2, 3, 5])) // true
+console.log(canSum(7, [5, 3, 4, 7])) // true
+console.log(canSum(7, [5, 3, 4, 7])) // true
+console.log(canSum(7, [2, 4])) // false
+console.log(canSum(300, [7, 14])) // false
+```
+
+## 4. How Sum
+
+Write a function `howSum(target, nums)` that takes in a `target` and an array of numbers as arguments.
+
+The function should return an array containing any combination of elements that add up to exactly `target`. If there is no combination that adds up to the target, then return `null`.
 
 If there are multiple combinations possible you may return any single one.
 
-```js
-const howSum = (targetSum, nums) => {
-  if (targetSum === 0) return []
-  if (targetSum < 0) return null
-  for (let n of nums) {
-    const remainder = targetSum - n
-    const remainderResult = howSum(remainder, nums)
-    if (remainderResult !== null) {
-      return [...remainderResult, n]
+### Solution 1. No DP
+
+```js showLineNumbers
+// time = O(nᵐ⁺ⁿ) where n is the length of the array & m is target
+// space = O(m) where m is target
+const howSum = (target, nums) => {
+  if (target === 0) return []
+  if (target < 0) return null
+  for (const n of nums) {
+    const remainder = target - n
+    const result = howSum(remainder, nums)
+    if (result !== null) {
+      return [...result, n]
     }
   }
   return null
@@ -257,33 +274,27 @@ console.log(howSum(7, [2, 3])) // [3, 2, 2]
 console.log(howSum(7, [5, 3, 4, 7])) // [4, 3]
 console.log(howSum(7, [2, 4])) // null
 console.log(howSum(8, [2, 3, 5])) // [2, 2, 2, 2]
-console.log(howSum(300, [7, 14])) // []
+console.log(howSum(300, [7, 14])) // null
 ```
 
-m = targetSum
+### Solution 2. Top Down Memoization
 
-n = array length
-
-Time = O(n ^ m \* m)
-
-Space = O(m)
-
-```js
-// Memoized
-
-const howSum = (targetSum, nums, memo = {}) => {
-  if (targetSum in memo) return memo[targetSum]
-  if (targetSum === 0) return []
-  if (targetSum < 0) return null
-  for (let n of nums) {
-    const remainder = targetSum - n
-    const remainderResult = howSum(remainder, nums, memo)
-    if (remainderResult !== null) {
-      memo[targetSum] = [...remainderResult, n]
-      return memo[targetSum]
+```js showLineNumbers
+// time = O(m * n) where n is the length of the array & m is target
+// space = O(m) where m is target
+const howSum = (target, nums, memo = {}) => {
+  if (target in memo) return memo[target]
+  if (target === 0) return []
+  if (target < 0) return null
+  for (const n of nums) {
+    const remainder = target - n
+    const result = howSum(remainder, nums, memo)
+    if (result !== null) {
+      memo[target] = [...result, n]
+      return memo[target]
     }
   }
-  memo[targetSum] = null
+  memo[target] = null
   return null
 }
 
@@ -291,30 +302,51 @@ console.log(howSum(7, [2, 3])) // [3, 2, 2]
 console.log(howSum(7, [5, 3, 4, 7])) // [4, 3]
 console.log(howSum(7, [2, 4])) // null
 console.log(howSum(8, [2, 3, 5])) // [2, 2, 2, 2]
-console.log(howSum(300, [7, 14])) // []
+console.log(howSum(300, [7, 14])) // null
 ```
 
-Time = O(n \* m^2)
+### Solution 3. Bottom Up Tabulation
 
-Space = O(m^2)
+```js showLineNumbers
+// time = O(m * n) where n is the length of the array & m is target
+// space = O(m) where m is target
+const howSum = (target, nums) => {
+  const dp = Array(target + 1).fill(null)
+  dp[0] = []
 
-## Best Sum
+  for (let i = 0; i < target; i++) {
+    if (dp[i] !== null) {
+      for (const n of nums) {
+        dp[i + n] = [...dp[i], n]
+      }
+    }
+  }
 
-Write a function `bestSum(targetSum, nums)` that takes in a targetSum and an array of numbers as arguments
+  return dp[target]
+}
+```
 
-The function should return an array containing the shortest combination of numbers that add up to exactly the targetSum.
+## 5. Best Sum
+
+Write a function `bestSum(target, nums)` that takes in a `target` and an array of numbers as arguments
+
+The function should return an array containing the shortest combination of numbers that add up to exactly the `target`.
 
 If there is a tie for the shortest combination, you may return any one of the shortest.
 
-```js
-const bestSum = (targetSum, nums) => {
-  if (targetSum === 0) return []
-  if (targetSum < 0) return null
+### Solution 1. No DP
+
+```js showLineNumbers
+// time = O(nᵗ) where n is the number of elements in nums and t is the target
+// space = O(t) where t is the target
+const bestSum = (target, nums) => {
+  if (target === 0) return []
+  if (target < 0) return null
 
   let shortestCombination = null
 
   for (let n of nums) {
-    const remainder = targetSum - n
+    const remainder = target - n
     const remainderCombination = bestSum(remainder, nums)
     if (remainderCombination !== null) {
       const comb = [...remainderCombination, n]
@@ -332,22 +364,18 @@ console.log(bestSum(8, [1, 4, 5])) // [4, 4]
 console.log(bestSum(100, [1, 2, 5, 25])) // [25, 25, 25, 25]
 ```
 
-Time = O(m \* n^m)
+### Solution 2. Top Down Memoization
 
-Space = O(m^2)
-
-```js
-// Memoized
-
-const bestSum = (targetSum, nums, memo = {}) => {
-  if (targetSum in memo) return memo[targetSum]
-  if (targetSum === 0) return []
-  if (targetSum < 0) return null
+```js showLineNumbers
+const bestSum = (target, nums, memo = {}) => {
+  if (target in memo) return memo[target]
+  if (target === 0) return []
+  if (target < 0) return null
 
   let smallest = null
 
   for (let n of nums) {
-    const remainder = targetSum - n
+    const remainder = target - n
     const remainderCombination = bestSum(remainder, nums, memo)
     if (remainderCombination !== null) {
       const comb = [...remainderCombination, n]
@@ -356,7 +384,7 @@ const bestSum = (targetSum, nums, memo = {}) => {
       }
     }
   }
-  memo[targetSum] = smallest
+  memo[target] = smallest
   return smallest
 }
 
@@ -366,19 +394,32 @@ console.log(bestSum(8, [1, 4, 5])) // [4, 4]
 console.log(bestSum(100, [1, 2, 5, 25])) // [25, 25, 25, 25]
 ```
 
-Time = O(n \* m ^ 2)
+### Solution 3. Bottom Up Tabulation
 
-Space = O(m^2)
+```js showLineNumbers
+const bestSum = (targetSum, nums) => {
+  const table = Array(targetSum + 1).fill(null)
+  table[0] = []
+  for (let i = 0; i < targetSum; i++) {
+    if (table[i] != null) {
+      for (let n of nums) {
+        const newComb = [...table[i], n]
+        if (!table[i + n] || table[i + n].length > newComb.length) {
+          table[i + n] = newComb
+        }
+      }
+    }
+  }
+  return table[targetSum]
+}
 
-### Summary
+console.log(bestSum(7, [5, 3, 4, 7])) // [7]
+console.log(bestSum(8, [2, 3, 5])) // [3, 5]
+console.log(bestSum(8, [1, 4, 5])) // [4, 4]
+console.log(bestSum(100, [1, 2, 5, 25])) // [25, 25, 25, 25]
+```
 
-canSum -> "Can you do it? yes/no" -> Decision Problem
-
-howSum -> "How can you do it?" -> Combinatoric Problem
-
-bestSum -> "What is the 'best' way to do it?" -> Optimization Problem
-
-## Can Construct
+## 6. Can Construct
 
 Write a function `canConstruct(target, wordBank)` that accepts a target string and an array of strings.
 
@@ -386,7 +427,9 @@ The function should return a boolean indicating whether or not the `target` can 
 
 You may reuse elements of `wordBank` as many times as needed.
 
-```js
+### Solution 1. No DP
+
+```js showLineNumbers
 const canConstruct = (target, wordBank) => {
   if (target === '') return true
 
@@ -423,9 +466,7 @@ Time = O(n^m \* m)
 
 Space = O(m^2)
 
-```js
-// Memoized
-
+```js showLineNumbers
 const canConstruct = (target, wordBank, memo = {}) => {
   if (target in memo) return memo[target]
   if (target === '') return true
@@ -465,7 +506,11 @@ Time = O(n \* m^2)
 
 Space = O(m^2)
 
-## Count Construct
+### Solution 2. Top Down Memoization
+
+### Solution 3. Bottom Up Tabulation
+
+## 7. Count Construct
 
 Write a function `countConstruct(target, wordBank)` that accepts a target string and an array of strings.
 
@@ -473,7 +518,9 @@ The function should return the number of ways that the `target` can be construct
 
 You may reuse elements of the word bank as many times as you want.
 
-```js
+### Solution 1. No DP
+
+```js showLineNumbers
 const countConstruct = (target, wordBank) => {
   if (target === '') return 1
 
@@ -511,7 +558,7 @@ Time = O(n \* m^2)
 
 Space = O(m^2)
 
-```js
+```js showLineNumbers
 // Memoized
 
 const countConstruct = (target, wordBank, memo = {}) => {
@@ -553,13 +600,19 @@ Time = O(n \* m^2)
 
 Space = O(m^2)
 
-## All Construct
+### Solution 2. Top Down Memoization
+
+### Solution 3. Bottom Up Tabulation
+
+## 8. All Construct
 
 Write a function `allConstruct(target, wordBank)` that accepts a target string and an array of strings.
 
 The function should return a 2D array containing all of the ways that the `target` can be constructed by concatenating elements of the `wordBank` array.
 
-```js
+### Solution 1. No DP
+
+```js showLineNumbers
 const allConstruct = (target, wordBank) => {
   if (target === '') return [[]]
 
@@ -594,7 +647,7 @@ Time = O(n \* m^2)
 
 Space = O(m^2)
 
-```js
+```js showLineNumbers
 // Memoized
 
 const allConstruct = (target, wordBank, memo = {}) => {
@@ -626,7 +679,11 @@ console.log(allConstruct('', ['dog', 'cat', 'mouse']))
 // [[]]
 ```
 
-f## Tabulation
+### Solution 2. Top Down Memoization
+
+### Solution 3. Bottom Up Tabulation
+
+# Tabulation
 
 Tabaulation is another technique used to solve dynamic programming problems.
 
@@ -646,7 +703,7 @@ The 1st number of the sequence is 1.
 
 To generate the next number of the sequence, we sum the previous two.
 
-```js
+```js showLineNumbers
 const fib = (n) => {
   const table = Array(n + 1).fill(0)
   table[1] = 1
@@ -669,7 +726,7 @@ Space = O(n)
 
 Write a function `gridTraveler(m, n)` that calculates how many ways from top left to bottom right of a grid which is m x n spaces large.
 
-```js
+```js showLineNumbers
 // m rows, n columns
 
 const gridTraveler = (m, n) => {
@@ -701,15 +758,15 @@ Space = O(mn)
 
 ## Can Sum
 
-Write a function `canSum(targetSum, numbers)` that takes in a target sum and an array of numbers as arguments.
+Write a function `canSum(target, numbers)` that takes in a target sum and an array of numbers as arguments.
 
-The function should return a boolean indicating whether or not it is possible to generate the targetSum using numbers from the array.
+The function should return a boolean indicating whether or not it is possible to generate the target using numbers from the array.
 
 You may use an element of the array as many times as needed.
 
 You may assume that all inputs are nonnegative.
 
-```js
+```js showLineNumbers
 const canSum = (targetSum, numbers) => {
   const table = Array(targetSum + 1).fill(false)
   table[0] = true
@@ -747,7 +804,7 @@ If there is no combination that adds up to the targetSum, then return null.
 
 If there are multiple combinations possible you may return any single one.
 
-```js
+```js showLineNumbers
 const howSum = (targetSum, nums) => {
   const table = Array(targetSum + 1).fill(null)
   table[0] = []
@@ -780,7 +837,7 @@ The function should return an array containing the shortest combination of numbe
 
 If there is a tie for the shortest combination, you may return any one of the shortest.
 
-```js
+```js showLineNumbers
 const bestSum = (targetSum, nums) => {
   const table = Array(targetSum + 1).fill(null)
   table[0] = []
@@ -818,7 +875,7 @@ The function should return a boolean indicating whether or not the `target` can 
 
 You may reuse elements of `wordBank` as many times as needed.
 
-```js
+```js showLineNumbers
 const canConstruct = (target, wordBank) => {
   const table = Array(target.length + 1).fill(false)
   table[0] = true
@@ -853,7 +910,7 @@ console.log(
 // s = o(m)
 ```
 
-## Count Consruct
+## Count Construct
 
 Write a function `countConstruct(target, wordBank)` that accepts a target string and an array of strings.
 
@@ -861,7 +918,7 @@ The function should return the number of ways that the `target` can be construct
 
 You may reuse elements of the word bank as many times as you want.
 
-```js
+```js showLineNumbers
 const countConstruct = (target, wordBank) => {
   const table = Array(target.length + 1).fill(0)
   table[0] = 1
@@ -906,7 +963,7 @@ Write a function `allConstruct(target, wordBank)` that accepts a target string a
 
 The function should return a 2D array containing all of the ways that the `target` can be constructed by concatenating elements of the `wordBank` array.
 
-```js
+```js showLineNumbers
 const allConstruct = (target, wordBank) => {
   const table = Array(target.length + 1)
     .fill()
@@ -952,5 +1009,4 @@ Dynamic Programming
 - notice any overlapping sub problems
 - decide what is the trivially smallest input
 - think recursively to use memoization
-- think iteratively to use Tabulation
-- draw a strategy first!
+- think iteratively to use tabulation
