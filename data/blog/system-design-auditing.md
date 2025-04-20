@@ -25,8 +25,8 @@ The requirements sound simple enough but require a few advanced techniques to ar
 
 ### 1. Initialize Project
 
-We'll use Nuxt for this project as it's convention over configuration paradigm makes
-it an attractive solution in 2025 Web Development.
+We'll use [Nuxt](https://nuxt.com/) for this project as it's convention over configuration approach makes
+it a breeze to work with. Remember good old [Rails](https://rubyonrails.org/) anyone?!
 
 ```sh
 npm create nuxt nuxt_closure
@@ -37,7 +37,7 @@ npm run dev
 ### 2. Install dependencies
 
 We use token based authentication as this is industry standard & allows us to
-audit users from any platform much more easily.
+audit users from any platform whether it be web, desktop, mobile or system much more easily.
 
 ```sh
 npm i jsonwebtoken @types/jsonwebtoken
@@ -45,8 +45,8 @@ npm i jsonwebtoken @types/jsonwebtoken
 
 ### 3. Define JWT Token for security
 
-We just defining the logic for signing and verifying the token we give to users
-of our system.
+Nothing fancy, just defining the logic for signing and verifying tokens which'll helps us
+identify the users of our resources.
 
 ```ts
 // ./server/utils/token.ts
@@ -91,7 +91,7 @@ export function jwtVerify(token: string): PayloadObj | null {
 
 ### 4. Add .env file
 
-Define the following secret inside of a root `.env` file.
+Dont hardcode values in your code. Define a var `AUTH_TOKEN_SECRET` inside of a root `.env` file.
 
 ```bash
 # ./.env
@@ -100,8 +100,7 @@ AUTH_TOKEN_SECRET="MySecret"
 
 ### 5. Test Sign & Verify using script
 
-Ensure that the token creation and verification work in a script before trying to access it
-via API.
+Ensure that the token creation and verification work via script before adding another layer of abstraction(MVC/API).
 
 ```ts
 // ./server/script.ts
@@ -140,7 +139,7 @@ $ npx tsx server/script.ts
 
 ### 6. Define API for resources
 
-We need an example API which'll be accessed by consumers of our API.
+Create an entrypoint API which'll be accessed by users of the system. In this case [REST](https://developer.mozilla.org/en-US/docs/Glossary/REST).
 
 ```ts
 // ./server/api/index.get.ts
@@ -176,7 +175,11 @@ So we now have an API which serves resources to clients.
 ### 7. Add Middlewares(2) to grab token from request headers & decode the user object out of the payload
 
 Run reuseable logic for each inbound request.
-Read the token from the header.
+
+The file naming is meaningful Nuxt executes the middlewares in ascending order. Thus files beginning with `00` run before `01`.
+So we'll extract the token first then use it to query our DB for our user.
+
+`00.headers.global.js` reads a token from the header and injects it into the event context.
 
 ```ts
 // server/middlewares/00.headers.global.js
@@ -188,7 +191,7 @@ export default defineEventHandler((e) => {
 })
 ```
 
-Using the token find the `User` in our DB.
+`01.user.global.js` uses the collected token to find the `User` accessing our system.
 
 ```ts
 // server/middlewares/01.user.global.js
@@ -196,7 +199,9 @@ import { User } from '../models/User.model'
 
 export default defineEventHandler(async (e) => {
   const user = jwtVerify(e.context.token)
+
   console.log({ user })
+
   if (user) {
     const id = user.userId
     const me = await User.findById(id).exec()
@@ -205,9 +210,7 @@ export default defineEventHandler(async (e) => {
 })
 ```
 
-We pass in the token we manually created earlier in the headers following best practices.
-The numbering is important here. The middleware beginning with `00` will run before `01`.
-So we'll extract the token first then use it to query our DB for our user.
+Test with the token we created earlier(Step 5.) in the headers following best practices.
 
 ```sh
 $ curl -i -H "Accept: application/json" -H "Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImxvaUBsdHJhbi5uZXQiLCJpYXQiOjE3NDUxMTI1MDAsImV4cCI6MjA2MDQ3MjUwMH0.m66vk-I0HJhJOU9vcz61zrQzI_Mbnr-50P8B-_DQqNo" http://localhost:3001/api
@@ -234,7 +237,7 @@ Install Mongoose as our DB.
 npm i nuxt-mongoose
 ```
 
-This configuration is required in the setup process.
+Add required setup configuration to `./nuxt.config.js`.
 
 ```js
 // ./nuxt.config.js
@@ -415,7 +418,7 @@ When resources are touched a hook will fire which ultimately records meta data t
 
 ### 10. Trigger Create/Save Hook
 
-By creating an instance of `User` using Mongo when this endpoint is hit we'll trigger our hooks behind the scenes.
+By creating an instance of `User` when this endpoint is hit we'll trigger our hooks behind the scenes.
 
 ```js showLineNumbers {4-8}
 // .server/api/index.get.ts
@@ -432,14 +435,14 @@ export default defineEventHandler(async () => {
 })
 ```
 
-Test the endpoint with another `curl` request.
+Test the endpoint with another `curl` request to create a `User` instance & a `AuditLog`.
 
 ```sh
 curl -i -H "Accept: application/json" -H "Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImxvaUBsdHJhbi5uZXQiLCJpYXQiOjE3NDUxMTI1MDAsImV4cCI6MjA2MDQ3MjUwMH0.m66vk-I0HJhJOU9vcz61zrQzI_Mbnr-50P8B-_DQqNo" http://localhost:3001/api
 HTTP/1.1 200 OK
 ```
 
-Now you should see that each time you hit that endpoint the `auditlog` collection has a new document because the creation of a `User` document triggered
+Now you should see that each time you hit that endpoint a new document is created in our `AuditLog` collection because the creation of a `User` document triggered
 the hooks we defined inside of `Auditor` of `./server/models/Audit.js`.
 
 <img src="/static/gifs/auditing.gif" alt="Completed" />
