@@ -1,7 +1,7 @@
 ---
 title: 'Tree Traversals'
 date: '2024-04-20'
-tags: ['']
+tags: ['DSA', 'Trees']
 draft: false
 summary: 'Explanations on the most common traversal orders used with Binary trees.'
 ---
@@ -16,7 +16,12 @@ Each algorithm processes the nodes of the tree in a different order, resulting i
 
 ## Nodes
 
-How a tree is can be represented in python. The tree's nodes have a `val` and potentially `left` & `right`.
+A tree data structure is a `node`. It can have one or more child `node`s.
+
+The tree's nodes have a `val` and potentially `left` & `right` if it's a binary tree.
+
+It's called a binary tree because it has at most 2 child nodes `left` & `right`.
+
 A node with neither `left` or `right` is considered a `leaf` node.
 
 ```python
