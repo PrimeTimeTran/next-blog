@@ -8,11 +8,11 @@ bibliography: references-data.bib
 canonicalUrl:
 ---
 
-##
+## Theme & Light/Dark mode in Flutter
 
-![](/static/gifs/flutter-theme.gif)
+<img src="/static/gifs/flutter-theme.gif" alt="Completed" />
 
-[Repo](https://github.com/PrimeTimeTran/flutter_theme_changer)
+[Github Repo](https://github.com/PrimeTimeTran/flutter_theme_changer)
 
 <div className="tab-group">
   <div className="tab">
@@ -43,7 +43,8 @@ ThemeMode themeMode = ThemeMode.system;
     }
 
 }
-```
+
+````
 
   </div>
 
@@ -115,7 +116,7 @@ class ColorConstants {
 }
 
 enum ThemeType { red, blue, green }
-```
+````
 
   </div>
 

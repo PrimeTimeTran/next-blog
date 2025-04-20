@@ -21,6 +21,8 @@ The design specs in this demo are common in enterprise applications.
 
 The requirements sound simple enough but require a few advanced techniques to arrive at an elegant solution.
 
+[Github Repo](https://github.com/PrimeTimeTran/system_design_auditing)
+
 ### 1. Initialize Project
 
 We'll use Nuxt for this project as it's convention over configuration paradigm makes
