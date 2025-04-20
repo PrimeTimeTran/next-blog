@@ -1,16 +1,18 @@
 ---
-title: 'A Micro Service Architecture'
+title: 'System Design: Micro Service Architecture'
 date: '2022-09-01'
-tags: ['Docker', 'Micro Services']
+tags: ['Docker', 'Micro Services', 'System Design']
 draft: false
 summary: 'How to create a microservice. Example micro service using NPM, ExpressJS, NodeJS, and Docker.'
 layout: PostSimple
 bibliography: references-data.bib
 ---
 
-## How to create full stack rest API and web app micro services
-
 ![Microservice](https://s1.gifyu.com/images/microservices.gif)
+
+# Introduction
+
+[Github Repo](https://github.com/PrimeTimeTran/microservices/blob/main/api/app.js)
 
 In this tutorial we'll create a full stack web application following the micro service architecture.
 
@@ -47,6 +49,7 @@ Implement looping request for an outside service's resources.
 
 ```js
 // ./client/views/layout.jade
+
 script((type = 'text/javascript')).setInterval(() => {
   fetch('https://jsonplaceholder.typicode.com/todos/1')
     .then((response) => response.json())
@@ -321,8 +324,6 @@ volumes: # Add us
 You should now see that when you change the list of wizards to one person, the changes are reflected immediately, without needing to stop the container, rebuild the image, and restart it, awesome!
 
 ![Microservice](https://s1.gifyu.com/images/microservices-end.gif)
-
-[Github completed project source code](https://github.com/PrimeTimeTran/microservices/blob/main/api/app.js)
 
 Could this article be improved? Please make a suggestion.
 

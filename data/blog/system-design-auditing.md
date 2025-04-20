@@ -484,3 +484,11 @@ The general idea is a function that "remembers" a variable & returns a function 
 However this example is contrived. That's why I built this example auditing project/module because it demonstrates how closures can help to propagate values to places that we need them.
 
 Specifically, when the app is started we create a placeholder function, `closure()` which is fed into each of our system's resources/models. We do so in order to enable lifecycle hooks to access run time values which aren't available when the models are initialized. When `captureEvent` is triggered in our middleware it captures the request `event` containing requester meta data. Then in the event that a save, update or remove to our resource is triggered then the hook invokes the closure which was reassigned to the placeholder `closure()` encapsulating user data in the scope of the function calls.
+
+80,
+10, -70
+70, + 60
+15, - 55
+60, + 45
+20, - 40
+50, + 30
