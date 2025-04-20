@@ -1,7 +1,7 @@
 ---
-title: 'Closures: A Real World Usecase'
+title: 'System Design: Build a auditing solution for collecting metadata on users of your system.'
 date: '2025-04-20'
-tags: ['']
+tags: ['System Design']
 draft: false
 summary: "Create an auditing system for enterprise applications which tracks user requests, resources touched & action taken. Reuse logic by leveraging hooks so that code is clean & concise. By utilizing middlewares, events & closures we're able to capture the details of requests on all our resources without duplicating code."
 bibliography: references-data.bib
@@ -48,6 +48,9 @@ The design specs in this demo are common in enterprise applications.
 
 ### 1. Initialize Project
 
+We'll use Nuxt for this project as it's convention over configuration paradigm makes
+it an attractive solution in 2025 Web Development.
+
 ```sh
 npm create nuxt nuxt_closure
 cd nuxt_closure
@@ -56,11 +59,17 @@ npm run dev
 
 ### 2. Install dependencies
 
+We use token based authentication as this is industry standard & allows us to
+audit users from any platform much more easily.
+
 ```sh
 npm i jsonwebtoken @types/jsonwebtoken
 ```
 
 ### 3. Define JWT Token for security
+
+We just defining the logic for signing and verifying the token we give to users
+of our system.
 
 ```ts
 // ./server/utils/token.ts
@@ -114,6 +123,9 @@ AUTH_TOKEN_SECRET="MySecret"
 
 ### 5. Test Sign & Verify using script
 
+Ensure that the token creation and verification work in a script before trying to access it
+via API.
+
 ```ts
 // ./server/script.ts
 import { jwtSign, jwtVerify } from './utils/token'
@@ -151,6 +163,8 @@ $ npx tsx server/script.ts
 
 ### 6. Define API for resources
 
+We need an example API which'll be accessed by consumers of our API.
+
 ```ts
 // ./server/api/index.get.ts
 export default defineEventHandler(async () => {
@@ -184,6 +198,9 @@ So we now have an API which serves resources to clients.
 
 ### 7. Add Middlewares(2) to grab token from request headers & decode the user object out of the payload
 
+Run reuseable logic for each inbound request.
+Read the token from the header.
+
 ```ts
 // server/middlewares/00.headers.global.js
 export default defineEventHandler((e) => {
@@ -193,6 +210,8 @@ export default defineEventHandler((e) => {
   }
 })
 ```
+
+Using the token find the `User` in our DB.
 
 ```ts
 // server/middlewares/01.user.global.js
@@ -209,7 +228,9 @@ export default defineEventHandler(async (e) => {
 })
 ```
 
+We pass in the token we manually created earlier in the headers following best practices.
 The numbering is important here. The middleware beginning with `00` will run before `01`.
+So we'll extract the token first then use it to query our DB for our user.
 
 ```sh
 $ curl -i -H "Accept: application/json" -H "Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImxvaUBsdHJhbi5uZXQiLCJpYXQiOjE3NDUxMTI1MDAsImV4cCI6MjA2MDQ3MjUwMH0.m66vk-I0HJhJOU9vcz61zrQzI_Mbnr-50P8B-_DQqNo" http://localhost:3001/api
@@ -230,7 +251,7 @@ content-length: 61
 
 ### 7. Install Nuxt Mongoose
 
-We'll use Mongoose as our DB.
+Install Mongoose as our DB.
 
 ```sh
 npm i nuxt-mongoose
@@ -256,6 +277,7 @@ MONGODB_URI = 'mongodb://localhost:27017/nuxt-closure'
 
 ### 8. Add Models for Auditing
 
+The crux of this system design.
 When resources are touched a hook will fire which ultimately records meta data to our `auditlogs` collection.
 
 1. We define a resource(User) which triggers hooks by passing it's schema to our `Auditor`
@@ -415,9 +437,9 @@ When resources are touched a hook will fire which ultimately records meta data t
   </div>
 </div>
 
-### 8. Create instance of User in our API
+### 8. Trigger Create/Save Hook
 
-Now all we have to do is create an instance of User in our API endpoint.
+By creating an instance of `User` using Mongo when this endpoint is hit we'll trigger our hooks behind the scenes.
 
 ```js showLineNumbers {4-7}
 // .server/api/index.get.ts
@@ -434,9 +456,25 @@ export default defineEventHandler(async () => {
 })
 ```
 
+Test the endpoint with another `curl` request.
+
 ```sh
 curl -i -H "Accept: application/json" -H "Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImxvaUBsdHJhbi5uZXQiLCJpYXQiOjE3NDUxMTI1MDAsImV4cCI6MjA2MDQ3MjUwMH0.m66vk-I0HJhJOU9vcz61zrQzI_Mbnr-50P8B-_DQqNo" http://localhost:3001/api
 HTTP/1.1 200 OK
 ```
 
+Now you should see that each time you hit that endpoint the `auditlog` collection has a new document because the creation of a `User` document triggered
+the hooks we defined inside of `Auditor` of `./server/models/Audit.js`.
+
 ![completed](/static/gifs/auditing.gif)
+
+# Conclusion
+
+With knowledge of middlewares, events, & closures we're able to track the utilization of our system & history of changes
+across all resources quickly & easily.
+
+- With hooks we don't duplicate code
+- With the `captureEvent` closure we're able to detect the `User` making the request.
+  - We **must** define a placeholder function `closure` which is referenced inside of the hooks because it will be passed to Mongo's hook helpers.
+  - When `captureEvent` is triggered it overwrites `closure` capturing the event object which contains the details about the user making the request(their token).
+  - With this approach we're able to build our resources/schemas up and then eventually use a value which we don't have at build time(requesting user's token/email).
