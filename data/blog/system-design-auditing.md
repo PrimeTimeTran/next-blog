@@ -10,41 +10,16 @@ canonicalUrl:
 
 # Introduction
 
-From examples online we know that a closure is a function which wraps an inner variable
-& returns a function which can "see" the wrapped variable.
-
-```js showLineNumbers
-function makeAdder(x) {
-  return function (y) {
-    return x + y
-  }
-}
-
-const add5 = makeAdder(5)
-const add3 = makeAdder(3)
-
-console.log(add5(2)) // 5 + 2 = 7
-console.log(add3(2)) // 3 + 2 = 5
-```
-
-When we initialize our closure by calling `makeAdder`. We pass it an value which is wrapped meaning we can access it later.
-
-We then invoke the returned anonymous function from the closure with a new value which sums with the wrapped variable, producing our result.
-
-The general idea is a function that "remembers" a variable & returns a function which subsequently accesses the initial variable.
-
-However this isn't a real world use case so I've built an example real world project where I found closures to be useful within a NuxtJS application.
-
-## Tutorial
-
 The design specs in this demo are common in enterprise applications.
 
-- Implement auditing that saves every DB request to an `Audit` resource in our database.
-- `Audit` stores:
+- Implement auditing that saves meta data to the DB on requests to a resource `AuditLog`.
+- `AuditLog` stores:
   - Resource acted on.
   - User who made the request.
   - Method called
   - Timestamps
+
+The requirements sound simple enough but require a few advanced techniques to arrive at an elegant solution.
 
 ### 1. Initialize Project
 
@@ -249,7 +224,7 @@ content-length: 61
 }
 ```
 
-### 7. Install Nuxt Mongoose
+### 8. Install Nuxt Mongoose
 
 Install Mongoose as our DB.
 
@@ -275,7 +250,7 @@ Add the following variable to your `.env` file.
 MONGODB_URI = 'mongodb://localhost:27017/nuxt-closure'
 ```
 
-### 8. Add Models for Auditing
+### 9. Add Models for Auditing
 
 The crux of this system design.
 When resources are touched a hook will fire which ultimately records meta data to our `auditlogs` collection.
@@ -437,7 +412,7 @@ When resources are touched a hook will fire which ultimately records meta data t
   </div>
 </div>
 
-### 8. Trigger Create/Save Hook
+### 10. Trigger Create/Save Hook
 
 By creating an instance of `User` using Mongo when this endpoint is hit we'll trigger our hooks behind the scenes.
 
@@ -478,3 +453,30 @@ across all resources quickly & easily.
   - We **must** define a placeholder function `closure` which is referenced inside of the hooks because it will be passed to Mongo's hook helpers.
   - When `captureEvent` is triggered it overwrites `closure` capturing the event object which contains the details about the user making the request(their token).
   - With this approach we're able to build our resources/schemas up and then eventually use a value which we don't have at build time(requesting user's token/email).
+
+### Dive Deeper: Closure's Usecase Explanation
+
+From examples online we know that a closure is a function which wraps an inner variable
+& returns a function which can "see" the wrapped variable.
+
+```js showLineNumbers
+function makeAdder(x) {
+  return function (y) {
+    return x + y
+  }
+}
+
+const add5 = makeAdder(5)
+const add3 = makeAdder(3)
+
+console.log(add5(2)) // 5 + 2 = 7
+console.log(add3(2)) // 3 + 2 = 5
+```
+
+In this example when we initialize our closure by calling `makeAdder`. We pass it a value which is wrapped meaning we can access it later. We then invoke the returned anonymous function from the closure with a new value which sums with the wrapped variable, producing our result.
+
+The general idea is a function that "remembers" a variable & returns a function which subsequently accesses the initial variable.
+
+However this example is contrived. That's why I built this example auditing project/module because it demonstrates how closures can help to propagate values to places that we need them.
+
+Specifically, when the app is started we create a placeholder function, `closure()` which is fed into each of our system's resources/models. We do so in order to enable lifecycle hooks to access run time values which aren't available when the models are initialized. When `captureEvent` is triggered in our middleware it captures the request `event` containing requester meta data. Then in the event that a save, update or remove to our resource is triggered then the hook invokes the closure which was reassigned to the placeholder `closure()` encapsulating user data in the scope of the function calls.
