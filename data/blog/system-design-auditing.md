@@ -292,9 +292,9 @@ When resources are touched a hook will fire which ultimately records meta data t
     })
 
     Auditor.addHooks(userSchema)
+
     export { userSchema }
     export const User = mongoose.model('User', userSchema)
-
 
     // 1. We invoke `addHooks` of Auditor passing in the current resource's schema.
     // 2. Auditor defines the hooks of this resource during build/initialization time.
@@ -322,8 +322,8 @@ When resources are touched a hook will fire which ultimately records meta data t
 
     export const AuditLog = mongoose.model('AuditLog', auditLogSchema)
 
-    // 1. The `auditlog` schema definition which'll store pertinent information
-    //    related to each event.
+    // 1. Nothing fancy here. `AuditLog` is schema definition which'll store metadata
+    //    related to each event for auditing.
     ```
 
   </div>
@@ -358,9 +358,9 @@ When resources are touched a hook will fire which ultimately records meta data t
     })
 
     // 1. We define a closure, `captureEvent()`, which wraps `closure()`.
-    // 2. When closure() is invoked it has access to the event object
+    // 2. When closure() is invoked by a hook it has access to the event object
     //    which was available when captureEvent() was invoked(by our middleware)
-    // 3. Thus we now have access
+    // 3. Thus we now have access to the user making the request within every resource.
     ```
 
   </div>
@@ -400,12 +400,12 @@ When resources are touched a hook will fire which ultimately records meta data t
       }
     }
 
-    // The logic for auto creating `auditlog` entries in our DB.
+    // The logic for auto creating `AuditLog` documents in our DB.
     // We add 3 hooks, save, update, remove which all invoke createHook when those events
     // are detected. The createHook method then invokes the closure which captured the request event.
 
     // From the event we're able to ascertain the user and then create a document
-    // in the `auditlogs` collection with `createEntry`.
+    // in the `AuditLog` collection with `createEntry`.
     ```
 
   </div>
@@ -415,7 +415,7 @@ When resources are touched a hook will fire which ultimately records meta data t
 
 By creating an instance of `User` using Mongo when this endpoint is hit we'll trigger our hooks behind the scenes.
 
-```js showLineNumbers {4-7}
+```js showLineNumbers {4-8}
 // .server/api/index.get.ts
 
 export default defineEventHandler(async () => {
