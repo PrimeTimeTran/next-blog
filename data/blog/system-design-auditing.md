@@ -441,6 +441,7 @@ Now you should see that each time you hit that endpoint the `auditlog` collectio
 the hooks we defined inside of `Auditor` of `./server/models/Audit.js`.
 
 ![completed](/static/gifs/auditing.gif)
+<img src="/static/gifs/auditing.gif" alt="Completed" />
 
 # Conclusion
 
