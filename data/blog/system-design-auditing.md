@@ -269,7 +269,7 @@ When resources are touched a hook will fire which ultimately records meta data t
   </div>
 
   <div id="#1" className="tabcontent">
-    ```js {} showLineNumbers {20}
+    ```js {} showLineNumbers {22}
     // .server/models/User.model.js
 
     import mongoose, { Schema } from 'mongoose'
@@ -296,10 +296,9 @@ When resources are touched a hook will fire which ultimately records meta data t
     export const User = mongoose.model('User', userSchema)
 
 
-    // 1. Pass the user schema to Auditor.
-    // 2. Auditor then attaches event handlers on this schema when it runs addHooks.
-    // 3. In the event of a save, update, or remove then a callback we define is triggered which
-    //    logs the events details. We'll see it momentarily.
+    // 1. We invoke `addHooks` of Auditor passing in the current resource's schema.
+    // 2. Auditor defines the hooks of this resource during build/initialization time.
+    // 3. Downstream, when a `save`, `update`, or `remove` event is detected helper methods defined within `Auditor` are triggered producing required behavior.
     ```
 
   </div>
