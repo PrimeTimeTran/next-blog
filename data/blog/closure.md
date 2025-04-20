@@ -1,0 +1,442 @@
+---
+title: 'Closures: A Real World Usecase'
+date: '2025-04-20'
+tags: ['']
+draft: false
+summary: "Create an auditing system for enterprise applications which tracks user requests, resources touched & action taken. Reuse logic by leveraging hooks so that code is clean & concise. By utilizing middlewares, events & closures we're able to capture the details of requests on all our resources without duplicating code."
+bibliography: references-data.bib
+canonicalUrl:
+---
+
+# Introduction
+
+From examples online we know that a closure is a function which wraps an inner variable
+& returns a function which can "see" the wrapped variable.
+
+```js showLineNumbers
+function makeAdder(x) {
+  return function (y) {
+    return x + y
+  }
+}
+
+const add5 = makeAdder(5)
+const add3 = makeAdder(3)
+
+console.log(add5(2)) // 5 + 2 = 7
+console.log(add3(2)) // 3 + 2 = 5
+```
+
+When we initialize our closure by calling `makeAdder`. We pass it an value which is wrapped meaning we can access it later.
+
+We then invoke the returned anonymous function from the closure with a new value which sums with the wrapped variable, producing our result.
+
+The general idea is a function that "remembers" a variable & returns a function which subsequently accesses the initial variable.
+
+However this isn't a real world use case so I've built an example real world project where I found closures to be useful within a NuxtJS application.
+
+## Tutorial
+
+The design specs in this demo are common in enterprise applications.
+
+- Implement auditing that saves every DB request to an `Audit` resource in our database.
+- `Audit` stores:
+  - Resource acted on.
+  - User who made the request.
+  - Method called
+  - Timestamps
+
+### 1. Initialize Project
+
+```sh
+npm create nuxt nuxt_closure
+cd nuxt_closure
+npm run dev
+```
+
+### 2. Install dependencies
+
+```sh
+npm i jsonwebtoken @types/jsonwebtoken
+```
+
+### 3. Define JWT Token for security
+
+```ts
+// ./server/utils/token.ts
+import type { JwtPayload } from 'jsonwebtoken'
+import jwt from 'jsonwebtoken'
+
+export function jwtSign(payload: any, expiresIn?: string | number | null) {
+  let expiresInOrNull: string | number | null =
+    expiresIn || process.env.AUTH_TOKEN_EXPIRES_IN || '3650 days'
+
+  if (expiresInOrNull === Infinity) {
+    expiresInOrNull = null
+  }
+
+  return jwt.sign(
+    payload,
+    String(process.env.AUTH_TOKEN_SECRET),
+    expiresInOrNull
+      ? {
+          expiresIn: expiresInOrNull,
+        }
+      : undefined
+  )
+}
+
+export interface Payload {
+  email?: string
+  token?: string
+}
+
+export type PayloadObj = string | JwtPayload | Payload | null
+
+export function jwtVerify(token: string): PayloadObj | null {
+  try {
+    const payload: PayloadObj = jwt.verify(token, String(process.env.AUTH_TOKEN_SECRET))
+    return payload
+  } catch (error) {
+    return null
+  }
+}
+```
+
+### 4. Add .env file
+
+Define the following secret inside of a root `.env` file.
+
+```bash
+# ./.env
+AUTH_TOKEN_SECRET="MySecret"
+```
+
+### 5. Test Sign & Verify using script
+
+```ts
+// ./server/script.ts
+import { jwtSign, jwtVerify } from './utils/token'
+
+async function main() {
+  const token = await jwtSign({
+    email: 'loi@ltran.net',
+  })
+
+  console.log({ token })
+
+  const user = await jwtVerify(token)
+
+  console.log({ user })
+}
+
+main()
+```
+
+```sh
+npx tsx server/script.ts
+```
+
+We should now see that we're able to encode our `user` object with `jwtSign`.
+After doing that we're returned a `token` which we can pass to `jwtVerify` to get back
+our initial `user` object.
+
+```sh
+$ npx tsx server/script.ts
+{
+  token: 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImxvaUBsdHJhbi5uZXQiLCJpYXQiOjE3NDUxMDk2MTcsImV4cCI6MjA2MDQ2OTYxN30.V6tHkhphtu7BsWsGVxTBrb8kMfGQuFVv_8BgcsW85tg'
+}
+{ user: { email: 'loi@ltran.net', iat: 1745109617, exp: 2060469617 } }
+```
+
+### 6. Define API for resources
+
+```ts
+// ./server/api/index.get.ts
+export default defineEventHandler(async () => {
+  return {
+    wizards: ['Harry', 'Hermione', 'Ron'],
+  }
+})
+```
+
+We can now request JSON at our APIs index route.
+
+```sh
+curl -i -H "Accept: application/json" http://localhost:3001/api
+
+HTTP/1.1 200 OK
+content-type: application/json
+date: Sun, 20 Apr 2025 01:00:20 GMT
+connection: close
+content-length: 61
+
+{
+  "wizards": [
+    "Harry",
+    "Hermione",
+    "Ron"
+  ]
+}
+```
+
+So we now have an API which serves resources to clients.
+
+### 7. Add Middlewares(2) to grab token from request headers & decode the user object out of the payload
+
+```ts
+// server/middlewares/00.headers.global.js
+export default defineEventHandler((e) => {
+  const authHeader = getHeader(e, 'authorization')
+  if (authHeader && authHeader.startsWith('Bearer ')) {
+    e.context.token = authHeader.slice(7)
+  }
+})
+```
+
+```ts
+// server/middlewares/01.user.global.js
+import { User } from '../models/User.model'
+
+export default defineEventHandler(async (e) => {
+  const user = jwtVerify(e.context.token)
+  console.log({ user })
+  if (user) {
+    const id = user.userId
+    const me = await User.findById(id).exec()
+    e.context.user = me
+  }
+})
+```
+
+The numbering is important here. The middleware beginning with `00` will run before `01`.
+
+```sh
+$ curl -i -H "Accept: application/json" -H "Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImxvaUBsdHJhbi5uZXQiLCJpYXQiOjE3NDUxMTI1MDAsImV4cCI6MjA2MDQ3MjUwMH0.m66vk-I0HJhJOU9vcz61zrQzI_Mbnr-50P8B-_DQqNo" http://localhost:3001/api
+HTTP/1.1 200 OK
+content-type: application/json
+date: Sun, 20 Apr 2025 01:28:59 GMT
+connection: close
+content-length: 61
+
+{
+  "wizards": [
+    "Harry",
+    "Hermione",
+    "Ron"
+  ]
+}
+```
+
+### 7. Install Nuxt Mongoose
+
+We'll use Mongoose as our DB.
+
+```sh
+npm i nuxt-mongoose
+```
+
+This configuration is required in the setup process.
+
+```js
+// ./nuxt.config.js
+mongoose: {
+  options: {},
+  modelsDir: 'models',
+  uri: process.env.MONGODB_URI,
+},
+```
+
+Add the following variable to your `.env` file.
+
+```js
+// ./.env
+MONGODB_URI = 'mongodb://localhost:27017/nuxt-closure'
+```
+
+### 8. Add Models for Auditing
+
+When resources are touched a hook will fire which ultimately records meta data to our `auditlogs` collection.
+
+1. We define a resource(User) which triggers hooks by passing it's schema to our `Auditor`
+2. We define a resource(Auditlog) which stores the data we want on API requests.
+3. We define our workhorse audit middleware which triggers a closure that captures the API request event.
+4. We define reuseable methods `createEntry`, `createHook`, `addHooks` which handle building the log which is eventually stored in our DB.
+
+<div className="tab-group">
+  <div className="tab">
+    <button id="#1" className="tablinks">1. Create example `User` resource</button>
+    <button id="#2" className="tablinks">2. Define DB `Audit` resource</button>
+    <button id="#3" className="tablinks">3. Define `Audit` Middleware</button>
+    <button id="#4" className="tablinks">4. Define reuseable hooks & helpers</button>
+  </div>
+
+  <div id="#1" className="tabcontent">
+    ```js {} showLineNumbers {20}
+    // .server/models/User.model.js
+
+    import mongoose, { Schema } from 'mongoose'
+    import { Auditor } from './Audit'
+
+    const userSchema = new Schema({
+      email: {
+        type: String,
+      },
+      firstName: {
+        type: String,
+      },
+      lastName: {
+        type: String,
+      },
+    })
+
+    userSchema.virtual('fullName').get(function () {
+      return `${this.firstName} ${this.lastName}`
+    })
+
+    Auditor.addHooks(userSchema)
+    export { userSchema }
+    export const User = mongoose.model('User', userSchema)
+
+
+    // 1. Pass the user schema to Auditor.
+    // 2. Auditor then attaches event handlers on this schema when it runs addHooks.
+    // 3. In the event of a save, update, or remove then a callback we define is triggered which
+    //    logs the events details. We'll see it momentarily.
+    ```
+
+  </div>
+
+  <div id="#2" className="tabcontent">
+    ```js {} showLineNumbers
+    // .server/models/Audit.model.js
+
+    import mongoose, { Schema } from 'mongoose'
+
+    export const auditLogSchema = new Schema({
+      actorId: String,
+      actorEmail: String,
+      actorFirstName: String,
+      action: String,
+      model: String,
+      documentId: String,
+      data: Map,
+      timestamp: { type: Date, default: Date.now },
+    })
+
+    export const AuditLog = mongoose.model('AuditLog', auditLogSchema)
+
+    // 1. The `auditlog` schema definition which'll store pertinent information
+    //    related to each event.
+    ```
+
+  </div>
+
+  <div id="#3" className="tabcontent">
+    ```js {} showLineNumbers {7-14, 22}
+    // .server/middleware/02.audit.global.js
+
+    let closure = () => {}
+
+    export function captureEvent(val) {
+      let event = val
+      closure = function () {
+        const user = {
+          id: event?.user?._id || '1',
+          firstName: event?.user?.firstName || 'cleverprogrammer',
+          email: event?.user?.email || 'dev@ltran.net',
+        }
+        return user
+      }
+      return closure
+    }
+
+    export { closure }
+
+    export default defineEventHandler(async (e) => {
+      try {
+        captureEvent(e)
+      } catch (error) {
+        logger.error({ err: error }, 'Error:')
+      }
+    })
+
+    // 1. We define a closure, `captureEvent()`, which wraps `closure()`.
+    // 2. When closure() is invoked it has access to the event object
+    //    which was available when captureEvent() was invoked(by our middleware)
+    // 3. Thus we now have access
+    ```
+
+  </div>
+  <div id="#4" className="tabcontent">
+    ```js {} showLineNumbers {5, 21, 28}
+    // .server/models/Audit.js
+    import { closure } from '../middleware/02.audit.global.js'
+
+    export class Auditor {
+      static async createEntry(modelName, action, user, doc) {
+        try {
+          const auditLogEntry = await new AuditLog({
+            actorId: user.id,
+            actorEmail: user.email,
+            actorFirstName: user.firstName,
+            action,
+            model: modelName,
+            documentId: doc._id,
+          })
+          await auditLogEntry.save()
+        } catch (error) {
+          console.log({ error })
+        }
+      }
+
+      static createHook(hook) {
+        return async function () {
+          const user = closure()
+          const modelName = this.constructor.modelName
+          await Auditor.createEntry(modelName, hook, user, this)
+        }
+      }
+      static addHooks(schema) {
+        schema.post('save', this.createHook('create'))
+        schema.post('update', this.createHook('update'))
+        schema.post('remove', this.createHook('delete'))
+      }
+    }
+
+    // The logic for auto creating `auditlog` entries in our DB.
+    // We add 3 hooks, save, update, remove which all invoke createHook when those events
+    // are detected. The createHook method then invokes the closure which captured the request event.
+
+    // From the event we're able to ascertain the user and then create a document
+    // in the `auditlogs` collection with `createEntry`.
+    ```
+
+  </div>
+</div>
+
+### 8. Create instance of User in our API
+
+Now all we have to do is create an instance of User in our API endpoint.
+
+```js showLineNumbers {4-7}
+// .server/api/index.get.ts
+
+export default defineEventHandler(async () => {
+  const user = await new User({
+    firstName: 'Loi',
+    lastName: 'Tran',
+    email: 'dev@ltran.net',
+  }).save()
+  return {
+    wizards: ['Harry', 'Hermione', 'Ron'],
+  }
+})
+```
+
+```sh
+curl -i -H "Accept: application/json" -H "Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImxvaUBsdHJhbi5uZXQiLCJpYXQiOjE3NDUxMTI1MDAsImV4cCI6MjA2MDQ3MjUwMH0.m66vk-I0HJhJOU9vcz61zrQzI_Mbnr-50P8B-_DQqNo" http://localhost:3001/api
+HTTP/1.1 200 OK
+```
+
+![completed](/static/gifs/auditing.gif)
