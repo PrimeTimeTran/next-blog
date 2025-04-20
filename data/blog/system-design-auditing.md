@@ -440,7 +440,6 @@ HTTP/1.1 200 OK
 Now you should see that each time you hit that endpoint the `auditlog` collection has a new document because the creation of a `User` document triggered
 the hooks we defined inside of `Auditor` of `./server/models/Audit.js`.
 
-![completed](/static/gifs/auditing.gif)
 <img src="/static/gifs/auditing.gif" alt="Completed" />
 
 # Conclusion
