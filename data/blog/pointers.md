@@ -92,10 +92,9 @@ int main() {
 
 ## Swapping Values
 
-A better approach would be to swap in place using pointers.
+A better approach would be to swap in place using references(`&`) & pointers(`*`).
 
-With pointers we can efficiently update values in memory which matters when we have
-large inputs.
+We pass the references of `x` & `y` to `swap()` and then update it using the pointer syntax, `*`.
 
 ```c
 #include <stdio.h>

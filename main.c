@@ -1,24 +1,16 @@
 #include <stdio.h>
 
-typedef struct {
-    int a;
-    int b;
-} Pair;
-
-Pair swap(int a, int b) {
-    Pair p;
-    p.a = b;
-    p.b = a;
-    return p;
+void swap(int *a, int *b) {
+    int temp = *a;
+    *a = *b;
+    *b = temp;
 }
 
 int main() {
     int x = 5, y = 10;
     printf("Before swap: x = %d, y = %d\n", x, y);
 
-    Pair result = swap(x, y);
-    x = result.a;
-    y = result.b;
+    swap(&x, &y);
 
     printf("After swap: x = %d, y = %d\n", x, y);
     return 0;
