@@ -2,8 +2,8 @@
 draft: false
 title: 'Data Structures & Algorithms: Sorting lists using python.'
 date: '2019-08-20'
-tags: ['DSA', 'Python', 'Data-Structures-Algorithms']
-summary: 'Commonly used sorting algorithms in python.'
+tags: ['DSA', 'Data-Structures-Algorithms', 'Python']
+summary: 'Commonly used sorting algorithms & their corresponding Big Os. Develop a better intuition on DSAs by examining canonical sorting algorithms in Python.'
 ---
 
 # Introduction
@@ -173,7 +173,6 @@ print(merge_sort(nums))
 # At each level of merging, new lists (res) are created to store sorted results.
 # Since you're not sorting in place and you're combining sublists,
 # the extra space used overall is proportional to the number of elements — O(n).
-
 ```
 
 # Conclusion
