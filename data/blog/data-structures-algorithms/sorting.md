@@ -15,13 +15,16 @@ We'll cover the following sorting algorithms.
 - [Insertion Sort](#insertion-sort)
 - [Merge Sort](#merge-sort)
 
-The list of `nums` represents the heights of players on a team. We want them ordered from shortest to tallest.
+For our examples imagine `nums` represents the heights of players on a team.
+
+We want them ordered from **shortest** to **tallest**.
 
 ## Bubble Sort
 
-Start from the left and move right comparing two players at a time. If the left player is taller than the right player than swap them.
-Repeat this process until you reach the end. If you reach the end and you made any swaps than start from the beginning again.
-Repeat until you go from left to right without making any swaps.
+From left moving right compare two players at a time swapping if the left player is taller than the right.
+Repeat this process until you reach the end. If you reach the end and you made any swaps then repeat as you can't be certain the **entire** list is sorted.
+
+In other words repeat looking at the entire list and swapping until you can go from the start to end without any swaps.
 
 - Start at index 0 of list.
 - If left is larger than right swap them and flag as unsorted
@@ -58,16 +61,10 @@ print(bubble_sort(nums))
 
 ## Selection Sort
 
-Start from the left end of the lineup and move right. While moving right track the position of the shortest player in the list with a marker.
-Once you reach the end, if the shortest player isn't on the far left then swap them with the farthest left position.
+Beginning from the start of the list and moving right mark the position of the shortest player.
+Once you reach the end, if the marked player isn't the one you started with(the beginning of the list) swap them their positions(indexes).
 
-- Loop from idx `0` of list.
-  - Set `arr[i]` as `min`.
-  - Loop from idx `i+1` of list, aka `j`.
-    - If any `arr[j]` < `arr[min]`
-      - Set `min` to be `j`.
-  - If `min != i`
-    - Swap arr[min]
+Repeat this process moving from left to right until you've gone through the entire list of players.
 
 ```python
 nums = [20, 13, 3, 3, 4, 5, 1, 2, 8, 7, 9, 0, 11]
@@ -100,16 +97,20 @@ print(selection_sort(nums))
 
 ## Insertion Sort
 
-Starting from the left moving right take two players at a time. If the player on the left is taller than the one on the right swap them. Then decrease the position of the current shortest player.
+Starting from the left moving right take two players at a time.
+If the player on the right is taller than the one on the left then swap them.
+
+Then move left(toward the start of the list) & repeat the evaluation of left & right players swapping if necessary.
+
+Repeat this process until you reach the end of the list and the list should then be sorted.
 
 ```python
 nums = [20, 13, 3, 3, 4, 5, 1, 2, 8, 7, 9, 0, 11]
 
 def insertion_sort(nums):
 	for i in range(1, len(nums)):
-		val = nums[i]
-		while nums[i-1] > val and i > 0:
-			nums[i], nums[i-1] = nums[i-1], val
+		while nums[i-1] > nums[i] and i > 0:
+			nums[i], nums[i-1] = nums[i-1], nums[i]
 			i -= 1
 	return nums
 
