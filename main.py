@@ -1,60 +1,56 @@
-class HashTable:
-    def __init__(self, size=10):
-        self.size = size
-        self.table = [[] for _ in range(self.size)]
-    
-    def _hash(self, key):
-        return sum(ord(char) for char in str(key)) % self.size
-    
-    def insert(self, key, value):
-        index = self._hash(key)
-        bucket = self.table[index]
-        for i, (k, v) in enumerate(bucket):
-            if k == key:
-                bucket[i] = (key, value)
-                return
-        bucket.append((key, value))
-    
-    def get(self, key):
-        index = self._hash(key)
-        bucket = self.table[index]
-        for k, v in bucket:
-            if k == key:
-                return v
-        return None
-    
-    def remove(self, key):
-        index = self._hash(key)
-        bucket = self.table[index]
-        
-        for i, (k, v) in enumerate(bucket):
-            if k == key:
-                bucket.pop(i)
-                return True
-        return False
-    
-    def resize(self):
-        new_size = self.size * 2
-        new_table = [[] for _ in range(new_size)]
-        for bucket in self.table:
-            for k, v in bucket:
-                index = hash(k) % new_size
-                new_table[index].append((k, v))
-        
-        self.table = new_table
-        self.size = new_size
-    
-    def __str__(self):
-        return str(self.table)
+# [20, 13, 3, 3, 4, 5, 1, 2, 8, 7, 9, 0, 11]
+# ├── Left: [20, 13, 3, 3, 4, 5]
+# │   ├── Left: [20, 13, 3]
+# │   │   ├── Left: [20]
+# │   │   └── Right: [13, 3]
+# │   │       ├── [13]
+# │   │       └── [3]
+# │   └── Right: [3, 4, 5]
+# │       ├── Left: [3]
+# │       └── Right: [4, 5]
+# │           ├── [4]
+# │           └── [5]
+# └── Right: [1, 2, 8, 7, 9, 0, 11]
+#     ├── Left: [1, 2, 8]
+#     │   ├── [1]
+#     │   └── [2, 8]
+#     │       ├── [2]
+#     │       └── [8]
+#     └── Right: [7, 9, 0, 11]
+#         ├── Left: [7, 9]
+#         │   ├── [7]
+#         │   └── [9]
+#         └── Right: [0, 11]
+#             ├── [0]
+#             └── [11]
 
-ht = HashTable()
-ht.insert("name", "Alice")
-ht.insert("age", 25)
-ht.insert("city", "Wonderland")
+# [20, 13, 3, 3, 4, 5]            [1, 2, 8, 7, 9, 0, 11]
+#   [20, 13, 3]   [3, 4, 5]      [1, 2, 8]    [7, 9, 0, 11]
+#     [20] [13, 3] [3] [4, 5]   [1] [2, 8]    [7] [9, 0, 11]
+#          [13] [3]            [2] [8]        [9, 0, 11]
 
-print(ht.get("name")) 
-print(ht.get("age")) 
 
-ht.remove("age")
-print(ht.get("age"))
-print(ht)
+nums = [20, 13, 3, 3, 4, 5, 1, 2, 8, 7, 9, 0, 11]
+
+def merge_sort(arr):
+  if len(arr) < 2:
+    return arr
+  m = len(arr) // 2
+  return merge(merge_sort(arr[:m]), merge_sort(arr[m:]))
+
+def merge(left, right):
+  res = []
+  l = r = 0
+  while l < len(left) and r < len(right):
+    if left[l] < right[r]:
+      res.append(left[l])
+      l+=1
+    else:
+      res.append(right[r])
+      r+=1
+  res.extend(left[l:])
+  res.extend(right[r:])
+  return res
+
+print('Merge Sort:')
+print(merge_sort(nums))
