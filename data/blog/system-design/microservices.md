@@ -1,9 +1,9 @@
 ---
-title: 'System Design: Micro Service Architecture'
+title: 'System Design: Containerization of Microservices using Docker'
 date: '2022-09-01'
 tags: ['System Design', 'Micro Services', 'Docker']
 draft: false
-summary: 'How to create a microservice. Example micro service using NPM, ExpressJS, NodeJS, and Docker.'
+summary: 'How to containerize multiple microservices using Docker for cloud deployment. With using NPM, ExpressJS, NodeJS, and Docker we create two microservices that work together to create a web app which help users learn about the wizards of Hogwarts'
 layout: PostSimple
 bibliography: references-data.bib
 ---

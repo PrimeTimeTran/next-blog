@@ -1,6 +1,6 @@
 ---
 draft: false
-title: Flask
+title: 'System Design: Build a web API with Flask'
 date: '2019-08-20'
 tags: ['System Design', 'Flask', 'Python']
 summary: Create a web api using Flask, a micro web framework written in Python
