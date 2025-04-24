@@ -9,7 +9,7 @@ bibliography: references-data.bib
 canonicalUrl:
 ---
 
-### Intro
+# Introduction
 
 ![Cover](https://i.imgur.com/XBydqcI.jpg)
 I got the paperback version which felt good.

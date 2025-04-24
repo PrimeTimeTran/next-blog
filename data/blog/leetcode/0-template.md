@@ -120,7 +120,9 @@ Please comment a better solution if you have one.
   </div>
   <div id="#1" className="tabcontent">
     ```js {} showLineNumbers
+
     ```
+
   </div>
 
   <div id="#2" className="tabcontent">

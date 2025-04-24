@@ -161,7 +161,6 @@ class User < ApplicationRecord
     end
   end
 end
-
 ```
 
 Comments, relationships, and instance & class methods accounted for, our class becomes large and difficult to maintain.

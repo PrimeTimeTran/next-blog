@@ -1,7 +1,7 @@
 ---
 title: 'System Design: Micro Service Architecture'
 date: '2022-09-01'
-tags: ['Docker', 'Micro Services', 'System Design']
+tags: ['System Design', 'Micro Services', 'Docker']
 draft: false
 summary: 'How to create a microservice. Example micro service using NPM, ExpressJS, NodeJS, and Docker.'
 layout: PostSimple

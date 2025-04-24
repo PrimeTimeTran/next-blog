@@ -2,9 +2,17 @@
 draft: false
 title: Flask
 date: '2019-08-20'
-tags: ['Flask', 'Python']
+tags: ['System Design', 'Flask', 'Python']
 summary: Create a web api using Flask, a micro web framework written in Python
 ---
+
+# Introduction
+
+Over the years web frameworks of varying complexity have been developed.
+
+Among the simpler micro frameworks exist solutions such as Javascripts's [Express](https://expressjs.com/en/starter/installing.html), Ruby's [Sinatra](https://sinatrarb.com/), & Python's [Flask](https://flask.palletsprojects.com/en/stable/).
+
+In this post we'll take a look at [Flask](https://flask.palletsprojects.com/en/stable/).
 
 ## Create project directory
 
