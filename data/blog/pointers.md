@@ -38,7 +38,7 @@ int main() {
 
 We invoke `update()` which reassigns it's local `p` and then print the value of `x` after `update()()` returns. `10` prints because `x`'s value wasn't changed
 
-## Pass a pointer
+## Pass a reference/pointer
 
 How might we change the value of `x` from `update()`?
 
