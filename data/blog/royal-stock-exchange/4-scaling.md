@@ -1,14 +1,14 @@
 ---
-title: 'Royal Stock Exchange(RSE) - How to Scale Our System to Millions? - Part 4'
-date: '2023-06-12'
-tags: ['SQL', 'Redis', 'ElasticSearch']
 draft: false
+date: '2023-06-12'
+title: 'Royal Stock Exchange(RSE) - How to Scale Our System to Millions? - Part 4'
 summary: '10,000 ft overview on how we plan to scale to our first 1,000,000 concurrent users'
+tags: ['sql', 'Redis', 'ElasticSearch']
 bibliography: references-data.bib
 canonicalUrl:
 ---
 
-## Royal Stock Exchange(RSE) - How to Scale Our System? - Part 4
+# Introduction
 
 Scaling systems to accommodate large amounts of data and millions of concurrent users is a complex and challenging task.
 

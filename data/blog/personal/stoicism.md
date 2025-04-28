@@ -1,17 +1,14 @@
 ---
-title: 'Stoicism'
-date: '2020-03-02'
-tags: ['Life']
 draft: false
+date: '2020-03-02'
+title: 'Stoicism'
 summary: 'A way to live life which gives us a sense of control over the chaotic world. A philosophy which has stood the test of time and has been followed by emperors, presidents, politicians, athletes, artists and business tycoons alike.'
-layout: PostSimple
+tags: ['personal']
 bibliography: references-data.bib
 canonicalUrl:
 ---
 
-## Stoicism
-
-### Intro
+# Intro
 
 Stoicism is a philosophical tradition that was founded in Athens by Zeno of Citium in the early 3rd century BCE. It is a system of ethics that emphasizes the development of inner character and the exercise of rational control over one's emotions and desires. Stoicism holds that the goal of human life is to live in accordance with nature and to cultivate wisdom, integrity, and inner peace.
 
@@ -26,3 +23,5 @@ The Stoics also believed in the concept of "logos," or the universal reason that
 Finally, the Stoics believed in the idea of "fate" or "providence." This means that they believed that all events in the world, both good and bad, are predetermined by a higher power and that individuals have no control over them. However, they also believed that individuals do have control over how they respond to events and that they can choose to respond in a virtuous manner.
 
 In conclusion, Stoicism is a philosophical tradition that emphasizes the development of inner character, the exercise of rational control over one's emotions, and the cultivation of wisdom and virtue. By understanding and practicing the key concepts of Stoicism, individuals can strive towards a state of inner peace and harmony with the natural world.
+
+# Conclusion

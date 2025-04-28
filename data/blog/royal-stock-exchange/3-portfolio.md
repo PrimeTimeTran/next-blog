@@ -1,14 +1,14 @@
 ---
-title: 'Royal Stock Exchange(RSE) - First "Demo-able" Work - Part 3'
-date: '2023-06-11'
-tags: ['Flutter', '.NET', 'SQL']
 draft: false
+date: '2023-06-11'
+title: 'Royal Stock Exchange(RSE) - First "Demo-able" Work - Part 3'
 summary: 'Basic functionality of a stock exchange including Carousel Ticker, Line & Candlestick Charts, Portfolio page/screen & more.'
+tags: ['flutter', '.NET', 'sql']
 bibliography: references-data.bib
 canonicalUrl:
 ---
 
-## Royal Stock Exchange(RSE) - First "Demo-able" Work - Part 3
+# Introduction
 
 I've found a passion for learning about finance/trading recently.
 

@@ -1,16 +1,16 @@
 ---
-title: 'Royal Stock Exchange(RSE) - Building a Full Stack Stock Exchange - Part 1'
-date: '2023-05-20'
-tags: ['Flutter', '.NET', 'SQL', 'Entity Framework']
 draft: false
+date: '2023-05-20'
+title: 'Royal Stock Exchange(RSE) - Building a Full Stack Stock Exchange - Part 1'
 summary: 'Personal & Professional growth via building a stock exchange with .NET, Entity Framework, Flutter, Azure & more.'
+tags: ['flutter', '.NET', 'sql', 'entity framework']
 bibliography: references-data.bib
 canonicalUrl:
 ---
 
-## Royal Stock Exchange(RSE) - Building a Full Stack Stock Exchange - Part 1
+# Introduction
 
-Decided to build a stock exchange. I plan to master along the following:
+I decided to build a stock exchange. I plan to master along the following:
 
 - [.NET](https://dotnet.microsoft.com/en-us/download/dotnet/7.0)
 - [Flutter](https://flutter.dev/)

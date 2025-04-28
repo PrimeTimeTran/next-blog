@@ -1,14 +1,14 @@
 ---
-title: 'Royal Stock Exchange(RSE) - Seeding Stock Market data in SQL - Part 2'
-date: '2023-06-1'
-tags: ['SQL', 'SQL Server']
 draft: false
+date: '2023-06-1'
+title: 'Royal Stock Exchange(RSE) - Seeding Stock Market data in SQL - Part 2'
+tags: ['sql', 'sql server']
 summary: 'Seeding database records for our clients, understanding our records data types, and validating/designing relationships between resources.'
 bibliography: references-data.bib
 canonicalUrl:
 ---
 
-## Royal Stock Exchange(RSE) - Seeding Stock Market data in SQL - Part 2
+# Introduction
 
 It's always a good idea to have some reasonable dummy data for testing.
 

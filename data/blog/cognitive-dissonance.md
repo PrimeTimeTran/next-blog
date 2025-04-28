@@ -1,15 +1,14 @@
 ---
-title: 'Cognitive Dissonance: When schools of thought conflict'
-date: '2023-02-14'
-tags: ['Life']
 draft: false
+date: '2023-02-14'
+title: 'Cognitive Dissonance: When schools of thought conflict'
 summary: 'Every now and then we encounter ideas that by themselves seem great but upon deeper inspection we realize might not always be the care. A guide to navigating conflicting schools of thought on how to live life.'
-layout: PostSimple
+tags: ['personal']
 bibliography: references-data.bib
 canonicalUrl:
 ---
 
-### Intro
+# Intro
 
 Cognitive Dissonance: Navigating Conflicting Philosophies in Life
 
@@ -40,3 +39,5 @@ Modify Your Beliefs or Behaviors: Sometimes, it may be necessary to modify your 
 Conclusion
 
 Cognitive dissonance can be a source of stress and anxiety, but it can also be an opportunity for growth and personal development. By acknowledging the conflict, seeking new information, and modifying your beliefs or behaviors, you can navigate the dissonance between Marcus Aurelius' stoicism and Stephen Covey's principle and find a resolution to the mental struggle within. Remember, it's okay to change your beliefs and values as you grow and gain new experiences and insights.
+
+# Conclusion
