@@ -1,11 +1,9 @@
 ---
-title: 'How to create a closure in Ruby'
-date: '2022-10-24'
-tags: ['Ruby']
 draft: false
-summary: 'How to create a function which has access to variables defined outside
-its block scope'
-layout: PostSimple
+date: '2022-10-24'
+title: 'How to create a closure in Ruby'
+tags: ['functional programming', 'programming fundamentals', 'Ruby']
+summary: 'How to create a function which has access to variables defined outside its block scope'
 bibliography: references-data.bib
 canonicalUrl:
 ---

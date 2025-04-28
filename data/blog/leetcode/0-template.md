@@ -3,7 +3,7 @@ draft: true
 date: '2025-04-28'
 title: 'Data Structures & Algorithms'
 tags:
-  ['Data-Structures-Algorithms', 'Javascript', 'Typescript', 'Dart', 'Java', 'Python', 'Ruby', 'Go']
+  ['Data-Structures-Algorithms', 'javascript', 'typescript', 'dart', 'java', 'python', 'Ruby', 'go']
 summary: 'Solving programming problems in multiple languages to master syntax, data structures, and algorithms.'
 ---
 

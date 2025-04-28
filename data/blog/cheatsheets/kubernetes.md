@@ -1,10 +1,9 @@
 ---
-title: 'Kubernetes'
+draft: false
 date: '2022-09-02'
-tags: ['Kubernetes']
-draft: true
-summary: 'Kubernetes'
-layout: PostSimple
+title: 'Cheat Sheet: Kubernetes most useful commands'
+summary: 'Kubernetes commands to get you up and running quick & easy.'
+tags: ['Cheat Sheet', 'Kubernetes']
 bibliography: references-data.bib
 ---
 

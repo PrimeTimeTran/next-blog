@@ -1,15 +1,14 @@
 ---
-title: 'Object Oriented Programming'
-date: '2021-10-07'
-tags: ['OOP']
 draft: false
+date: '2021-10-07'
+title: 'Object Oriented Programming'
 summary: 'The principles which guide object oriented programming'
-layout: PostSimple
+tags: ['Data-Structures', 'OOP']
 bibliography: references-data.bib
 canonicalUrl:
 ---
 
-### Intro
+# Introduction
 
 Object-Oriented Programming (OOP) is a programming paradigm that focuses on organizing code into objects that represent real-world entities and the actions that can be performed on them. The objects can contain data (attributes) and behavior (methods) and interact with one another through method calls. OOP also uses concepts like inheritance and polymorphism, which allows objects of related classes to share attributes and behavior, and be treated as objects of their parent class. This helps to reduce code duplication and make code more modular, organized, and easier to maintain. OOP is a widely-used programming paradigm and is supported by many popular programming languages such as Java, Python, C++, and Ruby.
 

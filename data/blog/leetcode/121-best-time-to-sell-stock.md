@@ -2,7 +2,7 @@
 draft: false
 date: '2022-10-11'
 title: '121. Best Time to Buy and Sell Stock'
-tags: ['Leetcode', 'Javascript', 'Typescript', 'Python', 'Dart', 'Java', 'Go']
+tags: ['Leetcode', 'javascript', 'typescript', 'python', 'dart', 'java', 'go']
 summary: 'Solving Leetcode problems to syntax of multiple languages and data structures & algorithms.'
 ---
 

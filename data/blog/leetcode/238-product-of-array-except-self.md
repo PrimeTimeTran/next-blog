@@ -7,12 +7,12 @@ tags:
     'Leetcode',
     'Algorithms',
     'Data structures',
-    'Javascript',
-    'Typescript',
-    'Dart',
-    'Java',
-    'Python',
-    'Go',
+    'javascript',
+    'typescript',
+    'dart',
+    'java',
+    'python',
+    'go',
   ]
 summary: 'Solving programming problems in multiple languages to master syntax, data structures, and algorithms.'
 ---

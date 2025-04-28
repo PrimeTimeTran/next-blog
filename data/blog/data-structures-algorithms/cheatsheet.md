@@ -1,7 +1,7 @@
 ---
 title: 'Algorithmic Data Structures: A Quick Reference'
 date: '2020-04-24'
-tags: ['Data-Structures', 'Python']
+tags: ['Data-Structures', 'python']
 draft: false
 summary: 'Developing a better intuition on pointers & '
 bibliography: references-data.bib

@@ -1,7 +1,7 @@
 ---
 title: 'Django 101'
 date: '2022-10-07'
-tags: ['Django', 'Python']
+tags: ['Django', 'python']
 draft: false
 summary: 'How to setup a new Django project with from the CLI and initialize a new app.'
 layout: PostSimple

@@ -1,9 +1,9 @@
 ---
-title: Best VSCode shortcuts
-date: '2020-02-23'
-tags: ['Shortcuts', 'Hotkeys', 'VSCode']
 draft: false
-summary: VSCode hotkeys I use the most in my daily activity.
+date: '2020-02-23'
+title: "Cheat Sheet: VSCode's most useful commands/shortcuts"
+summary: 'VSCode commands & shortcuts to improve your productivity x10'
+tags: ['Cheat Sheet', 'VSCode']
 ---
 
 Must know VSCode hotkeys

@@ -1,10 +1,9 @@
 ---
-title: 'Setup Java & Spring Boot'
-date: '2022-10-14'
-tags: ['Java', 'Spring Boot']
 draft: false
+date: '2022-10-14'
+title: 'Setup Java & Spring Boot'
 summary: 'Requirements for setting up Java working environment using VSCode'
-layout: PostSimple
+tags: ['java', 'Spring Boot']
 bibliography: references-data.bib
 canonicalUrl:
 ---

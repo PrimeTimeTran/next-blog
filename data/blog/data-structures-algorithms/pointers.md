@@ -1,9 +1,9 @@
 ---
-title: 'Data Structures: Pointers in C'
-date: '2020-04-24'
-tags: ['Data-Structures-Algorithms', 'C']
 draft: false
-summary: 'Developing a better intuition on pointers & '
+date: '2020-04-24'
+title: 'Data Structures: Pointers in C'
+summary: 'Developing a better intuition on pointers & references'
+tags: ['Data-Structures', 'C']
 bibliography: references-data.bib
 canonicalUrl:
 ---
@@ -115,3 +115,7 @@ int main() {
     return 0;
 }
 ```
+
+# Conclusion
+
+By passing

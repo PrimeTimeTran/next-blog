@@ -1,10 +1,9 @@
 ---
-title: Expo Cheat Sheet
-date: '2023-05-1'
-tags: ['Shortcuts', 'Hotkeys', 'Cheat Sheet', 'Expo']
 draft: false
-summary: ''
-layout: PostSimple
+date: '2023-05-01'
+title: 'Cheat Sheet: Expo'
+summary: 'Expo commands to get you up and running quick & easy.'
+tags: ['Cheat Sheet', 'Expo']
 bibliography: references-data.bib
 canonicalUrl:
 ---

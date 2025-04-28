@@ -1,7 +1,7 @@
 ---
 title: 'Sorting Algorithms'
 date: '2022-08-18'
-tags: ['Python']
+tags: ['python']
 draft: False
 summary: 'Sorting Algorithms'
 ---

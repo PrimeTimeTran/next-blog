@@ -13,7 +13,7 @@ const siteMetadata = {
   socialBanner: '/static/images/twitter-card.png',
   email: 'datloiboi@gmail.com',
   github: 'https://github.com/primeTimeTran',
-  twitter: 'https://twitter.com/PrimeTimeTrann',
+  // twitter: 'https://twitter.com/PrimeTimeTrann',
   facebook: 'https://www.facebook.com/profile.php?id=100012159429192',
   youtube: 'https://www.youtube.com/channel/UCjyU8uLVh77b5cc6adkYsow/videos',
   linkedin: 'https://www.linkedin.com/in/primetimetran',

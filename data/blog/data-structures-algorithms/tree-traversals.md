@@ -1,5 +1,5 @@
 ---
-title: 'Tree Traversals'
+title: 'Data Structures & Algorithms: Tree Traversals'
 date: '2024-04-20'
 tags: ['Data-Structures-Algorithms', 'Trees']
 draft: false

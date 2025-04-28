@@ -1,13 +1,18 @@
 ---
-title: 'Serverless CRUD app with AWS Lambda and DynamoDB'
-date: '2023-02-14'
-tags: ['AWS', 'Serverless', 'Lambda', 'DynamoDB']
 draft: false
+date: '2023-02-14'
+title: 'System Design: Serverless CRUD app with AWS Lambda and DynamoDB'
 summary: 'How to use AWS Lambda and DynamoDB'
-layout: PostSimple
+tags: ['System Design', 'AWS', 'Serverless', 'Lambda', 'DynamoDB']
 bibliography: references-data.bib
 canonicalUrl:
 ---
+
+# Introduction
+
+Serverless architecture has been the rage for a few years now.
+
+Implementing serverless architecture promises the benefits of siloing services so that individual teams can manage just what they're responsible for. This is opposed to the [majestic monolithic architecture](https://signalvnoise.com/svn3/the-majestic-monolith/) touted by DHH.
 
 ## AWS Lambda and Dynamo
 
@@ -38,7 +43,7 @@ Region
 
 CREATE
 
-```
+```sh
 curl -X "PUT" -H "Content-Type: application/json" -d "{\"id\": \"1\", \"price\": 0.99, \"name\": \"my next item\"}" https://pmojoazrx3.execute-api.us-east-1.amazonaws.com/items
 curl -X "PUT" -H "Content-Type: application/json" -d "{\"id\": \"2\", \"price\": 10.99, \"name\": \"my next item\"}" https://pmojoazrx3.execute-api.us-east-1.amazonaws.com/items
 curl -X "PUT" -H "Content-Type: application/json" -d "{\"id\": \"3\", \"price\": 100.99, \"name\": \"my next item\"}" https://pmojoazrx3.execute-api.us-east-1.amazonaws.com/items
@@ -46,12 +51,14 @@ curl -X "PUT" -H "Content-Type: application/json" -d "{\"id\": \"3\", \"price\":
 
 GET
 
-```
+```sh
 curl https://pmojoazrx3.execute-api.us-east-1.amazonaws.com/items
 ```
 
 DELETE item
 
-```
+```sh
 curl -X "DELETE" https://pmojoazrx3.execute-api.us-east-1.amazonaws.com/items/123
 ```
+
+# Conclusion

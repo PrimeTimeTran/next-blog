@@ -2,7 +2,7 @@
 draft: false
 date: '2022-10-17'
 title: '70. Climbing Stairs'
-tags: ['Leetcode', 'Javascript', 'Typescript', 'Dart', 'Java', 'Python', 'Go']
+tags: ['Leetcode', 'javascript', 'typescript', 'dart', 'java', 'python', 'go']
 summary: 'Solving programming problems in multiple languages to master syntax, data structures, and algorithms.'
 ---
 

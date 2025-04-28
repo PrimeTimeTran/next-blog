@@ -1,9 +1,9 @@
 ---
-title: Best Vim Shortcuts
-date: '2020-01-31'
-tags: ['Shortcuts', 'Hotkeys', 'Vim']
 draft: false
-summary: Must know Vim shortcuts.
+date: '2020-01-31'
+title: 'Cheat Sheet: VIMs most useful commands'
+summary: 'VIM commands to get you up and running quick & easy.'
+tags: ['Cheat Sheet', 'Vim']
 ---
 
 Must know Vim Shortcuts

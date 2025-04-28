@@ -1,9 +1,9 @@
 ---
-title: 'ES5 vs ES6'
-date: '2021-11-21'
-tags: ['Javascript']
 draft: true
+date: '2021-11-21'
+title: 'ES5 vs ES6'
 summary: 'ES5 vs ES6 var vs let'
+tags: ['programming fundamentals', 'javascript']
 ---
 
 ## ES5 vs ES6

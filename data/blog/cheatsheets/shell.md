@@ -1,8 +1,8 @@
 ---
-title: 'Shell Scripts'
-date: '2022-09-04'
-tags: ['Shell']
 draft: true
+date: '2022-09-04'
+title: 'Shell Scripts'
+tags: ['Shell']
 summary: 'Shell Scripts'
 layout: PostSimple
 canonicalUrl: https://tailwind-nextjs-starter-blog.vercel.app/blog/new-features-in-v1/

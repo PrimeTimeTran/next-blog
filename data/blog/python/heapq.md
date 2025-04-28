@@ -1,10 +1,9 @@
 ---
-title: 'Python: Useful Heap Methods'
-date: '2022-11-05'
-tags: ['Data structures', 'Heaps', 'Python']
 draft: false
-summary: 'A few methods on the heap datastructure'
-layout: PostSimple
+date: '2022-11-05'
+title: 'Python: Useful Heap Methods'
+tags: ['Data-Structures-Algorithms', 'Heaps', 'python']
+summary: 'A few methods on the heap data structure'
 bibliography: references-data.bib
 canonicalUrl:
 ---

@@ -2,7 +2,7 @@
 draft: false
 title: 'Data Structures & Algorithms: Sorting lists using python.'
 date: '2019-08-20'
-tags: ['Data-Structures-Algorithms', 'Python']
+tags: ['Data-Structures-Algorithms', 'python']
 summary: 'Commonly used sorting algorithms & their corresponding Big Os. Develop a better intuition on DSAs by examining canonical sorting algorithms in Python.'
 ---
 

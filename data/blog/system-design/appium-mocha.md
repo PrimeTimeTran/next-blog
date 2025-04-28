@@ -1,16 +1,20 @@
 ---
-title: 'Automated Integration Testing - Mobile - Appium & Mocha'
-date: '2023-08-20'
-tags: ['Appium', 'Mocha', 'Automation', 'React Native', 'Mobile']
 draft: false
+date: '2023-08-20'
+title: 'System Design: Automated Integration Testing with Appium & Mocha'
+tags: ['System Design', 'Appium', 'Mocha', 'Automation', 'React Native', 'Mobile']
 summary: 'Manually repeating these tests is costly and time consuming. Once created, automated tests can be run over and over again at no additional cost and they are much faster than manual tests. Automated software testing can reduce the time to run repetitive tests from days to hours.'
 bibliography: references-data.bib
 canonicalUrl:
 ---
 
-# Automated Testing
+# Introduction
 
-## Intro
+In order to build a robust app that can maintain velocity as product requirements grow teams have to implement an automated testing system.
+
+Although manual testing works for POCs or MVPs any application containing more than a handful of user personas should include automation as the number of edge cases for business logic often grow exponentially.
+
+## Automated Testing
 
 What is automated testing? Automated testing is the application of software tools to automate a human-driven manual process of reviewing and validating a software product. Most modern agile and DevOps software projects now include automated testing from inception.
 

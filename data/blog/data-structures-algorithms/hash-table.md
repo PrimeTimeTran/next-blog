@@ -2,7 +2,7 @@
 draft: false
 title: 'Data Structures & Algorithms: Create a custom Hash Table.'
 date: '2022-08-20'
-tags: ['Data-Structures-Algorithms', 'Python']
+tags: ['Data-Structures-Algorithms', 'python']
 summary: 'How to implement a custom Hash Table which is analogous to a dict'
 ---
 

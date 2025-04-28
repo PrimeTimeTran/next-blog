@@ -1,7 +1,7 @@
 ---
 title: "Data Structures & Algorithms: Dijkstra's Algorithm"
 date: '2020-04-24'
-tags: ['Data-Structures-Algorithms', 'Python']
+tags: ['Data-Structures-Algorithms', 'python']
 draft: false
 summary: 'Solving graph problems using'
 ---

@@ -1,15 +1,14 @@
 ---
-title: 'SQL Server setup using Azure SQL Edge Docker image'
-date: '2023-05-26'
-tags: ['SQL Server']
 draft: false
+date: '2023-05-26'
+title: 'System Design: SQL Server setup using Azure SQL Edge Docker image'
 summary: 'How to setup SQL Server using Azure SQL Edge docker image and check its working correctly. Snippets of TSQL'
-layout: PostSimple
+tags: ['System Design', 'SQL Server']
 bibliography: references-data.bib
 canonicalUrl:
 ---
 
-## Intro
+# Introduction
 
 A SQL Server setup guide.
 

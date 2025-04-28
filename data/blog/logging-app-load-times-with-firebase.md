@@ -1,14 +1,14 @@
 ---
-title: Logging app load times with Firebase
-date: '2023-07-02'
-tags: ['Firebase', 'Flutter', 'Dart']
 draft: false
-summary: "Usually an easy process but not always. 
-With Flutter & Firebase logging hasn't been straight forward. 
-The steps I've taken and the behavior I'm observing logging the duration of rootBundle.load() to Firebase."
+date: '2023-07-02'
+title: Logging app load times with Firebase
+summary: "Usually an easy process but not always. With Flutter & Firebase logging hasn't been straight forward. The steps I've taken and the behavior I'm observing logging the duration of rootBundle.load() to Firebase."
+tags: ['Firebase', 'Flutter', 'dart']
 bibliography: references-data.bib
 canonicalUrl:
 ---
+
+# Introduction
 
 ## Log Function Execution Duration
 
@@ -152,3 +152,5 @@ https://www.linkedin.com/posts/primetimetran_flutter-is-superior-to-react-native
 What are your thoughts RN family?
 
 Not hating on RN, I've used it since 2016 and it's helped me a lot in my life. Just sharing my observations and hoping to find some counter points.
+
+# Conclusion

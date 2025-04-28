@@ -1,10 +1,9 @@
 ---
-title: 'Python'
-date: '2021-7-22'
-tags: ['Python']
 draft: true
+date: '2021-7-22'
+title: 'python'
+tags: ['python']
 summary: 'Awesome Python modules'
-layout: PostSimple
 ---
 
 # Introduction

@@ -1,10 +1,9 @@
 ---
-title: 'Data Structures & Algorithms'
-date: '2022-10-07'
-tags: ['Data structures', 'Algorithms', 'Leetcode']
 draft: true
+date: '2022-10-07'
+title: 'Data Structures & Algorithms'
+tags: ['Cheat Sheet', 'Postgres']
 summary: 'Must know Postgres cli commands'
-layout: PostSimple
 bibliography: references-data.bib
 canonicalUrl:
 ---
