@@ -1,12 +1,12 @@
 ---
 draft: false
-date: '2022-10-13'
+date: '2022-10-12'
 title: '217. Contains Duplicate'
-tags: ['Leetcode', 'javascript', 'typescript', 'dart', 'java', 'python', 'go']
+tags: ['leetcode', 'javascript', 'typescript', 'dart', 'java', 'python', 'go']
 summary: 'Solving programming problems in multiple languages to master syntax, data structures, and algorithms.'
 ---
 
-## 217. Contains Duplicate
+# Description
 
 Given an integer array `nums`, return `true` if any value appears at least _twice_
 in the array, and return `false` if every element is _distinct_.

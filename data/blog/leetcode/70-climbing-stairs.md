@@ -1,12 +1,12 @@
 ---
 draft: false
-date: '2022-10-17'
+date: '2022-10-09'
 title: '70. Climbing Stairs'
-tags: ['Leetcode', 'javascript', 'typescript', 'dart', 'java', 'python', 'go']
+tags: ['leetcode', 'javascript', 'typescript', 'dart', 'java', 'python', 'go']
 summary: 'Solving programming problems in multiple languages to master syntax, data structures, and algorithms.'
 ---
 
-## 70. Climbing Stairs
+# Description
 
 You are climbing a staircase. It takes n steps to reach the top.
 

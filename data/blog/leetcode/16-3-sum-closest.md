@@ -2,11 +2,11 @@
 draft: false
 date: '2022-10-08'
 title: '16. 3Sum Closest'
-tags: ['Leetcode', 'javascript', 'typescript', 'dart', 'java', 'python', 'go']
+tags: ['leetcode', 'javascript', 'typescript', 'dart', 'java', 'python', 'go']
 summary: 'Solving programming problems in multiple languages to master syntax, data structures, and algorithms.'
 ---
 
-## 16. 3Sum Closest
+# Description
 
 Given an integer array nums of length `n` and an integer `target`, find three integers
 in nums such that the sum is _closest_ to target.

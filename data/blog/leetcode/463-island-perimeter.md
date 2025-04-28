@@ -1,24 +1,13 @@
 ---
 draft: true
-date: '2022-11-06'
+date: '2022-10-17'
 title: '463. Island Perimeter'
 tags:
-  [
-    'Leetcode',
-    'Algorithms',
-    'Data structures',
-    'javascript',
-    'typescript',
-    'dart',
-    'java',
-    'python',
-    'Ruby',
-    'go',
-  ]
+  ['data-structures-algorithms', 'javascript', 'typescript', 'dart', 'java', 'python', 'ruby', 'go']
 summary: 'Solving programming problems in multiple languages to master syntax, data structures, and algorithms.'
 ---
 
-## 463. Island Perimeter
+# Description
 
 You are given row x col grid representing a map where grid[i][j] = 1 represents land and grid[i][j] = 0 represents water.
 

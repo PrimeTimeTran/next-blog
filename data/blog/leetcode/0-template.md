@@ -3,11 +3,11 @@ draft: true
 date: '2025-04-28'
 title: 'Data Structures & Algorithms'
 tags:
-  ['data-structures-algorithms', 'javascript', 'typescript', 'dart', 'java', 'python', 'Ruby', 'go']
+  ['data-structures-algorithms', 'javascript', 'typescript', 'dart', 'java', 'python', 'ruby', 'go']
 summary: 'Solving programming problems in multiple languages to master syntax, data structures, and algorithms.'
 ---
 
-## #. Title
+# Description
 
 ### Solution
 
@@ -69,62 +69,4 @@ Short description
   </div>
 </div>
 
-### Questions? Concerns?
-
-Please comment a better solution if you have one.
-
-<div className="tab-group">
-  <div className="tab">
-    <button id="#1" className="tablinks">Brute Force - No DP</button>
-    <button id="#2" className="tablinks">Top Down - Memo</button>
-    <button id="#3" className="tablinks">Bottom Up - Tab</button>
-  </div>
-
-  <div id="#1" className="tabcontent">
-    ```js {} showLineNumbers
-
-    ```
-
-  </div>
-
-  <div id="#2" className="tabcontent">
-    ```js {} showLineNumbers
-
-    ```
-
-  </div>
-  <div id="#3" className="tabcontent">
-    ```js {} showLineNumbers
-
-    ```
-
-  </div>
-</div>
-
-<div className="tab-group">
-  <div className="tab">
-    <button id="#1" className="tablinks">Brute Force/No DP</button>
-    <button id="#2" className="tablinks">Top Down Memo</button>
-    <button id="#3" className="tablinks">Bottom Up - Tab</button>
-  </div>
-  <div id="#1" className="tabcontent">
-    ```js {} showLineNumbers
-
-    ```
-
-  </div>
-
-  <div id="#2" className="tabcontent">
-    ```js {} showLineNumbers
-
-    ```
-
-  </div>
-
-  <div id="#3" className="tabcontent">
-    ```js {} showLineNumbers
-
-    ```
-
-  </div>
-</div>
+# Conclusion

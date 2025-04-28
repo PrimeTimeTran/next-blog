@@ -1,12 +1,12 @@
 ---
 draft: false
-date: '2022-10-11'
+date: '2022-10-10'
 title: '121. Best Time to Buy and Sell Stock'
-tags: ['Leetcode', 'javascript', 'typescript', 'python', 'dart', 'java', 'go']
+tags: ['leetcode', 'javascript', 'typescript', 'python', 'dart', 'java', 'go']
 summary: 'Solving Leetcode problems to syntax of multiple languages and data structures & algorithms.'
 ---
 
-## 121. Best Time to Buy and Sell Stock
+# Description
 
 You are given an array prices where prices[i] is the price of a given stock on
 the ith day.

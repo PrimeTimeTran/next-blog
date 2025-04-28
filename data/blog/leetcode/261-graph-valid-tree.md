@@ -1,24 +1,13 @@
 ---
 draft: true
-date: '2022-11-12'
+date: '2022-10-16'
 title: 'data-structures-algorithms'
 tags:
-  [
-    'Leetcode',
-    'Algorithms',
-    'Data structures',
-    'javascript',
-    'typescript',
-    'dart',
-    'java',
-    'python',
-    'Ruby',
-    'go',
-  ]
+  ['data-structures-algorithms', 'javascript', 'typescript', 'dart', 'java', 'python', 'ruby', 'go']
 summary: 'Solving programming problems in multiple languages to master syntax, data structures, and algorithms.'
 ---
 
-## 261. Graph Valid Tree
+# Description
 
 ### Solution
 

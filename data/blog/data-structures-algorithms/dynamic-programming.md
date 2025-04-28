@@ -21,7 +21,7 @@ Here's a list of canonical problems used to study DP.
 - [7. Count Construct](#7-count-construct)
 - [8. All Construct](#8-all-construct)
 
-We'll implement solutions with Brute Force, Top-Down Memoization, & Bottom-Up Tabulation to develop our understanding of DP
+We'll implement solutions with **Brute Force**, **Top-Down Memoization**, & **Bottom-Up Tabulation** to develop our understanding of DP.
 
 | Approach               | Recursion | Cache/Table | Time  | Space        | Description                                     |
 | :--------------------- | :-------- | :---------- | :---- | :----------- | :---------------------------------------------- |
@@ -86,7 +86,7 @@ The function should return the n-th number of the fibonacci sequence.
   <div id="#3" className="tabcontent">
     ```js {} showLineNumbers
     // In this case we don't utilize recursion but tabulation to store values.
-    //We loop until we reach `n` at which point the `n` index contains our answer.
+    // We loop until we reach `n` at which point the `n` index contains our answer.
 
     const fib = (n) => {
       if (n <= 2) return 1

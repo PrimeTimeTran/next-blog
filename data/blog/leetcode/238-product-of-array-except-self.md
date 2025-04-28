@@ -3,21 +3,11 @@ draft: true
 date: '2022-10-13'
 title: 'data-structures-algorithms'
 tags:
-  [
-    'Leetcode',
-    'Algorithms',
-    'Data structures',
-    'javascript',
-    'typescript',
-    'dart',
-    'java',
-    'python',
-    'go',
-  ]
+  ['data-structures-algorithms', 'javascript', 'typescript', 'dart', 'java', 'python', 'ruby', 'go']
 summary: 'Solving programming problems in multiple languages to master syntax, data structures, and algorithms.'
 ---
 
-## 238. Product of Array Except Self
+# Description
 
 Given an integer array nums, return an array answer such that answer[i] is equal
 to the product of all the elements of nums except nums[i].

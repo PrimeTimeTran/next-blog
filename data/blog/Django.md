@@ -1,10 +1,9 @@
 ---
-title: 'Django 101'
-date: '2022-10-07'
-tags: ['Django', 'python']
 draft: false
+date: '2021-10-07'
+title: 'Django 101'
+tags: ['django', 'python']
 summary: 'How to setup a new Django project with from the CLI and initialize a new app.'
-layout: PostSimple
 bibliography: references-data.bib
 canonicalUrl:
 ---

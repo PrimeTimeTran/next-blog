@@ -1,24 +1,13 @@
 ---
 draft: true
-date: '2022-10-30'
+date: '2022-10-14'
 title: '252. Meeting Rooms'
 tags:
-  [
-    'Leetcode',
-    'Algorithms',
-    'Data structures',
-    'javascript',
-    'typescript',
-    'dart',
-    'java',
-    'python',
-    'Ruby',
-    'go',
-  ]
+  ['data-structures-algorithms', 'javascript', 'typescript', 'dart', 'java', 'python', 'ruby', 'go']
 summary: 'Solving programming problems in multiple languages to master syntax, data structures, and algorithms.'
 ---
 
-## 252 · Meeting Rooms
+# Description
 
 Given an array of meeting time intervals consisting of start and end times
 [[s1,e1],[s2,e2],...] (si < ei), determine if a person could attend all meetings.

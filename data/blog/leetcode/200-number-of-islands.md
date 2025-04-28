@@ -1,12 +1,12 @@
 ---
 draft: false
-date: '2022-10-26'
+date: '2022-10-11'
 title: '200. Number of Islands'
-tags: ['Leetcode', 'javascript', 'typescript', 'dart', 'java', 'python', 'Ruby', 'go']
+tags: ['leetcode', 'javascript', 'typescript', 'dart', 'java', 'python', 'ruby', 'go']
 summary: 'Solving programming problems in multiple languages to master syntax, data structures, and algorithms.'
 ---
 
-## 200. Number of Islands
+# Description
 
 Given an m x n 2D binary grid grid which represents a map of '1's (land) and
 '0's (water), return the number of islands.
