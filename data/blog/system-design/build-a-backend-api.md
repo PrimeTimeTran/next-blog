@@ -2,7 +2,7 @@
 draft: false
 date: '2019-08-20'
 title: 'System Design: Build a Backend API with Flask'
-summary: 'Create a web api using Flask, a micro web framework written in Python'
+summary: 'Create a web api using Flask, a micro web framework written in Python.'
 tags: ['system design', 'flask', 'python']
 ---
 

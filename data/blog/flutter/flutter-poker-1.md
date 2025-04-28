@@ -1,9 +1,9 @@
 ---
-title: How to build Poker with Flutter
-date: '2022-08-07'
-tags: ['Flutter', 'Tutorial']
 draft: true
+date: '2022-08-07'
+title: How to build Poker with Flutter
 summary: 'The steps I took to built a poker game with Flutter'
+tags: ['flutter', 'Tutorial']
 ---
 
 ## How to build Poker with Flutter?

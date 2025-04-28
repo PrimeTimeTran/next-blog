@@ -1,7 +1,7 @@
 ---
 title: Semantic Stoic
 date: '2023-01-29'
-tags: ['Flutter']
+tags: ['flutter']
 draft: false
 summary: 'Building a Duolingo/Quizlet/Leetcode/TikTok side project because I thought these apps were all awesome and wanted to combine attributes of each one of them into a single learning platform.'
 ---

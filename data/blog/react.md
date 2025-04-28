@@ -1,7 +1,7 @@
 ---
-title: 'React Native'
+title: 'react native'
 date: '2022-09-04'
-tags: ['React Native']
+tags: ['react native']
 draft: true
 summary: 'React Native Maps'
 layout: PostSimple

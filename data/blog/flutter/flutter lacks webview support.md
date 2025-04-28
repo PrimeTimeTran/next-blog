@@ -1,7 +1,7 @@
 ---
 title: Flutter lacks support for WebView
 date: '2023-01-20'
-tags: ['Flutter', 'TIL']
+tags: ['flutter', 'TIL']
 draft: true
 summary: Flutter works in many situations but it doesn't work for all.
 ---

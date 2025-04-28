@@ -1,7 +1,7 @@
 ---
 title: 'Flutter - Android app connection refused to local server when iOS & web work'
 date: '2021-03-29'
-tags: ['Flutter', 'Android']
+tags: ['flutter', 'Android']
 draft: false
 summary: 'Platform specific solution for Android connectivity issues while developing with Flutter.'
 bibliography: references-data.bib

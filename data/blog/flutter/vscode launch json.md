@@ -1,9 +1,9 @@
 ---
-title: 'How to configure VScode to launch Flutter simulator, emulator, chrome'
-date: '2023-07-22'
-tags: ['VSCode']
 draft: true
+date: '2023-07-22'
+title: 'How to configure VScode to launch Flutter simulator, emulator, chrome'
 summary: ''
+tags: ['VSCode']
 bibliography: references-data.bib
 canonicalUrl:
 ---

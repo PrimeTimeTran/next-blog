@@ -1,9 +1,9 @@
 ---
-title: 'React Native vs Flutter: Why Flutter is better than React Native'
-date: '2023-08-06'
-tags: ['Flutter', 'React Native']
 draft: false
+date: '2023-08-06'
+title: 'React Native vs Flutter: Why Flutter is better than React Native'
 summary: 'Flutter development simplifies mobile & web development in many ways. In this post I explain why with a few examples and sources. Learn the things which make Flutter superior to React Native.'
+tags: ['flutter', 'react native']
 bibliography: references-data.bib
 canonicalUrl:
 ---

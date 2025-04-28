@@ -3,7 +3,7 @@ draft: true
 date: '2023-05-16'
 title: 'React Native configuring Firebase dev and prod environments'
 summary: 'How to configure React Native to choose the correct Firebase configuration file based on the build environment.'
-tags: ['Firebase', 'React Native', 'iOS', 'Android']
+tags: ['Firebase', 'react native', 'iOS', 'Android']
 bibliography: references-data.bib
 canonicalUrl:
 ---

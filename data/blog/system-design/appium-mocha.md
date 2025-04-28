@@ -2,7 +2,7 @@
 draft: false
 date: '2023-08-20'
 title: 'System Design: Automated Integration Testing with Appium & Mocha'
-tags: ['system design', 'Appium', 'Mocha', 'Automation', 'React Native', 'Mobile']
+tags: ['system design', 'Appium', 'Mocha', 'Automation', 'react native', 'Mobile']
 summary: 'Manually repeating these tests is costly and time consuming. Once created, automated tests can be run over and over again at no additional cost and they are much faster than manual tests. Automated software testing can reduce the time to run repetitive tests from days to hours.'
 bibliography: references-data.bib
 canonicalUrl:
