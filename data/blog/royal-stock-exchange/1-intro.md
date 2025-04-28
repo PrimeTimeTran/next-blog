@@ -1,6 +1,6 @@
 ---
 draft: false
-date: '2023-05-20'
+date: '2020-05-20'
 title: 'Royal Stock Exchange(RSE) - Building a Full Stack Stock Exchange - Part 1'
 summary: 'Personal & Professional growth via building a stock exchange with .NET, Entity Framework, Flutter, Azure & more.'
 tags: ['flutter', '.NET', 'sql', 'entity framework']

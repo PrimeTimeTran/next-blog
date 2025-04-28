@@ -1,5 +1,5 @@
 ---
-draft: false
+draft: true
 date: '2023-02-14'
 title: 'Cognitive Dissonance: When schools of thought conflict'
 summary: 'Every now and then we encounter ideas that by themselves seem great but upon deeper inspection we realize might not always be the care. A guide to navigating conflicting schools of thought on how to live life.'

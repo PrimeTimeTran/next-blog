@@ -1,5 +1,5 @@
 ---
-draft: false
+draft: true
 date: '2020-03-02'
 title: 'Stoicism'
 summary: 'A way to live life which gives us a sense of control over the chaotic world. A philosophy which has stood the test of time and has been followed by emperors, presidents, politicians, athletes, artists and business tycoons alike.'
