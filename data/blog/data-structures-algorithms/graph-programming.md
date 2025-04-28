@@ -2,8 +2,8 @@
 draft: false
 title: 'Data Structures & Algorithms: Graph Theory 101'
 date: '2022-08-23'
-tags: ['Graph Theory']
-summary: 'A collection of Graph Coding problems and their solutions with Big O time complexity. Solutions include not only brute force but optimized solutions as well.'
+tags: ['data structures algorithms', 'graph theory']
+summary: 'A collection of graph coding problems and their solutions with Big O time complexity. Solutions include not only brute force but optimized solutions as well.'
 ---
 
 # Introduction

@@ -1,9 +1,9 @@
 ---
-title: 'Data Structures & Algorithms: Tree Traversals'
-date: '2024-04-20'
-tags: ['data-structures-algorithms', 'Trees']
 draft: false
-summary: 'Explanations on the most common traversal orders used with Binary trees.'
+date: '2024-04-20'
+title: 'Algorithms: Tree Traversals'
+tags: ['algorithms', 'data-structures-algorithms', 'trees']
+summary: 'Most common traversal orders used with binary trees.'
 ---
 
 # Introduction
@@ -12,7 +12,7 @@ Tree traversal algorithms are used to visit and process all nodes in a tree data
 
 There are three main types of tree traversal algorithms: `preorder`, `inorder`, and `postorder`.
 
-Each algorithm processes the nodes of the tree in a different order, resulting in different sequences of node visits.
+Each algorithm processes the nodes of the tree in a different order, resulting in a different sequence of node visits.
 
 ## Nodes
 
@@ -20,7 +20,7 @@ A tree data structure is a `node`. It can have one or more child `node`s.
 
 The tree's nodes have a `val` and potentially `left` & `right` if it's a binary tree.
 
-It's called a binary tree because it has at most 2 child nodes `left` & `right`.
+It's called a **binary** tree because it has at most 2 child nodes `left` & `right`.
 
 A node with neither `left` or `right` is considered a `leaf` node.
 
@@ -30,12 +30,6 @@ class Node:
 		self.val = key
 		self.left = None
 		self.right = None
-
-root = Node(1)
-root.left = Node(2)
-root.right = Node(3)
-root.left.left = Node(4)
-root.left.right = Node(5)
 ```
 
 # Traversals

@@ -1,19 +1,16 @@
 ---
 draft: false
 date: '2022-08-23'
-updated: '2025-04-19'
-title: Dynamic Programming
-tags: ['Dynamic Programming']
-summary: A collection of dynamic coding problems and their solutions with Big O time complexity saved for reference. Solutions include both brute force and optimized solutions.
+title: 'Algorithms: Dynamic Programming'
+tags: ['data structures algorithms', 'dynamic programming']
+summary: A review of dynamic programming and the techniques used to implement it including Brute Force, Top Down Memoization, & Bottom Up Tabulation.
 ---
 
 # Introduction
 
-Dynamic Programming(DP) is a problem-solving approach in computer science that optimizes recursive solutions by storing the results of subproblems to avoid recalculating them.
+Dynamic Programming(DP) is a problem-solving approach in computer science that optimizes solutions by storing the results of subproblems to avoid performing the same calculation repeatedly.
 
-# Problems
-
-We're going to solve the following problems using brute force, memoization, & tabulation.
+Here's a list of canonical problems used to study DP.
 
 - [1. Fibonacci](#1-fibonacci)
 - [2. Grid Traveler](#2-grid-traveler)
@@ -24,14 +21,13 @@ We're going to solve the following problems using brute force, memoization, & ta
 - [7. Count Construct](#7-count-construct)
 - [8. All Construct](#8-all-construct)
 
+We'll implement solutions with Brute Force, Top-Down Memoization, & Bottom-Up Tabulation to develop our understanding of DP
+
 | Approach               | Recursion | Cache/Table | Time  | Space        | Description                                     |
 | :--------------------- | :-------- | :---------- | :---- | :----------- | :---------------------------------------------- |
 | Brute Force (No DP)    | ❌        | ❌          | O(2ⁿ) | O(n)         | Tries all possibilities without storing results |
 | Top-Down (Memoization) | ✅        | ✅          | O(n)  | O(n) or more | Recursively solves subproblems, caching results |
 | Bottom-Up (Tabulation) | ❌        | ✅          | O(n)  | O(n)         | Iteratively builds solution from base cases     |
-
-In the following problems we'll come up with a solution using no DP, Top-Down Memoization, & Bottom-Up Tabulation as
-they're the most easily understandable techniques.
 
 ## 1. Fibonacci
 
@@ -890,7 +886,7 @@ The function should return a 2D array containing all of the ways that the `targe
   </div>
 </div>
 
-## Conclusion
+# Conclusion
 
 The covered DP patterns & a few more advanced ones.
 
