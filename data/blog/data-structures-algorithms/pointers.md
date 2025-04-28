@@ -2,8 +2,8 @@
 draft: false
 date: '2020-04-24'
 title: 'Data Structures: Pointers in C'
-summary: 'Developing a better intuition on pointers & references'
-tags: ['Data-Structures', 'C']
+summary: 'Developing a better intuition on pointers & references.'
+tags: ['data structures', 'pointers', 'C']
 bibliography: references-data.bib
 canonicalUrl:
 ---
