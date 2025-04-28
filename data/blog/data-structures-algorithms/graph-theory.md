@@ -2,11 +2,11 @@
 draft: true
 date: '2022-08-21'
 title: Intro to Graph Theory with Python
-tags: ['Algorithms', 'Data structures', 'Leet Code', 'Python']
+tags: ['Data-Structures-Algorithms']
 summary: 'An introduction to graph theory using Leet Code problems and Python'
 ---
 
-## Intro to Graph Theory with Python
+# Introduction
 
 To master algorithms, data structures, and Python I began working on [Leet Code](https://leetcode.com/).
 

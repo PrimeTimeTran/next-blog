@@ -1,7 +1,7 @@
 ---
 title: 'Data Structures: Pointers in C'
 date: '2020-04-24'
-tags: ['Data-Structures', 'C']
+tags: ['Data-Structures-Algorithms', 'C']
 draft: false
 summary: 'Developing a better intuition on pointers & '
 bibliography: references-data.bib

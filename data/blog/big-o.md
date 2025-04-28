@@ -9,7 +9,9 @@ canonicalUrl:
 
 # Introduction
 
-Most common cases of Big O a programmer should be aware of.
+The following are the most common cases of Big O a programmer should be aware of.
+
+They're sorted from best to worse case.
 
 ## 1. Constant - O(1)
 
@@ -46,6 +48,6 @@ Often seen in recursive problems that branch into two or more calls per step.
 The number of operations doubles with each additional input.
 Often seen in recursive problems that branch into two or more calls per step.
 
-## Conclusion
+# Conclusion
 
 Checkout [this cheatsheet](https://www.bigocheatsheet.com/) for more details.

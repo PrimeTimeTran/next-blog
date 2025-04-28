@@ -1,16 +1,18 @@
 ---
 draft: false
-title: Graph Theory for Programmers
+title: 'Data Structures & Algorithms: Graph Theory 101'
 date: '2022-08-23'
 tags: ['Graph Theory']
-summary: A collection of Graph Coding problems and their solutions with Big O time complexity. Solutions include not only brute force but optimized solutions as well.
+summary: 'A collection of Graph Coding problems and their solutions with Big O time complexity. Solutions include not only brute force but optimized solutions as well.'
 ---
+
+# Introduction
 
 ## Graph Theory for Programmers
 
 By solving several coding challenges we'll familiarize ourselves with the following concepts in [graph theory](https://en.wikipedia.org/wiki/Graph_theory#:~:text=In%20mathematics%2C%20graph%20theory%20is,also%20called%20links%20or%20lines).
 
-- nodes ands vertexes
+- nodes & vertexes
 - directed vs undirected
 - edges
 - dfs
@@ -429,3 +431,5 @@ console.log(minimumIsland(grid)) // -> 2
 ```
 
 Shout out to [Free Code Camp](https://www.youtube.com/watch?v=tWVWeAqZ0WU&t=1s&ab_channel=freeCodeCamp.org)
+
+# Conclusion

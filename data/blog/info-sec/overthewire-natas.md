@@ -4,8 +4,6 @@ date: '2023-04-19'
 tags: ['Info Sec', 'Linux']
 draft: false
 summary: "Walkthrough of each level of Over the Wire's Natas series. Its a game which helps players master web server vulnerabilities testing"
-bibliography: references-data.bib
-layout: PostSimple
 ---
 
 ## Natas

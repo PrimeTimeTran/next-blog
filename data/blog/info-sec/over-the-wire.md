@@ -1,11 +1,9 @@
 ---
 title: 'Over the Wire'
 date: '2022-09-27'
-tags: ['Security']
+tags: ['Info Sec', 'Security']
 draft: false
 summary: 'A fun tool for learning information security practices'
-bibliography: references-data.bib
-canonicalUrl: https://loi-tran-blog.netlify.app/blog/over-the-wire
 ---
 
 ## Information Security Practices & Linux

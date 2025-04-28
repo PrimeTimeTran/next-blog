@@ -2,18 +2,7 @@
 draft: false
 date: '2022-10-07'
 title: '1. Two Sum'
-tags:
-  [
-    'Leetcode',
-    'Algorithms',
-    'Data Structures',
-    'Javascript',
-    'Typescript',
-    'Dart',
-    'Java',
-    'Python',
-    'Go',
-  ]
+tags: ['Leetcode', 'Javascript', 'Typescript', 'Dart', 'Java', 'Python', 'Go']
 summary: 'Solving programming problems in multiple languages to master syntax, data structures, and algorithms.'
 ---
 

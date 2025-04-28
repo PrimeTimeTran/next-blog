@@ -1,0 +1,15 @@
+---
+draft: true
+date: '2022-08-20'
+title: What is concurrency in Go?
+tags: ['Go']
+summary: Concurrency is the ability of program to handle multiple tasks simultaneously. Go uses go routines to achieve this, also known as concurrency.
+---
+
+- Create project
+- Push code to Github
+- Deploy from Netlify UI
+  - Navigate to https://app.netlify.com/start
+  - Choose Github(or your connected hosting repo provider)
+- Choose Build command
+  - flutter/bin/flutter build web

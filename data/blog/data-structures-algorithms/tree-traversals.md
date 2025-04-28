@@ -1,7 +1,7 @@
 ---
 title: 'Tree Traversals'
 date: '2024-04-20'
-tags: ['DSA', 'Trees']
+tags: ['Data-Structures-Algorithms', 'Trees']
 draft: false
 summary: 'Explanations on the most common traversal orders used with Binary trees.'
 ---

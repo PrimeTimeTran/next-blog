@@ -1,7 +1,7 @@
 ---
 draft: true
 date: '2022-10-13'
-title: 'Data structures & Algorithms'
+title: 'Data-Structures-Algorithms'
 tags:
   [
     'Leetcode',

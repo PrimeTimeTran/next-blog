@@ -1,5 +1,5 @@
 ---
-title: 'Useful Heap Methods'
+title: 'Python: Useful Heap Methods'
 date: '2022-11-05'
 tags: ['Data structures', 'Heaps', 'Python']
 draft: false

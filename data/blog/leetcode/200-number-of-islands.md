@@ -2,19 +2,7 @@
 draft: false
 date: '2022-10-26'
 title: '200. Number of Islands'
-tags:
-  [
-    'Leetcode',
-    'Algorithms',
-    'Data structures',
-    'Javascript',
-    'Typescript',
-    'Dart',
-    'Java',
-    'Python',
-    'Ruby',
-    'Go',
-  ]
+tags: ['Leetcode', 'Javascript', 'Typescript', 'Dart', 'Java', 'Python', 'Ruby', 'Go']
 summary: 'Solving programming problems in multiple languages to master syntax, data structures, and algorithms.'
 ---
 

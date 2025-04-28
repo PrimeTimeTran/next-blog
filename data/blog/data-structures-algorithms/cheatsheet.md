@@ -79,6 +79,8 @@ Double ended queue
 
 ## Linked List
 
+A linear data structure where elements, called nodes, are linked together.
+
 ## Tree
 
 A data structure composed of nodes that contain values & leafs.
@@ -105,5 +107,12 @@ A binary search tree where the value of the left child is less than the parent n
 ### Trie(Prefix Tree)
 
 ## Graph
+
+Nodes & Edges.
+Node's are airports and edges are the flights between them.
+
+Furthermore graphs can be directed or undirected meaning that the flights can be listed as pointing from one airport to another or both ways(undirected).
+
+The edges can have weighted as well meaning that the edges from one node to another may vary in value. For example the price from an airport to airport a & b may differ.
 
 ## Union-Find(Disjoint Set)
