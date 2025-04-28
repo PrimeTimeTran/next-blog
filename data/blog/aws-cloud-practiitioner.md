@@ -1,11 +1,10 @@
 ---
-draft: false
-date: 2022-08-05T15:32:14Z
+draft: true
+date: 2022-08-05
 title: 'How do I prepare for a AWS Cloud Practitioner Certification?'
 summary: 'Steps to successfully prepare for the AWS Cloud Practitioner Certification'
-tags: ['AWS', 'Cloud Computing']
+tags: ['aws', 'cloud computing']
 bibliography: references-data.bib
-canonicalUrl: https://tailwind-nextjs-starter-blog.vercel.app/blog/new-features-in-v1/
 ---
 
 # Introduction
