@@ -101,3 +101,5 @@ It builds a graph `g` where each node maps to its outgoing edges.
 A priority queue (`pq`) always selects the next node with the smallest accumulated time.
 As nodes are visited (tracked in `seen`), the total travel time is updated.
 If all nodes are visited, it returns the maximum time taken; if not, it returns -1 indicating not all nodes are reachable.
+
+[Check out other Dijkstra Algorithm problems](/blog/data-structures-algorithms/algorithms/dijkstras)

@@ -23,12 +23,12 @@ The requirements sound simple enough but require a few advanced techniques to ar
 
 ### 1. Initialize Project
 
-We'll use [Nuxt](https://nuxt.com/) for this project as it's convention over configuration approach makes
+We'll use [Nuxt.JS](https://nuxt.com/) for this project as it's convention over configuration approach makes
 it a breeze to work with. Remember good old [Rails](https://rubyonrails.org/) anyone?!
 
 ```sh
-npm create nuxt nuxt_closure
-cd nuxt_closure
+npm create nuxt nuxt_auditing_system
+cd nuxt_auditing_system
 npm run dev
 ```
 
@@ -308,7 +308,7 @@ When resources are touched a hook will fire which ultimately records meta data t
 
   <div id="#2" className="tabcontent">
     ```js {} showLineNumbers
-    // .server/models/Audit.model.js
+    // .server/models/AuditLog.model.js
 
     import mongoose, { Schema } from 'mongoose'
 
@@ -369,7 +369,7 @@ When resources are touched a hook will fire which ultimately records meta data t
   </div>
   <div id="#4" className="tabcontent">
     ```js {} showLineNumbers {5, 21, 28}
-    // .server/models/Audit.js
+    // .server/models/Auditor.js
     import { closure } from '../middleware/02.audit.global.js'
 
     export class Auditor {
@@ -482,11 +482,3 @@ The general idea is a function that "remembers" a variable & returns a function 
 However this example is contrived. That's why I built this example auditing project/module because it demonstrates how closures can help to propagate values to places that we need them.
 
 Specifically, when the app is started we create a placeholder function, `closure()` which is fed into each of our system's resources/models. We do so in order to enable lifecycle hooks to access run time values which aren't available when the models are initialized. When `captureEvent` is triggered in our middleware it captures the request `event` containing requester meta data. Then in the event that a save, update or remove to our resource is triggered then the hook invokes the closure which was reassigned to the placeholder `closure()` encapsulating user data in the scope of the function calls.
-
-80,
-10, -70
-70, + 60
-15, - 55
-60, + 45
-20, - 40
-50, + 30
