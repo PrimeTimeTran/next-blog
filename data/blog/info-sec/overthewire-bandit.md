@@ -1,8 +1,8 @@
 ---
-title: 'Over The Wire - Bandit'
-date: '2022-11-02'
-tags: ['Info Sec', 'Linux']
 draft: false
+date: '2016-11-02'
+title: 'Guide: Over The Wire - Bandit'
+tags: ['guide', 'info sec', 'linux']
 summary: "Walkthrough of each level of Over the Wire's Bandit series. Its a CLI game which helps players master Linux, SSH, and much more."
 ---
 

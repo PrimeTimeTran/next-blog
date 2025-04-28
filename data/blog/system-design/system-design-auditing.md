@@ -1,7 +1,7 @@
 ---
 title: 'System Design: Build a auditing solution for collecting metadata on users of your system.'
 date: '2025-04-20'
-tags: ['System Design', 'Nuxt.JS']
+tags: ['system design', 'Nuxt.JS']
 draft: false
 summary: "Create an auditing system for enterprise applications which tracks user requests, resources touched & action taken. Reuse logic by leveraging hooks so that code is clean & concise. By utilizing middlewares, events & closures we're able to capture the details of requests on all our resources without duplicating code."
 ---

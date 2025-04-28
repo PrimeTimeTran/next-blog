@@ -1,10 +1,9 @@
 ---
-title: How to stage part of a dirty file
-date: 2023-04-28
-tags: ['Git']
 draft: false
+date: 2023-04-28
+title: 'Guide: How to stage part of a dirty file'
 summary: When we want to commit part of a file to git we can!
-layout: PostSimple
+tags: ['guide', 'git']
 bibliography: references-data.bib
 canonicalUrl:
 ---

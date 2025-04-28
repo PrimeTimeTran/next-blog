@@ -1,8 +1,8 @@
 ---
-title: 'Over The Wire - Leviathan'
-date: '2023-04-17'
-tags: ['Info Sec', 'Linux']
 draft: false
+date: '2016-11-03'
+title: 'Guide: Over The Wire - Leviathan'
+tags: ['guide', 'info sec', 'linux']
 summary: "Walkthrough of each level of Over the Wire's Leviathan series. Its a CLI game which helps players master Linux, SSH, and much more."
 ---
 

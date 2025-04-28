@@ -1,8 +1,8 @@
 ---
-title: 'Over The Wire - Natas'
-date: '2023-04-19'
-tags: ['Info Sec', 'Linux']
 draft: false
+date: '2016-11-04'
+title: 'Guide: Over The Wire - Natas'
+tags: ['guide', 'info sec', 'linux']
 summary: "Walkthrough of each level of Over the Wire's Natas series. Its a game which helps players master web server vulnerabilities testing"
 ---
 
