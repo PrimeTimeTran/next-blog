@@ -1,8 +1,8 @@
 ---
-title: 'Fundamental Mobile Developer Skills'
-date: '2023-05-10'
-tags: ['Mobile']
 draft: false
+date: '2023-05-10'
+title: 'Fundamental Mobile Developer Skills'
+tags: ['mobile']
 summary: 'A list of the necessary skills to qualify as a mobile develop in a framework'
 bibliography: references-data.bib
 canonicalUrl:

@@ -1,14 +1,13 @@
 ---
-title: 'Graph Theory'
-date: '2022-08-21'
-tags: ['Graph']
 draft: true
+date: '2022-08-21'
+title: 'Graph Theory'
 summary: 'Exploring Graph Theory'
-layout: PostSimple
+tags: ['graph']
 bibliography: references-data.bib
 ---
 
-## Graph theory
+# Introduction
 
 ### Intro
 

@@ -2,7 +2,7 @@
 draft: false
 date: '2022-11-05'
 title: 'Python: Useful Heap Methods'
-tags: ['Data-Structures-Algorithms', 'Heaps', 'python']
+tags: ['data-structures-algorithms', 'Heaps', 'python']
 summary: 'A few methods on the heap data structure'
 bibliography: references-data.bib
 canonicalUrl:

@@ -1,7 +1,6 @@
 ---
 draft: true
 date: '2022-10-17'
-layout: PostSimple
 title: 'Regular Expressions'
 tags: ['Regular Expressions']
 summary: 'Regular Expressions for strings'

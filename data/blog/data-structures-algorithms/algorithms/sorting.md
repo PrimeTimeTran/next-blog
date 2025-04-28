@@ -1,8 +1,8 @@
 ---
 draft: false
-title: 'Data Structures & Algorithms: Sorting lists using python.'
 date: '2019-08-20'
-tags: ['Data-Structures-Algorithms', 'python']
+title: 'Algorithms: Bubble Sort, Selection Sort, Insertion Sort, & Merge Sort'
+tags: ['algorithms', 'data-structures-algorithms', 'python']
 summary: 'Commonly used sorting algorithms & their corresponding Big Os. Develop a better intuition on DSAs by examining canonical sorting algorithms in Python.'
 ---
 
@@ -17,7 +17,7 @@ We'll cover the following sorting algorithms.
 
 For our examples imagine `nums` represents the heights of players on a team.
 
-We want them ordered from **shortest** to **tallest**.
+We want them in ascending order from **shortest** to **tallest**.
 
 ## Bubble Sort
 

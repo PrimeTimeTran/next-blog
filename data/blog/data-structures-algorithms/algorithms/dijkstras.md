@@ -1,9 +1,9 @@
 ---
-title: "Data Structures & Algorithms: Dijkstra's Algorithm"
-date: '2020-04-24'
-tags: ['Data-Structures-Algorithms', 'python']
 draft: false
-summary: 'Solving graph problems using'
+date: '2025-04-28'
+title: "Algorithms: Dijkstra's Algorithm"
+summary: 'One of the most famous algorithms in the field of graph theory. Useful when finding the shortest paths between nodes in a weighted graph.'
+tags: ['algorithms', 'data-structures-algorithms', 'python']
 ---
 
 # Introduction
@@ -15,3 +15,5 @@ summary: 'Solving graph problems using'
 - [1514. Path with Maximum Probability](https://leetcode.com/problems/path-with-maximum-probability/description)
 - [2492. Minimum Score of a Path Between Two Cities](https://leetcode.com/problems/minimum-score-of-a-path-between-two-cities/description)
 - [332. Reconstruct Itinerary](https://leetcode.com/problems/reconstruct-itinerary)
+
+# Conclusion
