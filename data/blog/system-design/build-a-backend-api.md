@@ -203,9 +203,9 @@ Flask makes it a piece of cake to develop APIs.
 
 We designed a Backend API using Flask in the following way
 
-- Creating & Sourcing a python environment.
+- Creating & sourcing a python environment.
 - Defined app entrypoint `app.py`
 - Defined 3 routes.
   - `/`: A canonical `Hello World` route.
-  - `/wizards`: A route for querying our list of wizards & adding if we pass in a `name` key and `value`.
+  - `/wizards`: A route for displaying a list of wizards & adding if passed a `name` key and it's `value`.
   - `/api/wizards`: A route for returning JSON to clients which is more flexible than raw HTML.
