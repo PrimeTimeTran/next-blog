@@ -1,9 +1,9 @@
 ---
 draft: false
-title: 'Data Structures & Algorithms: Create a custom Hash Table.'
 date: '2022-08-20'
+title: 'Data Structures & Algorithms: How to create a Hash Table?'
+summary: 'How to implement a custom Hash Table, analogous to a dict, using simpler data types & a hash function.'
 tags: ['data-structures-algorithms', 'python']
-summary: 'How to implement a custom Hash Table which is analogous to a dict'
 ---
 
 ```python
@@ -13,7 +13,9 @@ class HashTable:
         self.table = [[] for _ in range(self.size)]
 
     def _hash(self, key):
-        return sum(ord(char) for char in str(key)) % self.size
+        val = sum(ord(char) for char in str(key)) % self.size
+        print(val)
+        return val
 
     def insert(self, key, value):
         index = self._hash(key)

@@ -1,25 +1,26 @@
 ---
 draft: false
-title: 'Data Structures & Algorithms: Graph Theory 101'
 date: '2022-08-23'
-tags: ['data structures algorithms', 'graph theory']
+title: 'Data Structures & Algorithms: Graph Theory 101'
 summary: 'A collection of graph coding problems and their solutions with Big O time complexity. Solutions include not only brute force but optimized solutions as well.'
+tags: ['data structures algorithms', 'graph theory']
 ---
 
 # Introduction
 
-## Graph Theory for Programmers
-
 By solving several coding challenges we'll familiarize ourselves with the following concepts in [graph theory](https://en.wikipedia.org/wiki/Graph_theory#:~:text=In%20mathematics%2C%20graph%20theory%20is,also%20called%20links%20or%20lines).
 
 - nodes & vertexes
-- directed vs undirected
 - edges
+- directed vs undirected
 - dfs
 - bfs
 - adjacency list
 - stack
 - queue
+- algorithms
+  - Dijkstras
+  - Union Find
 
 ![Directed vs Undirected](https://i.imgur.com/MZCysoV.png)
 

@@ -1,9 +1,9 @@
 ---
 draft: false
 date: '2022-08-08'
-title: How to build TikTok with Flutter? Part 2
+title: 'Project: How to build TikTok with Flutter? Part 2'
 summary: 'The steps I would take to clone TikTok using Flutter. Including project structure, navigation, code snippets & more.'
-tags: ['flutter']
+tags: ['project', 'flutter']
 ---
 
 ## How to build TikTok with Flutter?

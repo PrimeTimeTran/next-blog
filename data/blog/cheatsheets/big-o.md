@@ -1,6 +1,6 @@
 ---
 draft: False
-date: '2025-04-19'
+date: '2022-04-19'
 title: 'Cheat Sheet: Big O Notation'
 summary: "Big O Notation's common complexity cases."
 tags: ['cheat sheet', 'big o']

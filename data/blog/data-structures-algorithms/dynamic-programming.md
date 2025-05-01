@@ -410,34 +410,6 @@ If there is a tie for the shortest combination, you may return any one of the sh
 
 <div className="tab-group">
   <div className="tab">
-    <button id="#1" className="tablinks">Brute Force - No DP</button>
-    <button id="#2" className="tablinks">Top Down - Memo</button>
-    <button id="#3" className="tablinks">Bottom Up - Tab</button>
-  </div>
-
-  <div id="#1" className="tabcontent">
-    ```js {} showLineNumbers
-
-    ```
-
-  </div>
-
-  <div id="#2" className="tabcontent">
-    ```js {} showLineNumbers
-
-    ```
-
-  </div>
-  <div id="#3" className="tabcontent">
-    ```js {} showLineNumbers
-
-    ```
-
-  </div>
-</div>
-
-<div className="tab-group">
-  <div className="tab">
     <button id="#1" className="tablinks">Brute Force/No DP</button>
     <button id="#2" className="tablinks">Top Down Memo</button>
     <button id="#3" className="tablinks">Bottom Up - Tab</button>
@@ -885,7 +857,7 @@ The function should return a 2D array containing all of the ways that the `targe
 
   </div>
 </div>
-
+<br/>
 # Conclusion
 
 The covered DP patterns & a few more advanced ones.

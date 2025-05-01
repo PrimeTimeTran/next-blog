@@ -78,7 +78,7 @@ INSTALLED_APPS = [
 ]
 ```
 
-Eventually we'll define views insiide of templates with view partials.
+Eventually we'll define views inside of templates with view partials.
 
 ```sh
 .
