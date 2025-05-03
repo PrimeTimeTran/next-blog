@@ -8,6 +8,8 @@ tags: ['system design', 'docker', 'postgres']
 
 # Introduction
 
+[Github Repo](https://github.com/PrimeTimeTran/system_design_db_cluster)
+
 <img src="/static/gifs/db-replication-pgadmin.gif" alt="Completed" />
 
 A common requirement for building scalable systems is creating read replicas for high availability & load balancing.
