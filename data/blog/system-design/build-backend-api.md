@@ -1,8 +1,8 @@
 ---
 draft: false
-date: '2019-08-20'
+date: '2017-08-20'
 title: 'System Design: Build a Backend API with Flask'
-summary: 'Create a web api using Flask, a micro web framework written in Python.'
+summary: 'Create a RESTful web api using Flask, a micro web framework written in Python. Serve data to client side apps using REST & minimal setup thanks to the robust & simple Flask framework.'
 tags: ['system design', 'flask', 'python']
 ---
 
@@ -203,9 +203,9 @@ WARNING: This is a development server. Do not use it in a production deployment.
 
 # Conclusion
 
-Flask makes it a piece of cake to develop APIs.
+[Flask](https://flask.palletsprojects.com/en/stable/) makes it a piece of cake to develop APIs.
 
-We designed a Backend API using Flask in the following way
+We designed a Backend API using [Flask](https://flask.palletsprojects.com/en/stable/) in the following way
 
 - Creating & sourcing a python environment.
 - Defined app entrypoint `app.py`

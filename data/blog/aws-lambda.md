@@ -1,11 +1,10 @@
 ---
-draft: false
+draft: true
 date: '2023-02-14'
 title: 'System Design: Serverless CRUD app with AWS Lambda and DynamoDB'
 summary: 'How to use AWS Lambda and DynamoDB'
 tags: ['system design', 'AWS', 'Serverless', 'Lambda', 'DynamoDB']
 bibliography: references-data.bib
-canonicalUrl:
 ---
 
 # Introduction

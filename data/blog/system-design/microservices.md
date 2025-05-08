@@ -7,10 +7,9 @@ tags: ['system design', 'micro services', 'docker']
 bibliography: references-data.bib
 ---
 
-![Microservice](https://s1.gifyu.com/images/microservices.gif)
-
 # Introduction
 
+![Microservice](https://s1.gifyu.com/images/microservices.gif)
 [Github Repo](https://github.com/PrimeTimeTran/microservices/blob/main/api/app.js)
 
 In this tutorial we'll create a full stack web application following the micro service architecture.

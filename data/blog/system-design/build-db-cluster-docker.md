@@ -8,9 +8,8 @@ tags: ['system design', 'docker', 'postgres']
 
 # Introduction
 
-[Github Repo](https://github.com/PrimeTimeTran/system_design_db_cluster)
-
 <img src="/static/gifs/db-replication-pgadmin.gif" alt="Completed" />
+[Github Repo](https://github.com/PrimeTimeTran/system_design_db_cluster)
 
 A common requirement for building scalable systems is creating read replicas for high availability & load balancing.
 
@@ -32,7 +31,7 @@ We'll use [Docker](https://www.docker.com/) to containerize them so we can deplo
 2. Create Dockerized Replica DB:
    - a. Define Replica service.
    - b. Config replica service in `./db/init-replica.sh`.
-3. Check Primary & Replica DB with bash shell or PGAdmin:
+3. Check data replication from Master to Slave with shell or PGAdmin:
    - a. Test with bash shell.
    - b. Test with PGAdmin.
 
@@ -235,7 +234,7 @@ C. Grant permissions on init file, `.db/init-replica.sh`.
 chmod +x .db/init-replica.sh
 ```
 
-### 3. Check Primary & Replica DB with bash shell or PGAdmin:
+### 3. Check data replication from Master to Slave with shell or PGAdmin
 
 A. Restart docker container.
 
