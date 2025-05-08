@@ -213,3 +213,5 @@ We designed a Backend API using [Flask](https://flask.palletsprojects.com/en/sta
   - `/`: A canonical `Hello World` route.
   - `/wizards`: A route for displaying a list of wizards & adding if passed a `name` key and it's `value`.
   - `/api/wizards`: A route for returning JSON to clients which is more flexible than raw HTML.
+
+Learn how to cache responses using Redis with [this server-side cache tutorial](./build-api-cache).

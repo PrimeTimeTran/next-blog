@@ -1,8 +1,8 @@
 ---
 draft: false
-date: '2025-05-03'
+date: '2017-08-22'
 title: 'System Design: Build a Database Cluster with Primary(Master) & Read Replica(Slave)'
-summary: 'Create a DB Cluster which ensures high availability & fast responses with the use of a read Replica. Use Docker & Postgres to create a local database cluster.'
+summary: 'Create a DB Cluster which ensures high availability & fast responses with the use of a read Replica. Use Docker & Postgres to create a local database cluster where 1 DB is a master which we write to and 1 DB is a replica which copies data for higher availability & resiliency.'
 tags: ['system design', 'docker', 'postgres']
 ---
 

@@ -2,7 +2,7 @@
 draft: false
 date: '2017-08-21'
 title: 'System Design: Build a Server Side Cache'
-summary: "Caching responses to DB queries is a technique we can leverage to speed up server responses & ensure we're not overloading our DB by repeatedly querying the same data."
+summary: 'Implement a server-side cache for faster and scalable systems. Caching results to DB queries can speed up server responses & by not overloading our DB with duplicate queries.'
 tags: ['system design', 'redis', 'flask', 'python']
 ---
 
@@ -167,4 +167,4 @@ For data we want to cache we append to the Redis cache/database an object under 
 
 In this case we used a `sha256` from Python's `hashlib` lib. However you don't have to use that algorithm and can use your own.
 
-The cache was wrapped by a P.O.C. Flask Rest API which you can learn how to create in [this Flask API tutorial](./build-backend-api).
+The cache was wrapped by a minimal Flask REST API which you can learn how to create in [this Flask API tutorial](./build-backend-api).

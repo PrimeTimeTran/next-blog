@@ -2,9 +2,8 @@
 draft: false
 date: '2022-09-01'
 title: 'System Design: Containerization of Microservices using Docker'
-summary: 'How to containerize multiple microservices using Docker for cloud deployment. With using NPM, ExpressJS, NodeJS, and Docker we create two microservices that work together to create a web app which help users learn about the wizards of Hogwarts'
+summary: 'Containerize multiple services using Docker for cloud deployment. Using NPM, ExpressJS, NodeJS, and Docker we create two microservices that work together to create a web app which help users learn about the wizards of Hogwarts.'
 tags: ['system design', 'micro services', 'docker']
-bibliography: references-data.bib
 ---
 
 # Introduction

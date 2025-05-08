@@ -2,10 +2,8 @@
 draft: false
 date: '2023-08-20'
 title: 'System Design: Automated Integration Testing with Appium & Mocha'
-tags: ['system design', 'Appium', 'Mocha', 'Automation', 'react native', 'Mobile']
 summary: 'Manually repeating these tests is costly and time consuming. Once created, automated tests can be run over and over again at no additional cost and they are much faster than manual tests. Automated software testing can reduce the time to run repetitive tests from days to hours.'
-bibliography: references-data.bib
-canonicalUrl:
+tags: ['system design', 'Appium', 'Mocha', 'Automation', 'react native', 'Mobile']
 ---
 
 # Introduction
@@ -401,7 +399,7 @@ async function changeColors(driver) {
 async function fillAndSubmitForm(driver) {
   try {
     const el = await driver.$('android=new UiSelector().description("emailTextInput")')
-    await el.setValue('loi@coderschool.com')
+    await el.setValue('dev@ltran.net')
 
     const el2 = await driver.$('android=new UiSelector().description("passwordTextInput")')
     await el2.setValue('Abc123!')
@@ -442,7 +440,7 @@ await el2.setValue('Abc123')
 Run the integration test with an invalid email and notice we get a prompt for the email.
 
 ```js
-await el.setValue('loi@coderschool')
+await el.setValue('dev@ltran.net')
 ```
 
 These past two tests could be done easily with unit tests. We added them as proof of concept for inputting invalid data.
@@ -547,7 +545,7 @@ describe('Auth screen', function () {
     this.timeout(9000)
     try {
       const el = await driver.$(`~emailTextInput`)
-      await el.setValue('loi@coderschool')
+      await el.setValue('dev@ltran.net')
 
       const el2 = await driver.$(`~passwordTextInput`)
       await el2.setValue('Abc123!')
@@ -565,7 +563,7 @@ describe('Auth screen', function () {
     this.timeout(9000)
     try {
       const el = await driver.$(`~emailTextInput`)
-      await el.setValue('loi@coderschool.com')
+      await el.setValue('dev@ltran.net')
 
       const el2 = await driver.$(`~passwordTextInput`)
       await el2.setValue('Abc123')
@@ -583,7 +581,7 @@ describe('Auth screen', function () {
     this.timeout(9000)
     try {
       const el = await driver.$(`~emailTextInput`)
-      await el.setValue('loi@coderschool.com')
+      await el.setValue('dev@ltran.net')
 
       const el2 = await driver.$(`~passwordTextInput`)
       await el2.setValue('Abc123!')
@@ -604,7 +602,7 @@ describe('Auth screen', function () {
     this.timeout(9000)
     try {
       const el = await driver.$(`~emailTextInput`)
-      await el.setValue('loi@coderschool.com')
+      await el.setValue('dev@ltran.net')
 
       const el2 = await driver.$(`~passwordTextInput`)
       await el2.setValue('Abc123!')
