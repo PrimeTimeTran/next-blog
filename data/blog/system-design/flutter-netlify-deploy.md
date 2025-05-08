@@ -8,6 +8,8 @@ tags: ['system design', 'ci/cd', 'flutter']
 
 # Introduction
 
+<img src="/static/gifs/deploy-flutter-netlify.gif" alt="preview" />
+
 [Github Repo](https://github.com/PrimeTimeTran/system_design_deploy_flutter_netlify)
 
 1. Create new Flutter Project:
