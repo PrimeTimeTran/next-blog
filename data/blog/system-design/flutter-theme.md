@@ -1,8 +1,8 @@
 ---
 draft: false
 date: '2025-04-19'
-title: 'System Design: Light & Dark Mode in Flutter using Provider & Notify Listeners'
-summary: "How to add Light/Dark mode to a Flutter application quick and easy using Flutter's built in Provider & Notification modules."
+title: 'System Design: Add Dynamic Themes & Light/Dark Mode in Flutter using Provider & Notify Listeners'
+summary: "How to add Light/Dark mode to a Flutter application quick and easy using Flutter's built in Provider & Notification modules. Allow users to change the app's theme as well"
 tags: ['system design', 'flutter']
 ---
 

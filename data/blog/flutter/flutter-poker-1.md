@@ -6,7 +6,7 @@ summary: 'The steps I took to built a poker game with Flutter'
 tags: ['project', 'flutter', 'tutorial']
 ---
 
-## How to build Poker with Flutter?
+## Introduction
 
 [Github Repo](https://github.com/PrimeTimeTran/flutter-TikTok)
 
