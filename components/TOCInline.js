@@ -37,10 +37,15 @@ const TOCInline = ({
       heading.depth >= fromHeading && heading.depth <= toHeading && !re.test(heading.value)
   )
 
+  const getMarginClass = (depth) => {
+    const level = depth - 2 // because `##` is depth 2
+    return `ml-${level * 6}`
+  }
+
   const tocList = (
     <ul>
       {filteredToc.map((heading) => (
-        <li key={heading.value} className={`${heading.depth >= indentDepth && 'ml-6'}`}>
+        <li key={heading.value} className={getMarginClass(heading.depth)}>
           <a href={heading.url}>{heading.value}</a>
         </li>
       ))}
