@@ -52,7 +52,7 @@ export default function Snippets(params) {
       <LanguagePicker selectedLanguage={language} onLanguageChange={setLanguage} />
       <h1>Sorting Algorithms</h1>
       <div className="flex flex-row">
-        <div className="m-3 flex-1 border" style={snippetContainerStyle}>
+        <div className="m-3 flex-1 rounded border" style={snippetContainerStyle}>
           <CopyToClipboard text={snippets[language].bubbleSort.code} onCopy={handleCopy}>
             <button className="absolute top-2 right-2 rounded bg-gray-200 p-2 hover:bg-gray-300">
               <FiClipboard size={20} />
@@ -62,19 +62,19 @@ export default function Snippets(params) {
             {snippets[language].bubbleSort.code}
           </SyntaxHighlighter>
         </div>
-        <div className="m-3 flex-1 border" style={snippetContainerStyle}>
+        <div className="m-3 flex-1 rounded border" style={snippetContainerStyle}>
           <SyntaxHighlighter language={language} style={snippetStyle}>
             {snippets[language].selectionSort.code}
           </SyntaxHighlighter>
         </div>
       </div>
       <div className="flex flex-row">
-        <div className="m-3 flex-1 overflow-auto border" style={snippetContainerStyle}>
+        <div className="m-3 flex-1 overflow-auto rounded border" style={snippetContainerStyle}>
           <SyntaxHighlighter language={language} style={snippetStyle}>
             {snippets[language].insertionSort.code}
           </SyntaxHighlighter>
         </div>
-        <div className="m-3 flex-1 overflow-auto border" style={snippetContainerStyle}>
+        <div className="m-3 flex-1 overflow-auto rounded border" style={snippetContainerStyle}>
           <SyntaxHighlighter language={language} style={snippetStyle}>
             {snippets[language].mergeSort.code}
           </SyntaxHighlighter>
@@ -82,12 +82,12 @@ export default function Snippets(params) {
       </div>
       <h1>BFS & DFS</h1>
       <div className="flex flex-row">
-        <div className="m-3 flex-1 overflow-auto border" style={snippetContainerStyle}>
+        <div className="m-3 flex-1 overflow-auto rounded border" style={snippetContainerStyle}>
           <SyntaxHighlighter language={language} style={snippetStyle}>
             {snippets[language].bfs.code}
           </SyntaxHighlighter>
         </div>
-        <div className="m-3 flex-1 overflow-auto border" style={snippetContainerStyle}>
+        <div className="m-3 flex-1 overflow-auto rounded border" style={snippetContainerStyle}>
           <SyntaxHighlighter language={language} style={snippetStyle}>
             {snippets[language].dfs.code}
           </SyntaxHighlighter>
