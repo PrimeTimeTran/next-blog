@@ -1,11 +1,9 @@
 ---
 draft: false
-date: '2020-06-1'
+date: 2020-06-1
 title: 'Project: Royal Stock Exchange(RSE) - Seeding Stock Market data in SQL - Part 2'
-tags: ['projects', 'sql', 'sql server']
 summary: 'Seeding database records for our clients, understanding our records data types, and validating/designing relationships between resources.'
-bibliography: references-data.bib
-canonicalUrl:
+tags: ['project', 'sql', 'sql server']
 ---
 
 # Introduction

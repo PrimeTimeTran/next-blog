@@ -3,9 +3,7 @@ draft: false
 date: '2020-06-11'
 title: 'Project: Royal Stock Exchange(RSE) - First "Demo-able" Work - Part 3'
 summary: 'Basic functionality of a stock exchange including Carousel Ticker, Line & Candlestick Charts, Portfolio page/screen & more.'
-tags: ['projects', 'flutter', '.NET', 'sql']
-bibliography: references-data.bib
-canonicalUrl:
+tags: ['project', 'flutter', '.NET', 'sql']
 ---
 
 # Introduction

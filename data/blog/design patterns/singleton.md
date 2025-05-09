@@ -1,9 +1,9 @@
 ---
 draft: false
-date: 2017-12-31
+date: 2016-11-31
 title: 'Design Patterns: Singleton'
+summary: 'Ensures a class has only one instance, providing a single point of access for shared resources like logging, configuration, or database connections.'
 tags: ['design patterns']
-summary: 'What is the singleton design pattern?'
 ---
 
 # Introduction

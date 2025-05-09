@@ -1,11 +1,9 @@
 ---
 draft: false
 date: '2020-06-12'
-title: 'Projects: Royal Stock Exchange(RSE) - How to Scale Our System to Millions? - Part 4'
+title: 'Project: Royal Stock Exchange(RSE) - How to Scale Our System to Millions? - Part 4'
 summary: '10,000 ft overview on how we plan to scale to our first 1,000,000 concurrent users'
-tags: ['projects', 'sql', 'Redis', 'ElasticSearch']
-bibliography: references-data.bib
-canonicalUrl:
+tags: ['project', 'sql', 'redis', 'elasticsearch']
 ---
 
 # Introduction

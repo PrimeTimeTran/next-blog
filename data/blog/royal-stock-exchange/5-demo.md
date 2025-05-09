@@ -1,8 +1,8 @@
 ---
 draft: false
 date: '2020-06-15'
-title: 'Projects: Royal Stock Exchange(RSE) - Flutter Time Series with Sync Fusion Charts - Part 5'
-tags: ['projects', 'flutter', 'mobile']
+title: 'Project: Royal Stock Exchange(RSE) - Flutter Time Series with Sync Fusion Charts - Part 5'
+tags: ['project', 'flutter', 'mobile']
 summary: 'Seeding database records for our clients, understanding our records data types, and validating/designing relationships between resources.'
 bibliography: references-data.bib
 canonicalUrl:

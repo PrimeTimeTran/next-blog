@@ -1,9 +1,9 @@
 ---
 draft: false
-date: 2017-12-31
+date: 2016-11-31
 title: 'Design Patterns: Decorator'
+summary: 'Allows behavior to be dynamically added to individual objects without modifying their code, promoting flexibility and adherence to the open/closed principle.'
 tags: ['design patterns']
-summary: 'Extend the utility?'
 ---
 
 # Introduction
