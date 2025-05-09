@@ -1,12 +1,9 @@
 ---
-title: 'Data Structures & Algorithms in Python'
-date: '2023-02-25'
-tags: ['data-structures-algorithms']
 draft: false
+date: 2023-02-25
+title: 'Data Structures & Algorithms in Python'
 summary: 'Overview of a new book I got.'
-layout: PostSimple
-bibliography: references-data.bib
-canonicalUrl:
+tags: ['data-structures-algorithms']
 ---
 
 # Introduction
@@ -21,7 +18,7 @@ I like the use of colors throughout the book.
 Illustrations were beautifully done as well.
 
 ![Cover](https://i.imgur.com/5XMQ6Zs.jpg)
-The content was comprehensive, covering datastructures such as geospatial as an example.
+The content was comprehensive, covering data structures such as geo-spatial as an example.
 
 ![Cover](https://i.imgur.com/d5iSqWy.jpg)
 The paper which is thin though, resulting in being able to see through the pages.

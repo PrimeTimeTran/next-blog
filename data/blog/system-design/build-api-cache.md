@@ -1,9 +1,9 @@
 ---
 draft: false
-date: '2017-08-21'
+date: 2017-08-21
 title: 'System Design: Build a Server Side Cache'
 summary: 'Implement a server-side cache for faster and scalable systems. Caching results to DB queries can speed up server responses & by not overloading our DB with duplicate queries.'
-tags: ['system design', 'redis', 'flask', 'python']
+tags: ['system design', 'flask', 'python', 'redis']
 ---
 
 # Introduction

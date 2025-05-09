@@ -1,7 +1,7 @@
 ---
 draft: false
 date: '2022-08-20'
-title: 'System Design: Deploy Flutter Web App to production using Netlify'
+title: 'System Design: Flutter Web App Production Deployment with Netlify'
 summary: "Multi platform frameworks like Flutter means we can build web versions of our app simultaneously with mobile. Use Netlify to reach users on the web at the same time as iOS & Android by adding a few configurations and leveraging it's CI/CD pipeline to have web builds in no time."
 tags: ['system design', 'ci/cd', 'flutter']
 ---

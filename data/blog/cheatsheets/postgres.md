@@ -1,29 +1,24 @@
 ---
 draft: true
 date: '2022-10-07'
-title: 'Data Structures & Algorithms'
-tags: ['Cheat Sheet', 'Postgres']
+title: 'Cheat Sheet: Postgres'
+tags: ['cheat sheet', 'postgres']
 summary: 'Must know Postgres cli commands'
-bibliography: references-data.bib
-canonicalUrl:
 ---
 
-## 1. Two Sum leetcode
+# Introduction
 
-### Intro
+- Connect to database `postgres` as user `postgres`
 
-- connect
   `psql -d postgres -U postgres`
 
-- show all dbs
+- List all dbs
 
 `\list`
 
-- connect to db
+- Connect to db
 
 `\c example`
 
-- show dbs tables
+- List connected DB tables
   `\dt`
-
-- ``

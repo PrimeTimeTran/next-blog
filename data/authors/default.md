@@ -4,7 +4,7 @@ avatar: /static/images/avatar.png
 occupation: Solution Architect
 company: OSSU
 email: primetimetran@gmail.com
-twitter: https://twitter.com/PrimeTimeTrann
+# twitter: https://twitter.com/PrimeTimeTrann
 linkedin: https://www.linkedin.com/in/primetimetran
 github: https://github.com/primetimetran
 ---
@@ -23,16 +23,25 @@ I've worked in [booking/ticketing](https://vexere.com/),
 
 In this time I've become proficient with the following languages, tools, and technologies.
 
-HTML, CSS, JS, ES6, Ruby, Python, Dart, Java, Go, Linux,
+<h3>Languages & Tools</h3>
 
-Material, Bootstrap, Vuetify, Tailwind, SCSS, SASS, LESS,
+HTML, CSS, JS, ES6, Ruby, Python, Dart, Java, Go, Linux, Git, Bash.
 
-SQL, MySQL, MongoDB, Sequelize, Mongoose, ActiveRecord, GraphQL, GRPC, Bash, Git,
-Docker,
+<h3>Design Frameworks</h3>
 
-Ruby on Rails, Node, React, Vue, React Native, Flutter, Gatsby, Next, Jekyll, WordPress,
+Material, Bootstrap, Vuetify, Tailwind, SCSS, SASS, LESS.
 
-AWS, Firebase, Google Analytics, Heroku, Netlify Github Actions & more.
+<h3>Databases</h3>
+
+SQL, MySQL, SQL Server, MongoDB, Dynamo DB, ORMs including Active Record, Sequelize, Mongoose, Entity Framework.
+
+<h3>Frameworks</h3>
+
+Ruby on Rails, NodeJS, ReactJS, VueJS, React Native, Flutter, Gatsby, Next, Jekyll, WordPress, GraphQL, GRPC
+
+<h3>CI/CD & Cloud Infrastructure</h3>
+
+AWS, GCP, Firebase, Google Analytics, Heroku, Netlify, Docker, Github Actions & more.
 
 ---
 

@@ -4,9 +4,11 @@ date: '2023-05-10'
 title: 'Guide: Fundamental Mobile Developer Skills'
 summary: 'A list of the necessary skills to qualify as a mobile develop in a framework'
 tags: ['guide', 'mobile']
-bibliography: references-data.bib
-canonicalUrl:
 ---
+
+# Introduction
+
+My playbook on how to familiarize myself with a framework.
 
 ## Mobile Developer Checklist
 
@@ -24,33 +26,28 @@ for proficiently at using that framework.
 
 ### Intro
 
+- How to run emulator/simulator on local & device:
+- How to view request logs:
 - Navigation
 
-  - Bottom tab
-  - Drawer/Sidebar
   - Stack
+  - Drawer
+  - Tab
 
-- Render UI elements such as text, images, icons
+- Render UI elements such as text, images, icons:
 
-  - Change text/image/icon size
-  - Change text/image/icon color
+  - Change text/image/icon attributes such as size, style, color
 
-- Fetch data.
+- Fetch data:
 
-- Store global state.
+- Store global state:
 
-- Importing/exporting files/libraries.
+- Importing/Exporting Syntax:
 
-- How to run emulator/simulator on local & device.
+- How to create development vs release builds:
 
-- How to create development vs release builds.
-
-- How to provision profiles on both iOS and Android.
+- How to provision profiles on both iOS and Android:
 
 - Configure schemes & variants for iOS and Android respectively.
 
-- How to build development & release builds.
-
 - How to troubleshoot connectivity issues.
-
-- How to view request logs.

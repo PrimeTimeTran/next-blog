@@ -1,12 +1,12 @@
 ---
-title: 'What is the decorator design pattern?'
-date: '2017-12-31'
-tags: ['Design Patterns']
 draft: false
-summary: 'What is the decorator design pattern?'
+date: 2017-12-31
+title: 'Design Patterns: Decorator'
+tags: ['design patterns']
+summary: 'Extend the utility?'
 ---
 
-## Decorator Design Pattern
+# Introduction
 
 The decorator pattern is used to define additional functionality on a resource.
 
@@ -16,46 +16,12 @@ In Ruby & Rails the [Draper](https://github.com/drapergem/draper) gem can be use
 
 Imagine for example, a User resource in a Ruby on Rails application
 
-```ruby
- # frozen_string_literal: true
-
-# == Schema Information
-#
-# Table name: users
-#
-#  id                     :bigint(8)        not null, primary key
-#  email                  :string
-#  encrypted_password     :string           default(""), not null
-#  reset_password_token   :string
-#  reset_password_sent_at :datetime
-#  remember_created_at    :datetime
-#  sign_in_count          :integer          default(0), not null
-#  current_sign_in_at     :datetime
-#  last_sign_in_at        :datetime
-#  current_sign_in_ip     :inet
-#  last_sign_in_ip        :inet
-#  first_name             :string
-#  last_name              :string
-#  created_at             :datetime         not null
-#  updated_at             :datetime         not null
-#  city                   :string
-#  country                :string
-#  occupation             :string
-#  description            :text
-#  age                    :integer
-#  phone_number           :string
-#  gender                 :integer
-#
-
+```ruby:./app/models/user.rb showLineNumbers
 class User < ApplicationRecord
   validates :email, presence: true, format: { with: /\A.+@.+$\Z/ }, uniqueness: true, unless: ->(user) {
     user.social_signon != nil
   }
-  attr_accessor :skip_password_validation  # virtual attribute to skip password validation while saving
-
-  # Include default devise modules. Others available are:
-  # :confirmable, :lockable, :timeoutable and :omniauthable
-  devise :database_authenticatable, :registerable,
+  attr_accessor :skip_password_validation
          :recoverable, :rememberable, :trackable, :validatable
 
   has_many :uploads, as: :uploadable, dependent: :destroy
@@ -123,7 +89,6 @@ class User < ApplicationRecord
     user_reports.create(params)
   end
 
-  # OPTIMIZE Find a users existing conversation with another user more efficiently
   def find_existing_conversation(id)
     conversation_id =
       private_conversations
@@ -177,8 +142,7 @@ rails generate decorator User
 
 And we'll see that a decorator file is generated.
 
-```ruby
-# app/decorators/user.rb
+```ruby:./app/decorators/user.rb showLineNumbers
 class UserDecorator < Draper::Decorator
   delegate_all
 
@@ -188,8 +152,7 @@ end
 
 After that, we'd just need to call `.decorate` in our controllers before sending the resources to the view layer.
 
-```ruby
-# app/controllers/users_controller.rb
+```ruby:./controllers/users_controller.rb showLineNumbers
 def index
   @users = User.all
 end
@@ -203,8 +166,7 @@ end
 
 In the decorator we can presentation logic.
 
-```ruby
-# app/decorators/user.rb
+```ruby:./app/decorators/user.rb showLineNumbers
   def full_name
     if object.first_name && object.last_name
       "#{object.first_name} #{object.last_name}"
@@ -242,7 +204,9 @@ In the decorator we can presentation logic.
 
 The logic isn't that complicated, but if we performed this type of conditional checks in our partials we might find that the same logic was repeated quickly.
 
-### The Decorator Design Pattern does the following
+# Conclusion
+
+The Decorator Design Pattern does the following:
 
 - Extracts conditional logic out of the front end partials.
 

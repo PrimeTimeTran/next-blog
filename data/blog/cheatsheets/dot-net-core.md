@@ -1,8 +1,8 @@
 ---
 draft: false
 date: '2023-03-27'
-title: '.NET Cheatsheet'
-tags: ['Cheat Sheet', '.NET']
+title: 'Cheatsheet: .NET'
+tags: ['cheat sheet', '.NET']
 summary: '.NET commands & shortcuts to get you up and running quick & easy.'
 layout: PostSimple
 bibliography: references-data.bib

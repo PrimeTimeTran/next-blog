@@ -1,12 +1,12 @@
 ---
 draft: false
-date: '2022-10-14'
+date: 2022-10-14
 title: 'Setup Java & Spring Boot'
 summary: 'Requirements for setting up Java working environment using VSCode'
-tags: ['java', 'Spring Boot']
-bibliography: references-data.bib
-canonicalUrl:
+tags: ['java', 'spring']
 ---
+
+# Introduction
 
 A Bank of America recruiter reach out to me today asking if I'd be
 interested in an opportunity there.

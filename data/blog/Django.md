@@ -1,12 +1,12 @@
 ---
-draft: false
-date: '2021-10-07'
+draft: true
+date: 2021-10-07
 title: 'Django 101'
-tags: ['django', 'python']
 summary: 'How to setup a new Django project with from the CLI and initialize a new app.'
-bibliography: references-data.bib
-canonicalUrl:
+tags: ['django', 'python']
 ---
+
+# Introduction
 
 ## Starting a new role
 

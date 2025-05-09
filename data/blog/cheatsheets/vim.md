@@ -1,7 +1,7 @@
 ---
 draft: false
-date: '2020-01-31'
-title: 'Cheat Sheet: VIMs most useful commands'
+date: 2017-11-12
+title: 'Cheat Sheet: VIM commands/shortcuts'
 summary: 'VIM commands to get you up and running quick & easy.'
 tags: ['Cheat Sheet', 'Vim']
 ---

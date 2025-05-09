@@ -1,11 +1,9 @@
 ---
 draft: false
-date: 2022-07-07
-title: 'Cheat Sheet: Jetbrains most useful shortcuts'
+date: 2017-11-12
+title: 'Cheat Sheet: Jetbrains commands/shortcuts'
 summary: 'Jetbrains commands/shortcuts to get you up and running quick & easy within their family of IDEs including DataGrip, RubyMine, PyCharm, PhpStorm, IntelliJ & more'
 tags: ['Cheat Sheet', 'JetBrains']
-bibliography: references-data.bib
-canonicalUrl:
 ---
 
 ## Must know JetBrains/Android Studio shortcuts

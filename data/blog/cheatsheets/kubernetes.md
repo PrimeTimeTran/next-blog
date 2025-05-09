@@ -1,11 +1,12 @@
 ---
 draft: false
-date: '2022-09-02'
-title: 'Cheat Sheet: Kubernetes most useful commands'
+date: 2017-11-12
+title: 'Cheat Sheet: Kubernetes commands/shortcuts'
 summary: 'Kubernetes commands to get you up and running quick & easy.'
 tags: ['Cheat Sheet', 'Kubernetes']
-bibliography: references-data.bib
 ---
+
+# Introduction
 
 Start local cluster
 
@@ -109,3 +110,5 @@ Expose deployment `deployment/hello-world` on port 80 to host machine
 ```sh
 kubectl expose deployment/hello-world --type="NodePort" --port 80
 ```
+
+# Conclusion

@@ -1,12 +1,12 @@
 ---
-title: 'Virtual Machines(VM) on ARM64 MacOS'
-date: '2023-05-13'
-tags: ['Info-Sec', 'VMs', '.NET']
 draft: false
+date: 2016-05-13
+title: 'Guide: Virtual Machines(VM) on ARM64 MacOS'
 summary: 'How to install a virtual machine on an M1 Mac/ARM64 machine'
-bibliography: references-data.bib
-canonicalUrl:
+tags: ['guide', 'info-sec', 'VMs']
 ---
+
+# Introduction
 
 ## UTM
 

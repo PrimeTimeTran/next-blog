@@ -1,8 +1,8 @@
 ---
 draft: false
-date: '2020-02-23'
-title: "Cheat Sheet: VSCode's most useful commands/shortcuts"
-summary: 'VSCode commands & shortcuts to improve your productivity x10'
+date: 2017-11-12
+title: 'Cheat Sheet: VSCode commands/shortcuts'
+summary: 'VSCode commands to get you up and running quick & easy.'
 tags: ['Cheat Sheet', 'VSCode']
 ---
 

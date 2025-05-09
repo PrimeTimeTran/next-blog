@@ -1,12 +1,12 @@
 ---
-title: 'Over the Wire'
-date: '2022-09-27'
-tags: ['Info Sec', 'Security']
 draft: false
-summary: 'A fun tool for learning information security practices'
+date: 2016-11-01
+title: 'Introduction: Over the Wire'
+tags: ['info-sec']
+summary: 'OverTheWire is an online platform that hosts a collection of war-games designed to teach security concepts, Linux command-line skills, and basic hacking techniques in a hands-on way. The games are structured to progressively increase in difficulty, helping users learn and practice:'
 ---
 
-## Information Security Practices & Linux
+# Introduction
 
 I discovered [Over The Wire](https://overthewire.org/wargames/) a while back
 and have been working on their problems.

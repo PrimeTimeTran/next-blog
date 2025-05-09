@@ -250,7 +250,7 @@ Add the following variable to your `.env` file.
 
 ```js
 // ./.env
-MONGODB_URI = 'mongodb://localhost:27017/nuxt-closure'
+MONGODB_URI = 'mongodb://localhost:27017/user-audit'
 ```
 
 ### 9. Add Models for Auditing

@@ -1,6 +1,6 @@
 ---
 draft: false
-date: '2023-05-01'
+date: 2017-11-12
 title: 'Cheat Sheet: Expo'
 summary: 'Expo commands to get you up and running quick & easy.'
 tags: ['Cheat Sheet', 'Expo']
@@ -8,10 +8,9 @@ bibliography: references-data.bib
 canonicalUrl:
 ---
 
-## Expo Cheat Sheet
+# Introduction
 
-Commands I often use developing [React Native](https://reactnative.dev/)
-apps.
+Commands I often use developing with [React Native](https://reactnative.dev/).
 
 ### Development
 
