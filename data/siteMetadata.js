@@ -11,7 +11,7 @@ const siteMetadata = {
   siteLogo: '/static/images/logo.png',
   image: '/static/images/avatar.png',
   socialBanner: '/static/images/twitter-card.png',
-  email: 'datloiboi@gmail.com',
+  email: 'primetimetran@gmail.com',
   github: 'https://github.com/primeTimeTran',
   // twitter: 'https://twitter.com/PrimeTimeTrann',
   facebook: 'https://www.facebook.com/profile.php?id=100012159429192',

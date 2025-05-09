@@ -5,7 +5,7 @@ import { FiClipboard } from 'react-icons/fi'
 import { useTheme } from 'next-themes'
 import { docco, dark } from 'react-syntax-highlighter/dist/cjs/styles/hljs'
 
-import { snippets } from '../components/code-snippets.js'
+import { snippets } from '../lib/code-snippets.js'
 
 const LanguagePicker = ({ selectedLanguage, onLanguageChange }) => {
   const languages = ['python', 'javascript']
@@ -27,8 +27,32 @@ const LanguagePicker = ({ selectedLanguage, onLanguageChange }) => {
   )
 }
 
-export default function Snippets(params) {
+function Snippet({ code, language, handleCopy }) {
   const { theme } = useTheme()
+  const snippetStyle = theme === 'dark' ? dark : docco
+  const borderColor = theme === 'dark' ? 'white' : 'black'
+  const containerStyle = {
+    width: '400px',
+    height: '300px',
+    overflow: 'auto',
+    borderColor: borderColor,
+    backgroundColor: snippetStyle.hljs.background || 'inherit',
+  }
+  return (
+    <div className="relative m-3 flex-1 rounded border" style={containerStyle}>
+      <CopyToClipboard text={code} onCopy={handleCopy}>
+        <button className="absolute top-2 right-2 rounded bg-gray-200 p-2 hover:bg-gray-300">
+          <FiClipboard size={20} />
+        </button>
+      </CopyToClipboard>
+      <SyntaxHighlighter language={language} style={snippetStyle}>
+        {code}
+      </SyntaxHighlighter>
+    </div>
+  )
+}
+
+export default function Snippets() {
   const [language, setLanguage] = useState('python')
   const [copied, setCopied] = useState(false)
 
@@ -37,86 +61,24 @@ export default function Snippets(params) {
     setTimeout(() => setCopied(false), 2000)
   }
 
-  const snippetStyle = theme === 'dark' ? dark : docco
-  const borderColor = theme === 'dark' ? 'white' : 'black'
-  const snippetContainerStyle = {
-    width: '400px',
-    height: '300px',
-    overflow: 'auto',
-    borderColor: borderColor,
-    backgroundColor: snippetStyle.hljs.background || 'inherit',
-  }
+  const props = { language, handleCopy }
 
   return (
     <div className="">
       <LanguagePicker selectedLanguage={language} onLanguageChange={setLanguage} />
       <h1 className="my-6 text-3xl font-bold text-blue-600">Sorting Algorithms</h1>
       <div className="flex flex-row">
-        <div className="relative m-3 flex-1 rounded border" style={snippetContainerStyle}>
-          <CopyToClipboard text={snippets[language].bubbleSort.code} onCopy={handleCopy}>
-            <button className="absolute top-2 right-2 rounded bg-gray-200 p-2 hover:bg-gray-300">
-              <FiClipboard size={20} />
-            </button>
-          </CopyToClipboard>
-          <SyntaxHighlighter language={language} style={snippetStyle}>
-            {snippets[language].bubbleSort.code}
-          </SyntaxHighlighter>
-        </div>
-        <div className="relative m-3 flex-1 rounded border" style={snippetContainerStyle}>
-          <CopyToClipboard text={snippets[language].selectionSort.code} onCopy={handleCopy}>
-            <button className="absolute top-2 right-2 rounded bg-gray-200 p-2 hover:bg-gray-300">
-              <FiClipboard size={20} />
-            </button>
-          </CopyToClipboard>
-          <SyntaxHighlighter language={language} style={snippetStyle}>
-            {snippets[language].selectionSort.code}
-          </SyntaxHighlighter>
-        </div>
+        <Snippet {...props} code={snippets[language].bubbleSort.code} />
+        <Snippet {...props} code={snippets[language].selectionSort.code} />
       </div>
       <div className="flex flex-row">
-        <div className="relative m-3 flex-1 rounded border" style={snippetContainerStyle}>
-          <CopyToClipboard text={snippets[language].insertionSort.code} onCopy={handleCopy}>
-            <button className="absolute top-2 right-2 rounded bg-gray-200 p-2 hover:bg-gray-300">
-              <FiClipboard size={20} />
-            </button>
-          </CopyToClipboard>
-          <SyntaxHighlighter language={language} style={snippetStyle}>
-            {snippets[language].insertionSort.code}
-          </SyntaxHighlighter>
-        </div>
-        <div className="relative m-3 flex-1 rounded border" style={snippetContainerStyle}>
-          <CopyToClipboard text={snippets[language].mergeSort.code} onCopy={handleCopy}>
-            <button className="absolute top-2 right-2 rounded bg-gray-200 p-2 hover:bg-gray-300">
-              <FiClipboard size={20} />
-            </button>
-          </CopyToClipboard>
-          <SyntaxHighlighter language={language} style={snippetStyle}>
-            {snippets[language].mergeSort.code}
-          </SyntaxHighlighter>
-        </div>
+        <Snippet {...props} code={snippets[language].insertionSort.code} />
+        <Snippet {...props} code={snippets[language].mergeSort.code} />
       </div>
       <h1 className="my-6 text-3xl font-bold text-blue-600">BFS & DFS</h1>
       <div className="flex flex-row">
-        <div className="relative m-3 flex-1 rounded border" style={snippetContainerStyle}>
-          <CopyToClipboard text={snippets[language].bfs.code} onCopy={handleCopy}>
-            <button className="absolute top-2 right-2 rounded bg-gray-200 p-2 hover:bg-gray-300">
-              <FiClipboard size={20} />
-            </button>
-          </CopyToClipboard>
-          <SyntaxHighlighter language={language} style={snippetStyle}>
-            {snippets[language].bfs.code}
-          </SyntaxHighlighter>
-        </div>
-        <div className="relative m-3 flex-1 rounded border" style={snippetContainerStyle}>
-          <CopyToClipboard text={snippets[language].dfs.code} onCopy={handleCopy}>
-            <button className="absolute top-2 right-2 rounded bg-gray-200 p-2 hover:bg-gray-300">
-              <FiClipboard size={20} />
-            </button>
-          </CopyToClipboard>
-          <SyntaxHighlighter language={language} style={snippetStyle}>
-            {snippets[language].dfs.code}
-          </SyntaxHighlighter>
-        </div>
+        <Snippet {...props} code={snippets[language].bfs.code} />
+        <Snippet {...props} code={snippets[language].dfs.code} />
       </div>
       {copied && (
         <div className="fixed bottom-4 right-4 rounded bg-green-500 px-4 py-2 text-white shadow">
