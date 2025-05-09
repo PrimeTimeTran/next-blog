@@ -46,8 +46,7 @@ npm i jsonwebtoken @types/jsonwebtoken
 Nothing fancy, just defining the logic for signing and verifying tokens which'll helps us
 identify the users of our resources.
 
-```ts
-// ./server/utils/token.ts
+```ts:./server/utils/token.ts
 import type { JwtPayload } from 'jsonwebtoken'
 import jwt from 'jsonwebtoken'
 
@@ -91,8 +90,7 @@ export function jwtVerify(token: string): PayloadObj | null {
 
 Dont hardcode values in your code. Define a var `AUTH_TOKEN_SECRET` inside of a root `.env` file.
 
-```bash
-# ./.env
+```ts:./.env
 AUTH_TOKEN_SECRET="MySecret"
 ```
 
@@ -100,13 +98,12 @@ AUTH_TOKEN_SECRET="MySecret"
 
 Ensure that the token creation and verification work via script before adding another layer of abstraction(MVC/API).
 
-```ts
-// ./server/script.ts
+```ts:./server/script.ts
 import { jwtSign, jwtVerify } from './utils/token'
 
 async function main() {
   const token = await jwtSign({
-    email: 'loi@ltran.net',
+    email: 'dev@ltran.net',
   })
 
   console.log({ token })
@@ -139,8 +136,7 @@ $ npx tsx server/script.ts
 
 Create an entrypoint API which'll be accessed by users of the system. In this case [REST](https://developer.mozilla.org/en-US/docs/Glossary/REST).
 
-```ts
-// ./server/api/index.get.ts
+```ts:./server/api/index.get.ts
 export default defineEventHandler(async () => {
   return {
     wizards: ['Harry', 'Hermione', 'Ron'],
@@ -179,8 +175,7 @@ So we'll extract the token first then use it to query our DB for our user.
 
 `00.headers.global.js` reads a token from the header and injects it into the event context.
 
-```ts
-// server/middlewares/00.headers.global.js
+```ts:./server/middlewares/00.headers.global.js
 export default defineEventHandler((e) => {
   const authHeader = getHeader(e, 'authorization')
   if (authHeader && authHeader.startsWith('Bearer ')) {
@@ -191,8 +186,7 @@ export default defineEventHandler((e) => {
 
 `01.user.global.js` uses the collected token to find the `User` accessing our system.
 
-```ts
-// server/middlewares/01.user.global.js
+```ts:./server/middlewares/01.user.global.js
 import { User } from '../models/User.model'
 
 export default defineEventHandler(async (e) => {
@@ -237,8 +231,7 @@ npm i nuxt-mongoose
 
 Add required setup configuration to `./nuxt.config.js`.
 
-```js
-// ./nuxt.config.js
+```js:./nuxt.config.js
 mongoose: {
   options: {},
   modelsDir: 'models',
@@ -248,8 +241,7 @@ mongoose: {
 
 Add the following variable to your `.env` file.
 
-```js
-// ./.env
+```ts:./.env
 MONGODB_URI = 'mongodb://localhost:27017/user-audit'
 ```
 
@@ -272,9 +264,7 @@ When resources are touched a hook will fire which ultimately records meta data t
   </div>
 
   <div id="#1" className="tabcontent">
-    ```js {} showLineNumbers {22}
-    // .server/models/User.model.js
-
+    ```js:./server/models/User.model.js {} showLineNumbers {20}
     import mongoose, { Schema } from 'mongoose'
     import { Auditor } from './Audit'
 
@@ -307,9 +297,7 @@ When resources are touched a hook will fire which ultimately records meta data t
   </div>
 
   <div id="#2" className="tabcontent">
-    ```js {} showLineNumbers
-    // .server/models/AuditLog.model.js
-
+    ```js:./server/models/AuditLog.model.js {} showLineNumbers
     import mongoose, { Schema } from 'mongoose'
 
     export const auditLogSchema = new Schema({
@@ -332,9 +320,7 @@ When resources are touched a hook will fire which ultimately records meta data t
   </div>
 
   <div id="#3" className="tabcontent">
-    ```js {} showLineNumbers {7-14, 22}
-    // .server/middleware/02.audit.global.js
-
+    ```js:./server/middleware/02.audit.global.js {} showLineNumbers {5-12, 20}
     let closure = () => {}
 
     export function captureEvent(val) {
@@ -342,8 +328,8 @@ When resources are touched a hook will fire which ultimately records meta data t
       closure = function () {
         const user = {
           id: event?.user?._id || '1',
-          firstName: event?.user?.firstName || 'cleverprogrammer',
           email: event?.user?.email || 'dev@ltran.net',
+          firstName: event?.user?.firstName || 'cleverprogrammer',
         }
         return user
       }
@@ -368,8 +354,7 @@ When resources are touched a hook will fire which ultimately records meta data t
 
   </div>
   <div id="#4" className="tabcontent">
-    ```js {} showLineNumbers {5, 21, 28}
-    // .server/models/Auditor.js
+    ```js:./server/models/Auditor.js {} showLineNumbers {4, 20, 27}
     import { closure } from '../middleware/02.audit.global.js'
 
     export class Auditor {
@@ -418,9 +403,7 @@ When resources are touched a hook will fire which ultimately records meta data t
 
 By creating an instance of `User` when this endpoint is hit we'll trigger our hooks behind the scenes.
 
-```js showLineNumbers {4-8}
-// .server/api/index.get.ts
-
+```js:./server/api/index.get.ts showLineNumbers {2-6}
 export default defineEventHandler(async () => {
   const user = await new User({
     firstName: 'Loi',
@@ -433,7 +416,7 @@ export default defineEventHandler(async () => {
 })
 ```
 
-Test the endpoint with another `curl` request to create a `User` instance & a `AuditLog`.
+Test the endpoint with another `curl` request to create a `User` & trigger an `AuditLog` document to be created as `User` is observed.
 
 ```sh
 curl -i -H "Accept: application/json" -H "Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImxvaUBsdHJhbi5uZXQiLCJpYXQiOjE3NDUxMTI1MDAsImV4cCI6MjA2MDQ3MjUwMH0.m66vk-I0HJhJOU9vcz61zrQzI_Mbnr-50P8B-_DQqNo" http://localhost:3001/api
