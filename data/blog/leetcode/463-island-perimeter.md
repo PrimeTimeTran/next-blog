@@ -1,9 +1,8 @@
 ---
 draft: true
-date: '2022-10-17'
-title: '463. Island Perimeter'
-tags:
-  ['data-structures-algorithms', 'javascript', 'typescript', 'dart', 'java', 'python', 'ruby', 'go']
+date: 2022-10-17
+title: 'LeetCode: 463. Island Perimeter'
+tags: ['leetcode', 'data structures algorithms', 'graph', 'python']
 summary: 'Solving programming problems in multiple languages to master syntax, data structures, and algorithms.'
 ---
 
@@ -15,44 +14,16 @@ Grid cells are connected horizontally/vertically (not diagonally). The grid is c
 
 The island doesn't have "lakes", meaning the water inside isn't connected to the water around the island. One cell is a square with side length 1. The grid is rectangular, width and height don't exceed 100. Determine the perimeter of the island.
 
-### Solution
+## Intuition
 
-Short description
+## Diagram
 
-## Declare Hashmap
+## Code
 
 <div className="tab-group">
   <div className="tab">
-    <button id="js" className="tablinks">javascript</button>
-    <button id="ts" className="tablinks">typescript</button>
-    <button id="dart" className="tablinks">dart</button>
-    <button id="java" className="tablinks">java</button>
     <button id="python" className="tablinks">python</button>
-    <button id="ruby" className="tablinks">ruby</button>
-    <button id="go" className="tablinks">go</button>
   </div>
-
-  <div id="js" className="tabcontent">
-    ```js {} showLineNumbers
-    ```
-  </div>
-
-  <div id="ts" className="tabcontent">
-    ```typescript {} showLineNumbers
-    ```
-
-  </div>
-
-  <div id="dart" className="tabcontent">
-    ```dart {} showLineNumbers
-    ```
-  </div>
-
-  <div id="java" className="tabcontent">
-    ```java {} showLineNumbers
-    ```
-  </div>
-
   <div id="python" className="tabcontent">
     ```python {} showLineNumbers
     class Solution:
@@ -76,20 +47,6 @@ Short description
     ```
 
   </div>
-
-  <div id="ruby" className="tabcontent">
-    ```ruby {} showLineNumbers
-    #
-    ```
-  </div>
-
-  <div id="go" className="tabcontent">
-    ```go {} showLineNumbers
-    //
-    ```
-  </div>
 </div>
 
-### Questions? Concerns?
-
-Please comment a better solution if you have one.
+# Conclusion

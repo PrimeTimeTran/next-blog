@@ -1,8 +1,19 @@
 ---
 draft: false
-date: '2022-10-08'
-title: '16. 3Sum Closest'
-tags: ['leetcode', 'javascript', 'typescript', 'dart', 'java', 'python', 'go']
+date: 2022-10-08
+title: 'LeetCode: 16. 3Sum Closest'
+tags:
+  [
+    'leetcode',
+    'data structures algorithms',
+    'two pointers',
+    'python',
+    'javascript',
+    'typescript',
+    'dart',
+    'java',
+    'go',
+  ]
 summary: 'Solving programming problems in multiple languages to master syntax, data structures, and algorithms.'
 ---
 

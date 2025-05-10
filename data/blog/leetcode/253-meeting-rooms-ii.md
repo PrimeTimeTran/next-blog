@@ -1,7 +1,7 @@
 ---
 draft: true
 date: '2022-10-15'
-title: '253. Meeting Rooms II'
+title: 'LeetCode: 253. Meeting Rooms II'
 tags:
   ['data-structures-algorithms', 'javascript', 'typescript', 'dart', 'java', 'python', 'ruby', 'go']
 summary: 'Solving programming problems in multiple languages to master syntax, data structures, and algorithms.'

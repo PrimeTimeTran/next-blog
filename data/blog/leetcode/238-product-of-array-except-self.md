@@ -1,9 +1,19 @@
 ---
 draft: true
-date: '2022-10-13'
-title: 'data-structures-algorithms'
+date: 2022-10-13
+title: 'LeetCode: data-structures-algorithms'
 tags:
-  ['data-structures-algorithms', 'javascript', 'typescript', 'dart', 'java', 'python', 'ruby', 'go']
+  [
+    'leetcode',
+    'data structures algorithms',
+    'prefix sum',
+    'python',
+    'javascript',
+    'typescript',
+    'dart',
+    'java',
+    'go',
+  ]
 summary: 'Solving programming problems in multiple languages to master syntax, data structures, and algorithms.'
 ---
 

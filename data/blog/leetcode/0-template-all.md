@@ -1,6 +1,6 @@
 ---
 draft: true
-date: '2025-04-28'
+date: 2025-04-28
 title: 'Data Structures & Algorithms'
 tags:
   ['data-structures-algorithms', 'javascript', 'typescript', 'dart', 'java', 'python', 'ruby', 'go']

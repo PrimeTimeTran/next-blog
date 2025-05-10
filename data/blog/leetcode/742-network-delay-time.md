@@ -1,9 +1,9 @@
 ---
 draft: false
-date: '2022-10-18'
-title: '743. Network Delay Time'
+date: 2022-10-14
+title: 'LeetCode: 743. Network Delay Time'
 summary: 'Solving programming problems in multiple languages to master syntax, data structures, and algorithms.'
-tags: ['leetcode', 'data-structures-algorithms', 'python']
+tags: ['leetcode', 'data structures algorithms', 'graph', 'priority queue', 'python']
 ---
 
 # Description
@@ -12,15 +12,13 @@ You are given a network of `n` nodes, labeled from `1` to `n`. You are also give
 
 We will send a signal from a given node `k`. Return the minimum time it takes for all the `n` nodes to receive the signal. If it is impossible for all the `n` nodes to receive the signal, return `-1`.
 
-## Solution
+## Intuition
 
 We build an adjacency list using input `times` which stores as key's the `origin` node and as values a list which contains `destination` node & `time` taken to arrive at that node.
 
 Use a priority queue(PQ) to BFS out from `k`. The priority queue will hold the accumulated time to get to this node & the current node. Initialize it with `0` time and `k` as the current node.
 
 Also maintain a `dict`, `seen`, which tracks numbers of node's visited. When the length of `seen` equals `n` then we know the signal has reached all node's so we can return the accumulated time thus far.
-
-## Implementation
 
 1. Setup Variables:
    - `pq` is our PQ.
@@ -36,6 +34,8 @@ Also maintain a `dict`, `seen`, which tracks numbers of node's visited. When the
 4. Append Neighbors to PQ:
    - Utilize the adjacency list we built in step 2 to identify which edges/nodes we still need to process.
    - When pushing to the PQ add `time_accumulated` to the current `time` which is the time it takes to get from `source` node to `destination` node.
+
+## Code
 
 <div className="tab-group">
   <div className="tab">

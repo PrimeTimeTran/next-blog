@@ -1,8 +1,19 @@
 ---
 draft: false
-date: '2022-10-12'
-title: '217. Contains Duplicate'
-tags: ['leetcode', 'javascript', 'typescript', 'dart', 'java', 'python', 'go']
+date: 2022-10-12
+title: 'LeetCode: 217. Contains Duplicate'
+tags:
+  [
+    'leetcode',
+    'data structures algorithms',
+    'array',
+    'python',
+    'javascript',
+    'typescript',
+    'dart',
+    'java',
+    'go',
+  ]
 summary: 'Solving programming problems in multiple languages to master syntax, data structures, and algorithms.'
 ---
 
