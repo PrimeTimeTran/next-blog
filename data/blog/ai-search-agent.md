@@ -8,7 +8,7 @@ tags: ['ai']
 
 # Introduction
 
-<img src="/static/gifs/ai-search-agents-preview.gif" alt="Completed" />
+<img src="/static/gifs/ai-search-agents-preview.gif" alt="preview" />
 
 [Demo](https://ai-search-agents-619024344714.us-east1.run.app/)
 
