@@ -33,7 +33,7 @@ GraphQL is a modern API query language and runtime developed by Facebook, design
 Variables let you pass dynamic values into queries and mutations, keeping them reusable and secure.
 Operation names label your query or mutation, making it easier to debug, log, or run multiple operations in the same request.
 
-```
+```graphql
 query GetUser($id: ID!) {
   user(id: $id) {
     name
@@ -43,7 +43,7 @@ query GetUser($id: ID!) {
 
 ## 2. Input Types: Instead of passing multiple arguments, use a structured input type — especially helpful for mutation payloads.
 
-```
+```graphql
 input CreateUserInput {
   firstName: String!
   lastName: String!
@@ -56,7 +56,7 @@ type Mutation {
 
 ## 3. Enums: GraphQL supports enum types to restrict fields to a limited set of values.
 
-```
+```graphql
 enum Role {
   USER
   ADMIN
@@ -73,7 +73,7 @@ Useful for reusing field selections across queries.
 
 ## 5. Directives (like @include / @skip)
 
-```
+```graphql
 query GetUser($withEmail: Boolean!) {
   user(id: "123") {
     id
@@ -87,7 +87,7 @@ query GetUser($withEmail: Boolean!) {
 
 Rename fields in your response (useful when calling the same field multiple times).
 
-```
+```graphql
 {
   currentUser: user(id: "1") {
     name
@@ -116,7 +116,7 @@ You might already be doing this, but:
 
 ## 9. Subscriptions (Advanced)
 
-```
+```graphql
 subscription OnMessageSent {
   messageSent {
     content
