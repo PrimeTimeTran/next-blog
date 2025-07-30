@@ -2,7 +2,7 @@
 draft: false
 date: '2025-07-30'
 title: 'System Design: GraphQL Crash Course'
-summary: 'An introduction to GraphQL as a API communication protocol.'
+summary: 'A practical guide to understanding GraphQL in system design — how it compares to REST, when to use it, and the key concepts behind building flexible and efficient APIs.'
 tags:
   - graphql
   - system design
