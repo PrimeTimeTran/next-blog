@@ -5,6 +5,7 @@ title: 'System Design: GraphQL Crash Course'
 summary: 'An introduction to GraphQL as a API communication protocol.'
 tags:
   - graphql
+  - system design
 ---
 
 # Introduction
