@@ -1,8 +1,8 @@
 ---
 draft: false
 date: '2025-07-29'
-title: 'System Design: Key Numbers'
-summary: 'A list of the most common numbers to know for system design interviews and back of the envelope calculations.'
+title: 'System Design: Must-Know Numbers'
+summary: 'A concise reference of key numbers every engineer should know for system design interviews and rough capacity estimations — from latency benchmarks to storage calculations.'
 tags:
   - system design
 ---
