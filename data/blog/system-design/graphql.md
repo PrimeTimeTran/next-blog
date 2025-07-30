@@ -14,6 +14,8 @@ GraphQL is a modern API query language and runtime developed by Facebook, design
 
 [Github](https://github.com/PrimeTimeTran/graphql-crud)
 
+## Overview
+
 | Feature                     | GraphQL                                      | REST                                          |
 | --------------------------- | -------------------------------------------- | --------------------------------------------- |
 | **Endpoint Structure**      | Single endpoint (`/graphql`)                 | Multiple endpoints (e.g., `/users`, `/posts`) |
@@ -25,3 +27,100 @@ GraphQL is a modern API query language and runtime developed by Facebook, design
 | **Typing**                  | Strongly typed via schema                    | Typically untyped or loosely documented       |
 | **Real-time Support**       | Built-in support with subscriptions          | Not natively supported                        |
 | **Tooling & Introspection** | Strong (e.g., GraphiQL, introspection query) | Limited, usually via external docs            |
+
+## 1. Operation Names & Variables
+
+Variables let you pass dynamic values into queries and mutations, keeping them reusable and secure.
+Operation names label your query or mutation, making it easier to debug, log, or run multiple operations in the same request.
+
+```
+query GetUser($id: ID!) {
+  user(id: $id) {
+    name
+  }
+}
+```
+
+## 2. Input Types: Instead of passing multiple arguments, use a structured input type — especially helpful for mutation payloads.
+
+```
+input CreateUserInput {
+  firstName: String!
+  lastName: String!
+}
+
+type Mutation {
+  createUser(input: CreateUserInput!): User!
+}
+```
+
+## 3. Enums: GraphQL supports enum types to restrict fields to a limited set of values.
+
+```
+enum Role {
+  USER
+  ADMIN
+}
+
+type User {
+  role: Role!
+}
+```
+
+## 4. Fragments
+
+Useful for reusing field selections across queries.
+
+## 5. Directives (like @include / @skip)
+
+```
+query GetUser($withEmail: Boolean!) {
+  user(id: "123") {
+    id
+    name
+    email @include(if: $withEmail)
+  }
+}
+```
+
+## 6. Aliases
+
+Rename fields in your response (useful when calling the same field multiple times).
+
+```
+{
+  currentUser: user(id: "1") {
+    name
+  }
+  otherUser: user(id: "2") {
+    name
+  }
+}
+```
+
+## 7. Pagination
+
+Two main styles:
+
+- Offset-based (limit, offset)
+- Cursor-based (with edges, pageInfo)
+
+Cursor-based is more scalable for large datasets.
+
+## 8. Nested Resolvers
+
+You might already be doing this, but:
+
+- Parent → child relationships
+- Example: user.posts where posts is resolved per user
+
+## 9. Subscriptions (Advanced)
+
+```
+subscription OnMessageSent {
+  messageSent {
+    content
+    sender
+  }
+}
+```
