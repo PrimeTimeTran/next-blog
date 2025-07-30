@@ -1,8 +1,8 @@
 ---
 draft: false
-date: 2025-07-30
+date: '2025-07-30'
 title: 'System Design: Key Numbers'
-summary: 'A list of the most common numbers to know for system design interviews & back of the envelope calculations.'
+summary: 'A list of the most common numbers to know for system design interviews and back of the envelope calculations.'
 tags:
   - system design
 ---
