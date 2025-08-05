@@ -1,74 +1,128 @@
 ---
-title: Run hooks
+draft: false
 date: 2023-06-26
-tags: ['Git']
-draft: true
-summary: ''
-bibliography: references-data.bib
-canonicalUrl:
+title: 'Guide: Git Pre-Commit Hooks Explained with Examples'
+tags: ['git', 'guide']
+summary: Learn how to use Git pre-commit hooks to automatically run checks or scripts before committing code, with practical examples using shell and Husky.
 ---
 
-## Precommit
+# Git Pre-Commit Hooks Explained with Examples
 
-Update
-./.git/hooks/pre-commit
+Git hooks are powerful tools that let you automate tasks during the Git workflow. One of the most commonly used hooks is the **pre-commit** hook. This script runs _before_ a commit is finalized, making it ideal for tasks like linting code, running tests, or formatting files automatically.
 
-Install pre-commit
-brew install pre-commit
+In this post, you’ll learn what Git pre-commit hooks are, how to use them, and see examples with plain shell scripts and modern tools like Husky.
 
-Configure pre-commit per project
-pre-commit install
+---
 
-git config --unset-all core.hooksPath
+## What is a Git Pre-Commit Hook?
 
-Define .pre-commit-config.yaml
+A **pre-commit hook** is a script that runs right before a `git commit` is executed. If the script exits with a non-zero status, the commit will be aborted. This makes it a useful safeguard to prevent bad or broken code from being committed.
 
-Insert the following
+Git looks for hooks in the `.git/hooks` directory inside your repository.
 
-https://github.com/pre-commit/pre-commit/blob/main/.pre-commit-config.yaml
+---
 
-```yml
-repos:
-  - repo: https://github.com/pre-commit/pre-commit-hooks
-    rev: v4.4.0
-    hooks:
-      - id: trailing-whitespace
-      - id: end-of-file-fixer
-      - id: check-yaml
-      - id: debug-statements
-      - id: double-quote-string-fixer
-      - id: name-tests-test
-      - id: requirements-txt-fixer
-```
+## How to Use Pre-Commit Hooks
 
-Check if they've run
+### 1. Using Native Git Hooks
 
-.git/hooks/pre-commit
+Git initializes example hooks when you create a repository. To enable the pre-commit hook:
 
-If they do, you'll see ouput
-
-Add your own script to
-
-```
-.git/hooks/pre-commit
-```
+1. Navigate to `.git/hooks/`
+2. Rename `pre-commit.sample` to `pre-commit`
+3. Make the file executable:
 
 ```bash
-echo "Running tests"
+ chmod +x .git/hooks/pre-commit
+```
 
-output=$(flutter test)
-echo "$output"
+### Example: Lint Code Before Commit
 
-if [[ $output == *"All tests passed!"* ]]; then
-    echo "Tests passed successfully"
-fi
+Here's a simple `pre-commit` script that runs ESLint before allowing the commit:
 
-echo "Running code analysis"
+```bash
+#!/bin/sh
 
-output=$(flutter analyze)
-echo "$output"
+echo "Running ESLint..."
+npx eslint . || {
+  echo "ESLint failed. Commit aborted."
+  exit 1
+}
+```
 
-if [[ $output == *"No issues found!"* ]]; then
-    echo "Code analysis successful"
-fi
+If ESLint fails, the commit will not proceed.
+
+---
+
+## 2. Using Husky (Recommended for Teams)
+
+Native Git hooks aren't shared with the repo. To version-control your hooks and ensure everyone runs them, use [Husky](https://typicode.github.io/husky).
+
+### Install Husky
+
+```bash
+npm install husky --save-dev
+npx husky install
+```
+
+Add this to your `package.json` scripts:
+
+```json
+"scripts": {
+  "prepare": "husky install"
+}
+```
+
+### Add a Pre-Commit Hook
+
+```bash
+npx husky add .husky/pre-commit "npm run lint"
+```
+
+This creates a `.husky/pre-commit` file with:
+
+```bash
+#!/bin/sh
+. "$(dirname "$0")/_/husky.sh"
+
+npm run lint
+```
+
+Now every time you run `git commit`, Husky will trigger the hook and run your `lint` script.
+
+---
+
+## Common Uses for Pre-Commit Hooks
+
+- Linting code (`eslint`, `stylelint`)
+- Running unit tests
+- Formatting code with `prettier`
+- Checking commit message format
+- Preventing large files from being committed
+- Type checking (`tsc`)
+
+---
+
+## Tips
+
+- Always make sure your pre-commit scripts are fast. If they take too long, developers will disable them.
+- Keep hooks in version control using tools like Husky or [lefthook](https://github.com/evilmartians/lefthook).
+- Avoid modifying committed files in pre-commit hooks (e.g., formatting) — instead, do that in a `pre-push` or `prettier --write` script and stage them manually.
+
+---
+
+## Conclusion
+
+Git pre-commit hooks are a great way to improve code quality and enforce consistency before code is committed. Whether you’re working solo or on a team, adding pre-commit hooks can help catch mistakes early and reduce tech debt.
+
+By using tools like Husky, you can easily manage these hooks in your repo and make sure everyone on your team benefits from them.
+
+Start small — add a linter or formatter hook, and build from there!
+
+---
+
+Happy committing! 🚀
+
+```
+
 ```

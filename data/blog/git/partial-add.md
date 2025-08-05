@@ -3,9 +3,8 @@ draft: false
 date: 2023-04-28
 title: 'Guide: How to stage part of a dirty file'
 summary: When we want to commit part of a file to git we can!
-tags: ['guide', 'git']
+tags: ['git', 'guide']
 bibliography: references-data.bib
-canonicalUrl:
 ---
 
 ## Committing part of a file to Git
