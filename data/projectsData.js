@@ -3,7 +3,7 @@ const projectsData = [
     title: 'Seep Deep',
     description:
       'SeepDeep is the best platform to help you enhance your skills, expand your knowledge and prepare for technical interviews. Create Account. Start Exploring.',
-    imgSrc: '/static/images/drone.jpeg',
+    imgSrc: '/static/images/seepdeep.png',
     href: 'https://www.seepdeep.com',
     tech: ['Flutter', 'NuxtJS', 'MongoDB', 'Docker', 'Netlify', 'GCP', 'Github Actions'],
   },
