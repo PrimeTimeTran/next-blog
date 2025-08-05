@@ -1,6 +1,6 @@
 ---
 draft: false
-date: 2022-10-14
+date: 2016-10-14
 title: 'LeetCode: 743. Network Delay Time'
 summary: 'Solving programming problems in multiple languages to master syntax, data structures, and algorithms.'
 tags: ['leetcode', 'data structures algorithms', 'graph', 'priority queue', 'python']

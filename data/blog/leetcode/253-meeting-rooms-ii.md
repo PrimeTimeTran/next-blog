@@ -1,6 +1,6 @@
 ---
 draft: true
-date: '2022-10-15'
+date: '2016-10-15'
 title: 'LeetCode: 253. Meeting Rooms II'
 tags:
   ['data-structures-algorithms', 'javascript', 'typescript', 'dart', 'java', 'python', 'ruby', 'go']

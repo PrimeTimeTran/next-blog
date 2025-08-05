@@ -1,6 +1,6 @@
 ---
 draft: false
-date: 2022-10-08
+date: 2016-10-08
 title: 'LeetCode: 16. 3Sum Closest'
 tags:
   [
@@ -621,6 +621,4 @@ If so, continue to the next iteration.
   </div>
 </div>
 
-### Questions? Concerns?
-
-Please comment a better solution if you have one.
+# Conclusion

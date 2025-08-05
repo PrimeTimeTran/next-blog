@@ -1,6 +1,6 @@
 ---
 draft: false
-date: 2022-10-12
+date: 2016-10-12
 title: 'LeetCode: 217. Contains Duplicate'
 tags:
   [

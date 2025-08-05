@@ -1,6 +1,6 @@
 ---
 draft: false
-date: '2022-10-10'
+date: '2016-10-10'
 title: 'LeetCode: 121. Best Time to Buy and Sell Stock'
 tags:
   [

@@ -1,6 +1,6 @@
 ---
 draft: false
-date: '2022-10-09'
+date: '2016-10-09'
 title: 'LeetCode: 70. Climbing Stairs'
 tags:
   [

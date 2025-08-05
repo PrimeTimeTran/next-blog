@@ -1,6 +1,6 @@
 ---
 draft: false
-date: 2022-10-13
+date: 2016-10-13
 title: 'LeetCode: 322. Coin Change'
 tags: ['leetcode', 'data structures algorithms', 'dynamic programming', 'python']
 summary: 'Solving programming problems in multiple languages to master syntax, data structures, and algorithms.'

@@ -1,6 +1,6 @@
 ---
 draft: false
-date: 2022-10-07
+date: 2016-10-07
 title: 'LeetCode: 1. Two Sum'
 tags:
   [

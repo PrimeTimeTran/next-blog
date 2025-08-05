@@ -1,12 +1,14 @@
 ---
 draft: true
-date: 2025-04-28
-title: 'LeetCode: '
+date: 2016-04-28
+title: 'LeetCode:'
 tags: ['leetcode', 'data structures algorithms', 'python']
 summary: 'Solving programming problems in multiple languages to master syntax, data structures, and algorithms.'
 ---
 
 # Description
+
+Given an integer array `nums`, return `true` if any value appears at **least twice** in the array, and return `false` if every element is distinct.
 
 ## Intuition
 
