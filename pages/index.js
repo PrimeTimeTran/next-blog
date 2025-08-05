@@ -1,10 +1,9 @@
+import Tag from '@/components/Tag'
 import Link from '@/components/Link'
 import { PageSEO } from '@/components/SEO'
-import Tag from '@/components/Tag'
 import siteMetadata from '@/data/siteMetadata'
-import { getAllFilesFrontMatter } from '@/lib/mdx'
 import formatDate from '@/lib/utils/formatDate'
-
+import { getAllFilesFrontMatter } from '@/lib/mdx'
 import NewsletterForm from '@/components/NewsletterForm'
 
 const MAX_DISPLAY = 100
@@ -54,9 +53,7 @@ export default function Home({ posts }) {
                             </Link>
                           </h2>
                           <div className="flex flex-wrap">
-                            {tags.map((tag) => (
-                              <Tag key={tag} text={tag} />
-                            ))}
+                            {tags && tags.map((tag) => <Tag key={tag} text={tag} />)}
                           </div>
                         </div>
                         <div className="prose max-w-none text-gray-500 dark:text-gray-400">

@@ -1,7 +1,7 @@
 import Image from './Image'
 import Link from './Link'
 
-const Card = ({ title, description, imgSrc, href }) => (
+const Card = ({ title, description, imgSrc, href, tech }) => (
   <div className="md p-4 md:w-1/2" style={{ maxWidth: '544px' }}>
     <div
       className={`${
@@ -48,6 +48,20 @@ const Card = ({ title, description, imgSrc, href }) => (
             Learn more &rarr;
           </Link>
         )}
+        <br />
+        <br />
+        {tech &&
+          tech.map((item) => (
+            <a
+              key={item}
+              href={`https://loi-tran-blog.netlify.app/tags/${encodeURIComponent(
+                item.toLowerCase()
+              )}`}
+              className="mr-2 mb-2 inline-block rounded-full bg-gray-200 px-3 py-1 text-sm text-gray-800 hover:bg-gray-300"
+            >
+              {item}
+            </a>
+          ))}
       </div>
     </div>
   </div>
