@@ -3,7 +3,7 @@ draft: false
 date: '2025-07-20'
 title: 'AI Search Agents for 15 Puzzle & Maze Path Finding'
 summary: 'Agents, state spaces, goal tests, path costs & more'
-tags: ['ai']
+tags: ['ai', 'gcp', 'github actions']
 ---
 
 # Introduction
