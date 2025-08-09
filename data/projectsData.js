@@ -24,10 +24,11 @@ const projectsData = [
     tech: ['NuxtJS', 'MongoDB', 'Netlify', 'GCP'],
   },
   {
-    title: "World's Greatest Todo App",
-    description: 'Todo app built with ReactJS & Firebase',
-    imgSrc: '/static/images/todo.jpeg',
-    href: 'https://todolistwithfirebase.netlify.app',
+    title: 'Royal Stock Exchange',
+    description:
+      'Trade stocks on RoyalStockExchange with commission-free investing & advanced trading tools. Access fractional shares, real-time market data, and more.',
+    imgSrc: '/static/images/rse.png',
+    href: 'https://royalstockexchange.com',
   },
 ]
 
