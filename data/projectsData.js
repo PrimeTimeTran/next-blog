@@ -10,7 +10,7 @@ const projectsData = [
   {
     title: 'BakeSuite',
     description:
-      'Bake Boost is an online web application to help cake designers, decorators, bakery owners, and home bakers to manage their day-to-day tasks.',
+      'Bake Suite is an online web application to help cake designers, decorators, bakery owners, and home bakers to manage their day-to-day tasks.',
     imgSrc: '/static/images/bakesuite.png',
     href: 'https://baskesuite-demo.vercel.app',
     tech: ['NextJS', 'Supabase', 'Vercel', 'GCP'],
