@@ -29,6 +29,7 @@ const projectsData = [
       'Trade stocks on RoyalStockExchange with commission-free investing & advanced trading tools. Access fractional shares, real-time market data, and more.',
     imgSrc: '/static/images/rse.png',
     href: 'https://royalstockexchange.com',
+    tech: ['Flutter', '.Net', 'Netlify', 'Entity Framework', 'GCP'],
   },
 ]
 
