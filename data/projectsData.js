@@ -19,7 +19,7 @@ const projectsData = [
     title: 'Turboship',
     description:
       'Generate a professional codebase for your next multi-tenant SaaS app using NuxtJS 14, MongoDB, TailwindCSS, end-to-end testing, and more.',
-    imgSrc: '/static/images/tiktok.jpeg',
+    imgSrc: '/static/images/turboship.png',
     href: 'https://turboship.netlify.app',
     tech: ['NuxtJS', 'MongoDB', 'Netlify', 'GCP'],
   },
