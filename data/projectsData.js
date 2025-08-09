@@ -1,6 +1,6 @@
 const projectsData = [
   {
-    title: 'Seep Deep',
+    title: 'SeepDeep',
     description:
       'SeepDeep is the best platform to help you enhance your skills, expand your knowledge and prepare for technical interviews. Create Account. Start Exploring.',
     imgSrc: '/static/images/seepdeep.png',
@@ -16,7 +16,7 @@ const projectsData = [
     tech: ['NextJS', 'Supabase', 'Vercel', 'GCP'],
   },
   {
-    title: 'Turboship',
+    title: 'TurboShip',
     description:
       'Generate a professional codebase for your next multi-tenant SaaS app using NuxtJS 14, MongoDB, TailwindCSS, end-to-end testing, and more.',
     imgSrc: '/static/images/turboship.png',
@@ -24,7 +24,7 @@ const projectsData = [
     tech: ['NuxtJS', 'MongoDB', 'Netlify', 'GCP'],
   },
   {
-    title: 'Royal Stock Exchange',
+    title: 'RoyalStockExchange',
     description:
       'Trade stocks on RoyalStockExchange with commission-free investing & advanced trading tools. Access fractional shares, real-time market data, and more.',
     imgSrc: '/static/images/rse.png',
