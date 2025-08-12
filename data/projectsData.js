@@ -10,10 +10,10 @@ const projectsData = [
   {
     title: 'BakeSuite',
     description:
-      'Bake Suite is an online web application to help cake designers, decorators, bakery owners, and home bakers to manage their day-to-day tasks.',
+      'BakeSuite is an online web application to help cake designers, decorators, bakery owners, and home bakers to manage their day-to-day tasks.',
     imgSrc: '/static/images/bakesuite.png',
     href: 'https://baskesuite-demo.vercel.app',
-    tech: ['NextJS', 'Supabase', 'Vercel', 'GCP'],
+    tech: ['NextJS', 'Supabase', 'Vercel', 'GCP', 'Stripe', 'TailwindCSS'],
   },
   {
     title: 'TurboShip',
@@ -21,7 +21,7 @@ const projectsData = [
       'Generate a professional codebase for your next multi-tenant SaaS app using NuxtJS 14, MongoDB, TailwindCSS, end-to-end testing, and more.',
     imgSrc: '/static/images/turboship.png',
     href: 'https://turboship.netlify.app',
-    tech: ['NuxtJS', 'MongoDB', 'Netlify', 'GCP'],
+    tech: ['NuxtJS', 'MongoDB', 'Netlify', 'GCP', 'TailwindCSS'],
   },
   {
     title: 'RoyalStockExchange',
