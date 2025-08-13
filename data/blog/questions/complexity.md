@@ -1,6 +1,6 @@
 ---
 draft: false
-date: '2025-08-08'
+date: '2024-08-08'
 title: 'Question: How do I deal with complexity?'
 summary: ''
 tags: ['questions']
