@@ -12,7 +12,8 @@ tags:
 
 GraphQL is a modern API query language and runtime developed by Facebook, designed to give clients more control over the data they receive from a server. Unlike traditional REST APIs that expose fixed endpoints tied to specific data structures, GraphQL allows clients to request exactly the fields they need—nothing more, nothing less—through a single flexible endpoint. This helps reduce over-fetching and under-fetching of data, particularly in complex or data-rich applications like mobile apps. GraphQL also supports nested queries, strong typing via its schema system, and real-time updates with subscriptions, making it a powerful alternative to REST for building efficient and expressive APIs.
 
-[Github](https://github.com/PrimeTimeTran/graphql-crud)
+[Github: JS](https://github.com/PrimeTimeTran/graphql-crud)
+[Github: Python](https://github.com/PrimeTimeTran/system_design_graphql)
 
 ## Overview
 
