@@ -16,6 +16,17 @@ In Ruby & Rails the [Draper](https://github.com/drapergem/draper) gem can be use
 
 Imagine for example, a User resource in a Ruby on Rails application
 
+## Purpose
+
+The decorator pattern allows you to add responsibilities or behavior to an object dynamically without modifying its original class. It promotes flexibility by letting you compose behaviors at runtime instead of creating large, monolithic classes or an explosion of subclasses.
+
+## Use Cases
+
+- Adding presentation logic to models without cluttering them (e.g., formatting a User’s name or displaying status labels).
+- Extending objects with additional features, like logging, caching, or validation, without altering their core implementation.
+- Layering multiple behaviors on a single object in a flexible and reusable way.
+- Wrapping API responses or third-party objects to adapt or enhance their interface for your application.
+
 ```ruby:./app/models/user.rb showLineNumbers
 class User < ApplicationRecord
   validates :email, presence: true, format: { with: /\A.+@.+$\Z/ }, uniqueness: true, unless: ->(user) {
@@ -164,7 +175,7 @@ def index
 end
 ```
 
-In the decorator we can presentation logic.
+In the decorator we place the presentation logic.
 
 ```ruby:./app/decorators/user.rb showLineNumbers
   def full_name

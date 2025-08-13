@@ -8,9 +8,15 @@ tags: ['design patterns']
 
 # Introduction
 
-Purpose: Creates objects without specifying the exact class of the object that will be created.
+The Factory pattern is a creational design pattern that provides an interface for creating objects in a superclass, but allows subclasses to alter the type of objects that will be created. It abstracts the instantiation process, letting the client code rely on a common interface rather than concrete implementations, which promotes flexibility and maintainability.
 
-Use Cases: Object creation where subclasses decide which class to instantiate.
+## Purpose
+
+Creates objects without specifying the exact class of the object that will be created.
+
+## Use Cases
+
+Object creation where subclasses decide which class to instantiate.
 
 <div className="tab-group">
   <div className="tab">
@@ -177,3 +183,8 @@ Use Cases: Object creation where subclasses decide which class to instantiate.
 
   </div>
 </div>
+<br/>
+
+# Conclusion
+
+The Factory pattern is useful when your code needs to create objects dynamically without hard-coding their concrete classes. It simplifies object creation, encourages loose coupling, and makes it easier to introduce new types of objects or modify creation logic without affecting the client code. Common use cases include creating different shapes, database connections, or user interface components based on configuration or runtime conditions.

@@ -8,9 +8,18 @@ tags: ['design patterns']
 
 # Introduction
 
-Purpose: Ensures that a class has only one instance and provides a global point of access to it.
+The Singleton pattern is a design pattern that restricts the instantiation of a class to a single object. This ensures that there is one and only one instance of the class throughout the application, providing a global point of access to that instance. It is commonly used when exactly one object is needed to coordinate actions across the system.
 
-Use Cases: Database connections, logging, cache management, global state & more.
+## Purpose
+
+Ensures that a class has only one instance and provides a global point of access to it.
+
+## Use cases
+
+- Database connections
+- Logging
+- Cache management
+- Global state & more
 
 <div className="tab-group">
   <div className="tab">
@@ -94,3 +103,7 @@ Use Cases: Database connections, logging, cache management, global state & more.
 
   </div>
 </div>
+
+# Conclusion
+
+The Singleton pattern provides a controlled way to ensure a single instance of a class exists and is accessible globally. It is especially useful for managing shared resources like database connections, configuration settings, logging, or caching, while keeping the design clean and preventing multiple conflicting instances.

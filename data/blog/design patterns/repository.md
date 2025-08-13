@@ -8,6 +8,19 @@ tags: ['design patterns']
 
 # Introduction
 
+The repository pattern is a design pattern used to abstract the data access layer from the business logic of an application. By using repositories, you can interact with data without needing to know the details of how the data is stored or retrieved. This promotes separation of concerns, testability, and flexibility in choosing or changing data storage strategies without impacting the rest of the codebase.
+
+## Purpose
+
+Provides a consistent interface to manage data access, abstracting away the details of how data is stored or retrieved. Promotes separation of concerns, testability, and flexibility in changing storage mechanisms.
+
+## Use Cases
+
+- Abstracting database operations to allow swapping between SQL, NoSQL, or in-memory storage.
+- Testing business logic without relying on real databases.
+- Centralizing data access logic for complex applications.
+- Managing collections of objects in memory with a consistent interface.
+
 <div className="tab-group">
   <div className="tab">
     <button id="python" className="tablinks">python</button>
@@ -134,3 +147,9 @@ tags: ['design patterns']
 
   </div>
 </div>
+
+<br />
+
+# Conclusion
+
+In this example, the Repository abstract class defines a consistent interface for data access, while InMemoryRepository provides a concrete implementation using an in-memory dictionary. The repository pattern allows you to swap out the storage mechanism later—such as using a database or an external API—without changing the parts of your application that rely on the repository. This makes your code more modular, maintainable, and easier to test.

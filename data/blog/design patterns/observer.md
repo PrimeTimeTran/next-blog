@@ -8,9 +8,17 @@ tags: ['design patterns']
 
 # Introduction
 
-Purpose: One-to-many relationship where one change is observed and triggers updates to its dependents.
+The Observer pattern is a behavioral design pattern that defines a one-to-many dependency between objects. When the state of one object (the subject) changes, all its dependent objects (observers) are automatically notified and updated. This pattern promotes loose coupling, allowing objects to interact without needing to know the details of each other’s implementation.
 
-Use Cases: Event handling, email notifications, live updates.
+## Purpose
+
+One-to-many relationship where one change is observed and triggers updates to its dependents.
+
+## Use Cases
+
+- Event handling
+- Email notifications
+- Live updates.
 
 <div className="tab-group">
   <div className="tab">
@@ -64,7 +72,7 @@ Use Cases: Event handling, email notifications, live updates.
 
       subject.notify()  # Both observers react
       subject.detach(observer_a)
-      subject.notify()  # Only Observer B reacts
+      subject.notify()  # Only observer B reacts
       ```
 
   </div>
@@ -239,3 +247,7 @@ Use Cases: Event handling, email notifications, live updates.
 
   </div>
 </div>
+
+<br/>
+# Conclusion
+The Observer pattern is ideal for scenarios where multiple components need to stay synchronized with a single source of truth. It is commonly used in event handling systems, GUI frameworks, messaging systems, and any situation where changes in one object should automatically propagate to others, improving maintainability and scalability.
