@@ -1,5 +1,30 @@
 const projectsData = [
   {
+    title: 'StockVibes.AI',
+    description:
+      'StockVibes.ai is in the lab: giving retail traders institutional‑grade NLP, a transparent methodology, and built‑in guardrails.',
+    imgSrc: '/static/images/stockvibes.png',
+    href: 'https://stockvibes.ai/',
+    tech: [
+      'LangChain',
+      'ReactJS',
+      'NextJS',
+      'Material',
+      'TailwindCSS',
+      'Postgres',
+      'Vercel',
+      'GCP',
+    ],
+  },
+  {
+    title: 'BakeSuite',
+    description:
+      'BakeSuite is an online web application to help cake designers, decorators, bakery owners, and home bakers to manage their day-to-day tasks.',
+    imgSrc: '/static/images/bakesuite.png',
+    href: 'https://baskesuite-demo.vercel.app',
+    tech: ['ReactJS', 'NextJS', 'Supabase', 'Vercel', 'GCP', 'Stripe', 'TailwindCSS'],
+  },
+  {
     title: 'SeepDeep',
     description:
       'SeepDeep is the best platform to help you enhance your skills, expand your knowledge and prepare for technical interviews. Create Account. Start Exploring.',
@@ -15,14 +40,6 @@ const projectsData = [
       'GCP',
       'Github Actions',
     ],
-  },
-  {
-    title: 'BakeSuite',
-    description:
-      'BakeSuite is an online web application to help cake designers, decorators, bakery owners, and home bakers to manage their day-to-day tasks.',
-    imgSrc: '/static/images/bakesuite.png',
-    href: 'https://baskesuite-demo.vercel.app',
-    tech: ['ReactJS', 'NextJS', 'Supabase', 'Vercel', 'GCP', 'Stripe', 'TailwindCSS'],
   },
   {
     title: 'TurboShip',
