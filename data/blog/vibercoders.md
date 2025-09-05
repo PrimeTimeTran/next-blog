@@ -1,8 +1,8 @@
 ---
 draft: false
 date: '2025-09-05'
-title: 'VibeCoders: An Exercise in Patience'
-summary: "AI for vibe coding is great for run of the mill apps. They're incredibly good at cookie cutter features. But they're a game of whack a mole for more sophisticated behavior."
+title: "Vibe Coding Without Code: Why It's Just Whack-a-Mole"
+summary: 'AI-driven vibe coding makes simple apps effortless, but when projects demand nuance, it turns into a frustrating cycle of fixing one issue only for another to pop up.'
 tags: ['vibe coders', 'ai']
 ---
 

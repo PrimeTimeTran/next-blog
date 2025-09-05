@@ -1,7 +1,7 @@
 ---
 draft: false
 date: '2025-09-01'
-title: 'AI as a Fractal: Signal, Noise, and Recursive Nature of Progress'
+title: 'Opinion: AI as a Fractal: Signal, Noise, and Recursive Nature of Progress'
 summary: 'AI expands knowledge like a fractal—each layer of clarity reveals new noise, trapping us in a recursive race to find true signal.'
 tags: ['ai', 'philosophy', 'knowledge', 'signal-vs-noise']
 ---
