@@ -1,12 +1,12 @@
 ---
 draft: false
 date: '2025-09-05'
-title: "Vibe Coding Without Code: Why It's Just Whack-a-Mole"
+title: 'Vibe Coding Without Coders... AKA Whack-a-Mole'
 summary: 'AI-driven vibe coding makes simple apps effortless, but when projects demand nuance, it turns into a frustrating cycle of fixing one issue only for another to pop up.'
 tags: ['vibe coders', 'ai']
 ---
 
-<img src="/static/gifs/vibercoders.gif" alt="preview" />
+<img src="/static/gifs/vibecoders.gif" alt="preview" />
 
 AI-assisted “vibe coding” is powerful — you describe what you want, and the system spits out an app. For standard features, it’s magical. Need a login flow? A CRUD table? A dashboard with filters? Done in seconds.
 
