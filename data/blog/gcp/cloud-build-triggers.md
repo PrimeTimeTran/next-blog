@@ -1,6 +1,6 @@
 ---
 draft: false
-date: '2025-09-15'
+date: '2025-09-20'
 title: 'System Design: Automating Deployments with Google Cloud Build Triggers'
 summary: 'Learn how Cloud Build Triggers automate CI/CD workflows in Google Cloud, enabling automatic builds and deployments for your applications.'
 tags: ['system design', 'gcp', 'cloud build', 'ci/cd', 'automation', 'devops']
