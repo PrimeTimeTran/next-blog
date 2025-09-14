@@ -1,6 +1,6 @@
 ---
 draft: false
-date: '2025-09-15'
+date: '2025-09-14'
 title: 'System Design: Google Cloud Secret Manager'
 summary: 'Learn what Google Cloud Secret Manager is, its benefits, and how to securely manage secrets for your applications in GCP.'
 tags: ['system design', 'gcp', 'secret manager', 'security', 'devops']
