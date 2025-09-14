@@ -1,6 +1,6 @@
 ---
 draft: false
-date: '2025-09-17'
+date: '2025-09-12'
 title: 'System Design: Getting Started with Google Cloud Scheduler'
 summary: 'Learn what Google Cloud Scheduler is, its benefits, and how to set up a scheduled job in Google Cloud.'
 tags: ['system design', 'gcp', 'cloud scheduler', 'cron jobs', 'ci/cd', 'automation', 'devops']

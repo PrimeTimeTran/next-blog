@@ -1,6 +1,6 @@
 ---
 draft: false
-date: '2025-09-15'
+date: '2025-09-13'
 title: 'System Design: Comparing Background Job Techniques in GCP: App Schedulers, Cloud Scheduler, and Cloud Run Jobs'
 summary: 'Explore the pros and cons of three popular approaches for scheduling and running background jobs in Google Cloud: App Schedulers, Cloud Scheduler, and Cloud Run Jobs.'
 tags:
