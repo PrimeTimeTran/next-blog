@@ -3,7 +3,17 @@ draft: false
 date: '2024-09-15'
 title: 'System Design: Comparing Background Job Techniques in GCP: APScheduler, Cloud Scheduler, and Cloud Run Jobs'
 summary: 'Explore the pros and cons of three popular approaches for scheduling and running background jobs in Google Cloud: APScheduler, Cloud Scheduler, and Cloud Run Jobs.'
-tags: ['system design', 'gcp', 'scheduler', 'cron jobs', 'cloud run jobs']
+tags:
+  [
+    'system design',
+    'gcp',
+    'scheduler',
+    'cron jobs',
+    'cloud run jobs',
+    'ci/cd',
+    'automation',
+    'devops',
+  ]
 ---
 
 # Introduction
