@@ -75,6 +75,12 @@ tags:
   # tags...
 ```
 
+## Secrets Page
+
+<img src="/static/images/secret-manager.png" alt="preview" />
+
+## Cloud Run Service with Environment Vars
+
 <img src="/static/images/secret-manager.png" alt="preview" />
 
 # Conclusion
