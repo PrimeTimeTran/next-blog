@@ -5,7 +5,16 @@ import siteMetadata from '@/data/siteMetadata'
 import { getAllTags } from '@/lib/tags'
 import kebabCase from '@/lib/utils/kebabCase'
 
-import { tech, frameworks, databases, devops, finance, dsa, security, tools } from './constants'
+import {
+  tech,
+  frameworks,
+  databases,
+  devops,
+  finance,
+  dsa,
+  security,
+  tools,
+} from '../lib/constants'
 
 export async function getStaticProps() {
   const tags = await getAllTags('blog')
