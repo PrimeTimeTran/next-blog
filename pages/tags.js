@@ -1,20 +1,51 @@
-import Link from '@/components/Link'
-import { PageSEO } from '@/components/SEO'
 import Tag from '@/components/Tag'
-import siteMetadata from '@/data/siteMetadata'
+import Link from '@/components/Link'
 import { getAllTags } from '@/lib/tags'
+import { PageSEO } from '@/components/SEO'
 import kebabCase from '@/lib/utils/kebabCase'
+import siteMetadata from '@/data/siteMetadata'
 
 import {
+  dsa,
   tech,
-  frameworks,
-  databases,
+  misc,
+  tools,
   devops,
   finance,
-  dsa,
   security,
-  tools,
+  databases,
+  frameworks,
 } from '../lib/constants'
+
+function renderTags(tags, t) {
+  return (
+    <div key={t} className="mt-2 mb-2 mr-5">
+      <Tag text={t} />
+      <Link
+        href={`/tags/${kebabCase(t)}`}
+        className="-ml-2 text-sm font-semibold uppercase text-gray-600 dark:text-gray-300"
+      >
+        {` (${tags[t]})`}
+      </Link>
+    </div>
+  )
+}
+
+function renderCategory(title, tags, sortedTags, filter) {
+  return (
+    <div>
+      <h1 className="text-2xl font-bold text-green-600">{title}</h1>
+      <div className="mb-6 flex max-w-lg flex-wrap">
+        {sortedTags.map((t) => {
+          if (!tech.includes(t.toLowerCase())) {
+            return null
+          }
+          return renderTags(tags, t)
+        })}
+      </div>
+    </div>
+  )
+}
 
 export async function getStaticProps() {
   const tags = await getAllTags('blog')
@@ -34,201 +65,16 @@ export default function Tags({ tags }) {
             Tags
           </h1>
         </div>
-        <div className="">
-          <h1 className="text-2xl font-bold text-green-600">Programming</h1>
-          <div className="mb-6 flex max-w-lg flex-wrap">
-            {Object.keys(tags).length === 0 && 'No tags found.'}
-            {sortedTags.map((t) => {
-              if (!tech.includes(t.toLowerCase())) {
-                return null
-              }
-              return (
-                <div key={t} className="mt-2 mb-2 mr-5">
-                  <Tag text={t} />
-                  <Link
-                    href={`/tags/${kebabCase(t)}`}
-                    className="-ml-2 text-sm font-semibold uppercase text-gray-600 dark:text-gray-300"
-                  >
-                    {` (${tags[t]})`}
-                  </Link>
-                </div>
-              )
-            })}
-          </div>
-          <h1 className="text-2xl font-bold text-green-600">Data Structures & Algorithms</h1>
-          <div className="mb-6 flex max-w-lg flex-wrap">
-            {Object.keys(tags).length === 0 && 'No tags found.'}
-            {sortedTags.map((t) => {
-              if (!dsa.includes(t.toLowerCase())) {
-                return null
-              }
-              return (
-                <div key={t} className="mt-2 mb-2 mr-5">
-                  <Tag text={t} />
-                  <Link
-                    href={`/tags/${kebabCase(t)}`}
-                    className="-ml-2 text-sm font-semibold uppercase text-gray-600 dark:text-gray-300"
-                  >
-                    {` (${tags[t]})`}
-                  </Link>
-                </div>
-              )
-            })}
-          </div>
-          <h1 className="text-2xl font-bold text-green-600">Frameworks</h1>
-          <div className="mb-6 flex max-w-lg flex-wrap">
-            {Object.keys(tags).length === 0 && 'No tags found.'}
-            {sortedTags.map((t) => {
-              if (!frameworks.includes(t.toLowerCase())) {
-                return null
-              }
-              return (
-                <div key={t} className="mt-2 mb-2 mr-5">
-                  <Tag text={t} />
-                  <Link
-                    href={`/tags/${kebabCase(t)}`}
-                    className="-ml-2 text-sm font-semibold uppercase text-gray-600 dark:text-gray-300"
-                  >
-                    {` (${tags[t]})`}
-                  </Link>
-                </div>
-              )
-            })}
-          </div>
-          <h1 className="text-2xl font-bold text-green-600">Databases</h1>
-          <div className="mb-6 flex max-w-lg flex-wrap">
-            {Object.keys(tags).length === 0 && 'No tags found.'}
-            {sortedTags.map((t) => {
-              if (!databases.includes(t.toLowerCase())) {
-                return null
-              }
-              return (
-                <div key={t} className="mt-2 mb-2 mr-5">
-                  <Tag text={t} />
-                  <Link
-                    href={`/tags/${kebabCase(t)}`}
-                    className="-ml-2 text-sm font-semibold uppercase text-gray-600 dark:text-gray-300"
-                  >
-                    {` (${tags[t]})`}
-                  </Link>
-                </div>
-              )
-            })}
-          </div>
-          <h1 className="text-2xl font-bold text-green-600">DevOps</h1>
-          <div className="mb-6 flex max-w-lg flex-wrap">
-            {Object.keys(tags).length === 0 && 'No tags found.'}
-            {sortedTags.map((t) => {
-              if (!devops.includes(t.toLowerCase())) {
-                return null
-              }
-              return (
-                <div key={t} className="mt-2 mb-2 mr-5">
-                  <Tag text={t} />
-                  <Link
-                    href={`/tags/${kebabCase(t)}`}
-                    className="-ml-2 text-sm font-semibold uppercase text-gray-600 dark:text-gray-300"
-                  >
-                    {` (${tags[t]})`}
-                  </Link>
-                </div>
-              )
-            })}
-          </div>
-          <h1 className="text-2xl font-bold text-green-600">Security</h1>
-          <div className="mb-6 flex max-w-lg flex-wrap">
-            {Object.keys(tags).length === 0 && 'No tags found.'}
-            {sortedTags.map((t) => {
-              if (!security.includes(t.toLowerCase())) {
-                return null
-              }
-              return (
-                <div key={t} className="mt-2 mb-2 mr-5">
-                  <Tag text={t} />
-                  <Link
-                    href={`/tags/${kebabCase(t)}`}
-                    className="-ml-2 text-sm font-semibold uppercase text-gray-600 dark:text-gray-300"
-                  >
-                    {` (${tags[t]})`}
-                  </Link>
-                </div>
-              )
-            })}
-          </div>
-          <h1 className="text-2xl font-bold text-green-600">Tools</h1>
-          <div className="mb-6 flex max-w-lg flex-wrap">
-            {Object.keys(tags).length === 0 && 'No tags found.'}
-            {sortedTags.map((t) => {
-              if (!tools.includes(t.toLowerCase())) {
-                return null
-              }
-              return (
-                <div key={t} className="mt-2 mb-2 mr-5">
-                  <Tag text={t} />
-                  <Link
-                    href={`/tags/${kebabCase(t)}`}
-                    className="-ml-2 text-sm font-semibold uppercase text-gray-600 dark:text-gray-300"
-                  >
-                    {` (${tags[t]})`}
-                  </Link>
-                </div>
-              )
-            })}
-          </div>
-          <h1 className="text-2xl font-bold text-green-600">Finance</h1>
-          <div className="mb-6 flex max-w-lg flex-wrap">
-            {Object.keys(tags).length === 0 && 'No tags found.'}
-            {sortedTags.map((t) => {
-              if (!finance.includes(t.toLowerCase())) {
-                return null
-              }
-              return (
-                <div key={t} className="mt-2 mb-2 mr-5">
-                  <Tag text={t} />
-                  <Link
-                    href={`/tags/${kebabCase(t)}`}
-                    className="-ml-2 text-sm font-semibold uppercase text-gray-600 dark:text-gray-300"
-                  >
-                    {` (${tags[t]})`}
-                  </Link>
-                </div>
-              )
-            })}
-          </div>
-          <h1 className="text-2xl font-bold text-green-600">Misc</h1>
-          <div className="mb-6 flex max-w-lg flex-wrap">
-            {sortedTags.map((t) => {
-              const used = [
-                ...tech,
-                ...frameworks,
-                ...databases,
-                ...devops,
-                ...finance,
-                ...dsa,
-                ...security,
-                ...tools,
-                // 'blog',
-                // 'project,
-                // 'info-sec',
-                // 'cheat-sheet',
-                // 'guide',
-              ]
-              if (used.includes(t.toLowerCase())) {
-                return null
-              }
-              return (
-                <div key={t} className="mt-2 mb-2 mr-5">
-                  <Tag text={t} />
-                  <Link
-                    href={`/tags/${kebabCase(t)}`}
-                    className="-ml-2 text-sm font-semibold uppercase text-gray-600 dark:text-gray-300"
-                  >
-                    {` (${tags[t]})`}
-                  </Link>
-                </div>
-              )
-            })}
-          </div>
+        <div>
+          {renderCategory('Tech', tags, sortedTags, tech)}
+          {renderCategory('Data Structures & Algorithms', tags, sortedTags, dsa)}
+          {renderCategory('Frameworks', tags, sortedTags, frameworks)}
+          {renderCategory('Databases', tags, sortedTags, databases)}
+          {renderCategory('DevOps', tags, sortedTags, devops)}
+          {renderCategory('Security', tags, sortedTags, security)}
+          {renderCategory('Tools', tags, sortedTags, tools)}
+          {renderCategory('Finance', tags, sortedTags, finance)}
+          {renderCategory('Misc', tags, sortedTags, misc)}
         </div>
       </div>
     </div>
