@@ -37,9 +37,7 @@ function renderCategory(title, tags, sortedTags, filter) {
       <h1 className="text-2xl font-bold text-green-600">{title}</h1>
       <div className="mb-6 flex max-w-lg flex-wrap">
         {sortedTags.map((t) => {
-          if (!filter.includes(t.toLowerCase())) {
-            return null
-          }
+          if (!filter.includes(t.toLowerCase())) return null
           return renderTags(tags, t)
         })}
       </div>
@@ -77,30 +75,8 @@ export default function Tags({ tags }) {
           <h1 className="text-2xl font-bold text-green-600">Misc</h1>
           <div className="mb-6 flex max-w-lg flex-wrap">
             {sortedTags.map((t) => {
-              const used = [
-                ...tech,
-                ...frameworks,
-                ...databases,
-                ...devops,
-                ...finance,
-                ...dsa,
-                ...security,
-                ...tools,
-              ]
-              if (used.includes(t.toLowerCase())) {
-                return null
-              }
-              return (
-                <div key={t} className="mt-2 mb-2 mr-5">
-                  <Tag text={t} />
-                  <Link
-                    href={`/tags/${kebabCase(t)}`}
-                    className="-ml-2 text-sm font-semibold uppercase text-gray-600 dark:text-gray-300"
-                  >
-                    {` (${tags[t]})`}
-                  </Link>
-                </div>
-              )
+              if (misc.includes(t.toLowerCase())) return null
+              return renderTags(tags, t)
             })}
           </div>
         </div>
