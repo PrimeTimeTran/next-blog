@@ -3,7 +3,7 @@ draft: false
 date: 2022-10-14
 title: 'Setup Java & Spring Boot'
 summary: 'Requirements for setting up Java working environment using VSCode'
-tags: ['java', 'spring']
+tags: ['java', 'spring', 'guide']
 ---
 
 # Introduction

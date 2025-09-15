@@ -2,8 +2,8 @@
 draft: false
 date: 2023-06-26
 title: How to Rebase in Git (With Examples)
-tags: ['git', 'guide']
 summary: Learn how to rebase in Git with step-by-step examples. Understand the difference between merge and rebase, and how to resolve conflicts when rebasing.
+tags: ['git', 'guide', 'question']
 ---
 
 # Introduction

@@ -3,7 +3,7 @@ draft: false
 date: '2025-07-19'
 title: 'How to enable hot reloading in Flask?'
 summary: 'Restarting a server to see changes reflected call kill velocity when working. Enable Hot Reloading to see changes to the app reflected from your code without the need for a server Restart'
-tags: ['flask']
+tags: ['flask', 'question']
 ---
 
 # Introduction

@@ -3,7 +3,7 @@ draft: false
 date: '2022-08-20'
 title: 'Data Structures & Algorithms: How to create a Hash Table?'
 summary: 'How to implement a custom Hash Table, analogous to a dict, using simpler data types & a hash function.'
-tags: ['data-structures-algorithms', 'python']
+tags: ['data-structures-algorithms', 'python', 'question']
 ---
 
 ```python
