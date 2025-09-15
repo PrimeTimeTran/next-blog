@@ -3,7 +3,7 @@ draft: true
 date: '2022-08-21'
 title: 'Graph Theory'
 summary: 'Exploring Graph Theory'
-tags: ['graph']
+tags: ['graphs']
 bibliography: references-data.bib
 ---
 

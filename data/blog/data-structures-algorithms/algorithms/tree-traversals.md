@@ -1,8 +1,8 @@
 ---
-draft: false
-date: '2022-04-20'
+draft: true
+date: 2022-04-20
 title: 'Algorithms: Tree Traversals'
-tags: ['algorithms', 'data-structures-algorithms', 'trees']
+tags: ['algorithms', 'data structures algorithms', 'trees']
 summary: 'Most common traversal orders used with binary trees.'
 ---
 

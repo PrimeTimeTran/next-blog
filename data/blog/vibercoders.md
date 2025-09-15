@@ -3,7 +3,7 @@ draft: false
 date: '2025-09-05'
 title: 'Vibe Coding Without Coders... AKA Whack-a-Mole'
 summary: 'AI-driven vibe coding makes simple apps effortless, but when projects demand nuance, it turns into a frustrating cycle of fixing one issue only for another to pop up.'
-tags: ['vibe coders', 'ai']
+tags: ['opinion', 'vibe coders', 'ai']
 ---
 
 <img src="/static/gifs/vibecoders.gif" alt="preview" />

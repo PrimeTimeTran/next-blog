@@ -2,10 +2,8 @@
 draft: false
 date: '2022-11-05'
 title: 'Python: Useful Heap Methods'
-tags: ['data-structures-algorithms', 'Heaps', 'python']
 summary: 'A few methods on the heap data structure'
-bibliography: references-data.bib
-canonicalUrl:
+tags: ['data-structures-algorithms', 'Heaps', 'python']
 ---
 
 ## Heapq
@@ -104,5 +102,4 @@ def show_tree(tree, total_width=60, fill=' '):
     print(output.getvalue())
     print('-' * total_width)
     return
-
 ```

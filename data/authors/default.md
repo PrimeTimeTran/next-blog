@@ -15,7 +15,7 @@ I build beautifully crafted webpages 💻 and mobile 📱 apps.
 
 I'm an [AWS Certified Cloud Practitioner](https://www.credly.com/badges/c6fa2310-f2ec-4bf3-a43b-0009a3718ef0).
 
-I've worked in [booking/ticketing](https://vexere.com/),
+I've worked in [finance](https://1long.vn/), [booking/ticketing](https://vexere.com/),
 [telemedicine](https://scanlabmr.com/), [education](https://www.coderschool.vn/en)
 & more.
 

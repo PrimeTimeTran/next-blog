@@ -1,6 +1,6 @@
 ---
 draft: true
-date: '2025-05-08'
+date: 2025-05-08
 title: 'System Design: '
 tags: ['system design']
 summary: ''

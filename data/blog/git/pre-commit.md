@@ -6,7 +6,7 @@ tags: ['git', 'guide']
 summary: Learn how to use Git pre-commit hooks to automatically run checks or scripts before committing code, with practical examples using shell and Husky.
 ---
 
-# Git Pre-Commit Hooks Explained with Examples
+# Introduction
 
 Git hooks are powerful tools that let you automate tasks during the Git workflow. One of the most commonly used hooks is the **pre-commit** hook. This script runs _before_ a commit is finalized, making it ideal for tasks like linting code, running tests, or formatting files automatically.
 

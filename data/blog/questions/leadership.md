@@ -3,7 +3,7 @@ draft: false
 date: '2024-08-08'
 title: 'Question: How do I lead?'
 summary: 'Explore your leadership style. A strong answer highlights guiding a team by setting clear goals, communicating effectively, supporting and mentoring team members, making informed decisions, and fostering collaboration and accountability.'
-tags: ['questions']
+tags: ['question']
 ---
 
 # Introduction

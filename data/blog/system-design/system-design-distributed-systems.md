@@ -3,7 +3,7 @@ draft: false
 date: '2024-07-31'
 title: 'System Design: Distributed Systems'
 summary: 'A distributed system is a collection of independent computers that appear to the users as a single coherent system. The key goal is to achieve scalability, fault tolerance, and high availability while maintaining consistency and performance.'
-tags: ['system design']
+tags: ['system design', 'gcp']
 ---
 
 # Introduction

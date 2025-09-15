@@ -8,5 +8,14 @@ summary: 'Awesome Python modules'
 
 # Introduction
 
-Iterators
-Collections
+- Bisect
+  - bisect_left
+  - bisect_right
+- Iterators
+
+  - accumulate
+  - count
+  - groupby
+
+- Collections
+  - Counter

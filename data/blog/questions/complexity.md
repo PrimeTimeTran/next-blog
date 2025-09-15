@@ -3,8 +3,10 @@ draft: false
 date: '2024-08-08'
 title: 'Question: How do I deal with complexity?'
 summary: 'How you approach complicated problems or systems. A strong answer emphasizes breaking problems into smaller parts, prioritizing tasks, simplifying patterns, collaborating with others, and iterating solutions step by step.'
-tags: ['questions']
+tags: ['question']
 ---
+
+BPUCI
 
 1. Break it down:
    "I start by breaking the problem into smaller, more manageable parts. By understanding each component separately, it’s easier to see how they fit together."

@@ -2,7 +2,7 @@
 draft: true
 date: '2016-10-16'
 title: 'LeetCode: data-structures-algorithms'
-tags: ['leetcode', 'data structures algorithms', 'graph', 'python']
+tags: ['leetcode', 'data structures algorithms', 'graphs', 'python']
 summary: 'Solving programming problems in multiple languages to master syntax, data structures, and algorithms.'
 ---
 
