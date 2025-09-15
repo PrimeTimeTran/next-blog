@@ -6,13 +6,13 @@ import SectionContainer from './SectionContainer'
 import Footer from './Footer'
 import MobileNav from './MobileNav'
 import ThemeSwitch from './ThemeSwitch'
-import { useRouter } from 'next/router'
+import { route, useRouter } from 'next/router'
 
 const LayoutWrapper = ({ children }) => {
-  const router = useRouter()
-  router.route?.events?.on('routeChangeComplete', () => {})
+  route?.events?.on('routeChangeComplete', () => {})
   // How to get the current route in Next.js?
-  const currentRoute = router.asPath
+  const currentRoute = useRouter().asPath
+  console.log({ currentRoute })
   return (
     <SectionContainer isSnippets={currentRoute === '/snippets'}>
       <div className="flex h-screen flex-col justify-between">
