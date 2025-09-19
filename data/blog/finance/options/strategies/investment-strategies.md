@@ -109,15 +109,6 @@ OTM Call/Put.
 - The change in the underling has the cover the premium of both positions.
 - Paying less, but the requirements change in the underlying needs to be greeater to make up for the savings in total premium.
 
-# Alternative Names
-
-| Spread Type | Alternative Name  | Structure (Basic)                              | Net Position |
-| ----------- | ----------------- | ---------------------------------------------- | ------------ |
-| Bull Call   | Long Call Spread  | Buy lower strike call, Sell higher strike call | Debit        |
-| Bear Call   | Short Call Spread | Sell lower strike call, Buy higher strike call | Credit       |
-| Bull Put    | Short Put Spread  | Sell higher strike put, Buy lower strike put   | Credit       |
-| Bear Put    | Long Put Spread   | Buy higher strike put, Sell lower strike put   | Debit        |
-
 # Conclusion
 
 For finance experts, options are not just bets on price movement—they’re flexible instruments that can reshape risk-return profiles. They sit alongside equities, bonds, ETFs, and derivatives as a core component of a sophisticated portfolio. Used wisely, they provide insurance, yield enhancement, and tailored exposures that traditional assets alone can’t offer.

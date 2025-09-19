@@ -31,6 +31,17 @@ Assuming strikes are DESC order when viewing the option chain you should place y
 | Call Debit Spread  | Put Credit Spread |
 | Call Credit Spread | Put Debit Spread  |
 
+# Alternative Names
+
+Depending on your broker the strategies might have different names.
+
+| Cash Flow | Spread Type | Alternative Name  | Structure (Basic)                              |
+| --------- | ----------- | ----------------- | ---------------------------------------------- |
+| Debit     | Bull Call   | Long Call Spread  | Buy lower strike call, Sell higher strike call |
+| Credit    | Bear Call   | Short Call Spread | Sell lower strike call, Buy higher strike call |
+| Credit    | Bull Put    | Short Put Spread  | Sell higher strike put, Buy lower strike put   |
+| Debit     | Bear Put    | Long Put Spread   | Buy higher strike put, Sell lower strike put   |
+
 # Conclusion
 
 Vertical spreads are a versatile and risk-defined way to trade options, allowing investors to express bullish or bearish views while controlling both potential profit and loss. By combining long and short positions at different strikes, traders can reduce costs, limit risk, and tailor strategies to market outlook and volatility. Whether you’re seeking income, hedging, or directional exposure, mastering vertical spreads can add precision and flexibility to your options toolkit. As always, understanding the mechanics and risks is key—start with small positions and build confidence as you learn.
