@@ -3,17 +3,16 @@ draft: false
 date: '2025-09-06'
 title: 'Finance: Spreads'
 summary: 'A comprehensive guide to option spread strategies, including vertical, credit, and debit spreads. Learn how spreads manage risk, reduce cost, and enhance returns.'
-tags: ['finance', 'options', 'investment strategies', 'spreads', 'risk management']
+tags: ['finance', 'options', 'investment strategies', 'risk management', 'spreads']
 ---
 
 # Introduction
 
-Options are one of the most versatile instruments in finance. They give their holders the right—but not the obligation—to buy (calls) or sell (puts) an underlying asset at a specific price (the strike) before or at a given date (expiration). Because of that flexibility, they’re not just speculative tools, but a powerful addition to the “toolbelt” of finance experts who manage risk, enhance returns, and design structured exposures. Here’s how they fit:
+Spreads are a moderately risky option strategy with intermediate difficulty. They involve opening multiple legs with differing strike prices for both bid/ask sides.
 
-Risk: Moderate
-Difficulty: Intermediate
+The outlook you have, bull vs bear, will determine the lower/higher strike price relative to the underlying price at opening.
 
-# Strategies Overview
+# Spreads Table
 
 | Name               | Sentiment       | Reward / Purpose                               | Flow                                                                         | Moneyness | Loss Drivers                                                                                                                           | Description                                                                                                                                       |
 | ------------------ | --------------- | ---------------------------------------------- | ---------------------------------------------------------------------------- | --------- | -------------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------- |
@@ -23,7 +22,7 @@ Difficulty: Intermediate
 | Put Debit Spread   | Bearish         | Limited downside protection, lower cost        | Buy to open a higher-strike put; Sell to open lower-strike put               | OTM       | Underlying does not fall sufficiently before expiry (lose net premium); IV collapse reduces value.                                     | Benefit: cheaper hedge than a single put with defined risk. Tradeoffs: reduced payoff vs a long put; needs a sufficient downside move.            |
 | Put Credit Spread  | Bullish/Neutral | Premium income, defined risk (bull put spread) | Sell to open a higher-strike put; Buy to open lower-strike put               | OTM       | Underlying falls below short strike and spread approaches max loss (difference between strikes minus credit received).                 | Benefit: collect premium with capped downside. Tradeoffs: limited profit and obligation to buy if assigned; requires bullish-to-neutral view.     |
 
-# Moneyness:
+# Moneyness
 
 Assuming strikes are DESC order when viewing the option chain you should place your spreads in the following quadrants.
 
@@ -34,4 +33,4 @@ Assuming strikes are DESC order when viewing the option chain you should place y
 
 # Conclusion
 
-For finance experts, options are not just bets on price movement—they’re flexible instruments that can reshape risk-return profiles. They sit alongside equities, bonds, ETFs, and derivatives as a core component of a sophisticated portfolio. Used wisely, they provide insurance, yield enhancement, and tailored exposures that traditional assets alone can’t offer.
+Vertical spreads are a versatile and risk-defined way to trade options, allowing investors to express bullish or bearish views while controlling both potential profit and loss. By combining long and short positions at different strikes, traders can reduce costs, limit risk, and tailor strategies to market outlook and volatility. Whether you’re seeking income, hedging, or directional exposure, mastering vertical spreads can add precision and flexibility to your options toolkit. As always, understanding the mechanics and risks is key—start with small positions and build confidence as you learn.
