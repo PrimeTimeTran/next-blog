@@ -3,7 +3,7 @@ draft: false
 date: '2018-08-06'
 title: 'Top 10 MongoDB CLI Commands Every Developer Should Know'
 summary: 'Master MongoDB’s CLI with these essential commands for exploring databases, managing collections, and running queries like a pro.'
-tags: ['database', 'mongodb']
+tags: ['databases', 'mongodb']
 ---
 
 # Introduction

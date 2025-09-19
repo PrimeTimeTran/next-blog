@@ -64,6 +64,7 @@ export default function Tags({ tags }) {
           </h1>
         </div>
         <div>
+          {renderCategory('Finance', tags, sortedTags, finance)}
           {renderCategory('Tech', tags, sortedTags, tech)}
           {renderCategory('Data Structures & Algorithms', tags, sortedTags, dsa)}
           {renderCategory('Frameworks', tags, sortedTags, frameworks)}
@@ -71,7 +72,6 @@ export default function Tags({ tags }) {
           {renderCategory('DevOps', tags, sortedTags, devops)}
           {renderCategory('Security', tags, sortedTags, security)}
           {renderCategory('Tools', tags, sortedTags, tools)}
-          {renderCategory('Finance', tags, sortedTags, finance)}
           <h1 className="text-2xl font-bold text-green-600">Misc</h1>
           <div className="mb-6 flex max-w-lg flex-wrap">
             {sortedTags.map((t) => {

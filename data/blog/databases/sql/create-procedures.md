@@ -1,7 +1,7 @@
 ---
 draft: true
 date: '2025-09-10'
-title: ''
+title: 'How Do I Create a Procedure in a Database?'
 summary: ''
-tags: ['']
+tags: ['databases', 'sql', 'procedures']
 ---

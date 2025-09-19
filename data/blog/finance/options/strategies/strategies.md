@@ -70,6 +70,72 @@ Long straddles/strangles: Profits from big moves in either direction.
 | Ratio Call Spread         | Bullish/Neutral    | High         | Leveraged upside with defined/undefined risk     | Advanced              | Buy to open calls; Sell to open more calls (ratio)                           | OTM/ITM   | Strong rally above the sold-call strikes causes large, potentially unlimited losses on the uncovered portion of the ratio.                            | Benefit: lowers cost and can profit from moderate rallies. Tradeoffs: uncovered calls can create large upside risk; requires careful sizing.                 |
 | Box Spread                | Arbitrage/Neutral  | Low          | Lock in interest rate / arbitrage                | Advanced              | Buy to open box (buy spread + buy spread)                                    | ATM/OTM   | Poor execution (legs not filled) or wide transaction costs can turn a small arbitrage into a loss; early assignment in legs can complicate positions. | Benefit: creates near-riskless payoff used for financing/arbitrage. Tradeoffs: commissions, execution risk, and capital required.                            |
 
+# Moneyness
+
+Assuming strikes are DESC order when viewing the option chain you should place your spreads in the following quadrants.
+
+| Calls              | Puts              |
+| ------------------ | ----------------- |
+| Call Debit Spread  | Put Credit Spread |
+| Call Credit Spread | Put Debit Spread  |
+
+# Iron Condor(Short Volatility[Neutral])
+
+OTM of the money
+Call Credit Spread & Put Credit Spread
+
+| Calls              | Puts              |
+| ------------------ | ----------------- |
+| Call Credit Spread |                   |
+|                    | Put Credit Spread |
+
+- Payout Profile. Make the most money if the stock price falls inbetween the two short strikes.
+
+# Straddle/Strangle(Long Volatility)
+
+## Straddle
+
+Call/Put @ same strike price.
+Usually bought at the money.
+
+- Paying 2 premiums.
+- The change in the underling has the cover the premium of both positions.
+
+## Long Strangle
+
+OTM Call/Put.
+
+- Paying 2 premiums.
+- The change in the underling has the cover the premium of both positions.
+- Paying less, but the requirements change in the underlying needs to be greeater to make up for the savings in total premium.
+
+# Alternative Names
+
+| Spread Type | Alternative Name  | Structure (Basic)                              | Net Position |
+| ----------- | ----------------- | ---------------------------------------------- | ------------ |
+| Bull Call   | Long Call Spread  | Buy lower strike call, Sell higher strike call | Debit        |
+| Bear Call   | Short Call Spread | Sell lower strike call, Buy higher strike call | Credit       |
+| Bull Put    | Short Put Spread  | Sell higher strike put, Buy lower strike put   | Credit       |
+| Bear Put    | Long Put Spread   | Buy higher strike put, Sell lower strike put   | Debit        |
+
 # Conclusion
 
 For finance experts, options are not just bets on price movement—they’re flexible instruments that can reshape risk-return profiles. They sit alongside equities, bonds, ETFs, and derivatives as a core component of a sophisticated portfolio. Used wisely, they provide insurance, yield enhancement, and tailored exposures that traditional assets alone can’t offer.
+
+# References
+
+- Put Credit Spread:
+
+  - https://www.youtube.com/watch?v=nvJ_43579z8&ab_channel=SMBCapital
+
+- S
+
+  - https://www.youtube.com/watch?v=4d6qj5vtrBQ&ab_channel=SMBCapital
+
+- 30 Delta Spread
+
+  - https://youtu.be/Ko9E9OFYsf8?t=223
+
+- Modified Risk Reversal Strategy
+  - Pays cash at beginning of trade. If breakout follows through there's a huge upside.
+  - https://www.youtube.com/shorts/3Hk8UfSeP4E

@@ -3,7 +3,7 @@ draft: false
 date: '2025-08-10'
 title: 'How Do I Clone a Remote PostgreSQL Database to Another Remote Database?'
 summary: 'Step-by-step guide to cloning tables or data from one remote PostgreSQL database to another using pg_dump and psql.'
-tags: ['postgres', 'sql', 'database', 'devops', 'cloud', 'question', 'guide']
+tags: ['postgres', 'sql', 'databases', 'devops', 'cloud', 'question', 'guide']
 ---
 
 # Introduction

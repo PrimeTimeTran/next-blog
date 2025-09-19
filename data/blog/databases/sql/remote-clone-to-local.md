@@ -3,7 +3,7 @@ draft: false
 date: '2025-08-09'
 title: 'How Do I Dump and Restore a Remote PostgreSQL Database to a Local Database?'
 summary: 'Step-by-step guide to dumping a remote PostgreSQL database or schema and restoring it to a local database using pg_dump and pg_restore.'
-tags: ['postgres', 'sql', 'database', 'devops', 'cloud', 'question', 'guide']
+tags: ['postgres', 'sql', 'databases', 'devops', 'cloud', 'question', 'guide']
 ---
 
 # Introduction
