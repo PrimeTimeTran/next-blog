@@ -43,3 +43,15 @@ Condors are part of a family of spread strategies designed to profit from specif
 Condors are a sophisticated tool for options traders who want to profit from range-bound markets while keeping risk in check. Understanding how to structure and manage condors can help diversify your options portfolio and improve your risk-adjusted returns.
 
 <ProjectionChart text="Hello from a React component!" />
+
+# Iron Condor(Short Volatility[Neutral])
+
+OTM of the money
+Call Credit Spread & Put Credit Spread
+
+| Calls              | Puts              |
+| ------------------ | ----------------- |
+| Call Credit Spread |                   |
+|                    | Put Credit Spread |
+
+- Payout Profile. Make the most money if the stock price falls inbetween the two short strikes.

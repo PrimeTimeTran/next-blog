@@ -79,18 +79,6 @@ Assuming strikes are DESC order when viewing the option chain you should place y
 | Call Debit Spread  | Put Credit Spread |
 | Call Credit Spread | Put Debit Spread  |
 
-# Iron Condor(Short Volatility[Neutral])
-
-OTM of the money
-Call Credit Spread & Put Credit Spread
-
-| Calls              | Puts              |
-| ------------------ | ----------------- |
-| Call Credit Spread |                   |
-|                    | Put Credit Spread |
-
-- Payout Profile. Make the most money if the stock price falls inbetween the two short strikes.
-
 # Straddle/Strangle(Long Volatility)
 
 ## Straddle
