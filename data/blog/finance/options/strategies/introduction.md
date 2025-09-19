@@ -1,6 +1,6 @@
 ---
 draft: false
-date: '2025-09-06'
+date: '2024-09-06'
 title: 'Finance: Options for Beginners'
 summary: 'Options aren’t just speculative bets—they serve as insurance, income generators, leverage tools, and volatility plays. Finance experts use them to reshape risk-reward profiles, hedge portfolios, and engineer custom exposures that traditional assets alone can’t provide.'
 tags: ['finance', 'options', 'investment strategies', 'risk management']

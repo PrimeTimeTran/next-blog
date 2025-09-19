@@ -1,6 +1,6 @@
 ---
 draft: false
-date: '2025-09-06'
+date: '2024-09-06'
 title: 'Finance: The Greeks'
 summary: 'A practical guide to Delta, Gamma, Theta, Vega, and Rho for options traders. Learn how each Greek affects option pricing and risk management.'
 tags: ['finance', 'options', 'greeks', 'risk management']

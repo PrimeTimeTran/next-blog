@@ -1,6 +1,6 @@
 ---
 draft: false
-date: '2025-09-06'
+date: '2024-09-06'
 title: 'Finance: Spreads'
 summary: 'A comprehensive guide to option spread strategies, including vertical, credit, and debit spreads. Learn how spreads manage risk, reduce cost, and enhance returns.'
 tags: ['finance', 'options', 'investment strategies', 'risk management', 'spreads']
