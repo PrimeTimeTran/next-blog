@@ -3,7 +3,7 @@ draft: false
 date: '2024-09-06'
 title: 'Finance: Understanding Open Frac as an Options Signal'
 summary: 'Learn how the open frac indicator helps quantify opening vs. closing volume in options markets, and how it can be used as a signal in quantitative finance.'
-tags: ['finance', 'quant', 'open frac']
+tags: ['finance', 'options', 'quant', 'open frac']
 ---
 
 # Introduction
