@@ -9,6 +9,7 @@ import {
   dsa,
   tech,
   misc,
+  maths,
   tools,
   devops,
   finance,
@@ -64,6 +65,7 @@ export default function Tags({ tags }) {
           </h1>
         </div>
         <div>
+          {renderCategory('Maths', tags, sortedTags, maths)}
           {renderCategory('Finance', tags, sortedTags, finance)}
           {renderCategory('Frameworks', tags, sortedTags, frameworks)}
           {renderCategory('Tech', tags, sortedTags, tech)}
