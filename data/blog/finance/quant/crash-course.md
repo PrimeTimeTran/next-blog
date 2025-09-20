@@ -6,7 +6,7 @@ summary: ''
 tags: ['']
 ---
 
-RoadMap
+# RoadMap
 
 ---
 
@@ -112,9 +112,9 @@ This is where you “differentiate” depending on the fintech’s focus:
 
 Build a small **portfolio of projects** to show fintech recruiters:
 
-- [ ] Implement a Black-Scholes pricer in Python (with Greeks)
+- [x] Implement a Black-Scholes pricer in Python (with Greeks)
 - [ ] Backtest a simple trading strategy (momentum/mean reversion)
-- [ ] Compute option open_frac and Z-scores from historical data
+- [x] Compute option open_frac and Z-scores from historical data
 - [ ] Build a small dashboard (React + Flask or Django) showing live market data
 - [ ] Simulate a portfolio and run risk metrics (VaR, Sharpe, drawdown)
 
