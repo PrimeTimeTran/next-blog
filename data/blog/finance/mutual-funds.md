@@ -1,6 +1,6 @@
 ---
 draft: false
-date: '2024-09-13'
+date: '2024-09-14'
 title: 'Mutual Funds: What They Are and How They Work'
 summary: 'Learn what mutual funds are, how they operate, their benefits and drawbacks, and why they are a popular investment choice for individuals and retirement accounts.'
 tags: ['finance', 'mutual funds']

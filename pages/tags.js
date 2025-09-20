@@ -65,11 +65,11 @@ export default function Tags({ tags }) {
         </div>
         <div>
           {renderCategory('Finance', tags, sortedTags, finance)}
-          {renderCategory('Tech', tags, sortedTags, tech)}
-          {renderCategory('Data Structures & Algorithms', tags, sortedTags, dsa)}
           {renderCategory('Frameworks', tags, sortedTags, frameworks)}
+          {renderCategory('Tech', tags, sortedTags, tech)}
           {renderCategory('Databases', tags, sortedTags, databases)}
           {renderCategory('DevOps', tags, sortedTags, devops)}
+          {renderCategory('Data Structures & Algorithms', tags, sortedTags, dsa)}
           {renderCategory('Security', tags, sortedTags, security)}
           {renderCategory('Tools', tags, sortedTags, tools)}
           <h1 className="text-2xl font-bold text-green-600">Misc</h1>

@@ -10,6 +10,10 @@ tags: ['finance', 'options', 'quant', 'black-scholes', 'python']
 
 The Black-Scholes formula is a cornerstone of modern financial theory, providing a mathematical model for pricing European-style options. Developed by Fischer Black, Myron Scholes, and Robert Merton in the early 1970s, this formula revolutionized the way traders and analysts evaluate risk and value in the options market. In this post, we'll explore the intuition behind the Black-Scholes model, its key variables, and how you can use Python to calculate option prices.
 
+- [My Favorite Video Explanation](https://www.youtube.com/watch?v=EEM2YBzH-2U&t=592s)
+
+## Code
+
 ```py
 # ./blacks-scholes.py
 import math
@@ -39,7 +43,7 @@ if __name__ == '__main__':
     print(f"{args.type.capitalize()} option price: {price:.4f}")
 ```
 
-## How to Run the Python Script
+## Run It
 
 You can calculate the price of a call or put option using the provided Python script. For example:
 
