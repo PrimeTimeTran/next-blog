@@ -1,8 +1,8 @@
 ---
 draft: true
 date: '2025-01-03'
-title: ''
-summary: ''
+title: 's'
+summary: 's'
 tags: ['maths', 'calculus']
 ---
 
@@ -16,7 +16,6 @@ Adding up numbers given a pattern
 
 Summation of the coefficient
 $$\sum_{n=1}^{\infty}  {C}_{n}x^{n}$$
-
 $$\sum_{n=1}^{\infty}  {C}_{n}x^{n} = {C}_{0}x^{0} + {C}_{1}x^{1} + {C}_{2} x^{2} + \space ...$$
 
 #### Benefits
@@ -52,22 +51,22 @@ Partial sums usually approach -+ infinity
 
 $$\sum_{n=0}^{\infty}2^{n} = 1 + 2 + 4 + 8 + 16 + \space ... $$
 
-$$
-
-
 ## Ratio Test
 
 The ratio test is a method used to determine the convergence or divergence of infinite series, especially those involving factorials or exponentials.
 
 $$
-\lim_{n \to \infty} \left| \frac{a_{n+1}}{a_n} \right|
-$$
+\\lim_{n \to \\infty} \\left| \\frac{a_{n+1}}{a_n} \\right|
+ **Statement:** For a series $\sum a_n$, compute:
 
+$L = \lim_{n \to \infty} \left| \frac{a_{n+1}}{a_n} \right|$
 
-- **Statement:** For a series \( \sum a_n \), compute \( L = \lim_{n \to \infty} \left| \frac{a_{n+1}}{a_n} \right| \).
-- **If** \( L < 1 \): The series converges absolutely.
-- **If** \( L > 1 \) or \( L = \infty \): The series diverges.
-- **If** \( L = 1 \): The test is inconclusive.
+- **If** $L < 1$: The series converges absolutely.
+- **If** $L > 1$ or $L = \infty$: The series diverges.
+- **If** $L = 1$: The test is inconclusive.
+- **If** $ L < 1 $: The series converges absolutely.
+- **If** $ L > 1 $ or $ L = \\infty $: The series diverges.
+- **If** $ L = 1 $: The test is inconclusive.
 - Commonly used for series with factorials, powers, or exponential terms.
 - Helps quickly identify convergence for many common series in calculus.
 
