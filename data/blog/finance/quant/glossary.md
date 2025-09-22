@@ -5,3 +5,7 @@ title: ''
 summary: ''
 tags: ['']
 ---
+
+- Mean Variance Optimization: Mathematical technique for balancing return & risk
+- Risk Aversion:
+- Objective Function:
