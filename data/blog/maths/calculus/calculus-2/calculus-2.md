@@ -59,7 +59,7 @@ $$
 \\lim_{n \to \\infty} \\left| \\frac{a_{n+1}}{a_n} \\right|
  **Statement:** For a series $\sum a_n$, compute:
 
-$L = \lim_{n \to \infty} \left| \frac{a_{n+1}}{a_n} \right|$
+$$L = \lim_{n \to \infty} \left| \frac{a_{n+1}}{a_n} \right|$$
 
 - **If** $L < 1$: The series converges absolutely.
 - **If** $L > 1$ or $L = \infty$: The series diverges.
@@ -71,6 +71,7 @@ $L = \lim_{n \to \infty} \left| \frac{a_{n+1}}{a_n} \right|$
 - Helps quickly identify convergence for many common series in calculus.
 
 ## Integrals
+Finding the area under the line/curve of a graph.
 
 ### Rules
 - Power Rule
@@ -84,6 +85,36 @@ $L = \lim_{n \to \infty} \left| \frac{a_{n+1}}{a_n} \right|$
 - Sum & Differences
   $$\int [f(x) \pm g(x)] \, dx = \int f(x) \, dx \pm \int g(x) \, dx$$
 
+
+### Integration Techniques
+Some functions are too complicated. So rules don't cut it. That's why we have
+
+- **Integration of Partial Fractions:**
+
+  Decompose a complex rational function into simpler fractions that can be integrated individually. Used when the integrand is a ratio of polynomials. Example: $\int \frac{1}{x^2-1} dx$ can be split into $\int \frac{1}{2(x-1)} dx + \int \frac{1}{2(x+1)} dx$.
+
+- **Integration By Parts:**
+
+  Based on the product rule for differentiation. Used to integrate products of functions. Formula: $\int u \, dv = uv - \int v \, du$. Choose $u$ and $dv$ wisely for easier integration.
+
+- **Polynomial Long Division:**
+
+  When the degree of the numerator is greater than or equal to the denominator, divide first to simplify the integrand. Example: $\int \frac{x^2+2x+1}{x+1} dx$ becomes $\int (x+1) dx$ after division.
+
+- **Use Substitution:**
+
+  Change the variable of integration to simplify the integral, often used for composite functions. Let $u = g(x)$, then $du = g'(x) dx$. Example: $\int 2x \cos(x^2) dx$ with $u = x^2$.
+
+- **Trigonometric Substitution:**
+
+  Substitute trigonometric functions for algebraic expressions to simplify integrals involving square roots. Example: For $\int \frac{1}{\sqrt{a^2-x^2}} dx$, use $x = a \sin \theta$.
+
+
+### Applications of Integrals
+Physics.
+  - Center of mass of rigid bodies.
+  - Calculate total work done.
+  - Find magnetic field imposed at a particular point due to an infinite wire.
 
 # Conclusion
 
