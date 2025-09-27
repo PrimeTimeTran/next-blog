@@ -44,7 +44,7 @@ Condors are a sophisticated tool for options traders who want to profit from ran
 
 <ProjectionChart text="Hello from a React component!" />
 
-# Iron Condor(Short Volatility[Neutral])
+# Short Iron Condor(Short Volatility[Neutral])
 
 OTM of the money
 Call Credit Spread & Put Credit Spread
