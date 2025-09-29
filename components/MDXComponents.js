@@ -6,11 +6,13 @@ import CustomLink from './Link'
 import TOCInline from './TOCInline'
 import Pre from './Pre'
 import { BlogNewsletterForm } from './NewsletterForm'
+import BTCOrderBook from './finance/orderbook'
 
 export const MDXComponents = {
   Image,
   TOCInline,
   a: CustomLink,
+  BTCOrderBook,
   pre: Pre,
   BlogNewsletterForm: BlogNewsletterForm,
   wrapper: ({ components, layout, ...rest }) => {
