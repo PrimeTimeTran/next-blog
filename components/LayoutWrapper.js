@@ -10,9 +10,7 @@ import { route, useRouter } from 'next/router'
 
 const LayoutWrapper = ({ children }) => {
   route?.events?.on('routeChangeComplete', () => {})
-  // How to get the current route in Next.js?
   const currentRoute = useRouter().asPath
-  console.log({ currentRoute })
   return (
     <SectionContainer isSnippets={currentRoute === '/snippets'}>
       <div className="flex h-screen flex-col justify-between">

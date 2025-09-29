@@ -5,6 +5,7 @@ import { PageSEO } from '@/components/SEO'
 import kebabCase from '@/lib/utils/kebabCase'
 import siteMetadata from '@/data/siteMetadata'
 
+import React from 'react'
 import {
   dsa,
   tech,
@@ -32,16 +33,28 @@ function renderTags(tags, t) {
   )
 }
 
-function renderCategory(title, tags, sortedTags, filter) {
+function Category({ title, tags, sortedTags, filter }) {
+  const [open, setOpen] = React.useState(true)
+  const categoryTags = sortedTags.filter((t) => {
+    return filter.includes(t.toLowerCase())
+  })
   return (
-    <div>
-      <h1 className="text-2xl font-bold text-green-600">{title}</h1>
-      <div className="mb-6 flex max-w-lg flex-wrap">
-        {sortedTags.map((t) => {
-          if (!filter.includes(t.toLowerCase())) return null
-          return renderTags(tags, t)
-        })}
-      </div>
+    <div className="w-full">
+      <button className="w-full text-left" onClick={() => setOpen((o) => !o)} aria-expanded={open}>
+        <h1 className="flex w-full justify-between text-2xl font-bold text-green-600">
+          {title}{' '}
+          <span className="ml-2 text-lg text-gray-600">
+            ({categoryTags.length}) {open ? '▼' : '▲'}
+          </span>
+        </h1>
+      </button>
+      {open && (
+        <div className="mb-6 flex flex-wrap">
+          {categoryTags.map((t) => {
+            return renderTags(tags, t)
+          })}
+        </div>
+      )}
     </div>
   )
 }
@@ -58,22 +71,26 @@ export default function Tags({ tags }) {
   return (
     <div>
       <PageSEO title={`Tags - ${siteMetadata.author}`} description="Things I blog about" />
-      <div className="flex flex-col items-start justify-start divide-y divide-gray-200 dark:divide-gray-700 md:mt-24 md:flex-row md:items-center md:justify-center md:space-x-6 md:divide-y-0">
-        <div className="space-x-2 pt-6 pb-8 md:space-y-5">
-          <h1 className="text-3xl font-extrabold leading-9 tracking-tight text-gray-900 dark:text-gray-100 sm:text-4xl sm:leading-10 md:border-r-2 md:px-6 md:text-6xl md:leading-14">
-            Tags
-          </h1>
-        </div>
-        <div>
-          {renderCategory('Maths', tags, sortedTags, maths)}
-          {renderCategory('Finance', tags, sortedTags, finance)}
-          {renderCategory('Frameworks', tags, sortedTags, frameworks)}
-          {renderCategory('Tech', tags, sortedTags, tech)}
-          {renderCategory('Databases', tags, sortedTags, databases)}
-          {renderCategory('DevOps', tags, sortedTags, devops)}
-          {renderCategory('Data Structures & Algorithms', tags, sortedTags, dsa)}
-          {renderCategory('Security', tags, sortedTags, security)}
-          {renderCategory('Tools', tags, sortedTags, tools)}
+      <div
+        className="flex flex-col items-start justify-start divide-y 
+          divide-gray-200 dark:divide-gray-700 md:mt-24 md:flex-row md:items-center 
+        "
+      >
+        <div className="w-full">
+          <Category title="Maths" tags={tags} sortedTags={sortedTags} filter={maths} />
+          <Category title="Finance" tags={tags} sortedTags={sortedTags} filter={finance} />
+          <Category title="Frameworks" tags={tags} sortedTags={sortedTags} filter={frameworks} />
+          <Category title="Tech" tags={tags} sortedTags={sortedTags} filter={tech} />
+          <Category title="Databases" tags={tags} sortedTags={sortedTags} filter={databases} />
+          <Category title="DevOps" tags={tags} sortedTags={sortedTags} filter={devops} />
+          <Category
+            title="Data Structures & Algorithms"
+            tags={tags}
+            sortedTags={sortedTags}
+            filter={dsa}
+          />
+          <Category title="Security" tags={tags} sortedTags={sortedTags} filter={security} />
+          <Category title="Tools" tags={tags} sortedTags={sortedTags} filter={tools} />
           <h1 className="text-2xl font-bold text-green-600">Misc</h1>
           <div className="mb-6 flex max-w-lg flex-wrap">
             {sortedTags.map((t) => {
