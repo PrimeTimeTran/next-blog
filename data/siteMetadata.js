@@ -1,7 +1,7 @@
 const siteMetadata = {
-  title: 'Blog',
+  title: 'Loi Tran - Finance, Tech, and More',
   author: 'Loi Tran',
-  headerTitle: 'Blog',
+  headerTitle: 'PrimeTimeTran',
   description:
     "A tech blog documenting some of the various tools and technologies I've worked on over the years.",
   language: 'en-us',
