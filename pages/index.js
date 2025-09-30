@@ -9,7 +9,6 @@ import NewsletterForm from '@/components/NewsletterForm'
 import {
   dsa,
   tech,
-  misc,
   maths,
   tools,
   devops,
@@ -38,20 +37,7 @@ export default function Home({ posts }) {
     Frameworks: frameworks,
     Maths: maths,
     DSA: dsa,
-    // Misc: misc,
     Tools: tools,
-    // All: [
-    //   ...finance,
-    //   ...tech,
-    //   ...databases,
-    //   ...devops,
-    //   ...security,
-    //   ...frameworks,
-    //   ...maths,
-    //   ...dsa,
-    //   ...misc,
-    //   ...tools,
-    // ],
   }
   const filteredByTopic = Object.entries(topics).reduce((acc, [topicName, topicTags]) => {
     topicTags = topicTags.map((tag) => tag.replace(' ', '-').toLowerCase())
