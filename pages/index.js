@@ -1,3 +1,4 @@
+import { useState } from 'react'
 import Tag from '@/components/Tag'
 import Link from '@/components/Link'
 import { PageSEO } from '@/components/SEO'
@@ -5,6 +6,18 @@ import siteMetadata from '@/data/siteMetadata'
 import formatDate from '@/lib/utils/formatDate'
 import { getAllFilesFrontMatter } from '@/lib/mdx'
 import NewsletterForm from '@/components/NewsletterForm'
+import {
+  dsa,
+  tech,
+  misc,
+  maths,
+  tools,
+  devops,
+  finance,
+  security,
+  databases,
+  frameworks,
+} from '../lib/constants'
 
 const MAX_DISPLAY = 100
 
@@ -15,6 +28,40 @@ export async function getStaticProps() {
 }
 
 export default function Home({ posts }) {
+  const [filteredPosts, setFilteredPosts] = useState(posts)
+  const topics = {
+    Finance: finance,
+    Tech: tech,
+    Databases: databases,
+    DevOps: devops,
+    Security: security,
+    Frameworks: frameworks,
+    Maths: maths,
+    DSA: dsa,
+    Misc: misc,
+    Tools: tools,
+    All: [
+      ...finance,
+      ...tech,
+      ...databases,
+      ...devops,
+      ...security,
+      ...frameworks,
+      ...maths,
+      ...dsa,
+      ...misc,
+      ...tools,
+    ],
+  }
+  const filteredByTopic = Object.entries(topics).reduce((acc, [topicName, topicTags]) => {
+    topicTags = topicTags.map((tag) => tag.replace(' ', '-').toLowerCase())
+    acc[topicName] = posts.filter(
+      (post) =>
+        post.tags &&
+        post.tags.some((tag) => topicTags.includes(tag.replace(' ', '-').toLowerCase()))
+    )
+    return acc
+  }, {})
   return (
     <>
       <PageSEO title={siteMetadata.title} description={siteMetadata.description} />
@@ -27,9 +74,21 @@ export default function Home({ posts }) {
             {siteMetadata.description}
           </p>
         </div>
+        <div>
+          <h1 className="text-2xl font-extrabold leading-9 tracking-tight text-gray-900 dark:text-gray-100 sm:text-4xl sm:leading-10 md:text-2xl md:leading-14">
+            Topics
+          </h1>
+          <div className="my-1 mb-6 flex justify-around space-x-3 text-blue-500 dark:text-blue-300">
+            {Object.entries(filteredByTopic).map(([topicName, topicPosts]) => (
+              <button key={topicName} onClick={() => setFilteredPosts(topicPosts)}>
+                {topicName} ({topicPosts.length})
+              </button>
+            ))}
+          </div>
+        </div>
         <ul className="divide-y divide-gray-200 dark:divide-gray-700">
-          {!posts.length && 'No posts found.'}
-          {posts.slice(0, MAX_DISPLAY).map((frontMatter) => {
+          {!filteredPosts.length && 'No posts found.'}
+          {filteredPosts.slice(0, MAX_DISPLAY).map((frontMatter) => {
             const { slug, date, title, summary, tags } = frontMatter
             return (
               <li key={slug} className="py-3">
