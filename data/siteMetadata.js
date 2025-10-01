@@ -1,5 +1,5 @@
 const siteMetadata = {
-  title: 'Loi Tran - Finance, Tech, and More',
+  title: 'Loi Tran - Tech, Finance, Sports & More',
   author: 'Loi Tran',
   headerTitle: 'PrimeTimeTran',
   description:
