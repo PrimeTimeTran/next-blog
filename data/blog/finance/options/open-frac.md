@@ -8,17 +8,23 @@ tags: ['finance', 'options', 'quant', 'open frac']
 
 # Introduction
 
-Open Frac is a quantitative indicator used to determine the nature of volume in options trading—specifically, whether most volume on a given day is due to opening new positions or closing existing ones. This signal can help traders and quants interpret market sentiment and position flows, making it a valuable tool in the options trading toolkit.
+Open Frac is a quant indicator used to determine the nature of volume in options trading—specifically,
+whether most volume on a given day is due to opening new positions or closing existing ones. This signal can help traders
+and quants interpret market sentiment and position flows, making it a valuable tool in the options trading toolkit.
+
+    - It gives a more accurate picture of new risk appetite and fresh capital flow into options,
+      rather than just total trading activity.
+    - Helps identify days where there is a surge in opening contracts (potentially more meaningful for market sentiment).
 
 ## How Open Frac Works
 
 ```py
-call_delta_oi = call_next_oi - call_open_interest           # Next Days OI - Current Days OI
-open_frac = call_delta_oi / call_volume                     # Δ OI / Current Days Volume
+call_delta_oi = call_next_oi - call_prev_oi           # Next Days OI - Current Days OI
+open_frac = call_delta_oi / call_volume               # Δ OI / Current Days Volume
 
-open_frac > 0.7                                             #  Most volume was OPENING new positions
-open_frac < 0.3                                             #  Most volume was CLOSING existing positions
-open_frac ≈ 0.5                                             #  Mixed opening/closing
+open_frac > 0.7                                       #  Most volume was OPENING new positions
+open_frac < 0.3                                       #  Most volume was CLOSING existing positions
+open_frac ≈ 0.5                                       #  Mixed opening/closing
 ```
 
 ## Real Market Interpretation
@@ -39,4 +45,7 @@ Mixed open_frac:
 
 # Conclusion
 
-The open frac indicator provides actionable insight into the type of activity driving options volume. By quantifying whether volume is opening or closing, traders can better understand market sentiment and position dynamics. Incorporating open frac into a quantitative strategy can help identify shifts in market behavior and improve signal generation for options trading decisions.
+The open frac indicator provides actionable insight into the type of activity driving options volume.
+By quantifying whether volume is opening or closing, traders can better understand market sentiment and position dynamics.
+Incorporating open frac into a quantitative strategy can help identify shifts in market behavior and improve signal generation
+for options trading decisions.

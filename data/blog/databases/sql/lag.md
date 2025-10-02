@@ -15,6 +15,10 @@ with the current days values.
 
 In order to do that SQL provides the `LAG` keyword.
 
+## Example 1:
+
+How to carry a field from a previous row to its subsequent row?
+
 Starting:
 
 ```sql
@@ -59,6 +63,10 @@ LIMIT 3
 | NKE    | 2025-07-01   | 2025-06-30 |
 | NKE    | 2025-07-02   | 2025-07-01 |
 
+## Example 2:
+
+How could we use this technique in calculating [open fractional options](/blog/finance/options/open-frac)?
+
 # Conclusion
 
-Although this example may not seem useful this technique can become powerful when we use it for values which take heavy processing power or time which we want to optimize.
+This technique is powerful used for values which involve heavy processing.
