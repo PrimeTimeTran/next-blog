@@ -3,7 +3,7 @@ const siteMetadata = {
   author: 'Loi Tran',
   headerTitle: 'PrimeTimeTran',
   description:
-    "A tech blog documenting some of the various tools and technologies I've worked on over the years.",
+    'Writing to improve myself and help others do the same. Sharing my thoughts on tech, finance, sports, and more.',
   language: 'en-us',
   theme: 'system', // system, dark or light
   siteUrl: 'https://loi-tran-blog.netlify.appg',
