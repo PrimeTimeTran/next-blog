@@ -29,13 +29,13 @@ The Fantasy Sports Betting(FSB) industry has grown every year for the past 15 ye
 ## Thesis
 
 On 9/30/26 HOOD announced that they had handled 4B contracts
-all time in their FSB vertical pumping their price while tanking their competitors.
+all time in their FSB vertical pumping their price and tanking their competitors.
 
 The market thinks that HOOD is going to eat other FSB companies lunch such as DKNG.
 
-Diving deeper I found that DKNG's RSI is now 15 after their sell off, indicating they're oversold.
+Analyzing DKNG I found that it's RSI is 15 after their sell off, indicating they're oversold.
 
 <img src="/static/images/25-10-02-dkng-cds.png" alt="preview" />
 
-I believe they've got a moat which HOOD will have a hard time overcoming after comparing
+I'm long DKNG as they've got a moat which HOOD will have a hard time overcoming after comparing
 the features/functionality of both platforms.
