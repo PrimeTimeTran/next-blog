@@ -1,6 +1,6 @@
 ---
 draft: false
-date: '2026-01-01'
+date: '2025-01-01'
 title: 'Slippage in Trading: What It Is and How to Avoid It'
 summary: 'Learn what slippage is, why it happens, and how traders can minimize its impact when buying or selling in financial markets.'
 tags: ['finance', 'slippage', 'trading', 'market structure']

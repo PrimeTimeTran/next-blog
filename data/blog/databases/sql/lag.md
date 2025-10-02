@@ -1,6 +1,6 @@
 ---
 draft: false
-date: '2025-10-02'
+date: '2025-09-02'
 title: 'Lag Function: Access data in a previous row in the same result set without having to join the table to itself.'
 summary: 'How to use the SQL LAG window function to compare current and previous row values, with practical query and table output.'
 tags: ['databases', 'window functions', 'sql', 'postgres']
