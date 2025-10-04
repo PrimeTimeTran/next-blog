@@ -3,7 +3,7 @@ draft: false
 date: '2016-01-01'
 title: 'Order Books Explained: How Markets Match Buyers and Sellers'
 summary: 'Discover how order books work in financial markets, how they match buyers and sellers, and why understanding price levels, book depth, and the bid-ask spread is essential for traders and investors.'
-tags: ['finance', 'order book', 'trading', 'market structure']
+tags: ['finance', 'order book', 'market structure']
 ---
 
 # Introduction

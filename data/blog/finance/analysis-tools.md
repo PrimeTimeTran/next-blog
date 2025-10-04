@@ -21,5 +21,6 @@ https://unusualwhales.com/
 https://www.robinhood.com/
 https://www.interactivebrokers.com/
 https://www.fidelity.com/
+[sinkorswim](https://trade.thinkorswim.com/)
 
 # Conclusion

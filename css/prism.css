@@ -138,3 +138,9 @@
 .token.table {
   display: inline;
 }
+
+.giscus iframe {
+  width: 100% !important;
+  min-width: 100% !important;
+  max-width: 100% !important;
+}

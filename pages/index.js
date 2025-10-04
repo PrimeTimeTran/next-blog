@@ -12,6 +12,7 @@ import {
   maths,
   tools,
   devops,
+  trading,
   finance,
   security,
   databases,
@@ -29,6 +30,7 @@ export async function getStaticProps() {
 export default function Home({ posts }) {
   const [filteredPosts, setFilteredPosts] = useState(posts)
   const topics = {
+    Trading: trading,
     Finance: finance,
     Tech: tech,
     Databases: databases,

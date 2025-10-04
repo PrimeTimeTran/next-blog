@@ -3,7 +3,7 @@ draft: false
 date: '2024-09-31'
 title: 'Quadruple Witching Explained: Impact on Stock Market and Key Dates'
 summary: 'Learn what quadruple witching is, why it matters for traders, and how it affects stock market volatility.'
-tags: ['finance', 'stock market', 'options', 'trading']
+tags: ['finance', 'stock market', 'options']
 ---
 
 # What is Quadruple Witching?

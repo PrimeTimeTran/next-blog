@@ -3,7 +3,7 @@ draft: false
 date: '2024-09-31'
 title: 'Understanding Implied Volatility Rank (IVR)'
 summary: 'A comprehensive guide to Implied Volatility Rank (IVR), its calculation, significance in options trading, and practical applications.'
-tags: ['finance', 'implied-volatility-rank', 'options', 'trading', 'volatility']
+tags: ['finance', 'implied-volatility-rank', 'options', 'volatility']
 ---
 
 # Introduction

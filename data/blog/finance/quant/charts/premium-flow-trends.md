@@ -3,7 +3,7 @@ draft: false
 date: '2025-01-01'
 title: 'Indicators: Premium Flow'
 summary: 'Learn how premium flow trends help traders identify optimal entry and exit points for assets by analyzing market sentiment and momentum.'
-tags: ['finance', 'trading', 'quant', 'market-analysis']
+tags: ['finance', 'quant', 'market-analysis']
 ---
 
 # Introduction

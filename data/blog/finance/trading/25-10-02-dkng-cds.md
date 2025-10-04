@@ -4,6 +4,9 @@ date: '2025-10-02'
 title: 'DKNG $40/$42 1/16/26 Call Debit Spread'
 summary: 'Markets over react to positive news by HOOD on growth in the Fantasy Sports Betting industry priming DKNG for a bounce'
 tags: ['finance', 'trading', 'speculation', 'fantasy', 'sports-betting']
+authors: ['default']
+layout: PostSimple
+images: ['/static/images/25-10-02-dkng-cds.png']
 ---
 
 # Introduction
@@ -39,3 +42,5 @@ Analyzing DKNG I found that it's RSI is 15 after their sell off, indicating they
 
 I'm long DKNG as they've got a moat which HOOD will have a hard time overcoming after comparing
 the features/functionality of both platforms.
+
+I'm going Long DKNG with a

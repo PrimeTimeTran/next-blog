@@ -3,7 +3,7 @@ draft: false
 date: '2024-09-31'
 title: 'Understanding the Put-Call Ratio in Options Trading'
 summary: 'Explore the Put-Call Ratio, its calculation, interpretation, and role as a sentiment indicator in financial markets.'
-tags: ['finance', 'put-call-ratio', 'options', 'trading', 'sentiment']
+tags: ['finance', 'put-call-ratio', 'options', 'sentiment']
 ---
 
 # Introduction
