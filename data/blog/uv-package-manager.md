@@ -7,3 +7,9 @@ tags: ['package manager']
 ---
 
 # Introduction
+
+[UV](https://github.com/astral-sh/uv) is an extremely fast Python package and project manager, written in Rust.
+
+I build this repo as a reference to get moving quickly in the future for any project that might pop up.
+
+[Repo](https://github.com/PrimeTimeTran/template-backend-python-graphql)
