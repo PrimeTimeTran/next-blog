@@ -4,9 +4,6 @@ date: '2025-10-02'
 title: 'DKNG $40/$42 1/16/26 Call Debit Spread'
 summary: 'Markets over react to positive news by HOOD on growth in the Fantasy Sports Betting industry priming DKNG for a bounce'
 tags: ['finance', 'trading', 'speculation', 'fantasy', 'sports-betting']
-authors: ['default']
-layout: PostSimple
-images: ['/static/images/25-10-02-dkng-cds.png']
 ---
 
 # Introduction
