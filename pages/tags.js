@@ -91,12 +91,14 @@ export default function Tags({ tags }) {
           />
           <Category title="Security" tags={tags} sortedTags={sortedTags} filter={security} />
           <Category title="Tools" tags={tags} sortedTags={sortedTags} filter={tools} />
-          <h1 className="text-2xl font-bold text-green-600">Misc</h1>
-          <div className="mb-6 flex max-w-lg flex-wrap">
-            {sortedTags.map((t) => {
-              if (misc.includes(t.toLowerCase())) return null
-              return renderTags(tags, t)
-            })}
+          <div className="w-full">
+            <h1 className="text-2xl font-bold text-green-600">Misc</h1>
+            <div className="mb-6 flex flex-wrap">
+              {sortedTags.map((t) => {
+                if (misc.includes(t.toLowerCase())) return null
+                return renderTags(tags, t)
+              })}
+            </div>
           </div>
         </div>
       </div>

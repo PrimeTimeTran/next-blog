@@ -7,11 +7,13 @@ import TOCInline from './TOCInline'
 import Pre from './Pre'
 import { BlogNewsletterForm } from './NewsletterForm'
 import BTCOrderBook from './finance/orderbook'
+import Snippet from './Snippet'
 
 export const MDXComponents = {
   Image,
   TOCInline,
   a: CustomLink,
+  Snippet,
   BTCOrderBook,
   pre: Pre,
   BlogNewsletterForm: BlogNewsletterForm,
