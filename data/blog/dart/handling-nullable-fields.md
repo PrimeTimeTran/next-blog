@@ -65,7 +65,7 @@ Personally, I find that option 2 is the best.
 
 ## Why not just use nullable fields?
 
-- Too many ? fields make code harder to read and maintain.
+- Too many `?` fields make code harder to read and maintain.
 - You lose type safety and clarity about which fields are always present.
 
 ## Why not just one class?

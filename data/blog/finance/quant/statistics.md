@@ -1,6 +1,6 @@
 ---
 draft: false
-date: '2025-01-01'
+date: '2014-01-01'
 title: 'Essential Statistics Topics for Quant Finance'
 summary: 'A guide to the key statistics areas you should master to excel in quantitative finance.'
 tags: ['finance', 'quant', 'statistics']
@@ -12,8 +12,8 @@ Quantitative finance relies heavily on statistics to analyze data, model risk, a
 
 ## 1. Descriptive Statistics
 
-- Mean, median, mode
-- Variance, standard deviation
+- [Mean, median, mode](/blog/maths/statistics/mean-median-mode)
+- [Variance, standard deviation](/blog/maths/statistics/variance-standard-deviation)
 - Skewness, kurtosis
 - Data visualization (histograms, box plots)
 
