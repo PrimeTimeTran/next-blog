@@ -50,10 +50,24 @@ export default function Home({ posts }) {
     )
     return acc
   }, {})
+  const [searchTerm, setSearchTerm] = useState('')
+  const handleSearch = (e) => {
+    e.preventDefault()
+    const term = searchTerm.toLowerCase()
+    const results = posts.filter((post) => {
+      return (
+        (post.title && post.title.toLowerCase().includes(term)) ||
+        (post.summary && post.summary.toLowerCase().includes(term)) ||
+        (post.tags && post.tags.join(' ').toLowerCase().includes(term)) ||
+        (post.body && post.body.toLowerCase().includes(term))
+      )
+    })
+    setFilteredPosts(results)
+  }
   return (
     <>
       <PageSEO title={siteMetadata.title} description={siteMetadata.description} />
-      <div className="divide-y divide-gray-200 dark:divide-gray-700">
+      <div className="">
         <div className="space-y-2 pt-6 pb-8 md:space-y-5">
           <h1 className="text-3xl font-extrabold leading-9 tracking-tight text-gray-900 dark:text-gray-100 sm:text-4xl sm:leading-10 md:text-6xl md:leading-14">
             Latest
@@ -62,6 +76,14 @@ export default function Home({ posts }) {
             {siteMetadata.description}
           </p>
         </div>
+        <form onSubmit={handleSearch}>
+          <input
+            placeholder="Search..."
+            className="m-2 w-full rounded-md border border-gray-300 p-2"
+            value={searchTerm}
+            onChange={(e) => setSearchTerm(e.target.value)}
+          />
+        </form>
         <div>
           <h1 className="text-2xl font-extrabold leading-9 tracking-tight text-gray-900 dark:text-gray-100 sm:text-4xl sm:leading-10 md:text-2xl md:leading-14">
             Topics
