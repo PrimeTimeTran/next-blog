@@ -1,8 +1,8 @@
 ---
 draft: false
 date: '2025-10-24'
-title: 'Projects: Bake Suite'
-summary: 'Adding functionality which enables bakers to illustrate the final product(cake) to customers before orders'
+title: 'Bake Suite: Cake & Art'
+summary: 'Adding illustrative features which enable customers to see the final product(cake) before its made & enabling bakeries to customize colors. Also adding Canva integration'
 tags: ['project', 'threejs']
 ---
 
