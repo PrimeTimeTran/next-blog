@@ -39,7 +39,6 @@ class AppRoot extends StatelessWidget {
     return MaterialApp(
       title: 'Datelendar',
       debugShowCheckedModeBanner: true,
-      // initialRoute: '/onboarding',
       initialRoute: '/app',
       routes: {
         '/onboarding': (_) => const OnboardingScreen(),

@@ -14,4 +14,3 @@ canonicalUrl:
 - Certificate for App Store distribution
 - Provisioning profile
 - Apple Push Services Certificate
-
