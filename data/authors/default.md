@@ -14,7 +14,7 @@ github: https://github.com/primetimetran
 I craft webpages 💻 and mobile 📱 apps.
 
 I'm an [AWS Certified Cloud Practitioner](https://www.credly.com/badges/c6fa2310-f2ec-4bf3-a43b-0009a3718ef0)
-while at the same time being confident in my knowledge of [GCP](https://cloud.google.com) from Cloud [Trigger](https://cloud.google.com/build/docs/triggers), [Build](https://cloud.google.com/build), & [Run](https://cloud.google.com/run?hl=en)
+while at the same time being confident in my knowledge of [GCP](https://cloud.google.com) from Cloud [Trigger](https://cloud.google.com/build/docs/triggers), [Build](https://cloud.google.com/build), & [Run](https://cloud.google.com/run?hl=en).
 
 I've worked in [finance](https://1long.vn/), [booking/ticketing](https://vexere.com/),
 [telemedicine](https://scanlabmr.com/), [education](https://www.coderschool.vn/en)

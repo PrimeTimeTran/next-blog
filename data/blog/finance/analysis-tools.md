@@ -10,17 +10,20 @@ tags: ['finance']
 
 ## Research
 
-https://stockvibes.ai/
+https://stockvibes.ai
 https://feargreedmeter.com
 https://insilicoterminal.com/#/trade
-https://www.tradingview.com/
-https://unusualwhales.com/
+https://www.tradingview.com
+https://unusualwhales.com
+https://stockfisher.app
+https://stockanalytics.ai
+https://stockanalysis.com
 
 ## Trading
 
-https://www.robinhood.com/
-https://www.interactivebrokers.com/
-https://www.fidelity.com/
-[sinkorswim](https://trade.thinkorswim.com/)
+https://www.robinhood.com
+https://www.interactivebrokers.com
+https://www.fidelity.com
+https://trade.thinkorswim.com
 
 # Conclusion
