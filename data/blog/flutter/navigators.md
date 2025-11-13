@@ -18,9 +18,14 @@ Most applications make use of the following navigators in some form.
 
 The hard part is using them together seamlessly where accompanying widgets behave as we expect. For example:
 
-- Replacement of the header on certain screens can be done.
-- Back button displays when we've added a screen on the stack.
-- Navigation state on different tabs are maintained across toggling of screens.
+- [ ] Outter Drawer Navigator shared between multiple screens
+  - [ ] Nested Tab Navigators
+    - [ ] Nested Stack Navigators
+- [ ] Dynamic header on certain screens.
+- [ ] Hamburger/Back icons when & where appropriate.
+- [ ] Navigation state of differing tabs maintain state across tab changes.
+
+This is how I'd achieve this functionality in Dart/Flutter
 
 ```dart
 import 'package:client/features/presentation/pages/explore_screen.dart';
