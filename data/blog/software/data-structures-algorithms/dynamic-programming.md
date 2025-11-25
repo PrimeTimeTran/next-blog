@@ -43,8 +43,8 @@ The function should return the n-th number of the fibonacci sequence.
   </div>
   <div id="#1" className="tabcontent">
     ```js {} showLineNumbers
-    // This exponential recursive solution takes a substantial amount of time 
-    // to complete when `n` grows large due to many repetitive computations we make.
+    // Brute force solution works but is slow due to
+    // repetitive computations made.
 
     const fib = (n) => {
       if (n <= 2) return 1
@@ -61,12 +61,12 @@ The function should return the n-th number of the fibonacci sequence.
 
   <div id="#2" className="tabcontent">
     ```js {} showLineNumbers
-    // Storing the results of computations in `memo` improves the performance substantially.
+    // Saving results of computations in `memo` improves the performance.
 
-    // Memo starts as an empty dictionary but is filled with
-    // values from the first branch of our recursive
+    // Memo starts empty dictionary but populates values
+    // from the first branch of our recursive
     // calls(meaning that subsequent branches don't recompute
-    // the same value both grab it from the `memo` object).
+    // the same value but fetch it from the dict).
 
     const fib = (n, memo = {}) => {
       if (n in memo) return memo[n]

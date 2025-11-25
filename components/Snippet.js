@@ -20,10 +20,10 @@ export default function Snippet({
           <div style={{ fontSize: '0.9em', marginBottom: '0.5em', color: '#888' }}>{fileName}</div>
         )}
         <SyntaxHighlighter
-          language={language}
-          style={oneDark}
-          showLineNumbers={showLineNumbers}
           wrapLongLines
+          style={oneDark}
+          language={language}
+          showLineNumbers={showLineNumbers}
         >
           {code}
         </SyntaxHighlighter>
