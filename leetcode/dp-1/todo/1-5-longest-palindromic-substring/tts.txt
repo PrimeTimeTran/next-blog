@@ -1,0 +1,11 @@
+Hey Everyone.
+Today I'm going to solve LeetCode 509, Fibonacci Number.
+
+I'll using dynamic programming to solve this problem because failure to do so will result in a timeout if
+I'm given a large input number.
+
+That's because each number in the sequence of the Fibonacci sequence is the sum of the previous two terms.
+
+For example 2 is 0 + 1 because 
+
+

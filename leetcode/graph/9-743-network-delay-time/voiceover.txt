@@ -1,0 +1,5 @@
+Voiceover for LC 743 - Network Delay Time
+
+Notes:
+- Dijkstra using priority queue, directed weighted edges
+- Initialize distances and relax edges

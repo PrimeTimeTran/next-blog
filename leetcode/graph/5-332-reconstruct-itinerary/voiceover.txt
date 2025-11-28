@@ -1,0 +1,5 @@
+Voiceover for LC 332 - Reconstruct Itinerary
+
+Notes:
+- Eulerian path flavor; use DFS with lexical ordering or Hierholzer
+- Practice building adjacency lists and careful ordering

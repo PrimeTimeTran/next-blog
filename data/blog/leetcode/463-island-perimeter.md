@@ -1,6 +1,6 @@
 ---
 draft: true
-date: 2016-10-17
+date: 2016-01-01
 title: 'LeetCode: 463. Island Perimeter'
 tags: ['leetcode', 'data structures algorithms', 'graphs', 'python']
 summary: 'Solving programming problems in multiple languages to master syntax, data structures, and algorithms.'

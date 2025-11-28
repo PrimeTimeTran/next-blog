@@ -8,6 +8,10 @@ tags: ['trading', 'futures', 'finance']
 
 # Introduction
 
+<GlossaryLinker>
+Set Bits
+</GlossaryLinker>
+
 Futures are one of the most important and widely used derivatives in financial markets. Whether you're a hedger protecting against price moves, a speculator seeking directional exposure, or an investor interested in commodity or index exposure, futures contracts provide a standardized, liquid mechanism to trade future delivery of an asset.
 
 This post gives a practical, non-technical introduction to futures: what a futures contract is, essential terms to know, a simple example, common use cases, and the main risks.

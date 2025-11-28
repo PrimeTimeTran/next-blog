@@ -1,0 +1,36 @@
+---
+draft: false
+date: 2016-01-01
+title: 'LeetCode: 213. House Robber II'
+tags: ['data-structures-algorithms', 'dynamic programming', 'python']
+summary: 'Solving House Robber II using Dynamic Programming with multiple solutions to dial in on the techniques'
+---
+
+<SnippetTabs
+  snippets={[
+    {
+      label: "Brute Force",
+      code: `
+
+      `
+    },
+    {
+      label: "Top Down Memo",
+      code: `
+
+      `
+    },
+    {
+      label: "Bottom Up Tab",
+      code: `
+
+      `
+    },
+    {
+      label: "Bottom Up Tab O(1) Optimized",
+      code: `
+
+      `
+    },
+  ]}
+/>

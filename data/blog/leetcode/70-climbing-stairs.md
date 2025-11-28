@@ -1,6 +1,6 @@
 ---
 draft: false
-date: '2016-10-09'
+date: 2016-01-01
 title: 'LeetCode: 70. Climbing Stairs'
 tags:
   [
@@ -17,299 +17,91 @@ tags:
 summary: 'Solving programming problems in multiple languages to master syntax, data structures, and algorithms.'
 ---
 
-# Description
-
-You are climbing a staircase. It takes n steps to reach the top.
-
-Each time you can either climb `1` or `2` steps. In how many _distinct_ ways can
-you climb to the top?
-
-### Solution
-
-Keep a running total of number of _distinct_ jumps it took us to get to our
-previous two stairs.
-
-On each loop, sum the values of the two previous stairs as the latest stair's
-value, our running total.
-
-## Setup base cases
-
-Setup base cases of one and two whose values are 1 and 2.
-
-We figure this out from the problem explanation.
-
-Return two at the end of the function where we'll keep our summed total.
-
-<div className="tab-group">
-  <div className="tab">
-    <button id="js" className="tablinks">javascript</button>
-    <button id="ts" className="tablinks">typescript</button>
-    <button id="dart" className="tablinks">dart</button>
-    <button id="java" className="tablinks">java</button>
-    <button id="python" className="tablinks">python</button>
-    <button id="go" className="tablinks">go</button>
-  </div>
-
-  <div id="js" className="tabcontent">
-    ```js {} showLineNumbers
-    // Initialize our base cases, one and two. Return two at the end
-
-    var climbStairs = function (n) {
-      if (n == 1) return 1
-      var one = 1
-      var two = 2
-
-      return two
-    };
-
-    ```
-
-  </div>
-
-  <div id="ts" className="tabcontent">
-    ```typescript {} showLineNumbers
-    // We guard for n being 1 as well
-
-    function climbStairs(n: number): number {
-      if (n == 1) return 1
-      var one = 1
-      var two = 2
-
-      return two
-    };
-
-    ```
-
-  </div>
-
-  <div id="dart" className="tabcontent">
-    ```dart {} showLineNumbers
-    //
-
-    class Solution {
-      int climbStairs(int n) {
-        if (n == 1) {
-          return 1;
-        }
-
-        int one = 1;
-        int two = 2;
-
-        return two;
-      }
-    }
-
-    ```
-
-  </div>
-
-  <div id="java" className="tabcontent">
-    ```java {} showLineNumbers
-    // Explicit typing of Java with int
-
-    class Solution {
-      public int climbStairs(int n) {
-        if (n == 1) {
-          return 1;
-        }
-        int one = 1;
-        int two = 2;
-
-        return two;
-      }
-    }
-    ```
-
-  </div>
-
-  <div id="python" className="tabcontent">
-    ```python {} showLineNumbers
-    #
-
-    class Solution:
-      def climbStairs(self, n: int) -> int:
-        if n == 1:
-          return 1
-        one = 1
-        two = 2
-
-        return two
-
-    ```
-
-  </div>
-
-  <div id="go" className="tabcontent">
-    ```go {} showLineNumbers
-    // Type inference with :=
-
-    func climbStairs(n int) int {
-      if n == 1 {
-        return n
-      }
-
-      one := 1
-      two := 2
-
-      return two
-    }
-    ```
-
-  </div>
-</div>
-
-## Iterate until n + 1
-
-We loop up til `n + 1` because when we "land" on `n + 1` then `two`
-will have the return value we want, the number of distinct ways
-to get to that stair.
-
-<div className="tab-group">
-  <div className="tab">
-    <button id="js" className="tablinks">javascript</button>
-    <button id="ts" className="tablinks">typescript</button>
-    <button id="dart" className="tablinks">dart</button>
-    <button id="java" className="tablinks">java</button>
-    <button id="python" className="tablinks">python</button>
-    <button id="go" className="tablinks">go</button>
-  </div>
-
-  <div id="js" className="tabcontent">
-    ```js {8-12} showLineNumbers
-    //
-
-    var climbStairs = function (n) {
-      if (n == 1) return 1
-      var one = 1
-      var two = 2
-
-      for (var i = 3; i < n + 1; i++) {
-        var tmp = one + two
-        one = two
-        two = tmp
-      }
-      return two
-    };
-
-    ```
-
-  </div>
-
-  <div id="ts" className="tabcontent">
-    ```typescript {8-12} showLineNumbers
-    //
-
-    function climbStairs(n: number): number {
-      if (n == 1) return 1
-      var one = 1
-      var two = 2
-
-      for (var i = 3; i < n + 1; i++) {
-        var tmp = one + two
-        one = two
-        two = tmp
-      }
-      return two
-    };
-
-    ```
-
-  </div>
-
-  <div id="dart" className="tabcontent">
-    ```dart {11-15} showLineNumbers
-    //
-
-    class Solution {
-      int climbStairs(int n) {
-        if (n == 1) {
-          return 1;
-        }
-        int one = 1;
-        int two = 2;
-
-        for(var i = 3; i < n + 1; i++) {
-          var tmp = one + two;
-          one = two;
-          two = tmp;
-        }
-        return two;
-      }
-    }
-
-    ```
-
-  </div>
-
-  <div id="java" className="tabcontent">
-    ```java {11-15} showLineNumbers
-    //
-
-    class Solution {
-      public int climbStairs(int n) {
-        if (n == 1) {
-          return 1;
-        }
-        int one = 1;
-        int two = 2;
-
-        for (var i = 3; i < n + 1; i++) {
-          int tmp = one + two;
-          one = two;
-          two = tmp;
-        }
-        return two;
-      }
-    }
-    ```
-
-  </div>
-
-  <div id="python" className="tabcontent">
-    ```python {10-13} showLineNumbers
-    #
-
-    class Solution:
-      def climbStairs(self, n: int) -> int:
-        if n == 1:
-          return 1
-        one = 1
-        two = 2
+<SnippetTabs
+snippets={[
+{
+label: "Brute Force",
+code: `
+
+# Time: O(2ⁿ)
+
+# Space: O(n) (recursion stack)
+
+class Solution:
+def climbStairs(self, n: int) -> int:
+def dfs(i):
+if i <= 2:
+return i
+return dfs(i-1) + dfs(i-2)
+
+        return dfs(n)
+      `
+    },
+    {
+      label: "Top Down Memo",
+      code: `
+
+# Time: O(n)
+
+# Space: O(n) (memo + recursion stack)
+
+class Solution:
+def climbStairs(self, n: int) -> int:
+memo = {1: 1, 2: 2}
+
+        def dp(i):
+            if i not in memo:
+                memo[i] = dp(i-1) + dp(i-2)
+            return memo[i]
+
+        return dp(n)
+
+      `
+    },
+    {
+      label: "Bottom Up Tab",
+      code: `
+
+# Time: O(n)
+
+# Space: O(n)
+
+class Solution:
+def climbStairs(self, n: int) -> int:
+if n <= 2:
+return n
+
+        dp = [0] * (n + 1)
+        dp[1] = 1
+        dp[2] = 2
 
         for i in range(3, n + 1):
-          tmp = two
-          two = one + two
-          one = tmp
-        return two
+            dp[i] = dp[i-1] + dp[i-2]
 
-    ```
+        return dp[n]
+      `
+    },
+    {
+      label: "Bottom Up Tab O(1) Optimized",
+      code: `
 
-  </div>
+# Time: O(n)
 
-  <div id="go" className="tabcontent">
-    ```go {11-15} showLineNumbers
-    //
+# Space: O(1)
 
-    func climbStairs(n int) int {
-      if n == 1 {
-        return n
-      }
+class Solution:
+def climbStairs(self, n: int) -> int:
+if n <= 2:
+return n
 
-      one := 1
-      two := 2
+        prev2, prev1 = 1, 2
 
-      for i := 3; i < n + 1; i++ {
-        tmp := one + two
-        one = two
-        two = tmp
-      }
-      return two
-    }
-    ```
+        for _ in range(3, n + 1):
+            prev2, prev1 = prev1, prev1 + prev2
 
-  </div>
-</div>
+        return prev1
+      `
+    },
 
-### Questions? Concerns?
-
-Please comment a better solution if you have one.
+]}
+/>

@@ -1,76 +1,79 @@
 ---
 draft: false
-date: 2016-10-13
+date: 2016-01-01
 title: 'LeetCode: 322. Coin Change'
 tags: ['leetcode', 'data structures algorithms', 'dynamic programming', 'python']
-summary: 'Solving programming problems in multiple languages to master syntax, data structures, and algorithms.'
+summary: 'Solving Coin Change with Dynamic Programming and multiple algorithms to dial in on the techniques.'
 ---
 
-# Description
+<SnippetTabs
+snippets={[
+{
+label: "Brute Force",
+code: `
+class Solution:
+def coinChange(self, coins, amount):
+def dfs(rem):
+if rem == 0:
+return 0
+if rem < 0:
+return float('inf')
 
-## Intuition
+            ans = float('inf')
+            for c in coins:
+                ans = min(ans, 1 + dfs(rem - c))
 
-Utilize bottom up tabulation.
+            return ans
 
-- Set base case of index 0 to 0. It takes 0 coins to sum to 0 amount.
-- Iterate from 1 to amount checking if amount - coin is >= 0. If it is then:
-  - Update this amount/index to the minimum of current value & amount - coin + 1
+        res = dfs(amount)
+        return res if res != float('inf') else -1
 
-## Diagram
+      `
+    },
+    {
+      label: "Top Down Memo",
+      code: `
 
-```py
------
-Example 1
-coins = [1,2,5]
-amount = 11
------
-Index:    0   1   2   3   4   5   6   7   8   9  10  11
-DP :    [ 0, 12, 12, 12, 12, 12, 12, 12, 12, 12, 12, 12]
-                          ^
-New DP: [ 0,  1                                        ]
-              * (1) 1 coin
-New DP: [ 0,  1,  1                                    ]
-                  * (1) 2 coin
-New DP: [ 0,  1,  1,  2                                ]
-                      * (1) 1 coin & (1) 2 coin
-New DP: [ 0,  1,  1,  2,  2                            ]
-                          * (2) 2 coins
-New DP: [ 0,  1,  1,  2,  2,  1                        ]
-                              * (1) 5 coin
-New DP: [ 0,  1,  1,  2,  2,  1,  2                    ]
-                                  * (1) 5 coin & (1) 1 coin
-New DP: [ 0,  1,  1,  2,  2,  1,  2,  2                ]
-                                      * (1) 5 coin & (1) 2 coin
-New DP: [ 0,  1,  1,  2,  2,  1,  2,  2,  3            ]
-                                          * (1) 5 coin & (1) 2 coin & (1) 1 coin
-New DP: [ 0,  1,  1,  2,  2,  1,  2,  2,  3,  3        ]
-                                              * (1) 5 coin & (2) 2 coins
-New DP: [ 0,  1,  1,  2,  2,  1,  2,  2,  3,  3,  2    ]
-                                                  * (2) 5 coins
-New DP: [ 0,  1,  1,  2,  2,  1,  2,  2,  3,  3,  2,  3]
-                                                      * (2) 5 coins & (1) 1 coin
-```
+class Solution:
+def coinChange(self, coins, amount):
+memo = {}
 
-## Code
+        def dfs(rem):
+            if rem == 0:
+                return 0
+            if rem < 0:
+                return float('inf')
+            if rem in memo:
+                return memo[rem]
 
-<div className="tab-group">
-  <div className="tab">
-    <button id="#1" className="tablinks">python</button>
-  </div>
+            best = float('inf')
+            for c in coins:
+                best = min(best, 1 + dfs(rem - c))
 
-  <div id="#1" className="tabcontent">
-    ```python {} showLineNumbers
-    class Solution:
-        def coinChange(self, coins: List[int], amount: int) -> int:
-            dp = [amount+1] * (amount+1)
-            dp[0] = 0
-            for a in range(1, amount+1):
-                for c in coins:
-                    if a - c >= 0:
-                        dp[a] = min(dp[a], dp[a-c]+1)
-            return dp[amount] if dp[amount] != amount+1 else -1
-    ```
-  </div>
-</div>
+            memo[rem] = best
+            return best
 
-# Conclusion
+        res = dfs(amount)
+        return res if res != float('inf') else -1
+
+      `
+    },
+    {
+      label: "Bottom Up Tab",
+      code: `
+
+class Solution:
+def coinChange(self, coins: List[int], amount: int) -> int:
+n = amount+1
+dp = [n] \* n
+dp[0] = 0
+for a in range(1, n):
+for c in coins:
+if a - c >= 0:
+dp[a] = min(dp[a], dp[a-c] + 1)
+return dp[amount] if dp[amount] != amount + 1 else -1
+` }, { label: "Bottom Up Tab O(1) Optimized", code:`
+`
+},
+]}
+/>

@@ -1,0 +1,22 @@
+'''
+1. Understand
+Build two helper functions: one to convert linked list to integer and another to convert integer to linked list.
+
+2. Diagram
+3. Pseudocode
+4. Code
+5. BigO
+   Time: O()
+   Space: O()
+'''
+class Solution:
+    def addTwoNumbers(self, l1: Optional[ListNode], l2: Optional[ListNode]) -> Optional[ListNode]:
+        def toint(n):
+            return n.val + 10 * toint(n.next) if n else 0
+
+        def tolist(n):
+            node = ListNode(n % 10)
+            if n > 9:
+                node.next = tolist(n // 10)
+            return node
+        return tolist(toint(l1) + toint(l2))

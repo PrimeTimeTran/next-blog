@@ -1,6 +1,6 @@
 ---
 draft: true
-date: 2016-04-28
+date: 2016-01-01
 title: 'LeetCode: 239. Sliding Window Maximum'
 tags: ['leetcode', 'data structures algorithms', 'python']
 summary: 'Solving programming problems in multiple languages to master syntax, data structures, and algorithms.'

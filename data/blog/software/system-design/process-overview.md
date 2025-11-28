@@ -44,7 +44,8 @@ Involves discussing entities/resources which the system requires to achieve the 
 
 ### 3. API or Interface
 
-Involves discussing how different components communicate with one another. REST, GraphQL, GRPC, Websockets are usually one of the choices followed by their appropriate follow ups.
+Involves discussing how different components communicate with one another.
+REST, GraphQL, GRPC, Websockets are usually one of the choices followed by their appropriate follow ups.
 
 - Define protocol
 - Define routes
@@ -53,7 +54,8 @@ Involves discussing how different components communicate with one another. REST,
 
 ### 4. Data Flow
 
-Involves describing data flow, how information moves through the system—from user input, through APIs, business logic, databases, and back to the user or other services. In the system design process, mapping data flow helps:
+Involves describing data flow, how information moves through the system—from user input, through
+APIs, business logic, databases, and back to the user or other services. In the system design process, mapping data flow helps:
 
 - Visualize how components interact and depend on each other
 - Identify bottlenecks, latency sources, and points of failure
@@ -65,7 +67,8 @@ A clear data flow diagram is crucial for understanding the end-to-end journey of
 
 ### 5. High-Level Design
 
-Involves outlining the major components, their responsibilities, and how they interact to fulfill the system's requirements. This step bridges the gap between abstract requirements and concrete implementation. In the system design process, high-level design helps:
+Involves outlining the major components, their responsibilities, and how they interact to fulfill the system's requirements.
+This step bridges the gap between abstract requirements and concrete implementation. In the system design process, high-level design helps:
 
 - Define the system's architecture (e.g., client-server, microservices, monolith)
 - Identify key modules, services, and their relationships
@@ -77,7 +80,8 @@ A clear high-level design enables teams to move forward confidently, knowing the
 
 ### 6. Deep Dives
 
-Involves focusing on non-functional requirements and critical details that impact system quality. After outlining the architecture and main components, Deep Dives allow you to:
+Involves focusing on non-functional requirements and critical details that impact
+system quality. After outlining the architecture and main components, Deep Dives allow you to:
 
 - Analyze specific areas like scalability, consistency, latency, fault tolerance, and security.
 - Explore trade-offs and edge cases that could affect reliability or performance.

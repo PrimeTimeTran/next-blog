@@ -1,0 +1,4 @@
+Voiceover for LC 542 - 01 Matrix
+
+Notes:
+- Multi-source BFS: push all zeros initially and expand distances

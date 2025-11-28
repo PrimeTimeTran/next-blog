@@ -1,0 +1,4 @@
+Voiceover for LC 1135 - Connecting Cities With Minimum Cost
+
+Notes:
+- Build MST using Kruskal (sort edges + UF) or Prim (heap)

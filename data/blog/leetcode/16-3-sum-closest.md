@@ -1,6 +1,6 @@
 ---
 draft: false
-date: 2016-10-08
+date: 2016-01-01
 title: 'LeetCode: 16. 3Sum Closest'
 tags:
   [

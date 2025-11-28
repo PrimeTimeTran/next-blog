@@ -1,0 +1,18 @@
+Hello Everyone,
+Today I'm solving LeetCode 70: Climbing Stairs.
+
+This problem requires a dynamic programming algorithm for all tests to pass. Dynamic programming asks us to solve subproblems of a larger problem and combine their results to form a final solution. In this case, we'll see that the answer depends on the previous two values in the sequence — that overlapping-subproblem structure makes DP the right tool.
+
+I'll solve this using four DP paradigms, increasing in complexity so we can develop intuition about common approaches.
+
+First, I'll show a recursive brute-force solution that passes the provided examples but will fail on hidden test cases because of exponential time.
+
+Second, I'll implement a top-down, memoized solution. By caching results of computed subproblems, we avoid duplicated work and make the recursive approach efficient enough to pass all tests.
+
+The first two solutions are recursive; the next two are iterative.
+
+Third, I'll implement a bottom-up (tabulation) DP that computes minimal answers iteratively and stores them in a table for later subproblems.
+
+Lastly, I'll show an O(1) space optimization. Since each state depends only on the previous two, we can collapse the table into two variables and achieve O(n) time with O(1) space — the most compact and practical implementation once the recurrence is clear.
+
+By solving the same problem in four different ways, we'll master the fundamentals of dynamic programming, including recursion, base cases, memoization, tabulation, and time/space complexity trade-offs.

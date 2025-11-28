@@ -1,6 +1,6 @@
 ---
 draft: false
-date: '2016-10-11'
+date: 2016-01-01
 title: 'LeetCode: 200. Number of Islands'
 tags:
   [

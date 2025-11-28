@@ -1,0 +1,34 @@
+
+Hello Everyone,
+Today I'm solving LeetCode 746. Min Cost Climbing Stairs.
+
+This problem is a classic dynamic programming exercise: you're given an array of 
+costs for each stair and you must reach the top with the minimum total cost. 
+The key insight is that to decide the minimum cost to reach step i you only need to
+know the best costs to reach the previous one or two steps. That overlapping-subproblem
+structure makes DP the right tool.
+
+I'll walk through four approaches that build your intuition and increase efficiency, 
+matching the style we used for the Climbing Stairs video.
+
+First, I'll show the plain recursive brute-force solution that explores all choices — 
+it clearly demonstrates the recurrence but will fail on hidden tests due to exponential
+time.
+
+Second, I'll convert that recursion to a top-down memoized solution. By caching results
+of subproblems, we avoid duplicated work and the hidden tests will pass. This approach
+preserves the recursive structure while making it efficient.
+
+Third, I'll implement a bottom-up (tabulation) DP that iteratively fills a table of
+minimal costs from the base upward. It's straightforward, often faster in practice, and 
+makes the time and space tradeoffs explicit.
+
+Lastly, I'll show the optimal constant-space solution. Because each state only depends 
+on the previous two, we can collapse the table into two variables and achieve O(n) time 
+with O(1) space — the simplest and most elegant implementation once you see the recurrence.
+
+Along the way I'll explain base cases, the recurrence relation (dp[i] = cost[i] + 
+min(dp[i-1], dp[i-2]) or the equivalent forward relation), and the time/space complexity 
+of each method. By solving the same problem four ways you'll get comfortable with recursion, 
+memoization, tabulation, and space optimization in DP.
+

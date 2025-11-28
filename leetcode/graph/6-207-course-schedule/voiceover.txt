@@ -1,0 +1,5 @@
+Voiceover for LC 207 - Course Schedule
+
+Notes:
+- Cycle detection in directed graphs
+- Practice both DFS (recursion) and Kahn (BFS) implementations

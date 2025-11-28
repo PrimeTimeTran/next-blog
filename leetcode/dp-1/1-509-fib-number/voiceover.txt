@@ -1,0 +1,130 @@
+Hello everyone,
+Today I'm solving LeetCode 509 — Fibonacci Number.
+
+
+Hi everyone — welcome to the channel. Today we're exploring a classic DSA example: the Fibonacci sequence. 
+We'll walk through four ways to compute Fibonacci numbers — from the simplest (but slow) recursive approach to the fastest, 
+constant-space iterative method. I'll explain the logic and intuition behind each, show why some are slow and others fast, and 
+give their Big-O time and space complexity so you know when to use which approach. Let’s jump in.
+
+QUICK PROBLEM STATEMENT
+We want to compute Fibonacci(n), where:
+- fib(0) = 0
+- fib(1) = 1
+- For n >= 2, fib(n) = fib(n-1) + fib(n-2)
+
+Think of this sequence: 0, 1, 1, 2, 3, 5, 8, 13, ...
+
+1) NAIVE RECURSION (straightforward recursive definition)
+Code idea: return n if n <= 1, otherwise return fib(n-1) + fib(n-2).
+
+Intuition / logic:
+- This mirrors the mathematical definition directly.
+- If you draw the call tree for fib(5), you'll see many repeated subproblems. For example, fib(3) gets recomputed multiple times.
+- It’s easy to write and great for learning recursion, but it wastes work.
+
+Example (walkthrough):
+- To compute fib(5) it calls fib(4) and fib(3).
+- fib(4) calls fib(3) and fib(2), so fib(3) is computed again.
+- The call tree grows exponentially.
+
+Big-O:
+- Time: O(2^n) — exponential, because the recursion tree branches roughly doubling at each level.
+- Space: O(n) — recursion stack depth up to n.
+
+When to use:
+- Only for tiny n or when teaching/learning recursion. Not practical for larger n.
+
+Tradeoffs:
+- Very short code and conceptually clear, but extremely inefficient.
+
+2) RECURSION WITH MEMOIZATION (top-down DP)
+This is the previous recursive function but with a dictionary (or array) caching results of fib(i) once computed. Before 
+computing fib(i), check if it's in memo; if yes, return it. Otherwise compute, store in memo, and return.
+
+Intuition / logic:
+- The idea is to avoid recomputing the same subproblems. Each fib(k) is computed once, then reused.
+- The recursion still expresses the problem top-down, but memo reduces work to unique states only.
+
+Example (walkthrough):
+- Compute fib(5): compute fib(4) and fib(3).
+- When fib(4) requests fib(3), if fib(3) was already computed it’s a cache hit and returned immediately — no duplicate tree growth.
+
+Big-O:
+- Time: O(n) — each state from 0..n is computed once, and each computation does O(1) work besides recursive calls.
+- Space: O(n) — memo storage plus recursion stack up to n.
+
+When to use:
+- When you like recursive top-down code and want efficient time. Great when problem requires exploring states conditionally, 
+or when you want to record the path/trace with recursion.
+
+Tradeoffs:
+- Slight overhead for recursion and memo dictionary. Simple to implement and often fast enough.
+
+3) TABULATION / BOTTOM-UP DP (iterative DP with array)
+This builds an array dp[0..n]. Initialize dp[0]=0, dp[1]=1, then for i from 2 to n: dp[i] = dp[i-1] + dp[i-2]. Return dp[n].
+
+Intuition / logic:
+- Start from base cases and build up to the desired n.
+- Instead of recursion, we iterate and fill a table of subproblem answers.
+- This is bottom-up dynamic programming and is often slightly faster than memoized recursion because it avoids recursion overhead.
+
+Example (walkthrough):
+- For n=5, dp becomes: [0,1,1,2,3,5]
+- Each dp[i] depends only on two previous entries so you compute in linear order.
+
+Big-O:
+- Time: O(n) — single loop from 2 to n.
+- Space: O(n) — dp array of size n+1.
+
+When to use:
+- Clear, iterative solution that’s easy to reason about; useful when you also want to inspect intermediate dp values or reconstruct more complex state.
+
+Tradeoffs:
+- Uses O(n) memory which may be unnecessary if only the final number is needed.
+
+4) ITERATIVE CONSTANT-SPACE (optimized DP)
+We only need the previous two Fibonacci numbers to compute the next. Keep two variables (say a and b, or prior and prev). Loop from 2 to n, 
+updating them: prior, prev = prev, prior + prev. At the end, prev holds fib(n).
+
+Intuition / logic:
+- Observes that dp[i] depends only on dp[i-1] and dp[i-2]. There's no need for the whole table.
+- Extremely space-efficient and simple.
+
+Example (walkthrough):
+- Start prior=0, prev=1.
+- Iteration 2: prior=1, prev=1
+- Iteration 3: prior=1, prev=2
+- Continue until n.
+
+Big-O:
+- Time: O(n) — same linear time as tabulation.
+- Space: O(1) — constant extra memory, only two variables.
+
+When to use:
+- When you only need fib(n) (not intermediate values) and want the smallest memory footprint. This is typically the go-to practical solution for most cases.
+
+Tradeoffs:
+- Minimal memory, simple loop. No recursion, no memo.
+
+COMMON PITFALLS / EDGE CASES
+- n can be 0 or 1 — return n immediately.
+- For very large n, Fibonacci numbers grow fast — they quickly exceed 32-bit/64-bit integers; consider big-integer support or modular 
+arithmetic if required (e.g., mod 1e9+7 for competitive programming).
+- Recursive solutions risk stack overflow for very large n — prefer iterative for production.
+
+CONCLUSION
+That's it — four ways to compute Fibonacci with increasing efficiency: naive recursion, memoized recursion, bottom-up DP, and the optimized 
+iterative approach. Start with naive recursion to understand the recurrence, then move to memoization or tabulation to remove duplicate work,
+and finally use the iterative constant-space version when you need a compact, fast solution.
+
+If you liked this breakdown, leave a like, subscribe, and tell me which DSA topic I should cover next — trees, graphs, or dynamic programming patterns? 
+Thanks for watching, and happy coding!
+
+Ideas for next steps I can do for you:
+- Convert this into a shorter teleprompter-style version.
+- Add timestamps and scene cues (slides, code view, callouts).
+- Create a small example animation script for the call tree vs memoization.
+
+End of voiceover.
+

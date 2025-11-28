@@ -1,0 +1,5 @@
+Voiceover for LC 547 - Number of Provinces
+
+Notes:
+- Connected components on adjacency matrix
+- Practice Union-Find and DFS implementations
