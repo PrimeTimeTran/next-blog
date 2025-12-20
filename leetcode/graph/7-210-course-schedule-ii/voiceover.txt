@@ -1,0 +1,5 @@
+Voiceover for LC 210 - Course Schedule II
+
+Notes:
+- Topological sort (Kahn's algorithm or DFS postorder)
+- Return ordering or detect cycle

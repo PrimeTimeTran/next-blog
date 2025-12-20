@@ -1,0 +1,277 @@
+[
+  {
+    "id": 0,
+    "title": "Reverse String",
+    "difficulty": "e",
+    "tags": ["Backtracking"],
+    "url": "https://leetcode.com/problems/reverse-string",
+    "lc": {
+      "id": 344,
+      "premium": false
+    }
+  },
+  {
+    "id": 0,
+    "title": "Subtract the Product and Sum of Digits of an Integer",
+    "difficulty": "e",
+    "tags": ["Backtracking"],
+    "url": "https://leetcode.com/problems/subtract-the-product-and-sum-of-digits-of-an-integer",
+    "lc": {
+      "id": 1281,
+      "premium": false
+    }
+  },
+  {
+    "id": 0,
+    "title": "Subsets",
+    "difficulty": "e",
+    "tags": ["Backtracking"],
+    "url": "https://leetcode.com/problems/subsets",
+    "lc": {
+      "id": 78,
+      "premium": false
+    }
+  },
+  {
+    "id": 0,
+    "title": "Subsets II",
+    "difficulty": "e",
+    "tags": ["Backtracking"],
+    "url": "https://leetcode.com/problems/subsets-ii",
+    "lc": {
+      "id": 90,
+      "premium": false
+    }
+  },
+  {
+    "id": 0,
+    "title": "Non-decreasing Subsequences",
+    "difficulty": "m",
+    "tags": ["Backtracking"],
+    "url": "https://leetcode.com/problems/non-decreasing-subsequences",
+    "lc": {
+      "id": 491,
+      "premium": false
+    }
+  },
+  {
+    "id": 0,
+    "title": "Combinations",
+    "difficulty": "m",
+    "tags": ["Backtracking"],
+    "url": "https://leetcode.com/problems/combinations",
+    "lc": {
+      "id": 77,
+      "premium": false
+    }
+  },
+  {
+    "id": 0,
+    "title": "Combination Sum",
+    "difficulty": "m",
+    "tags": ["Backtracking"],
+    "url": "https://leetcode.com/problems/combination-sum",
+    "lc": {
+      "id": 39,
+      "premium": false
+    }
+  },
+  {
+    "id": 0,
+    "title": "Combination Sum II",
+    "difficulty": "m",
+    "tags": ["Backtracking"],
+    "url": "https://leetcode.com/problems/combination-sum-ii",
+    "lc": {
+      "id": 40,
+      "premium": false
+    }
+  },
+  {
+    "id": 0,
+    "title": "Combination Sum III",
+    "difficulty": "m",
+    "tags": ["Backtracking"],
+    "url": "https://leetcode.com/problems/combination-sum-iii",
+    "lc": {
+      "id": 216,
+      "premium": false
+    }
+  },
+  {
+    "id": 0,
+    "title": "Factor Combinations",
+    "difficulty": "",
+    "tags": ["Backtracking"],
+    "url": "https://leetcode.com/problems/factor-combinations",
+    "lc": {
+      "id": 254,
+      "premium": true
+    }
+  },
+  {
+    "id": 0,
+    "title": "Permutations",
+    "difficulty": "m",
+    "tags": ["Backtracking"],
+    "url": "https://leetcode.com/problems/permutations",
+    "lc": {
+      "id": 46,
+      "premium": false
+    }
+  },
+  {
+    "id": 0,
+    "title": "Permutations II",
+    "difficulty": "m",
+    "tags": ["Backtracking"],
+    "url": "https://leetcode.com/problems/permutations-ii",
+    "lc": {
+      "id": 47,
+      "premium": false
+    }
+  },
+  {
+    "id": 0,
+    "title": "Next Permutation",
+    "difficulty": "m",
+    "tags": ["Backtracking"],
+    "url": "https://leetcode.com/problems/next-permutation",
+    "lc": {
+      "id": 31,
+      "premium": false
+    }
+  },
+  {
+    "id": 0,
+    "title": "Letter Combinations of a Phone Number",
+    "difficulty": "m",
+    "tags": ["Backtracking"],
+    "url": "https://leetcode.com/problems/letter-combinations-of-a-phone-number",
+    "lc": {
+      "id": 17,
+      "premium": false
+    }
+  },
+  {
+    "id": 0,
+    "title": "Generate Parentheses",
+    "difficulty": "m",
+    "tags": ["Backtracking"],
+    "url": "https://leetcode.com/problems/generate-parentheses",
+    "lc": {
+      "id": 22,
+      "premium": false
+    }
+  },
+  {
+    "id": 0,
+    "title": "Generalized Abbreviation",
+    "difficulty": "",
+    "tags": ["Backtracking"],
+    "url": "https://leetcode.com/problems/generalized-abbreviation",
+    "lc": {
+      "id": 320,
+      "premium": true
+    }
+  },
+  {
+    "id": 0,
+    "title": "Letter Case Permutation",
+    "difficulty": "m",
+    "tags": ["Backtracking"],
+    "url": "https://leetcode.com/problems/letter-case-permutation",
+    "lc": {
+      "id": 784,
+      "premium": false
+    }
+  },
+  {
+    "id": 0,
+    "title": "Binary Watch",
+    "difficulty": "e",
+    "tags": ["Backtracking"],
+    "url": "https://leetcode.com/problems/binary-watch",
+    "lc": {
+      "id": 401,
+      "premium": false
+    }
+  },
+  {
+    "id": 0,
+    "title": "Valid Sudoku",
+    "difficulty": "m",
+    "tags": ["Backtracking"],
+    "url": "https://leetcode.com/problems/valid-sudoku",
+    "lc": {
+      "id": 36,
+      "premium": false
+    }
+  },
+  {
+    "id": 0,
+    "title": "Sudoku Solver",
+    "difficulty": "h",
+    "tags": ["Backtracking"],
+    "url": "https://leetcode.com/problems/sudoku-solver",
+    "lc": {
+      "id": 37,
+      "premium": false
+    }
+  },
+  {
+    "id": 0,
+    "title": "N-Queens",
+    "difficulty": "h",
+    "tags": ["Backtracking"],
+    "url": "https://leetcode.com/problems/n-queens",
+    "lc": {
+      "id": 51,
+      "premium": false
+    }
+  },
+  {
+    "id": 0,
+    "title": "N-Queens II",
+    "difficulty": "h",
+    "tags": ["Backtracking"],
+    "url": "https://leetcode.com/problems/n-queens-ii",
+    "lc": {
+      "id": 52,
+      "premium": false
+    }
+  },
+  {
+    "id": 0,
+    "title": "Restore IP Addresses",
+    "difficulty": "m",
+    "tags": ["Backtracking"],
+    "url": "https://leetcode.com/problems/restore-ip-addresses",
+    "lc": {
+      "id": 93,
+      "premium": false
+    }
+  },
+  {
+    "id": 0,
+    "title": "Word Break II",
+    "difficulty": "h",
+    "tags": ["Backtracking"],
+    "url": "https://leetcode.com/problems/word-break-ii",
+    "lc": {
+      "id": 140,
+      "premium": false
+    }
+  },
+  {
+    "id": 0,
+    "title": "Concatenated Words",
+    "difficulty": "h",
+    "tags": ["Backtracking"],
+    "url": "https://leetcode.com/problems/concatenated-words",
+    "lc": {
+      "id": 472,
+      "premium": false
+    }
+  }
+]

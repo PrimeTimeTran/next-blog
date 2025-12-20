@@ -1,7 +1,7 @@
 ---
 draft: false
 date: '2022-08-23'
-title: 'Algorithms: Dynamic Programming'
+title: 'Algorithms: Dynamic Programming Problems'
 tags: ['data structures algorithms', 'dynamic programming']
 summary: A review of dynamic programming and the techniques used to implement it including Brute Force, Top Down Memoization, & Bottom Up Tabulation.
 ---

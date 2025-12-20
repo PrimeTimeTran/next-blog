@@ -1,0 +1,6 @@
+Max Flow examples (Edmonds-Karp)
+
+Notes:
+- Edmonds-Karp is an implementation of Ford-Fulkerson using BFS to find the shortest augmenting path.
+- Time complexity: O(V * E^2) in worst case for Edmonds-Karp; Dinic is faster in practice.
+- Use this implementation to experiment with small flow graphs and min-cut extraction.

@@ -1,0 +1,5 @@
+Voiceover for LC 133 - Clone Graph
+
+Notes:
+- Practice BFS/DFS and copying adjacency lists
+- Use a mapping from original nodes to cloned nodes

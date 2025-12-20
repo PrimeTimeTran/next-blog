@@ -1,0 +1,5 @@
+Voiceover for LC 127 - Word Ladder II
+
+Notes:
+- Build BFS layers and backtrack from end to start to collect all shortest paths
+- (Note: actual LC number for Word Ladder II is 126; kept 127 as in the source file)

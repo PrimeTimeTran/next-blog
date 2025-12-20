@@ -1,0 +1,5 @@
+Voiceover for LC 200 - Number of Islands
+
+Notes:
+- Grid traversal using DFS/BFS
+- Practice marking visited cells and counting connected components

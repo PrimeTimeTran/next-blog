@@ -1,0 +1,4 @@
+Voiceover for LC 1584 - Min Cost to Connect All Points
+
+Notes:
+- Prim's algorithm with distance function or Kruskal after enumerating edges

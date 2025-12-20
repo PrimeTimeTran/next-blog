@@ -1,6 +1,6 @@
 ---
 draft: true
-date: 2016-10-13
+date: 2016-01-01
 title: 'LeetCode: data-structures-algorithms'
 tags:
   [

@@ -1,0 +1,5 @@
+Voiceover for LC 127 - Word Ladder
+
+Notes:
+- BFS on implicit graph (words are nodes, edges by one-letter difference)
+- Shortest path in unweighted graph

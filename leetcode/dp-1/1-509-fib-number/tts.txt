@@ -1,0 +1,128 @@
+Hello everyone,
+Today I'm solving LeetCode 509 — Fibonacci Number.
+
+This problem is a gentle, perfect introduction to dynamic programming abbreviated DP. 
+The Fibonacci sequence is simple: each number is the sum of the two that come before it. 
+That simplicity makes it a great place to 
+learn a few powerful ideas we'll reuse again and again in future DP solutions.
+
+In this video I'll explain the problem, why naive recursion 
+can be slow, and how we can turn that into an efficient solution using DP. 
+
+I'll go from a straightforward recursive definition that mirrors the math, to a memoized 
+top-down version that caches results for subsequent use, and then to an iterative bottom-up 
+approach that computes the answer quickly. I'll also show a final optimization that reduces memory 
+to constant space.
+
+Why start here? Because Fibonacci highlights the core DP pattern: overlapping 
+subproblems and reusing work. If you understand how to avoid repeating the same calculations 
+for Fibonacci, you'll find the techniques apply directly to many other DP problems, which builds on 
+these same ideas.
+
+My goal in this video is to build intuition rather than just produce code. We'll:
+
+- Look at the recursive definition and where it wastes time.
+- Add a cache (memoization) so we never recompute the same subproblem twice.
+- Convert that idea into an iterative, bottom-up table that fills results in order.
+- Finally, show the simplest iterative solution that keeps only the last two values and runs in O(n) 
+  time with O(1) space.
+
+By the end you'll know the pattern: identify subproblems, pick a direction (top-down or bottom-up), 
+cache or store intermediate results, and then optimize space if needed. That pattern is the 
+foundation of DP and will make the future problems much easier to understand.
+
+Alright let's take a look at the problem description.
+
+The Fibonacci numbers, commonly denoted F(n) form a sequence, called the Fibonacci sequence, 
+such that each number is the sum of the two preceding ones, starting from 0 and 1. That is.
+
+In mathematical terms, this is called a recurrence relation:
+
+Here's a table which illustrates the logic.
+
+aₙ   = aₙ₋₁ + aₙ₋₂
+aₙ₋₁ = aₙ₋₂ + aₙ₋₃
+...
+a₄ = 3
+a₃ = 2
+a₂ = 1
+a₁ = 1
+a₀ = 0
+
+
+You see that the nth term is the sum of the nth - 1 term + the nth - 2 term.
+This pattern continues until we get to the base cases, which are 0 & 1; as stated in the problem description.
+
+Although this solution will work for small inputs, it's 2ⁿ, exponential in n, which is bad.
+
+That means that if n grows to a large value, the time it takes for this algorithm to complete will grow exponentially.
+
+A way of visualizing this solution is in terms of a tree.
+
+...
+
+The tree will be of n height, and we'll branch by 2 at each level.
+
+This tree isn't completed so that we can focus on the main concept, 
+that in this type of brute force solution we end up repeating a lot of work.
+
+Specifically, the right most n-2, n-3, and so on are repeated because if we look closely, the left 
+branch of three already computes those values.
+
+Looking at code might help you to understand that so let's do that.
+
+First we'll just return a call to dp(), our helper function, to n.
+
+Within DP, we'll add recursive logic subsequent calls to dp() where n is reduced by 1 & 2 respectively.
+
+You can see that this fulfills the recurrence relation perfectly.
+
+If we run the code now, we'll get a stack overflow error though because this function will recurse until
+we run out of space on our stack.
+
+This is where we have to add a base case, the a₀ and a₁ items in our sequence.
+
+We'll do that by conditionally returning i if it's less than or equal to 1.
+
+And with that additional logic, our brute force solution works; passing all tests.
+
+Next let's move on two our 2nd solution, a top down memoized version.
+
+This solution is nearly identical, we just have to do 2 additional things to our current implementation.
+
+I'll add a dict to cache work for previous subproblems outside of the scope of the helper function.
+This way it'll be available for subsequent calls.
+
+Next, I'll check if the key is not found in the memo dict; if it isn't, set it using the 
+logic we already have. Then return the the value of the cache using the key we passed in.
+
+And with that we have a solution which won't set our computer on fire when we have large inputs.
+
+---
+
+Let's review the previous two solutions and their similarities so that we can appreciate the next 2 
+and how they differ:
+
+The previous two solutions, Brute Force & memoized use top down recursion from n to the base cases.
+
+One the base cases are found, the subproblems returns their solutions to lower and lower calls on 
+the stack until we reach the final solution.
+
+They differ in that the brute force solution will repeat work by nature of the branching logic which
+doesn't implement a store of any sort and is thus required to calculate the same values multiple times.
+
+
+---
+
+Alright now I'll now add a bottom up tabulation solution.
+
+This usually has a list or a list of lists as the data structures used to cache subproblem results.
+
+The big difference is that we'll work our way from our base cases initialized, and work our way up
+toward the final problem. In each iteration we'll previous values to ascertain the answer to 
+the current iteration. 
+
+When we reach the iteration we're looking for, we'll have already computed what values necessary to solve for the 
+final problem so that's why it's also called.
+
+Another way to think of this is working forward toward our final solution using smaller sub problems.
