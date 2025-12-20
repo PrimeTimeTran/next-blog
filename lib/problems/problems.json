@@ -28,14 +28,6 @@
   },
   {
     "id": 0,
-    "title": "Merge k Sorted Lists",
-    "difficulty": "m",
-    "tags": ["Linked List", "Priority Queue"],
-    "url": "https://leetcode.com/problems/merge-k-sorted-lists",
-    "lc": { "id": 23, "premium": false }
-  },
-  {
-    "id": 0,
     "title": "Top K Frequent Elements",
     "difficulty": "m",
     "tags": ["Hash Table", "Priority Queue"],

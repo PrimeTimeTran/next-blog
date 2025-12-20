@@ -5,6 +5,7 @@ import problemsDP from '../lib/problems/dp.json'
 import problemsGraph from '../lib/problems/graph.json'
 import problemsBackTracking from '../lib/problems/backtracking.json'
 import problemsBinarySearch from '../lib/problems/binary-search.json'
+import problemsLinkedList from '../lib/problems/linked-list.json'
 import problemsBit from '../lib/problems/bit.json'
 
 import paretoProblems from '../leetcode/pareto/pareto-problems.json'
@@ -16,6 +17,7 @@ const allProblems = [
   ...problemsGraph,
   ...problemsBinarySearch,
   ...problemsBit,
+  ...problemsLinkedList,
 ]
 const tags = allProblems.map((problem) => problem.tags).flat()
 const uniqueTags = Array.from(new Set(tags))
