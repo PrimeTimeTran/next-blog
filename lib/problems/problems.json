@@ -36,14 +36,6 @@
   },
   {
     "id": 0,
-    "title": "Kth Smallest Element in a Sorted Matrix",
-    "difficulty": "m",
-    "tags": ["Matrix", "Priority Queue"],
-    "url": "https://leetcode.com/problems/kth-smallest-element-in-a-sorted-matrix",
-    "lc": { "id": 378, "premium": false }
-  },
-  {
-    "id": 0,
     "title": "Top K Frequent Elements",
     "difficulty": "m",
     "tags": ["Hash Table", "Priority Queue"],

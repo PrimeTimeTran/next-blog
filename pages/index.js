@@ -88,7 +88,7 @@ export default function Home({ posts }) {
           <h1 className="text-2xl font-extrabold leading-9 tracking-tight text-gray-900 dark:text-gray-100 sm:text-4xl sm:leading-10 md:text-2xl md:leading-14">
             Topics
           </h1>
-          <div className="my-1 mb-6 flex justify-around space-x-2 text-primary-500">
+          <div className="my-1 mb-6 flex justify-around space-x-2 overflow-x-auto text-primary-500">
             {Object.entries(filteredByTopic).map(([topicName, topicPosts]) => (
               <button key={topicName} onClick={() => setFilteredPosts(topicPosts)}>
                 {topicName} <span className="text-gray-500">({topicPosts.length})</span>,
