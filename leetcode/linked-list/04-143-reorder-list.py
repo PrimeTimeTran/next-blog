@@ -2,6 +2,9 @@
 1. Understand
 Find the mid of the linked list, reverse the second half, then merge the two halves.
 
+
+
+
 2. Diagram
 3. Pseudocode
 4. Code
@@ -13,8 +16,12 @@ class Solution:
     def reorderList(self, head: Optional[ListNode]) -> None:
         d = ListNode(0, head)
         s, f = d, d
-        # Find the middle of the list
-        while f and f.next:
+        # Ensures no overlapping nodes in both lists when we do f.next and f.next.next
+        # ListNode{val: 2, next: ListNode{val: 3, next: ListNode{val: 4, next: None}}} ListNode{val: 3, next: ListNode{val: 4, next: None}}
+        
+        # If we did f and f.next, then for even length lists, we would end up with s at the start of the second half
+        # ListNode{val: 3, next: ListNode{val: 4, next: None}} None
+        while f.next and f.next.next:
             s = s.next
             f = f.next.next
         

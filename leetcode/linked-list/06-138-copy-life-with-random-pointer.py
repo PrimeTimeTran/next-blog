@@ -13,6 +13,8 @@ class Solution:
         store, d = {}, head
         while d:
             store[d], d = Node(d.val, None, None), d.next
+        # Rebinding, not mutating; we want to set the next and random pointers of the new nodes
+        # "Sharing a reference shares mutations, not reassignments."
         d = head
         while d:
             if d.next:

@@ -5,6 +5,9 @@ Next move both pointers until fast pointer reaches the end.
 At this point, slow pointer will be at the node before the one we want to remove.
 Then we can just skip the next node of slow pointer.
 
+Use a dummy node when you might need to delete or modify the head of the linked list, 
+or when you want a stable "previous" pointer that doesn't require special-casing the first element.
+
 2. Diagram
 3. Pseudocode
 4. Code

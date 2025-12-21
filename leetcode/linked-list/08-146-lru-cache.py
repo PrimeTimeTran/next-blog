@@ -1,39 +1,12 @@
 '''
-1. Constraints
-We'll receive a stream of data and we need to return values depending on the stream's messages.
-
+1. Understand
 2. Diagram
-
-["LRUCache", "put",  "put",  "get", "put",  "get", "put",  "get", "get", "get"]
-[[2],        [1, 1], [2, 2], [1],   [3, 3], [2],   [4, 4], [1],   [3],   [4]]
-                                                                          ^                                                                          
-CAP 2
-CACHE
-
-{
-    3:3,
-    4:4
-}              
-
-LL:
-left > 3 > 4 > right
-
-return 1
-return -1
-return -1
-return 3
-return 4
-
 3. Pseudocode
-
-We define a ListNode class which has keyy, value, next, and prev properties.
-When we init LRUCache we define cap, cache, left, and right.
-
-We define a get method which looks at our cache and updates it to the end of the linkedList if 
-
 4. Code
+5. Big O
+Time:   O()
+Space:  O()
 '''
-
 class ListNode:
     def __init__(self, key, val):
         self.key, self.val = key, val
