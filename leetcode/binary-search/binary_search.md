@@ -99,11 +99,10 @@ Search for _where_ something is.
 4. [Find First and Last Position of Element in Sorted Array](https://leetcode.com/problems/find-first-and-last-position-of-element-in-sorted-array)
 5. [Search a 2D Matrix](https://leetcode.com/problems/search-a-2d-matrix)
 6. [Search a 2D Matrix II](https://leetcode.com/problems/search-a-2d-matrix-ii)
-7. [Find Peak Element](https://leetcode.com/problems/find-peak-element)
-8. [Find Minimum in Rotated Sorted Array II](https://leetcode.com/problems/find-minimum-in-rotated-sorted-array-ii)
-9. [Guess Number Higher or Lower](https://leetcode.com/problems/guess-number-higher-or-lower)
-10. [First Bad Version](https://leetcode.com/problems/first-bad-version)
-11. [Find Smallest Letter Greater Than Target](https://leetcode.com/problems/find-smallest-letter-greater-than-target)
+7. [Find Minimum in Rotated Sorted Array II](https://leetcode.com/problems/find-minimum-in-rotated-sorted-array-ii)
+8. [Guess Number Higher or Lower](https://leetcode.com/problems/guess-number-higher-or-lower)
+9. [First Bad Version](https://leetcode.com/problems/first-bad-version)
+10. [Find Smallest Letter Greater Than Target](https://leetcode.com/problems/find-smallest-letter-greater-than-target)
 
 ---
 
