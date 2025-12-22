@@ -1,3 +1,4 @@
+
 '''
 1. Understand
    Given a sorted array of integers and a target value, 
@@ -42,7 +43,9 @@ class Solution:
         # Find the right boundary:
         # converge toward the last index where nums[i] <= target
         while l < r:
-            m = (l+r+1) // 2        
+            # “Choose the midpoint biased toward the right.”
+            m = (l+r+1) // 2
+            # m = l + ((r-l+1) // 2)
             if nums[m] > target:
                 r = m - 1 
             else:

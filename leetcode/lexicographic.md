@@ -2,8 +2,8 @@ Here are **10 LeetCode problems** that will help you build the _lexicographic-or
 
 ### 🧠 Directly Related to Lexicographic / String Ordering
 
-1. **[Delete Columns to Make Sorted II (LeetCode 955)](https://leetcode.com/problems/delete-columns-to-make-sorted-ii/?utm_source=chatgpt.com)** — the exact problem you’re working on and a perfect way to reinforce this greedy/lexicographic logic. ([LeetCode][1])
-2. **[Delete Columns to Make Sorted (LeetCode 944)](https://leetcode.com/problems/delete-columns-to-make-sorted/description/?utm_source=chatgpt.com)** — simpler version of #1 that focuses purely on column sorting. ([LeetCode][2])
+1. **[Delete Columns to Make Sorted (LeetCode 944)](https://leetcode.com/problems/delete-columns-to-make-sorted/description/?utm_source=chatgpt.com)** — simpler version of #1 that focuses purely on column sorting. ([LeetCode][2])
+2. **[Delete Columns to Make Sorted II (LeetCode 955)](https://leetcode.com/problems/delete-columns-to-make-sorted-ii/?utm_source=chatgpt.com)** — the exact problem you’re working on and a perfect way to reinforce this greedy/lexicographic logic. ([LeetCode][1])
 3. **[Lexicographically Smallest String After Applying Operations (LeetCode 1625)](https://leetcode.com/problems/lexicographically-smallest-string-after-applying-operations/?utm_source=chatgpt.com)** — a greedy lexicographic string transform problem. ([LeetCode][3])
 4. **[Lexicographically Smallest String After Substring Operation (LeetCode 2734)](https://leetcode.com/problems/lexicographically-smallest-string-after-substring-operation/?utm_source=chatgpt.com)** — another greedy lexicographically smallest output problem. ([LeetCode][4])
 5. **[Lexicographically Smallest Equivalent String (LeetCode)](https://leetcode.com/problems/lexicographically-smallest-equivalent-string/?utm_source=chatgpt.com)** — uses union/greedy to minimize lexicographical result. ([LeetCode][5])

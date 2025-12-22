@@ -8,22 +8,20 @@ class Solution:
 
 class Solution:
     def maxProfit(self, prices: List[int]) -> int:
-
         n = len(prices)
-
         @lru_cache(None)
-        def dp(i: int, holding: int) -> int:
-            if i == n:
-                return 0
-
-            if holding:
-                # Option 1: sell today, Option 2: hold
-                return max(prices[i] + dp(i+1, 0), dp(i+1, 1))
-            else:
-                # Option 1: buy today, Option 2: skip
-                return max(-prices[i] + dp(i+1, 1), dp(i+1, 0))
-
-        return dp(0, 0)
+        def dp(i, holding):
+            if i == n: return 0
+            price = prices[i]
+            i+=1
+            # Forgoing today means maintaining holding state in subsequent days.
+            skip = dp(i, holding)
+            # If held then credit(sell) otherwise debit(buy)
+            realized_cashflow = price if holding else -price
+            # Having realized a pnl(acted today) find(ascertain) from remaining days what potential pnl might be.
+            pnl = realized_cashflow + dp(i, not holding)
+            return max(skip, pnl)
+        return dp(0, False)
 
 
 class Solution:

@@ -1,0 +1,85 @@
+- LinkedList
+  - Ensure partition of list is even and slow pointer is at node BEFORE partition
+    while at the same time avoiding loops with f.next and f.next.next
+  - Reference/Mutation is important when we consider
+  - LRUCache
+    - Utilizes
+      - Doubly linked list, cache,
+    - Define ListNode with key, val, left, right
+    - Define, insert, remove methods.
+    - Insert:
+    - Get:
+      - If key in cache, remove it and then add it again(to update cache)
+- Stocks/DP
+  - Recursion lets us shrink the problem space on
+    - Days
+    - Buy or Sell
+    - Open or Close
+    - Cooldown present
+    - Number of transactions remaining
+- Binary Search
+  - Key Concepts:
+    - Concerned with ordered decisions
+    - Binary search is a method for finding a boundary in a monotonic search space by
+      maintaining invariants and discarding half the candidates at each step.
+  - Preconditions:
+    - Search space must be ordered
+      - Sorted array or
+      - Implicitly ordered answer space (values, capacities, thresholds)
+    - Discrete search space
+      - Indices, integers, or values that can be totally ordered
+  - Invariants:
+    - Define what is always true about l and r
+    - Tell us which half can be discarded safely
+    - l = last known invalid
+    - r = first known valid
+    - Binary search is fundamentally about maintaining invariants, not about “cutting arrays in half”.
+  - Midpoint Choice
+    - Left Lean
+      - m = (l + r) // 2
+    - Right Lean
+      - m = (l + r + 1) // 2
+    - Used to:
+      - Avoid infinite loops
+      - Ensure progress when l or r moves to m
+  - Update Rules
+    - Use m ± 1 only when m itself is known to be invalid or valid
+    - Use r = m or l = m when:
+      - You are preserving a boundary
+      - m could still be the answer
+  - Dont return a specific index, but a in
+  - Monotonic structure
+    - Can be used to ensure we...
+  - Termination Patterns (very important)
+    - Find a specific value
+      - while l <= r
+      - Return index or -1
+    - Find a boundary / minimum feasible value
+      - while l < r
+      - Return l or r (they converge)
+    - Two-sided invariant boundary
+      - while l + 1 < r
+      - Return r (or l, depending on invariant)
+    - The loop condition is determined by what you want to return.
+  - Binary Search on Answer (Big one)
+    - Binary search does not require an array
+      - Search space can be:
+        - Maximum allowed value
+        - Minimum capacity
+        - Time, speed, cost, sum, distance
+      - Requires:
+        - A check / predicate function
+        - Monotonicity of that predicate
+  - Monotonic Structure (This is the keystone)
+    - Once a condition becomes true, it never becomes false again
+    - Benefits:
+      - 1️⃣ Enables logarithmic search
+        - ✅ O(log n)
+        - ⛔️ O(n)
+      - 2️⃣ Makes “checking” cheaper than “solving”
+      - 3️⃣ Separates logic cleanly
+        - Outer loop → search
+        - Inner function → correctness check
+      - 4️⃣ Guarantees correctness via invariants
+        - When you discard half the space,
+        - You never discard the answer

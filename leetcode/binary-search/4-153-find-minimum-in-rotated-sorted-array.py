@@ -9,11 +9,15 @@ If nums[m] < nums[r] == true then the range [m+1, r] cannot contain a minimum, b
 '''
 class Solution:
     def findMin(self, nums: List[int]) -> int:
-        l, r = 0, len(nums) - 1
+        l, r = 0, len(nums)-1
         while l < r:
-            m = (l + r) // 2
+            m = (l+r) // 2
+            # If the right partition is sorted than it does not contain
+            # the drop point(where the largest number drops to the lowest/circles back to the beginning).
+            # So discard the right half.
             if nums[m] < nums[r]:
                 r = m
             else:
+                # The right partition wasn't sorted so the left can be discarded
                 l = m + 1
-        return nums[l]
+        return nums[r]

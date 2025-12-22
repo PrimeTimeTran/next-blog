@@ -1,17 +1,22 @@
 class Solution:
     def maxProfit(self, k: int, prices: List[int]) -> int:
         n = len(prices)
-
         @lru_cache(None)
-        def dp(i: int, count: int) -> int:
-            if i == n or count == 0:
+        def dp(i, holding, completed_count):
+            if i == n or completed_count == k:
                 return 0
-            sign = -1 if count % 2 == 0 else 1
-            price = sign * prices[i]
-            skip = dp(i + 1, count)
-            take = price + dp(i + 1, count - 1)
+            price = prices[i]
+            i+=1
+            skip = dp(i, holding, completed_count)
+            completed_count += 1 if holding else 0
+            # If you're holding you previous bought(debitted) and must now sell(credit)
+            cashflow_realized_from_acting = price if holding else -price
+            # Add credit/debit from todays action
+            # to subsequent subproblem where we flipped holding(from opening/closing) and incrementing day/count
+            take = cashflow_realized_from_acting + dp(i, not holding, completed_count)
             return max(skip, take)
-        return dp(0, k * 2)
+        return dp(0, False, 0)
+
 
 class Solution:
     def maxProfit(self, k: int, prices: List[int]) -> int:

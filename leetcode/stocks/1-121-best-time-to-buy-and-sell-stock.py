@@ -28,27 +28,33 @@ class Solution:
 #                 return max(skip, buy)
 
 #         return dp(0, False)
+'''
+1. Understand
+Return the best profit you can make given a list of prices of stocks on a range of days.
+You can make at most one transaction and can only profit when you buy & then sell a stock.
+
+State Machine:
+- Day purchased and remaining.
+- Whether or not holding a stock(previously purchased).
+
+Pseudocode:
+From the first day skip and take the day until you've reached the end of the list.
+Inside of recursion, compare which was more profitable. Taking or selling.
+When moving forward track whether or not you bought/sold so you can know when you need to do on subsequent days.
+'''
 class Solution:
     def maxProfit(self, prices: List[int]) -> int:
         n = len(prices)
-
         @lru_cache(None)
-        def dp(i: int, holding: bool) -> int:
-        if i == n:
-                return 0  # always return 0 at the end
-
-            if holding:
-                # Either sell today or skip
-                sell = prices[i]  # profit from selling today
-                skip = dp(i + 1, True)
-                # If we sell, we cannot sell again, so the recursion for future is 0
-                return max(skip, sell)
-            else:
-                # Either buy today or skip
-                buy = -prices[i] + dp(i + 1, True)
-                skip = dp(i + 1, False)
-                return max(skip, buy)
-
+        def dp(i: int, open: bool):
+            if i == n: return 0
+            price = prices[i]
+            i+=1
+            skip = dp(i, open)
+            # If open then I'll receive a credit otherwise I'll 
+            # debit and then find the best day to sell from the remaining days.
+            act = price if open else -price + dp(i, True)
+            return max(skip, act)
         return dp(0, False)
 
 
