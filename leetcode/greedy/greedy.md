@@ -199,3 +199,7 @@ If you want, I can:
 
 https://leetcode.com/problem-list/xyehq5j6
 https://leetcode.com/problem-list/greedy
+
+## Problems
+
+https://leetcode.com/problems/maximum-sum-of-three-numbers-divisible-by-three
