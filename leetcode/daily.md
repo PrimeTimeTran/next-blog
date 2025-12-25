@@ -24,3 +24,6 @@
     - Cooldown present
     - Number of transactions remaining
 - Binary Search
+  - Invariant Structure
+  - Left/Right Leaning midpoint
+- Greedy
