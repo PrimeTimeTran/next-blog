@@ -4,8 +4,7 @@ class Solution:
         @lru_cache(None)
         def dp(i, is_holding, transactions):
             if i == n or transactions == k: return 0
-            price = prices[i]
-            i+=1
+            i, price = i+1, prices[i]
             skip = dp(i, is_holding, transactions)
             transactions += 1 if is_holding else 0
             cashflow_realized_from_acting = price if is_holding else -price

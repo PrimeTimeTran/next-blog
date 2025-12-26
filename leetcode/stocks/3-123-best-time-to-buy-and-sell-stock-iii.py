@@ -19,27 +19,9 @@ class Solution:
     def maxProfit(self, prices: List[int]) -> int:
         n = len(prices)
         @lru_cache(None)
-        def dp(i: int, holding: bool) -> int:
-            if i == n:
-                return 0
-            skip = dp(i + 1, holding)
-            sign = 1 if holding else -1
-            price = prices[i]
-            pnl = sign * price
-            if not holding:
-                pnl = pnl + dp(i + 1, True)
-            return max(skip, pnl)
-
-        return dp(0, False)
-
-class Solution:
-    def maxProfit(self, prices: List[int]) -> int:
-        n = len(prices)
-        @lru_cache(None)
         def dp(i, is_holding, transactions):
             if i == n or transactions == 2: return 0
-            price = prices[i]
-            i+=1
+            i, price = i+1, prices[i]
             skip = dp(i, is_holding, transactions)
             realized_cashflow = price if is_holding else -price
             transactions += 1 if is_holding else 0

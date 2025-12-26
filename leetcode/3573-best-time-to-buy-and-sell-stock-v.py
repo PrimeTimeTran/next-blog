@@ -45,15 +45,14 @@ class Solution:
     def maximumProfit(self, prices: List[int], k: int) -> int:
         n = len(prices)
         @lru_cache(maxsize=1000*4)
-        def dp(i, transactions, is_holding):
+        def dp(i, transactions, position):
             if i == n or transactions == k:
-                return 0 if is_holding is None else -inf
-            price = prices[i]
-            i+=1
-            skip = dp(i, transactions, is_holding)
-            # I've got to close open positions
-            if is_holding:
-                pnl_from_close = price if is_holding == "buy_to_open" else -price
+                return 0 if position is None else -inf
+            i, price = i+1, prices[i]
+            skip = dp(i, transactions, position)
+            # Must close opened positions
+            if position:
+                pnl_from_close = price if position == "buy_to_open" else -price
                 # And I should ascertain how much more I can earn with the remaining trading horizon
                 realized = pnl_from_close + dp(i, transactions+1, None)
             else:

@@ -1,3 +1,17 @@
+'''
+1. Understand
+Return the best profit you can make given a list of prices of stocks on a range of days.
+You can make at most one transaction and can only profit when you buy & then sell a stock.
+
+State Machine:
+- Day purchased and remaining.
+- Whether or not holding a stock(previously purchased).
+
+Pseudocode:
+From the first day skip and take the day until you've reached the end of the list.
+Inside of recursion, compare which was more profitable. Taking or selling.
+When moving forward track whether or not you bought/sold so you can know when you need to do on subsequent days.
+'''
 class Solution:
     def maxProfit(self, prices: List[int]) -> int:
         res = l = 0
@@ -28,32 +42,17 @@ class Solution:
 #                 return max(skip, buy)
 
 #         return dp(0, False)
-'''
-1. Understand
-Return the best profit you can make given a list of prices of stocks on a range of days.
-You can make at most one transaction and can only profit when you buy & then sell a stock.
-
-State Machine:
-- Day purchased and remaining.
-- Whether or not holding a stock(previously purchased).
-
-Pseudocode:
-From the first day skip and take the day until you've reached the end of the list.
-Inside of recursion, compare which was more profitable. Taking or selling.
-When moving forward track whether or not you bought/sold so you can know when you need to do on subsequent days.
-'''
 class Solution:
     def maxProfit(self, prices: List[int]) -> int:
         n = len(prices)
         @lru_cache(None)
-        def dp(i: int, open: bool):
+        def dp(i, holding):
             if i == n: return 0
-            price = prices[i]
-            i+=1
-            skip = dp(i, open)
-            # If open then I'll receive a credit otherwise I'll 
-            # debit and then find the best day to sell from the remaining days.
-            act = price if open else -price + dp(i, True)
+            i, price = i+1, prices[i]
+            skip = dp(i, holding)
+            # If I'm holding then I receive the price of today from selling.
+            # Otherwise I pay the price and then find the best day to sell.
+            act = price if holding else -price + dp(i, True)
             return max(skip, act)
         return dp(0, False)
 
@@ -93,7 +92,6 @@ class Solution:
 
         # At the end, max profit is when we are **not holding** (we must sell to realize profit)
         return dp[0]
-
 
 class Solution:
     def maxProfit(self, prices: List[int]) -> int:

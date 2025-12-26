@@ -5,17 +5,12 @@ class Solution:
     def maxProfit(self, prices: List[int], fee: int) -> int:
         n = len(prices)
         @lru_cache(None)
-        def dp(i: int, holding: bool) -> int:
+        def dp(i: int, is_holding: bool) -> int:
             if i == n: return 0
-            price = prices[i]
-            i+=1
-            # Forgoing today means the state of holding remains unchanged
-            skip = dp(i, holding)
-            # If not holding must buy resulting in price debit.
-            # If holding must sell resulting in price credit and fee deduction.
-            realized = -price if not holding else price - fee
-            # If bought/holding then sell(can no longer sell). Otherwise buy(can then sell).
-            act = dp(i, not holding)
+            i, price = i+1, prices[i]
+            skip = dp(i, is_holding)
+            realized = -price if not is_holding else price - fee
+            act = dp(i, not is_holding)
             return max(skip, realized + act)
         return dp(0, False)
 

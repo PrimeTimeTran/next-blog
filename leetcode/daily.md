@@ -42,3 +42,4 @@
     - Reducing problem space until base case reached
   - Memoization
   - Tabulation
+  - Rolling
