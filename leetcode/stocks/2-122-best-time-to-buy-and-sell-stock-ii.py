@@ -1,5 +1,13 @@
 class Solution:
     def maxProfit(self, prices: List[int]) -> int:
+        profit = 0
+        for i in range(1, len(prices)):
+            if prices[i] > prices[i - 1]:
+                profit += prices[i] - prices[i - 1]
+        return profit
+
+class Solution:
+    def maxProfit(self, prices: List[int]) -> int:
         res = 0
         for i in range(len(prices)-1):
             if prices[i] < prices[i+1]:
@@ -33,10 +41,9 @@ class Solution:
 
 class Solution:
     def maxProfit(self, prices: List[int]) -> int:
-        cash, hold = 0, -prices[0]
-
+        cash = 0                 # max balance when NOT holding
+        hold = -prices[0]        # max balance when holding
         for price in prices[1:]:
             cash = max(cash, hold + price)
             hold = max(hold, cash - price)
-
         return cash

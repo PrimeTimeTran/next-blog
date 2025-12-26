@@ -5,10 +5,9 @@ and we return n.val + max(left, right) because a path passed upward cannot branc
 class Solution:
     def maxPathSum(self, root):
         self.res = root.val
-        "The maximum path sum starting at n and going downward in one direction"
         def dfs(n):
             if not n: return 0
-            l, r = dfs(n.left), dfs(n.right)
+            l, r = max(dfs(n.left), 0), max(dfs(n.right), 0)
             self.res = max(self.res, n.val + l + r)
             return n.val + max(l, r)
         dfs(root)

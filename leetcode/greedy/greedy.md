@@ -203,16 +203,3 @@ https://leetcode.com/problem-list/greedy
 ## Problems
 
 https://leetcode.com/problems/maximum-sum-of-three-numbers-divisible-by-three
-
-455-assign-cookies.py
-860-lemonade-change.py
-134-gas-station.py
-846-hand-of-straights.py
-55-jump-game.py
-45-jump-game-ii.py
-53-maximum-subarray.py
-1899-merge-triplets-to-form-target-triplet.py
-763-partition-labels.py
-678-valid-parenthesis-string.py
-435-non-overlapping-intervals.py
-452-minimum-number-of-arrows-to-burse-balloons.py

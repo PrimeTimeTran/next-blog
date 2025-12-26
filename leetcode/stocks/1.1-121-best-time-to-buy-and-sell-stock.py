@@ -95,11 +95,9 @@ class Solution:
 
 class Solution:
     def maxProfit(self, prices: List[int]) -> int:
-        buy = -prices[0]   # best profit after buying once
-        sell = 0           # best profit after selling once
-
+        debit = prices[0]
+        credit = 0        
         for price in prices[1:]:
-            buy = max(buy, -price)        # buy ONCE
-            sell = max(sell, buy + price) # sell ONCE
-
-        return sell
+            debit = min(debit, price)
+            credit = max(credit, price - debit)
+        return credit

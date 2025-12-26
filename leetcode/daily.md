@@ -43,3 +43,4 @@
   - Memoization
   - Tabulation
   - Rolling
+- Prefix Sum
