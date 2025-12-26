@@ -10,6 +10,7 @@ DP because it's asking to find the best given the constraint k from a list of su
 Time:   O(nk)
 Space:  O(nk)
 '''
+
 class Solution:
     def maximumProfit(self, prices: List[int], k: int) -> int:
         n = len(prices)
@@ -43,22 +44,23 @@ class Solution:
 class Solution:
     def maximumProfit(self, prices: List[int], k: int) -> int:
         n = len(prices)
-
         @lru_cache(maxsize=1000*4)
-        def dp(i, kount, holding):
-            if i == n or kount == k:
-                return 0 if holding is None else -inf
+        def dp(i, transactions, is_holding):
+            if i == n or transactions == k:
+                return 0 if is_holding is None else -inf
             price = prices[i]
             i+=1
-            skip = dp(i, kount, holding)
-            if holding:
-                sign = 1 if holding == "sell_to_open" else -1
-                pnl_from_close = sign * price
-                pnl_today_included = pnl_from_close + dp(i, kount+1, None)
+            skip = dp(i, transactions, is_holding)
+            # I've got to close open positions
+            if is_holding:
+                pnl_from_close = price if is_holding == "buy_to_open" else -price
+                # And I should ascertain how much more I can earn with the remaining trading horizon
+                realized = pnl_from_close + dp(i, transactions+1, None)
             else:
-                pnl_today_included = max(
-                    dp(i, kount, "buy_to_open") + price,
-                    dp(i, kount, "sell_to_open") - price,
-                )
-            return max(skip, pnl_today_included)
+                open_long = dp(i, transactions, "buy_to_open") - price
+                open_short = dp(i, transactions, "sell_to_open") + price
+                # Free to long or short.
+                # Which one makes more with the remaining trading horizon?
+                realized = max(open_long, open_short)
+            return max(skip, realized)
         return dp(0, 0, False)

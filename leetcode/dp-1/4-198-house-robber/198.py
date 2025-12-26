@@ -2,20 +2,21 @@ class Solution:
     def rob(self, nums: List[int]) -> int:
         n = len(nums)
         def dp(i):
-            if i >= n:
-                return 0
-            return max(dp(i+2) + nums[i], dp(i+1))
+            if i >= n: return 0
+            take = nums[i] + dp(i+2)
+            skip = dp(i+1)
+            return max(take, skip)
         return dp(0)
 
 class Solution:
     def rob(self, nums: List[int]) -> int:
-        n = len(nums)
-        memo = {}
+        n, memo = len(nums), {}
         def dp(i):
-            if i >= n:
-                return 0
+            if i >= n: return 0
             if i not in memo:
-                memo[i] = max(dp(i+2) + nums[i], dp(i+1))
+                take = nums[i] + dp(i+2)
+                skip = dp(i+1)
+                memo[i] = max(take, skip)
             return memo[i]
         return dp(0)
 

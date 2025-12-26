@@ -32,8 +32,6 @@ class Solution:
             return dp(i-1) + dp(i-2)
         return dp(n)
 
-
-
 """
 Time:   O(n)
 Space:  O(n)   (memo + recursion stack)
@@ -77,14 +75,12 @@ dp n: [0, 1, 2, 3, 5, 8, ...]
 """
 class Solution:
     def climbStairs(self, n: int) -> int:
-        if n <= 2:
-            return n
-
-        dp = [0] * (n+1)
+        if n <= 2: return n
+        dp = [0]*(n+1)
         dp[1] = 1
         dp[2] = 2
         for i in range(3, n+1):
-            dp[i] = dp[i-1] + dp[i-2]
+            dp[i] = dp[i-2] + dp[i-1]
         return dp[n]
 
 class Solution:
@@ -92,7 +88,6 @@ class Solution:
         if n <= 2:
             return n
         prior, prev = 1, 2
-
-        for i in range(3, n+1):
+        for _ in range(3, n+1):
             prior, prev = prev, prev+prior
         return prev

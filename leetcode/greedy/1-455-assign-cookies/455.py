@@ -19,7 +19,6 @@ class Solution:
             j += 1
         return count
 
-
 '''
 1. Understand
 2. Diagram

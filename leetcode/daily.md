@@ -3,7 +3,6 @@
     - Recursion
     - State
     - Builds candidates & abandons when determined to not fit constraints
-    -
 - LinkedList
   - Ensure partition of list is even and slow pointer is at node BEFORE partition
     while at the same time avoiding loops with f.next and f.next.next
@@ -27,3 +26,19 @@
   - Invariant Structure
   - Left/Right Leaning midpoint
 - Greedy
+  - Greedy Property
+- Trees
+  - Recursion:
+    - Base Cases
+  - Including Nodes vs Edges:
+    - 1 + max(l, r)
+    - 1 + l + r
+  - Traversals:
+    - Preorder
+    - Inorder
+    - Postorder
+- DP
+  - Base Cases
+    - Reducing problem space until base case reached
+  - Memoization
+  - Tabulation

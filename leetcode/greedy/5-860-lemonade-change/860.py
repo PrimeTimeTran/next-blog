@@ -33,8 +33,6 @@ class Solution(object):
                 else:
                     return False
         return True
-
-
 '''
 1. Understand
 2. Diagram

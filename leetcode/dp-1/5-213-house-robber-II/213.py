@@ -1,8 +1,3 @@
-
-
-
-
-
 class Solution:
     def rob(self, nums: List[int]) -> int:
         def dp(vals):
