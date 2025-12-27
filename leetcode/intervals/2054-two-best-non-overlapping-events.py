@@ -13,6 +13,15 @@ dp(i, k) = maximum value obtainable starting from index `i`
 
 We stop recursion once we have taken 2 events or reached the end.
 
+
+Why DP:
+A natural alternative is greedy — for example, always picking the highest-value event first. However, 
+that fails because the highest-value event may span a long time range and prevent us from selecting a second event, 
+even when two smaller-value non-overlapping events together yield a higher total. Since local choices affect future 
+feasibility, the problem lacks the greedy-choice property, which is why a DP approach is appropriate.
+
+“We can’t know that a locally best event preserves the possibility of an optimal second choice.”
+
 2. Optimization
 Binary search allows us to efficiently find the next non-overlapping
 event instead of scanning linearly.
