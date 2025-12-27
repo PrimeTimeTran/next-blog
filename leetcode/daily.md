@@ -43,4 +43,18 @@
   - Memoization
   - Tabulation
   - Rolling
-- Prefix Sum
+- Stocks
+- Trees
+- Greedy
+  - Locally Optimal Choices:
+    - At each step, the algorithm chooses the option that offers the most apparent and immediate benefit, without considering the long-term consequences of that decision.
+  - Irreversible Decisions:
+    - Once a choice is made, the algorithm never reconsiders it or backtracks to a previous state, which distinguishes it from other methods like dynamic programming.
+  - Efficiency:
+    - Greedy algorithms are often simpler to implement and are generally more efficient in terms of time complexity (e.g., O(n log n) or O(n)).
+  - Not Always Optimal:
+    - The key limitation is that a locally optimal choice does not always lead to a globally optimal solution for every problem. The algorithm works best for problems exhibiting two specific properties:
+  - Greedy Choice Property:
+    - A global optimum can be reached by making a local optimum choice at each step.
+  - Optimal Substructure:
+    - An optimal solution to the entire problem contains optimal solutions to its sub-problems.

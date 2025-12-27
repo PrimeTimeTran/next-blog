@@ -1,0 +1,13 @@
+class Solution:
+    def insert(self, intervals: List[List[int]], n: List[int]) -> List[List[int]]:
+        res = []
+        for i, cur in enumerate(intervals):
+            if n[1] < cur[0]:
+                res.append(n)
+                return res + intervals[i:]
+            elif cur[1] < n[0]:
+                res.append(cur)
+            else:
+                n = [min(n[0], cur[0]), max(n[1], cur[1])]
+        res.append(n)
+        return res

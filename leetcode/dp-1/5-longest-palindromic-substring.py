@@ -18,9 +18,37 @@ class Solution:
             expand(i, i)
             expand(i, i+1)
         return self.ans
-
 '''
 1. Understand
+Top Down Memo. 
+Check all substrings with length >= 2.
+Big O
+    time:   O(n³)
+    space:  O(n) (due to slicing)
+'''
+class Solution:
+    def longestPalindrome(self, s: str) -> str:
+        memo, ans, n = {}, '', len(s)
+        def dp(l, r):
+            nonlocal ans
+            if l > r: return True
+            if (l, r) in memo: return memo[(l, r)]
+            if s[l] == s[r]:
+                inner = dp(l+1, r-1)
+                memo[(l, r)] = inner
+                if inner and (r-l+1) > len(ans):
+                    ans = s[l:r+1]
+                return inner
+            else:
+                memo[(l, r)] = False
+                return False
+        for i in range(n):
+            for j in range(i, n):
+                dp(i, j)
+        return ans
+'''
+1. Understand
+Bottom Up Tab. 
 Check all substrings with length >= 2.
 Big O
     time:   O(n³)

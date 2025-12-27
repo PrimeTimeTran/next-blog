@@ -1,44 +1,30 @@
 '''
 1. Understand
-2. Diagram
-3. Pseudocode
-4. Code
+Greedy. Count total number of each bill you receive and return with maximum size bills first when able.
+If at any point you cannot make change, return False
+
 5. Big O
-Time:  O()
-Space: O()
+Time:   O(n) where n is the length of bills
+Space:  O(1) because we have a few single variables which don't grow with the size of inputs
 '''
 class Solution(object):
     def lemonadeChange(self, bills):
-        if bills[0] != 5:
-            return False
-        
-        five_dollers = 0
-        ten_dollers = 0
-
-        for x in bills:
-            if x == 5:
-                five_dollers += 1
-            elif x == 10:
-                if five_dollers > 0:
-                    five_dollers -= 1
+        c5 = c10 = 0
+        for b in bills:
+            if b == 5:
+                c5+=1
+            elif b == 10:
+                if c5 > 0:
+                    c5-=1
+                    c10+=1
                 else:
                     return False
-                ten_dollers += 1
             else:
-                if five_dollers > 0 and ten_dollers > 0:
-                    five_dollers -= 1
-                    ten_dollers -= 1
-                elif five_dollers > 2 :
-                    five_dollers -= 3
+                if c10 > 0 and c5 > 0:
+                    c10 -= 1
+                    c5 -= 1
+                elif c5 > 2:
+                    c5 -= 3
                 else:
                     return False
         return True
-'''
-1. Understand
-2. Diagram
-3. Pseudocode
-4. Code
-5. Big O
-Time:  O()
-Space: O()
-'''

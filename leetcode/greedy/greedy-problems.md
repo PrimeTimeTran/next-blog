@@ -1,2 +1,16 @@
+https://leetcode.com/problems/assign-cookies
+https://leetcode.com/problems/lemonade-change
 https://leetcode.com/problems/apple-redistribution-into-boxes
 https://leetcode.com/problems/maximize-happiness-of-selected-children
+https://leetcode.com/problems/gas-station
+https://leetcode.com/problems/hand-of-straights
+https://leetcode.com/problems/jump-game
+https://leetcode.com/problems/jump-game-ii
+https://leetcode.com/problems/maximum-subarray
+https://leetcode.com/problems/merge-triplets-to-form-target-triplet
+https://leetcode.com/problems/partition-labels
+https://leetcode.com/problems/valid-parenthesis-string
+https://leetcode.com/problems/non-overlapping-intervals
+https://leetcode.com/problems/minimum-number-of-arrows-to-burst-balloons
+https://leetcode.com/problems/boats-to-save-people
+https://leetcode.com/problems/maximum-length-of-pair-chain

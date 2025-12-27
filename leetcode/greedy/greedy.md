@@ -13,6 +13,16 @@ When to reach for greedy:
 Greedy is useful for problems like interval scheduling, resource allocation, simple
 scheduling with deadlines, selecting disjoint segments, and constructive rearrangement problems.
 
+## Cheat Sheet
+
+| Pattern                                                           | Why it signals greedy                              |
+| ----------------------------------------------------------------- | -------------------------------------------------- |
+| “Maximize / minimize a sum or count” with **independent choices** | Usually you can pick best locally                  |
+| Tasks with **one clear ordering**                                 | Sorting + local decisions often work               |
+| **Interval scheduling / selection / packing**                     | Classic greedy: pick earliest / smallest / largest |
+| **Constraints guarantee local choice = global choice**            | Usually a key clue that greedy is correct          |
+| Problem mentions **resources you can consume one by one**         | You can always take “best available now”           |
+
 ## Indicators
 
 These are signals that a greedy solution might work (or at least that it's worth trying):
