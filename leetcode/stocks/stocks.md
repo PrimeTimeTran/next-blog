@@ -19,5 +19,9 @@ https://leetcode.com/problems/best-time-to-buy-and-sell-stock-iii
 https://leetcode.com/problems/best-time-to-buy-and-sell-stock-iv
 https://leetcode.com/problems/best-time-to-buy-and-sell-stock-v
 https://leetcode.com/problems/best-time-to-buy-and-sell-stock-with-cooldown
-https://leetcode.com/problems/best-time-to-buy-and-sell-stock-using-strategy
 https://leetcode.com/problems/best-time-to-buy-and-sell-stock-with-transaction-fee
+https://leetcode.com/problems/best-time-to-buy-and-sell-stock-using-strategy
+
+https://leetcode.com/problems/number-of-smooth-descent-periods-of-a-stock
+https://leetcode.com/problems/stock-price-fluctuation
+https://leetcode.com/problems/maximum-profit-from-trading-stocks-with-discounts

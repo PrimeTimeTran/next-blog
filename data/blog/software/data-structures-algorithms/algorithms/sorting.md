@@ -33,11 +33,10 @@ In other words repeat looking at the entire list and swapping until you can go f
 nums = [20, 13, 3, 3, 4, 5, 1, 2, 8, 7, 9, 0, 11]
 
 def bubble_sort(nums):
-  sorted = False
-
+  n, sorted = len(nums), False
   while not sorted:
     sorted = True
-    for i in range(len(nums) - 1):
+    for i in range(n - 1):
       if nums[i] > nums[i + 1]:
         sorted = False
         nums[i], nums[i + 1] = nums[i + 1], nums[i]
@@ -70,9 +69,10 @@ Repeat this process moving from left to right until you've gone through the enti
 nums = [20, 13, 3, 3, 4, 5, 1, 2, 8, 7, 9, 0, 11]
 
 def selection_sort(nums):
-  for i in range(len(nums)):
+  n = len(nums)
+  for i in range(n):
     min = i
-    for j in range(i + 1, len(nums)):
+    for j in range(i + 1, n):
       if nums[j] < nums[min]:
         min = j
     if min != i:
@@ -176,6 +176,25 @@ print(merge_sort(nums))
 # the extra space used overall is proportional to the number of elements — O(n).
 ```
 
+## Quick Sort
+
+```py
+nums = [20, 13, 3, 3, 4, 5, 1, 2, 8, 7, 9, 0, 11]
+
+def quick_sort(arr):
+    if len(arr) <= 1:
+        return arr
+    else:
+        pivot = arr[0]
+        left = [x for x in arr[1:] if x < pivot]
+        right = [x for x in arr[1:] if x >= pivot]
+        return quick_sort(left) + [pivot] + quick_sort(right)
+
+sorted_list = quick_sort(nums)
+print(f"Original list: {nums}")
+print(f"Sorted list: {sorted_list}")
+```
+
 # Conclusion
 
 Although modern programming languages have helpers which can sort lists for us knowing how to implement these ourselves
@@ -183,9 +202,10 @@ gives us a deep understanding of DSAs.
 
 Specifically, a deeper understanding of Big O can be attained by understanding how our algorithms behave given inputs of larger lengths.
 
-| Algorithm      | Best Case Time | Worst Case Time | Average Case Time | Space Complexity | Stable? | Notes                                      |
-| -------------- | -------------- | --------------- | ----------------- | ---------------- | ------- | ------------------------------------------ |
-| Bubble Sort    | O(n)           | O(n²)           | O(n²)             | O(1)             | ✅ Yes  | Efficient only if nearly sorted            |
-| Selection Sort | O(n²)          | O(n²)           | O(n²)             | O(1)             | ❌ No   | Always scans the full list, even if sorted |
-| Insertion Sort | O(n)           | O(n²)           | O(n²)             | O(1)             | ✅ Yes  | Great for small or mostly-sorted lists     |
-| Merge Sort     | O(n log n)     | O(n log n)      | O(n log n)        | O(n)             | ✅ Yes  | Consistent performance, uses extra space   |
+| Algorithm      | Time Complexity | Space Complexity | Stable? | Notes                                     | Summary (Basic Idea)                                                         |
+| -------------- | --------------- | ---------------- | ------- | ----------------------------------------- | ---------------------------------------------------------------------------- |
+| Bubble Sort    | O(n²)           | O(1)             | ✅ Yes  | Simple, rarely used in practice           | Repeatedly swap adjacent out-of-order elements until the array is sorted     |
+| Selection Sort | O(n²)           | O(1)             | ❌ No   | Minimal swaps, poor performance           | Repeatedly select the smallest remaining element and place it in order       |
+| Insertion Sort | O(n²)           | O(1)             | ✅ Yes  | Excellent for small or nearly sorted data | Insert each element into its correct position within a growing sorted prefix |
+| Merge Sort     | O(n log n)      | O(n)             | ✅ Yes  | Predictable and stable                    | Recursively split the array and merge sorted halves                          |
+| Quick Sort     | O(n log n)      | O(log n)         | ❌ No   | Fast in practice, cache-friendly          | Partition around a pivot, then recursively sort the partitions               |
