@@ -58,3 +58,8 @@
     - A global optimum can be reached by making a local optimum choice at each step.
   - Optimal Substructure:
     - An optimal solution to the entire problem contains optimal solutions to its sub-problems.
+- Intervals
+  - Overlapping
+    - Count
+    - Merge
+    - Insert

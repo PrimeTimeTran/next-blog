@@ -9,13 +9,13 @@ Space: O()
 '''
 class Solution:
     def findLongestChain(self, pairs: List[List[int]]) -> int:
-        pairs.sort(key=lambda x: x[1])
-        res, curr_end = 0, -inf
+        pairs.sort(key = lambda x: x[1])
+        c, cur_end = 0, -inf
         for start, end in pairs:
-            if curr_end < start:
-                res += 1
-                curr_end = end
-        return res
+            if cur_end < start:
+                c+=1
+                cur_end = end
+        return c
 '''
 1. Understand
 2. Diagram

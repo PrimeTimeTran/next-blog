@@ -13,6 +13,6 @@ class Solution:
         c, cur_end = 1, points[0][1]
         for start, end in points:
             if cur_end < start:
-                cur_end = end
                 c+=1
+                cur_end = end
         return c
