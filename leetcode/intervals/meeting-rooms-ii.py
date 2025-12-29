@@ -19,4 +19,3 @@ class Solution:
                 count-=1
             res = max(res, count)
         return res
-2402-meeting-rooms-iii.py

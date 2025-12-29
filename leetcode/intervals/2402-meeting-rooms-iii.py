@@ -54,21 +54,22 @@ Space:
 Total Space:             O(n)
 '''
 
+from heapq import heapify, heappop, heappush
+
+
 class Solution:
     def mostBooked(self, n, meetings):
-        ready = [r for r in range(n)]
-        rooms = []
-        heapify(ready)
-        res = [0] * n
-        for s, e in sorted(meetings):
-            while rooms and rooms[0][0] <= s:
-                t,r = heappop(rooms)
-                heappush(ready, r)
-            if ready:
-                r = heappop(ready)
-                heappush(rooms, [e, r])
+        occupied, utilization, vacant = [], [0] * n, [r for r in range(n)]
+        heapify(vacant)
+        for start, end in sorted(meetings):
+            while occupied and occupied[0][0] <= start:
+                _, r = heappop(occupied)
+                heappush(vacant, r)
+            if vacant:
+                r = heappop(vacant)
+                heappush(occupied, [end, r])
             else:
-                t,r = heappop(rooms)
-                heappush(rooms, [t + e - s, r])
-            res[r] += 1
-        return res.index(max(res))
+                time_free, r = heappop(occupied)
+                heappush(occupied, [time_free + end - start, r])
+            utilization[r] += 1
+        return utilization.index(max(utilization))

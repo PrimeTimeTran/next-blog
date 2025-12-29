@@ -30,18 +30,21 @@ event instead of scanning linearly.
 Time:   O(n log n)
 Space:  O(n)
 '''
+from bisect import bisect_right
+from functools import lru_cache
+
+
 class Solution:
     def maxTwoEvents(self, events: List[List[int]]) -> int:
-        n = len(events)
         events.sort()
-        starts = [s for s, _, _ in events]
+        n, starts = len(events), [s for s, _, _ in events]
         @lru_cache(None)
         def dp(i, pluck):
-            if pluck == 2 or i == n:
+            if i == n or pluck == 2:
                 return 0
+            skip = dp(i+1, pluck)
             _, e, v = events[i]
             j = bisect_right(starts, e)
-            skip = dp(i + 1, pluck)
-            pick = v + dp(j, pluck + 1)
+            pick = v + dp(j, pluck+1)
             return max(skip, pick)
         return dp(0, 0)

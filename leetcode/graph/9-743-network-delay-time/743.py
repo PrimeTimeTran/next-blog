@@ -1,8 +1,17 @@
-"""LeetCode 743 - Network Delay Time
-Placeholder solution file.
+"""
+1. Understand
+
 """
 
 class Solution:
-    def networkDelayTime(self, times, N, K):
-        # TODO: Dijkstra implementation
-        pass
+    def networkDelayTime(self, times: List[List[int]], n: int, k: int) -> int:
+        g, q, seen = defaultdict(list), [[0,k]], set()
+        for u,v,w in times: g[u].append([v,w])
+        while q:
+            accum_time, u = heappop(q)
+            if u in seen: continue
+            seen.add(u)
+            if len(seen) == n: return accum_time
+            for des, time in g[u]:
+                heappush(q, [accum_time + time, des])
+        return -1
