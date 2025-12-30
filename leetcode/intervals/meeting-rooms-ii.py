@@ -19,3 +19,20 @@ class Solution:
                 count-=1
             res = max(res, count)
         return res
+
+
+class Solution:
+    def min_meeting_rooms(self, intervals: List[Interval]) -> int:
+        events = []
+        for cur in intervals:
+            events.append((cur.start, +1))
+            events.append((cur.end, -1))
+
+        events.sort()
+        cur = res = 0
+
+        for _, delta in events:
+            cur += delta
+            res = max(res, cur)
+
+        return res

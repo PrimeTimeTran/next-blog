@@ -18,10 +18,16 @@ class Solution:
         res = []
         i = j = 0
         while i < len(l1) and j < len(l2):
+            # The intersection cannot begin before both intervals have started.
+            # Therefore, the earliest possible start is the later of the two starts:
             start = max(l1[i][0], l2[j][0])
+            # The intersection cannot extend past either interval’s end.
+            # Therefore, the latest possible end is the earlier of the two ends:
             end = min(l1[i][1], l2[j][1])
             if start <= end:
                 res.append([start, end])
+
+            # Which interval is guaranteed to be useless for any future intersection.
             if l1[i][1] < l2[j][1]:
                 i += 1
             else:

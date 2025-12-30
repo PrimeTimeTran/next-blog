@@ -63,3 +63,9 @@
     - Count
     - Merge
     - Insert
+- Trees
+  - Diameter of a binary tree
+  - Balanced binary tree?
+  - Lowest common ancestor
+  - Construct tree from inorder & postorder traversal
+  -

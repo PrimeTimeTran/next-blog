@@ -73,3 +73,4 @@ class Solution:
                 heappush(occupied, [time_free + end - start, r])
             utilization[r] += 1
         return utilization.index(max(utilization))
+
