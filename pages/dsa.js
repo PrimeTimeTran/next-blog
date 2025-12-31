@@ -309,7 +309,7 @@ export default function DSA() {
           <button
             type="button"
             className={`mx-1 my-1 min-w-fit rounded px-2 py-1 text-xs text-white ${
-              selectedList === 'blind75' ? 'bg-green-600' : 'bg-gray-700'
+              selectedList === 'neetCode150' ? 'bg-green-600' : 'bg-gray-700'
             }`}
             onClick={() => setSelectedList('neetCode150')}
           >
@@ -318,7 +318,7 @@ export default function DSA() {
           <button
             type="button"
             className={`mx-1 my-1 min-w-fit rounded px-2 py-1 text-xs text-white ${
-              selectedList === 'blind75' ? 'bg-green-600' : 'bg-gray-700'
+              selectedList === 'neetCode250' ? 'bg-green-600' : 'bg-gray-700'
             }`}
             onClick={() => setSelectedList('neetCode250')}
           >
