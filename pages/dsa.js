@@ -1,6 +1,10 @@
 import React, { useEffect, useState } from 'react'
 import { listPareto, listBlind75 } from '../lib/problems/lists.js'
 import allProblems from '../lib/problems/problems-all.json'
+import solutions from '../lib/problems/solutions.js'
+import AceEditor from 'react-ace'
+import 'ace-builds/src-noconflict/mode-python'
+import 'ace-builds/src-noconflict/theme-monokai'
 
 const problemCategories = [
   'String',
@@ -32,13 +36,15 @@ orderedTags.forEach((tag) => {
   tagCounts[tag] = allProblems.filter((problem) => problem.tags.includes(tag)).length
 })
 
-export default function Review() {
+export default function DSA() {
   const [sortBy, setSortBy] = useState('none')
   const [filteredProblems, setFilteredProblems] = useState(allProblems)
   const [selectedTags, setSelectedTags] = useState([])
   const [selectedDifficulties, setSelectedDifficulties] = useState(['e', 'm', 'h'])
   const [selectedList, setSelectedList] = useState('all')
   const [selectedPremium, setSelectedPremium] = useState('all')
+  const [isSidebarOpen, setIsSidebarOpen] = useState(false)
+  const [editorValue, setEditorValue] = useState('')
 
   useEffect(() => {
     let problems = allProblems
@@ -87,13 +93,28 @@ export default function Review() {
     setFilteredProblems(problems)
   }, [selectedTags, selectedDifficulties, selectedList, selectedPremium, sortBy])
 
+  useEffect(() => {
+    if (isSidebarOpen) {
+      const script = document.createElement('script')
+      script.src = 'https://cdnjs.cloudflare.com/ajax/libs/ace/1.32.3/ace.js'
+      script.onload = () => {
+        if (window.ace) {
+          const editor = window.ace.edit('editor')
+          editor.setTheme('ace/theme/monokai')
+          editor.session.setMode('ace/mode/javascript')
+          editor.setValue('// Write your code here\n', -1)
+        }
+      }
+      document.head.appendChild(script)
+    }
+  }, [isSidebarOpen])
+
   const onTagSelect = (tag) => {
     setSelectedTags((prev) => {
       const already = prev.includes(tag)
       return already ? prev.filter((t) => t !== tag) : [...prev, tag]
     })
   }
-
   const onSelectRandomProblem = () => {
     const randomIndex = Math.floor(Math.random() * filteredProblems.length)
     const problem = filteredProblems[randomIndex]
@@ -118,6 +139,14 @@ export default function Review() {
         return 'text-yellow-500'
       default:
         return 'text-red-500'
+    }
+  }
+
+  const loadSolution = (problem) => {
+    const solution = solutions.find((s) => s.id === problem.lc.id)
+    if (solution) {
+      setIsSidebarOpen(true)
+      setEditorValue(solution.solutions[0].body)
     }
   }
 
@@ -323,9 +352,44 @@ export default function Review() {
               <span className={'text-sm ' + getDifficulty(problem.difficulty)}>
                 [{problem.difficulty}]
               </span>
+              <button onClick={() => loadSolution(problem)}>📝</button>
             </div>
           </div>
         ))}
+      </div>
+      <div
+        className={`fixed top-0 right-0 h-full w-1/3 overflow-y-auto border bg-white py-2 transition-transform duration-300 ease-in-out dark:bg-gray-900 ${
+          isSidebarOpen ? 'translate-x-0' : 'translate-x-full'
+        }`}
+      >
+        <div className="mb-2 flex justify-end">
+          <button
+            type="button"
+            className="ml-1 mr-1 h-8 rounded bg-blue-700 p-2 py-1 text-white"
+            onClick={() => setIsSidebarOpen(!isSidebarOpen)}
+          >
+            {isSidebarOpen ? 'Close' : 'Open'}
+          </button>
+        </div>
+        <AceEditor
+          mode="python"
+          theme="monokai"
+          value={editorValue}
+          onChange={setEditorValue}
+          height="50%"
+          width="100%"
+          fontSize={14}
+          showPrintMargin={false}
+          showGutter={true}
+          highlightActiveLine={true}
+          setOptions={{
+            enableBasicAutocompletion: true,
+            enableLiveAutocompletion: true,
+            enableSnippets: true,
+            showLineNumbers: true,
+            tabSize: 2,
+          }}
+        />
       </div>
     </div>
   )
