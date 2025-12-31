@@ -1,17 +1,6 @@
 [
   {
     "id": 0,
-    "title": "Contains Duplicate",
-    "difficulty": "e",
-    "tags": ["Array"],
-    "url": "https://leetcode.com/problems/contains-duplicate",
-    "lc": {
-      "id": 217,
-      "premium": false
-    }
-  },
-  {
-    "id": 0,
     "title": "Valid Parentheses",
     "difficulty": "e",
     "tags": ["String"],
@@ -40,6 +29,127 @@
     "url": "https://leetcode.com/problems/valid-anagram",
     "lc": {
       "id": 242,
+      "premium": false
+    }
+  },
+  {
+    "id": 0,
+    "title": "Longest Substring Without Repeating Characters",
+    "difficulty": "m",
+    "tags": ["String"],
+    "url": "https://leetcode.com/problems/longest-substring-without-repeating-characters",
+    "lc": {
+      "id": 3,
+      "premium": false
+    }
+  },
+  {
+    "id": 0,
+    "title": "Group Anagrams",
+    "difficulty": "m",
+    "tags": ["String"],
+    "url": "https://leetcode.com/problems/group-anagrams",
+    "lc": {
+      "id": 49,
+      "premium": false
+    }
+  },
+  {
+    "id": 0,
+    "title": "Encode and Decode Strings",
+    "difficulty": "m",
+    "tags": ["String"],
+    "url": "https://leetcode.com/problems/encode-and-decode-strings",
+    "lc": {
+      "id": 271,
+      "premium": true
+    }
+  },
+  {
+    "id": 0,
+    "title": "Longest Repeating Character Replacement",
+    "difficulty": "m",
+    "tags": ["String"],
+    "url": "https://leetcode.com/problems/longest-repeating-character-replacement",
+    "lc": {
+      "id": 424,
+      "premium": false
+    }
+  },
+  {
+    "id": 0,
+    "title": "Palindromic Substrings",
+    "difficulty": "m",
+    "tags": ["String"],
+    "url": "https://leetcode.com/problems/palindromic-substrings",
+    "lc": {
+      "id": 647,
+      "premium": false
+    }
+  },
+  {
+    "id": 0,
+    "title": "Valid Parenthesis String",
+    "difficulty": "m",
+    "tags": ["String"],
+    "url": "https://leetcode.com/problems/valid-parenthesis-string",
+    "lc": {
+      "id": 678,
+      "premium": false
+    }
+  },
+  {
+    "id": 0,
+    "title": "Minimum Window Substring",
+    "difficulty": "h",
+    "tags": ["String"],
+    "url": "https://leetcode.com/problems/minimum-window-substring",
+    "lc": {
+      "id": 76,
+      "premium": false
+    }
+  },
+  {
+    "id": 0,
+    "title": "Contains Duplicate",
+    "difficulty": "e",
+    "tags": ["Array"],
+    "url": "https://leetcode.com/problems/contains-duplicate",
+    "lc": {
+      "id": 217,
+      "premium": false
+    }
+  },
+  {
+    "id": 0,
+    "title": "Two Sum",
+    "difficulty": "e",
+    "tags": ["Array"],
+    "url": "https://leetcode.com/problems/two-sum",
+    "lc": {
+      "id": 1,
+      "premium": false
+    }
+  },
+  {
+    "id": 0,
+    "title": "Best Time to Buy and Sell Stock",
+    "difficulty": "e",
+    "tags": ["Array"],
+    "url": "https://leetcode.com/problems/best-time-to-buy-and-sell-stock",
+    "lc": {
+      "id": 121,
+      "premium": false
+    }
+  },
+  {
+    "id": 0,
+    "title": "Kth Largest Element in a Stream",
+    "difficulty": "e",
+    "tags": ["Array"],
+    "url": "https://leetcode.com/problems/kth-largest-element-in-a-stream",
+    "lc": {
+      "id": 703,
       "premium": false
     }
   },
@@ -89,35 +199,45 @@
   },
   {
     "id": 0,
-    "title": "Two Sum",
+    "title": "Search a 2D Matrix",
     "difficulty": "e",
-    "tags": ["Array"],
-    "url": "https://leetcode.com/problems/two-sum",
+    "tags": ["Binary Search"],
+    "url": "https://leetcode.com/problems/search-a-2d-matrix",
     "lc": {
-      "id": 1,
+      "id": 74,
       "premium": false
     }
   },
   {
     "id": 0,
-    "title": "Best Time to Buy and Sell Stock",
+    "title": "First Bad Version",
     "difficulty": "e",
-    "tags": ["Array"],
-    "url": "https://leetcode.com/problems/best-time-to-buy-and-sell-stock",
+    "tags": ["Binary Search"],
+    "url": "https://leetcode.com/problems/first-bad-version",
     "lc": {
-      "id": 121,
+      "id": 278,
       "premium": false
     }
   },
-
   {
     "id": 0,
-    "title": "Kth Largest Element in a Stream",
+    "title": "Guess Number Higher or Lower",
     "difficulty": "e",
-    "tags": ["Array"],
-    "url": "https://leetcode.com/problems/kth-largest-element-in-a-stream",
+    "tags": ["Binary Search"],
+    "url": "https://leetcode.com/problems/guess-number-higher-or-lower",
     "lc": {
-      "id": 703,
+      "id": 374,
+      "premium": false
+    }
+  },
+  {
+    "id": 0,
+    "title": "Binary Search",
+    "difficulty": "e",
+    "tags": ["Binary Search"],
+    "url": "https://leetcode.com/problems/binary-search",
+    "lc": {
+      "id": 704,
       "premium": false
     }
   },
@@ -288,45 +408,34 @@
   },
   {
     "id": 0,
-    "title": "Search a 2D Matrix",
+    "title": "Merge Two Sorted Lists",
     "difficulty": "e",
-    "tags": ["Binary Search"],
-    "url": "https://leetcode.com/problems/search-a-2d-matrix",
+    "tags": ["Linked List"],
+    "url": "https://leetcode.com/problems/merge-two-sorted-lists",
     "lc": {
-      "id": 74,
+      "id": 21,
       "premium": false
     }
   },
   {
     "id": 0,
-    "title": "First Bad Version",
+    "title": "Linked List Cycle",
     "difficulty": "e",
-    "tags": ["Binary Search"],
-    "url": "https://leetcode.com/problems/first-bad-version",
+    "tags": ["Linked List"],
+    "url": "https://leetcode.com/problems/linked-list-cycle",
     "lc": {
-      "id": 278,
+      "id": 141,
       "premium": false
     }
   },
   {
     "id": 0,
-    "title": "Guess Number Higher or Lower",
+    "title": "Reverse Linked List",
     "difficulty": "e",
-    "tags": ["Binary Search"],
-    "url": "https://leetcode.com/problems/guess-number-higher-or-lower",
+    "tags": ["Linked List"],
+    "url": "https://leetcode.com/problems/reverse-linked-list",
     "lc": {
-      "id": 374,
-      "premium": false
-    }
-  },
-  {
-    "id": 0,
-    "title": "Binary Search",
-    "difficulty": "e",
-    "tags": ["Binary Search"],
-    "url": "https://leetcode.com/problems/binary-search",
-    "lc": {
-      "id": 704,
+      "id": 206,
       "premium": false
     }
   },
@@ -420,34 +529,78 @@
   },
   {
     "id": 0,
-    "title": "Merge Two Sorted Lists",
+    "title": "Same Tree",
     "difficulty": "e",
-    "tags": ["Linked List"],
-    "url": "https://leetcode.com/problems/merge-two-sorted-lists",
+    "tags": ["Tree"],
+    "url": "https://leetcode.com/problems/same-tree",
     "lc": {
-      "id": 21,
+      "id": 100,
       "premium": false
     }
   },
   {
     "id": 0,
-    "title": "Linked List Cycle",
+    "title": "Maximum Depth of Binary Tree",
     "difficulty": "e",
-    "tags": ["Linked List"],
-    "url": "https://leetcode.com/problems/linked-list-cycle",
+    "tags": ["Tree"],
+    "url": "https://leetcode.com/problems/maximum-depth-of-binary-tree",
     "lc": {
-      "id": 141,
+      "id": 104,
       "premium": false
     }
   },
   {
     "id": 0,
-    "title": "Reverse Linked List",
+    "title": "Balanced Binary Tree",
     "difficulty": "e",
-    "tags": ["Linked List"],
-    "url": "https://leetcode.com/problems/reverse-linked-list",
+    "tags": ["Tree"],
+    "url": "https://leetcode.com/problems/balanced-binary-tree",
     "lc": {
-      "id": 206,
+      "id": 110,
+      "premium": false
+    }
+  },
+  {
+    "id": 0,
+    "title": "Invert Binary Tree",
+    "difficulty": "e",
+    "tags": ["Tree"],
+    "url": "https://leetcode.com/problems/invert-binary-tree",
+    "lc": {
+      "id": 226,
+      "premium": false
+    }
+  },
+  {
+    "id": 0,
+    "title": "Lowest Common Ancestor of a Binary Search Tree",
+    "difficulty": "e",
+    "tags": ["Tree"],
+    "url": "https://leetcode.com/problems/lowest-common-ancestor-of-a-binary-search-tree",
+    "lc": {
+      "id": 235,
+      "premium": false
+    }
+  },
+  {
+    "id": 0,
+    "title": "Diameter of Binary Tree",
+    "difficulty": "e",
+    "tags": ["Tree"],
+    "url": "https://leetcode.com/problems/diameter-of-binary-tree",
+    "lc": {
+      "id": 543,
+      "premium": false
+    }
+  },
+  {
+    "id": 0,
+    "title": "Subtree of Another Tree",
+    "difficulty": "e",
+    "tags": ["Tree"],
+    "url": "https://leetcode.com/problems/subtree-of-another-tree",
+    "lc": {
+      "id": 572,
       "premium": false
     }
   },
@@ -618,79 +771,13 @@
   },
   {
     "id": 0,
-    "title": "Same Tree",
+    "title": "Meeting Rooms",
     "difficulty": "e",
-    "tags": ["Tree"],
-    "url": "https://leetcode.com/problems/same-tree",
+    "tags": ["Interval"],
+    "url": "https://leetcode.com/problems/meeting-rooms",
     "lc": {
-      "id": 100,
-      "premium": false
-    }
-  },
-  {
-    "id": 0,
-    "title": "Maximum Depth of Binary Tree",
-    "difficulty": "e",
-    "tags": ["Tree"],
-    "url": "https://leetcode.com/problems/maximum-depth-of-binary-tree",
-    "lc": {
-      "id": 104,
-      "premium": false
-    }
-  },
-  {
-    "id": 0,
-    "title": "Balanced Binary Tree",
-    "difficulty": "e",
-    "tags": ["Tree"],
-    "url": "https://leetcode.com/problems/balanced-binary-tree",
-    "lc": {
-      "id": 110,
-      "premium": false
-    }
-  },
-  {
-    "id": 0,
-    "title": "Invert Binary Tree",
-    "difficulty": "e",
-    "tags": ["Tree"],
-    "url": "https://leetcode.com/problems/invert-binary-tree",
-    "lc": {
-      "id": 226,
-      "premium": false
-    }
-  },
-  {
-    "id": 0,
-    "title": "Lowest Common Ancestor of a Binary Search Tree",
-    "difficulty": "e",
-    "tags": ["Tree"],
-    "url": "https://leetcode.com/problems/lowest-common-ancestor-of-a-binary-search-tree",
-    "lc": {
-      "id": 235,
-      "premium": false
-    }
-  },
-  {
-    "id": 0,
-    "title": "Diameter of Binary Tree",
-    "difficulty": "e",
-    "tags": ["Tree"],
-    "url": "https://leetcode.com/problems/diameter-of-binary-tree",
-    "lc": {
-      "id": 543,
-      "premium": false
-    }
-  },
-  {
-    "id": 0,
-    "title": "Subtree of Another Tree",
-    "difficulty": "e",
-    "tags": ["Tree"],
-    "url": "https://leetcode.com/problems/subtree-of-another-tree",
-    "lc": {
-      "id": 572,
-      "premium": false
+      "id": 252,
+      "premium": true
     }
   },
   {
@@ -805,13 +892,35 @@
   },
   {
     "id": 0,
-    "title": "Meeting Rooms",
+    "title": "Island Perimeter",
     "difficulty": "e",
-    "tags": ["Interval"],
-    "url": "https://leetcode.com/problems/meeting-rooms",
+    "tags": ["Graph"],
+    "url": "https://leetcode.com/problems/island-perimeter",
     "lc": {
-      "id": 252,
-      "premium": true
+      "id": 463,
+      "premium": false
+    }
+  },
+  {
+    "id": 0,
+    "title": "Find the Town Judge",
+    "difficulty": "e",
+    "tags": ["Graph"],
+    "url": "https://leetcode.com/problems/find-the-town-judge",
+    "lc": {
+      "id": 997,
+      "premium": false
+    }
+  },
+  {
+    "id": 0,
+    "title": "Flood Fill",
+    "difficulty": "e",
+    "tags": ["Graph"],
+    "url": "https://leetcode.com/problems/flood-fill",
+    "lc": {
+      "id": 7333,
+      "premium": false
     }
   },
   {
@@ -1476,39 +1585,6 @@
   },
   {
     "id": 0,
-    "title": "Island Perimeter",
-    "difficulty": "e",
-    "tags": ["Graph"],
-    "url": "https://leetcode.com/problems/island-perimeter",
-    "lc": {
-      "id": 463,
-      "premium": false
-    }
-  },
-  {
-    "id": 0,
-    "title": "Find the Town Judge",
-    "difficulty": "e",
-    "tags": ["Graph"],
-    "url": "https://leetcode.com/problems/find-the-town-judge",
-    "lc": {
-      "id": 997,
-      "premium": false
-    }
-  },
-  {
-    "id": 0,
-    "title": "Flood Fill",
-    "difficulty": "e",
-    "tags": ["Graph"],
-    "url": "https://leetcode.com/problems/flood-fill",
-    "lc": {
-      "id": 7333,
-      "premium": false
-    }
-  },
-  {
-    "id": 0,
     "title": "Longest Consecutive Sequence",
     "difficulty": "m",
     "tags": ["Union Find"],
@@ -1526,6 +1602,17 @@
     "url": "https://leetcode.com/problems/find-all-people-with-secret",
     "lc": {
       "id": 2092,
+      "premium": false
+    }
+  },
+  {
+    "id": 0,
+    "title": "Last Stone Weight",
+    "difficulty": "e",
+    "tags": ["Priority Queue"],
+    "url": "https://leetcode.com/problems/last-stone-weight",
+    "lc": {
+      "id": 1046,
       "premium": false
     }
   },
@@ -1564,23 +1651,67 @@
   },
   {
     "id": 0,
-    "title": "Last Stone Weight",
-    "difficulty": "e",
-    "tags": ["Priority Queue"],
-    "url": "https://leetcode.com/problems/last-stone-weight",
-    "lc": {
-      "id": 1046,
-      "premium": false
-    }
-  },
-  {
-    "id": 0,
     "title": "Jump Game",
     "difficulty": "m",
     "tags": ["Greedy"],
     "url": "https://leetcode.com/problems/jump-game",
     "lc": {
       "id": 55,
+      "premium": false
+    }
+  },
+  {
+    "id": 0,
+    "title": "Subsets",
+    "difficulty": "e",
+    "tags": ["Backtracking"],
+    "url": "https://leetcode.com/problems/subsets",
+    "lc": {
+      "id": 78,
+      "premium": false
+    }
+  },
+  {
+    "id": 0,
+    "title": "Subsets II",
+    "difficulty": "e",
+    "tags": ["Backtracking"],
+    "url": "https://leetcode.com/problems/subsets-ii",
+    "lc": {
+      "id": 90,
+      "premium": false
+    }
+  },
+  {
+    "id": 0,
+    "title": "Reverse String",
+    "difficulty": "e",
+    "tags": ["Backtracking"],
+    "url": "https://leetcode.com/problems/reverse-string",
+    "lc": {
+      "id": 344,
+      "premium": false
+    }
+  },
+  {
+    "id": 0,
+    "title": "Binary Watch",
+    "difficulty": "e",
+    "tags": ["Backtracking"],
+    "url": "https://leetcode.com/problems/binary-watch",
+    "lc": {
+      "id": 401,
+      "premium": false
+    }
+  },
+  {
+    "id": 0,
+    "title": "Subtract the Product and Sum of Digits of an Integer",
+    "difficulty": "e",
+    "tags": ["Backtracking"],
+    "url": "https://leetcode.com/problems/subtract-the-product-and-sum-of-digits-of-an-integer",
+    "lc": {
+      "id": 1281,
       "premium": false
     }
   },
@@ -1784,28 +1915,6 @@
   },
   {
     "id": 0,
-    "title": "Subsets",
-    "difficulty": "e",
-    "tags": ["Backtracking"],
-    "url": "https://leetcode.com/problems/subsets",
-    "lc": {
-      "id": 78,
-      "premium": false
-    }
-  },
-  {
-    "id": 0,
-    "title": "Subsets II",
-    "difficulty": "e",
-    "tags": ["Backtracking"],
-    "url": "https://leetcode.com/problems/subsets-ii",
-    "lc": {
-      "id": 90,
-      "premium": false
-    }
-  },
-  {
-    "id": 0,
     "title": "Factor Combinations",
     "difficulty": "",
     "tags": ["Backtracking"],
@@ -1828,34 +1937,56 @@
   },
   {
     "id": 0,
-    "title": "Reverse String",
+    "title": "Maximum Subarray",
     "difficulty": "e",
-    "tags": ["Backtracking"],
-    "url": "https://leetcode.com/problems/reverse-string",
+    "tags": ["Dynamic Programming"],
+    "url": "https://leetcode.com/problems/maximum-subarray",
     "lc": {
-      "id": 344,
+      "id": 53,
       "premium": false
     }
   },
   {
     "id": 0,
-    "title": "Binary Watch",
+    "title": "Climbing Stairs",
     "difficulty": "e",
-    "tags": ["Backtracking"],
-    "url": "https://leetcode.com/problems/binary-watch",
+    "tags": ["Dynamic Programming"],
+    "url": "https://leetcode.com/problems/climbing-stairs",
     "lc": {
-      "id": 401,
+      "id": 70,
       "premium": false
     }
   },
   {
     "id": 0,
-    "title": "Subtract the Product and Sum of Digits of an Integer",
+    "title": "Is Subsequence",
     "difficulty": "e",
-    "tags": ["Backtracking"],
-    "url": "https://leetcode.com/problems/subtract-the-product-and-sum-of-digits-of-an-integer",
+    "tags": ["Dynamic Programming", "Dynamic Programming(2D)"],
+    "url": "https://leetcode.com/problems/is-subsequence",
     "lc": {
-      "id": 1281,
+      "id": 392,
+      "premium": false
+    }
+  },
+  {
+    "id": 2,
+    "title": "Fibonacci Number",
+    "difficulty": "e",
+    "tags": ["Dynamic Programming"],
+    "url": "https://leetcode.com/problems/fibonacci-number",
+    "lc": {
+      "id": 509,
+      "premium": false
+    }
+  },
+  {
+    "id": 0,
+    "title": "Min Cost Climbing Stairs",
+    "difficulty": "e",
+    "tags": ["Dynamic Programming"],
+    "url": "https://leetcode.com/problems/min-cost-climbing-stairs",
+    "lc": {
+      "id": 746,
       "premium": false
     }
   },
@@ -2136,50 +2267,6 @@
   },
   {
     "id": 0,
-    "title": "Palindrome Partitioning II",
-    "difficulty": "h",
-    "tags": ["Dynamic Programming"],
-    "url": "https://leetcode.com/problems/palindrome-partitioning-ii",
-    "lc": {
-      "id": 132,
-      "premium": false
-    }
-  },
-  {
-    "id": 0,
-    "title": "Maximum Subarray",
-    "difficulty": "e",
-    "tags": ["Dynamic Programming"],
-    "url": "https://leetcode.com/problems/maximum-subarray",
-    "lc": {
-      "id": 53,
-      "premium": false
-    }
-  },
-  {
-    "id": 0,
-    "title": "Climbing Stairs",
-    "difficulty": "e",
-    "tags": ["Dynamic Programming"],
-    "url": "https://leetcode.com/problems/climbing-stairs",
-    "lc": {
-      "id": 70,
-      "premium": false
-    }
-  },
-  {
-    "id": 0,
-    "title": "Is Subsequence",
-    "difficulty": "e",
-    "tags": ["Dynamic Programming", "Dynamic Programming(2D)"],
-    "url": "https://leetcode.com/problems/is-subsequence",
-    "lc": {
-      "id": 392,
-      "premium": false
-    }
-  },
-  {
-    "id": 0,
     "title": "Predict the Winner",
     "difficulty": "m",
     "tags": ["Dynamic Programming", "Dynamic Programming(2D)"],
@@ -2190,134 +2277,13 @@
     }
   },
   {
-    "id": 2,
-    "title": "Fibonacci Number",
-    "difficulty": "e",
+    "id": 0,
+    "title": "Palindrome Partitioning II",
+    "difficulty": "h",
     "tags": ["Dynamic Programming"],
-    "url": "https://leetcode.com/problems/fibonacci-number",
+    "url": "https://leetcode.com/problems/palindrome-partitioning-ii",
     "lc": {
-      "id": 509,
-      "premium": false
-    }
-  },
-  {
-    "id": 0,
-    "title": "Min Cost Climbing Stairs",
-    "difficulty": "e",
-    "tags": ["Dynamic Programming"],
-    "url": "https://leetcode.com/problems/min-cost-climbing-stairs",
-    "lc": {
-      "id": 746,
-      "premium": false
-    }
-  },
-  {
-    "id": 0,
-    "title": "Single Number II",
-    "difficulty": "m",
-    "tags": ["Bit Manipulation"],
-    "url": "https://leetcode.com/problems/single-number-ii",
-    "lc": {
-      "id": 137,
-      "premium": false
-    }
-  },
-  {
-    "id": 0,
-    "title": "Bitwise AND of Numbers Range",
-    "difficulty": "m",
-    "tags": ["Bit Manipulation"],
-    "url": "https://leetcode.com/problems/bitwise-and-of-numbers-range",
-    "lc": {
-      "id": 201,
-      "premium": false
-    }
-  },
-  {
-    "id": 0,
-    "title": "Single Number III",
-    "difficulty": "m",
-    "tags": ["Bit Manipulation"],
-    "url": "https://leetcode.com/problems/single-number-iii",
-    "lc": {
-      "id": 260,
-      "premium": false
-    }
-  },
-  {
-    "id": 0,
-    "title": "Maximum Product of Word Lengths",
-    "difficulty": "m",
-    "tags": ["Bit Manipulation"],
-    "url": "https://leetcode.com/problems/maximum-product-of-word-lengths",
-    "lc": {
-      "id": 318,
-      "premium": false
-    }
-  },
-  {
-    "id": 0,
-    "title": "Counting Bits",
-    "difficulty": "m",
-    "tags": ["Bit Manipulation"],
-    "url": "https://leetcode.com/problems/counting-bits",
-    "lc": {
-      "id": 338,
-      "premium": false
-    }
-  },
-  {
-    "id": 0,
-    "title": "Sum of Two Integers",
-    "difficulty": "m",
-    "tags": ["Bit Manipulation"],
-    "url": "https://leetcode.com/problems/sum-of-two-integers",
-    "lc": {
-      "id": 371,
-      "premium": false
-    }
-  },
-  {
-    "id": 0,
-    "title": "Nth Digit",
-    "difficulty": "m",
-    "tags": ["Bit Manipulation"],
-    "url": "https://leetcode.com/problems/nth-digit",
-    "lc": {
-      "id": 400,
-      "premium": false
-    }
-  },
-  {
-    "id": 0,
-    "title": "Number Complement",
-    "difficulty": "m",
-    "tags": ["Bit Manipulation"],
-    "url": "https://leetcode.com/problems/number-complement",
-    "lc": {
-      "id": 476,
-      "premium": false
-    }
-  },
-  {
-    "id": 0,
-    "title": "Total Hamming Distance",
-    "difficulty": "m",
-    "tags": ["Bit Manipulation"],
-    "url": "https://leetcode.com/problems/total-hamming-distance",
-    "lc": {
-      "id": 477,
-      "premium": false
-    }
-  },
-  {
-    "id": 0,
-    "title": "Complement of Base 10 Integer",
-    "difficulty": "m",
-    "tags": ["Bit Manipulation"],
-    "url": "https://leetcode.com/problems/complement-of-base-10-integer",
-    "lc": {
-      "id": 1009,
+      "id": 132,
       "premium": false
     }
   },
@@ -2428,6 +2394,116 @@
     "url": "https://leetcode.com/problems/xor-operation-in-an-array",
     "lc": {
       "id": 1486,
+      "premium": false
+    }
+  },
+  {
+    "id": 0,
+    "title": "Single Number II",
+    "difficulty": "m",
+    "tags": ["Bit Manipulation"],
+    "url": "https://leetcode.com/problems/single-number-ii",
+    "lc": {
+      "id": 137,
+      "premium": false
+    }
+  },
+  {
+    "id": 0,
+    "title": "Bitwise AND of Numbers Range",
+    "difficulty": "m",
+    "tags": ["Bit Manipulation"],
+    "url": "https://leetcode.com/problems/bitwise-and-of-numbers-range",
+    "lc": {
+      "id": 201,
+      "premium": false
+    }
+  },
+  {
+    "id": 0,
+    "title": "Single Number III",
+    "difficulty": "m",
+    "tags": ["Bit Manipulation"],
+    "url": "https://leetcode.com/problems/single-number-iii",
+    "lc": {
+      "id": 260,
+      "premium": false
+    }
+  },
+  {
+    "id": 0,
+    "title": "Maximum Product of Word Lengths",
+    "difficulty": "m",
+    "tags": ["Bit Manipulation"],
+    "url": "https://leetcode.com/problems/maximum-product-of-word-lengths",
+    "lc": {
+      "id": 318,
+      "premium": false
+    }
+  },
+  {
+    "id": 0,
+    "title": "Counting Bits",
+    "difficulty": "m",
+    "tags": ["Bit Manipulation"],
+    "url": "https://leetcode.com/problems/counting-bits",
+    "lc": {
+      "id": 338,
+      "premium": false
+    }
+  },
+  {
+    "id": 0,
+    "title": "Sum of Two Integers",
+    "difficulty": "m",
+    "tags": ["Bit Manipulation"],
+    "url": "https://leetcode.com/problems/sum-of-two-integers",
+    "lc": {
+      "id": 371,
+      "premium": false
+    }
+  },
+  {
+    "id": 0,
+    "title": "Nth Digit",
+    "difficulty": "m",
+    "tags": ["Bit Manipulation"],
+    "url": "https://leetcode.com/problems/nth-digit",
+    "lc": {
+      "id": 400,
+      "premium": false
+    }
+  },
+  {
+    "id": 0,
+    "title": "Number Complement",
+    "difficulty": "m",
+    "tags": ["Bit Manipulation"],
+    "url": "https://leetcode.com/problems/number-complement",
+    "lc": {
+      "id": 476,
+      "premium": false
+    }
+  },
+  {
+    "id": 0,
+    "title": "Total Hamming Distance",
+    "difficulty": "m",
+    "tags": ["Bit Manipulation"],
+    "url": "https://leetcode.com/problems/total-hamming-distance",
+    "lc": {
+      "id": 477,
+      "premium": false
+    }
+  },
+  {
+    "id": 0,
+    "title": "Complement of Base 10 Integer",
+    "difficulty": "m",
+    "tags": ["Bit Manipulation"],
+    "url": "https://leetcode.com/problems/complement-of-base-10-integer",
+    "lc": {
+      "id": 1009,
       "premium": false
     }
   },
@@ -2587,34 +2663,12 @@
   },
   {
     "id": 0,
-    "title": "Longest Substring Without Repeating Characters",
-    "difficulty": "m",
-    "tags": ["String"],
-    "url": "https://leetcode.com/problems/longest-substring-without-repeating-characters",
-    "lc": {
-      "id": 3,
-      "premium": false
-    }
-  },
-  {
-    "id": 0,
     "title": "Rotate Image",
     "difficulty": "m",
     "tags": ["Matrix"],
     "url": "https://leetcode.com/problems/rotate-image",
     "lc": {
       "id": 48,
-      "premium": false
-    }
-  },
-  {
-    "id": 0,
-    "title": "Group Anagrams",
-    "difficulty": "m",
-    "tags": ["String"],
-    "url": "https://leetcode.com/problems/group-anagrams",
-    "lc": {
-      "id": 49,
       "premium": false
     }
   },
@@ -2664,67 +2718,12 @@
   },
   {
     "id": 0,
-    "title": "Encode and Decode Strings",
-    "difficulty": "m",
-    "tags": ["String"],
-    "url": "https://leetcode.com/problems/encode-and-decode-strings",
-    "lc": {
-      "id": 271,
-      "premium": true
-    }
-  },
-  {
-    "id": 0,
-    "title": "Longest Repeating Character Replacement",
-    "difficulty": "m",
-    "tags": ["String"],
-    "url": "https://leetcode.com/problems/longest-repeating-character-replacement",
-    "lc": {
-      "id": 424,
-      "premium": false
-    }
-  },
-  {
-    "id": 0,
-    "title": "Palindromic Substrings",
-    "difficulty": "m",
-    "tags": ["String"],
-    "url": "https://leetcode.com/problems/palindromic-substrings",
-    "lc": {
-      "id": 647,
-      "premium": false
-    }
-  },
-  {
-    "id": 0,
-    "title": "Valid Parenthesis String",
-    "difficulty": "m",
-    "tags": ["String"],
-    "url": "https://leetcode.com/problems/valid-parenthesis-string",
-    "lc": {
-      "id": 678,
-      "premium": false
-    }
-  },
-  {
-    "id": 0,
     "title": "Daily Temperatures",
     "difficulty": "m",
     "tags": ["Stack"],
     "url": "https://leetcode.com/problems/daily-temperatures",
     "lc": {
       "id": 739,
-      "premium": false
-    }
-  },
-  {
-    "id": 0,
-    "title": "Minimum Window Substring",
-    "difficulty": "h",
-    "tags": ["String"],
-    "url": "https://leetcode.com/problems/minimum-window-substring",
-    "lc": {
-      "id": 76,
       "premium": false
     }
   }

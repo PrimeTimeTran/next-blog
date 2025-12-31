@@ -3,8 +3,10 @@ import { listPareto, listBlind75 } from '../lib/problems/lists.js'
 import allProblems from '../lib/problems/problems-all.json'
 
 const problemCategories = [
+  'String',
   'Array',
   'Binary Search',
+  'Matrix',
   'Linked List',
   'Tree',
   'Interval',
@@ -89,6 +91,16 @@ export default function Review() {
           : [...prev, difficulty] // add
     )
   }
+  const getDifficulty = (difficulty) => {
+    switch (difficulty) {
+      case 'e':
+        return 'text-green-500'
+      case 'm':
+        return 'text-yellow-500'
+      default:
+        return 'text-red-500'
+    }
+  }
 
   return (
     <div className="flex flex-col gap-6 p-4">
@@ -99,7 +111,7 @@ export default function Review() {
             <button
               type="button"
               className={
-                'self-end rounded bg-green-700 p-6 py-1' +
+                'self-end rounded bg-green-700 p-6 py-1 text-white ' +
                 (selectedTags.length === 1 && selectedTags[0] === 'all' ? ' invisible' : '')
               }
               onClick={() => {
@@ -107,7 +119,7 @@ export default function Review() {
                 setFilteredProblems(allProblems)
               }}
             >
-              All({allProblems.length})
+              All
             </button>
           </div>
           <div className="flex w-full flex-row flex-wrap ">
@@ -117,7 +129,7 @@ export default function Review() {
                   type="button"
                   onClick={() => onTagSelect(tag)}
                   className={
-                    'mx-1 my-2  min-w-fit rounded p-6 py-1 text-sm ' +
+                    'mx-1 my-2  min-w-fit rounded p-6 py-1 text-sm text-white ' +
                     (selectedTags.includes(tag) ? 'bg-green-600' : 'bg-gray-700')
                   }
                 >
@@ -135,7 +147,7 @@ export default function Review() {
         <h2 className="text-3xl font-bold">Lists</h2>
         <button
           type="button"
-          className="ml-1 mr-1 h-8 w-48 rounded bg-gray-700 py-1"
+          className="ml-1 mr-1 h-8 w-48 rounded bg-gray-700 py-1 text-white"
           onClick={() => {
             setFilteredProblems(allProblems.filter((problem) => listPareto.includes(problem.lc.id)))
           }}
@@ -144,7 +156,7 @@ export default function Review() {
         </button>
         <button
           type="button"
-          className="ml-1 mr-1 h-8 w-48 rounded bg-gray-700 py-1"
+          className="ml-1 mr-1 h-8 w-48 rounded bg-gray-700 py-1 text-white"
           onClick={() => {
             setFilteredProblems(
               allProblems.filter((problem) => listBlind75.includes(problem.lc.id))
@@ -163,7 +175,7 @@ export default function Review() {
               <button
                 onClick={() => toggleDifficulty('e')}
                 type="button"
-                className={`ml-1 mr-1 h-8 rounded p-2 py-1 ${
+                className={`ml-1 mr-1 h-8 rounded p-2 py-1 text-white ${
                   selectedDifficulties.includes('e') ? 'bg-green-600' : 'bg-gray-700'
                 }`}
               >
@@ -173,7 +185,7 @@ export default function Review() {
               <button
                 onClick={() => toggleDifficulty('m')}
                 type="button"
-                className={`ml-1 mr-1 h-8 rounded p-2 py-1 ${
+                className={`ml-1 mr-1 h-8 rounded p-2 py-1 text-white ${
                   selectedDifficulties.includes('m') ? 'bg-green-600' : 'bg-gray-700'
                 }`}
               >
@@ -183,7 +195,7 @@ export default function Review() {
               <button
                 onClick={() => toggleDifficulty('h')}
                 type="button"
-                className={`ml-1 mr-1 h-8 rounded p-2 py-1 ${
+                className={`ml-1 mr-1 h-8 rounded p-2 py-1 text-white ${
                   selectedDifficulties.includes('h') ? 'bg-green-600' : 'bg-gray-700'
                 }`}
               >
@@ -192,20 +204,20 @@ export default function Review() {
 
               <button
                 type="button"
-                className="ml-1 mr-1 h-8 w-48 rounded bg-yellow-700 py-1"
+                className="ml-1 mr-1 h-8 w-48 rounded bg-yellow-700 py-1 text-white"
                 onClick={() => {
                   const shuffled = [...filteredProblems].sort(() => 0.5 - Math.random())
                   setFilteredProblems(shuffled)
                 }}
               >
-                Shuffle 🔀
+                Shuffle 🎲
               </button>
               <button
                 type="button"
-                className="ml-1 mr-1 h-8 w-32 rounded bg-yellow-700 py-1"
+                className="ml-1 mr-1 h-8 w-32 rounded bg-yellow-700 py-1 text-white"
                 onClick={onSelectRandomProblem}
               >
-                Random 🎲
+                Random 👻
               </button>
             </span>
           </div>
@@ -222,8 +234,9 @@ export default function Review() {
               >
                 <span> {problem.title}</span>
               </a>
-
-              <span className="text-sm text-gray-400">[{problem.difficulty}]</span>
+              <span className={'text-sm text-gray-400 ' + getDifficulty(problem.difficulty)}>
+                [{problem.difficulty}]
+              </span>
             </div>
           </div>
         ))}
