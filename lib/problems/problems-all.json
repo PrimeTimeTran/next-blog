@@ -100,17 +100,6 @@
   },
   {
     "id": 0,
-    "title": "Minimum Window Substring",
-    "difficulty": "h",
-    "tags": ["String"],
-    "url": "https://leetcode.com/problems/minimum-window-substring",
-    "lc": {
-      "id": 76,
-      "premium": false
-    }
-  },
-  {
-    "id": 0,
     "title": "Contains Duplicate",
     "difficulty": "e",
     "tags": ["Array"],
@@ -849,7 +838,7 @@
   {
     "id": 0,
     "title": "Maximum Subarray",
-    "difficulty": "e",
+    "difficulty": "m",
     "tags": ["Greedy", "Dynamic Programming"],
     "url": "https://leetcode.com/problems/maximum-subarray",
     "lc": {
@@ -1596,6 +1585,17 @@
   },
   {
     "id": 0,
+    "title": "Minimum Window Substring",
+    "difficulty": "h",
+    "tags": ["String", "Graph"],
+    "url": "https://leetcode.com/problems/minimum-window-substring",
+    "lc": {
+      "id": 76,
+      "premium": false
+    }
+  },
+  {
+    "id": 0,
     "title": "Longest Consecutive Sequence",
     "difficulty": "m",
     "tags": ["Union Find"],
@@ -2049,7 +2049,7 @@
     "id": 0,
     "title": "Is Subsequence",
     "difficulty": "e",
-    "tags": ["Dynamic Programming", "Dynamic Programming(2D)"],
+    "tags": ["Dynamic Programming", "Dynamic Programming (2D)"],
     "url": "https://leetcode.com/problems/is-subsequence",
     "lc": {
       "id": 392,
@@ -2093,7 +2093,7 @@
     "id": 0,
     "title": "Unique Paths",
     "difficulty": "m",
-    "tags": ["Dynamic Programming", "Dynamic Programming(2D)"],
+    "tags": ["Dynamic Programming", "Dynamic Programming (2D)"],
     "url": "https://leetcode.com/problems/unique-paths",
     "lc": {
       "id": 62,
@@ -2104,7 +2104,7 @@
     "id": 0,
     "title": "Unique Paths II",
     "difficulty": "m",
-    "tags": ["Dynamic Programming", "Dynamic Programming(2D)"],
+    "tags": ["Dynamic Programming", "Dynamic Programming (2D)"],
     "url": "https://leetcode.com/problems/unique-paths-ii",
     "lc": {
       "id": 63,
@@ -2115,7 +2115,7 @@
     "id": 0,
     "title": "Minimum Path Sum",
     "difficulty": "m",
-    "tags": ["Dynamic Programming", "Dynamic Programming(2D)"],
+    "tags": ["Dynamic Programming", "Dynamic Programming (2D)"],
     "url": "https://leetcode.com/problems/minimum-path-sum",
     "lc": {
       "id": 64,
@@ -2126,7 +2126,7 @@
     "id": 0,
     "title": "Edit Distance",
     "difficulty": "m",
-    "tags": ["Dynamic Programming", "Dynamic Programming(2D)"],
+    "tags": ["Dynamic Programming", "Dynamic Programming (2D)"],
     "url": "https://leetcode.com/problems/edit-distance",
     "lc": {
       "id": 72,
@@ -2148,7 +2148,7 @@
     "id": 0,
     "title": "Interleaving String",
     "difficulty": "m",
-    "tags": ["Dynamic Programming", "Dynamic Programming(2D)"],
+    "tags": ["Dynamic Programming", "Dynamic Programming (2D)"],
     "url": "https://leetcode.com/problems/interleaving-string",
     "lc": {
       "id": 97,
@@ -2192,7 +2192,7 @@
     "id": 0,
     "title": "Maximal Square",
     "difficulty": "m",
-    "tags": ["Dynamic Programming", "Dynamic Programming(2D)"],
+    "tags": ["Dynamic Programming", "Dynamic Programming (2D)"],
     "url": "https://leetcode.com/problems/maximal-square",
     "lc": {
       "id": 221,
@@ -2214,7 +2214,7 @@
     "id": 0,
     "title": "Burst Balloons",
     "difficulty": "m",
-    "tags": ["Dynamic Programming", "Dynamic Programming(2D)"],
+    "tags": ["Dynamic Programming", "Dynamic Programming (2D)"],
     "url": "https://leetcode.com/problems/burst-balloons",
     "lc": {
       "id": 312,
@@ -2229,6 +2229,17 @@
     "url": "https://leetcode.com/problems/coin-change",
     "lc": {
       "id": 322,
+      "premium": false
+    }
+  },
+  {
+    "id": 0,
+    "title": "Coin Change II",
+    "difficulty": "m",
+    "tags": ["Dynamic Programming"],
+    "url": "https://leetcode.com/problems/coin-change-2",
+    "lc": {
+      "id": 518,
       "premium": false
     }
   },
@@ -2258,7 +2269,7 @@
     "id": 0,
     "title": "Longest Palindromic Subsequence",
     "difficulty": "m",
-    "tags": ["Dynamic Programming", "Dynamic Programming(2D)"],
+    "tags": ["Dynamic Programming", "Dynamic Programming (2D)"],
     "url": "https://leetcode.com/problems/longest-palindromic-subsequence",
     "lc": {
       "id": 516,
@@ -2267,20 +2278,9 @@
   },
   {
     "id": 0,
-    "title": "Coin Change II",
-    "difficulty": "m",
-    "tags": ["Dynamic Programming"],
-    "url": "https://leetcode.com/problems/coin-change-2",
-    "lc": {
-      "id": 518,
-      "premium": false
-    }
-  },
-  {
-    "id": 0,
     "title": "Delete Operation for Two Strings",
     "difficulty": "m",
-    "tags": ["Dynamic Programming", "Dynamic Programming(2D)"],
+    "tags": ["Dynamic Programming", "Dynamic Programming (2D)"],
     "url": "https://leetcode.com/problems/delete-operation-for-two-strings",
     "lc": {
       "id": 583,
@@ -2291,7 +2291,7 @@
     "id": 0,
     "title": "Minimum ASCII Delete Sum for Two Strings",
     "difficulty": "m",
-    "tags": ["Dynamic Programming", "Dynamic Programming(2D)"],
+    "tags": ["Dynamic Programming", "Dynamic Programming (2D)"],
     "url": "https://leetcode.com/problems/minimum-ascii-delete-sum-for-two-strings",
     "lc": {
       "id": 712,
@@ -2313,7 +2313,7 @@
     "id": 0,
     "title": "Minimum Falling Path Sum",
     "difficulty": "m",
-    "tags": ["Dynamic Programming", "Dynamic Programming(2D)"],
+    "tags": ["Dynamic Programming", "Dynamic Programming (2D)"],
     "url": "https://leetcode.com/problems/minimum-falling-path-sum",
     "lc": {
       "id": 931,
@@ -2324,7 +2324,7 @@
     "id": 0,
     "title": "Minimum Score Triangulation of Polygon",
     "difficulty": "m",
-    "tags": ["Dynamic Programming", "Dynamic Programming(2D)"],
+    "tags": ["Dynamic Programming", "Dynamic Programming (2D)"],
     "url": "https://leetcode.com/problems/minimum-score-triangulation-of-polygon",
     "lc": {
       "id": 1039,
@@ -2335,7 +2335,7 @@
     "id": 0,
     "title": "Longest Common Subsequence",
     "difficulty": "m",
-    "tags": ["Dynamic Programming", "Dynamic Programming(2D)"],
+    "tags": ["Dynamic Programming", "Dynamic Programming (2D)"],
     "url": "https://leetcode.com/problems/longest-common-subsequence",
     "lc": {
       "id": 1143,
@@ -2357,7 +2357,7 @@
     "id": 0,
     "title": "Predict the Winner",
     "difficulty": "m",
-    "tags": ["Dynamic Programming", "Dynamic Programming(2D)"],
+    "tags": ["Dynamic Programming", "Dynamic Programming (2D)"],
     "url": "https://leetcode.com/problems/predict-the-winner",
     "lc": {
       "id": 486,
@@ -2372,6 +2372,28 @@
     "url": "https://leetcode.com/problems/palindrome-partitioning-ii",
     "lc": {
       "id": 132,
+      "premium": false
+    }
+  },
+  {
+    "id": 0,
+    "title": "Unique Paths III",
+    "difficulty": "h",
+    "tags": ["Dynamic Programming", "Dynamic Programming (2D)"],
+    "url": "https://leetcode.com/problems/unique-paths-iii",
+    "lc": {
+      "id": 980,
+      "premium": false
+    }
+  },
+  {
+    "id": 0,
+    "title": "Distinct Subsequences",
+    "difficulty": "h",
+    "tags": ["Dynamic Programming", "Dynamic Programming (2D)"],
+    "url": "https://leetcode.com/problems/distinct-subsequences",
+    "lc": {
+      "id": 115,
       "premium": false
     }
   },
