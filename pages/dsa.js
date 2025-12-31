@@ -125,6 +125,23 @@ export default function DSA() {
     }
   }, [isSidebarOpen])
 
+  useEffect(() => {
+    const onKeyDown = (e) => {
+      if (e.altKey && e.code === 'KeyO') {
+        e.preventDefault()
+        handleShuffle()
+      }
+
+      if (e.altKey && e.code === 'KeyR') {
+        e.preventDefault()
+        handleRandom()
+      }
+    }
+
+    window.addEventListener('keydown', onKeyDown)
+    return () => window.removeEventListener('keydown', onKeyDown)
+  }, [filteredProblems])
+
   const onTagSelect = (tag) => {
     setSelectedTags((prev) => {
       const already = prev.includes(tag)
@@ -169,6 +186,15 @@ export default function DSA() {
 
   const hasSolution = (problem) => {
     return solutions.find((s) => s.id === problem.lc.id)
+  }
+
+  const handleShuffle = () => {
+    const shuffled = [...filteredProblems].sort(() => 0.5 - Math.random())
+    setFilteredProblems(shuffled)
+  }
+
+  const handleRandom = () => {
+    onSelectRandomProblem()
   }
 
   return (
@@ -310,19 +336,17 @@ export default function DSA() {
             <button
               type="button"
               className="mx-1 my-1 min-w-fit rounded bg-blue-700 px-2 py-1 text-xs text-white"
-              onClick={() => {
-                const shuffled = [...filteredProblems].sort(() => 0.5 - Math.random())
-                setFilteredProblems(shuffled)
-              }}
+              onClick={handleShuffle}
             >
-              Shuffle 🎲
+              Shuffle 🎲 (⌥ + o)
             </button>
+
             <button
               type="button"
               className="mx-1 my-1 min-w-fit rounded bg-blue-700 px-2 py-1 text-xs text-white"
-              onClick={onSelectRandomProblem}
+              onClick={handleRandom}
             >
-              Random 👻
+              Random 👻 (⌥ + r)
             </button>
           </div>
           <div>
