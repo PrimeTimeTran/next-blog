@@ -83,6 +83,23 @@ https://www.lintcode.com/problem/920
 https://www.lintcode.com/problem/919
 https://leetcode.com/problems/meeting-rooms-iii
 
+# Greedy
+
+https://leetcode.com/problems/assign-cookies
+https://leetcode.com/problems/lemonade-change
+https://leetcode.com/problems/gas-station
+https://leetcode.com/problems/hand-of-straights
+https://leetcode.com/problems/minimum-number-of-arrows-to-burst-balloons
+https://leetcode.com/problems/boats-to-save-people
+https://leetcode.com/problems/maximum-length-of-pair-chain
+https://leetcode.com/problems/jump-game
+https://leetcode.com/problems/jump-game-ii
+https://leetcode.com/problems/maximum-subarray
+https://leetcode.com/problems/merge-triplets-to-form-target-triplet
+https://leetcode.com/problems/partition-labels
+https://leetcode.com/problems/valid-parenthesis-string
+https://leetcode.com/problems/non-overlapping-intervals
+
 # Graph
 
 https://leetcode.com/problems/island-perimeter

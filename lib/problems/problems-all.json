@@ -91,7 +91,7 @@
     "id": 0,
     "title": "Valid Parenthesis String",
     "difficulty": "m",
-    "tags": ["String"],
+    "tags": ["String", "Greedy"],
     "url": "https://leetcode.com/problems/valid-parenthesis-string",
     "lc": {
       "id": 678,
@@ -817,7 +817,7 @@
     "id": 0,
     "title": "Non-overlapping Intervals",
     "difficulty": "m",
-    "tags": ["Interval"],
+    "tags": ["Interval", "Greedy"],
     "url": "https://leetcode.com/problems/non-overlapping-intervals",
     "lc": {
       "id": 435,
@@ -828,7 +828,7 @@
     "id": 0,
     "title": "Minimum Number of Arrows to Burst Balloons",
     "difficulty": "m",
-    "tags": ["Interval"],
+    "tags": ["Interval", "Greedy"],
     "url": "https://leetcode.com/problems/minimum-number-of-arrows-to-burst-balloons",
     "lc": {
       "id": 452,
@@ -839,10 +839,21 @@
     "id": 0,
     "title": "Maximum Length of Pair Chain",
     "difficulty": "m",
-    "tags": ["Interval"],
+    "tags": ["Interval", "Greedy"],
     "url": "https://leetcode.com/problems/maximum-length-of-pair-chain",
     "lc": {
       "id": 646,
+      "premium": false
+    }
+  },
+  {
+    "id": 0,
+    "title": "Maximum Subarray",
+    "difficulty": "e",
+    "tags": ["Greedy", "Dynamic Programming"],
+    "url": "https://leetcode.com/problems/maximum-subarray",
+    "lc": {
+      "id": 53,
       "premium": false
     }
   },
@@ -1651,12 +1662,100 @@
   },
   {
     "id": 0,
+    "title": "Assign Cookies",
+    "difficulty": "e",
+    "tags": ["Greedy"],
+    "url": "https://leetcode.com/problems/assign-cookies",
+    "lc": {
+      "id": 455,
+      "premium": false
+    }
+  },
+  {
+    "id": 0,
+    "title": "Lemonade Change",
+    "difficulty": "e",
+    "tags": ["Greedy"],
+    "url": "https://leetcode.com/problems/lemonade-change",
+    "lc": {
+      "id": 860,
+      "premium": false
+    }
+  },
+  {
+    "id": 0,
     "title": "Jump Game",
     "difficulty": "m",
     "tags": ["Greedy"],
     "url": "https://leetcode.com/problems/jump-game",
     "lc": {
       "id": 55,
+      "premium": false
+    }
+  },
+  {
+    "id": 0,
+    "title": "Gas Station",
+    "difficulty": "m",
+    "tags": ["Greedy"],
+    "url": "https://leetcode.com/problems/gas-station",
+    "lc": {
+      "id": 134,
+      "premium": false
+    }
+  },
+  {
+    "id": 0,
+    "title": "Hand of Straights",
+    "difficulty": "m",
+    "tags": ["Greedy"],
+    "url": "https://leetcode.com/problems/hand-of-straights",
+    "lc": {
+      "id": 846,
+      "premium": false
+    }
+  },
+  {
+    "id": 0,
+    "title": "Boats to Save People",
+    "difficulty": "m",
+    "tags": ["Greedy"],
+    "url": "https://leetcode.com/problems/boats-to-save-people",
+    "lc": {
+      "id": 881,
+      "premium": false
+    }
+  },
+  {
+    "id": 0,
+    "title": "Jump Game II",
+    "difficulty": "m",
+    "tags": ["Greedy"],
+    "url": "https://leetcode.com/problems/jump-game-ii",
+    "lc": {
+      "id": 45,
+      "premium": false
+    }
+  },
+  {
+    "id": 0,
+    "title": "Merge Triplets to Form Target Triplet",
+    "difficulty": "m",
+    "tags": ["Greedy"],
+    "url": "https://leetcode.com/problems/merge-triplets-to-form-target-triplet",
+    "lc": {
+      "id": 1899,
+      "premium": false
+    }
+  },
+  {
+    "id": 0,
+    "title": "Partition Labels",
+    "difficulty": "m",
+    "tags": ["Greedy"],
+    "url": "https://leetcode.com/problems/partition-labels",
+    "lc": {
+      "id": 763,
       "premium": false
     }
   },
@@ -1933,17 +2032,6 @@
     "lc": {
       "id": 320,
       "premium": true
-    }
-  },
-  {
-    "id": 0,
-    "title": "Maximum Subarray",
-    "difficulty": "e",
-    "tags": ["Dynamic Programming"],
-    "url": "https://leetcode.com/problems/maximum-subarray",
-    "lc": {
-      "id": 53,
-      "premium": false
     }
   },
   {

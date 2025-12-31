@@ -134,7 +134,8 @@ export default function Review() {
                   }
                 >
                   <span className="text-sm">
-                    {tag.toUpperCase()}({tagCounts[tag]})
+                    {tag.toUpperCase()}
+                    <span className="text-gray-500">({tagCounts[tag]})</span>
                   </span>
                 </button>
               </div>
@@ -152,7 +153,7 @@ export default function Review() {
             setFilteredProblems(allProblems.filter((problem) => listPareto.includes(problem.lc.id)))
           }}
         >
-          Pareto Problems ({listPareto.length})
+          Pareto Problems <span className="text-gray-500">({listPareto.length})</span>
         </button>
         <button
           type="button"
@@ -163,7 +164,7 @@ export default function Review() {
             )
           }}
         >
-          Blind 75 ({listBlind75.length})
+          Blind 75 <span className="text-gray-500">({listBlind75.length})</span>
         </button>
       </div>
 
