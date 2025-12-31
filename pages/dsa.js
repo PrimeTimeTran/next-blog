@@ -37,12 +37,12 @@ orderedTags.forEach((tag) => {
 // - [x] Filter problems by tag, list, difficulty, free/premium
 
 export default function Review() {
+  const [sortBy, setSortBy] = useState('none')
+  const [filteredProblems, setFilteredProblems] = useState(allProblems)
   const [selectedTags, setSelectedTags] = useState([])
   const [selectedDifficulties, setSelectedDifficulties] = useState(['e', 'm', 'h'])
   const [selectedList, setSelectedList] = useState('all')
   const [selectedPremium, setSelectedPremium] = useState('all')
-  const [sortBy, setSortBy] = useState('none')
-  const [filteredProblems, setFilteredProblems] = useState(allProblems)
 
   useEffect(() => {
     let problems = allProblems
@@ -126,21 +126,50 @@ export default function Review() {
   }
 
   return (
-    <div className="flex flex-col gap-6 p-4">
+    <div className="flex flex-col gap-2 p-4">
       <div>
         <div className="flex flex-col">
           <div className="flex justify-between">
             <span className="text-3xl font-bold">Filter By Tag</span>
-            <button
-              type="button"
-              className={
-                'self-end rounded bg-yellow-700 p-6 py-1 text-white ' +
-                (selectedTags.length === 0 ? ' invisible' : '')
-              }
-              onClick={() => setSelectedTags([])}
-            >
-              Clear Tags
-            </button>
+            <div>
+              <button
+                type="button"
+                className={
+                  'self-end rounded bg-yellow-700 p-6 py-1 text-white ' +
+                  (selectedTags.length === 0 ? ' invisible' : '')
+                }
+                onClick={() => setSelectedTags([])}
+              >
+                Clear Tags
+              </button>
+              <button
+                type="button"
+                className={`ml-1 mr-1 h-8 rounded p-2 py-1 text-white ${
+                  selectedPremium === 'all' ? 'bg-green-600' : 'bg-gray-700'
+                }`}
+                onClick={() => togglePremium('all')}
+              >
+                All
+              </button>
+              <button
+                type="button"
+                className={`ml-1 mr-1 h-8 rounded p-2 py-1 text-white ${
+                  selectedPremium === 'free' ? 'bg-green-600' : 'bg-gray-700'
+                }`}
+                onClick={() => togglePremium('free')}
+              >
+                Free 🆓
+              </button>
+              <button
+                type="button"
+                className={`ml-1 mr-1 h-8 rounded p-2 py-1 text-white ${
+                  selectedPremium === 'premium' ? 'bg-green-600' : 'bg-gray-700'
+                }`}
+                onClick={() => togglePremium('premium')}
+              >
+                Premium 💵
+              </button>
+            </div>
           </div>
           <div className="flex w-full flex-row flex-wrap ">
             {orderedTags.map((tag) => (
@@ -163,155 +192,126 @@ export default function Review() {
           </div>
         </div>
       </div>
-      <hr className="my-1" />
-      <div>
+      <hr className="border-gray-600" />
+      <div className="flex flex-row justify-between">
         <h2 className="text-3xl font-bold">Lists</h2>
-        <button
-          type="button"
-          className={`ml-1 mr-1 h-8 w-48 rounded py-1 text-white ${
-            selectedList === 'all' ? 'bg-green-600' : 'bg-gray-700'
-          }`}
-          onClick={() => setSelectedList('all')}
-        >
-          All Lists <span className="text-gray-500">({allProblems.length})</span>
-        </button>
-        <button
-          type="button"
-          className={`ml-1 mr-1 h-8 w-48 rounded py-1 text-white ${
-            selectedList === 'pareto' ? 'bg-green-600' : 'bg-gray-700'
-          }`}
-          onClick={() => setSelectedList('pareto')}
-        >
-          Pareto Problems <span className="text-gray-500">({listPareto.length})</span>
-        </button>
-        <button
-          type="button"
-          className={`ml-1 mr-1 h-8 w-48 rounded py-1 text-white ${
-            selectedList === 'blind75' ? 'bg-green-600' : 'bg-gray-700'
-          }`}
-          onClick={() => setSelectedList('blind75')}
-        >
-          Blind 75 <span className="text-gray-500">({listBlind75.length})</span>
-        </button>
+        <span>
+          <button
+            type="button"
+            className={`ml-1 mr-1 h-8 w-48 rounded py-1 text-white ${
+              selectedList === 'all' ? 'bg-green-600' : 'bg-gray-700'
+            }`}
+            onClick={() => setSelectedList('all')}
+          >
+            All Lists <span className="text-gray-500">({allProblems.length})</span>
+          </button>
+          <button
+            type="button"
+            className={`ml-1 mr-1 h-8 w-48 rounded py-1 text-white ${
+              selectedList === 'pareto' ? 'bg-green-600' : 'bg-gray-700'
+            }`}
+            onClick={() => setSelectedList('pareto')}
+          >
+            Pareto Problems <span className="text-gray-500">({listPareto.length})</span>
+          </button>
+          <button
+            type="button"
+            className={`ml-1 mr-1 h-8 w-48 rounded py-1 text-white ${
+              selectedList === 'blind75' ? 'bg-green-600' : 'bg-gray-700'
+            }`}
+            onClick={() => setSelectedList('blind75')}
+          >
+            Blind 75 <span className="text-gray-500">({listBlind75.length})</span>
+          </button>
+        </span>
       </div>
-      <hr className="my-1" />
+      <hr className="border-gray-600" />
       <div>
-        <h2 className="text-3xl font-bold">Premium</h2>
-        <button
-          type="button"
-          className={`ml-1 mr-1 h-8 rounded p-2 py-1 text-white ${
-            selectedPremium === 'all' ? 'bg-green-600' : 'bg-gray-700'
-          }`}
-          onClick={() => togglePremium('all')}
-        >
-          All
-        </button>
-        <button
-          type="button"
-          className={`ml-1 mr-1 h-8 rounded p-2 py-1 text-white ${
-            selectedPremium === 'free' ? 'bg-green-600' : 'bg-gray-700'
-          }`}
-          onClick={() => togglePremium('free')}
-        >
-          Free
-        </button>
-        <button
-          type="button"
-          className={`ml-1 mr-1 h-8 rounded p-2 py-1 text-white ${
-            selectedPremium === 'premium' ? 'bg-green-600' : 'bg-gray-700'
-          }`}
-          onClick={() => togglePremium('premium')}
-        >
-          Premium
-        </button>
-      </div>
-      <hr className="my-1" />
-      <div>
-        <h2 className="text-3xl font-bold">Sort</h2>
-        <button
-          type="button"
-          className={`ml-1 mr-1 h-8 rounded p-2 py-1 text-white ${
-            sortBy === 'none' ? 'bg-green-600' : 'bg-gray-700'
-          }`}
-          onClick={() => setSortBy('none')}
-        >
-          None
-        </button>
-        <button
-          type="button"
-          className={`ml-1 mr-1 h-8 rounded p-2 py-1 text-white ${
-            sortBy === 'difficulty-asc' ? 'bg-green-600' : 'bg-gray-700'
-          }`}
-          onClick={() => setSortBy('difficulty-asc')}
-        >
-          Difficulty ↑
-        </button>
-        <button
-          type="button"
-          className={`ml-1 mr-1 h-8 rounded p-2 py-1 text-white ${
-            sortBy === 'difficulty-desc' ? 'bg-green-600' : 'bg-gray-700'
-          }`}
-          onClick={() => setSortBy('difficulty-desc')}
-        >
-          Difficulty ↓
-        </button>
-      </div>
-
-      <div>
-        <div className="flex flex-row justify-between">
-          <span className="text-3xl font-bold">Problems</span>
+        <div className="flex w-full justify-between">
           <div>
-            <span>
-              <button
-                onClick={() => toggleDifficulty('e')}
-                type="button"
-                className={`ml-1 mr-1 h-8 rounded p-2 py-1 text-white ${
-                  selectedDifficulties.includes('e') ? 'bg-green-600' : 'bg-gray-700'
-                }`}
-              >
-                Easy
-              </button>
+            <button
+              onClick={() => toggleDifficulty('e')}
+              type="button"
+              className={`ml-1 mr-1 h-8 rounded p-2 py-1 text-white ${
+                selectedDifficulties.includes('e') ? 'bg-green-600' : 'bg-gray-700'
+              }`}
+            >
+              Easy
+            </button>
 
-              <button
-                onClick={() => toggleDifficulty('m')}
-                type="button"
-                className={`ml-1 mr-1 h-8 rounded p-2 py-1 text-white ${
-                  selectedDifficulties.includes('m') ? 'bg-green-600' : 'bg-gray-700'
-                }`}
-              >
-                Medium
-              </button>
+            <button
+              onClick={() => toggleDifficulty('m')}
+              type="button"
+              className={`ml-1 mr-1 h-8 rounded p-2 py-1 text-white ${
+                selectedDifficulties.includes('m') ? 'bg-yellow-600' : 'bg-gray-700'
+              }`}
+            >
+              Medium
+            </button>
 
-              <button
-                onClick={() => toggleDifficulty('h')}
-                type="button"
-                className={`ml-1 mr-1 h-8 rounded p-2 py-1 text-white ${
-                  selectedDifficulties.includes('h') ? 'bg-green-600' : 'bg-gray-700'
-                }`}
-              >
-                Hard
-              </button>
+            <button
+              onClick={() => toggleDifficulty('h')}
+              type="button"
+              className={`ml-1 mr-1 h-8 rounded p-2 py-1 text-white ${
+                selectedDifficulties.includes('h') ? 'bg-red-600' : 'bg-gray-700'
+              }`}
+            >
+              Hard
+            </button>
+          </div>
 
-              <button
-                type="button"
-                className="ml-1 mr-1 h-8 w-48 rounded bg-yellow-700 py-1 text-white"
-                onClick={() => {
-                  const shuffled = [...filteredProblems].sort(() => 0.5 - Math.random())
-                  setFilteredProblems(shuffled)
-                }}
-              >
-                Shuffle 🎲
-              </button>
-              <button
-                type="button"
-                className="ml-1 mr-1 h-8 w-32 rounded bg-yellow-700 py-1 text-white"
-                onClick={onSelectRandomProblem}
-              >
-                Random 👻
-              </button>
-            </span>
+          <div>
+            <button
+              type="button"
+              className="ml-1 mr-1 h-8 w-auto rounded bg-yellow-700 p-2 py-1 text-white"
+              onClick={() => {
+                const shuffled = [...filteredProblems].sort(() => 0.5 - Math.random())
+                setFilteredProblems(shuffled)
+              }}
+            >
+              Shuffle 🎲
+            </button>
+            <button
+              type="button"
+              className="ml-1 mr-1 h-8 w-auto rounded bg-yellow-700 p-2 py-1 text-white"
+              onClick={onSelectRandomProblem}
+            >
+              Random 👻
+            </button>
+          </div>
+          <div>
+            <button
+              type="button"
+              className={`ml-1 mr-1 h-8 rounded p-2 py-1 text-white ${
+                sortBy === 'none' ? 'bg-green-600' : 'bg-gray-700'
+              }`}
+              onClick={() => setSortBy('none')}
+            >
+              None
+            </button>
+            <button
+              type="button"
+              className={`ml-1 mr-1 h-8 rounded p-2 py-1 text-white ${
+                sortBy === 'difficulty-asc' ? 'bg-green-600' : 'bg-gray-700'
+              }`}
+              onClick={() => setSortBy('difficulty-asc')}
+            >
+              ↑
+            </button>
+            <button
+              type="button"
+              className={`ml-1 mr-1 h-8 rounded p-2 py-1 text-white ${
+                sortBy === 'difficulty-desc' ? 'bg-green-600' : 'bg-gray-700'
+              }`}
+              onClick={() => setSortBy('difficulty-desc')}
+            >
+              ↓
+            </button>
           </div>
         </div>
+      </div>
+      <hr className="border-gray-600" />
+      <div>
         {filteredProblems.map((problem, i) => (
           <div key={problem.lc.id}>
             <div className="flex items-start gap-2">
@@ -324,7 +324,7 @@ export default function Review() {
               >
                 <span> {problem.title}</span>
               </a>
-              <span className={'text-sm text-gray-400 ' + getDifficulty(problem.difficulty)}>
+              <span className={'text-sm ' + getDifficulty(problem.difficulty)}>
                 [{problem.difficulty}]
               </span>
             </div>
