@@ -1,10 +1,8 @@
-import React, { useEffect, useState } from 'react'
+import React, { useEffect, useState, useRef } from 'react'
 import { listPareto, listBlind75 } from '../lib/problems/lists.js'
 import allProblems from '../lib/problems/problems-all.json'
 import solutions from '../lib/problems/solutions.js'
-import AceEditor from 'react-ace'
-import 'ace-builds/src-noconflict/mode-python'
-import 'ace-builds/src-noconflict/theme-monokai'
+import SolutionSnippet from '../lib/dsa/solution.js'
 
 const problemCategories = [
   'String',
@@ -24,6 +22,10 @@ const problemCategories = [
   'Bit Manipulation',
   'Prefix Sum',
   'Digit DP',
+  'Stack',
+  'Deque',
+  'Monotonic Stack',
+  'Monotonic Queue',
 ]
 
 const tags = allProblems.map((problem) => problem.tags).flat()
@@ -37,6 +39,7 @@ orderedTags.forEach((tag) => {
 })
 
 export default function DSA() {
+  const sidebarRef = useRef(null)
   const [sortBy, setSortBy] = useState('none')
   const [filteredProblems, setFilteredProblems] = useState(allProblems)
   const [selectedTags, setSelectedTags] = useState([])
@@ -44,7 +47,7 @@ export default function DSA() {
   const [selectedList, setSelectedList] = useState('all')
   const [selectedPremium, setSelectedPremium] = useState('all')
   const [isSidebarOpen, setIsSidebarOpen] = useState(false)
-  const [editorValue, setEditorValue] = useState('')
+  const [focusedSolution, setFocusedSolution] = useState({ solutions: [] })
 
   useEffect(() => {
     let problems = allProblems
@@ -109,12 +112,26 @@ export default function DSA() {
     }
   }, [isSidebarOpen])
 
+  useEffect(() => {
+    function handleClickOutside(e) {
+      if (isSidebarOpen && sidebarRef.current && !sidebarRef.current.contains(e.target)) {
+        setIsSidebarOpen(false)
+      }
+    }
+
+    document.addEventListener('mousedown', handleClickOutside)
+    return () => {
+      document.removeEventListener('mousedown', handleClickOutside)
+    }
+  }, [isSidebarOpen])
+
   const onTagSelect = (tag) => {
     setSelectedTags((prev) => {
       const already = prev.includes(tag)
       return already ? prev.filter((t) => t !== tag) : [...prev, tag]
     })
   }
+
   const onSelectRandomProblem = () => {
     const randomIndex = Math.floor(Math.random() * filteredProblems.length)
     const problem = filteredProblems[randomIndex]
@@ -146,21 +163,25 @@ export default function DSA() {
     const solution = solutions.find((s) => s.id === problem.lc.id)
     if (solution) {
       setIsSidebarOpen(true)
-      setEditorValue(solution.solutions[0].body)
+      setFocusedSolution(solution)
     }
+  }
+
+  const hasSolution = (problem) => {
+    return solutions.find((s) => s.id === problem.lc.id)
   }
 
   return (
     <div className="flex flex-col gap-2 p-4">
       <div>
         <div className="flex flex-col">
-          <div className="flex justify-between">
-            <span className="text-3xl font-bold">Filter By Tag</span>
+          <div className="flex items-center justify-between">
+            <span className="text-3xl font-bold">Categories</span>
             <div>
               <button
                 type="button"
                 className={
-                  'self-end rounded bg-yellow-700 p-6 py-1 text-white ' +
+                  'mx-1 my-1 min-w-fit rounded bg-yellow-700 px-2 py-1 text-xs text-white ' +
                   (selectedTags.length === 0 ? ' invisible' : '')
                 }
                 onClick={() => setSelectedTags([])}
@@ -169,7 +190,7 @@ export default function DSA() {
               </button>
               <button
                 type="button"
-                className={`ml-1 mr-1 h-8 rounded p-2 py-1 text-white ${
+                className={`mx-1 my-1 min-w-fit rounded px-2 py-1 text-xs text-white ${
                   selectedPremium === 'all' ? 'bg-green-600' : 'bg-gray-700'
                 }`}
                 onClick={() => togglePremium('all')}
@@ -178,7 +199,7 @@ export default function DSA() {
               </button>
               <button
                 type="button"
-                className={`ml-1 mr-1 h-8 rounded p-2 py-1 text-white ${
+                className={`mx-1 my-1 min-w-fit rounded px-2 py-1 text-xs text-white ${
                   selectedPremium === 'free' ? 'bg-green-600' : 'bg-gray-700'
                 }`}
                 onClick={() => togglePremium('free')}
@@ -187,7 +208,7 @@ export default function DSA() {
               </button>
               <button
                 type="button"
-                className={`ml-1 mr-1 h-8 rounded p-2 py-1 text-white ${
+                className={`mx-1 my-1 min-w-fit rounded px-2 py-1 text-xs text-white ${
                   selectedPremium === 'premium' ? 'bg-green-600' : 'bg-gray-700'
                 }`}
                 onClick={() => togglePremium('premium')}
@@ -203,13 +224,13 @@ export default function DSA() {
                   type="button"
                   onClick={() => onTagSelect(tag)}
                   className={
-                    'mx-1 my-2  min-w-fit rounded p-6 py-1 text-sm text-white ' +
+                    'mx-1 my-1 min-w-fit rounded px-2 py-1 text-xs text-white ' +
                     (selectedTags.includes(tag) ? 'bg-green-500' : 'bg-gray-700')
                   }
                 >
-                  <span className="text-sm">
+                  <span>
                     {tag.toUpperCase()}
-                    <span className="text-gray-500">({tagCounts[tag]})</span>
+                    <span className="ml-1 text-gray-400">({tagCounts[tag]})</span>
                   </span>
                 </button>
               </div>
@@ -223,7 +244,7 @@ export default function DSA() {
         <span>
           <button
             type="button"
-            className={`ml-1 mr-1 h-8 w-48 rounded py-1 text-white ${
+            className={`mx-1 my-1 min-w-fit rounded px-2 py-1 text-xs text-white ${
               selectedList === 'all' ? 'bg-green-600' : 'bg-gray-700'
             }`}
             onClick={() => setSelectedList('all')}
@@ -232,7 +253,7 @@ export default function DSA() {
           </button>
           <button
             type="button"
-            className={`ml-1 mr-1 h-8 w-48 rounded py-1 text-white ${
+            className={`mx-1 my-1 min-w-fit rounded px-2 py-1 text-xs text-white ${
               selectedList === 'pareto' ? 'bg-green-600' : 'bg-gray-700'
             }`}
             onClick={() => setSelectedList('pareto')}
@@ -241,7 +262,7 @@ export default function DSA() {
           </button>
           <button
             type="button"
-            className={`ml-1 mr-1 h-8 w-48 rounded py-1 text-white ${
+            className={`mx-1 my-1 min-w-fit rounded px-2 py-1 text-xs text-white ${
               selectedList === 'blind75' ? 'bg-green-600' : 'bg-gray-700'
             }`}
             onClick={() => setSelectedList('blind75')}
@@ -257,7 +278,7 @@ export default function DSA() {
             <button
               onClick={() => toggleDifficulty('e')}
               type="button"
-              className={`ml-1 mr-1 h-8 rounded p-2 py-1 text-white ${
+              className={`mx-1 my-1 min-w-fit rounded px-2 py-1 text-xs text-white ${
                 selectedDifficulties.includes('e') ? 'bg-green-600' : 'bg-gray-700'
               }`}
             >
@@ -267,7 +288,7 @@ export default function DSA() {
             <button
               onClick={() => toggleDifficulty('m')}
               type="button"
-              className={`ml-1 mr-1 h-8 rounded p-2 py-1 text-white ${
+              className={`mx-1 my-1 min-w-fit rounded px-2 py-1 text-xs text-white ${
                 selectedDifficulties.includes('m') ? 'bg-yellow-600' : 'bg-gray-700'
               }`}
             >
@@ -277,7 +298,7 @@ export default function DSA() {
             <button
               onClick={() => toggleDifficulty('h')}
               type="button"
-              className={`ml-1 mr-1 h-8 rounded p-2 py-1 text-white ${
+              className={`mx-1 my-1 min-w-fit rounded px-2 py-1 text-xs text-white ${
                 selectedDifficulties.includes('h') ? 'bg-red-600' : 'bg-gray-700'
               }`}
             >
@@ -288,7 +309,7 @@ export default function DSA() {
           <div>
             <button
               type="button"
-              className="ml-1 mr-1 h-8 w-auto rounded bg-yellow-700 p-2 py-1 text-white"
+              className="mx-1 my-1 min-w-fit rounded bg-blue-700 px-2 py-1 text-xs text-white"
               onClick={() => {
                 const shuffled = [...filteredProblems].sort(() => 0.5 - Math.random())
                 setFilteredProblems(shuffled)
@@ -298,7 +319,7 @@ export default function DSA() {
             </button>
             <button
               type="button"
-              className="ml-1 mr-1 h-8 w-auto rounded bg-yellow-700 p-2 py-1 text-white"
+              className="mx-1 my-1 min-w-fit rounded bg-blue-700 px-2 py-1 text-xs text-white"
               onClick={onSelectRandomProblem}
             >
               Random 👻
@@ -307,7 +328,7 @@ export default function DSA() {
           <div>
             <button
               type="button"
-              className={`ml-1 mr-1 h-8 rounded p-2 py-1 text-white ${
+              className={`mx-1 my-1 min-w-fit rounded px-2 py-1 text-xs text-white ${
                 sortBy === 'none' ? 'bg-green-600' : 'bg-gray-700'
               }`}
               onClick={() => setSortBy('none')}
@@ -316,7 +337,7 @@ export default function DSA() {
             </button>
             <button
               type="button"
-              className={`ml-1 mr-1 h-8 rounded p-2 py-1 text-white ${
+              className={`mx-1 my-1 min-w-fit rounded px-2 py-1 text-xs text-white ${
                 sortBy === 'difficulty-asc' ? 'bg-green-600' : 'bg-gray-700'
               }`}
               onClick={() => setSortBy('difficulty-asc')}
@@ -325,7 +346,7 @@ export default function DSA() {
             </button>
             <button
               type="button"
-              className={`ml-1 mr-1 h-8 rounded p-2 py-1 text-white ${
+              className={`mx-1 my-1 min-w-fit rounded px-2 py-1 text-xs text-white ${
                 sortBy === 'difficulty-desc' ? 'bg-green-600' : 'bg-gray-700'
               }`}
               onClick={() => setSortBy('difficulty-desc')}
@@ -352,12 +373,13 @@ export default function DSA() {
               <span className={'text-sm ' + getDifficulty(problem.difficulty)}>
                 [{problem.difficulty}]
               </span>
-              <button onClick={() => loadSolution(problem)}>📝</button>
+              {hasSolution(problem) && <button onClick={() => loadSolution(problem)}>📝</button>}
             </div>
           </div>
         ))}
       </div>
       <div
+        ref={sidebarRef}
         className={`fixed top-0 right-0 h-full w-1/3 overflow-y-auto border bg-white py-2 transition-transform duration-300 ease-in-out dark:bg-gray-900 ${
           isSidebarOpen ? 'translate-x-0' : 'translate-x-full'
         }`}
@@ -371,25 +393,10 @@ export default function DSA() {
             {isSidebarOpen ? 'Close' : 'Open'}
           </button>
         </div>
-        <AceEditor
-          mode="python"
-          theme="monokai"
-          value={editorValue}
-          onChange={setEditorValue}
-          height="50%"
-          width="100%"
-          fontSize={14}
-          showPrintMargin={false}
-          showGutter={true}
-          highlightActiveLine={true}
-          setOptions={{
-            enableBasicAutocompletion: true,
-            enableLiveAutocompletion: true,
-            enableSnippets: true,
-            showLineNumbers: true,
-            tabSize: 2,
-          }}
-        />
+        {focusedSolution &&
+          focusedSolution.solutions.map((solution, idx) => {
+            return <SolutionSnippet solution={solution} key={idx} />
+          })}
       </div>
     </div>
   )

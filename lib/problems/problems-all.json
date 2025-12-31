@@ -2880,5 +2880,38 @@
       "id": 1074,
       "premium": false
     }
+  },
+  {
+    "id": 0,
+    "title": "Min Stack",
+    "difficulty": "m",
+    "tags": ["Stack", "Design"],
+    "url": "https://leetcode.com/problems/min-stack",
+    "lc": {
+      "id": 155,
+      "premium": false
+    }
+  },
+  {
+    "id": 0,
+    "title": "Daily Temperatures",
+    "difficulty": "m",
+    "tags": ["Stack", "Monotonic Stack"],
+    "url": "https://leetcode.com/problems/daily-temperatures",
+    "lc": {
+      "id": 739,
+      "premium": false
+    }
+  },
+  {
+    "id": 0,
+    "title": "Sliding Window Maximum",
+    "difficulty": "h",
+    "tags": ["Array", "Deque", "Sliding Window", "Monotonic Queue"],
+    "url": "https://leetcode.com/problems/sliding-window-maximum",
+    "lc": {
+      "id": 239,
+      "premium": false
+    }
   }
 ]
