@@ -1,5 +1,5 @@
 import React, { useEffect, useState, useRef } from 'react'
-import { listPareto, listBlind75 } from '../lib/problems/lists.js'
+import { listPareto, listBlind75, neetCode150, neetCode250 } from '../lib/problems/lists.js'
 import allProblems from '../lib/problems/problems-all.json'
 import solutions from '../lib/problems/solutions.js'
 import SolutionSnippet from '../lib/dsa/solution.js'
@@ -48,6 +48,7 @@ export default function DSA() {
   const [selectedPremium, setSelectedPremium] = useState('all')
   const [isSidebarOpen, setIsSidebarOpen] = useState(false)
   const [focusedSolution, setFocusedSolution] = useState({ solutions: [] })
+  const [randomlySelected, setRandomlySelected] = useState([])
 
   useEffect(() => {
     let problems = allProblems
@@ -57,6 +58,10 @@ export default function DSA() {
       problems = problems.filter((problem) => listPareto.includes(problem.lc.id))
     } else if (selectedList === 'blind75') {
       problems = problems.filter((problem) => listBlind75.includes(problem.lc.id))
+    } else if (selectedList === 'neetCode150') {
+      problems = problems.filter((problem) => neetCode150.includes(problem.lc.id))
+    } else if (selectedList === 'neetCode250') {
+      problems = problems.filter((problem) => neetCode250.includes(problem.lc.id))
     }
 
     // Filter by tags
@@ -149,12 +154,6 @@ export default function DSA() {
     })
   }
 
-  const onSelectRandomProblem = () => {
-    const randomIndex = Math.floor(Math.random() * filteredProblems.length)
-    const problem = filteredProblems[randomIndex]
-    window.open(problem.url, '_blank')
-  }
-
   const toggleDifficulty = (difficulty) => {
     setSelectedDifficulties((prev) =>
       prev.includes(difficulty) ? prev.filter((d) => d !== difficulty) : [...prev, difficulty]
@@ -194,7 +193,19 @@ export default function DSA() {
   }
 
   const handleRandom = () => {
-    onSelectRandomProblem()
+    const unseenProblems = filteredProblems.filter((p) => !randomlySelected.includes(p.lc.id))
+
+    // Optional: handle "all used" case
+    if (unseenProblems.length === 0) {
+      console.log('No unseen problems left')
+      return
+    }
+
+    const randomIndex = Math.floor(Math.random() * unseenProblems.length)
+    const problem = unseenProblems[randomIndex]
+
+    setRandomlySelected((prev) => [...prev, problem.lc.id])
+    window.open(problem.url, '_blank')
   }
 
   return (
@@ -284,7 +295,7 @@ export default function DSA() {
             }`}
             onClick={() => setSelectedList('pareto')}
           >
-            Pareto Problems <span className="text-gray-500">({listPareto.length})</span>
+            Pareto <span className="text-gray-500">({listPareto.length})</span>
           </button>
           <button
             type="button"
@@ -294,6 +305,24 @@ export default function DSA() {
             onClick={() => setSelectedList('blind75')}
           >
             Blind 75 <span className="text-gray-500">({listBlind75.length})</span>
+          </button>
+          <button
+            type="button"
+            className={`mx-1 my-1 min-w-fit rounded px-2 py-1 text-xs text-white ${
+              selectedList === 'blind75' ? 'bg-green-600' : 'bg-gray-700'
+            }`}
+            onClick={() => setSelectedList('neetCode150')}
+          >
+            NeetCode 150 <span className="text-gray-500">({neetCode150.length})</span>
+          </button>
+          <button
+            type="button"
+            className={`mx-1 my-1 min-w-fit rounded px-2 py-1 text-xs text-white ${
+              selectedList === 'blind75' ? 'bg-green-600' : 'bg-gray-700'
+            }`}
+            onClick={() => setSelectedList('neetCode250')}
+          >
+            NeetCode 250 <span className="text-gray-500">({neetCode250.length})</span>
           </button>
         </span>
       </div>
@@ -392,7 +421,13 @@ export default function DSA() {
                 className="flex items-start gap-2 text-primary-500"
                 rel="noreferrer"
               >
-                <span> {problem.title}</span>
+                <span
+                  className={
+                    randomlySelected.includes(problem.lc.id) && 'line-through decoration-white'
+                  }
+                >
+                  {problem.title}
+                </span>
               </a>
               <span className={'text-sm ' + getDifficulty(problem.difficulty)}>
                 [{problem.difficulty}]
