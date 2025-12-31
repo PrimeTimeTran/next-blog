@@ -32,10 +32,6 @@ orderedTags.forEach((tag) => {
   tagCounts[tag] = allProblems.filter((problem) => problem.tags.includes(tag)).length
 })
 
-// Todo:
-// - [x] Sort problems in asc/desc order by difficulty
-// - [x] Filter problems by tag, list, difficulty, free/premium
-
 export default function Review() {
   const [sortBy, setSortBy] = useState('none')
   const [filteredProblems, setFilteredProblems] = useState(allProblems)
