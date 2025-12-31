@@ -2181,7 +2181,7 @@
   {
     "id": 0,
     "title": "Predict the Winner",
-    "difficulty": "",
+    "difficulty": "m",
     "tags": ["Dynamic Programming", "Dynamic Programming(2D)"],
     "url": "https://leetcode.com/problems/predict-the-winner",
     "lc": {
@@ -2433,6 +2433,39 @@
   },
   {
     "id": 0,
+    "title": "Range Sum Query - Immutable",
+    "difficulty": "e",
+    "tags": ["Prefix Sum"],
+    "url": "https://leetcode.com/problems/range-sum-query-immutable",
+    "lc": {
+      "id": 303,
+      "premium": false
+    }
+  },
+  {
+    "id": 0,
+    "title": "Find Pivot Index",
+    "difficulty": "e",
+    "tags": ["Prefix Sum"],
+    "url": "https://leetcode.com/problems/find-pivot-index",
+    "lc": {
+      "id": 724,
+      "premium": false
+    }
+  },
+  {
+    "id": 0,
+    "title": "Running Sum of 1d Array",
+    "difficulty": "e",
+    "tags": ["Prefix Sum"],
+    "url": "https://leetcode.com/problems/running-sum-of-1d-array",
+    "lc": {
+      "id": 1480,
+      "premium": false
+    }
+  },
+  {
+    "id": 0,
     "title": "Product of Array Except Self",
     "difficulty": "m",
     "tags": ["Prefix Sum"],
@@ -2549,39 +2582,6 @@
     "url": "https://leetcode.com/problems/number-of-submatrices-that-sum-to-target",
     "lc": {
       "id": 1074,
-      "premium": false
-    }
-  },
-  {
-    "id": 0,
-    "title": "Range Sum Query - Immutable",
-    "difficulty": "e",
-    "tags": ["Prefix Sum"],
-    "url": "https://leetcode.com/problems/range-sum-query-immutable",
-    "lc": {
-      "id": 303,
-      "premium": false
-    }
-  },
-  {
-    "id": 0,
-    "title": "Find Pivot Index",
-    "difficulty": "e",
-    "tags": ["Prefix Sum"],
-    "url": "https://leetcode.com/problems/find-pivot-index",
-    "lc": {
-      "id": 724,
-      "premium": false
-    }
-  },
-  {
-    "id": 0,
-    "title": "Running Sum of 1d Array",
-    "difficulty": "e",
-    "tags": ["Prefix Sum"],
-    "url": "https://leetcode.com/problems/running-sum-of-1d-array",
-    "lc": {
-      "id": 1480,
       "premium": false
     }
   },
