@@ -23,14 +23,10 @@ a₀ = 0
    dfs(n-4) dfs(n-5)
         ...
 """
-
 class Solution:
     def climbStairs(self, n: int) -> int:
-        def dp(i):
-            if i <= 2:
-                return i
-            return dp(i-1) + dp(i-2)
-        return dp(n)
+        if n <= 2: return n
+        return self.climbStairs(n-1) + self.climbStairs(n-2)
 
 """
 Time:   O(n)

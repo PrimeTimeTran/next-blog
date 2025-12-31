@@ -31,3 +31,18 @@ class Solution:
                 if dfs(r, c, 0):
                     return True
         return False
+
+
+class Solution:
+    def exist(self, board: List[List[str]], word: str) -> bool:
+        m, n = len(board), len(board[0])
+        def dfs(r, c, idx):
+            if idx == len(word): return True
+            inbounds = 0 <= r < m and 0 <= c < n
+            if inbounds and word[idx] == board[r][c]:
+                tmp, board[r][c] = board[r][c], '.'
+                idx+=1
+                res = dfs(r+1, c, idx) or dfs(r-1, c, idx) or dfs(r, c+1, idx) or dfs(r, c-1, idx)
+                board[r][c] = tmp
+                return res
+        return any(dfs(r, c, 0) for r in range(m) for c in range(n))

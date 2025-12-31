@@ -38,3 +38,16 @@ class Solution:
                 path.pop()
             return res
         return back(0, [], 0)
+
+
+class Solution:
+    def combinationSum2(self, C: List[int], T: int) -> List[List[int]]:
+        n, res = len(C), []
+        def back(cur, path, total, res = []):
+            if total == T: return res.append(path[:])
+            if total > T or n == len(path): return
+            for i in range(len(cur)):
+                if i > 0 and cur[i] == cur[i-1]: continue
+                path.append(cur[i]); back(cur[i+1:], path, total + cur[i]); path.pop()
+            return res
+        return back(sorted(C), [], 0)

@@ -38,6 +38,8 @@
     - Inorder
     - Postorder
 - DP
+  - Optimal Substructure
+    -
   - Base Cases
     - Reducing problem space until base case reached
   - Memoization
@@ -68,4 +70,6 @@
   - Balanced binary tree?
   - Lowest common ancestor
   - Construct tree from inorder & postorder traversal
-  -
+- Backtracking
+  - Building up to a solution.
+  - Pruning when a path is no longer valid.
