@@ -1,6 +1,50 @@
 [
   {
     "id": 0,
+    "title": "Contains Duplicate",
+    "difficulty": "e",
+    "tags": ["Array"],
+    "url": "https://leetcode.com/problems/contains-duplicate",
+    "lc": {
+      "id": 217,
+      "premium": false
+    }
+  },
+  {
+    "id": 0,
+    "title": "Valid Parentheses",
+    "difficulty": "e",
+    "tags": ["String"],
+    "url": "https://leetcode.com/problems/valid-parentheses",
+    "lc": {
+      "id": 20,
+      "premium": false
+    }
+  },
+  {
+    "id": 0,
+    "title": "Valid Palindrome",
+    "difficulty": "e",
+    "tags": ["String"],
+    "url": "https://leetcode.com/problems/valid-palindrome",
+    "lc": {
+      "id": 125,
+      "premium": false
+    }
+  },
+  {
+    "id": 0,
+    "title": "Valid Anagram",
+    "difficulty": "e",
+    "tags": ["String"],
+    "url": "https://leetcode.com/problems/valid-anagram",
+    "lc": {
+      "id": 242,
+      "premium": false
+    }
+  },
+  {
+    "id": 0,
     "title": "Container With Most Water",
     "difficulty": "m",
     "tags": ["Array"],
@@ -65,17 +109,7 @@
       "premium": false
     }
   },
-  {
-    "id": 0,
-    "title": "Contains Duplicate",
-    "difficulty": "e",
-    "tags": ["Array"],
-    "url": "https://leetcode.com/problems/contains-duplicate",
-    "lc": {
-      "id": 217,
-      "premium": false
-    }
-  },
+
   {
     "id": 0,
     "title": "Kth Largest Element in a Stream",
@@ -2691,39 +2725,6 @@
     "url": "https://leetcode.com/problems/minimum-window-substring",
     "lc": {
       "id": 76,
-      "premium": false
-    }
-  },
-  {
-    "id": 0,
-    "title": "Valid Parentheses",
-    "difficulty": "e",
-    "tags": ["String"],
-    "url": "https://leetcode.com/problems/valid-parentheses",
-    "lc": {
-      "id": 20,
-      "premium": false
-    }
-  },
-  {
-    "id": 0,
-    "title": "Valid Palindrome",
-    "difficulty": "e",
-    "tags": ["String"],
-    "url": "https://leetcode.com/problems/valid-palindrome",
-    "lc": {
-      "id": 125,
-      "premium": false
-    }
-  },
-  {
-    "id": 0,
-    "title": "Valid Anagram",
-    "difficulty": "e",
-    "tags": ["String"],
-    "url": "https://leetcode.com/problems/valid-anagram",
-    "lc": {
-      "id": 242,
       "premium": false
     }
   }

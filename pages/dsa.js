@@ -32,6 +32,7 @@ orderedTags.forEach((tag) => {
 
 export default function Review() {
   const [selectedTags, setSelectedTags] = useState([])
+  const [selectedDifficulties, setSelectedDifficulties] = useState(['e', 'm', 'h'])
   const [filteredProblems, setFilteredProblems] = useState(allProblems)
 
   useEffect(() => {
@@ -45,6 +46,16 @@ export default function Review() {
       )
     )
   }, [selectedTags])
+
+  useEffect(() => {
+    if (selectedDifficulties.length === 0) {
+      setFilteredProblems(allProblems)
+    } else {
+      setFilteredProblems(
+        allProblems.filter((problem) => selectedDifficulties.includes(problem.difficulty))
+      )
+    }
+  }, [selectedDifficulties, allProblems])
 
   const onTagSelect = (tag) => {
     setSelectedTags((prev) => {
@@ -70,6 +81,15 @@ export default function Review() {
     const problem = filteredProblems[randomIndex]
     window.open(problem.url, '_blank')
   }
+  const toggleDifficulty = (difficulty) => {
+    setSelectedDifficulties(
+      (prev) =>
+        prev.includes(difficulty)
+          ? prev.filter((d) => d !== difficulty) // remove
+          : [...prev, difficulty] // add
+    )
+  }
+
   return (
     <div className="flex flex-col gap-6 p-4">
       <div>
@@ -98,7 +118,7 @@ export default function Review() {
                   onClick={() => onTagSelect(tag)}
                   className={
                     'mx-1 my-2  min-w-fit rounded p-6 py-1 text-sm ' +
-                    (selectedTags.includes(tag) ? 'bg-blue-400' : 'bg-gray-700')
+                    (selectedTags.includes(tag) ? 'bg-green-600' : 'bg-gray-700')
                   }
                 >
                   <span className="text-sm">
@@ -138,25 +158,57 @@ export default function Review() {
       <div>
         <div className="flex flex-row justify-between">
           <span className="text-3xl font-bold">Problems({allProblems.length})</span>
-          <span>
-            <button
-              type="button"
-              className="ml-1 mr-1 h-8 w-48 rounded bg-green-900 py-1"
-              onClick={() => {
-                const shuffled = [...filteredProblems].sort(() => 0.5 - Math.random())
-                setFilteredProblems(shuffled)
-              }}
-            >
-              Shuffle 🔀
-            </button>
-            <button
-              type="button"
-              className="ml-1 mr-1 h-8 w-32 rounded bg-green-900 py-1"
-              onClick={onSelectRandomProblem}
-            >
-              Random 🎲
-            </button>
-          </span>
+          <div>
+            <span>
+              <button
+                onClick={() => toggleDifficulty('e')}
+                type="button"
+                className={`ml-1 mr-1 h-8 rounded p-2 py-1 ${
+                  selectedDifficulties.includes('e') ? 'bg-green-600' : 'bg-gray-700'
+                }`}
+              >
+                Easy
+              </button>
+
+              <button
+                onClick={() => toggleDifficulty('m')}
+                type="button"
+                className={`ml-1 mr-1 h-8 rounded p-2 py-1 ${
+                  selectedDifficulties.includes('m') ? 'bg-yellow-600' : 'bg-gray-700'
+                }`}
+              >
+                Medium
+              </button>
+
+              <button
+                onClick={() => toggleDifficulty('h')}
+                type="button"
+                className={`ml-1 mr-1 h-8 rounded p-2 py-1 ${
+                  selectedDifficulties.includes('h') ? 'bg-red-600' : 'bg-gray-700'
+                }`}
+              >
+                Hard
+              </button>
+
+              <button
+                type="button"
+                className="ml-1 mr-1 h-8 w-48 rounded bg-green-900 py-1"
+                onClick={() => {
+                  const shuffled = [...filteredProblems].sort(() => 0.5 - Math.random())
+                  setFilteredProblems(shuffled)
+                }}
+              >
+                Shuffle 🔀
+              </button>
+              <button
+                type="button"
+                className="ml-1 mr-1 h-8 w-32 rounded bg-green-900 py-1"
+                onClick={onSelectRandomProblem}
+              >
+                Random 🎲
+              </button>
+            </span>
+          </div>
         </div>
         {filteredProblems.map((problem, i) => (
           <div key={problem.lc.id}>
