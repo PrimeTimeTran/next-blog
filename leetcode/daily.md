@@ -72,4 +72,5 @@
 - Backtracking
   - Building up to a solution.
   - Pruning when a path is no longer valid.
-- Binary
+- Binary Search
+- LinkedList
