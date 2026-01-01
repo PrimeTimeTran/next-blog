@@ -430,17 +430,6 @@
   },
   {
     "id": 0,
-    "title": "Merge Two Sorted Lists",
-    "difficulty": "e",
-    "tags": ["Linked List"],
-    "url": "https://leetcode.com/problems/merge-two-sorted-lists",
-    "lc": {
-      "id": 21,
-      "premium": false
-    }
-  },
-  {
-    "id": 0,
     "title": "Linked List Cycle",
     "difficulty": "e",
     "tags": ["Linked List"],
@@ -463,45 +452,12 @@
   },
   {
     "id": 0,
-    "title": "Add Two Numbers",
-    "difficulty": "m",
+    "title": "Merge Two Sorted Lists",
+    "difficulty": "e",
     "tags": ["Linked List"],
-    "url": "https://leetcode.com/problems/add-two-numbers",
+    "url": "https://leetcode.com/problems/merge-two-sorted-lists",
     "lc": {
-      "id": 2,
-      "premium": false
-    }
-  },
-  {
-    "id": 0,
-    "title": "Remove Nth Node From End of List",
-    "difficulty": "m",
-    "tags": ["Linked List"],
-    "url": "https://leetcode.com/problems/remove-nth-node-from-end-of-list",
-    "lc": {
-      "id": 19,
-      "premium": false
-    }
-  },
-  {
-    "id": 0,
-    "title": "Reverse Nodes in k-Group",
-    "difficulty": "m",
-    "tags": ["Linked List"],
-    "url": "https://leetcode.com/problems/reverse-nodes-in-k-group",
-    "lc": {
-      "id": 25,
-      "premium": false
-    }
-  },
-  {
-    "id": 0,
-    "title": "Copy List with Random Pointer",
-    "difficulty": "m",
-    "tags": ["Linked List"],
-    "url": "https://leetcode.com/problems/copy-list-with-random-pointer",
-    "lc": {
-      "id": 138,
+      "id": 21,
       "premium": false
     }
   },
@@ -518,6 +474,39 @@
   },
   {
     "id": 0,
+    "title": "Remove Nth Node From End of List",
+    "difficulty": "m",
+    "tags": ["Linked List"],
+    "url": "https://leetcode.com/problems/remove-nth-node-from-end-of-list",
+    "lc": {
+      "id": 19,
+      "premium": false
+    }
+  },
+  {
+    "id": 0,
+    "title": "Copy List with Random Pointer",
+    "difficulty": "m",
+    "tags": ["Linked List"],
+    "url": "https://leetcode.com/problems/copy-list-with-random-pointer",
+    "lc": {
+      "id": 138,
+      "premium": false
+    }
+  },
+  {
+    "id": 0,
+    "title": "Add Two Numbers",
+    "difficulty": "m",
+    "tags": ["Linked List"],
+    "url": "https://leetcode.com/problems/add-two-numbers",
+    "lc": {
+      "id": 2,
+      "premium": false
+    }
+  },
+  {
+    "id": 0,
     "title": "LRU Cache",
     "difficulty": "m",
     "tags": ["Linked List"],
@@ -529,23 +518,23 @@
   },
   {
     "id": 0,
-    "title": "Find the Duplicate Number",
-    "difficulty": "m",
-    "tags": ["Linked List"],
-    "url": "https://leetcode.com/problems/find-the-duplicate-number",
-    "lc": {
-      "id": 287,
-      "premium": false
-    }
-  },
-  {
-    "id": 0,
     "title": "Merge k Sorted Lists",
     "difficulty": "h",
     "tags": ["Linked List"],
     "url": "https://leetcode.com/problems/merge-k-sorted-lists",
     "lc": {
       "id": 23,
+      "premium": false
+    }
+  },
+  {
+    "id": 0,
+    "title": "Reverse Nodes in k-Group",
+    "difficulty": "h",
+    "tags": ["Linked List"],
+    "url": "https://leetcode.com/problems/reverse-nodes-in-k-group",
+    "lc": {
+      "id": 25,
       "premium": false
     }
   },
@@ -2625,6 +2614,17 @@
     "url": "https://leetcode.com/problems/xor-operation-in-an-array",
     "lc": {
       "id": 1486,
+      "premium": false
+    }
+  },
+  {
+    "id": 0,
+    "title": "Find the Duplicate Number",
+    "difficulty": "m",
+    "tags": ["Bit Manipulation"],
+    "url": "https://leetcode.com/problems/find-the-duplicate-number",
+    "lc": {
+      "id": 287,
       "premium": false
     }
   },
