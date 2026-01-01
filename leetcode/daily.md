@@ -74,3 +74,6 @@
   - Pruning when a path is no longer valid.
 - Binary Search
 - LinkedList
+  - https://leetcode.com/problems/reverse-nodes-in-k-group/
+- Binary Search
+  - https://leetcode.com/problems/median-of-two-sorted-arrays

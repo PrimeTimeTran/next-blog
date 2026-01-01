@@ -1,5 +1,3 @@
-Here are **10 LeetCode problems** that will help you build the _lexicographic-order, greedy, and string comparison_ skills relevant to the `minDeletionSize` problem, with links you can click:
-
 ### 🧠 Directly Related to Lexicographic / String Ordering
 
 1. **[Delete Columns to Make Sorted (LeetCode 944)](https://leetcode.com/problems/delete-columns-to-make-sorted/description/?utm_source=chatgpt.com)** — simpler version of #1 that focuses purely on column sorting. ([LeetCode][2])
