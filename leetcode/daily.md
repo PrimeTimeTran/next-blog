@@ -38,8 +38,7 @@
     - Inorder
     - Postorder
 - DP
-  - Optimal Substructure
-    -
+  - ## Optimal Substructure
   - Base Cases
     - Reducing problem space until base case reached
   - Memoization
@@ -73,3 +72,4 @@
 - Backtracking
   - Building up to a solution.
   - Pruning when a path is no longer valid.
+- Binary

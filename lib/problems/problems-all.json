@@ -177,12 +177,12 @@
   },
   {
     "id": 0,
-    "title": "First Bad Version",
+    "title": "Binary Search",
     "difficulty": "e",
     "tags": ["Binary Search"],
-    "url": "https://leetcode.com/problems/first-bad-version",
+    "url": "https://leetcode.com/problems/binary-search",
     "lc": {
-      "id": 278,
+      "id": 704,
       "premium": false
     }
   },
@@ -199,12 +199,23 @@
   },
   {
     "id": 0,
-    "title": "Binary Search",
+    "title": "Find Smallest Letter Greater Than Target",
     "difficulty": "e",
     "tags": ["Binary Search"],
-    "url": "https://leetcode.com/problems/binary-search",
+    "url": "https://leetcode.com/problems/find-smallest-letter-greater-than-target",
     "lc": {
-      "id": 704,
+      "id": 744,
+      "premium": false
+    }
+  },
+  {
+    "id": 0,
+    "title": "First Bad Version",
+    "difficulty": "e",
+    "tags": ["Binary Search"],
+    "url": "https://leetcode.com/problems/first-bad-version",
+    "lc": {
+      "id": 278,
       "premium": false
     }
   },
