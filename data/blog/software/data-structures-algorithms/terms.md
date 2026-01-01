@@ -15,7 +15,7 @@ tags: ['python']
 
 ## System Design
 
-- [] -
+- [Invariant] - A condition or relation that is always true. Constant and unchanging even if the conditions that it's in changes.
 - [] -
 - [] -
 - [] -

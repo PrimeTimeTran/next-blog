@@ -182,11 +182,3 @@ If a value `x` works, then all values `> x` (or `< x`) also work.
 | B      | Window halves      | Eliminate impossibility |
 | C      | Partitions         | Balance left vs right   |
 | D      | Answer space       | Monotonic feasibility   |
-
----
-
-If you want, next I can:
-
-- Order these **by difficulty**
-- Give a **minimum set (20 problems) for mastery**
-- Or map each family to **standard binary search templates** you’ve been reasoning about recently
