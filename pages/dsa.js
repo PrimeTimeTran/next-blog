@@ -141,6 +141,10 @@ export default function DSA() {
         e.preventDefault()
         handleRandom()
       }
+      if (e.altKey && e.code === 'KeyP') {
+        e.preventDefault()
+        handleNext()
+      }
     }
 
     window.addEventListener('keydown', onKeyDown)
@@ -192,20 +196,32 @@ export default function DSA() {
     setFilteredProblems(shuffled)
   }
 
+  const markAttempted = (problem) => {
+    setRandomlySelected((prev) => (prev.includes(problem.lc.id) ? prev : [...prev, problem.lc.id]))
+  }
+
+  const handleNext = () => {
+    setRandomlySelected((prev) => {
+      const problem = filteredProblems.find((p) => !prev.includes(p.lc.id))
+
+      if (!problem) return prev
+
+      window.open(problem.url, '_blank')
+      return [...prev, problem.lc.id]
+    })
+  }
+
   const handleRandom = () => {
-    const unseenProblems = filteredProblems.filter((p) => !randomlySelected.includes(p.lc.id))
+    setRandomlySelected((prev) => {
+      const unseen = filteredProblems.filter((p) => !prev.includes(p.lc.id))
 
-    // Optional: handle "all used" case
-    if (unseenProblems.length === 0) {
-      console.log('No unseen problems left')
-      return
-    }
+      if (!unseen.length) return prev
 
-    const randomIndex = Math.floor(Math.random() * unseenProblems.length)
-    const problem = unseenProblems[randomIndex]
+      const problem = unseen[Math.floor(Math.random() * unseen.length)]
 
-    setRandomlySelected((prev) => [...prev, problem.lc.id])
-    window.open(problem.url, '_blank')
+      window.open(problem.url, '_blank')
+      return [...prev, problem.lc.id]
+    })
   }
 
   return (
@@ -367,7 +383,7 @@ export default function DSA() {
               className="mx-1 my-1 min-w-fit rounded bg-blue-700 px-2 py-1 text-xs text-white"
               onClick={handleShuffle}
             >
-              Shuffle 🎲 (⌥ + o)
+              Shuffle 🎲 (⌥ + O)
             </button>
 
             <button
@@ -375,7 +391,14 @@ export default function DSA() {
               className="mx-1 my-1 min-w-fit rounded bg-blue-700 px-2 py-1 text-xs text-white"
               onClick={handleRandom}
             >
-              Random 👻 (⌥ + r)
+              Next ⏭️ (⌥ + P)
+            </button>
+            <button
+              type="button"
+              className="mx-1 my-1 min-w-fit rounded bg-blue-700 px-2 py-1 text-xs text-white"
+              onClick={handleRandom}
+            >
+              Random 👻 (⌥ + R)
             </button>
           </div>
           <div>
@@ -420,6 +443,7 @@ export default function DSA() {
                 target="_blank"
                 className="flex items-start gap-2 text-primary-500"
                 rel="noreferrer"
+                onClick={() => markAttempted(problem)}
               >
                 <span
                   className={
