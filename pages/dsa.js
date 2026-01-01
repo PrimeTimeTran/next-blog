@@ -206,7 +206,8 @@ export default function DSA() {
 
       if (!problem) return prev
 
-      window.open(problem.url, '_blank')
+      window.open(problem.url, '_blank', 'noopener,noreferrer')
+
       return [...prev, problem.lc.id]
     })
   }
@@ -219,7 +220,8 @@ export default function DSA() {
 
       const problem = unseen[Math.floor(Math.random() * unseen.length)]
 
-      window.open(problem.url, '_blank')
+      window.open(problem.url, '_blank', 'noopener,noreferrer')
+
       return [...prev, problem.lc.id]
     })
   }
