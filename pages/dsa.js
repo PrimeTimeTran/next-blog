@@ -387,7 +387,6 @@ export default function DSA() {
             >
               Shuffle 🎲 (⌥ + O)
             </button>
-
             <button
               type="button"
               className="mx-1 my-1 min-w-fit rounded bg-blue-700 px-2 py-1 text-xs text-white"
