@@ -309,17 +309,6 @@
   },
   {
     "id": 0,
-    "title": "Split Array Largest Sum",
-    "difficulty": "m",
-    "tags": ["Binary Search"],
-    "url": "https://leetcode.com/problems/split-array-largest-sum",
-    "lc": {
-      "id": 410,
-      "premium": false
-    }
-  },
-  {
-    "id": 0,
     "title": "Find K Closest Elements",
     "difficulty": "m",
     "tags": ["Binary Search"],
@@ -370,6 +359,17 @@
     "url": "https://leetcode.com/problems/median-of-two-sorted-arrays",
     "lc": {
       "id": 4,
+      "premium": false
+    }
+  },
+  {
+    "id": 0,
+    "title": "Split Array Largest Sum",
+    "difficulty": "h",
+    "tags": ["Binary Search"],
+    "url": "https://leetcode.com/problems/split-array-largest-sum",
+    "lc": {
+      "id": 410,
       "premium": false
     }
   },

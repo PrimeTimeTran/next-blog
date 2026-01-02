@@ -137,7 +137,7 @@ Pick a partition and check if it satisfies ordering constraints.
 1. **[Median of Two Sorted Arrays](https://leetcode.com/problems/median-of-two-sorted-arrays)**
    _The gold standard partition problem._
 
-2. **[K-th Smallest Element in Two Sorted Arrays](https://leetcode.com/problems/median-of-two-sorted-arrays)**
+2. **[K-th Smallest Element in Two Sorted Arrays](https://leetcode.com/problems/kth-smallest-product-of-two-sorted-arrays)**
    _(Generalized form of median)_
 
 3. **[Find Median from Data Stream](https://leetcode.com/problems/find-median-from-data-stream)**
@@ -145,9 +145,6 @@ Pick a partition and check if it satisfies ordering constraints.
 
 4. **[Split Two Sorted Arrays to Minimize Absolute Difference](https://leetcode.com/problems/partition-array-into-two-arrays-to-minimize-sum-difference)**
    _(Partition + balance constraints)_
-
-5. **[Median of Two Sorted Arrays – Follow-up: Unequal sizes](https://leetcode.com/problems/median-of-two-sorted-arrays)**
-   _(Same problem, harder constraint)_
 
 > ⚠️ This family is **small but deep** — mastery matters more than volume.
 
