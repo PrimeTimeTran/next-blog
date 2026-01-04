@@ -17,8 +17,8 @@
   - “Try all valid choices and remember the best.”
   - “What is the best answer using the first i elements?”
   - "number of ways", "all possible", "optimal substructure", "choose / don’t choose", "maximum profit, minimum cost"
-  - You construct the solution
   - No guessing
+  - You construct the solution
 
 ## One Liner
 

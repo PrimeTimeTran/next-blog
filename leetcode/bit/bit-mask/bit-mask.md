@@ -82,3 +82,7 @@ result &= 0xFFFFFFFF
 | 0xFFFF     | 1111111111111111                 | 65535      | 16 bits all ones           |
 | 0x55555555 | 01010101010101010101010101010101 | 1431655765 | 32-bit alternating 01 mask |
 | 0xFFFFFFFF | 11111111111111111111111111111111 | 4294967295 | 32-bit all ones            |
+
+## Cheat Sheet
+
+- n & (n - 1) removes the lowest set bit. Nothing else changes.
