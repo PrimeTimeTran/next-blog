@@ -375,17 +375,6 @@
   },
   {
     "id": 0,
-    "title": "Last Day Where You Can Still Cross",
-    "difficulty": "h",
-    "tags": ["Binary Search", "Graph"],
-    "url": "https://leetcode.com/problems/last-day-where-you-can-still-cross",
-    "lc": {
-      "id": 1970,
-      "premium": false
-    }
-  },
-  {
-    "id": 0,
     "title": "Find the Kth Smallest Product of Two Sorted Arrays",
     "difficulty": "h",
     "tags": ["Binary Search"],
@@ -1004,7 +993,7 @@
     "id": 0,
     "title": "Minimum Genetic Mutation",
     "difficulty": "m",
-    "tags": ["Graph"],
+    "tags": ["Graph", "Priority Queue"],
     "url": "https://leetcode.com/problems/minimum-genetic-mutation",
     "lc": {
       "id": 433,
@@ -1343,12 +1332,12 @@
   },
   {
     "id": 0,
-    "title": "Minimum Genetic Mutation",
-    "difficulty": "m",
-    "tags": ["Graph", "Priority Queue"],
-    "url": "https://leetcode.com/problems/minimum-genetic-mutation",
+    "title": "Last Day Where You Can Still Cross",
+    "difficulty": "h",
+    "tags": ["Binary Search", "Graph"],
+    "url": "https://leetcode.com/problems/last-day-where-you-can-still-cross",
     "lc": {
-      "id": 433,
+      "id": 1970,
       "premium": false
     }
   },
