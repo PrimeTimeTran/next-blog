@@ -1343,6 +1343,17 @@
   },
   {
     "id": 0,
+    "title": "Minimum Genetic Mutation",
+    "difficulty": "m",
+    "tags": ["Graph", "Priority Queue"],
+    "url": "https://leetcode.com/problems/minimum-genetic-mutation",
+    "lc": {
+      "id": 433,
+      "premium": false
+    }
+  },
+  {
+    "id": 0,
     "title": "Minimum Window Substring",
     "difficulty": "h",
     "tags": ["String", "Graph"],
@@ -1509,7 +1520,7 @@
   {
     "id": 0,
     "title": "Redundant Connection II",
-    "difficulty": "m",
+    "difficulty": "h",
     "tags": ["Graph", "Union Find"],
     "url": "https://leetcode.com/problems/redundant-connection-ii",
     "lc": {

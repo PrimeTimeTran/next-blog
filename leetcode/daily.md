@@ -79,3 +79,12 @@
   - https://leetcode.com/problems/median-of-two-sorted-arrays
 - Bit Manipulation
 - Binary Search
+- Graph
+  - Find Town Judge
+  - Keys and Rooms:
+  - Clone Graph
+  - Course Schedule I
+  - Course Schedule II
+- Union Find
+  - Redundant Connection:
+  - Number of Provinces:

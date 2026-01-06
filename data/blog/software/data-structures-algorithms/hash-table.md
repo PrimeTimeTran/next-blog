@@ -10,11 +10,10 @@ tags: ['data-structures-algorithms', 'python', 'question']
 class HashTable:
     def __init__(self, size=10):
         self.size = size
-        self.table = [[] for _ in range(self.size)]
+        self.table = [[] for _ in range(size)]
 
     def _hash(self, key):
         val = sum(ord(char) for char in str(key)) % self.size
-        print(val)
         return val
 
     def insert(self, key, value):
@@ -49,9 +48,8 @@ class HashTable:
         new_table = [[] for _ in range(new_size)]
         for bucket in self.table:
             for k, v in bucket:
-                index = hash(k) % new_size
+                index = self._hash(k) % new_size
                 new_table[index].append((k, v))
-
         self.table = new_table
         self.size = new_size
 
