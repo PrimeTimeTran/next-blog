@@ -1576,7 +1576,7 @@
     "id": 0,
     "title": "Find All People With Secret",
     "difficulty": "h",
-    "tags": ["Union Find"],
+    "tags": ["Graph", "Union Find"],
     "url": "https://leetcode.com/problems/find-all-people-with-secret",
     "lc": {
       "id": 2092,

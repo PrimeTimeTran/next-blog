@@ -163,3 +163,4 @@ Here’s the most natural **skill-building progression** after what you’ve don
 By the end of this progression, you’ll understand nearly all core DP patterns.
 
 https://leetcode.com/problems/number-of-smooth-descent-periods-of-a-stock
+https://leetcode.com/problems/max-dot-product-of-two-subsequences

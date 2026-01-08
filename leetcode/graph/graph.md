@@ -132,3 +132,16 @@ If you'd like, I can:
 
 - Add links from each phase back to problems in your `leetcode/` repo (if you have solution files).
 - Produce a 6–8 week study calendar mapping problems to days and difficulty targets.
+
+## Graph Derive
+
+https://leetcode.com/problems/perfect-squares
+https://leetcode.com/problems/integer-replacement
+https://leetcode.com/problems/minimum-genetic-mutation
+https://leetcode.com/problems/sliding-puzzle
+https://leetcode.com/problems/race-car
+https://leetcode.com/problems/shortest-path-to-get-all-keys
+https://leetcode.com/problems/frog-jump
+https://leetcode.com/problems/snakes-and-ladders
+https://leetcode.com/problems/word-ladder-ii
+https://leetcode.com/problems/minimum-moves-to-reach-target-with-rotations

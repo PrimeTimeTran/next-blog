@@ -45,6 +45,6 @@ class Solution:
             if not cur:
                 res.append(path)
             for i in range(len(cur)):
-                back(cur[:i]+cur[i+1:], path+[cur[i]])                
+                back(cur[:i]+cur[i+1:], path+[cur[i]])
             return res
         return back(nums, [])

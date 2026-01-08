@@ -31,3 +31,7 @@ https://leetcode.com/problems/longest-increasing-path-in-a-matrix
 https://leetcode.com/problems/alien-dictionary
 https://leetcode.com/problems/clone-graph
 https://leetcode.com/problems/critical-connections-in-a-network
+
+## DP
+
+https://leetcode.com/problems/max-dot-product-of-two-subsequences
