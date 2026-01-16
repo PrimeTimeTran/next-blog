@@ -10,3 +10,4 @@ class Solution:
             root.left  = dfs(lo, m - 1)
             return root
         return dfs(0, len(inorder) - 1)
+

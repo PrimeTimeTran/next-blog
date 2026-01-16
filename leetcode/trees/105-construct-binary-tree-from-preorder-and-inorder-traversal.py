@@ -25,4 +25,24 @@ class Solution:
         root.left = self.buildTree(preorder[1:m+1], inorder[:m])
         root.right = self.buildTree(preorder[m+1:], inorder[m+1:])
         return root
-        
+
+
+'''
+Much faster
+Time:   O(n)
+Space:  O(n)
+'''
+class Solution:
+    def buildTree(self, preorder, inorder):
+        idx = {v: i for i, v in enumerate(inorder)}
+        self.pre_i = 0
+        def helper(lo, hi):
+            if lo > hi: return None
+            root_val = preorder[self.pre_i]
+            self.pre_i += 1
+            root = TreeNode(root_val)
+            mid = idx[root_val]
+            root.lo = helper(lo, mid - 1)
+            root.hi = helper(mid + 1, hi)
+            return root
+        return helper(0, len(inorder) - 1)

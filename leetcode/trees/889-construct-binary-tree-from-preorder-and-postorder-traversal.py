@@ -12,3 +12,19 @@ class Solution:
                 stack[-1].right = n
             stack.append(n)
         return stack[0]
+
+
+class Solution:
+    def constructFromPrePost(self, pre: List[int], post: List[int]) -> Optional[TreeNode]:
+        self.pre = 0
+        idx = {v: i for i, v in enumerate(post)}
+        def dfs(lo, hi):
+            if lo > hi: return None
+            root = TreeNode(pre[self.pre])
+            self.pre += 1
+            if lo == hi: return root
+            m = idx[pre[self.pre]]
+            root.left = dfs(lo, m)
+            root.right = dfs(m + 1, hi - 1)
+            return root
+        return dfs(0, len(post) - 1)

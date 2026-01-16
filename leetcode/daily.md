@@ -88,3 +88,4 @@
 - Union Find
   - Redundant Connection:
   - Number of Provinces:
+- Binary Search
