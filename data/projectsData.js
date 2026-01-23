@@ -1,5 +1,12 @@
 const projectsData = [
   {
+    title: 'NextJS Design Kit',
+    description: 'NextJS template with design system including tokens for colors, fonts, etc.',
+    imgSrc: '/static/images/design-kit.png',
+    href: 'https://next-template-rho.vercel.app',
+    tech: ['ReactJS', 'NextJS', 'TailwindCSS', 'Material', 'Vercel'],
+  },
+  {
     title: 'StockVibes.AI',
     description:
       'StockVibes.ai is in the lab: giving retail traders institutional‑grade NLP, a transparent methodology, and built‑in guardrails.',
