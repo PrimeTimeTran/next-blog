@@ -1,5 +1,5 @@
 ---
-draft: false
+draft: true
 date: '2026-01-17'
 title: 'The Only Free Thing'
 summary: 'On ideology, irony, and what “free” actually means.'

@@ -1,5 +1,5 @@
 ---
-draft: false
+draft: true
 title: 'Designing an Exchange from First Principles — Part II: Understanding the Architecture'
 date: 2026-02-05
 author: 'Loi Tran'
