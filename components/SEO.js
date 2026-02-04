@@ -11,6 +11,8 @@ const CommonSEO = ({ title, description, ogType, ogImage, twImage, canonicalUrl,
       <title>{title}</title>
       <meta name="description" content={description} />
       <meta name="robots" content="follow, index" />
+      <meta name="author" content="Loi Tran" />
+      <meta property="article:author" content="Loi Tran" />
 
       {/* Canonical URL */}
       <link
