@@ -3,7 +3,7 @@ draft: true
 title: 'Designing an Exchange from First Principles — Part II: Understanding the Architecture'
 date: 2026-02-05
 author: 'Loi Tran'
-description: 'A walkthrough of our trading platform architecture, explaining how the web client, services, and data layers interact using Protobuf, Redis, and Postgres.'
+summary: 'A walkthrough of our trading platform architecture, explaining how the web client, services, and data layers interact using Protobuf, Redis, and Postgres.'
 series: 'Designing an Exchange from First Principles'
 part: 2
 tags:

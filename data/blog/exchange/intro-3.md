@@ -3,7 +3,7 @@ draft: true
 date: 2026-02-06
 author: 'Loi Tran'
 title: 'Designing an Exchange from First Principles — Part III: Public Security Challenge & Transparency'
-description: 'Exploring how transparency and verifiable security can build trust in trading platforms. We outline a public read-only demo and a challenge for ethical hackers to test our authorization system.'
+summary: 'Exploring how transparency and verifiable security can build trust in trading platforms. We outline a public read-only demo and a challenge for ethical hackers to test our authorization system.'
 series: 'Designing an Exchange from First Principles'
 part: 3
 tags:

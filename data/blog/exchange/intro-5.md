@@ -3,7 +3,7 @@ draft: true
 title: 'Designing an Exchange from First Principles — Part V: Transparency as a Product'
 date: 2026-02-05
 author: 'Loi Tran'
-description: 'Exploring how operational transparency, public metrics, and verifiable system performance can become a core feature of an exchange, building trust with users, investors, and the community.'
+summary: 'Exploring how operational transparency, public metrics, and verifiable system performance can become a core feature of an exchange, building trust with users, investors, and the community.'
 series: 'Designing an Exchange from First Principles'
 part: 5
 tags:

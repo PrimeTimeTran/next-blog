@@ -1,8 +1,8 @@
 ---
 draft: false
 date: '2026-02-05'
-title: 'Designing an Exchange from First Principles — Part I'
-summary: 'A first look at the motivations, constraints, and non-obvious decisions behind building exchange infrastructure without the fundraising playbook.'
+title: 'Open Exchanges: Lessons in Building, Sharing, and Growing Trust in Public — Part I'
+summary: 'Why we’re creating an exchange in public, the principles guiding our decisions, and how we focus on building real relationships with users, collaborators, and investors, not just code or pitch decks.'
 tags: ['finance']
 ---
 

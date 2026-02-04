@@ -3,7 +3,7 @@ draft: true
 title: 'Designing an Exchange from First Principles — Part IV: Building Credibility with Public Artifacts'
 date: 2026-02-05
 author: 'Loi Tran'
-description: 'Exploring how transparency, challenges, and high-signal public artifacts can generate trust, attract attention, and create inbound leads for founders.'
+summary: 'Exploring how transparency, challenges, and high-signal public artifacts can generate trust, attract attention, and create inbound leads for founders.'
 series: 'Designing an Exchange from First Principles'
 part: 4
 tags:
