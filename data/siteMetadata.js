@@ -6,7 +6,7 @@ const siteMetadata = {
     'Writing to improve myself and help others do the same. Sharing my thoughts on tech, finance, sports, and more.',
   language: 'en-us',
   theme: 'system', // system, dark or light
-  siteUrl: 'https://loi-tran-blog.netlify.appg',
+  siteUrl: 'https://loi-tran-blog.netlify.app',
   siteRepo: 'https://github.com/PrimeTimeTran/next-blog',
   siteLogo: '/static/images/logo.png',
   image: '/static/images/avatar.png',
