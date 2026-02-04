@@ -24,7 +24,11 @@ const CommonSEO = ({ title, description, ogType, ogImage, twImage, canonicalUrl,
       <meta property="og:site_name" content={siteMetadata.title} />
       <meta property="og:title" content={title} />
       <meta property="og:description" content={description} />
-      <meta property="og:url" content={`${siteMetadata.siteUrl}${router.asPath}`} />
+      <meta
+        name="description"
+        property="og:url"
+        content={`${siteMetadata.siteUrl}${router.asPath}`}
+      />
       <meta property="og:type" content={ogType || 'article'} />
 
       {/* Optional: add image dimensions for LinkedIn */}
