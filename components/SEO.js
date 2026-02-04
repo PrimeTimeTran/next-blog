@@ -1,33 +1,56 @@
+import React from 'react'
 import Head from 'next/head'
 import { useRouter } from 'next/router'
 import siteMetadata from '@/data/siteMetadata'
 
-const CommonSEO = ({ title, description, ogType, ogImage, twImage, canonicalUrl }) => {
+const CommonSEO = ({ title, description, ogType, ogImage, twImage, canonicalUrl, publishedAt }) => {
   const router = useRouter()
   return (
     <Head>
+      {/* Basic page info */}
       <title>{title}</title>
-      <meta name="robots" content="follow, index" />
       <meta name="description" content={description} />
-      <meta property="og:url" content={`${siteMetadata.siteUrl}${router.asPath}`} />
-      <meta property="og:type" content={ogType} />
-      <meta property="og:site_name" content={siteMetadata.title} />
-      <meta property="og:description" content={description} />
-      <meta property="og:title" content={title} />
-      {ogImage.constructor.name === 'Array' ? (
-        ogImage.map(({ url }) => <meta property="og:image" content={url} key={url} />)
-      ) : (
-        <meta property="og:image" content={ogImage} key={ogImage} />
-      )}
-      <meta name="twitter:card" content="summary_large_image" />
-      <meta name="twitter:site" content={siteMetadata.twitter} />
-      <meta name="twitter:title" content={title} />
-      <meta name="twitter:description" content={description} />
-      <meta name="twitter:image" content={twImage} />
+      <meta name="robots" content="follow, index" />
+
+      {/* Canonical URL */}
       <link
         rel="canonical"
         href={canonicalUrl ? canonicalUrl : `${siteMetadata.siteUrl}${router.asPath}`}
       />
+
+      {/* Open Graph */}
+      <meta property="og:site_name" content={siteMetadata.title} />
+      <meta property="og:title" content={title} />
+      <meta property="og:description" content={description} />
+      <meta property="og:url" content={`${siteMetadata.siteUrl}${router.asPath}`} />
+      <meta property="og:type" content={ogType || 'article'} />
+
+      {/* Optional: add image dimensions for LinkedIn */}
+      {ogImage.constructor.name === 'Array' ? (
+        ogImage.map(({ url, width = 1200, height = 630 }) => (
+          <React.Fragment key={url}>
+            <meta property="og:image" content={url} />
+            <meta property="og:image:width" content={width} />
+            <meta property="og:image:height" content={height} />
+          </React.Fragment>
+        ))
+      ) : (
+        <React.Fragment>
+          <meta property="og:image" content={ogImage} />
+          <meta property="og:image:width" content="1200" />
+          <meta property="og:image:height" content="630" />
+        </React.Fragment>
+      )}
+
+      {/* Article metadata (if applicable) */}
+      {publishedAt && <meta property="article:published_time" content={publishedAt} />}
+
+      {/* Twitter Card */}
+      <meta name="twitter:card" content="summary_large_image" />
+      {siteMetadata.twitter && <meta name="twitter:site" content={siteMetadata.twitter} />}
+      <meta name="twitter:title" content={title} />
+      <meta name="twitter:description" content={description} />
+      <meta name="twitter:image" content={twImage || ogImage} />
     </Head>
   )
 }
@@ -147,6 +170,7 @@ export const BlogSEO = ({
         ogImage={featuredImages}
         twImage={twImageUrl}
         canonicalUrl={canonicalUrl}
+        publishedAt={publishedAt}
       />
       <Head>
         {date && <meta property="article:published_time" content={publishedAt} />}
