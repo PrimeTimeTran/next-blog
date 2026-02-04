@@ -10,7 +10,7 @@ const siteMetadata = {
   siteRepo: 'https://github.com/PrimeTimeTran/next-blog',
   siteLogo: '/static/images/logo.png',
   image: '/static/images/avatar.png',
-  socialBanner: '/static/images/twitter-card.png',
+  socialBanner: '/static/images/25-10-02-dkng-cds.png',
   email: 'primetimetran@gmail.com',
   github: 'https://github.com/primeTimeTran',
   // twitter: 'https://twitter.com/PrimeTimeTrann',
