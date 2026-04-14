@@ -1,11 +1,8 @@
 ---
 draft: true
-title: 'Designing an Exchange from First Principles — Part II: Understanding the Architecture'
 date: 2026-02-05
-author: 'Loi Tran'
-summary: 'A walkthrough of our trading platform architecture, explaining how the web client, services, and data layers interact using Protobuf, Redis, and Postgres.'
-series: 'Designing an Exchange from First Principles'
-part: 2
+title: 'Open Exchanges: Lessons in Building, Sharing, and Growing Trust in Public — Part II'
+summary: 'A walkthrough of our trading platform architecture, showing how the web client, services, and data layers interact with Protobuf, Redis, and Postgres — and why these choices matter for transparency and reliability.'
 tags:
   [
     'architecture',
@@ -16,79 +13,108 @@ tags:
     'matching engine',
     'marketplace',
   ]
+series: 'Open Exchanges'
+part: 2
 ---
 
-# Overview
+# Open Exchanges: Understanding the Architecture
 
-<img src="/static/images/exchange-architecture-1.png" alt="Completed" />
+<img src="/static/images/exchange-architecture-1.png" alt="Exchange Architecture Overview" />
 
-Our trading platform consists of several core components that work together to provide fast, reliable, and consistent trading experiences. This diagram illustrates the relationships between the **Web Client**, **Marketplace**, **Matching Engine**, **Ledger**, **Redis**, **Postgres**, and **Protobuf**.
+Our exchange is designed to be **observable, reliable, and understandable**. Every component, every data flow, and every interaction is structured so that:
 
-Each component serves a distinct role, and the arrows in the diagram represent how data flows between them. The diamond boxes highlight the **key interactions** and responsibilities.
+- Users can trust what they see
+- Collaborators can reason about the system
+- Observers can learn from a real, functioning platform
+
+This diagram captures the key services: **Web Client**, **Marketplace**, **Matching Engine**, **Ledger**, **Redis**, **Postgres**, and the **Protobuf contracts** connecting them.
 
 ---
 
-# Components and Their Interactions
+# Core Components and Their Roles
 
 ### **Web Client**
 
-- Handles **authentication**, displays **marketplace listings**, and allows users to **place or cancel orders**.
-- Queries Ledger for **account balances and trade history**.
-- Interacts with services for real-time updates and ensures the UI reflects the latest market state.
+- Manages **authentication** and displays **market listings**.
+- Lets users **place or cancel orders** and view balances.
+- Queries the Ledger for account state and trade history.
+- Ensures **real-time updates** reflect actual market activity.
+
+The Web Client is the **face of transparency** — everything shown comes from observable, auditable sources.
 
 ### **Marketplace Service**
 
-- Provides **real-time and historical price data** across asset classes.
-- Supplies data at configurable **time intervals** (1 minute → 1 day) for specific symbols/assets.
-- Serves as the **authoritative source for market catalog and pricing**.
+- Provides **real-time and historical pricing** for all assets.
+- Configurable intervals (1 min → 1 day) ensure precise reporting.
+- Acts as the **authoritative source for catalog and pricing**.
+
+By exposing accurate and consistent data, Marketplace allows everyone to **see the same truth** about the market.
 
 ### **Matching Service**
 
-- Matches **buy and sell orders** according to rules and priorities.
-- Publishes **executed trades** to the Ledger and updates relevant accounts.
-- Queries Marketplace for **current prices or limits** when executing market or special order types.
+- Matches **buy and sell orders** following rules and priority.
+- Publishes executed trades to the Ledger, updating accounts.
+- References Marketplace prices for special order execution.
+
+The Matching Service demonstrates **correctness in action**, ensuring the system behaves predictably and transparently.
 
 ### **Ledger Service**
 
-- Records all **trades and transactions** to maintain accurate account balances.
-- Ensures **consistency, durability, and auditability** of the system.
-- Provides historical transaction data to services and clients.
+- Records all trades and account updates, ensuring **accuracy and durability**.
+- Provides a historical record for users and services.
+- Guarantees **consistency and auditability**, which is critical for trust.
 
-### **Protobuf**
+The Ledger is the **single source of truth for balances and transactions**.
 
-- Defines **structured messages and contracts** used for communication between all services.
-- Ensures **consistency and compatibility** across Marketplace, Matching, Ledger, and Web Client.
-- Serves as the **single source of truth for data formats**.
+### **Protobuf Contracts**
+
+- Define **structured messages** used by all services.
+- Ensure **compatibility and correctness** across Web Client, Marketplace, Matching, and Ledger.
+- Serve as the **canonical reference for communication**, reducing ambiguity.
 
 ### **Redis**
 
-- Provides **low-latency access** to hot/recent assets, session data, and transient results.
-- Services check Redis first for speed, falling back to Postgres for authoritative data.
-- Reduces load on Postgres while maintaining performance for frequent queries.
+- Low-latency access to hot/recent assets and session data.
+- Speeds up frequently accessed queries, reducing load on Postgres.
+- Supports **responsiveness without sacrificing truth**, because authoritative data remains in Postgres.
 
 ### **Postgres**
 
-- Acts as the **authoritative store** for trades, orders, listings, and account balances.
-- Services persist and query data here to ensure **accuracy and durability**.
-- Maintains **data integrity, transactional consistency, and historical records**.
+- The **authoritative store** for trades, orders, listings, and balances.
+- Maintains **integrity, durability, and historical records**.
+- Supports audits and system reasoning, enabling public observability.
 
 ---
 
-# Key Diamond Box Relationships
+# How the Pieces Interact
 
-- **Web Client → Marketplace**: Requests real-time pricing and catalog data for display and trading.
-- **Web Client → Matching**: Places/cancels orders and queries order status.
-- **Web Client → Ledger**: Fetches balances and trade history to reflect account state.
-- **Marketplace ↔ Matching**: Marketplace provides live prices; Matching queries for price validation and special order execution.
-- **Matching ↔ Ledger**: Executed trades are recorded, updating balances and ensuring durability.
-- **Protobuf → All Services**: Standardizes communication and data structures across the platform.
-- **Redis → All Services**: Caches hot/recent assets and sessions for low-latency access.
-- **Postgres → All Services**: Stores authoritative, persistent records for all transactions and state.
+- **Web Client → Marketplace**: Retrieves live prices and catalog for display.
+- **Web Client → Matching**: Places or cancels orders; monitors status.
+- **Web Client → Ledger**: Queries balances and trade history for transparency.
+- **Marketplace ↔ Matching**: Marketplace supplies live pricing; Matching validates against it.
+- **Matching ↔ Ledger**: Executed trades update balances and preserve durability.
+- **Protobuf → All Services**: Standardizes data and message formats across the platform.
+- **Redis → All Services**: Caches recent/hot data for speed.
+- **Postgres → All Services**: Stores authoritative, persistent records.
+
+Every arrow in the diagram represents **a contract you can observe and verify** — making the system intelligible to anyone curious enough to look.
 
 ---
 
-# Conclusion
+# Why This Architecture Matters
 
-This architecture ensures **speed, consistency, and reliability** by combining real-time services, caching, and persistent storage. The diamond boxes in the diagram make it easy to see **how services communicate** and what each component is responsible for.
+This design ensures:
 
-By structuring the platform this way, we can **scale efficiently**, support **multiple asset classes**, and provide users with an **accurate, responsive trading experience**.
+- **Speed**: Low-latency caching with Redis keeps interactions responsive.
+- **Reliability**: Matching, Ledger, and Marketplace work together consistently.
+- **Transparency**: Publicly observable flows allow users and collaborators to **verify behavior**.
+- **Scalability**: Clear separation of responsibilities enables efficient growth and multiple asset classes.
+
+By thinking about architecture **as a public signal**, we show that the system is **not just functional, but trustworthy**, and decisions are intentional and measurable.
+
+---
+
+# Closing Thought
+
+Open Exchanges aren’t just about trading; they’re about building systems **anyone can learn from, observe, and trust**.  
+Every component, every flow, and every decision is a statement: **this is how real, transparent infrastructure works**.

@@ -1,5 +1,8 @@
 ## Cheat Sheet — Algorithm Intuition
 
+Binary Search, Greedy, DP may sound similar because they often use keywords like min, max, smallest, largest, least, most.
+The way to determine which one is appropriate is...
+
 ### Binary Search
 
 - **Keywords / phrases that give it away:**
@@ -95,6 +98,20 @@
 - **Binary Search:** Guess & verify (monotonic).
 - **Greedy:** Decide once, move on.
 - **DP:** Explore choices, remember results.
+
+### CheatSheet
+
+DP is needed when:
+
+- The decision tree branches and merges repeatedly.
+
+Binary search is needed when:
+
+- The answer is hidden inside a monotonic property.
+
+Greedy is needed when:
+
+- The problem collapses once sorted or structured properly.
 
 ---
 

@@ -2,7 +2,7 @@
 
 Binary search problems are not about “midpoints”.
 
-It's not a single algorithm — it’s a **family of decision strategies** unified by monotonicity and invariants.
+It's not a single algorithm — it’s a **family of decision strategies** unified by **monotonicity** and **invariants**.
 
 All binary search problems fall into a small number of families,
 distinguished by _what question binary search is answering_.

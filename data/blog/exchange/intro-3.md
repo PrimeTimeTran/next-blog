@@ -2,148 +2,170 @@
 draft: true
 date: 2026-02-06
 author: 'Loi Tran'
-title: 'Designing an Exchange from First Principles — Part III: Public Security Challenge & Transparency'
-summary: 'Exploring how transparency and verifiable security can build trust in trading platforms. We outline a public read-only demo and a challenge for ethical hackers to test our authorization system.'
-series: 'Designing an Exchange from First Principles'
+title: 'Open Exchanges: Lessons in Building, Sharing, and Growing Trust in Public — Part III'
+summary: 'Exploring how public, verifiable security challenges and read-only system access can replace promises with proof — and why authorization integrity matters more than most people think.'
+series: 'Open Exchanges'
 part: 3
 tags:
   - security
   - transparency
-  - trading platform
   - authorization
-  - demo
-  - bug bounty
+  - trading platform
+  - public demo
+  - trust
 ---
 
-# A Public Challenge: Read‑Only Access, Real Systems, Real Guarantees
+# A Public Security Experiment: Read‑Only Access, Real Systems, Real Claims
 
-Most software products ask you to trust them.
+Most platforms ask for trust first.
 
-Trust the marketing page.
-Trust the roadmap.
-Trust the security claims.
+Trust the landing page.  
+Trust the roadmap.  
+Trust the audit badge.  
 Trust that the screenshots represent something real.
 
-In 2026, that feels… outdated.
+In 2026, that model feels increasingly hollow.
 
-This project takes a different approach.
+Open Exchanges take a different approach:
+**make claims observable, falsifiable, and boringly concrete.**
+
+This post explains one such experiment.
+
+---
 
 ## The premise
 
-I’m building an exchange‑like system: wallets, deposits, orders, withdrawals, dashboards — the kind of infrastructure people usually only show behind closed doors or in pitch decks.
+I’m building an exchange‑like system:  
+wallets, balances, orders, withdrawals, dashboards — the kind of infrastructure most teams only show privately or after the fact.
 
-Instead of hiding it, I plan to do something unusual:
+Instead of hiding it, I’m doing something deliberately uncomfortable:
 
-**Give the public authenticated, read‑only access to the system.**
+**Offering the public authenticated, read‑only access to the system.**
 
-Anyone can sign in.
-Anyone can inspect orders, balances, and activity.
-No write access. No admin privileges. No secrets exposed.
+Anyone can sign in.  
+Anyone can inspect real data.  
+No write access. No admin powers. No hand‑waving.
 
-And then comes the challenge.
+And alongside that access comes a simple, testable claim.
 
-> **If you can insert even one order record or one withdrawal record as a read‑only user, I will pay you.**
+> If a read‑only user can insert even a single order or withdrawal record, the system has failed.
 
-This is not a stunt. It’s a statement about how the system is built.
+If you can prove that failure, I’ll pay you.
 
-## What this challenge is (and isn’t)
+---
 
-This is **not** “hack my server.”
-It’s **not** an invitation to attack infrastructure.
-It’s **not** about denial‑of‑service, social engineering, or cloud exploits.
+## What this is — and what it isn’t
 
-This challenge is very specific:
+This is not “hack my servers.”  
+It’s not an invitation to attack infrastructure.  
+It’s not about denial‑of‑service, social engineering, or cloud exploits.
 
-- You authenticate as a user with a `viewer` role
-- You are allowed to see data, not modify it
-- You try to violate that rule
+This experiment is intentionally narrow:
+
+- You authenticate as a `viewer`
+- You are allowed to observe data
+- You attempt to violate that boundary
 
 If you can:
 
 - Escalate privileges
-- Exploit broken authorization
-- Abuse an unintended mutation endpoint
-- Insert a persisted order or withdrawal record
+- Abuse authorization logic
+- Trigger unintended mutations
+- Persist an order or withdrawal record
 
-Then the system failed, and I want to know.
+…then the system is wrong, and I want to know.
 
-That’s worth paying for.
+That kind of failure is valuable signal.
 
-## Why do this publicly?
+---
 
-Because most real failures don’t happen at the “Hollywood hacking” level.
+## Why authorization deserves this level of scrutiny
+
+Most serious security failures aren’t cinematic.
 
 They happen when:
 
-- Read‑only users can write
-- Users can see or affect data they shouldn’t
-- Authorization logic is assumed correct, not proven
+- “Read‑only” isn’t actually read‑only
+- Role checks are assumed, not enforced
+- Internal assumptions leak into public interfaces
+- Authorization logic grows organically instead of deliberately
 
-This challenge is about **authorization integrity**, one of the most common and most expensive classes of real-world bugs.
+Authorization bugs are boring, expensive, and common.
 
-By making the claim public, it becomes falsifiable.
+This challenge exists to surface them early — and publicly.
 
-Either:
+By making the claim visible, it becomes falsifiable:
 
-- Someone breaks it, and I learn immediately
-- Or no one does, and the claim stands — provisionally, honestly, without bravado
+- If someone breaks it, the system improves immediately
+- If no one does, the claim stands — provisionally, without bravado
 
-Both outcomes are useful.
+Both outcomes are honest.
 
-## What you’ll be able to see
+---
 
-Participants will be able to:
+## What participants will see
+
+With read‑only access, participants can:
 
 - Authenticate into a real dashboard
-- Inspect live (or testnet) activity
-- Observe how deposits become orders
-- See how balances and histories are tracked
-- Understand the system as it actually exists, not as a diagram
+- Inspect live or testnet activity
+- Observe how deposits flow into balances
+- See how orders and histories are recorded
+- Understand the system as it actually exists
 
-What you won’t be able to do:
+What they won’t be able to do:
 
 - Create, modify, or delete records
 - Trigger transactions
 - Access secrets, keys, or infrastructure
-- Affect other users or production systems
+- Affect other users or production environments
 
-All sensitive operations and credentials live server‑side. The client only receives data explicitly intended for display.
+Sensitive operations remain server‑side.  
+The client only receives data explicitly intended for observation.
 
-## Why transparency matters
+---
 
-Modern platforms ask for trust while offering opacity.
-Closed systems, vague assurances, and “security by policy” are the norm.
+## Why do this in public?
 
-This experiment explores a different direction:
+Because credibility is increasingly about **what can be verified**, not what can be claimed.
 
-- Transparency as a feature
-- Verifiability instead of promises
-- Confidence demonstrated through exposure, not secrecy
+Closed systems rely on reputation and persuasion.  
+Open systems rely on exposure and restraint.
 
-You don’t have to believe claims about robustness.
-You can try to break them.
+This experiment treats security as something you demonstrate — not something you assert.
 
-## About risk
+You don’t have to trust the explanation.  
+You can test the boundary yourself.
 
-Yes, there is risk in exposing real systems.
-That’s why this is scoped carefully:
+---
 
-- Read‑only roles
+## About risk and scope
+
+Yes, exposing real systems carries risk.
+
+That’s why the experiment is intentionally scoped:
+
+- Read‑only roles only
 - Isolated environments
 - Explicit rules of engagement
 - Clear success criteria
 
-The goal isn’t chaos. It’s signal.
+The goal isn’t spectacle.  
+It’s signal.
 
-## Why now?
+---
 
-Because building software isn’t the hard part anymore.
+## Why this matters now
+
+Building software is no longer rare.  
 Deploying it isn’t either.
-What’s hard is credibility.
 
-This is one attempt — not the only one — to earn it.
+What’s scarce is **credible execution in public** — systems that invite scrutiny without collapsing into theater.
 
-If you’re curious, skeptical, or confident you can break it:
+This is one attempt to earn trust the slow way:
+by letting people look, think, and test.
+
+If you’re curious, skeptical, or confident you can break it,
 you’ll be welcome to try.
 
-More details will follow when the challenge opens.
+Details will follow when access opens.
