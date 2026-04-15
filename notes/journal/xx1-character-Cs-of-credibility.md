@@ -1,6 +1,6 @@
 # The "4 Cs of Credibility"
 
-Refer to building trust, competence, and reliability through Consistency (doing what you say), Competence (demonstrating ability), Commitment (persevering), and Concern (respecting others).
+Refer to building trust, competence, and reliability through **Consistency** (doing what you say), **Competence** (demonstrating ability), **Commitment** (persevering), and **Concern** (respecting others).
 These pillars ensure trust, enabling effective leadership, networking, and professional relationship-building, acting as a foundation for business success.
 
 ## Core Components of Credibility
@@ -13,9 +13,12 @@ These pillars ensure trust, enabling effective leadership, networking, and profe
 
 **• Concern:** Showing genuine respect and care for others, including clients and colleagues.
 
-Alternative "4 Cores of Credibility" (Stephen M.R. Covey)
+**Key Takeaway:** You cannot have true credibility if one of these is missing—for instance,
+integrity without results is ineffective, while results without integrity are unsustainable.
 
-According to FranklinCovey, the four cores that build trust are:
+## "4 Cores of Credibility"
+
+According to Stephen Covey, the four cores that build trust are:
 
 **1. Integrity:** Being congruent, honest, and holding true to values.
 
@@ -25,7 +28,4 @@ According to FranklinCovey, the four cores that build trust are:
 
 **4. Results:** Delivering on promises and achieving desired outcomes.
 
-Other Variations
-
-• Networking (Dr. Ivan Misner): Competence, Credibility, Clarity, Connectivity.
-• Communication/Leadership (Tim Deuitch): Propriety (etiquette), Competence, Commonality, Intent.
+All four cores are necessary; a person with integrity but no results is not credible, nor is one with capabilities but no integrity.

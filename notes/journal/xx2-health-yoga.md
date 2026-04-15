@@ -24,7 +24,7 @@ How to Choose
 
 ### Routine 1
 
-1. Childs Pose
+1. Child's Pose
 2. Table top: Switching between cow and cat
 3. Downward Facing Dog
 4. Forward Fold
