@@ -1,6 +1,6 @@
 ## TAM, SAM, and SOM
 
-**TAM, SAM, and SOM** are metrics used to estimate market size and potential revenue.
+Metrics used to estimate market size and potential revenue.
 
 - **TAM (Total Addressable Market):** The total global demand for a product.
 - **SAM (Serviceable Available Market):** The segment of TAM within your geographical/technological reach.
