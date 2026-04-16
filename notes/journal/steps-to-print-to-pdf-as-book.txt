@@ -1,0 +1,6 @@
+# First
+
+1. Combine all files into a book.md with python combine.py
+2. Add/Update TOC with Markdown All in One
+3. Add/Update section numbers with Markdown All in One
+4. Update section numbers with Markdown All in One
