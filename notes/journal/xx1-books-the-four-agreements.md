@@ -1,4 +1,4 @@
-## The Four Agreements
+# The Four Agreements
 
 Don Miguel Ruiz outlines a code of conduct based on ancient Toltec wisdom designed to eliminate self-limiting beliefs and achieve personal freedom, happiness, and love.
 The four core principles are: 1) Be impeccable with your word, 2) Don't take anything personally, 3) Don't make assumptions, and 4) Always do your best.

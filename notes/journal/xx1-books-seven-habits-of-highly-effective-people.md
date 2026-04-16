@@ -1,6 +1,4 @@
-# The 7 Habits of Highly Effective People
-
-Book by Stephen Covey
+# 7 Habits of Highly Effective People
 
 A self-help book that outlines a principle-centered approach to personal and professional effectiveness, focusing on character ethics like fairness, integrity, and service. The seven habits are: Be Proactive, Begin with the End in Mind, Put First Things First, Think Win/Win, Seek First to Understand, Then to Be Understood, Synergize, and Sharpen the Saw, which guide individuals toward greater control, better relationships, and continuous self-improvement.
 

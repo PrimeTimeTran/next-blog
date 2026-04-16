@@ -1,10 +1,10 @@
-## Stoicism
+# Stoicism
 
 A practical Greek-Roman philosophy focusing on cultivating a virtuous character, emotional resilience,
 and rational thinking to achieve inner peace. Its core tenet, the "dichotomy of control," teaches that we
 should focus exclusively on what we can control—our own thoughts and actions—while accepting external events with equanimity.
 
-Key Aspects of Stoicism:
+## Key Themes
 
 • The Dichotomy of Control: You cannot control external events (weather, other people's actions, the past) but you can control your judgment and reaction to them.
 
@@ -14,7 +14,7 @@ Key Aspects of Stoicism:
 
 • Emotional Resilience: Stoicism helps reduce negative emotions like anger and anxiety by changing how we perceive events.
 
-### Actionable Practices:
+## Actionable Practices:
 
 • Voluntary Discomfort: Intentionally experiencing mild discomfort (like cold showers) to build resilience.
 
@@ -24,7 +24,7 @@ Key Aspects of Stoicism:
 
 Ultimately, Stoicism is designed for navigating life's challenges, focusing on doing your best while accepting the outcome, leading to lasting contentment.
 
-### Phrases
+## Phrases
 
 • Carpe Diem(seize the day)
 

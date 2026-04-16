@@ -1,4 +1,4 @@
-## Bushido
+# Bushido
 
 A samurai moral code concerning samurai attitudes, behavior, and lifestyle.
 Also used as an overarching term for all the codes, practices, philosophies, and principles of samurai culture.

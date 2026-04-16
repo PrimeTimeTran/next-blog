@@ -1,6 +1,4 @@
-# ⚛️ Atomic Habits — Cheatsheet
-
-## Core Idea
+# ⚛️ Atomic Habits
 
 Small habits, repeated consistently, compound into massive results over time.
 
@@ -8,7 +6,7 @@ Small habits, repeated consistently, compound into massive results over time.
 
 ---
 
-# 🔁 The Habit Loop
+## 🔁 The Habit Loop
 
 Cue → Craving → Response → Reward
 
@@ -19,9 +17,9 @@ Cue → Craving → Response → Reward
 
 ---
 
-# 🧱 The 4 Laws of Behavior Change
+## 🧱 The 4 Laws of Behavior Change
 
-## 1. Make It Obvious (Cue)
+### 1. Make It Obvious (Cue)
 
 - Design your environment to highlight good habits
 - Use **habit stacking**:
@@ -30,7 +28,7 @@ Cue → Craving → Response → Reward
 
 - Use visual cues (leave things in plain sight)
 
-### Invert:
+#### Invert:
 
 - Make bad habits **invisible**
 
@@ -39,13 +37,13 @@ Cue → Craving → Response → Reward
 
 ---
 
-## 2. Make It Attractive (Craving)
+### 2. Make It Attractive (Craving)
 
 - Pair habits with things you enjoy (**temptation bundling**)
 - Join environments where desired behavior is normal
 - Reframe habits as opportunities, not obligations
 
-### Invert:
+#### Invert:
 
 - Make bad habits **unattractive**
 
@@ -54,7 +52,7 @@ Cue → Craving → Response → Reward
 
 ---
 
-## 3. Make It Easy (Response)
+### 3. Make It Easy (Response)
 
 - Reduce friction (lower effort = higher consistency)
 - Use the **2-minute rule**:
@@ -63,7 +61,7 @@ Cue → Craving → Response → Reward
 
 - Focus on starting, not finishing
 
-### Invert:
+#### Invert:
 
 - Make bad habits **difficult**
 
@@ -72,13 +70,13 @@ Cue → Craving → Response → Reward
 
 ---
 
-## 4. Make It Satisfying (Reward)
+### 4. Make It Satisfying (Reward)
 
 - Immediate rewards reinforce habits
 - Track habits (visible progress = motivation)
 - Don’t break the chain
 
-### Invert:
+#### Invert:
 
 - Make bad habits **unsatisfying**
 
@@ -87,12 +85,12 @@ Cue → Craving → Response → Reward
 
 ---
 
-# 🧠 Identity-Based Habits
+## 🧠 Identity-Based Habits
 
 - Focus on **who you want to become**, not what you want to achieve
 - Every action is a “vote” for your identity
 
-### Loop:
+#### Loop:
 
 Identity → Habits → Results → Reinforces Identity
 
@@ -104,7 +102,7 @@ Example:
 
 ---
 
-# 📈 The Plateau of Latent Potential
+## 📈 The Plateau of Latent Potential
 
 - Progress is **delayed**, not linear
 - Breakthroughs happen after long periods of no visible results
@@ -113,7 +111,7 @@ Example:
 
 ---
 
-# ⚙️ Systems vs Goals
+## ⚙️ Systems vs Goals
 
 - **Goals** = direction
 - **Systems** = progress
@@ -126,27 +124,27 @@ Focus on:
 
 ---
 
-# 🧩 Advanced Tactics
+## 🧩 Advanced Tactics
 
-### Habit Stacking
+#### Habit Stacking
 
 - Anchor new habits to existing ones
 
-### Environment Design
+#### Environment Design
 
 - Shape surroundings to reduce reliance on willpower
 
-### Tracking
+#### Tracking
 
 - Use habit trackers to build streaks
 
-### Accountability
+#### Accountability
 
 - Partner, coach, or public commitment
 
 ---
 
-# 🚫 Common Mistakes
+## 🚫 Common Mistakes
 
 - Relying on motivation instead of systems
 - Trying to change too much at once
@@ -155,7 +153,7 @@ Focus on:
 
 ---
 
-# 🔑 Big Patterns
+## 🔑 Big Patterns
 
 - **Small > big** → consistency beats intensity
 - **Environment > willpower**

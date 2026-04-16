@@ -1,4 +1,4 @@
-# 🧠 How to Win Friends & Influence People — Cheatsheet
+# 🧠 How to Win Friends & Influence People
 
 ## Core Idea
 

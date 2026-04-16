@@ -1,9 +1,9 @@
-## 12 Rules for Life
+# 12 Rules for Life
 
 An Antidote to Chaos by Dr. Jordan Peterson provides actionable advice on taking personal responsibility, imposing order on chaos, and
 finding meaning through suffering. The rules emphasize individual accountability, truth-telling, self-care, and developing resilience to improve oneself and society.
 
-### The 12 Rules
+## The 12 Rules
 
 1. Stand up straight with your shoulders back: Adopt a posture of confidence and competence to change your mental state.
 
@@ -29,7 +29,7 @@ finding meaning through suffering. The rules emphasize individual accountability
 
 12. Pet a cat when you encounter one on the street: Appreciate small moments of joy and beauty even in times of intense suffering.
 
-Key Themes
+## Key Themes
 
 • Order vs. Chaos: The book balances the structure of order with the unpredictability of chaos.
 • Meaning over Happiness: Happiness is fleeting; searching for meaning offers a more robust framework for living.

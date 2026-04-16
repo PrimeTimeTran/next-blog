@@ -1,4 +1,4 @@
-## TAM, SAM, and SOM
+# TAM, SAM, and SOM
 
 Metrics used to estimate market size and potential revenue.
 
@@ -8,7 +8,7 @@ Metrics used to estimate market size and potential revenue.
 
 ---
 
-## Key Differences and Definitions
+# Key Differences and Definitions
 
 - **TAM (Total Addressable Market):**
   The "big picture" or maximum potential demand for a product or service. It represents the total revenue opportunity if 100% market share were achieved.
@@ -21,7 +21,7 @@ Metrics used to estimate market size and potential revenue.
 
 ---
 
-## Comparison Table
+# Comparison Table
 
 | Metric | Definition                    | Focus             | Question Answered                     |
 | ------ | ----------------------------- | ----------------- | ------------------------------------- |
@@ -31,7 +31,7 @@ Metrics used to estimate market size and potential revenue.
 
 ---
 
-## Why They Matter
+# Why They Matter
 
 1. **Investor Interest**
    Investors use these metrics to evaluate the viability, scalability, and growth potential of a startup.
@@ -44,7 +44,7 @@ Metrics used to estimate market size and potential revenue.
 
 ---
 
-## How to Calculate (Example)
+# How to Calculate (Example)
 
 - **TAM** = Total number of potential customers worldwide × Annual contract value
 - **SAM** = TAM × Percentage of market you can serve (due to language, geography, etc.)
@@ -52,7 +52,7 @@ Metrics used to estimate market size and potential revenue.
 
 ---
 
-## Example
+# Example
 
 If a company makes software for coffee shops:
 

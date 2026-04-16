@@ -1,4 +1,4 @@
-### Hip Program
+# Hip Program
 
 https://www.youtube.com/watch?v=D94ATnh603M
 
@@ -10,7 +10,7 @@ https://www.youtube.com/watch?v=D94ATnh603M
 
 **Hip Airplanes:** On one leg, rotate that hip. Support if needed.
 
-### Hip Mobility Exercises
+# Hip Mobility Exercises
 
 **Squat:**
 
@@ -18,7 +18,7 @@ https://www.youtube.com/watch?v=D94ATnh603M
 
 **Gorilla Standing:**
 
-### Resting
+# Resting
 
 https://www.youtube.com/watch?v=2Fmx-iHsKYg
 

@@ -1,18 +1,26 @@
 # Inspirational Quotes Cheatsheet
 
 "Be who you are and say what you feel, because those who mind don't matter, and those who matter don't mind." — Bernard M. Baruch
-"You've gotta dance like there's nobody watching, Love like you'll never be hurt, Sing like there's nobody listening, And live like it's heaven on earth." — William W. Purkey
-"Life is either a daring adventure or nothing at all." — Helen Keller
-"Your time is limited, so don't waste it living someone else's life." — Steve Jobs
-"The greatest glory in living lies not in never falling, but in rising every time we fall." — Nelson Mandela
-"The purpose of our lives is to be happy." — Dalai Lama
-"Life isn't about finding yourself. It's about creating yourself." — George Bernard Shaw
-"Do what you can, with what you have, where you are." — Theodore Roosevelt
-"The greatest wealth is to live content with little." — Plato
-"To be, or not to be, that is the question." — William Shakespeare
-"Hard times create strong men, strong men create good times, good times create weak men, and weak men create hard times"
 
-# Categories
+"You've gotta dance like there's nobody watching, Love like you'll never be hurt, Sing like there's nobody listening, And live like it's heaven on earth." — William W. Purkey
+
+"Life is either a daring adventure or nothing at all." — Helen Keller
+
+"Your time is limited, so don't waste it living someone else's life." — Steve Jobs
+
+"The greatest glory in living lies not in never falling, but in rising every time we fall." — Nelson Mandela
+
+"The purpose of our lives is to be happy." — Dalai Lama
+
+"Life isn't about finding yourself. It's about creating yourself." — George Bernard Shaw
+
+"Do what you can, with what you have, where you are." — Theodore Roosevelt
+
+"The greatest wealth is to live content with little." — Plato
+
+"To be, or not to be, that is the question." — William Shakespeare
+
+"Hard times create strong men, strong men create good times, good times create weak men, and weak men create hard times"
 
 ## Mindset
 
@@ -123,7 +131,3 @@
 > “Don’t let yesterday take up too much of today.” — Will Rogers
 
 > “Quality is not an act, it is a habit.” — Aristotle
-
----
-
-If you want, I can turn this into a **printable PDF**, or compress it into a **1-page high-signal version** for quick daily review.

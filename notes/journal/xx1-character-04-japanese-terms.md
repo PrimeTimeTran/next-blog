@@ -1,6 +1,6 @@
-## Japanese Concepts
+# Japanese Concepts
 
-### **Ikigai (生き甲斐)** → **Life / Meaning**
+## **Ikigai (生き甲斐)** → **Life / Meaning**
 
 - Belongs with:
 
@@ -17,7 +17,7 @@
 
 ---
 
-### **Kaizen (改善)** → **Work / Discipline / Growth**
+## **Kaizen (改善)** → **Work / Discipline / Growth**
 
 - Belongs with:
 
@@ -36,7 +36,7 @@
 
 ---
 
-### **Wabi-Sabi (侘寂)** → **Aesthetics / Beauty** _(with philosophical spillover)_
+## **Wabi-Sabi (侘寂)** → **Aesthetics / Beauty** _(with philosophical spillover)_
 
 - Belongs with:
 
@@ -54,7 +54,7 @@
   - accepting flaws
   - letting things be unfinished
 
-### Mindset / Philosophy
+## Mindset / Philosophy
 
 - **Shoshin (初心)** — “Beginner’s mind”
   Approaching things without ego or preconceptions, even if you’re experienced.
@@ -70,7 +70,7 @@
 
 ---
 
-### Aesthetics / Beauty
+## Aesthetics / Beauty
 
 - **Mono no aware (物の哀れ)** — Awareness of impermanence
   That bittersweet feeling when something beautiful is fleeting.
@@ -86,7 +86,7 @@
 
 ---
 
-### Work / Discipline / Growth
+## Work / Discipline / Growth
 
 - **Gaman (我慢)** — Enduring the difficult with patience
   Not glamorous, but very culturally real.
@@ -102,7 +102,7 @@
 
 ---
 
-### Social / Relational
+## Social / Relational
 
 - **Wa (和)** — Harmony
   Often prioritized over individual expression.
@@ -115,7 +115,7 @@
 
 ---
 
-### Life / Meaning
+## Life / Meaning
 
 - **Kintsugi (金継ぎ)** — Repairing broken pottery with gold
   Flaws become part of the story.

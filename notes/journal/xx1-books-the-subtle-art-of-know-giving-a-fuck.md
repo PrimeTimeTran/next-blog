@@ -1,6 +1,4 @@
-# 📘 *The Subtle Art of Not Giving a F*ck\* — Key Points
-
-## 🧠 Core Idea
+# 📘 The Subtle Art of Not Giving a F\*ck
 
 You always give a f\*ck about something—so choose carefully what actually deserves your attention and energy.
 

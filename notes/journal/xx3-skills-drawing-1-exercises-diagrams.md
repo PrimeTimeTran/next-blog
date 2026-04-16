@@ -1,4 +1,4 @@
-## A Simple Weekly Practice Loop
+# A Simple Weekly Practice Loop
 
 Keep it tight and intentional:
 
@@ -32,7 +32,7 @@ Keep it tight and intentional:
 
 ---
 
-## Goal Context
+# Goal Context
 
 If your aim is to **diagram ideas clearly** (inventions, systems, circuits, product concepts), your training should be different from traditional art.
 
@@ -44,9 +44,9 @@ You’re essentially training to think like a mix of:
 
 ---
 
-## The 5 Core Skills for Diagram Drawing
+# The 5 Core Skills for Diagram Drawing
 
-### 1. 3D Form & Perspective (Priority #1)
+## 1. 3D Form & Perspective (Priority #1)
 
 Focus on:
 
@@ -61,7 +61,7 @@ Everything mechanical = combinations of simple forms
 
 ---
 
-### 2. Object Breakdown (Reverse Engineering)
+## 2. Object Breakdown (Reverse Engineering)
 
 Instead of just drawing objects—**analyze them**.
 
@@ -77,7 +77,7 @@ Practice:
 
 ---
 
-### 3. Exploded Views & Diagrams
+## 3. Exploded Views & Diagrams
 
 This is **critical** for your goal.
 
@@ -95,7 +95,7 @@ Think:
 
 ---
 
-### 4. Line Clarity & Visual Hierarchy
+## 4. Line Clarity & Visual Hierarchy
 
 This separates messy sketches from clear diagrams.
 
@@ -111,7 +111,7 @@ Make someone understand your idea instantly
 
 ---
 
-### 5. Annotation & Labels
+## 5. Annotation & Labels
 
 Diagrams = communication tools.
 
@@ -126,7 +126,7 @@ Even simple sketches become powerful when labeled.
 
 ---
 
-## What You Don’t Need Much (for This Goal)
+# What You Don’t Need Much (for This Goal)
 
 You can de-prioritize:
 
@@ -138,22 +138,22 @@ These don’t contribute much to diagram clarity.
 
 ---
 
-## High-Value Practice Topics
+# High-Value Practice Topics
 
-### Mechanical Objects
+## Mechanical Objects
 
 - Tools (drills, screwdrivers)
 - Electronics (keyboards, routers, PC parts)
 - Everyday items (bottles, hinges, locks)
 
-### Simple Machines
+## Simple Machines
 
 - Gears
 - Levers
 - Springs
 - Hinges
 
-### Systems
+## Systems
 
 - Water flow
 - Electrical routing
@@ -161,7 +161,7 @@ These don’t contribute much to diagram clarity.
 
 ---
 
-## The Skill You’re Actually Building
+# The Skill You’re Actually Building
 
 Not just drawing.
 
@@ -179,7 +179,7 @@ This is valuable in:
 
 ---
 
-## High-Impact Daily Exercise
+# High-Impact Daily Exercise
 
 Do this daily:
 

@@ -1,4 +1,4 @@
-The **2-Minute Rule** from James Clear is about making habits easy to start.
+# The **2-Minute Rule** from James Clear is about making habits easy to start.
 
 ### Core Idea
 

@@ -1,4 +1,4 @@
-# 🧠 Entrepreneurial Operating System (EOS) — Cheat Sheet
+# 🧠 Entrepreneurial Operating System (EOS)
 
 ## 🔑 Core Idea
 

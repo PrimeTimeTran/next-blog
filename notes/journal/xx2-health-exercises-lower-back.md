@@ -1,4 +1,4 @@
-## Lower Back Exercises
+# Lower Back Exercises
 
 **Plank:**
 
@@ -14,6 +14,6 @@
 
 **Superman Bird Dog:** (alternating listing opposite hand/foot)
 
-## Gym
+# Gym
 
 Reverse Hyper Extension(on bench)

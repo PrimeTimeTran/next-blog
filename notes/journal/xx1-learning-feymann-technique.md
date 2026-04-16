@@ -1,4 +1,4 @@
-## Feynman Technique
+# Feynman Technique
 
 A four-step mental model for learning or reviewing any subject by explaining it in simple, intuitive language as if teaching a child. Developed by Nobel Prize-winning physicist Richard Feynman, it identifies knowledge gaps by forcing the learner to simplify complex jargon, ultimately strengthening comprehension and long-term recall.
 
@@ -13,7 +13,7 @@ The Four Steps of the Feynman Technique
 
 4. Organize and Refine: Create a final, coherent explanation. Review it, and if possible, read it aloud to ensure it flows logically.
 
-### Key Benefits
+## Key Benefits
 
 **• Faster Learning: **Focuses on understanding core principles rather than memorization.
 
