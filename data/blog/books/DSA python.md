@@ -3,7 +3,7 @@ draft: false
 date: 2023-02-25
 title: 'Data Structures & Algorithms in Python'
 summary: 'Overview of a new book I got.'
-tags: ['data-structures-algorithms']
+tags: ['data-structures-algorithms', 'book-review']
 ---
 
 # Introduction

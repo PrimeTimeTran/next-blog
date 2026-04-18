@@ -22,11 +22,11 @@ Solution Types:
         “I want the answer for this problem — what subproblems do I need to solve?”
         - Recursion drives computation.
         - We solve subproblems and cache the results for subsequent use.
-    Bottom Up Tabulation
+    -  Bottom Up Tabulation
 
         “I will precompute all subproblems in the correct order.”
         - No Recursion
         - No memo dictionary
-    O(1) Optimized
+    - O(1) Optimized
 
         - Carry values forward for use in the next iteration.
