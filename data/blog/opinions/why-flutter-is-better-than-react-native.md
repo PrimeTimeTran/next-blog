@@ -2,8 +2,11 @@
 draft: false
 date: 2023-08-06
 title: 'Opinion: Flutter vs React Native: Why I choose Flutter before React Native'
-summary: 'Reasons why Flutter is my framework of choice over React Native for developing cross-platform apps on desktop, mobile, & web.'
-tags: ['opinion', 'flutter', 'react native']
+summary: Reasons why Flutter is my framework of choice over React Native for developing cross-platform apps on desktop, mobile, & web.
+tags:
+  - opinion
+  - flutter
+  - react native
 ---
 
 # Introduction

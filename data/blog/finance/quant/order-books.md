@@ -6,30 +6,98 @@ summary: 'Discover how order books work in financial markets, how they match buy
 tags: ['finance', 'order book', 'market structure']
 ---
 
-# Introduction
+## **Core Idea**
 
-An order book is the list of orders (manual or electronic) that a trading venue (in particular stock exchanges) uses to record the interest of buyers and sellers in a particular financial instrument. A matching engine uses the book to determine which orders can be fully or partially executed.
+An **order book** is a real-time ledger of buy and sell interest for a financial asset. It is used by a **matching engine** to determine how trades are executed between buyers and sellers.
 
-<BTCOrderBook />
+An order book contains:
 
-## Price Levels
+- **Buy orders (bids)** → what buyers are willing to pay
+- **Sell orders (asks)** → what sellers are willing to accept
 
-When several orders contain the same price, they are referred to as being on a price level. Practically, this means that if a bid comes at that price level, all the sell orders on that price level could potentially fulfill that.
+A trade happens when:
 
-## Crossed Book
+> a bid price matches or exceeds an ask price
 
-When the order book is part of a matching engine, orders are matched as the interest of buyers and sellers can be satisfied. When there are orders where the bid price is equal or higher than the lowest ask, those orders can be immediately fulfilled and will not be part of the open orders book. If this situation remains, due to an error or a condition of the market, the order book is said to be crossed.
+---
 
-## Top of the Book
+## **Price Levels**
 
-The highest bid and the lowest ask are referred to as the top of the book. They are interesting because they signal the prevalent market and the bid and ask price that would be needed to get an order fulfilled. The difference between the highest bid and the lowest ask is called the bid–ask spread.
+Orders at the same price are grouped into a **price level**.
 
-## Book Depth
+At a given price:
 
-The book depth refers simply to the number of price levels available at a particular time in the book. Sometimes the book is represented to a fixed depth, and orders beyond that depth are ignored or rejected, and in other cases the book can contain unlimited levels.
+- multiple buy/sell orders can exist
+- they are executed in priority order (usually time priority)
 
-## Multi Specialist Book
+---
 
-In most practical applications, an order book contains bid and offer for one security, contract or good, with a specialist matching orders for the specific item.
+## **Top of the Book**
 
-# Conclusion
+The most important prices in the market:
+
+- **Highest bid** (best buy price)
+- **Lowest ask** (best sell price)
+
+$\text{Bid-Ask Spread} = \text{Lowest Ask} - \text{Highest Bid}$
+
+Meaning:
+
+> The spread measures liquidity and trading cost
+
+---
+
+## **Crossed Book**
+
+A book is **crossed** when:
+
+- highest bid ≥ lowest ask
+
+This implies:
+
+> trades can execute immediately (orders overlap in price)
+
+Normally:
+
+- this condition is temporary in efficient markets
+
+---
+
+## **Book Depth**
+
+**Depth = how many price levels exist**
+
+- shallow book → low liquidity, higher volatility
+- deep book → high liquidity, more stable pricing
+
+---
+
+## **Matching Engine**
+
+The system that processes orders:
+
+- matches buyers and sellers
+- prioritizes price first, then time
+- determines trade execution
+
+---
+
+## **Market Interpretation**
+
+Order books reveal:
+
+- supply and demand at different price levels
+- liquidity concentration
+- short-term price pressure
+
+---
+
+## **Key Insight**
+
+> Price is not just a single number—it is the result of competing layered orders across a structured market.
+
+---
+
+## **One-line Summary**
+
+An order book is a dynamic list of buy and sell orders organized by price levels, where a matching engine executes trades based on price-time priority, revealing real-time market supply and demand.

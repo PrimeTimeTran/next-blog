@@ -38,7 +38,3 @@ The order I've done things(more or less):
 
 - And most recently, I've been forcing myself to write documentation on not only my local machine but on a blog as an exercise in developing my writing skills. I hope to one day be/feel qualified to write a book on software development so I figured a blog is a great way to start. If you'd like to read more about things such as seeding a DB and more then have a look.
   https://lnkd.in/e_fB2nP6
-
-Thanks for your time reading and stay safe~!
-
-#net, #sql, #flutter, #azure, #git, #csharp, #dart, #entityframework , #reactnative, #programmer, #programming, #coder, #dev, #developer, #learning, #softwaredevelopment, #softwareengineering, #softwareengineer, #engineer, #finance, #tradingstrategies, #crypto, #btc, #stocks, #stockmarket, #options, #optionstrading, #optionstrader, #database, #data

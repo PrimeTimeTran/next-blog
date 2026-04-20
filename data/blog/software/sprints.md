@@ -1,9 +1,13 @@
 ---
 draft: false
 date: 2016-08-05
-title: 'Sprints in Agile Development'
-summary: 'A practical guide to defining, running, and improving sprints in agile software teams.'
-tags: ['software development', 'teamwork', 'process', 'agile', 'sprints']
+title: Sprints in Agile Development
+summary: A practical guide to defining, running, and improving sprints in agile software teams.
+tags:
+  - teamwork
+  - process
+  - agile
+  - sprints
 ---
 
 | Area to Define               | Description                                                                                 | Typical Options / Considerations                        | Choice                    |

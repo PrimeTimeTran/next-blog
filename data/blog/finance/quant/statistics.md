@@ -94,3 +94,7 @@ Quantitative finance relies heavily on statistics to analyze data, model risk, a
 # Conclusion
 
 Mastering these statistics topics will provide a strong foundation for quantitative finance. Each area builds skills for analyzing financial data, modeling uncertainty, and making informed investment decisions.
+
+# Related
+
+- [[kb/atom/math/statistics|Statistics: Atom]]
