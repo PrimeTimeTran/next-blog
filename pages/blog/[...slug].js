@@ -43,28 +43,23 @@ export async function getStaticProps({ params }) {
 export default function Blog({ post, authorDetails, prev, next }) {
   const { mdxSource, toc, frontMatter } = post
 
+  if (frontMatter.draft === true) {
+    return (
+      <div className="mt-24 text-center">
+        <PageTitle>Under Construction 🚧</PageTitle>
+      </div>
+    )
+  }
+
   return (
-    <>
-      {frontMatter.draft !== true ? (
-        <MDXLayoutRenderer
-          layout={frontMatter.layout || DEFAULT_LAYOUT}
-          toc={toc}
-          mdxSource={mdxSource}
-          frontMatter={frontMatter}
-          authorDetails={authorDetails}
-          prev={prev}
-          next={next}
-        />
-      ) : (
-        <div className="mt-24 text-center">
-          <PageTitle>
-            Under Construction{' '}
-            <span role="img" aria-label="roadwork sign">
-              🚧
-            </span>
-          </PageTitle>
-        </div>
-      )}
-    </>
+    <MDXLayoutRenderer
+      layout={frontMatter.layout || DEFAULT_LAYOUT}
+      mdxSource={mdxSource}
+      frontMatter={frontMatter}
+      authorDetails={authorDetails}
+      prev={prev}
+      next={next}
+      toc={toc}
+    />
   )
 }

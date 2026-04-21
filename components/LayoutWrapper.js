@@ -1,56 +1,55 @@
-import siteMetadata from '@/data/siteMetadata'
-import headerNavLinks from '@/data/headerNavLinks'
-import Logo from '@/data/logo.svg'
 import Link from './Link'
-import SectionContainer from './SectionContainer'
 import Footer from './Footer'
+import Logo from '@/data/logo.svg'
 import MobileNav from './MobileNav'
 import ThemeSwitch from './ThemeSwitch'
 import { route, useRouter } from 'next/router'
+import SectionContainer from './SectionContainer'
+import TableOfContents from './TOC'
+
+import siteMetadata from '@/data/siteMetadata'
+import headerNavLinks from '@/data/headerNavLinks'
 
 const LayoutWrapper = ({ children }) => {
-  route?.events?.on('routeChangeComplete', () => {})
-  const currentRoute = useRouter().asPath
+  const router = useRouter()
+  const currentRoute = router.asPath
+
+  const isHome = currentRoute === '/'
+
   return (
-    <SectionContainer isSnippets={currentRoute === '/snippets'}>
-      <div className="flex h-screen flex-col justify-between">
-        <header className="flex items-center justify-between py-10">
-          <div>
-            <Link href="/" aria-label={siteMetadata.headerTitle}>
-              <div className="flex items-center justify-between">
-                <div className="mr-3">
-                  <Logo />
-                </div>
-                {typeof siteMetadata.headerTitle === 'string' ? (
-                  <div className="hidden h-6 text-2xl font-semibold sm:block">
-                    {siteMetadata.headerTitle}
-                  </div>
-                ) : (
-                  siteMetadata.headerTitle
-                )}
-              </div>
-            </Link>
-          </div>
-          <div className="flex items-center text-base leading-5">
-            <div className="hidden sm:block">
-              {headerNavLinks.map((link) => (
-                <Link
-                  key={link.title}
-                  href={link.href}
-                  className="p-1 font-medium text-gray-900 dark:text-gray-100 sm:p-4"
-                >
-                  {link.title}
-                </Link>
-              ))}
+    <div className="flex min-h-screen flex-col">
+      {/* HEADER */}
+      <header className="flex shrink-0 items-center justify-between px-4 py-10 sm:px-6 lg:px-8">
+        <Link href="/" aria-label={siteMetadata.headerTitle}>
+          <div className="flex items-center">
+            <Logo />
+            <div className="ml-3 hidden text-2xl font-semibold sm:block">
+              {siteMetadata.headerTitle}
             </div>
-            <ThemeSwitch />
-            <MobileNav />
           </div>
-        </header>
-        <main className="mb-auto">{children}</main>
+        </Link>
+
+        <div className="flex items-center gap-4">
+          <div className="hidden sm:flex">
+            {headerNavLinks.map((link) => (
+              <Link key={link.title} href={link.href} className="p-4 font-medium">
+                {link.title}
+              </Link>
+            ))}
+          </div>
+          <ThemeSwitch />
+          <MobileNav />
+        </div>
+      </header>
+
+      <main className="mb-auto">
+        <SectionContainer isSnippets={isHome}>{children}</SectionContainer>
+      </main>
+
+      <footer className="shrink-0">
         <Footer />
-      </div>
-    </SectionContainer>
+      </footer>
+    </div>
   )
 }
 

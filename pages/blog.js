@@ -1,8 +1,9 @@
+import { useEffect } from 'react'
 import { getAllFilesFrontMatter } from '@/lib/mdx'
 import siteMetadata from '@/data/siteMetadata'
 import ListLayout from '@/layouts/ListLayout'
 import { PageSEO } from '@/components/SEO'
-import { useEffect } from 'react'
+import SectionContainer from '@/components/SectionContainer'
 
 import { pageview } from '../lib/ga'
 
@@ -25,7 +26,7 @@ export default function Blog({ posts, initialDisplayPosts, pagination }) {
   }, [])
 
   return (
-    <>
+    <SectionContainer>
       <PageSEO title={`Blog - ${siteMetadata.author}`} description={siteMetadata.description} />
       <ListLayout
         posts={posts}
@@ -33,6 +34,6 @@ export default function Blog({ posts, initialDisplayPosts, pagination }) {
         pagination={pagination}
         title="All Posts"
       />
-    </>
+    </SectionContainer>
   )
 }

@@ -6,6 +6,7 @@ import siteMetadata from '@/data/siteMetadata'
 import formatDate from '@/lib/utils/formatDate'
 import { getAllFilesFrontMatter } from '@/lib/mdx'
 import NewsletterForm from '@/components/NewsletterForm'
+import SectionContainer from '@/components/SectionContainer'
 import {
   dsa,
   tech,
@@ -65,9 +66,9 @@ export default function Home({ posts }) {
     setFilteredPosts(results)
   }
   return (
-    <>
+    <SectionContainer>
       <PageSEO title={siteMetadata.title} description={siteMetadata.description} />
-      <div className="">
+      <div>
         <div className="space-y-2 pt-6 pb-8 md:space-y-5">
           <h1 className="text-3xl font-extrabold leading-9 tracking-tight text-gray-900 dark:text-gray-100 sm:text-4xl sm:leading-10 md:text-6xl md:leading-14">
             Latest
@@ -162,6 +163,6 @@ export default function Home({ posts }) {
           <NewsletterForm />
         </div>
       )}
-    </>
+    </SectionContainer>
   )
 }
