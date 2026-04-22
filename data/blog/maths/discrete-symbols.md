@@ -1,6 +1,6 @@
 ---
 draft: false
-date: '2025-12-20'
+date: '2015-12-20'
 title: 'Essential Discrete Mathematics Symbols Reference'
 summary: 'A comprehensive cheatsheet covering mathematical symbols used in discrete mathematics, including set theory operations (union, intersection, subsets), logic symbols (quantifiers, implications), and notations for number sets (naturals, integers, rationals).'
 tags: ['math', 'discrete']
