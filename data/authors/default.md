@@ -2,54 +2,28 @@
 name: Loi Tran
 avatar: /static/images/avatar.png
 occupation: Solution Architect
-company: OSSU
 email: primetimetran@gmail.com
 # twitter: https://twitter.com/PrimeTimeTrann
 linkedin: https://www.linkedin.com/in/primetimetran
 github: https://github.com/primetimetran
 ---
 
-# Loi Tran is developer, trader & aspiring polymath
+# Loi Tran
 
-I craft webpages 💻 and mobile 📱 apps.
+I’m a developer building full-stack systems across web, mobile, and cloud—and I write about the ideas behind them.
 
-I'm an [AWS Certified Cloud Practitioner](https://www.credly.com/badges/c6fa2310-f2ec-4bf3-a43b-0009a3718ef0)
-while at the same time being confident in my knowledge of [GCP](https://cloud.google.com) from Cloud [Trigger](https://cloud.google.com/build/docs/triggers), [Build](https://cloud.google.com/build), & [Run](https://cloud.google.com/run?hl=en).
+I started coding when Rails and Backbone were popular, building small projects while learning how systems fit together. Over time, that curiosity expanded beyond code into how software, businesses, and markets operate under constraints and feedback loops.
 
-I've worked in [finance](https://1long.vn/), [booking/ticketing](https://vexere.com/),
-[telemedicine](https://scanlabmr.com/), [education](https://www.coderschool.vn/en)
-& more.
+That path led me into full-time software engineering, where I focus on turning ideas into working systems that solve real problems and create measurable impact.
 
 ---
 
-In this time I've become proficient with the following languages, tools, and technologies.
-
-<h3>Languages & Tools</h3>
-
-HTML, CSS, JS, ES6, Ruby, Python, Dart, Java, Go, Linux, Git, Bash.
-
-<h3>Design Frameworks</h3>
-
-Material, Bootstrap, Vuetify, Tailwind, SCSS, SASS, LESS.
-
-<h3>Databases</h3>
-
-SQL, MySQL, SQL Server, MongoDB, Dynamo DB, ORMs including Active Record, Sequelize, Mongoose, Entity Framework.
-
-<h3>Frameworks</h3>
-
-Ruby on Rails, NodeJS, ReactJS, VueJS, React Native, Flutter, Gatsby, Next, Jekyll, WordPress, GraphQL, GRPC
-
-<h3>CI/CD & Cloud Infrastructure</h3>
-
-AWS, GCP, Firebase, Google Analytics, Heroku, Netlify, Docker, Github Actions & more.
+I’m interested in systems thinking across software, business, and markets—how structure, incentives, and feedback shape outcomes.
 
 ---
 
-The proudest moment in my professional career was working with Facebook at
-[CoderSchool](https://www.coderschool.vn/en) to teach hundreds of students mobile
-development with [React Native](https://reactnative.dev/) in their
-[developer circles program](https://developers.facebook.com/developercircles/).
+One of the most meaningful parts of my career was teaching mobile development at CoderSchool through Facebook’s Developer Circles program. I helped hundreds of students ship their first React Native apps and transition into professional engineering roles.
 
-When I'm not working I enjoy learning about personal finance & growth, as well as
-entrepreneurship.
+---
+
+Outside of work, I enjoy exercise, cooking, and travel.
