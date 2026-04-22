@@ -86,7 +86,7 @@ export default function PostLayout({ toc, frontMatter, authorDetails, next, prev
           <main className="min-w-0 flex-1">
             <article>
               <div className="xl:divide-y xl:divide-gray-200 xl:dark:divide-gray-700">
-                <header className="pt-6 xl:pb-6">
+                <header className="sticky top-0 z-10 bg-white pt-6 dark:bg-gray-900 xl:pb-6">
                   <div className="space-y-1 text-center">
                     <dl className="space-y-10">
                       <div>
