@@ -2,9 +2,8 @@ import { useRouter } from 'next/router'
 
 export default function SectionContainer({ isSnippets = false, children }) {
   const router = useRouter()
-
-  const isBlog = router.asPath.split('?')[0].startsWith('/blog/')
-
+  const path = router.asPath.split(/[?#]/)[0]
+  const isBlog = path === '/blog' || (path.startsWith('/blog/') && !path.startsWith('/blog/page/'))
   return (
     <div
       className={

@@ -5,7 +5,6 @@ import MobileNav from './MobileNav'
 import ThemeSwitch from './ThemeSwitch'
 import { route, useRouter } from 'next/router'
 import SectionContainer from './SectionContainer'
-import TableOfContents from './TOC'
 
 import siteMetadata from '@/data/siteMetadata'
 import headerNavLinks from '@/data/headerNavLinks'
@@ -31,11 +30,25 @@ const LayoutWrapper = ({ children }) => {
 
         <div className="flex items-center gap-4">
           <div className="hidden sm:flex">
-            {headerNavLinks.map((link) => (
-              <Link key={link.title} href={link.href} className="p-4 font-medium">
-                {link.title}
-              </Link>
-            ))}
+            <div className="hidden sm:flex">
+              {headerNavLinks.map((link) => {
+                const isActive = currentRoute === link.href
+
+                return (
+                  <Link
+                    key={link.title}
+                    href={link.href}
+                    className={`p-4 font-medium ${
+                      isActive
+                        ? 'text-green-600 dark:text-green-400'
+                        : 'text-gray-700 hover:text-blue-500 dark:text-gray-300'
+                    }`}
+                  >
+                    {link.title}
+                  </Link>
+                )
+              })}
+            </div>
           </div>
           <ThemeSwitch />
           <MobileNav />

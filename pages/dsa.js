@@ -1,8 +1,10 @@
 import React, { useEffect, useState, useRef } from 'react'
-import { listPareto, listBlind75, neetCode150, neetCode250 } from '../lib/problems/lists.js'
-import allProblems from '../lib/problems/problems-all.json'
+import siteMetadata from '@/data/siteMetadata'
+import SectionContainer from '@/components/SectionContainer'
 import solutions from '../lib/problems/solutions.js'
 import SolutionSnippet from '../lib/dsa/solution.js'
+import allProblems from '../lib/problems/problems-all.json'
+import { listPareto, listBlind75, neetCode150, neetCode250 } from '../lib/problems/lists.js'
 
 const problemCategories = [
   'String',
@@ -227,51 +229,13 @@ export default function DSA() {
   }
 
   return (
-    <div className="flex flex-col gap-2 p-4">
+    <SectionContainer>
       <div>
-        <div className="flex flex-col">
-          <div className="flex items-center justify-between">
-            <span className="text-3xl font-bold">Categories</span>
-            <div>
-              <button
-                type="button"
-                className={
-                  'mx-1 my-1 min-w-fit rounded bg-yellow-700 px-2 py-1 text-xs text-white ' +
-                  (selectedTags.length === 0 ? ' invisible' : '')
-                }
-                onClick={() => setSelectedTags([])}
-              >
-                Clear Tags
-              </button>
-              <button
-                type="button"
-                className={`mx-1 my-1 min-w-fit rounded px-2 py-1 text-xs text-white ${
-                  selectedPremium === 'all' ? 'bg-green-600' : 'bg-gray-700'
-                }`}
-                onClick={() => togglePremium('all')}
-              >
-                All
-              </button>
-              <button
-                type="button"
-                className={`mx-1 my-1 min-w-fit rounded px-2 py-1 text-xs text-white ${
-                  selectedPremium === 'free' ? 'bg-green-600' : 'bg-gray-700'
-                }`}
-                onClick={() => togglePremium('free')}
-              >
-                Free 🆓
-              </button>
-              <button
-                type="button"
-                className={`mx-1 my-1 min-w-fit rounded px-2 py-1 text-xs text-white ${
-                  selectedPremium === 'premium' ? 'bg-green-600' : 'bg-gray-700'
-                }`}
-                onClick={() => togglePremium('premium')}
-              >
-                Premium 💵
-              </button>
-            </div>
-          </div>
+        <div className="flex flex-col space-y-2 pt-6 pb-8 md:space-y-5">
+          <h1 className="text-3xl font-extrabold leading-9 tracking-tight text-gray-900 dark:text-gray-100 sm:text-4xl sm:leading-10 md:text-6xl md:leading-14">
+            Data Structures & Algorithms
+          </h1>
+          <p className="text-lg leading-7 text-gray-500 dark:text-gray-400">{siteMetadata.dsa}</p>
           <div className="flex w-full flex-row flex-wrap ">
             {orderedTags.map((tag) => (
               <div key={tag} className="space-x-6 space-y-2">
@@ -292,6 +256,46 @@ export default function DSA() {
             ))}
           </div>
         </div>
+      </div>
+      <hr className="border-gray-600" />
+      <div className="flex-end flex w-full justify-end">
+        <button
+          type="button"
+          className={
+            'mx-1 my-1 min-w-fit rounded bg-yellow-700 px-2 py-1 text-xs text-white ' +
+            (selectedTags.length === 0 ? ' invisible' : '')
+          }
+          onClick={() => setSelectedTags([])}
+        >
+          Clear Tags
+        </button>
+        <button
+          type="button"
+          className={`mx-1 my-1 min-w-fit rounded px-2 py-1 text-xs text-white ${
+            selectedPremium === 'all' ? 'bg-green-600' : 'bg-gray-700'
+          }`}
+          onClick={() => togglePremium('all')}
+        >
+          All
+        </button>
+        <button
+          type="button"
+          className={`mx-1 my-1 min-w-fit rounded px-2 py-1 text-xs text-white ${
+            selectedPremium === 'free' ? 'bg-green-600' : 'bg-gray-700'
+          }`}
+          onClick={() => togglePremium('free')}
+        >
+          Free 🆓
+        </button>
+        <button
+          type="button"
+          className={`mx-1 my-1 min-w-fit rounded px-2 py-1 text-xs text-white ${
+            selectedPremium === 'premium' ? 'bg-green-600' : 'bg-gray-700'
+          }`}
+          onClick={() => togglePremium('premium')}
+        >
+          Premium 💵
+        </button>
       </div>
       <hr className="border-gray-600" />
       <div className="flex flex-row justify-between">
@@ -482,6 +486,6 @@ export default function DSA() {
             return <SolutionSnippet solution={solution} key={idx} />
           })}
       </div>
-    </div>
+    </SectionContainer>
   )
 }
