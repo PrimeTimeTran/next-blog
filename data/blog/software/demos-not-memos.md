@@ -3,7 +3,7 @@ draft: false
 date: 2016-08-06
 title: 'Demos Not Memos: Better Communication in Software Teams'
 summary: 'Why showing is better than telling—how demos improve collaboration, bug reports, and feedback in software development.'
-tags: ['software development', 'communication', 'teamwork']
+tags: ['software-engineering', 'communication', 'teamwork']
 ---
 
 # Introduction

@@ -3,7 +3,7 @@ draft: false
 date: 2016-08-05
 title: 'Bike Shedding in Software Development'
 summary: 'Learn what bike shedding means, why it happens in teams, and how to avoid wasting time on trivial issues.'
-tags: ['software-development', 'communication', 'teamwork']
+tags: ['software-engineering', 'communication', 'teamwork']
 ---
 
 # Introduction
