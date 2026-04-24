@@ -1,8 +1,5 @@
-import fs from 'fs'
-import { formatSlug, getAllFilesFrontMatter, getFileBySlug, getFiles, generateRss } from '@/lib/mdx'
+import { getFiles, formatSlug } from '@/lib/mdx'
 import { MDXLayoutRenderer } from '@/components/MDXComponents'
-
-import KBLayout from '@/layouts/KBLayout'
 
 export async function getStaticPaths() {
   const kbFiles = getFiles('kb')
@@ -18,9 +15,22 @@ export async function getStaticPaths() {
 }
 
 export async function getStaticProps({ params }) {
+  const { getAllFilesFrontMatter, getFileBySlug, buildKbTree, formatSlug } = await import(
+    '@/lib/mdx'
+  )
+
   const slug = params.slug.join('/')
 
   const allKB = await getAllFilesFrontMatter('kb')
+
+  console.log('ALL KB:', allKB)
+
+  const sidebarData = buildKbTree(allKB)
+
+  function serialize(obj) {
+    return JSON.parse(JSON.stringify(obj))
+  }
+
   const index = allKB.findIndex((item) => formatSlug(item.slug) === slug)
 
   const prev = allKB[index + 1] || null
@@ -39,10 +49,10 @@ export async function getStaticProps({ params }) {
 
   // Optional: generate RSS for KB (usually not needed)
   // You can remove this if KB isn't blog-like
-  if (allKB.length > 0) {
-    const rss = generateRss(allKB)
-    fs.writeFileSync('./public/kb-feed.xml', rss)
-  }
+  // if (allKB.length > 0) {
+  //   const rss = generateRss(allKB)
+  //   fs.writeFileSync('./public/kb-feed.xml', rss)
+  // }
 
   return {
     props: {
@@ -50,11 +60,12 @@ export async function getStaticProps({ params }) {
       authorDetails,
       prev,
       next,
+      sidebarData: serialize(sidebarData), // Ensure it's serializable
     },
   }
 }
 
-export default function Page({ kbItem, ...rest }) {
+export default function Page({ kbItem, sidebarData, ...rest }) {
   console.log('KB Item Front Matter:', kbItem)
   const layout = kbItem.frontMatter.layout || 'KBLayout'
 
@@ -62,6 +73,7 @@ export default function Page({ kbItem, ...rest }) {
     <MDXLayoutRenderer
       layout={layout}
       mdxSource={kbItem.mdxSource}
+      sidebarData={sidebarData}
       toc={kbItem.toc}
       {...kbItem.frontMatter}
       {...rest}

@@ -4,7 +4,7 @@ function TOCItem({ item, activeId }) {
   const isActive = activeId === item.url
 
   return (
-    <div style={{ marginLeft: `${(item.depth - 2) * 12}px` }}>
+    <div style={{ marginLeft: `${(item.depth - 2) * 24}px` }}>
       <a
         href={item.url}
         className={
