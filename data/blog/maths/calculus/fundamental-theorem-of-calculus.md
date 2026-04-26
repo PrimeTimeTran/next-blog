@@ -11,7 +11,7 @@ tags:
 
 # 📘 Fundamental Theorem of Calculus
 
-The Fundamental Theorem of Calculus (FTC) connects **derivatives** and **integrals**, showing they are inverse processes.
+The Fundamental Theorem of Calculus (FTC) connects [[derivatives]] and [[integrals]], showing they are inverse processes.
 
 ---
 
@@ -25,15 +25,22 @@ The Fundamental Theorem of Calculus (FTC) connects **derivatives** and **integra
 
 ---
 
-# 📊 FTC Part 1 (Derivative of an Integral)
+# FTC Part 1 (Derivative of an Integral)
+
+## Setup
+
+Let $f$ be continuous on $[a, b]$.
+
+Define the accumulation function:
+![[fundamental-theorem-of-calculus-1]]
+
+---
+
+## Result
 
 If:
 
-- $$ f \text{ is continuous on } [a,b] $$
-- define
-  $$
-  F(x) = \int_a^x f(t)\,dt
-  $$
+- $F(x) = \int_a^x f(t)\,dt$
 
 Then:
 
@@ -43,16 +50,33 @@ $$
 
 ---
 
-## 🧠 Meaning
+## Meaning
 
-- The derivative of an accumulation function gives back the original function
-- Integration builds a function; differentiation extracts the rate of change
+- Differentiation reverses accumulation
+- The derivative of an accumulated area function returns the original function
 
 ---
 
-# 📊 FTC Part 2 (Evaluation of Definite Integrals)
+## Interpretation
 
-If $$ f $$ is continuous on $$ [a,b] $$ and $$ F $$ is any antiderivative of $$ f $$, then:
+- Integration builds a function from a rate of change
+- Differentiation retrieves the original rate from accumulated change
+
+---
+
+## Big Idea
+
+> Derivatives and integrals are inverse processes: accumulation and instantaneous change undo each other
+
+# FTC Part 2 (Evaluation of Definite Integrals)
+
+If $f$ is continuous on $[a,b]$ and $F$ is any antiderivative of $f$ (so $F'(x) = f(x)$), then:
+
+![[fundamental-theorem-of-calculus-2]]
+
+---
+
+## Result
 
 $$
 \int_a^b f(x)\,dx = F(b) - F(a)
@@ -60,27 +84,45 @@ $$
 
 ---
 
-## 🧠 Meaning
+## Meaning
 
-A definite integral can be computed using any antiderivative:
+- A definite integral can be computed using any antiderivative of the function
+- Integration over an interval reduces to evaluating a function at endpoints
 
-- find $$ F(x) $$ such that $$ F'(x) = f(x) $$
-- evaluate at bounds
-- subtract
+---
+
+## Procedure
+
+- Find $F(x)$ such that $F'(x) = f(x)$
+- Evaluate $F$ at the upper and lower bounds
+- Subtract:
+
+$$
+F(b) - F(a)
+$$
+
+---
+
+## Interpretation
+
+- Integration measures total accumulation over $[a,b]$
+- Antiderivatives convert continuous accumulation into endpoint differences
+
+---
+
+## Big Idea
+
+> Definite integrals compute total change by turning accumulation into endpoint evaluation via antiderivatives
 
 ---
 
 # 🔁 Unified Form
 
-$$
-\int_a^b f(x)\,dx = F(x)\big|_a^b = F(b) - F(a)
-$$
+![[fundamental-theorem-of-calculus-2-evaluation-form]]
 
 ---
 
-# 🧭 Leibniz Interpretation
-
-FTC expresses a deep relationship:
+## 🧭 Core Identity (Leibniz Interpretation)
 
 $$
 \frac{d}{dx}\left(\int_a^x f(t)\,dt\right) = f(x)
@@ -88,17 +130,17 @@ $$
 
 ---
 
-## 🧠 Key Insight
+## 🧠 Meaning
 
-- Integration accumulates area from $$ a $$ to $$ x $$
-- Differentiation removes the accumulation, recovering the original function
+- Integration accumulates a quantity from $a$ to $x$
+- Differentiation removes that accumulation, recovering the original function
 
 ---
 
-# 🔗 Notation Clarification
+## 🔗 Notation Clarification
 
-- $$ f(x) $$: original function (integrand)
-- $$ F(x) $$: antiderivative of $$ f(x) $$
+- $f(x)$: original function (integrand)
+- $F(x)$: antiderivative of $f(x)$
 
 Relationship:
 
@@ -108,56 +150,55 @@ $$
 
 ---
 
-# 🧠 Intuition
+## 🧠 Intuition
 
-Think of it as:
+- Derivative → measures local change (zoom in)
+- Integral → measures total accumulation (sum up)
 
-- **Derivative → zooms in (local change)**
-- **Integral → sums up (global accumulation)**
+FTC connects them:
 
-FTC says:
-
-> Zooming out after summing brings you back to where you started.
+> Differentiating an accumulated quantity returns the original rate of change.
 
 ---
 
-# 📌 Why it matters
+## 📌 Procedure for Evaluation
 
-FTC is the foundation of:
-
-- computing definite integrals efficiently
-- physics (work, energy, motion)
-- probability (continuous distributions)
-- all applied calculus
-
----
-
-# 🧩 Common Usage Pattern
-
-To evaluate:
+To compute:
 
 $$
 \int_a^b f(x)\,dx
 $$
 
-Steps:
+1. Find an antiderivative $F(x)$ such that $F'(x) = f(x)$
+2. Evaluate $F(b)$
+3. Evaluate $F(a)$
+4. Subtract:
+   $$
+   F(b) - F(a)
+   $$
 
-1. Find antiderivative $$ F(x) $$
-2. Compute $$ F(b) $$
-3. Compute $$ F(a) $$
-4. Subtract
+---
+
+# 📌 Why It Matters
+
+FTC is the foundation of:
+
+- efficient computation of definite integrals
+- physics (work, energy, motion)
+- probability (continuous distributions)
+- modeling accumulation in applied math
 
 ---
 
 # ⚠️ Common Misconception
 
-FTC does **not** say:
+FTC does not mean:
 
-- “integral = area only”
+- “integrals are just area”
 
 Instead:
 
-> It computes net accumulation of a rate of change.
+> A definite integral measures net accumulation of a rate of change over an interval.
 
 ---
 
@@ -166,10 +207,5 @@ Instead:
 The Fundamental Theorem of Calculus states that:
 
 - differentiation and integration are inverse operations
+- accumulation and instantaneous change are two sides of the same process
 - definite integrals can be evaluated using antiderivatives
-- accumulation and instantaneous change are two views of the same process
-
-# Related
-
-- [derivatives|Derivatives]
-- [integrals|Integrals]

@@ -70,7 +70,7 @@ export default function PostLayout({ toc, frontMatter, authorDetails, next, prev
   }, [])
 
   return (
-    <div className="flex w-full w-screen justify-between">
+    <div className="flex w-screen justify-between">
       <BlogSEO
         url={`${siteMetadata.siteUrl}/blog/${slug}`}
         authorDetails={authorDetails}
@@ -79,151 +79,139 @@ export default function PostLayout({ toc, frontMatter, authorDetails, next, prev
 
       <ScrollTopAndComment />
 
-      {/* PAGE CONTAINER */}
-      <div className="flex w-full">
-        {/* MAIN CONTENT */}
-        <div className="mx-auto w-full px-4 sm:px-6 xl:max-w-7xl xl:px-0">
-          <main className="min-w-0 flex-1">
-            <article>
-              <div className="xl:divide-y xl:divide-gray-200 xl:dark:divide-gray-700">
-                <header className="sticky top-0 z-10 bg-white pt-6 dark:bg-gray-900 xl:pb-6">
-                  <div className="space-y-1 text-center">
-                    <dl className="space-y-10">
-                      <div>
-                        <dt className="sr-only">Published on</dt>
-                        <dd className="text-base font-medium leading-6 text-gray-500 dark:text-gray-400">
-                          <time dateTime={date}>
-                            {new Date(date).toLocaleDateString(
-                              siteMetadata.locale,
-                              postDateTemplate
+      <div className="min-h-screen">
+        <div className="mx-auto grid max-w-7xl grid-cols-1 xl:grid-cols-[16rem_1fr_16rem]">
+          {/* LEFT SIDEBAR */}
+          <aside className="hidden border-r border-gray-200 dark:border-gray-800 xl:sticky xl:top-0 xl:block xl:h-screen xl:overflow-y-auto">
+            <div className="p-6">
+              {' '}
+              {/* AUTHORS (unchanged behavior, just moved into rail) */}
+              <dl className="pb-10 pt-6 xl:border-b xl:border-gray-200 xl:pt-11 xl:dark:border-gray-700">
+                <dt className="sr-only">Authors</dt>
+                <dd>
+                  <ul className="flex justify-center space-x-8 sm:space-x-12 xl:block xl:space-x-0 xl:space-y-8">
+                    {authorDetails.map((author) => (
+                      <li className="flex items-center space-x-2" key={author.name}>
+                        {author.avatar && (
+                          <Image
+                            src={author.avatar}
+                            width="38px"
+                            height="38px"
+                            alt="avatar"
+                            className="h-10 w-10 rounded-full"
+                          />
+                        )}
+                        <dl className="whitespace-nowrap text-sm font-medium leading-5">
+                          <dd className="text-gray-900 dark:text-gray-100">{author.name}</dd>
+                          <dd>
+                            {author.twitter && (
+                              <Link
+                                href={author.twitter}
+                                className="text-primary-500 hover:text-primary-600 dark:hover:text-primary-400"
+                              >
+                                {author.twitter.replace('https://twitter.com/', '@')}
+                              </Link>
                             )}
-                          </time>
-                        </dd>
+                          </dd>
+                        </dl>
+                      </li>
+                    ))}
+                  </ul>
+                </dd>
+              </dl>
+              {/* FOOTER */}
+              <footer className="text-sm font-medium leading-5">
+                <div className="divide-gray-200 dark:divide-gray-700 xl:divide-y">
+                  {tags && (
+                    <div className="xl:py-8">
+                      <h2 className="text-xs uppercase tracking-wide text-gray-500 dark:text-gray-400">
+                        Tags
+                      </h2>
+                      <div className="flex flex-wrap">
+                        {tags.map((tag) => (
+                          <div key={tag}>
+                            <span className="-mr-3">
+                              <Tag text={tag} />
+                            </span>
+                            ,{' '}
+                          </div>
+                        ))}
                       </div>
-                    </dl>
-                    <div>
-                      <PageTitle>{title}</PageTitle>
                     </div>
-                  </div>
-                </header>
-                <div
-                  className="items-start divide-y divide-gray-200 pb-8 dark:divide-gray-700 xl:grid xl:grid-cols-4 xl:gap-x-6 xl:divide-y-0"
-                  style={{ gridTemplateRows: 'auto 1fr' }}
-                >
-                  {/* LEFT RAIL (shared sticky container) */}
-                  <div className="space-y-8 xl:sticky xl:top-24 xl:col-span-1 xl:row-span-2">
-                    {/* AUTHORS (unchanged behavior, just moved into rail) */}
-                    <dl className="pt-6 pb-10 xl:border-b xl:border-gray-200 xl:pt-11 xl:dark:border-gray-700">
-                      <dt className="sr-only">Authors</dt>
-                      <dd>
-                        <ul className="flex justify-center space-x-8 sm:space-x-12 xl:block xl:space-x-0 xl:space-y-8">
-                          {authorDetails.map((author) => (
-                            <li className="flex items-center space-x-2" key={author.name}>
-                              {author.avatar && (
-                                <Image
-                                  src={author.avatar}
-                                  width="38px"
-                                  height="38px"
-                                  alt="avatar"
-                                  className="h-10 w-10 rounded-full"
-                                />
-                              )}
-                              <dl className="whitespace-nowrap text-sm font-medium leading-5">
-                                <dd className="text-gray-900 dark:text-gray-100">{author.name}</dd>
-                                <dd>
-                                  {author.twitter && (
-                                    <Link
-                                      href={author.twitter}
-                                      className="text-primary-500 hover:text-primary-600 dark:hover:text-primary-400"
-                                    >
-                                      {author.twitter.replace('https://twitter.com/', '@')}
-                                    </Link>
-                                  )}
-                                </dd>
-                              </dl>
-                            </li>
-                          ))}
-                        </ul>
-                      </dd>
-                    </dl>
+                  )}
 
-                    {/* FOOTER (unchanged behavior) */}
-                    <footer className="text-sm font-medium leading-5">
-                      <div className="divide-gray-200 dark:divide-gray-700 xl:divide-y">
-                        {tags && (
-                          <div className="py-4 xl:py-8">
-                            <h2 className="text-xs uppercase tracking-wide text-gray-500 dark:text-gray-400">
-                              Tags
-                            </h2>
-                            <div className="flex flex-wrap">
-                              {tags.map((tag) => (
-                                <Tag key={tag} text={tag} />
-                              ))}
-                            </div>
-                          </div>
-                        )}
-
-                        {(next || prev) && (
-                          <div className="flex justify-between py-4 xl:block xl:space-y-8 xl:py-8">
-                            {prev && (
-                              <div>
-                                <h2 className="text-xs uppercase tracking-wide text-gray-500 dark:text-gray-400">
-                                  Previous Article
-                                </h2>
-                                <Link href={`/blog/${prev.slug}`} className="text-primary-500">
-                                  {prev.title}
-                                </Link>
-                              </div>
-                            )}
-
-                            {next && (
-                              <div>
-                                <h2 className="text-xs uppercase tracking-wide text-gray-500 dark:text-gray-400">
-                                  Next Article
-                                </h2>
-                                <Link href={`/blog/${next.slug}`} className="text-primary-500">
-                                  {next.title}
-                                </Link>
-                              </div>
-                            )}
-                          </div>
-                        )}
-
-                        <div className="pt-4 xl:pt-8">
-                          <Link href="/blog" className="text-primary-500">
-                            ← Back to the blog
+                  {(next || prev) && (
+                    <div className="flex justify-between xl:block xl:space-y-8 xl:py-8">
+                      {prev && (
+                        <div>
+                          <h2 className="text-xs uppercase tracking-wide text-gray-500 dark:text-gray-400">
+                            Previous Article
+                          </h2>
+                          <Link href={`/blog/${prev.slug}`} className="text-primary-500">
+                            {prev.title}
                           </Link>
                         </div>
-                      </div>
-                    </footer>
-                  </div>
+                      )}
 
-                  {/* MAIN CONTENT (unchanged) */}
-                  <div className="divide-y divide-gray-200 dark:divide-gray-700 xl:col-span-3 xl:pb-0">
-                    <div className="prose max-w-none pt-10 pb-8 dark:prose-dark">{children}</div>
-
-                    <div className="pt-6 pb-6 text-sm text-gray-700 dark:text-gray-300">
-                      <Link href={discussUrl(slug)} rel="nofollow">
-                        Discuss on Twitter
-                      </Link>
-                      {' • '}
-                      <Link href={editUrl(fileName)}>View on GitHub</Link>
+                      {next && (
+                        <div>
+                          <h2 className="text-xs uppercase tracking-wide text-gray-500 dark:text-gray-400">
+                            Next Article
+                          </h2>
+                          <Link href={`/blog/${next.slug}`} className="text-primary-500">
+                            {next.title}
+                          </Link>
+                        </div>
+                      )}
                     </div>
+                  )}
 
-                    <Comments frontMatter={frontMatter} />
+                  <div className="pt-4 xl:pt-8">
+                    <Link href="/blog" className="text-primary-500">
+                      ← Back to the blog
+                    </Link>
                   </div>
                 </div>
+              </footer>
+            </div>
+          </aside>
+          {/* CENTER/MAIN */}
+          <main className="min-w-0">
+            <header className="sticky top-0 z-10 border-b border-gray-200 bg-white p-2 dark:border-gray-800 dark:bg-gray-900">
+              <PageTitle>{title}</PageTitle>
+              <dl>
+                <dd className="text-right text-base font-medium leading-6 text-gray-500 dark:text-gray-400">
+                  <time dateTime={date}>
+                    {new Date(date).toLocaleDateString(siteMetadata.locale, postDateTemplate)}
+                  </time>
+                </dd>
+              </dl>
+            </header>
+
+            {/* PAGE CONTENT */}
+            <article className="p-4">
+              <div className="prose max-w-none dark:prose-dark">{children}</div>
+
+              {/* PAGE CONTENT FOOTER */}
+              <div className="pb-6 pt-6 text-sm text-gray-700 dark:text-gray-300">
+                <Link href={discussUrl(slug)} rel="nofollow">
+                  Discuss on Twitter
+                </Link>
+                {' • '}
+                <Link href={editUrl(fileName)}>View on GitHub</Link>
               </div>
+
+              <Comments frontMatter={frontMatter} />
             </article>
           </main>
-        </div>
 
-        {/* TOC SIDEBAR */}
-        <aside className="mr-32 hidden w-64 shrink-0 lg:block">
-          <div className="sticky top-24">
-            <TableOfContents toc={toc ?? []} />
-          </div>
-        </aside>
+          {/* RIGHT SIDEBAR */}
+          <aside className="hidden border-l border-gray-200 pl-2 dark:border-gray-800 xl:sticky xl:top-0 xl:block xl:h-screen xl:overflow-y-auto">
+            <div className="p-6">
+              <TableOfContents toc={toc ?? []} />
+            </div>
+          </aside>
+        </div>
       </div>
     </div>
   )

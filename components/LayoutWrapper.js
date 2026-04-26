@@ -18,7 +18,7 @@ const LayoutWrapper = ({ children }) => {
   return (
     <div className="flex min-h-screen flex-col">
       {/* HEADER */}
-      <header className="flex shrink-0 items-center justify-between px-4 py-10 sm:px-6 lg:px-8">
+      <header className="flex shrink-0 items-center justify-between p-4 sm:px-6">
         <Link href="/" aria-label={siteMetadata.headerTitle}>
           <div className="flex items-center">
             <Logo />
@@ -28,7 +28,7 @@ const LayoutWrapper = ({ children }) => {
           </div>
         </Link>
 
-        <div className="flex items-center gap-4">
+        <div className="flex items-center">
           <div className="hidden sm:flex">
             <div className="hidden sm:flex">
               {headerNavLinks.map((link) => {
