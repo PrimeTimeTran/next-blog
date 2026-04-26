@@ -8,7 +8,7 @@ export default function KBLayout({ children, toc, sidebarData }) {
       <div className="grid w-full grid-cols-1 lg:grid-cols-12">
         {/* LEFT SIDEBAR */}
         <aside className="col-span-3 hidden lg:block">
-          <div className="sticky top-0 h-screen overflow-y-auto border-r border-zinc-200 bg-white p-4">
+          <div className="sticky top-0 h-screen overflow-y-auto border-r border-zinc-200 bg-white">
             <SidebarNode node={sidebarData} />
           </div>
         </aside>
@@ -19,8 +19,8 @@ export default function KBLayout({ children, toc, sidebarData }) {
         </main>
 
         {/* RIGHT TOC */}
-        <aside className="hidden border-l border-zinc-200 bg-white xl:col-span-3 xl:block">
-          <div className="sticky top-0 h-screen p-4">
+        <aside className="hidden border-l border-zinc-200 bg-white pl-12 xl:col-span-3 xl:block">
+          <div className="sticky top-0 h-screen">
             <TableOfContents toc={toc ?? []} />
           </div>
         </aside>

@@ -1,4 +1,4 @@
-import { useEffect } from 'react'
+import { useState, useEffect } from 'react'
 import Tag from '@/components/Tag'
 import Link from '@/components/Link'
 import Image from '@/components/Image'
@@ -18,6 +18,16 @@ const discussUrl = (slug) =>
 const postDateTemplate = { weekday: 'long', year: 'numeric', month: 'long', day: 'numeric' }
 
 export default function PostLayout({ toc, frontMatter, authorDetails, next, prev, children }) {
+  const [shrunk, setShrunk] = useState(false)
+
+  useEffect(() => {
+    const onScroll = () => {
+      setShrunk(window.scrollY > 40)
+    }
+
+    window.addEventListener('scroll', onScroll)
+    return () => window.removeEventListener('scroll', onScroll)
+  }, [])
   const { slug, fileName, date, title, images, tags } = frontMatter
 
   function focusLanguageTab(evt, language) {
@@ -177,8 +187,22 @@ export default function PostLayout({ toc, frontMatter, authorDetails, next, prev
           </aside>
           {/* CENTER/MAIN */}
           <main className="min-w-0">
-            <header className="sticky top-0 z-10 border-b border-gray-200 bg-white p-2 dark:border-gray-800 dark:bg-gray-900">
-              <PageTitle>{title}</PageTitle>
+            <header
+              className={[
+                'sticky top-0 z-10 border-b border-gray-200 bg-white px-8 transition-all duration-300 dark:border-gray-800 dark:bg-gray-900',
+                shrunk ? 'py-2' : 'py-6',
+              ].join(' ')}
+            >
+              <PageTitle
+                className={[
+                  'transition-all duration-300 ease-in-out',
+                  shrunk
+                    ? 'text-xl font-bold leading-7 opacity-90'
+                    : 'text-2xl font-extrabold leading-9 sm:text-4xl sm:leading-10 md:text-4xl md:leading-14',
+                ].join(' ')}
+              >
+                {title}
+              </PageTitle>
               <dl>
                 <dd className="text-right text-base font-medium leading-6 text-gray-500 dark:text-gray-400">
                   <time dateTime={date}>

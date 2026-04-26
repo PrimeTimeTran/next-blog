@@ -21,7 +21,7 @@ import {
   frameworks,
 } from '../lib/constants'
 
-const MAX_DISPLAY = 100
+const MAX_DISPLAY = 300
 
 const TOPICS = {
   Trading: trading,

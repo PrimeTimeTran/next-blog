@@ -5,7 +5,7 @@ import { useRouter } from 'next/router'
 
 export default function SidebarNode({ node = {} }) {
   if (!node || typeof node !== 'object') return null
-
+  console.log({ node })
   return (
     <ul className="pl-3">
       {Object.entries(node).map(([key, value]) => (
@@ -74,7 +74,7 @@ export function SidebarItem({ nodeKey, value }) {
 
       {/* CHILDREN */}
       {hasChildren && open && (
-        <div className="ml-4 border-l border-zinc-200 pl-3">
+        <div className="border-l border-zinc-200">
           <SidebarNode node={value.__children} />
         </div>
       )}
