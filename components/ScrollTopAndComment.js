@@ -15,6 +15,7 @@ const ScrollTopAndComment = () => {
   }, [])
 
   const handleScrollTop = () => {
+    console.log('Clicked')
     window.scrollTo({ top: 0 })
   }
   const handleScrollToComment = () => {
@@ -22,7 +23,9 @@ const ScrollTopAndComment = () => {
   }
   return (
     <div
-      className={`fixed bottom-8 right-8 hidden flex-col gap-3 ${show ? 'md:flex' : 'md:hidden'}`}
+      className={`fixed bottom-8 right-8 z-50 flex-col gap-3 ${
+        show ? 'md:flex' : 'hidden md:hidden'
+      }`}
     >
       {siteMetadata.comment.provider && (
         <button

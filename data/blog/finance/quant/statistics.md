@@ -1,12 +1,12 @@
 ---
 draft: false
 date: '2014-01-01'
-title: 'Essential Statistics Topics for Quant Finance'
+title: 'Essential Statistics for Quant Finance'
 summary: 'A guide to the key statistics areas you should master to excel in quantitative finance.'
 tags: ['finance', 'quant', 'statistics']
 ---
 
-# Essential Statistics Topics for Quant Finance
+# Essential Statistics for Quant Finance
 
 Quantitative finance relies heavily on statistics to analyze data, model risk, and make predictions. Here are the core statistics topics and modules you should master:
 
