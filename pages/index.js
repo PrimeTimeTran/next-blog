@@ -1,13 +1,12 @@
 import { useState, useMemo } from 'react'
-import Tag from '@/components/Tag'
+
 import Link from '@/components/Link'
 import { PageSEO } from '@/components/SEO'
+import ListLayout from '@/layouts/ListLayout'
 import siteMetadata from '@/data/siteMetadata'
-import formatDate from '@/lib/utils/formatDate'
 import { getAllFilesFrontMatter } from '@/lib/mdx'
 import NewsletterForm from '@/components/NewsletterForm'
 import SectionContainer from '@/components/SectionContainer'
-import ListLayout from '@/layouts/ListLayout'
 import {
   dsa,
   tech,
@@ -24,15 +23,15 @@ import {
 const MAX_DISPLAY = 300
 
 const TOPICS = {
-  Trading: trading,
-  Finance: finance,
   Tech: tech,
+  Finance: finance,
+  Trading: trading,
+  DSA: dsa,
+  Frameworks: frameworks,
   Databases: databases,
   DevOps: devops,
   Security: security,
-  Frameworks: frameworks,
   Maths: maths,
-  DSA: dsa,
   Tools: tools,
 }
 
@@ -82,35 +81,33 @@ export default function Home({ posts }) {
   return (
     <SectionContainer>
       <PageSEO title={siteMetadata.title} description={siteMetadata.description} />
-      <div>
-        {/* Posts */}
-        <ListLayout
-          posts={filteredPosts}
-          initialDisplayPosts={[]}
-          pagination={1}
-          title="Latest Posts"
-          subtitle={siteMetadata.description}
-          topics={
-            <div>
-              <h1 className="text-2xl font-extrabold tracking-tight text-gray-900 dark:text-gray-100">
-                Topics
-              </h1>
+      {/* Posts */}
+      <ListLayout
+        posts={filteredPosts}
+        initialDisplayPosts={[]}
+        pagination={1}
+        title="Latest"
+        subtitle={siteMetadata.description}
+        topics={
+          <div>
+            <h1 className="text-2xl font-extrabold tracking-tight text-gray-900 dark:text-gray-100">
+              Topics
+            </h1>
 
-              <div className="my-1 mb-6 flex space-x-2 overflow-x-auto text-primary-500">
-                {Object.entries(TOPICS).map(([topicName, topicPosts]) => (
-                  <button
-                    key={topicName}
-                    onClick={() => setActiveTopic(activeTopic === topicName ? null : topicName)}
-                    className={activeTopic === topicName ? 'font-bold underline' : ''}
-                  >
-                    {topicName} <span className="text-gray-500">({topicPosts.length})</span>
-                  </button>
-                ))}
-              </div>
+            <div className="my-1 mb-6 flex space-x-2 overflow-x-auto text-primary-500">
+              {Object.entries(TOPICS).map(([topicName, topics]) => (
+                <button
+                  key={topicName}
+                  onClick={() => setActiveTopic(activeTopic === topicName ? null : topicName)}
+                  className={activeTopic === topicName ? 'font-bold underline' : ''}
+                >
+                  {topicName} <span className="text-gray-500">({topics.length})</span>
+                </button>
+              ))}
             </div>
-          }
-        />
-      </div>
+          </div>
+        }
+      />
 
       {/* Footer */}
       <div>

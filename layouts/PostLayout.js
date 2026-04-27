@@ -91,7 +91,10 @@ export default function PostLayout({ toc, frontMatter, authorDetails, next, prev
       <div className="min-h-screen">
         <div className="mx-auto grid max-w-7xl grid-cols-1 xl:grid-cols-[16rem_1fr_16rem]">
           {/* LEFT SIDEBAR */}
-          <aside className="hidden border-r border-gray-200 dark:border-gray-800 xl:sticky xl:top-0 xl:block xl:h-screen xl:overflow-y-auto">
+          <aside
+            id="authorSidebar"
+            className="hidden border-r border-gray-200 dark:border-gray-800 xl:sticky xl:top-0 xl:block xl:h-screen xl:overflow-y-auto"
+          >
             <div className="p-6">
               {' '}
               {/* AUTHORS (unchanged behavior, just moved into rail) */}
@@ -202,13 +205,20 @@ export default function PostLayout({ toc, frontMatter, authorDetails, next, prev
               >
                 {title}
               </PageTitle>
-              <dl>
-                <dd className="text-right text-base font-medium leading-6 text-gray-500 dark:text-gray-400">
-                  <time dateTime={date}>
-                    {new Date(date).toLocaleDateString(siteMetadata.locale, postDateTemplate)}
-                  </time>
-                </dd>
-              </dl>
+              <div
+                className={[
+                  'overflow-hidden transition-all duration-300 ease-in-out',
+                  shrunk ? 'mt-0 max-h-0 opacity-0' : 'mt-2 max-h-10 opacity-100',
+                ].join(' ')}
+              >
+                <dl className="text-right text-base font-medium leading-6 text-gray-500 dark:text-gray-400">
+                  <dd>
+                    <time dateTime={date}>
+                      {new Date(date).toLocaleDateString(siteMetadata.locale, postDateTemplate)}
+                    </time>
+                  </dd>
+                </dl>
+              </div>
             </header>
 
             {/* PAGE CONTENT */}
@@ -229,7 +239,10 @@ export default function PostLayout({ toc, frontMatter, authorDetails, next, prev
           </main>
 
           {/* RIGHT SIDEBAR */}
-          <aside className="hidden border-l border-gray-200 pl-2 dark:border-gray-800 xl:sticky xl:top-0 xl:block xl:h-screen xl:overflow-y-auto">
+          <aside
+            id="tocSidebar"
+            className="hidden border-l border-gray-200 pl-2 dark:border-gray-800 xl:sticky xl:top-0 xl:block xl:h-screen xl:overflow-y-auto"
+          >
             <div className="p-6">
               <TableOfContents toc={toc ?? []} />
             </div>

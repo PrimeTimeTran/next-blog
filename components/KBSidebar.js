@@ -1,81 +1,87 @@
-import { useEffect, useMemo, useState } from 'react'
-
 import Link from 'next/link'
 import { useRouter } from 'next/router'
 
-export default function SidebarNode({ node = {} }) {
+export default function SidebarNode({ node = {}, openMap, setOpenMap }) {
   if (!node || typeof node !== 'object') return null
-  console.log({ node })
+
   return (
     <ul className="pl-3">
       {Object.entries(node).map(([key, value]) => (
-        <SidebarItem key={key} nodeKey={key} value={value} />
+        <SidebarItem
+          key={value?.__meta?.slug || key}
+          nodeKey={key}
+          value={value}
+          openMap={openMap}
+          setOpenMap={setOpenMap}
+        />
       ))}
     </ul>
   )
 }
 
-export function SidebarItem({ nodeKey, value }) {
+export function SidebarItem({ nodeKey, value, openMap, setOpenMap }) {
   const router = useRouter()
 
   const hasChildren = value?.__children && Object.keys(value.__children).length > 0
 
   const meta = value?.__meta
 
-  const slug = meta?.slug || meta?.frontMatter?.slug || null
+  const slug = meta?.slug
   const href = slug ? `/kb/${slug}` : null
 
-  // --- route matching (fixed)
-  const currentSegments = router.asPath.split('/').filter(Boolean)
-  const itemSegments = useMemo(() => href?.split('/').filter(Boolean), [href])
+  const id = slug || nodeKey
 
-  const isInPath = itemSegments && itemSegments.every((seg, i) => currentSegments[i] === seg)
+  const normalize = (p = '') =>
+    p
+      .split('?')[0]
+      .replace(/\/+$/, '')
+      .replace(/^\/kb\//, '')
 
-  const isActive = href === router.asPath
+  const current = normalize(router.asPath)
+  const target = slug || ''
 
-  // --- open state
-  const [open, setOpen] = useState(isInPath)
+  const isInPath = target && (current === target || current.startsWith(target + '/'))
 
-  useEffect(() => {
-    if (isInPath) setOpen(true)
-  }, [isInPath])
+  const open = openMap[id] ?? isInPath
+
+  const toggle = () => {
+    setOpenMap((prev) => ({
+      ...prev,
+      [id]: !(prev[id] ?? isInPath),
+    }))
+  }
 
   return (
     <li className="select-none">
       <div className="flex items-center gap-2 py-1">
-        {/* EXPAND BUTTON + ICON */}
         {hasChildren ? (
-          <button
-            onClick={() => setOpen((v) => !v)}
-            className="flex items-center gap-1 text-xs text-zinc-500"
-          >
-            <span className="text-[10px]">{open ? '▾' : '▸'}</span>
+          <button onClick={toggle} className="flex items-center gap-1 text-xs text-zinc-500">
+            <span className="text-[20px]">{open ? '▾' : '▸'}</span>
             <span>📁</span>
           </button>
         ) : (
           <span className="text-xs text-zinc-400">📄</span>
         )}
 
-        {/* LINK OR LABEL */}
         {href ? (
+          // eslint-disable-next-line @next/next/link-passhref
           <Link href={href}>
             <span
               className={`text-sm hover:text-blue-600 ${
-                isActive ? 'font-semibold text-blue-600' : ''
+                router.asPath === href ? 'font-semibold text-blue-600' : ''
               }`}
             >
               {meta?.frontMatter?.title || nodeKey}
             </span>
           </Link>
         ) : (
-          <span className="text-sm font-medium">{meta?.frontMatter?.title || nodeKey}</span>
+          <span className="text-sm text-red-400">{nodeKey}</span>
         )}
       </div>
 
-      {/* CHILDREN */}
       {hasChildren && open && (
         <div className="border-l border-zinc-200">
-          <SidebarNode node={value.__children} />
+          <SidebarNode node={value.__children} openMap={openMap} setOpenMap={setOpenMap} />
         </div>
       )}
     </li>

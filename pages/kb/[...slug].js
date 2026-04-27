@@ -1,45 +1,60 @@
 import { getFiles, formatSlug } from '@/lib/mdx'
 import { MDXLayoutRenderer } from '@/components/MDXComponents'
 
+function serialize(obj) {
+  return JSON.parse(JSON.stringify(obj))
+}
+
+/* -----------------------
+ * STATIC PATHS
+ * ---------------------- */
 export async function getStaticPaths() {
-  const kbFiles = getFiles('kb')
+  const kbFiles = getFiles('kb').filter(Boolean)
+
+  const paths = kbFiles.map((file) => {
+    const slug = formatSlug(file)
+
+    return {
+      params: {
+        slug: slug.split('/'),
+      },
+    }
+  })
 
   return {
-    paths: kbFiles.map((file) => ({
-      params: {
-        slug: formatSlug(file).split('/'),
-      },
-    })),
+    paths,
     fallback: false,
   }
 }
 
+/* -----------------------
+ * STATIC PROPS
+ * ---------------------- */
 export async function getStaticProps({ params }) {
   const { getAllFilesFrontMatter, getFileBySlug, buildKbTree, formatSlug } = await import(
     '@/lib/mdx'
   )
 
-  const slug = params.slug.join('/')
+  const slug = (params?.slug || []).join('/')
 
-  const allKB = await getAllFilesFrontMatter('kb')
+  const rawKB = await getAllFilesFrontMatter('kb')
 
-  console.log('ALL KB:', allKB)
+  const allKB = rawKB.filter(Boolean).map((item) => ({
+    ...item,
+    slug: formatSlug(item.slug || item.filePath),
+  }))
 
   const sidebarData = buildKbTree(allKB)
 
-  function serialize(obj) {
-    return JSON.parse(JSON.stringify(obj))
-  }
-
-  const index = allKB.findIndex((item) => formatSlug(item.slug) === slug)
-
-  const prev = allKB[index + 1] || null
-  const next = allKB[index - 1] || null
+  const index = allKB.findIndex((item) => item.slug === slug)
 
   const kbItem = await getFileBySlug('kb', slug)
 
-  // Optional: authors (if you want same system)
-  const authorList = kbItem.frontMatter.authors || []
+  const prev = index >= 0 ? allKB[index + 1] || null : null
+  const next = index >= 0 ? allKB[index - 1] || null : null
+
+  const authorList = kbItem?.frontMatter?.authors || []
+
   const authorDetails = await Promise.all(
     authorList.map(async (author) => {
       const res = await getFileBySlug('authors', [author])
@@ -47,27 +62,22 @@ export async function getStaticProps({ params }) {
     })
   )
 
-  // Optional: generate RSS for KB (usually not needed)
-  // You can remove this if KB isn't blog-like
-  // if (allKB.length > 0) {
-  //   const rss = generateRss(allKB)
-  //   fs.writeFileSync('./public/kb-feed.xml', rss)
-  // }
-
   return {
     props: {
       kbItem,
       authorDetails,
       prev,
       next,
-      sidebarData: serialize(sidebarData), // Ensure it's serializable
+      sidebarData: serialize(sidebarData),
     },
   }
 }
 
+/* -----------------------
+ * PAGE
+ * ---------------------- */
 export default function Page({ kbItem, sidebarData, ...rest }) {
-  console.log('KB Item Front Matter:', kbItem)
-  const layout = kbItem.frontMatter.layout || 'KBLayout'
+  const layout = kbItem?.frontMatter?.layout || 'KBLayout'
 
   return (
     <MDXLayoutRenderer

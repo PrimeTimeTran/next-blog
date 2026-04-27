@@ -72,3 +72,12 @@ table {
   overflow-x: auto;
   white-space: nowrap;
 }
+
+.sidebar-collapsed {
+  width: 0 !important;
+  min-width: 0 !important;
+  overflow: hidden;
+  padding: 0 !important;
+  border: none !important;
+  transition: width 0.3s ease;
+}

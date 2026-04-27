@@ -1,15 +1,38 @@
+import { useState, useEffect } from 'react'
 import TableOfContents from '@/components/TOC'
-import SidebarNode from '@/components/KBSidebar'
+import KBSidebar from '@/components/KBSidebar'
+
+const STORAGE_KEY = 'kb-sidebar-open-map'
 
 export default function KBLayout({ children, toc, sidebarData }) {
-  console.log('SIDEBAR DATA:', JSON.stringify(sidebarData, null, 2))
+  const [hydrated, setHydrated] = useState(false)
+  const [openMap, setOpenMap] = useState({})
+
+  useEffect(() => {
+    const saved = localStorage.getItem(STORAGE_KEY)
+
+    if (saved) {
+      setOpenMap(JSON.parse(saved))
+    }
+
+    setHydrated(true)
+  }, [])
+
+  useEffect(() => {
+    localStorage.setItem(STORAGE_KEY, JSON.stringify(openMap))
+  }, [openMap])
+
   return (
     <div className="min-h-screen w-full">
       <div className="grid w-full grid-cols-1 lg:grid-cols-12">
         {/* LEFT SIDEBAR */}
         <aside className="col-span-3 hidden lg:block">
           <div className="sticky top-0 h-screen overflow-y-auto border-r border-zinc-200 bg-white">
-            <SidebarNode node={sidebarData} />
+            {hydrated && (
+              <div className="animate-in fade-in duration-200">
+                <KBSidebar node={sidebarData} openMap={openMap} setOpenMap={setOpenMap} />
+              </div>
+            )}
           </div>
         </aside>
 

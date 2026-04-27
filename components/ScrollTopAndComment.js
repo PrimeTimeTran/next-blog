@@ -14,6 +14,16 @@ const ScrollTopAndComment = () => {
     return () => window.removeEventListener('scroll', handleWindowScroll)
   }, [])
 
+  const toggleSidebars = () => {
+    const author = document.getElementById('authorSidebar')
+    const toc = document.getElementById('tocSidebar')
+
+    ;[author, toc].forEach((el) => {
+      if (!el) return
+      el.classList.toggle('sidebar-collapsed')
+    })
+  }
+
   const handleScrollTop = () => {
     console.log('Clicked')
     window.scrollTo({ top: 0 })
@@ -27,6 +37,16 @@ const ScrollTopAndComment = () => {
         show ? 'md:flex' : 'hidden md:hidden'
       }`}
     >
+      <button
+        aria-label="Toggle Sidebars"
+        type="button"
+        onClick={toggleSidebars}
+        className="rounded-full bg-gray-200 p-2 text-gray-500 transition-all hover:bg-gray-300 dark:bg-gray-700 dark:text-gray-400 dark:hover:bg-gray-600"
+      >
+        <svg className="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
+          <path d="M3 4h14v2H3V4zm0 5h10v2H3V9zm0 5h14v2H3v-2z" />
+        </svg>
+      </button>
       {siteMetadata.comment.provider && (
         <button
           aria-label="Scroll To Comment"
