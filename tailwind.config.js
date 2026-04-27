@@ -3,7 +3,7 @@ const colors = require('tailwindcss/colors')
 
 module.exports = {
   experimental: {
-    optimizeUniversalDefaults: true,
+    // optimizeUniversalDefaults: true,
   },
   content: [
     './pages/**/*.js',
