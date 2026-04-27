@@ -9,7 +9,7 @@ export default function SectionContainer({ isSnippets = false, children }) {
     <div
       className={
         isKB
-          ? 'h-screen w-full px-2'
+          ? 'flex h-full w-full flex-col px-2'
           : isBlog || isSnippets
           ? 'w-full px-4 sm:px-6 lg:px-8'
           : 'mx-auto max-w-3xl xl:max-w-5xl'

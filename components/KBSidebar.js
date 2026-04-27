@@ -75,7 +75,7 @@ export function SidebarItem({ nodeKey, value, openMap, setOpenMap }) {
             </span>
           </Link>
         ) : (
-          <span className="text-sm text-red-400">{nodeKey}</span>
+          <span className="text-sm">{nodeKey}</span>
         )}
       </div>
 

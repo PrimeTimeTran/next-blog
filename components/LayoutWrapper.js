@@ -17,7 +17,6 @@ const LayoutWrapper = ({ children }) => {
 
   return (
     <div className="flex min-h-screen flex-col">
-      {/* HEADER */}
       <header className="flex shrink-0 items-center justify-between p-4 sm:px-6">
         <Link href="/" aria-label={siteMetadata.headerTitle}>
           <div className="flex items-center">
@@ -27,7 +26,6 @@ const LayoutWrapper = ({ children }) => {
             </div>
           </div>
         </Link>
-
         <div className="flex items-center">
           <div className="hidden sm:flex">
             <div className="hidden sm:flex">
@@ -54,13 +52,11 @@ const LayoutWrapper = ({ children }) => {
         </div>
       </header>
 
-      <main className="mb-auto">
+      <main className="flex-1">
         <SectionContainer isSnippets={isHome}>{children}</SectionContainer>
       </main>
 
-      <footer className="shrink-0">
-        <Footer />
-      </footer>
+      <Footer />
     </div>
   )
 }

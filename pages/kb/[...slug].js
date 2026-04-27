@@ -53,19 +53,9 @@ export async function getStaticProps({ params }) {
   const prev = index >= 0 ? allKB[index + 1] || null : null
   const next = index >= 0 ? allKB[index - 1] || null : null
 
-  const authorList = kbItem?.frontMatter?.authors || []
-
-  const authorDetails = await Promise.all(
-    authorList.map(async (author) => {
-      const res = await getFileBySlug('authors', [author])
-      return res.frontMatter
-    })
-  )
-
   return {
     props: {
       kbItem,
-      authorDetails,
       prev,
       next,
       sidebarData: serialize(sidebarData),

@@ -27,7 +27,7 @@ export default function KBLayout({ children, toc, sidebarData }) {
       <div className="grid w-full grid-cols-1 lg:grid-cols-12">
         {/* LEFT SIDEBAR */}
         <aside className="col-span-3 hidden lg:block">
-          <div className="sticky top-0 h-screen overflow-y-auto border-r border-zinc-200 bg-white">
+          <div className="sticky top-0 h-screen overflow-y-auto border-r border-zinc-200">
             {hydrated && (
               <div className="animate-in fade-in duration-200">
                 <KBSidebar node={sidebarData} openMap={openMap} setOpenMap={setOpenMap} />
@@ -38,11 +38,11 @@ export default function KBLayout({ children, toc, sidebarData }) {
 
         {/* MAIN CONTENT */}
         <main className="col-span-1 lg:col-span-6">
-          <div className="prose prose-lg max-w-none bg-white p-6">{children}</div>
+          <div className="prose prose-lg max-w-none p-6 dark:prose-dark">{children}</div>
         </main>
 
         {/* RIGHT TOC */}
-        <aside className="hidden border-l border-zinc-200 bg-white pl-12 xl:col-span-3 xl:block">
+        <aside className="hidden border-l border-zinc-200 pl-12 xl:col-span-3 xl:block">
           <div className="sticky top-0 h-screen">
             <TableOfContents toc={toc ?? []} />
           </div>
