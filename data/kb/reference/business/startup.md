@@ -1,0 +1,3 @@
+- [[assets/business/executive-summary.png|Executive Summary]]
+- [[assets/business/business-model-canvas.jpeg|Business Model Canvas]]
+- [[assets/business/business-plan-outline.png|Business Plan Outline]]

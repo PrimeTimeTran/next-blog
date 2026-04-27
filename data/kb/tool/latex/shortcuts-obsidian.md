@@ -1,0 +1,235 @@
+## Obsidian Latex Suite
+
+## Cheat Sheet
+
+| Shortcut                                                                                     | Symbol                                                                           | name                                                                 | custom |
+| -------------------------------------------------------------------------------------------- | -------------------------------------------------------------------------------- | -------------------------------------------------------------------- | ------ |
+| \\,                                                                                          | $x\, dx$                                                                         | s space                                                              |        |
+| \\:                                                                                          | $x\: dx$                                                                         | m space                                                              |        |
+| \\;                                                                                          | $x\; dx$                                                                         | l space                                                              |        |
+| \\quad                                                                                       | $x\quad ccc$                                                                     | 1 em space                                                           |        |
+| \\qquad                                                                                      | $x\qquad ccc$                                                                    | 2 em space                                                           |        |
+|                                                                                              | $$                                                                               |                                                                      |        |
+| @a                                                                                           | $\alpha$                                                                         | alpha                                                                |        |
+| @b                                                                                           | $\beta$                                                                          | beta                                                                 |        |
+| @d                                                                                           | $\delta$                                                                         | delta                                                                |        |
+| @D                                                                                           | $\Delta$                                                                         | delta                                                                |        |
+| nabl                                                                                         | $\nabla$                                                                         | nabla                                                                |        |
+| @e                                                                                           | $\epsilon$                                                                       | epsilon                                                              |        |
+| @l                                                                                           | $\lambda$                                                                        | _lambda:_ usually a scalar parameter                                 |        |
+| @L                                                                                           | $\Lambda$                                                                        | _Lambda:_ often a set, matrix, or “higher-level”                     |        |
+| :e                                                                                           | $\varepsilon$                                                                    | varepsilon                                                           |        |
+| @t                                                                                           | $\theta$                                                                         | theta                                                                |        |
+| @T                                                                                           | $\Theta$                                                                         | theta                                                                |        |
+| @s                                                                                           | $\sigma$                                                                         | sigma                                                                |        |
+| @S                                                                                           | $\Sigma$                                                                         | Sigma                                                                |        |
+|                                                                                              | $$                                                                               |                                                                      |        |
+| xx                                                                                           | $\times$                                                                         | multiplication sign                                                  |        |
+| +-                                                                                           | $\pm$                                                                            | plus minus                                                           |        |
+| -+                                                                                           | $\mp$                                                                            | minus plus                                                           |        |
+| sq                                                                                           | $\sqrt{  }$                                                                      | square root                                                          |        |
+| //                                                                                           | $\frac{a}{b}$                                                                    | fraction                                                             |        |
+| xsr                                                                                          | $x^{2}$                                                                          | variable raised to exponent                                          |        |
+| rd                                                                                           | $C^{n}$                                                                          | raise "var" by "n"                                                   |        |
+| xnn                                                                                          | $x_{n}$                                                                          | subscript                                                            |        |
+| ooo                                                                                          | $\infty$                                                                         | infinity                                                             |        |
+| >=                                                                                           | $\geq$                                                                           | greater than equal to                                                |        |
+| <=                                                                                           | $\leq$                                                                           | less than equal to                                                   |        |
+| !=                                                                                           | $\neq$                                                                           | not equal to                                                         |        |
+| ===                                                                                          | $\equiv$                                                                         | _equivalence:_ identity / always true relation / modular equivalence |        |
+|                                                                                              | $$                                                                               |                                                                      |        |
+| lim                                                                                          | $\lim_{ x \to \infty }$                                                          | limit variable condition beside                                      |        |
+| ddt                                                                                          | $\frac{d}{dt}$                                                                   | differential operator                                                |        |
+| drr                                                                                          | $\frac{d}{dx}[f(x)]$                                                             | differential operator with focus on x to edit                        | true   |
+|                                                                                              |                                                                                  |                                                                      |        |
+| int                                                                                          | $\int  \, dx$                                                                    | indefinite integrate                                                 |        |
+| dint                                                                                         | $\int_{a}^{b}  \, dx$                                                            | definite integral                                                    |        |
+| oinf                                                                                         | $\int_{0}^{\infty} \, dx$                                                        | integral from 0 to infinity                                          |        |
+| infi                                                                                         | $\int_{-\infty}^{\infty} \, dx$                                                  | integral from - and + infinities                                     |        |
+| iint                                                                                         | $\iint$                                                                          | double integral                                                      |        |
+| iiint                                                                                        | $\iiint$                                                                         | triple integral                                                      |        |
+| pa + "TB"                                                                                    | $\frac{ \partial T }{ \partial B }$                                              | _partial_ derivative with top and bottom                             |        |
+| par +                                                                                        | $\frac{ \partial r }{ \partial O }f(x)$                                          | _partial derivative_ symbol edit                                     |        |
+| paar + TAB                                                                                   | $\frac{ \partial a }{ \partial r } f(x)$                                         | _partial derivative_ symbol without edit                             |        |
+| sum                                                                                          | $\\\sum$                                                                         | summation                                                            |        |
+|                                                                                              | $$                                                                               |                                                                      |        |
+| \begin{aligned}<br>x + y &= 1 \\\<br>x - y &= 2<br>\end{aligned}                             | $$\begin{aligned} x + y &= 1 \\ x - y &= 2\end{aligned}$$                        | multi line block of equations                                        |        |
+| f(x) = \left\{<br>\begin{aligned}<br>x + y &= 1 \\<br>x - y &= 2<br>\end{aligned}<br>\right. | $$f(x) = \left\{\begin{aligned}x + y &= 1 \\x - y &= 2 \\ \end{aligned}\right.$$ | left + begin + end + right                                           |        |
+| fbr                                                                                          | $f(x) = \left\{\begin{aligned}\end{aligned}\right.$                              | insert piecewise function                                            | true   |
+| \\\                                                                                          | $$                                                                               | new line                                                             |        |
+| &                                                                                            |                                                                                  | aligns nicely usually at =                                           |        |
+| aligned                                                                                      |                                                                                  | allowed multiple lines inside a math mode                            |        |
+|                                                                                              |                                                                                  |                                                                      |        |
+
+- Inline: Limit displays beside
+  $\lim_{x \to a}$
+- Block: Limit displays below
+  $$
+  \lim\limits_{x \to a}
+  $$
+
+## Full Table
+
+| Shortcut                 | Symbol                                                                                     | Description                           | Note                                  |
+| ------------------------ | ------------------------------------------------------------------------------------------ | ------------------------------------- | ------------------------------------- |
+|                          | **MATH BLOCK**                                                                             |                                       |                                       |
+| mk                       | $1\space + \space 1$                                                                       | inline block                          |                                       |
+| dm                       | $$hi + world$$                                                                             | display block                         |                                       |
+|                          | **GREEKS**                                                                                 |                                       |                                       |
+| @a                       | $\alpha$                                                                                   | alpha                                 |                                       |
+| @b                       | $\beta$                                                                                    | beta                                  |                                       |
+| @g                       | $\gamma$                                                                                   | gamma                                 |                                       |
+| @G                       | $\Gamma$                                                                                   | Gamma                                 |                                       |
+| @d                       | $\delta$                                                                                   | delta                                 |                                       |
+| @D                       | $\Delta$                                                                                   | delta                                 |                                       |
+| @e                       | $\epsilon$                                                                                 | episilon                              |                                       |
+| :e                       | $\varepsilon$                                                                              | varepsilon                            |                                       |
+| @z                       | $\zeta$                                                                                    | zeta                                  |                                       |
+| @t                       | $\theta$                                                                                   | theta                                 |                                       |
+| @T                       | $\Theta$                                                                                   | Theta                                 |                                       |
+| :t                       | $\vartheta$                                                                                | vartheta                              |                                       |
+| @i                       | $\iota$                                                                                    | iota                                  |                                       |
+| @k                       | $\kappa$                                                                                   | kappa                                 |                                       |
+| @l                       | $\lambda$                                                                                  | lambda                                |                                       |
+| @L                       | $\Lambda$                                                                                  | Lambda                                |                                       |
+| @s                       | $\sigma$                                                                                   | sigma                                 |                                       |
+| @S                       | $\Sigma$                                                                                   | Sigma                                 |                                       |
+| @u                       | $\upsilon$                                                                                 | upsilon                               |                                       |
+| @U                       | $\Upsilon$                                                                                 | Upsilon                               |                                       |
+| @o                       | $\omega$                                                                                   | omega                                 |                                       |
+| @O                       | $\Omega$                                                                                   | Omega                                 |                                       |
+| ome                      | $\omega$                                                                                   | omega                                 |                                       |
+| Ome                      | $\Omega$                                                                                   | Omega                                 |                                       |
+|                          |                                                                                            |                                       |                                       |
+|                          | **MATH OPERATORS**                                                                         |                                       |                                       |
+| text                     | $2 + 2 \space \text{foobar}$                                                               | text                                  | space & then text                     |
+| sr                       | $x^{2}$                                                                                    | squared power                         |                                       |
+| cb                       | $^{3}$                                                                                     | cubed power                           |                                       |
+| rd                       | $^{hi}$                                                                                    | dynamic power                         |                                       |
+| \_\_                     | $x_{n}$                                                                                    | subscript                             |                                       |
+| sts                      | $2+2_\text{hello world}$                                                                   | text                                  | subscript text                        |
+| sq                       | $\sqrt{ 16 }$                                                                              | square root                           |                                       |
+| //                       | $\frac{x}{2}$                                                                              | frac                                  |                                       |
+| ee                       | $e^{ 2 }$                                                                                  | e raised to a power                   |                                       |
+| invs                     | $^{-1}$                                                                                    | exponent -1                           |                                       |
+| conj                     | $87^{*}$                                                                                   | add star?                             |                                       |
+| Re                       | $\mathrm{Re}$                                                                              |                                       |                                       |
+| Im                       | $\mathrm{Im}2x_{2}$                                                                        |                                       |                                       |
+| bf                       | $\mathbf{2x_{2}}$                                                                          |                                       |                                       |
+| rm                       | $\mathrm{2x_{2}}$                                                                          |                                       |                                       |
+|                          |                                                                                            |                                       |                                       |
+|                          | **DIACRITICS**                                                                             |                                       |                                       |
+| ([a-zA-Z])hat            | $\hat{a}$                                                                                  | char with hat                         |                                       |
+| ([a-zA-Z])bar            | $\bar{a}$                                                                                  | char with bar                         |                                       |
+| ([a-zA-Z])dot            | $\dot{a}$                                                                                  | char with dot                         |                                       |
+| ([a-zA-Z])ddot           | $\ddot{a}$                                                                                 | char with double dot                  |                                       |
+| ([a-zA-Z])und            | $\underline{a}$                                                                            | char with underline                   |                                       |
+| ([a-zA-Z])vec            | $\vec{a}$                                                                                  | char with vec                         |                                       |
+| x,.                      | $\mathbf{x}$                                                                               |                                       |                                       |
+| x.,                      | $\mathbf{x}$                                                                               |                                       |                                       |
+| hat                      | $\hat{s}$                                                                                  | hat then char                         |                                       |
+| bar                      | $\bar{a}$                                                                                  | bar then char                         |                                       |
+| dot                      | $\dot{A}$                                                                                  | dot then char                         |                                       |
+| ddot                     | $\ddot{B}$                                                                                 | dots then char                        |                                       |
+| cdot                     | $\cdot s$                                                                                  | dot then char                         |                                       |
+| tilde                    | $\tilde{q}$                                                                                | tilde then char                       |                                       |
+| und                      | $\underline{q}$                                                                            | underline then char                   |                                       |
+| vec                      | $\vec{b}$                                                                                  | vec then char                         |                                       |
+| pmod                     | $\pmod{s}$                                                                                 | mod then char                         |                                       |
+| xnn                      | $x_{n}$                                                                                    | x with subscript n                    |                                       |
+| xii                      | $x_{i}$                                                                                    | x with subscript i                    |                                       |
+| xp1                      | $x_{n+1}$                                                                                  | x with subscript n + 1                |                                       |
+| ynn                      | $y_{n}$                                                                                    | y with subscript n                    |                                       |
+| yii                      | $y_{i}$                                                                                    | y with subscript i                    |                                       |
+| yjj                      | $y_{j}$                                                                                    | y with subscript j                    |                                       |
+| ooo                      | $\infty$                                                                                   | infinity                              |                                       |
+| sum                      | $\sum_{i=1}^{N}$                                                                           | sum                                   |                                       |
+| prod                     | $\prod_{i=1}^{N}$                                                                          | prod                                  |                                       |
+| \\\sum                   | $\\\sum_{i=1}^{N}$                                                                         | sum                                   |                                       |
+| \\\prod                  | $\\\prod_{i=1}^{N}$                                                                        | prod                                  |                                       |
+| lim                      | $\lim_{ n \to \infty }$                                                                    | limit                                 |                                       |
+| +-                       | $\pm$                                                                                      | plus minus                            |                                       |
+| -=                       | $\mp$                                                                                      | minus plus                            |                                       |
+| ...                      | $\dots$                                                                                    | dots                                  |                                       |
+| nabl                     | $\nabla$                                                                                   | upside down delta                     |                                       |
+| ===                      | $\equiv$                                                                                   | equiv                                 |                                       |
+| !=                       | $\neq$                                                                                     | neq                                   |                                       |
+|                          |                                                                                            |                                       |                                       |
+|                          | **DISCRETE**                                                                               |                                       |                                       |
+| >=                       | $\geq$                                                                                     | greater than or =                     |                                       |
+| <=                       | $\leq$                                                                                     | less than or =                        |                                       |
+| xx                       | $\times$                                                                                   | multiply                              |                                       |
+| \*\*                     | $\cdot$                                                                                    | cdot                                  |                                       |
+| >>                       | $\gg$                                                                                      | add gg                                |                                       |
+| <<                       | $\ll$                                                                                      | add ll                                |                                       |
+| simm                     | $\sim$                                                                                     |                                       |                                       |
+| sim=                     | $\simeq$                                                                                   |                                       |                                       |
+| prop                     | $\propto$                                                                                  |                                       |                                       |
+| <->                      | $\leftrightarrow$                                                                          |                                       |                                       |
+| ->                       | $\to$                                                                                      |                                       |                                       |
+| !>                       | $\mapsto$                                                                                  |                                       |                                       |
+| =>                       | $\implies$                                                                                 |                                       |                                       |
+| =<                       | $\impliedby$                                                                               |                                       |                                       |
+| and                      | $\cap$                                                                                     |                                       |                                       |
+| orr                      | $\cup$                                                                                     |                                       |                                       |
+| inn                      | $\in$                                                                                      |                                       |                                       |
+| notin                    | $\not\in$                                                                                  |                                       |                                       |
+| sub=                     | $\subseteq$                                                                                |                                       |                                       |
+| sup=                     | $\supseteq$                                                                                |                                       |                                       |
+| eset                     | $\emptyset$                                                                                |                                       |                                       |
+| set                      | $\{A, B, C \}$                                                                             |                                       |                                       |
+| e\\xi sts                | $e\\xi _\text{foobar}$                                                                     |                                       |                                       |
+| LL                       | $\mathcal{L}ss$                                                                            |                                       |                                       |
+| HH                       | $\mathcal{H}$                                                                              |                                       |                                       |
+| CC                       | $\mathbb{C}$                                                                               |                                       |                                       |
+| RR                       | $\mathbb{R}$                                                                               |                                       |                                       |
+| ZZ                       | $\mathbb{Z}$                                                                               |                                       |                                       |
+| NN                       | $\mathbb{N}$                                                                               |                                       |                                       |
+|                          |                                                                                            |                                       |                                       |
+|                          | **DERIVATIVES**                                                                            |                                       |                                       |
+| ddt                      | $\frac{d}{dt}$                                                                             |                                       |                                       |
+| par                      | $\frac{ \partial y }{ \partial x }$                                                        |                                       |                                       |
+| /pa([A-Za-z])([A-Za-z])/ | $\frac{ \partial A }{ \partial A }$                                                        |                                       |                                       |
+|                          |                                                                                            |                                       |                                       |
+|                          | **INTEGRALS**                                                                              |                                       |                                       |
+| aint                     | $a\int ssdsds$                                                                             |                                       |                                       |
+| int                      | $\int g(x) \, dx$                                                                          | int then tab for $dx$, then inner $f$ | differential along the x-direction    |
+| dint                     | $\int_{0}^{1}  \, dx$                                                                      | add definite integral                 |                                       |
+| oint                     | $\oint s dx$                                                                               | add this guys                         | integration around a closed loop/path |
+| iint                     | $\iint 2+2$                                                                                | add double integral                   |                                       |
+| iiint                    | $\iiint_{1}^{1}$                                                                           | add triple integral                   |                                       |
+| oinf                     | $\int_{0}^{\infty} 5 + 1 \, dx$                                                            | with infinity                         |                                       |
+| infi                     | $\int_{-\infty}^{\infty} 2+ g(x) \, dx$                                                    | both infinities                       |                                       |
+|                          |                                                                                            |                                       |                                       |
+|                          | **TRIGONOMETRY**                                                                           |                                       |                                       |
+|                          | $x\sin$                                                                                    |                                       |                                       |
+|                          | $\cos$                                                                                     |                                       |                                       |
+|                          | $\csc$                                                                                     |                                       |                                       |
+|                          | $arccos$                                                                                   |                                       |                                       |
+|                          |                                                                                            |                                       |                                       |
+|                          | **BRACKETS**                                                                               |                                       |                                       |
+| avg                      | $\langle  \rangle$                                                                         |                                       |                                       |
+| norm                     | $\lvert  \rvert$                                                                           |                                       |                                       |
+| Norm                     | $\lVert  \rVert$                                                                           |                                       |                                       |
+| ceil                     | $\lceil  \rceil$                                                                           |                                       |                                       |
+| floor                    | $\lfloor sdsds \rfloor$                                                                    |                                       |                                       |
+| mod                      | $\|a\|$                                                                                    |                                       |                                       |
+|                          |                                                                                            |                                       |                                       |
+| tayl                     | $f(x + h) = f(x) + f'(x)h + f''(x) \frac{h^{2}}{2!} + \dots$                               | taylor expansion snippet              |                                       |
+| iden3, iden4, iden5,     | $\begin{pmatrix}1 & 0 \\0 & 1\end{pmatrix}$<br>                                            | identity matrix generator             |                                       |
+| text + "d+m"             | 1. Einstein's <br> $$e = mc^{2}$$<br>2. Pythagorean Theorem <br> $$a^{2}+b^{2}=c^{2}$$<br> | list item with display block          |                                       |
+|                          |                                                                                            |                                       |                                       |
+
+## My Snippets
+
+```json
+    {trigger: "fbr", replacement: "f(x) = \\left\\{\\begin{aligned}\n$1 \\\\\n$2 \\\\\n$3 \\\\\n$4\n\\end{aligned}\\right.", options: "mA"},
+    {trigger: "df", replacement: "\\frac{d${0:y}}{d${1:x}}", options: "mA"},
+    {trigger: "drr", replacement: "\\frac{d}{d${0:x}}[${1:f(x)}]", options: "mA"},
+    {trigger: "pfr", replacement: "\\frac{\\partial ${0:y}}{\\partial ${1:x}}", options: "mA"},
+```
+
+## 🌐 Reference
+
+- https://github.com/artisticat1/obsidian-latex-suite
+- https://github.com/artisticat1/obsidian-latex-suite/blob/main/src/default_snippets.js

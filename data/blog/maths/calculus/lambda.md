@@ -22,6 +22,6 @@ Lambda Calculus
 
 Currying
 
-# REferences
+# 🌐 References
 
 - https://www.youtube.com/watch?v=ViPNHMSUcog&t=213s

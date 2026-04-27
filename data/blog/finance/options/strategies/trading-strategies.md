@@ -101,7 +101,7 @@ OTM Call/Put.
 
 For finance experts, options are not just bets on price movement—they’re flexible instruments that can reshape risk-return profiles. They sit alongside equities, bonds, ETFs, and derivatives as a core component of a sophisticated portfolio. Used wisely, they provide insurance, yield enhancement, and tailored exposures that traditional assets alone can’t offer.
 
-# References
+# 🌐 References
 
 - Put Credit Spread:
 

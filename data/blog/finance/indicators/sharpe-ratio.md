@@ -116,6 +116,6 @@ Use leverage with high Sharpe Strategies to target higher returns while maintain
 - The Sharpe ratio compares a fund's historical or projected returns relative to an investment benchmark with the historical or expected variability of such returns.
 - Excess returns are those above an industry benchmark or the risk-free rate of return.
 
-## References
+## 🌐 References
 
 - https://www.youtube.com/watch?v=9HD6xo2iO1g

@@ -98,6 +98,6 @@ Outputs number
 
 Area under the curve from x = a to x = b
 
-## References
+## 🌐 References
 
 - https://www.youtube.com/watch?v=yfajBIaDf1Q&t=23s
