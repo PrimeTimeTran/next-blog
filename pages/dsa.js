@@ -231,7 +231,7 @@ export default function DSA() {
   return (
     <SectionContainer>
       <div>
-        <div className="flex flex-col space-y-2 pt-6 pb-8 md:space-y-5">
+        <div className="flex flex-col space-y-2 pb-8 pt-6 md:space-y-5">
           <h1 className="text-3xl font-extrabold leading-9 tracking-tight text-gray-900 dark:text-gray-100 sm:text-4xl sm:leading-10 md:text-6xl md:leading-14">
             Data Structures & Algorithms
           </h1>
@@ -468,7 +468,7 @@ export default function DSA() {
       </div>
       <div
         ref={sidebarRef}
-        className={`fixed top-0 right-0 h-full w-1/3 overflow-y-auto border bg-white py-2 transition-transform duration-300 ease-in-out dark:bg-gray-900 ${
+        className={`fixed right-0 top-0 h-full w-1/3 overflow-y-auto border bg-white py-2 transition-transform duration-300 ease-in-out dark:bg-gray-900 ${
           isSidebarOpen ? 'translate-x-0' : 'translate-x-full'
         }`}
       >

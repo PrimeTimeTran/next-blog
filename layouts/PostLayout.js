@@ -49,33 +49,32 @@ export default function PostLayout({ toc, frontMatter, authorDetails, next, prev
     evt.currentTarget.className += ' active'
   }
 
-  function addIdToTabGroups() {
-    var groups = document.getElementsByClassName('tab-group')
-    for (let groupId = 0; groupId < groups.length; groupId++) {
-      var group = groups[groupId]
-      group.id = `tab-group-${groupId}`
+  useEffect(() => {
+    function addIdToTabGroups() {
+      var groups = document.getElementsByClassName('tab-group')
+      for (let groupId = 0; groupId < groups.length; groupId++) {
+        var group = groups[groupId]
+        group.id = `tab-group-${groupId}`
 
-      var buttonChildren = group.getElementsByClassName('tablinks')
-      for (var j = 0; j < buttonChildren.length; j++) {
-        var buttonChild = buttonChildren[j]
-        buttonChild.id += `-${groupId}-${j}`
-      }
+        var buttonChildren = group.getElementsByClassName('tablinks')
+        for (var j = 0; j < buttonChildren.length; j++) {
+          var buttonChild = buttonChildren[j]
+          buttonChild.id += `-${groupId}-${j}`
+        }
 
-      var children = group.getElementsByClassName('tabcontent')
-      for (var k = 0; k < children.length; k++) {
-        var child = children[k]
-        child.id = `${groupId}-${k}-content`
-      }
+        var children = group.getElementsByClassName('tabcontent')
+        for (var k = 0; k < children.length; k++) {
+          var child = children[k]
+          child.id = `${groupId}-${k}-content`
+        }
 
-      var buttons = group.children[0].children
-      for (var l = 0; l < buttons.length; l++) {
-        var button = buttons[l]
-        button.addEventListener('click', (e) => focusLanguageTab(e, `${groupId}-${l}`))
+        var buttons = group.children[0].children
+        for (var l = 0; l < buttons.length; l++) {
+          var button = buttons[l]
+          button.addEventListener('click', (e) => focusLanguageTab(e, `${groupId}-${l}`))
+        }
       }
     }
-  }
-
-  useEffect(() => {
     addIdToTabGroups()
   }, [])
 

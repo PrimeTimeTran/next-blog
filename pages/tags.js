@@ -22,7 +22,7 @@ import {
 
 function renderTags(tags, t) {
   return (
-    <div key={t} className="mt-2 mb-2 mr-5">
+    <div key={t} className="mb-2 mr-5 mt-2">
       <Tag text={t} />
       <Link
         href={`/tags/${kebabCase(t)}`}

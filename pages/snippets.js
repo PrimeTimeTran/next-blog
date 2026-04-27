@@ -41,7 +41,7 @@ function Snippet({ code, language, handleCopy }) {
   return (
     <div className="relative m-3 flex-1 rounded border" style={containerStyle}>
       <CopyToClipboard text={code} onCopy={handleCopy}>
-        <button className="absolute top-2 right-2 rounded bg-gray-200 p-2 hover:bg-gray-300">
+        <button className="absolute right-2 top-2 rounded bg-gray-200 p-2 hover:bg-gray-300">
           <FiClipboard size={20} />
         </button>
       </CopyToClipboard>
