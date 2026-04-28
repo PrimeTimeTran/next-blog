@@ -13,8 +13,7 @@ export const POSTS_PER_PAGE = 20
 export async function getStaticProps() {
   const rawPosts = getAllBlogPosts()
   const normalized = rawPosts.map(normalizePost).filter((p) => p && p.date) // 🔥 important
-  const { posts, tagCounts, tagMap } = getBlogIndex(normalized)
-  // const posts = await getAllFilesFrontMatter('blog')
+  const { posts } = getBlogIndex(normalized)
   const initialDisplayPosts = posts.slice(0, POSTS_PER_PAGE)
   const pagination = {
     currentPage: 1,
