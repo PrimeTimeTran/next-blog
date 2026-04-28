@@ -5,6 +5,7 @@ import { PageSEO } from '@/components/SEO'
 import ListLayout from '@/layouts/ListLayout'
 import siteMetadata from '@/data/siteMetadata'
 import NewsletterForm from '@/components/NewsletterForm'
+import { normalizePost } from '@/lib/content/core/normalize'
 import SectionContainer from '@/components/SectionContainer'
 import { getBlogIndex, getAllBlogPosts } from '@/lib/content/server/blog.server'
 
@@ -38,8 +39,8 @@ const TOPICS = {
 
 export async function getStaticProps() {
   const rawPosts = getAllBlogPosts()
-
-  const { posts, tagCounts, tagMap } = getBlogIndex(rawPosts)
+  const normalized = rawPosts.map(normalizePost).filter((p) => p && p.date) // 🔥 important
+  const { posts, tagCounts, tagMap } = getBlogIndex(normalized)
 
   return {
     props: {

@@ -1,16 +1,20 @@
 import { useEffect } from 'react'
-import { getAllFilesFrontMatter } from '@/lib/mdx'
-import siteMetadata from '@/data/siteMetadata'
-import ListLayout from '@/layouts/ListLayout'
 import { PageSEO } from '@/components/SEO'
+import ListLayout from '@/layouts/ListLayout'
+import siteMetadata from '@/data/siteMetadata'
+import { normalizePost } from '@/lib/content/core/normalize'
 import SectionContainer from '@/components/SectionContainer'
+import { getBlogIndex, getAllBlogPosts } from '@/lib/content/server/blog.server'
 
 import { pageview } from '../lib/ga'
 
 export const POSTS_PER_PAGE = 20
 
 export async function getStaticProps() {
-  const posts = await getAllFilesFrontMatter('blog')
+  const rawPosts = getAllBlogPosts()
+  const normalized = rawPosts.map(normalizePost).filter((p) => p && p.date) // 🔥 important
+  const { posts, tagCounts, tagMap } = getBlogIndex(normalized)
+  // const posts = await getAllFilesFrontMatter('blog')
   const initialDisplayPosts = posts.slice(0, POSTS_PER_PAGE)
   const pagination = {
     currentPage: 1,

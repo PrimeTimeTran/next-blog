@@ -2,20 +2,25 @@ import generateRss from '@/lib/generate-rss'
 
 import PageTitle from '@/components/PageTitle'
 import { MDXLayoutRenderer } from '@/components/MDXComponents'
-import { getFiles, getFileBySlug } from '@/lib/content/pipelines/blog.pipeline.server'
-import { getBlogFileBySlug } from '@/lib/content/pipelines/blog.pipeline.server'
-import { formatSlug } from '@/lib/content/core/slug'
+import { getBlogFileBySlug } from '@/lib/content/server/blog.server'
+import { getFiles, getFileBySlug } from '@/lib/content/server/blog.server'
 
 const DEFAULT_LAYOUT = 'PostLayout'
 
 export async function getStaticPaths() {
   const posts = getFiles('blog')
   return {
-    paths: posts.map((p) => ({
-      params: {
-        slug: formatSlug(p).split('/'),
-      },
-    })),
+    paths: posts.map((p) => {
+      let slug = p.slug.replace(/^blog\//, '').split('/') // ✅ DO NOT re-format
+      if (slug[0] != 'kb') {
+        console.log('slug getFiles', slug)
+      }
+      return {
+        params: {
+          slug: slug,
+        },
+      }
+    }),
     fallback: false,
   }
 }
@@ -30,11 +35,9 @@ export async function getStaticProps({ params }) {
   const next = allPosts[postIndex - 1] || null
 
   const authorList = post?.frontMatter?.authors || ['default']
-
   const authorDetails = await Promise.all(
     authorList.map(async (author) => {
-      const res = await getFileBySlug('authors', [author])
-      return res?.frontMatter || null
+      return getFileBySlug('authors', author)
     })
   )
 

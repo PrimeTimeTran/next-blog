@@ -4,18 +4,19 @@ import Tag from '@/components/Tag'
 import Link from '@/components/Link'
 import formatDate from '@/lib/utils/formatDate'
 import Pagination from '@/components/Pagination'
+import { normalizePost } from '@/lib/content/core/normalize'
 
-function normalizePost(post) {
-  if (!post) return null
+// function normalizePost(post) {
+//   if (!post) return null
 
-  return {
-    ...post,
-    frontMatter: {
-      ...post.frontMatter,
-      tags: Array.isArray(post.frontMatter?.tags) ? post.frontMatter.tags : [],
-    },
-  }
-}
+//   return {
+//     ...post,
+//     frontMatter: {
+//       ...post.frontMatter,
+//       tags: Array.isArray(post.frontMatter?.tags) ? post.frontMatter.tags : [],
+//     },
+//   }
+// }
 
 export default function ListLayout({
   title,
@@ -35,25 +36,19 @@ export default function ListLayout({
   }, [posts])
 
   // 2. search filter
-  const filteredBlogPosts = useMemo(() => {
-    const q = searchValue.toLowerCase()
+  const filteredBlogPosts = posts.filter(
+    (post) => {
+      const searchContent = post.title + post.summary + post.tags.join(' ')
 
-    return safePosts.filter((post) => {
-      const fm = post.frontMatter || {}
-
-      const searchContent = [fm.title, fm.summary, (fm.tags || []).join(' ')]
-        .filter(Boolean)
-        .join(' ')
-        .toLowerCase()
-
-      return searchContent.includes(q)
-    })
-  }, [safePosts, searchValue])
+      return searchContent.toLowerCase().includes(searchValue.toLowerCase())
+    },
+    [safePosts, searchValue]
+  )
 
   // 3. final display logic
   let displayPosts =
     initialDisplayPosts.length > 0 && !searchValue ? initialDisplayPosts : filteredBlogPosts
-  displayPosts.sort((a, b) => new Date(b.frontMatter.date) - new Date(a.frontMatter.date))
+  displayPosts.sort((a, b) => new Date(b.date) - new Date(a.date))
   return (
     <>
       <div className="divide-y divide-gray-200 dark:divide-gray-700 ">
@@ -90,12 +85,7 @@ export default function ListLayout({
         <ul>
           {!filteredBlogPosts.length && 'No posts found.'}
           {displayPosts.map((post) => {
-            const { slug, date, title, summary, tags = [] } = post.frontMatter || { tags: [] }
-
-            if (title.includes('Opinion:')) {
-              console.log({ post })
-            }
-
+            const { slug, date, title, summary, tags = [] } = post
             return (
               <li key={slug} className="py-4">
                 <article className="space-y-2 xl:grid xl:grid-cols-4 xl:items-baseline xl:space-y-0">
@@ -108,7 +98,7 @@ export default function ListLayout({
                   <div className="space-y-3 xl:col-span-3">
                     <div>
                       <h3 className="text-2xl font-bold leading-8 tracking-tight">
-                        <Link href={`/blog/${slug}`} className="text-gray-900! dark:text-gray-100!">
+                        <Link href={`/${post.slug}`} className="text-gray-900! dark:text-gray-100!">
                           {title}
                         </Link>
                       </h3>
