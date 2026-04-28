@@ -1,7 +1,8 @@
 import generateRss from '@/lib/generate-rss'
 
 import { MDXLayoutRenderer } from '@/components/MDXComponents'
-import { getFiles, getFileBySlug } from '@/lib/content/server/blog.server'
+import { getFiles } from '@/lib/content/server/blog.server'
+import { getFileBySlug } from '@/lib/content/server/getFileBySlug'
 
 const DEFAULT_LAYOUT = 'PostLayout'
 
