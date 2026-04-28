@@ -4,9 +4,10 @@ import Link from '@/components/Link'
 import { PageSEO } from '@/components/SEO'
 import ListLayout from '@/layouts/ListLayout'
 import siteMetadata from '@/data/siteMetadata'
-import { getAllFilesFrontMatter } from '@/lib/mdx'
 import NewsletterForm from '@/components/NewsletterForm'
 import SectionContainer from '@/components/SectionContainer'
+import { getBlogIndex, getAllBlogPosts } from '@/lib/content/server/blog.server'
+
 import {
   dsa,
   tech,
@@ -36,18 +37,26 @@ const TOPICS = {
 }
 
 export async function getStaticProps() {
-  const posts = await getAllFilesFrontMatter('blog')
-  return { props: { posts } }
+  const rawPosts = getAllBlogPosts()
+
+  const { posts, tagCounts, tagMap } = getBlogIndex(rawPosts)
+
+  return {
+    props: {
+      posts: posts || [],
+      tagMap: tagMap || {},
+      tagCounts: tagCounts || [],
+    },
+  }
 }
 
 export default function Home({ posts }) {
   const [searchTerm, setSearchTerm] = useState('')
   const [activeTopic, setActiveTopic] = useState(null)
 
+  // Topic filter
   const filteredPosts = useMemo(() => {
     let result = posts
-
-    // Topic filter
     if (activeTopic) {
       const topicTags = TOPICS[activeTopic].map((tag) => tag.replace(' ', '-').toLowerCase())
 
@@ -83,10 +92,10 @@ export default function Home({ posts }) {
       <PageSEO title={siteMetadata.title} description={siteMetadata.description} />
       {/* Posts */}
       <ListLayout
-        posts={filteredPosts}
-        initialDisplayPosts={[]}
         pagination={1}
         title="Latest"
+        posts={filteredPosts}
+        initialDisplayPosts={[]}
         subtitle={siteMetadata.description}
         topics={
           <div>

@@ -1,8 +1,10 @@
-import fs from 'fs'
-import PageTitle from '@/components/PageTitle'
 import generateRss from '@/lib/generate-rss'
+
+import PageTitle from '@/components/PageTitle'
 import { MDXLayoutRenderer } from '@/components/MDXComponents'
-import { formatSlug, getAllFilesFrontMatter, getFileBySlug, getFiles } from '@/lib/mdx'
+import { getFiles, getFileBySlug } from '@/lib/content/pipelines/blog.pipeline.server'
+import { getBlogFileBySlug } from '@/lib/content/pipelines/blog.pipeline.server'
+import { formatSlug } from '@/lib/content/core/slug'
 
 const DEFAULT_LAYOUT = 'PostLayout'
 
@@ -19,25 +21,31 @@ export async function getStaticPaths() {
 }
 
 export async function getStaticProps({ params }) {
-  const allPosts = await getAllFilesFrontMatter('blog')
-  const postIndex = allPosts.findIndex((post) => formatSlug(post.slug) === params.slug.join('/'))
+  const slug = Array.isArray(params.slug) ? params.slug.join('/') : params.slug
+  const allPosts = []
+  const postIndex = allPosts.findIndex((p) => p.slug === slug)
+  const post = await getBlogFileBySlug(slug)
+
   const prev = allPosts[postIndex + 1] || null
   const next = allPosts[postIndex - 1] || null
-  const post = await getFileBySlug('blog', params.slug.join('/'))
-  const authorList = post.frontMatter.authors || ['default']
-  const authorPromise = authorList.map(async (author) => {
-    const authorResults = await getFileBySlug('authors', [author])
-    return authorResults.frontMatter
-  })
-  const authorDetails = await Promise.all(authorPromise)
 
-  // rss
-  if (allPosts.length > 0) {
-    const rss = generateRss(allPosts)
-    fs.writeFileSync('./public/feed.xml', rss)
+  const authorList = post?.frontMatter?.authors || ['default']
+
+  const authorDetails = await Promise.all(
+    authorList.map(async (author) => {
+      const res = await getFileBySlug('authors', [author])
+      return res?.frontMatter || null
+    })
+  )
+
+  return {
+    props: {
+      post,
+      authorDetails,
+      prev,
+      next,
+    },
   }
-
-  return { props: { post, authorDetails, prev, next } }
 }
 
 export default function Blog({ post, authorDetails, prev, next }) {

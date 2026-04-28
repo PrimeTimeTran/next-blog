@@ -1,33 +1,59 @@
-import Link from '@/components/Link'
+import { useState, useMemo } from 'react'
+
 import Tag from '@/components/Tag'
-import siteMetadata from '@/data/siteMetadata'
-import { useState } from 'react'
-import Pagination from '@/components/Pagination'
+import Link from '@/components/Link'
 import formatDate from '@/lib/utils/formatDate'
+import Pagination from '@/components/Pagination'
+
+function normalizePost(post) {
+  if (!post) return null
+
+  return {
+    ...post,
+    frontMatter: {
+      ...post.frontMatter,
+      tags: Array.isArray(post.frontMatter?.tags) ? post.frontMatter.tags : [],
+    },
+  }
+}
 
 export default function ListLayout({
-  posts,
   title,
-  initialDisplayPosts = [],
-  subtitle,
+  posts = [],
   topics,
+  tagMap,
+  subtitle,
+  tagCounts,
   pagination,
+  initialDisplayPosts = [],
 }) {
   const [searchValue, setSearchValue] = useState('')
-  const filteredBlogPosts = posts.filter((frontMatter) => {
-    try {
-      const searchContent = frontMatter.title + frontMatter.summary + frontMatter.tags.join(' ')
-      return searchContent.toLowerCase().includes(searchValue.toLowerCase())
-    } catch (error) {
-      console.log('Error processing frontMatter:', frontMatter)
-      console.error(error)
-      return false
-    }
-  })
 
-  const displayPosts =
+  // 1. normalize once
+  const safePosts = useMemo(() => {
+    return posts.map(normalizePost).filter(Boolean)
+  }, [posts])
+
+  // 2. search filter
+  const filteredBlogPosts = useMemo(() => {
+    const q = searchValue.toLowerCase()
+
+    return safePosts.filter((post) => {
+      const fm = post.frontMatter || {}
+
+      const searchContent = [fm.title, fm.summary, (fm.tags || []).join(' ')]
+        .filter(Boolean)
+        .join(' ')
+        .toLowerCase()
+
+      return searchContent.includes(q)
+    })
+  }, [safePosts, searchValue])
+
+  // 3. final display logic
+  let displayPosts =
     initialDisplayPosts.length > 0 && !searchValue ? initialDisplayPosts : filteredBlogPosts
-
+  displayPosts.sort((a, b) => new Date(b.frontMatter.date) - new Date(a.frontMatter.date))
   return (
     <>
       <div className="divide-y divide-gray-200 dark:divide-gray-700 ">
@@ -63,8 +89,13 @@ export default function ListLayout({
         </div>
         <ul>
           {!filteredBlogPosts.length && 'No posts found.'}
-          {displayPosts.map((frontMatter) => {
-            const { slug, date, title, summary, tags } = frontMatter
+          {displayPosts.map((post) => {
+            const { slug, date, title, summary, tags = [] } = post.frontMatter || { tags: [] }
+
+            if (title.includes('Opinion:')) {
+              console.log({ post })
+            }
+
             return (
               <li key={slug} className="py-4">
                 <article className="space-y-2 xl:grid xl:grid-cols-4 xl:items-baseline xl:space-y-0">
@@ -82,9 +113,7 @@ export default function ListLayout({
                         </Link>
                       </h3>
                       <div className="flex flex-wrap">
-                        {tags.map((tag) => (
-                          <Tag key={tag} text={tag} />
-                        ))}
+                        {tags && tags.map((tag) => <Tag key={tag} text={tag} />)}
                       </div>
                     </div>
                     <div className="prose max-w-none text-gray-500 dark:text-gray-400">
