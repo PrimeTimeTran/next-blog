@@ -1,12 +1,12 @@
 /* eslint-disable @next/next/inline-script-id */
-import '@/css/tailwind.css'
+
 import '@/css/prism.css'
+import '@/css/tailwind.css'
+import Head from 'next/head'
 import 'katex/dist/katex.css'
 import Script from 'next/script'
-import '@fontsource/inter/variable-full.css'
-
 import { ThemeProvider } from 'next-themes'
-import Head from 'next/head'
+import '@fontsource/inter/variable-full.css'
 
 import siteMetadata from '@/data/siteMetadata'
 import Analytics from '@/components/analytics'

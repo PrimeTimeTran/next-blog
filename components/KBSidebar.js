@@ -1,16 +1,18 @@
 import Link from 'next/link'
 import { useRouter } from 'next/router'
+import { useRef, useEffect } from 'react'
 
-export default function SidebarNode({ node = {}, openMap, setOpenMap }) {
-  if (!node || typeof node !== 'object') return null
+const SCROLL_KEY = 'kb-sidebar-scroll'
+
+export default function SidebarNode({ node = [], openMap, setOpenMap }) {
+  if (!Array.isArray(node)) return null
 
   return (
-    <ul className="pl-3">
-      {Object.entries(node).map(([key, value]) => (
+    <ul className="pl-1">
+      {node.map((item) => (
         <SidebarItem
-          key={value?.__meta?.slug || key}
-          nodeKey={key}
-          value={value}
+          key={item.slug || item.name}
+          item={item}
           openMap={openMap}
           setOpenMap={setOpenMap}
         />
@@ -19,69 +21,56 @@ export default function SidebarNode({ node = {}, openMap, setOpenMap }) {
   )
 }
 
-export function SidebarItem({ nodeKey, value, openMap, setOpenMap }) {
+export function SidebarItem({ item, openMap, setOpenMap }) {
   const router = useRouter()
 
-  const hasChildren = value?.__children && Object.keys(value.__children).length > 0
+  const hasChildren = item.children?.length > 0
+  const href = item.slug ? `/kb/${item.slug}` : null
 
-  const meta = value?.__meta
-
-  const slug = meta?.slug
-  const href = slug ? `/kb/${slug}` : null
-
-  const id = slug || nodeKey
-
-  const normalize = (p = '') =>
-    p
-      .split('?')[0]
-      .replace(/\/+$/, '')
-      .replace(/^\/kb\//, '')
-
-  const current = normalize(router.asPath)
-  const target = slug || ''
-
-  const isInPath = target && (current === target || current.startsWith(target + '/'))
-
-  const open = openMap[id] ?? isInPath
+  const id = item.slug || item.name
+  const open = openMap[id] ?? false
 
   const toggle = () => {
     setOpenMap((prev) => ({
       ...prev,
-      [id]: !(prev[id] ?? isInPath),
+      [id]: !prev[id],
     }))
   }
 
   return (
     <li className="select-none">
-      <div className="flex items-center gap-2 py-1">
+      <div className="flex w-full items-center gap-2 rounded px-2 py-1 hover:bg-zinc-100 dark:hover:bg-zinc-800">
+        {/* expand/collapse */}
         {hasChildren ? (
           <button onClick={toggle} className="flex items-center gap-1 text-xs text-zinc-500">
-            <span className="text-[20px]">{open ? '▾' : '▸'}</span>
+            <span>{open ? '▾' : '▸'}</span>
             <span>📁</span>
           </button>
         ) : (
           <span className="text-xs text-zinc-400">📄</span>
         )}
 
+        {/* full-width clickable link */}
         {href ? (
-          // eslint-disable-next-line @next/next/link-passhref
-          <Link href={href}>
+          <Link scroll={false} href={href} className="flex flex-1 items-center">
             <span
-              className={`text-sm hover:text-blue-600 ${
-                router.asPath === href ? 'font-semibold text-blue-600' : ''
+              className={`w-full text-sm ${
+                router.asPath === href
+                  ? 'font-semibold text-blue-600'
+                  : 'text-zinc-700 dark:text-zinc-300'
               }`}
             >
-              {meta?.frontMatter?.title || nodeKey}
+              {item.name}
             </span>
           </Link>
         ) : (
-          <span className="text-sm">{nodeKey}</span>
+          <span className="text-sm text-zinc-700 dark:text-zinc-300">{item.name}</span>
         )}
       </div>
 
       {hasChildren && open && (
-        <div className="border-l border-zinc-200">
-          <SidebarNode node={value.__children} openMap={openMap} setOpenMap={setOpenMap} />
+        <div className="ml-2 border-l border-zinc-200">
+          <SidebarNode node={item.children} openMap={openMap} setOpenMap={setOpenMap} />
         </div>
       )}
     </li>

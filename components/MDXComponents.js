@@ -1,13 +1,14 @@
 /* eslint-disable react/display-name */
 import { useMemo } from 'react'
 import { getMDXComponent } from 'mdx-bundler/client'
+
+import Pre from './Pre'
 import Image from './Image'
+import Snippet from './Snippet'
 import CustomLink from './Link'
 import TOCInline from './TOCInline'
-import Pre from './Pre'
-import { BlogNewsletterForm } from './NewsletterForm'
 import BTCOrderBook from './finance/orderbook'
-import Snippet from './Snippet'
+import { BlogNewsletterForm } from './NewsletterForm'
 
 export const MDXComponents = {
   Image,
