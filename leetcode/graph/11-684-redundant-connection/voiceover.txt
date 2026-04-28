@@ -1,4 +1,0 @@
-Voiceover for LC 684 - Redundant Connection
-
-Notes:
-- Union-Find basics: find + union with path compression

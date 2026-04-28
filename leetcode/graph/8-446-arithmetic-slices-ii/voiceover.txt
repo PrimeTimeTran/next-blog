@@ -1,4 +1,0 @@
-Voiceover for LC 446 - Arithmetic Slices II
-
-Notes:
-- Optional: example of DP on DAGs and subsequence counting
