@@ -7,7 +7,7 @@ tags:
 
 # 🧠 Maclaurin Series (Atom)
 
-The Maclaurin series is a special case of the Taylor series centered at \(x = 0\), used to approximate functions using polynomials.
+The Maclaurin series is a special case of the Taylor series centered at $x = 0$, used to approximate functions using polynomials.
 
 ---
 
@@ -19,7 +19,7 @@ The Maclaurin series is a special case of the Taylor series centered at \(x = 0\
 
 # 📐 Definition
 
-For a function \(f(x)\):
+For a function $f(x)$:
 
 $$
 f(x) = \sum_{n=0}^{\infty} \frac{f^{(n)}(0)}{n!} x^n
@@ -29,9 +29,9 @@ $$
 
 # 🧩 Meaning of Terms
 
-- \(f^{(n)}(0)\): nth derivative evaluated at 0
-- \(n!\): scaling factor
-- \(x^n\): polynomial basis
+- $f^{(n)}(0)$: nth derivative evaluated at 0
+- $n!$: scaling factor
+- $x^n$: polynomial basis
 
 ---
 
@@ -55,7 +55,7 @@ Each derivative adds more accuracy.
 
 # ⚙️ Why It Works
 
-Near \(x=0\):
+Near $x=0$:
 
 - polynomials approximate smooth functions well
 - higher derivatives refine curvature and shape
@@ -95,7 +95,7 @@ $$
 \ln(1+x) = \sum_{n=1}^{\infty} (-1)^{n+1}\frac{x^n}{n}
 $$
 
-(valid for \(|x| < 1\))
+(valid for $|x| < 1$)
 
 ---
 
@@ -120,7 +120,7 @@ A Maclaurin series only works when:
 
 # 🔗 Connections
 
-- [[Taylor Series Expansion]] → generalized form (centered at \(a\))
+- [[Taylor Series Expansion]] → generalized form centered at $a$
 - [[Power Series]] → broader framework
 - [[Error Approximation]] → truncation error
 - [[atom/math/calc/1/limits/limits]] → convergence behavior

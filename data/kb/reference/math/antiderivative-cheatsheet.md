@@ -30,8 +30,8 @@ tags:
 # 📘 Logarithms
 
 | Function      | Antiderivative |
-| ------------- | -------------- |
-| $\frac{1}{x}$ | $\ln           |
+| ------------- | -------------- | --- | ---- |
+| $\frac{1}{x}$ | $\ln           | x   | + C$ |
 
 ---
 
@@ -43,52 +43,3 @@ tags:
 | $\cos x$   | $\sin x + C$   |
 | $\sec^2 x$ | $\tan x + C$   |
 | $\csc^2 x$ | $-\cot x + C$  |
-
----
-
-# 🧠 Key rules (quick memory)
-
-### 🔑 Power rule
-
-$$
-\int x^n , dx = \frac{x^{n+1}}{n+1} + C
-$$
-
----
-
-### 🔑 Constant multiple rule
-
-$$
-\int a f(x),dx = a \int f(x),dx
-$$
-
----
-
-### 🔑 Log special case
-
-$$
-\int \frac{1}{x} , dx = \ln|x| + C
-$$
-
----
-
-# 🧠 Concept map (intuition)
-
-| Derivatives        | Antiderivatives |
-| ------------------ | --------------- |
-| slope              | accumulation    |
-| local change       | total area      |
-| instantaneous rate | global sum      |
-
-| Function $f(x)$          | Antiderivative                          | Rule Name / Notes          |
-| ------------------------ | --------------------------------------- | -------------------------- |
-| $k$ (constant)           | $kx + C$                                | Constant rule              |
-| $x^n$                    | $\frac{x^{n+1}}{n+1} + C$ $(n \neq -1)$ | Power rule                 |
-| $x^{-1}$                 | $\ln                                    | x                          |
-| $e^x$                    | $e^x + C$                               | Exponential rule           |
-| $a^x$                    | $\frac{a^x}{\ln a} + C$                 | General exponential        |
-| $\cos(x)$                | $\sin(x) + C$                           | Basic trig                 |
-| $\sin(x)$                | $-\cos(x) + C$                          | Basic trig                 |
-| $\sec^{2}(x)$            | $\tan(x) + C$                           | Derivative identity of tan |
-| $\frac{1}{x + x^2}$      | $\ln\left                               | \frac{x}{x+1}\right        |
-| $\frac{1}{\sqrt{1-x^2}}$ | $\arcsin(x) + C$                        | Inverse trig form          |

@@ -56,7 +56,7 @@
 | yabai --restart-service        | restarts yabai                                                                    |
 | yabai -m space --balance       | balance out all windows both horizontally and vertically to occupy the same space |
 | yabai -m space --mirror x-axis | Flip the tree horizontally                                                        |
-| yabai -m space --mirror y-axis | <br>Flip the tree vertically                                                      |
+| yabai -m space --mirror y-axis | <br />Flip the tree vertically                                                    |
 | yabai -m space --rotate 90     | Rotate the window tree clock-wise                                                 |
 |                                |                                                                                   |
 |                                |                                                                                   |

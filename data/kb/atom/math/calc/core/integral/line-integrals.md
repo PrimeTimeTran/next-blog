@@ -7,17 +7,19 @@ tags:
 
 # 🧠 Line Integrals (Atom)
 
-A line integral extends integration to functions evaluated **along a curve in space**.
+A line integral extends integration to functions evaluated along a curve in space.
 
 ---
 
 # 🧠 Core Idea
 
-> Instead of integrating over an interval or area, we integrate _along a path_.
+> Instead of integrating over an interval or area, we integrate along a path.
 
 ---
 
 # 📐 Two Main Types
+
+---
 
 ## 1. Scalar Line Integrals
 
@@ -29,8 +31,8 @@ $$
 
 Where:
 
-- \(C\) = curve
-- \(ds\) = small arc length element
+- $C$ = curve
+- $ds$ = small arc length element
 
 ---
 
@@ -56,8 +58,8 @@ $$
 
 Where:
 
-- \(\vec{F}\) = vector field (force field)
-- \(d\vec{r}\) = small displacement vector
+- $\vec{F}$ = vector field (force field)
+- $d\vec{r}$ = small displacement vector
 
 ---
 
@@ -69,7 +71,7 @@ Where:
 
 # ⚙️ Parameterization
 
-To compute line integrals, we represent the curve:
+To compute line integrals, represent the curve as:
 
 $$
 \vec{r}(t) = \langle x(t), y(t), z(t) \rangle,\quad a \le t \le b
@@ -77,8 +79,8 @@ $$
 
 Then:
 
-- scalar case uses \(ds = |\vec{r}'(t)|dt\)
-- vector case uses \(d\vec{r} = \vec{r}'(t)dt\)
+- scalar case: $ds = |\vec{r}'(t)|dt$
+- vector case: $d\vec{r} = \vec{r}'(t)dt$
 
 ---
 
@@ -116,9 +118,9 @@ $$
 
 # 🔁 Direction Matters
 
-Line integrals depend on path direction:
+Line integrals depend on orientation:
 
-- reversing curve → changes sign (vector case)
+- reversing the curve changes sign (vector case)
 
 ---
 
@@ -126,7 +128,7 @@ Line integrals depend on path direction:
 
 Use line integrals when:
 
-- movement happens along a curve
+- movement occurs along a curve
 - quantities are distributed along paths
 - fields act along trajectories
 
@@ -134,9 +136,9 @@ Use line integrals when:
 
 # 🔗 Connections
 
-- [[vector-fields|Vector Fields]] → input to line integrals
+- [[Vector Fields]] → input to line integrals
 - [[Work-Energy Theorem]] → physical interpretation
-- [[greens-theorem|Green’s Theorem]] → converts line integrals to area integrals
+- [[Green’s Theorem]] → converts line integrals to area integrals
 - [[Fundamental Theorem of Line Integrals]] → simplifies conservative fields
 - [[Parameterization]] → required computation tool
 
@@ -144,7 +146,7 @@ Use line integrals when:
 
 # 🧠 Mental Model
 
-> Line integrals measure accumulation _along motion_, not across space.
+> Line integrals measure accumulation along motion, not across space.
 
 ---
 

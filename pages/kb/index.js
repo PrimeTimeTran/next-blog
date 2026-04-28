@@ -1,7 +1,9 @@
 export async function getStaticProps() {
+  const { safeMath } = await import('@/lib/mdx/safeMath')
   const { getFileBySlug } = await import('@/lib/mdx')
 
-  const kbItem = await getFileBySlug('kb', 'kb') // maps kb.md
+  let kbItem = await getFileBySlug('kb', 'kb') // maps kb.md
+  // kbItem = safeMath(kbItem)
 
   return {
     props: {

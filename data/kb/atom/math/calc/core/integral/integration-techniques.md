@@ -21,9 +21,11 @@ Different integrals require different strategies—there is no single algorithm.
 
 # 🧩 Main Techniques Overview
 
+---
+
 ## 1. Substitution (u-substitution)
 
-Used when an integral contains a **composition of functions**.
+Used when an integral contains a composition of functions.
 
 ### Idea:
 
@@ -39,17 +41,15 @@ $$
 
 Let:
 
-- \(u = g(x)\)
+- $u = g(x)$
 
-Then:
-
-- convert everything into \(u\)
+Then rewrite everything in terms of $u$.
 
 ---
 
 ## 2. Integration by Parts
 
-Used for **products of functions**.
+Used for products of functions.
 
 ### Formula:
 
@@ -65,7 +65,7 @@ $$
 
 ## 3. Partial Fractions
 
-Used for **rational functions**:
+Used for rational functions:
 
 $$
 \frac{P(x)}{Q(x)}
@@ -81,8 +81,8 @@ $$
 
 Used when integrand involves trig powers/products:
 
-- \(\sin^m x \cos^n x\)
-- \(\tan^m x \sec^n x\)
+- $\sin^m x \cos^n x$
+- $\tan^m x \sec^n x$
 
 ### Idea:
 
@@ -94,9 +94,9 @@ Used when integrand involves trig powers/products:
 
 Used for expressions involving radicals:
 
-- \(\sqrt{a^2 - x^2}\)
-- \(\sqrt{x^2 + a^2}\)
-- \(\sqrt{x^2 - a^2}\)
+- $\sqrt{a^2 - x^2}$
+- $\sqrt{x^2 + a^2}$
+- $\sqrt{x^2 - a^2}$
 
 ### Idea:
 
@@ -132,6 +132,8 @@ Used when no closed form exists:
 
 # 🔁 How to Choose a Method
 
+---
+
 ## Step 1: Identify structure
 
 - product → integration by parts
@@ -156,7 +158,7 @@ Before applying any method:
 
 > Integration is pattern recognition + transformation
 
-You are not “solving” directly—you are:
+You are not solving directly—you are:
 
 - reshaping the integral
 - until it matches a known form

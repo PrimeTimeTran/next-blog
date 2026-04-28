@@ -1,18 +1,25 @@
-import { getFiles, formatSlug } from '@/lib/mdx'
 import { MDXLayoutRenderer } from '@/components/MDXComponents'
 
 function serialize(obj) {
   return JSON.parse(JSON.stringify(obj))
 }
+function clean(obj) {
+  return JSON.parse(JSON.stringify(obj, (_, v) => (v === undefined ? null : v)))
+}
 
 /* -----------------------
  * STATIC PATHS
  * ---------------------- */
+
 export async function getStaticPaths() {
-  const kbFiles = getFiles('kb').filter(Boolean)
+  const { MDX_ERRORS, getPublishedFiles } = await import('@/lib/mdx')
+  const { toSlug, normalizeSlug } = await import('@/lib/server/files')
+  // const { normalizeSlug } = await import('@/lib/server/files')
+
+  const kbFiles = getPublishedFiles('kb')
 
   const paths = kbFiles.map((file) => {
-    const slug = formatSlug(file)
+    const slug = normalizeSlug(file)
 
     return {
       params: {
@@ -21,8 +28,15 @@ export async function getStaticPaths() {
     }
   })
 
+  if (MDX_ERRORS.length > 0) {
+    console.log('\n🔥 MDX ERROR SUMMARY:')
+    MDX_ERRORS.forEach(({ slug, error }) => {
+      console.log('-', slug)
+    })
+  }
+
   return {
-    paths,
+    paths: paths,
     fallback: false,
   }
 }
@@ -31,33 +45,39 @@ export async function getStaticPaths() {
  * STATIC PROPS
  * ---------------------- */
 export async function getStaticProps({ params }) {
-  const { getAllFilesFrontMatter, getFileBySlug, buildKbTree, formatSlug } = await import(
+  const { normalizeSlugFromSlug } = await import('@/lib/server/files')
+  const { normalizeKBFile, buildKbTree, getFileBySlug, getAllFilesFrontMatter } = await import(
     '@/lib/mdx'
   )
 
-  const slug = (params?.slug || []).join('/')
-
+  const slugArray = Array.isArray(params.slug)
+    ? params.slug
+    : typeof params.slug === 'string'
+    ? params.slug.split('/')
+    : []
+  const slug = slugArray.join('/')
+  const safeSlug = normalizeSlugFromSlug(slug)
   const rawKB = await getAllFilesFrontMatter('kb')
 
-  const allKB = rawKB.filter(Boolean).map((item) => ({
-    ...item,
-    slug: formatSlug(item.slug || item.filePath),
-  }))
+  const allKB = rawKB.map(normalizeKBFile).filter(Boolean)
 
   const sidebarData = buildKbTree(allKB)
 
-  const index = allKB.findIndex((item) => item.slug === slug)
+  const index = allKB.findIndex((item) => item.slug === safeSlug)
 
-  const kbItem = await getFileBySlug('kb', slug)
+  let kbItem = await getFileBySlug('kb', safeSlug)
+  if (!kbItem) {
+    return { notFound: true }
+  }
 
   const prev = index >= 0 ? allKB[index + 1] || null : null
   const next = index >= 0 ? allKB[index - 1] || null : null
 
   return {
     props: {
-      kbItem,
-      prev,
-      next,
+      kbItem: clean(kbItem),
+      prev: serialize(prev),
+      next: serialize(next),
       sidebarData: serialize(sidebarData),
     },
   }
@@ -67,6 +87,8 @@ export async function getStaticProps({ params }) {
  * PAGE
  * ---------------------- */
 export default function Page({ kbItem, sidebarData, ...rest }) {
+  if (!kbItem) return null
+
   const layout = kbItem?.frontMatter?.layout || 'KBLayout'
 
   return (
