@@ -7,7 +7,7 @@
 |                            |        |                            |                                                     |
 | find                       | —      | . -name "\*.js"            | find JS files in current directory                  |
 |                            | —      | home -type f               | find only files under /home                         |
-|                            | -exec  | rm {} ;                    | execute command on each result                      |
+|                            | -exec  | rm ;                       | execute command on each result                      |
 |                            |        |                            |                                                     |
 | grep                       |        | file.txt                   | search inside file content                          |
 |                            | -r     | "text" .                   | recursive search "text" in dir                      |

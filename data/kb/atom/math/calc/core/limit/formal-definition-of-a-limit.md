@@ -3,7 +3,7 @@
 Let $f(x)$ be a function defined on an open interval around $a$ (except possibly at $a$). We say:
 
 $$
-\lim_{x \to a} f(x) = L
+$\lim_{x \to a} f(x) = L$
 $$
 
 if for every $\varepsilon > 0$, there exists a $\delta > 0$ such that:

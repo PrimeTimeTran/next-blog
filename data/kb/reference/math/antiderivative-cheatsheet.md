@@ -29,9 +29,9 @@ tags:
 
 # 📘 Logarithms
 
-| Function      | Antiderivative |
-| ------------- | -------------- | --- | ---- |
-| $\frac{1}{x}$ | $\ln           | x   | + C$ |
+| Function       | Antiderivative |
+| -------------- | -------------- | --- | ---- |
+| $\\frac{1}{x}$ | $\ln x$        | x   | + C$ |
 
 ---
 

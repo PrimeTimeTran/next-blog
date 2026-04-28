@@ -31,7 +31,7 @@ where $a_n > 0$, $b_n > 0$.
 Compute:
 
 $$
-\lim_{n \to \infty} \frac{a_n}{b_n} = c
+$\lim_{n \to \infty} \frac{a_n}{b_n} = c$
 $$
 
 ---
@@ -146,6 +146,6 @@ Use LCT when:
 
 # 📌 Summary
 
-- Compare $\frac{a_n}{b_n}$
+- Compare $\\frac{a_n}{b_n}$
 - If limit is finite and positive → same convergence behavior
 - Best for asymptotic comparison of series

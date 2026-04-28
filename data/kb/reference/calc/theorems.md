@@ -78,7 +78,7 @@ $$
 ## 7. Substitution Rule (u-sub)
 
 $$
-\int f(g(x))g'(x),dx = \int f(u),du
+\int f(g(x))g'(x) \, dx = \int f(u),du
 $$
 
 **Meaning:**

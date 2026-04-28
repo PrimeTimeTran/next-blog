@@ -27,7 +27,7 @@ $$
 then:
 
 $$
-\int f(x)\,dx = F(x) + C
+\int f(x)\ \, dx = F(x) + C
 $$
 
 ---
@@ -37,7 +37,7 @@ $$
 For $n \ne -1$:
 
 $$
-\int x^n\,dx = \frac{x^{n+1}}{n+1} + C
+\int x^n\ \, dx = \frac{x^{n+1}}{n+1} + C
 $$
 
 ---
@@ -45,7 +45,7 @@ $$
 # 📌 2. Constant Rule
 
 $$
-\int c\,dx = cx + C
+\int c\ \, dx = cx + C
 $$
 
 Where $c$ is a constant.
@@ -55,7 +55,7 @@ Where $c$ is a constant.
 # 📌 3. Constant Multiple Rule
 
 $$
-\int c \cdot f(x)\,dx = c \int f(x)\,dx
+\int c \cdot f(x)\ \, dx = c \int f(x)\ \, dx
 $$
 
 ---
@@ -63,7 +63,7 @@ $$
 # 📌 4. Sum Rule
 
 $$
-\int (f(x) + g(x))\,dx = \int f(x)\,dx + \int g(x)\,dx
+\int (f(x) + g(x))\ \, dx = \int f(x)\ \, dx + \int g(x)\ \, dx
 $$
 
 ---
@@ -71,7 +71,7 @@ $$
 # 📌 5. Difference Rule
 
 $$
-\int (f(x) - g(x))\,dx = \int f(x)\,dx - \int g(x)\,dx
+\int (f(x) - g(x))\ \, dx = \int f(x)\ \, dx - \int g(x)\ \, dx
 $$
 
 ---
@@ -79,11 +79,11 @@ $$
 # 📌 6. Exponential Rule
 
 $$
-\int e^x\,dx = e^x + C
+\int e^x\ \, dx = e^x + C
 $$
 
 $$
-\int a^x\,dx = \frac{a^x}{\ln a} + C
+\int a^x\ \, dx = \frac{a^x}{\ln a} + C
 $$
 
 ---
@@ -91,11 +91,11 @@ $$
 # 📌 7. Trigonometric Basics
 
 $$
-\int \sin x\,dx = -\cos x + C
+\int \sin x\ \, dx = -\cos x + C
 $$
 
 $$
-\int \cos x\,dx = \sin x + C
+\int \cos x\ \, dx = \sin x + C
 $$
 
 ---
@@ -103,7 +103,7 @@ $$
 # 📌 8. Log Rule (special case)
 
 $$
-\int \frac{1}{x}\,dx = \ln|x| + C
+\int \frac{1}{x}\ \, dx = \ln|x| + C
 $$
 
 ---

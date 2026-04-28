@@ -25,7 +25,7 @@ Integration comes in two fundamentally different forms:
 ## Definition
 
 $$
-\int f(x)\,dx = F(x) + C
+\int f(x)\ \, dx = F(x) + C
 $$
 
 Where:
@@ -44,7 +44,7 @@ Where:
 ## 📌 Example
 
 $$
-\int 2x\,dx = x^2 + C
+\int 2x\ \, dx = x^2 + C
 $$
 
 ---
@@ -139,12 +139,12 @@ $$
 
 # ⚖️ Side-by-Side Comparison
 
-| Feature         | Indefinite Integral | Definite Integral     |
-| --------------- | ------------------- | --------------------- |
-| Output          | Function            | Number                |
-| Includes \(C\)? | Yes                 | No                    |
-| Purpose         | Find antiderivative | Accumulate quantity   |
-| Notation        | \(\int f(x)\,dx\)   | \(\int_a^b f(x)\,dx\) |
+| Feature         | Indefinite Integral  | Definite Integral     |
+| --------------- | -------------------- | --------------------- |
+| Output          | Function             | Number                |
+| Includes \(C\)? | Yes                  | No                    |
+| Purpose         | Find antiderivative  | Accumulate quantity   |
+| Notation        | \(\int f(x)\ \, dx\) | \(\int_a^b f(x)\,dx\) |
 
 ---
 

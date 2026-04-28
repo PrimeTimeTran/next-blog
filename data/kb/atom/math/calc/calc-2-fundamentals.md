@@ -79,7 +79,7 @@ Calculus 2 builds on Calc 1 with these major themes:
 
 ## Example 1: Integration by Parts
 
-**Find** $\int x e^x \, dx$
+**Find** $\int x e^x \ \, dx$
 
 Using integration by parts: $\int u \, dv = uv - \int v \, du$
 
@@ -87,7 +87,7 @@ Let $u = x$, $dv = e^x dx$
 
 Then $du = dx$, $v = e^x$
 
-$$\int x e^x \, dx = x e^x - \int e^x \, dx = x e^x - e^x + C = e^x(x - 1) + C$$
+$$\int x e^x \ \, dx = x e^x - \int e^x \ \, dx = x e^x - e^x + C = e^x(x - 1) + C$$
 
 ## Example 2: Volume of Revolution
 
@@ -99,7 +99,7 @@ Using disk method: $V = \pi \int_0^1 (x^2)^2 \, dx = \pi \int_0^1 x^4 \, dx = \p
 
 **Does** $\sum_{n=1}^\infty \frac{1}{n^2}$ **converge?**
 
-Using p-series test: converges when p > 1, here p = 2 > 1, so converges to $\frac{\pi^2}{6}$.
+Using p-series test: converges when p > 1, here p = 2 > 1, so converges to $\\frac{\pi^2}{6}$.
 
 ## Example 4: Parametric Equations
 

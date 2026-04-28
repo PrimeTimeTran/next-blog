@@ -97,7 +97,7 @@ Most commonly use:
 ## Ratio Test
 
 $$
-\lim_{n \to \infty} \left| \frac{a_{n+1}}{a_n} \right| = L
+$\lim_{n \to \infty} \left| \frac{a_{n+1}}{a_n} \right| = L$
 $$
 
 Then:

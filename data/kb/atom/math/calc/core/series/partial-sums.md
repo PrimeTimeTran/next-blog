@@ -84,7 +84,7 @@ $$
 A series converges if:
 
 $$
-\lim_{n \to \infty} S_n
+$\lim_{n \to \infty} S_n$
 $$
 
 exists and is finite.

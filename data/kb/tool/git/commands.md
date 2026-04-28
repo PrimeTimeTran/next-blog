@@ -9,4 +9,4 @@
 |         |             |         |            |                                            |
 
 git rebase -i 9abd6ce5e9b55367feab75f08a1f93c7eb20da08
-git <subcommand> [options] [arguments]
+git `{'<subcommand>'}` [options] [arguments]

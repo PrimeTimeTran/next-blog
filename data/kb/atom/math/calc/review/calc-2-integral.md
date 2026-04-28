@@ -6,9 +6,9 @@
 | ----------------------- | ----------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------ |
 | The Definite Integral   | ![[definite-integral2]]                                           | Computes **net area under a curve** over an interval ([a,b]).                                                      |
 | The Fundamental Theorem | ![[fundamental-theorem-of-calculus-2]]                            | Connects **derivatives and integrals**, letting you evaluate definite integrals using antiderivatives.             |
-| Antiderivative Patterns | $\int x^n , dx = \frac{x^{n+1}}{n+1} + C$                         | Finds **basic antiderivatives directly** using power rules and known forms.                                        |
+| Antiderivative Patterns | $\int x^n  \, dx = \frac{x^{n+1}}{n+1} + C$                       | Finds **basic antiderivatives directly** using power rules and known forms.                                        |
 | u-Substitution          | ![[reference/calc/formula/u-substitution\|u-substitution]]        | Simplifies **composite functions** by substituting inner expressions.                                              |
-| Integration by Parts    | $\int x e^x , dx$                                                 | Handles **products of functions** (polynomial × exponential, trig × log, etc.).                                    |
+| Integration by Parts    | $\int x e^x  \, dx$                                               | Handles **products of functions** (polynomial × exponential, trig × log, etc.).                                    |
 | Partial Fractions       | $\int \frac{1}{x^2-1} dx$                                         | Breaks **rational functions** into simpler fractions for integration.                                              |
 | Improper & Numerical    | $\int_{1}^{\infty} \frac{1}{x^2} dx$ or trapezoidal rule for data | Evaluates **infinite limits or non-elementary integrals numerically** when exact solutions are hard or impossible. |
 |                         |                                                                   |                                                                                                                    |
@@ -19,7 +19,7 @@ How to find the exact area under the curve $f(x) = x^2$ from $x=0$ to $x=1$?
 
 ## 1️⃣ Motivating Problem 🐣 📝
 
-$$\int_{0}^{1} x^2 \, dx$$
+$$\int_{0}^{1} x^2 \ \, dx$$
 
 ![[int-1.png]]
 
@@ -63,7 +63,7 @@ $$\int_{0}^{1} x^2 \, dx$$
 
 We compute an antiderivative of $f(x) = x^2$:
 
-$$F(x) = \int x^2 \, dx = \frac{x^3}{3}$$
+$$F(x) = \int x^2 \ \, dx = \frac{x^3}{3}$$
 
 ---
 
@@ -116,7 +116,7 @@ Read:
 Composition function:
 
 $$
-\int 2x\cos(x^2),dx
+\int 2x\cos(x^2) \, dx
 $$
 
 There is a clear structure “signal” in the integrand:
@@ -153,7 +153,7 @@ $$
 Replace expressions in terms of $x$:
 
 $$
-\int 2x\cos(x^2),dx \to \int \cos(u),du
+\int 2x\cos(x^2) \, dx \to \int \cos(u),du
 $$
 
 ---
@@ -179,7 +179,7 @@ $$
 #### ✅ Solution
 
 $$
-\int 2x\cos(x^2),dx = \sin(x^2) + C
+\int 2x\cos(x^2) \, dx = \sin(x^2) + C
 $$
 
 ### 🔐 Key 💡 Idea
@@ -223,7 +223,7 @@ $$
 ##### 3️⃣ Substitute
 
 $$
-\int x^3 (x^4 + 5)^6 , dx
+\int x^3 (x^4 + 5)^6  \, dx
 $$
 
 becomes
@@ -261,7 +261,7 @@ $$
 #### ✅ Solution
 
 $$
-\int x^3 (x^4 + 5)^6 , dx = \frac{(x^4 + 5)^7}{28} + C
+\int x^3 (x^4 + 5)^6  \, dx = \frac{(x^4 + 5)^7}{28} + C
 $$
 
 $$
@@ -361,7 +361,7 @@ This version is cleaner because:
 
 ## 5️⃣ Motivating Problem 🐣 📝
 
-$$\int x\cos(x),dx$$
+$$\int x\cos(x) \, dx$$
 
 ---
 
@@ -388,7 +388,7 @@ du = dx
 $$
 
 $$
-v = \int \cos(x),dx = \sin(x)
+v = \int \cos(x) \, dx = \sin(x)
 $$
 
 ---
@@ -400,7 +400,7 @@ $$
 $$
 
 $$
-\int x\cos(x),dx = x\sin(x) - \int \sin(x),dx
+\int x\cos(x) \, dx = x\sin(x) - \int \sin(x) \, dx
 $$
 
 ---
@@ -408,7 +408,7 @@ $$
 ##### 4️⃣ Integrate remaining term
 
 $$
-\int \sin(x),dx = -\cos(x)
+\int \sin(x) \, dx = -\cos(x)
 $$
 
 So:
@@ -430,7 +430,7 @@ $$
 #### ✅ Solution
 
 $$
-\int x\cos(x),dx = x\sin(x) + \cos(x) + C
+\int x\cos(x) \, dx = x\sin(x) + \cos(x) + C
 $$
 
 ---

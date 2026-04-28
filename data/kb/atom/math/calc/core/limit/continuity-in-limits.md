@@ -23,7 +23,7 @@ Continuity describes when a function behaves “smoothly” at a point, and limi
 A function $f(x)$ is continuous at $x = a$ if:
 
 $$
-\lim_{x \to a} f(x) = f(a)
+$\lim_{x \to a} f(x) = f(a)$
 $$
 
 This requires all three conditions:

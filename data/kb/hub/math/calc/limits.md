@@ -76,8 +76,8 @@ A limit describes what a function is _approaching_ as $x$ gets close to a value 
 
 ### 6. 🔁 Indeterminate forms
 
-- $\frac{0}{0}$
-- $\frac{\infty}{\infty}$
+- $\\frac{0}{0}$
+- $\\frac{\infty}{\infty}$
 - Why they are “signals”, not answers
 
 → Link:

@@ -94,7 +94,7 @@ $$\lim_{x \to 2} (3x + 1) = 3(2) + 1 = 7$$
 
 **Find** $\lim_{x \to 1} \frac{x^2 - 1}{x - 1}$
 
-Direct substitution gives $\frac{0}{0}$ (undefined), but we can still find the limit:
+Direct substitution gives $\\frac{0}{0}$ (undefined), but we can still find the limit:
 
 $$\lim_{x \to 1} \frac{x^2 - 1}{x - 1} = \lim_{x \to 1} \frac{(x-1)(x+1)}{x-1}$$
 
@@ -124,7 +124,7 @@ Since the one-sided limits are different, $\lim_{x \to 0} \frac{1}{x}$ **does no
 
 **Find** $\lim_{x \to \infty} \frac{1}{x}$
 
-As $x$ gets arbitrarily large, $\frac{1}{x}$ gets arbitrarily close to 0:
+As $x$ gets arbitrarily large, $\\frac{1}{x}$ gets arbitrarily close to 0:
 
 $$\lim_{x \to \infty} \frac{1}{x} = 0$$
 
@@ -150,7 +150,7 @@ $$\lim_{x \to \infty} \frac{1}{x} = 0$$
 
 2. **Forgetting to check one-sided limits** — A limit only exists if left and right limits agree
 
-3. **Getting $\frac{0}{0}$ and giving up** — This means you need to simplify algebraically; the limit can still exist
+3. **Getting $\\frac{0}{0}$ and giving up** — This means you need to simplify algebraically; the limit can still exist
 
 4. **Assuming $\infty$ is a limit** — We say "$\lim = \infty$" as shorthand for "the limit doesn't exist; the function goes to infinity"
 
@@ -167,7 +167,7 @@ $$\lim_{x \to \infty} \frac{1}{x} = 0$$
 - [[definition-of-derivative]] — Derivatives are defined as limits
 - [[Integrals]] — Integration involves limits of Riemann sums
 - [[Squeeze Theorem]] — A technique for finding tricky limits
-- [[L'Hôpital's Rule]] — Advanced technique for $\frac{0}{0}$ and $\frac{\infty}{\infty}$ cases
+- [[L'Hôpital's Rule]] — Advanced technique for $\\frac{0}{0}$ and $\\frac{\infty}{\infty}$ cases
 - [[calculus-symbols-cheatsheet]] — Notation reference for limits
 
 # Related

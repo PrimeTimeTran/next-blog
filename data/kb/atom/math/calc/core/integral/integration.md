@@ -23,7 +23,7 @@ It is the inverse operation of differentiation.
 Integration finds a function whose derivative is known:
 
 $$
-\int f(x),dx = F(x) \quad \text{where } F'(x)=f(x)
+\int f(x) \, dx = F(x) \quad \text{where } F'(x)=f(x)
 $$
 
 So:
@@ -66,11 +66,11 @@ Think:
 ## 4. Fundamental connection
 
 $$
-\frac{d}{dx} \left(\int f(x),dx\right) = f(x)
+\frac{d}{dx} \left(\int f(x) \, dx\right) = f(x)
 $$
 
 $$
-\int f'(x),dx = f(x) + C
+\int f'(x) \, dx = f(x) + C
 $$
 
 So:

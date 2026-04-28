@@ -70,7 +70,7 @@ tp.'function'(arg1, arg2, arg3...
 ### Function documentation syntax
 
 ```javascript
-tp.<my_function>(arg1_name: type, arg2_name?: type, arg3_name: type = <default_value>, arg4_name: type1|ty
+tp.{'<my_function>'}(arg1_name: type, arg2_name?: type, arg3_name: type = {'<default_value>'}, arg4_name: type1|ty
 ```
 
 Where:
@@ -80,7 +80,7 @@ Where:
 
 _If an argument is optional, it will be appended with a question mark `?`, e.g. `arg2_name?: type`_
 
-If an argument has a default value, it will be specified using an equal sign `=`, e.g. `arg3_name: type = <default_value>`.\*
+If an argument has a default value, it will be specified using an equal sign `=`, e.g. `arg3_name: type = {'<default_value>'}`.\*
 
 If an argument can have different types, it will be specified using a pipe `|`, e.g. `arg4_name: type1|type2`\*
 
@@ -322,7 +322,7 @@ Retrieves the file's title.
 #### Frontmatter Module
 
 ```javascript
-tp.frontmatter.<frontmatter_variable_name>
+tp.frontmatter.{'<frontmatter_variable_name>'}
 ```
 
 Retrieves the file's frontmatter variable value.
@@ -391,7 +391,7 @@ Gets a random image from https://unsplash.com/
 Arguments:
 
 - `query`: Limits selection to photos matching a search term. Multiple search terms can be passed separated by a comma `,`
-- `size`: Image size in the format `<width>x<height>`
+- `size`: Image size in the format `` {'<width>'}`x`{'<height>'} ``
 
 ### User Functions
 
@@ -407,7 +407,7 @@ Generally there are two types:
 They can be invoked by:
 
 ```javascript
-tp.user.<user_function_name>()
+tp.user.{'<user_function_name>'}()
 ```
 
 #### Script User Functions

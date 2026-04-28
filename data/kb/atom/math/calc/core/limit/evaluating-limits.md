@@ -20,7 +20,7 @@ Evaluating limits is the process of finding what value a function approaches as 
 # 📊 General Form
 
 $$
-\lim_{x \to a} f(x)
+$\lim_{x \to a} f(x)$
 $$
 
 We are asking:
@@ -36,7 +36,7 @@ We are asking:
 If $f(x)$ is continuous:
 
 $$
-\lim_{x \to a} f(x) = f(a)
+$\lim_{x \to a} f(x) = f(a)$
 $$
 
 ---
@@ -72,11 +72,11 @@ Used with roots:
 Key identities:
 
 $$
-\lim_{x \to 0} \frac{\sin x}{x} = 1
+$\lim_{x \to 0} \frac{\sin x}{x} = 1$
 $$
 
 $$
-\lim_{x \to 0} \frac{1 - \cos x}{x} = 0
+$\lim_{x \to 0} \frac{1 - \cos x}{x} = 0$
 $$
 
 ---
@@ -101,8 +101,8 @@ Used when $x \to \infty$:
 
 Common forms that require work:
 
-- $\frac{0}{0}$
-- $\frac{\infty}{\infty}$
+- $\\frac{0}{0}$
+- $\\frac{\infty}{\infty}$
 - $0 \cdot \infty$
 - $\infty - \infty$
 - $0^0, \infty^0, 1^\infty$

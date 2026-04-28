@@ -21,7 +21,7 @@ A function is **continuous** at a point if there are no breaks, jumps, or holes 
 A function $f(x)$ is continuous at $x = a$ if:
 
 $$
-\lim_{x \to a} f(x) = f(a)
+$\lim_{x \to a} f(x) = f(a)$
 $$
 
 ---

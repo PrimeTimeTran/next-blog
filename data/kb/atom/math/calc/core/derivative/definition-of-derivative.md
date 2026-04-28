@@ -28,7 +28,7 @@ Imagine zooming in on a curve near a point. The closer you look, the more the cu
 
 3. **Algebraic**: The ratio of infinitesimal changes—how much $y$ changes when $x$ changes by an infinitely small amount
 
-The **limit process** is crucial: we're not evaluating at $h = 0$ (which would give $\frac{0}{0}$), but rather seeing what value the ratio approaches as $h$ gets arbitrarily close to 0.
+The **limit process** is crucial: we're not evaluating at $h = 0$ (which would give $\\frac{0}{0}$), but rather seeing what value the ratio approaches as $h$ gets arbitrarily close to 0.
 
 ---
 
@@ -53,7 +53,7 @@ The **limit process** is crucial: we're not evaluating at $h = 0$ (which would g
 - **$f(x)$** — Function value at our point of interest
 - **$f(x+h) - f(x)$** — Change in $y$ (rise)
 - **$h$** — Change in $x$ (run)
-- **$\frac{f(x+h) - f(x)}{h}$** — Average rate of change over interval $[x, x+h]$
+- **$\\frac{f(x+h) - f(x)}{h}$** — Average rate of change over interval $[x, x+h]$
 - **$\lim_{h \to 0}$** — Let the interval shrink to 0 to get instantaneous rate
 
 ## Alternative Formulations
@@ -132,11 +132,11 @@ This gives us the slope at _any_ point on the parabola.
 
 # 💡 Key Insights
 
-1. **Why we need limits**: We can't just plug in $h = 0$ because we'd get $\frac{0}{0}$ (undefined). The limit tells us what value we approach as $h$ gets arbitrarily small.
+1. **Why we need limits**: We can't just plug in $h = 0$ because we'd get $\\frac{0}{0}$ (undefined). The limit tells us what value we approach as $h$ gets arbitrarily small.
 
 2. **Algebraic simplification is crucial**: Before taking the limit, simplify the expression (usually you can cancel the $h$ in the denominator). Then take the limit.
 
-3. **Derivative = instantaneous rate, not average**: The difference quotient $\frac{f(x+h) - f(x)}{h}$ is the _average_ rate. The limit (shrinking $h$ to 0) converts this to _instantaneous_.
+3. **Derivative = instantaneous rate, not average**: The difference quotient $\\frac{f(x+h) - f(x)}{h}$ is the _average_ rate. The limit (shrinking $h$ to 0) converts this to _instantaneous_.
 
 4. **Not every function is differentiable**: Some functions have corners, jumps, or cusps where the limit doesn't exist.
 
@@ -144,7 +144,7 @@ This gives us the slope at _any_ point on the parabola.
 
 # ⚠️ Common Mistakes
 
-1. **Setting $h = 0$ too early** — Don't substitute before simplifying; you'll get $\frac{0}{0}$
+1. **Setting $h = 0$ too early** — Don't substitute before simplifying; you'll get $\\frac{0}{0}$
 2. **Forgetting the limit** — The derivative is the _limit_, not the expression before taking the limit
 3. **Not simplifying the fraction** — Always factor or expand to cancel the $h$ in the denominator
 4. **Confusing average and instantaneous rate** — Average rate uses fixed $h$; instantaneous uses $h \to 0$

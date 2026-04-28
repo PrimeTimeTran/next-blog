@@ -62,8 +62,8 @@ $$
 z = f(x, y)
 $$
 
-- $\frac{\partial f}{\partial x}$ → slope when moving along the x-direction
-- $\frac{\partial f}{\partial y}$ → slope when moving along the y-direction
+- $\\frac{\partial f}{\partial x}$ → slope when moving along the x-direction
+- $\\frac{\partial f}{\partial y}$ → slope when moving along the y-direction
 
 ---
 

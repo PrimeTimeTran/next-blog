@@ -56,7 +56,7 @@ class Solution:
 
 class Solution(object):
     def isBalanced(self, root):
-        stack, node, last, depths = [], root, None, {}
+        stack, node, last, depths = [], root, None,
         while stack or node:
             if node:
                 stack.append(node)

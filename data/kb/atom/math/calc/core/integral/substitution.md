@@ -115,7 +115,7 @@ $$
 Limit:
 
 $$
-\lim_{n \to \infty} \frac{n}{n+1} = 1
+$\lim_{n \to \infty} \frac{n}{n+1} = 1$
 $$
 
 → inconclusive

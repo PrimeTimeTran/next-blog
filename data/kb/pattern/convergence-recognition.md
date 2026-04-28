@@ -36,7 +36,7 @@ Ask: _what controls growth/decay?_
 - exponential: $r^n$
 - factorial: $n!$
 - logarithmic: $\log n$
-- rational: $\frac{p(n)}{q(n)}$
+- rational: $\\frac{p(n)}{q(n)}$
 
 ---
 

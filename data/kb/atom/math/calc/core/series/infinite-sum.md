@@ -49,7 +49,7 @@ $$
 If the limit exists and is finite:
 
 $$
-\lim_{N \to \infty} S_N = S
+$\lim_{N \to \infty} S_N = S$
 $$
 
 then the series converges to $S$.
@@ -61,7 +61,7 @@ then the series converges to $S$.
 If the limit does not exist or is infinite:
 
 $$
-\lim_{N \to \infty} S_N = \infty \ \text{or DNE}
+$\lim_{N \to \infty} S_N = \infty \ \text{or DNE}$
 $$
 
 then the series diverges.

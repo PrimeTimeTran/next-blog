@@ -37,7 +37,7 @@ class Solution:
 ```python
 class Solution:
     def characterReplacement(self, s: str, k: int) -> int:
-        maxf, res, l, win = 0, 0, 0, {}
+        maxf, res, l, win = 0, 0, 0,
         for r, c in enumerate(s):
             win[c] = win.get(c, 0) + 1
             maxf = max(maxf, win[c])
@@ -96,7 +96,7 @@ class Solution:
 class Solution:
     def minWindow(self, s: str, t: str) -> str:
         if len(t) == 0: return ""
-        l, win, ct = 0, {}, {}
+        l, win, ct = 0, ,
         for c in t:
             ct[c] = ct.get(c, 0) + 1
         have, need = 0, len(ct)

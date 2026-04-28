@@ -12,7 +12,7 @@ An antiderivative is a function whose derivative equals a given function. It's t
 
 > If $f'(x) = g(x)$, then $f(x)$ is an antiderivative of $g(x)$.
 
-$$\int g(x) \, dx = f(x) + C$$
+$$\int g(x) \ \, dx = f(x) + C$$
 
 ---
 
@@ -57,11 +57,11 @@ $$F'(x) = f(x)$$
 
 ## Relationship to Indefinite Integrals
 
-The notation $\int f(x) \, dx$ means: "Find all antiderivatives of $f(x)$"
+The notation $\int f(x) \ \, dx$ means: "Find all antiderivatives of $f(x)$"
 
 The result is written as:
 
-$$\int f(x) \, dx = F(x) + C$$
+$$\int f(x) \ \, dx = F(x) + C$$
 
 where $C$ is the **constant of integration** (representing all possible constants).
 
@@ -69,12 +69,12 @@ where $C$ is the **constant of integration** (representing all possible constant
 
 The most fundamental rule (inverse of power rule for derivatives):
 
-$$\int x^n \, dx = \frac{x^{n+1}}{n+1} + C \quad (n \neq -1)$$
+$$\int x^n \ \, dx = \frac{x^{n+1}}{n+1} + C \quad (n \neq -1)$$
 
 ## Other Integration Rules
 
-- **Constant multiple**: $\int k \cdot f(x) \, dx = k \int f(x) \, dx$
-- **Sum rule**: $\int [f(x) + g(x)] \, dx = \int f(x) \, dx + \int g(x) \, dx$
+- **Constant multiple**: $\int k \cdot f(x) \ \, dx = k \int f(x) \ \, dx$
+- **Sum rule**: $\int [f(x) + g(x)] \ \, dx = \int f(x) \ \, dx + \int g(x) \ \, dx$
 
 ---
 
@@ -84,12 +84,12 @@ $$\int x^n \, dx = \frac{x^{n+1}}{n+1} + C \quad (n \neq -1)$$
 
 **Find the antiderivative of** $f(x) = 2x$
 
-$$\int 2x \, dx$$
+$$\int 2x \ \, dx$$
 
 1. Factor out the constant:
-   $$2 \int x \, dx$$
+   $$2 \int x \ \, dx$$
 
-2. Apply power rule ($\int x^1 \, dx = \frac{x^2}{2}$):
+2. Apply power rule ($\int x^1 \ \, dx = \frac{x^2}{2}$):
    $$2 \cdot \frac{x^2}{2} + C$$
 
 3. Simplify:
@@ -101,7 +101,7 @@ $$\int 2x \, dx$$
 
 **Find the antiderivative of** $f(x) = 3x^2 - 4x + 1$
 
-$$\int (3x^2 - 4x + 1) \, dx$$
+$$\int (3x^2 - 4x + 1) \ \, dx$$
 
 Apply power rule to each term:
 

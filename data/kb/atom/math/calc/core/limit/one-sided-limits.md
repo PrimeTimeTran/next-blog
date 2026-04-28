@@ -22,7 +22,7 @@ One-sided limits describe what a function approaches when you move toward a poin
 ## Left-hand limit
 
 $$
-\lim_{x \to a^-} f(x)
+$\lim_{x \to a^-} f(x)$
 $$
 
 Means:
@@ -34,7 +34,7 @@ Means:
 ## Right-hand limit
 
 $$
-\lim_{x \to a^+} f(x)
+$\lim_{x \to a^+} f(x)$
 $$
 
 Means:
@@ -48,7 +48,7 @@ Means:
 A standard limit exists only if:
 
 $$
-\lim_{x \to a^-} f(x) = \lim_{x \to a^+} f(x)
+$\lim_{x \to a^-} f(x) = \lim_{x \to a^+} f(x)$
 $$
 
 If they are equal:
@@ -96,11 +96,11 @@ $$
 Then:
 
 $$
-\lim_{x \to 0^-} f(x) = 1
+$\lim_{x \to 0^-} f(x) = 1$
 $$
 
 $$
-\lim_{x \to 0^+} f(x) = 2
+$\lim_{x \to 0^+} f(x) = 2$
 $$
 
 So:

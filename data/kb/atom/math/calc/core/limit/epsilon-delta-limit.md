@@ -9,7 +9,7 @@ The **epsilon–delta definition** gives a precise way to define what it means f
 We say:
 
 $$
-\lim_{x \to a} f(x) = L
+$\lim_{x \to a} f(x) = L$
 $$
 
 if:

@@ -3,7 +3,7 @@ tags:
   - review
 ---
 
-# 🟩 Derivative Notation: $f'(x)$ vs $\frac{d}{dx}$
+# 🟩 Derivative Notation: $f'(x)$ vs $\\frac{d}{dx}$
 
 Both notations describe the same mathematical idea: **differentiation**, but from different perspectives.
 
@@ -12,7 +12,7 @@ Both notations describe the same mathematical idea: **differentiation**, but fro
 ## 🟦 Two Views of a Derivative
 
 - $f'(x)$ → the **derivative as a function (output/result)**
-- $\frac{d}{dx}$ → the **derivative as an operator (process/action)**
+- $\\frac{d}{dx}$ → the **derivative as an operator (process/action)**
 
 ---
 
@@ -32,14 +32,14 @@ Given $f(x) = x^2$, all of these represent the same derivative:
 | ------------------- | -------------------------------- | ---------------------------- |
 | $\frac{d}{dx}f(x)$  | Operator applied to a function   | Computation steps            |
 | $\frac{d}{dx}(x^2)$ | Operator applied to expression   | Early derivation             |
-| $\frac{dy}{dx}$     | Rate of change of $y$ w.r.t. $x$ | Physics / modeling           |
+| $\\frac{dy}{dx}$    | Rate of change of $y$ w.r.t. $x$ | Physics / modeling           |
 | $f'(x)$             | Prime notation (result function) | Final answers / compact form |
 
 ---
 
-## 🟦 What $\frac{d}{dx}$ actually means
+## 🟦 What $\\frac{d}{dx}$ actually means
 
-The symbol $\frac{d}{dx}$ is an **instruction**:
+The symbol $\\frac{d}{dx}$ is an **instruction**:
 
 > “Differentiate with respect to $x$”
 
@@ -95,7 +95,7 @@ $$
 
 ## 🧠 Mental Model
 
-- $\frac{d}{dx}$ → **the action (process)**
+- $\\frac{d}{dx}$ → **the action (process)**
 - $f'(x)$ → **the result (function)**
 
 So:

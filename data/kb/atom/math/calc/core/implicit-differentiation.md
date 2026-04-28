@@ -27,9 +27,9 @@ $$
 1. Differentiate both sides with respect to $x$
 2. Treat $y$ as a function of $x$
 3. Apply the chain rule whenever differentiating $y$
-4. Collect all $\frac{dy}{dx}$ terms on one side
-5. Factor out $\frac{dy}{dx}$
-6. Solve for $\frac{dy}{dx}$
+4. Collect all $\\frac{dy}{dx}$ terms on one side
+5. Factor out $\\frac{dy}{dx}$
+6. Solve for $\\frac{dy}{dx}$
 
 ---
 
@@ -47,7 +47,7 @@ $$
 2x + 2y \frac{dy}{dx} = 0
 $$
 
-Solve for $\frac{dy}{dx}$:
+Solve for $\\frac{dy}{dx}$:
 
 $$
 2y \frac{dy}{dx} = -2x
@@ -69,15 +69,15 @@ $$
 
 ## Common Pitfalls
 
-- Forgetting the $\frac{dy}{dx}$ when differentiating $y$
-- Not factoring correctly when solving for $\frac{dy}{dx}$
+- Forgetting the $\\frac{dy}{dx}$ when differentiating $y$
+- Not factoring correctly when solving for $\\frac{dy}{dx}$
 - Treating $y$ as a constant (it’s not!)
 
 ---
 
 ## Motivating Problem
 
-Find $\frac{dy}{dx}$ for:
+Find $\\frac{dy}{dx}$ for:
 
 $$
 x^2 y + y^3 = 10

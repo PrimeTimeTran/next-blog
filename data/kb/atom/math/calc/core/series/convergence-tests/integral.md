@@ -42,7 +42,7 @@ either both:
 # 🔗 Key Principle
 
 $$
-\sum f(n) \;\;\text{behaves like}\;\; \int f(x)\,dx
+\sum f(n) \;\;\text{behaves like}\;\; \int f(x)\ \, dx
 $$
 
 ---

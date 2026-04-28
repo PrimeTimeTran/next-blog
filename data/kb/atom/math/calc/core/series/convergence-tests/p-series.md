@@ -79,7 +79,7 @@ The test is about **decay speed**:
 Even though:
 
 $$
-\lim_{n \to \infty} \frac{1}{n^p} = 0
+$\lim_{n \to \infty} \frac{1}{n^p} = 0$
 $$
 
 this alone does NOT guarantee convergence.

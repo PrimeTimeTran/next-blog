@@ -42,7 +42,7 @@ Start here if structure is simple:
 If expression is composed:
 
 - Product rule → $f(x)g(x)$
-- Quotient rule → $\frac{f(x)}{g(x)}$
+- Quotient rule → $\\frac{f(x)}{g(x)}$
 - Chain rule → nested functions
 
 👉 Used when expression has **interaction or nesting**

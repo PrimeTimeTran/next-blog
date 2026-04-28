@@ -121,7 +121,7 @@ class Solution:
 # Top down memo
 class Solution:
     def rob(self, nums: List[int]) -> int:
-        n, store = len(nums), {}
+        n, store = len(nums),
 
         def dp(i):
             if i >= n:
@@ -146,7 +146,7 @@ class Solution:
         return max(self.helper(nums[1:]), self.helper(nums[:-1]))
 
     def helper(self, nums):
-        n, store = len(nums), {}
+        n, store = len(nums),
         def dfs(i):
             if i >= n:
                 return 0
@@ -222,7 +222,7 @@ class Solution:
 # Memo
 class Solution:
     def countSubstrings(self, s: str) -> int:
-        n, c, memo = len(s), 0, {}
+        n, c, memo = len(s), 0,
         def check(l, r):
             if l > r:
                 return True
@@ -284,7 +284,7 @@ class Solution:
 # Time O(nk)
 # Space O(nk)
 class Solution:
-    def countVowelStrings(self, n, seen={}):
+    def countVowelStrings(self, n, seen=):
         def dp(n, k):
             if k == 1 or n == 1:
                 return k

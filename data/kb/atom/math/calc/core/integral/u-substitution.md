@@ -9,7 +9,7 @@
 - If an integral contains a composition of functions, we replace the inner function with a new variable $u$
 - This transforms a complicated integral into a simpler one:
   $$
-  \int f(g(x))g'(x),dx \rightarrow \int f(u),du
+  \int f(g(x))g'(x) \, dx \rightarrow \int f(u),du
   $$
 
 ---
@@ -38,7 +38,7 @@ We rewrite the entire integral in terms of $u$
 ## Example
 
 $$
-\int 2x(x^2 + 1)^5,dx
+\int 2x(x^2 + 1)^5 \, dx
 $$
 
 Let:

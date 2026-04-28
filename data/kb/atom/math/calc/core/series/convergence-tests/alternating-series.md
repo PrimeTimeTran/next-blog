@@ -51,7 +51,7 @@ $$
 ### 2. Limit condition
 
 $$
-\lim_{n \to \infty} a_n = 0
+$\lim_{n \to \infty} a_n = 0$
 $$
 
 ---

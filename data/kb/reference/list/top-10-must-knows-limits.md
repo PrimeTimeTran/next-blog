@@ -25,7 +25,7 @@ tags: review
    1. What if #/0?
    2. It's undefined. Indicates that the limit of $f(x)$ as $x$ approaches $a$ does not exist.
 4. **Indeterminate Form**
-   $\frac{0}{0}$
+   $\\frac{0}{0}$
    1. Factoring
    2. Conjugate
       1. Difference of squares
@@ -40,15 +40,15 @@ tags: review
    1. Analyzes the behavior of a function as x gets very large either positive or negative.
    2. Horizontal asymptote
 7. **L'Hopitals Rule**
-   1. If when evaluating a limit you get an indeterminate form, $\frac{0}{0}$ or $\frac{\infty}{\infty}$, you can use the rule.
+   1. If when evaluating a limit you get an indeterminate form, $\\frac{0}{0}$ or $\\frac{\infty}{\infty}$, you can use the rule.
 8. **Other Indeterminate forms**
-   1. L'Hopitals rule requires these forms: $\frac{0}{0}$ or $\frac{\infty}{\infty}$
+   1. L'Hopitals rule requires these forms: $\\frac{0}{0}$ or $\\frac{\infty}{\infty}$
    2. Indeterminate Product: $0 \times \infty$
    3. Indeterminate Difference: $\infty \times \infty$
 9. **Squeeze Theorem**
 10. **Epsilon Delta Definition of a Limit**
 
-$\frac{x - \sin (x)}{x \sin(x)}$
+$\\frac{x - \sin (x)}{x \sin(x)}$
 
 # 🌐 References
 

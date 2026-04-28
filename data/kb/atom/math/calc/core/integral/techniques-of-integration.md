@@ -22,7 +22,7 @@ u-substitution is a technique for simplifying integrals by reversing the chain r
 If an integral has the structure:
 
 $$
-\int f(g(x)) \cdot g'(x)\,dx
+\int f(g(x)) \cdot g'(x)\ \, dx
 $$
 
 Let:
@@ -44,7 +44,7 @@ $$
 After substitution:
 
 $$
-\int f(g(x)) \cdot g'(x)\,dx = \int f(u)\,du
+\int f(g(x)) \cdot g'(x)\ \, dx = \int f(u)\,du
 $$
 
 ---
@@ -122,7 +122,7 @@ $$
 ### Step 2:
 
 $$
-du = 2x\,dx
+du = 2x\ \, dx
 $$
 
 ---

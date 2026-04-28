@@ -23,9 +23,9 @@ Limit laws are rules that allow you to **break complex limits into simpler parts
 Assume:
 
 $$
-\lim_{x \to a} f(x) = L
+$\lim_{x \to a} f(x) = L$
 \quad \text{and} \quad
-\lim_{x \to a} g(x) = M
+$\lim_{x \to a} g(x) = M$
 $$
 
 ---
@@ -33,7 +33,7 @@ $$
 ## ➕ Sum Law
 
 $$
-\lim_{x \to a} (f(x) + g(x)) = L + M
+$\lim_{x \to a} (f(x) + g(x)) = L + M$
 $$
 
 ---
@@ -41,7 +41,7 @@ $$
 ## ➖ Difference Law
 
 $$
-\lim_{x \to a} (f(x) - g(x)) = L - M
+$\lim_{x \to a} (f(x) - g(x)) = L - M$
 $$
 
 ---
@@ -49,7 +49,7 @@ $$
 ## ✖️ Product Law
 
 $$
-\lim_{x \to a} (f(x) \cdot g(x)) = LM
+$\lim_{x \to a} (f(x) \cdot g(x)) = LM$
 $$
 
 ---
@@ -57,7 +57,7 @@ $$
 ## ➗ Quotient Law
 
 $$
-\lim_{x \to a} \frac{f(x)}{g(x)} = \frac{L}{M}, \quad M \ne 0
+$\lim_{x \to a} \frac{f(x)}{g(x)} = \frac{L}{M}, \quad M \ne 0$
 $$
 
 ---
@@ -65,7 +65,7 @@ $$
 ## 🔢 Constant Multiple Law
 
 $$
-\lim_{x \to a} (c \cdot f(x)) = cL
+$\lim_{x \to a} (c \cdot f(x)) = cL$
 $$
 
 ---
@@ -73,7 +73,7 @@ $$
 ## 📦 Power Law
 
 $$
-\lim_{x \to a} (f(x))^n = L^n
+$\lim_{x \to a} (f(x))^n = L^n$
 $$
 
 ---
@@ -81,7 +81,7 @@ $$
 ## 📏 Root Law
 
 $$
-\lim_{x \to a} \sqrt[n]{f(x)} = \sqrt[n]{L}
+$\lim_{x \to a} \sqrt[n]{f(x)} = \sqrt[n]{L}$
 $$
 
 (when defined)
@@ -91,7 +91,7 @@ $$
 ## 🧩 Identity Law
 
 $$
-\lim_{x \to a} x = a
+$\lim_{x \to a} x = a$
 $$
 
 ---
@@ -99,7 +99,7 @@ $$
 ## 🔢 Constant Law
 
 $$
-\lim_{x \to a} c = c
+$\lim_{x \to a} c = c$
 $$
 
 ---

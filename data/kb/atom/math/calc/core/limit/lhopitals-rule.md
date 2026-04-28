@@ -8,7 +8,7 @@ tags:
 
 # 📘 L’Hôpital’s Rule
 
-L’Hôpital’s Rule is a technique for evaluating limits that produce **indeterminate forms** like $\frac{0}{0}$ or $\infty/\infty$.
+L’Hôpital’s Rule is a technique for evaluating limits that produce **indeterminate forms** like $\\frac{0}{0}$ or $\infty/\infty$.
 
 ## ![[indeterminate-forms.png]]
 
@@ -23,14 +23,14 @@ L’Hôpital’s Rule is a technique for evaluating limits that produce **indete
 If:
 
 $$
-\lim_{x \to a} \frac{f(x)}{g(x)} = \frac{0}{0} \quad \text{or} \quad \frac{\infty}{\infty}
+$\lim_{x \to a} \frac{f(x)}{g(x)} = \frac{0}{0} \quad \text{or} \quad \frac{\infty}{\infty}$
 $$
 
 and \(f, g\) are differentiable near \(a\), then:
 
 $$
-\lim_{x \to a} \frac{f(x)}{g(x)} =
-\lim_{x \to a} \frac{f'(x)}{g'(x)}
+$\lim_{x \to a} \frac{f(x)}{g(x)} =$
+$\lim_{x \to a} \frac{f'(x)}{g'(x)}$
 $$
 
 (if the right-hand limit exists)
@@ -80,7 +80,7 @@ Do NOT use it for:
 # 📈 Example
 
 $$
-\lim_{x \to 0} \frac{\sin x}{x}
+$\lim_{x \to 0} \frac{\sin x}{x}$
 $$
 
 Direct substitution gives \(0/0\), so apply L’Hôpital:

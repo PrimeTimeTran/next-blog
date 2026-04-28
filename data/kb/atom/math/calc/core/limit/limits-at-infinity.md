@@ -23,13 +23,13 @@ Limits at infinity describe the behavior of a function as the input becomes extr
 ## 1. Input goes to infinity
 
 $$
-\lim_{x \to \infty} f(x)
+$\lim_{x \to \infty} f(x)$
 $$
 
 ## 2. Input goes to negative infinity
 
 $$
-\lim_{x \to -\infty} f(x)
+$\lim_{x \to -\infty} f(x)$
 $$
 
 ---
@@ -57,7 +57,7 @@ A limit at infinity can:
 If:
 
 $$
-\lim_{x \to \infty} f(x) = L
+$\lim_{x \to \infty} f(x) = L$
 $$
 
 then:
@@ -81,7 +81,7 @@ compare highest powers of $x$:
 ## Case 1: Same degree
 
 $$
-\lim_{x \to \infty} \frac{ax^n}{bx^n} = \frac{a}{b}
+$\lim_{x \to \infty} \frac{ax^n}{bx^n} = \frac{a}{b}$
 $$
 
 ---
@@ -89,7 +89,7 @@ $$
 ## Case 2: Numerator smaller degree
 
 $$
-\lim_{x \to \infty} \frac{x^m}{x^n}, \quad m < n
+$\lim_{x \to \infty} \frac{x^m}{x^n}, \quad m < n$
 $$
 
 Result:
@@ -103,7 +103,7 @@ $$
 ## Case 3: Numerator larger degree
 
 $$
-\lim_{x \to \infty} \frac{x^m}{x^n}, \quad m > n
+$\lim_{x \to \infty} \frac{x^m}{x^n}, \quad m > n$
 $$
 
 Result:

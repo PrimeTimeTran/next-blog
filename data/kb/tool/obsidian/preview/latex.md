@@ -72,30 +72,30 @@ $$
 
 ## Common Calculus 1-3 Symbols
 
-| Symbol                      | LaTeX                         | Usage                           |
-| --------------------------- | ----------------------------- | ------------------------------- |
-| Derivative                  | `\frac{d}{dx}`                | $\frac{d}{dx}f(x)$              |
-| Partial derivative          | `\frac{\partial}{\partial x}` | $\frac{\partial f}{\partial x}$ |
-| Limit                       | `\lim_{x \to a}`              | $\lim_{x \to 0} f(x)$           |
-| Integral                    | `\int`                        | $\int f(x) \, dx$               |
-| Definite integral           | `\int_a^b`                    | $\int_0^1 x^2 \, dx$            |
-| Double integral             | `\iint`                       | $\iint_D f(x,y) \, dA$          |
-| Triple integral             | `\iiint`                      | $\iiint_V f(x,y,z) \, dV$       |
-| Summation                   | `\sum_{i=1}^{n}`              | $\sum_{i=1}^{n} i$              |
-| Product                     | `\prod_{i=1}^{n}`             | $\prod_{i=1}^{n} a_i$           |
-| Gradient                    | `\nabla`                      | $\nabla f$                      |
-| Divergence                  | `\nabla \cdot`                | $\nabla \cdot \mathbf{F}$       |
-| Curl                        | `\nabla \times`               | $\nabla \times \mathbf{F}$      |
-| Infinity                    | `\infty`                      | $\infty$                        |
-| Approximately               | `\approx`                     | $x \approx 3.14$                |
-| Proportional to             | `\propto`                     | $y \propto x$                   |
-| Therefore                   | `\therefore`                  | $\therefore$                    |
-| For all                     | `\forall`                     | $\forall x$                     |
-| Exists                      | `\exists`                     | $\exists x$                     |
-| Element of                  | `\in`                         | $x \in \mathbb{R}$              |
-| Union                       | `\cup`                        | $A \cup B$                      |
-| Intersection                | `\cap`                        | $A \cap B$                      |
-| Real numbers                | `\mathbb{R}`                  | $\mathbb{R}$                    |
-| Complex numbers             | `\mathbb{C}`                  | $\mathbb{C}$                    |
-| Natural numbers             | `\mathbb{N}`                  | $\mathbb{N}$                    |
-| Prime notation (derivative) | `f'(x)` or `f''(x)`           | $f'(x)$, $f''(x)$               |
+| Symbol                      | LaTeX                         | Usage                            |
+| --------------------------- | ----------------------------- | -------------------------------- |
+| Derivative                  | `\frac{d}{dx}`                | $\frac{d}{dx}f(x)$               |
+| Partial derivative          | `\frac{\partial}{\partial x}` | $\\frac{\partial f}{\partial x}$ |
+| Limit                       | `\lim_{x \to a}`              | $\lim_{x \to 0} f(x)$            |
+| Integral                    | `\int`                        | $\int f(x) \ \, dx$              |
+| Definite integral           | `\int_a^b`                    | $\int_0^1 x^2 \, dx$             |
+| Double integral             | `\iint`                       | $\iint_D f(x,y) \, dA$           |
+| Triple integral             | `\iiint`                      | $\iiint_V f(x,y,z) \, dV$        |
+| Summation                   | `\sum_{i=1}^{n}`              | $\sum_{i=1}^{n} i$               |
+| Product                     | `\prod_{i=1}^{n}`             | $\prod_{i=1}^{n} a_i$            |
+| Gradient                    | `\nabla`                      | $\nabla f$                       |
+| Divergence                  | `\nabla \cdot`                | $\nabla \cdot \mathbf{F}$        |
+| Curl                        | `\nabla \times`               | $\nabla \times \mathbf{F}$       |
+| Infinity                    | `\infty`                      | $\infty$                         |
+| Approximately               | `\approx`                     | $x \approx 3.14$                 |
+| Proportional to             | `\propto`                     | $y \propto x$                    |
+| Therefore                   | `\therefore`                  | $\therefore$                     |
+| For all                     | `\forall`                     | $\forall x$                      |
+| Exists                      | `\exists`                     | $\exists x$                      |
+| Element of                  | `\in`                         | $x \in \mathbb{R}$               |
+| Union                       | `\cup`                        | $A \cup B$                       |
+| Intersection                | `\cap`                        | $A \cap B$                       |
+| Real numbers                | `\mathbb{R}`                  | $\mathbb{R}$                     |
+| Complex numbers             | `\mathbb{C}`                  | $\mathbb{C}$                     |
+| Natural numbers             | `\mathbb{N}`                  | $\mathbb{N}$                     |
+| Prime notation (derivative) | `f'(x)` or `f''(x)`           | $f'(x)$, $f''(x)$                |

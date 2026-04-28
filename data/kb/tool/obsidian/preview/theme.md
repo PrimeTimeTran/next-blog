@@ -86,9 +86,13 @@ This line has an ~~strikethrough~~.
 ### Code
 
 ```html
+`{'
 <html>
-  <head> </head>
+  '}` `{'<head>
+    '}` {'</head
+  >'} {'
 </html>
+'}
 ```
 
 ### CSS

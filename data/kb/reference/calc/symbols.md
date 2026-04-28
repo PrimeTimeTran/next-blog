@@ -9,21 +9,21 @@
 
 # Derivatives (Most Important)
 
-| Symbol                                       | Meaning                                       | Context                      |
-| -------------------------------------------- | --------------------------------------------- | ---------------------------- |
-| $f'(x)$                                      | derivative of f with respect to x             | Compact notation; pure math  |
-| $\frac{d}{dx}f(x)$                           | derivative operator; derivative of f w.r.t. x | Explicit about what variable |
-| $\frac{dy}{dx}$                              | derivative of y with respect to x             | When y is a function of x    |
-| $f''(x)$                                     | second derivative                             | Concavity, acceleration      |
-| $f^{(n)}(x)$                                 | nth derivative                                | Higher-order derivatives     |
-| $\frac{\partial f}{\partial x}$              | partial derivative w.r.t. x                   | Multivariable functions      |
-| $\frac{\partial^2 f}{\partial x \partial y}$ | mixed partial derivative                      | Multivariable functions      |
+| Symbol                                        | Meaning                                       | Context                      |
+| --------------------------------------------- | --------------------------------------------- | ---------------------------- |
+| $f'(x)$                                       | derivative of f with respect to x             | Compact notation; pure math  |
+| $\frac{d}{dx}f(x)$                            | derivative operator; derivative of f w.r.t. x | Explicit about what variable |
+| $\\frac{dy}{dx}$                              | derivative of y with respect to x             | When y is a function of x    |
+| $f''(x)$                                      | second derivative                             | Concavity, acceleration      |
+| $f^{(n)}(x)$                                  | nth derivative                                | Higher-order derivatives     |
+| $\\frac{\partial f}{\partial x}$              | partial derivative w.r.t. x                   | Multivariable functions      |
+| $\\frac{\partial^2 f}{\partial x \partial y}$ | mixed partial derivative                      | Multivariable functions      |
 
 # Integrals
 
 | Symbol                    | Meaning                              | Example                            |
 | ------------------------- | ------------------------------------ | ---------------------------------- |
-| $\int f(x) \, dx$         | indefinite integral (antiderivative) | $\int 2x \, dx = x^2 + C$          |
+| $\int f(x) \ \, dx$       | indefinite integral (antiderivative) | $\int 2x \ \, dx = x^2 + C$        |
 | $\int_a^b f(x) \, dx$     | definite integral; area under curve  | $\int_0^1 x^2 \, dx = \frac{1}{3}$ |
 | $\iint_D f(x,y) \, dA$    | double integral over region D        | Volume under surface               |
 | $\iiint_V f(x,y,z) \, dV$ | triple integral over region V        | Accumulation in 3D                 |
@@ -61,7 +61,7 @@
 
 # Critical Symbols to Prioritize
 
-1. **Derivative notation** ($f'(x)$, $\frac{d}{dx}$, $\frac{\partial}{\partial x}$)
+1. **Derivative notation** ($f'(x)$, $\\frac{d}{dx}$, $\\frac{\partial}{\partial x}$)
 
    - Use determines context: single-variable vs multivariable
    - Most frequently used in calculus
@@ -76,7 +76,7 @@
    - Foundation of all calculus concepts
    - Used to define derivatives and integrals rigorously
 
-4. **Partial derivative** ($\frac{\partial}{\partial x}$)
+4. **Partial derivative** ($\\frac{\partial}{\partial x}$)
 
    - Mandatory in multivariable calculus
    - Distinguishes from total derivative
@@ -114,7 +114,7 @@
 # Pro Tips
 
 1. **Write symbols legibly** — confusing $\partial$ with $d$ is a common mistake
-2. **Always specify "with respect to what"** — $\frac{d}{dx}$ vs $\frac{d}{dy}$ changes the answer
+2. **Always specify "with respect to what"** — $\\frac{d}{dx}$ vs $\\frac{d}{dy}$ changes the answer
 3. **Limits are foundational** — derivatives and integrals are defined using limits
 4. **Partial derivatives freeze other variables** — treat them as constants
 5. **Line integrals and surface integrals extend definite integrals** to curves and surfaces

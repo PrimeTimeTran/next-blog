@@ -40,7 +40,7 @@ A sequence that is always increasing or decreasing is called **monotonic**.
 A sequence **converges** if it approaches a finite limit:
 
 $$
-\lim_{n \to \infty} a_n = L
+$\lim_{n \to \infty} a_n = L$
 $$
 
 Otherwise, it **diverges**.

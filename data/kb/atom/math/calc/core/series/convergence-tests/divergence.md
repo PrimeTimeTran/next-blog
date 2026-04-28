@@ -29,7 +29,7 @@ $$
 If:
 
 $$
-\lim_{n \to \infty} a_n \ne 0
+$\lim_{n \to \infty} a_n \ne 0$
 $$
 
 or the limit does not exist, then:
@@ -45,7 +45,7 @@ $$
 If:
 
 $$
-\lim_{n \to \infty} a_n = 0
+$\lim_{n \to \infty} a_n = 0$
 $$
 
 then:
@@ -74,7 +74,7 @@ $$
 Then:
 
 $$
-\lim_{n \to \infty} \frac{n}{n+1} = 1
+$\lim_{n \to \infty} \frac{n}{n+1} = 1$
 $$
 
 Since limit ≠ 0:
@@ -92,7 +92,7 @@ $$
 Then:
 
 $$
-\lim_{n \to \infty} \frac{1}{n} = 0
+$\lim_{n \to \infty} \frac{1}{n} = 0$
 $$
 
 So:

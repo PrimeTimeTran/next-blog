@@ -7,7 +7,7 @@ tags:
 
 # 📘 Derivative Notation in Multivariable Calculus
 
-In single-variable calculus, notations like $f'(x)$, $\frac{d}{dx} f(x)$, and $\frac{dy}{dx}$ are interchangeable because there is only one input variable.
+In single-variable calculus, notations like $f'(x)$, $\frac{d}{dx} f(x)$, and $\\frac{dy}{dx}$ are interchangeable because there is only one input variable.
 
 In multivariable calculus, this breaks down.
 
@@ -51,7 +51,7 @@ Each derivative describes change in **one direction only**.
 
 - $f'(x)$
 - $\frac{d}{dx} f(x)$
-- $\frac{dy}{dx}$
+- $\\frac{dy}{dx}$
 
 All equivalent because there is only one variable.
 
@@ -59,8 +59,8 @@ All equivalent because there is only one variable.
 
 ## Multivariable calculus
 
-- $\frac{\partial}{\partial x}$ → partial derivative
-- $\frac{\partial}{\partial y}$ → partial derivative
+- $\\frac{\partial}{\partial x}$ → partial derivative
+- $\\frac{\partial}{\partial y}$ → partial derivative
 
 ### Meaning of symbols:
 

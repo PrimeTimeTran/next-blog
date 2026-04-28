@@ -8,8 +8,7 @@ void setup() {
   digitalWrite(ledPin, HIGH);
 }
 
-void loop() {
-}
+void loop()
 ```
 
 ## Alternative pin 13 and 10
@@ -65,8 +64,7 @@ void setup() {
   digitalWrite(selectedPin, HIGH);
 }
 
-void loop() {
-}
+void loop()
 ```
 
 ## Request close
@@ -170,13 +168,13 @@ void checkSheet() {
     }
 
     Serial.println("JSON deserialization successful.");
-    JsonArray rows = doc["values"].as<JsonArray>();
+    JsonArray rows = doc["values"].as`{'<JsonArray>'}`();
     bool ledState = false;
 
     for (JsonArray row : rows) {
       if (row.size() > 2) {
-        String serialNumber = row[2].as<String>();
-        String timestamp = row[0].as<String>();
+        String serialNumber = row[2].as`{'<String>'}`();
+        String timestamp = row[0].as`{'<String>'}`();
 
         Serial.print("Checking row: Serial Number = ");
         Serial.print(serialNumber);

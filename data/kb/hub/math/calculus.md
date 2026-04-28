@@ -138,7 +138,7 @@ These are connected by the [[fundamental-theorem-of-calculus]].
   - formula: $\int u,dv = uv - \int v,du$
 - [[partial-fraction]]
   - decomposes rational functions
-  - used for $\frac{P(x)}{Q(x)}$ where $\deg P < \deg Q$
+  - used for $\\frac{P(x)}{Q(x)}$ where $\deg P < \deg Q$
 - [[trigonometric-integral]]
   - integrals involving powers/products of trig functions
   - often use identities (Pythagorean, double-angle, etc.)

@@ -34,7 +34,7 @@ Used when an integral contains a composition of functions.
 ### Pattern:
 
 $$
-\int f(g(x))g'(x)\,dx
+\int f(g(x))g'(x)\ \, dx
 $$
 
 ### Strategy:

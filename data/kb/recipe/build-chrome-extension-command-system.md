@@ -38,10 +38,10 @@ Think in **3 layers only**:
     "type": "module"
   },
   "permissions": ["tabs", "scripting", "bookmarks", "storage"],
-  "host_permissions": ["<all_urls>"],
+  "host_permissions": ["{'<all_urls>'}"],
   "content_scripts": [
     {
-      "matches": ["<all_urls>"],
+      "matches": ["{'<all_urls>'}"],
       "js": ["content.js"]
     }
   ],

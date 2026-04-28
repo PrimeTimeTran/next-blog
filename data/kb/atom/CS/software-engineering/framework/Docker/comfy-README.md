@@ -158,7 +158,7 @@ docker exec -it CONTAINER_ID /bin/bash
   - Install additional pacakges after image is built
 
 ```sh
-docker run -p 8080:8188 IMAGE_ID "<additional-package>"
+docker run -p 8080:8188 IMAGE_ID "{'<additional-package>'}"
 
 docker run -p 8080:8188 --gpus all -e ADDITIONAL_PACKAGES="" IMAGE_ID
 ```

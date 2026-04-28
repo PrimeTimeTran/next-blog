@@ -14,7 +14,7 @@ tags:
 | --------------- | --------------------------------------- | ------------------- |
 | $k$             | $kx + C$                                | Constant rule       |
 | $x^n$           | $\frac{x^{n+1}}{n+1} + C$ $(n \neq -1)$ | Power rule          |
-| $\frac{1}{x}$   | $\ln \left\| x \right\|$                | x                   |
+| $\\frac{1}{x}$  | $\ln \left\| x \right\|$                | x                   |
 | $e^x$           | $e^x + C$                               | Exponential         |
 | $a^x$           | $\frac{a^x}{\ln a} + C$                 | General exponential |
 
@@ -29,7 +29,7 @@ tags:
 | $\sec^2 x$               | $\tan x + C$    | Derivative identity |
 | $\csc^2 x$               | $-\cot x + C$   | Derivative identity |
 | $\frac{1}{\sqrt{1-x^2}}$ | $\arcsin x + C$ | Inverse trig        |
-| $\frac{1}{1+x^2}$        | $\arctan x + C$ | Inverse trig        |
+| $\\frac{1}{1+x^2}$       | $\arctan x + C$ | Inverse trig        |
 
 ---
 
@@ -37,10 +37,10 @@ tags:
 
 ### 🔹 Rational forms
 
-| Function           | Strategy                      |
-| ------------------ | ----------------------------- |
-| $\frac{1}{x(x+1)}$ | Partial fractions             |
-| $\frac{1}{x+x^2}$  | $\frac{1}{x} - \frac{1}{x+1}$ |
+| Function            | Strategy                      |
+| ------------------- | ----------------------------- |
+| $\\frac{1}{x(x+1)}$ | Partial fractions             |
+| $\\frac{1}{x+x^2}$  | $\frac{1}{x} - \frac{1}{x+1}$ |
 
 Result:
 
@@ -73,7 +73,7 @@ Pattern:
 ### Pattern:
 
 $$
-\int f(g(x))g'(x),dx
+\int f(g(x))g'(x) \, dx
 $$
 
 ### Steps:
@@ -160,7 +160,7 @@ $$
 
 | Expression         | Meaning               |
 | ------------------ | --------------------- |
-| $\int f(x),dx$     | accumulation          |
+| $\int f(x) \, dx$  | accumulation          |
 | $\int_a^b f(x),dx$ | signed area           |
 | $\int_0^x f(t),dt$ | running area function |
 

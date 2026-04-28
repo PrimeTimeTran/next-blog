@@ -29,13 +29,13 @@ $$
 and:
 
 $$
-\lim_{x \to a} g(x) = \lim_{x \to a} h(x) = L
+$\lim_{x \to a} g(x) = \lim_{x \to a} h(x) = L$
 $$
 
 Then:
 
 $$
-\lim_{x \to a} f(x) = L
+$\lim_{x \to a} f(x) = L$
 $$
 
 ---
@@ -73,7 +73,7 @@ As $x \to 0$:
 So:
 
 $$
-\lim_{x \to 0} x^2 \sin\left(\frac{1}{x}\right) = 0
+$\lim_{x \to 0} x^2 \sin\left(\frac{1}{x}\right) = 0$
 $$
 
 ---

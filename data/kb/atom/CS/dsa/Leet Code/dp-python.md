@@ -51,7 +51,7 @@ O(N) <= O(N) <= O(N)
 # result = twoSum(1, 2)
 # print(result)
 
-def fib(n, store = {}):
+def fib(n, store = ):
     if n <= 2: return 1
     if store.get(n): return store[n]
     store[n] =  fib(n-1, store) + fib(n-2, store)
@@ -97,7 +97,7 @@ O(N+M)
 #### Memo
 
 ```python
-def gridTraveler(m, n, store={}):
+def gridTraveler(m, n, store=):
     if store.get((m,n)):
         return store[(m,n)]
     if m == 1 and n == 1:

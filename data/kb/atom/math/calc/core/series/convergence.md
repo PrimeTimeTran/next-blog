@@ -18,7 +18,7 @@ A sequence or series **converges** if it approaches a fixed value as it progress
 A sequence $a_n$ converges to a value $L$ if:
 
 $$
-\lim_{n \to \infty} a_n = L
+$\lim_{n \to \infty} a_n = L$
 $$
 
 This means:

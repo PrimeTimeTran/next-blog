@@ -43,7 +43,7 @@ $$
 # 🔁 2. Integral View (Accumulation)
 
 $$
-\int f(x)\,dx = F(x) + C
+\int f(x)\ \, dx = F(x) + C
 $$
 
 ### Meaning:
@@ -96,7 +96,7 @@ $$
 and:
 
 $$
-F(x) = \int f(x)\,dx
+F(x) = \int f(x)\ \, dx
 $$
 
 ---

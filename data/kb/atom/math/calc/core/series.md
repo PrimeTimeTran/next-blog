@@ -34,7 +34,7 @@ $$
 The series converges if:
 
 $$
-\lim_{n \to \infty} S_n \text{ exists and is finite}
+$\lim_{n \to \infty} S_n \text{ exists and is finite}$
 $$
 
 ---

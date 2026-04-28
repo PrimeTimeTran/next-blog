@@ -39,10 +39,10 @@ f(x)=If(0≤x≤1, x^(2))
 n=2
 Δx=((1)/(n))
 
-<!-- under estimate -->
+{/_ under estimate _/}
 
 rects = Sequence(Polygon((k*Δx,0),(k*Δx,f(k*Δx)),((k+1)*Δx,f(k*Δx)),((k+1)*Δx,0)), k, 0, n-1)
 
-<!-- Over estiamte -->
+{/_ Over estiamte _/}
 
 rects=Sequence(Polygon((k Δx,0),(k Δx,f((k+1) Δx)),((k+1) Δx,f((k+1) Δx)),((k+1) Δx,0)),k,0,n-1)

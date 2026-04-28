@@ -24,7 +24,7 @@ An indefinite integral represents the family of all antiderivatives of a functio
 The indefinite integral of a function is written as:
 
 $$
-\int f(x)\,dx = F(x) + C
+\int f(x)\ \, dx = F(x) + C
 $$
 
 where:
@@ -79,7 +79,7 @@ $$
 then:
 
 $$
-\int f(x)\,dx = F(x) + C
+\int f(x)\ \, dx = F(x) + C
 $$
 
 ---
@@ -112,7 +112,7 @@ $$
 Indefinite integrals are building blocks for:
 
 $$
-\int_a^b f(x)\,dx = F(b) - F(a)
+\int_a^b f(x)\ \, dx = F(b) - F(a)
 $$
 
 So:

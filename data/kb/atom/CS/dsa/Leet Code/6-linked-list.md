@@ -112,7 +112,7 @@ class Solution:
     def copyRandomList(self, head: "Node") -> "Node":
         if head is None:
             return None
-        store = {}
+        store =
         cur = head
         while cur:
             store[cur] = Node(cur.val, None, None)

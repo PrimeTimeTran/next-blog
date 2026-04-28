@@ -9,9 +9,9 @@ An **infinite limit** describes a situation where a function grows without bound
 A function $f(x)$ has an infinite limit at $x = a$ if:
 
 $$
-\lim_{x \to a} f(x) = \infty
+$\lim_{x \to a} f(x) = \infty$
 \quad \text{or} \quad
-\lim_{x \to a} f(x) = -\infty
+$\lim_{x \to a} f(x) = -\infty$
 $$
 
 This means:
@@ -25,9 +25,9 @@ This means:
 Infinite limits are often direction-dependent:
 
 $$
-\lim_{x \to a^-} f(x) = \pm \infty
+$\lim_{x \to a^-} f(x) = \pm \infty$
 \quad \text{or} \quad
-\lim_{x \to a^+} f(x) = \pm \infty
+$\lim_{x \to a^+} f(x) = \pm \infty$
 $$
 
 Both sides do **not need to match**.

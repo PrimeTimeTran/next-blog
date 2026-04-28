@@ -23,7 +23,7 @@ Think of derivatives in three complementary ways:
 
 **Physical view**: The instantaneous velocity—how fast something is moving right now (not average speed over time)
 
-**Algebraic view**: The ratio of infinitesimally small changes: $\frac{dy}{dx}$ means "change in y divided by change in x as both become tiny"
+**Algebraic view**: The ratio of infinitesimally small changes: $\\frac{dy}{dx}$ means "change in y divided by change in x as both become tiny"
 
 ---
 
@@ -42,7 +42,7 @@ $$f'(a) = \lim_{b \to a} \frac{f(b) - f(a)}{b-a}$$
 ## Key Notation
 
 - $f'(x)$ — "f prime of x" (compact; most common)
-- $\frac{df}{dx}$ — "the derivative of f with respect to x" (explicit; shows variable)
+- $\\frac{df}{dx}$ — "the derivative of f with respect to x" (explicit; shows variable)
 - $\frac{df}{dx}\bigg|_{x=a}$ — derivative evaluated at a specific point $x = a$
 
 ## Tangent Line Equation

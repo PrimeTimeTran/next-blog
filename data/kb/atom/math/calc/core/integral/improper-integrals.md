@@ -52,7 +52,7 @@ $$
 $$
 \int_a^{\infty} f(x)\,dx
 =
-\lim_{b \to \infty} \int_a^b f(x)\,dx
+$\lim_{b \to \infty} \int_a^b f(x)\,dx$
 $$
 
 ---
@@ -64,9 +64,9 @@ If \(f(x)\) blows up at \(c\):
 $$
 \int_a^b f(x)\,dx
 =
-\lim_{t \to c^-} \int_a^t f(x)\,dx
+$\lim_{t \to c^-} \int_a^t f(x)\,dx$
 +
-\lim_{t \to c^+} \int_t^b f(x)\,dx
+$\lim_{t \to c^+} \int_t^b f(x)\,dx$
 $$
 
 ---

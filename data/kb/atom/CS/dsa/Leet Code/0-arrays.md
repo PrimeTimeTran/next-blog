@@ -14,7 +14,7 @@ Dict
 class Solution:
     def isAnagram(self, s: str, t: str) -> bool:
         if len(s) != len(t): return False
-        sStore, tStore = {}, {}
+        sStore, tStore = ,
 
         for i in range(len(s)):
             sChar = s[i]
@@ -32,7 +32,7 @@ class Solution:
 class Solution:
     def isAnagram(self, s: str, t: str) -> bool:
         if len(s) != len(t): return False
-        sStore, tStore = {}, {}
+        sStore, tStore = ,
 
         for i, c in enumerate(s):
             sStore[c] = sStore.get(c, 0) + 1

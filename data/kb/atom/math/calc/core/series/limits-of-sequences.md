@@ -8,7 +8,7 @@ $$(a_n) = a_1, a_2, a_3, \dots$$
 The **limit of a sequence** describes what the terms approach as $n \to \infty$:
 
 $$
-\lim_{n \to \infty} a_n = L
+$\lim_{n \to \infty} a_n = L$
 $$
 
 If the terms get arbitrarily close to $L$, the sequence **converges** to $L$. Otherwise, it **diverges**.
