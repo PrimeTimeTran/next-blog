@@ -12,7 +12,7 @@ function clean(obj) {
  * ---------------------- */
 
 export async function getStaticPaths() {
-  const { MDX_ERRORS, getPublishedFiles } = await import('@/lib/mdx')
+  const { getPublishedFiles } = await import('@/lib/mdx')
   const { toSlug, normalizeSlug } = await import('@/lib/server/files')
   // const { normalizeSlug } = await import('@/lib/server/files')
 
@@ -28,13 +28,6 @@ export async function getStaticPaths() {
     }
   })
 
-  if (MDX_ERRORS.length > 0) {
-    console.log('\n🔥 MDX ERROR SUMMARY:')
-    MDX_ERRORS.forEach(({ slug, error }) => {
-      console.log('-', slug)
-    })
-  }
-
   return {
     paths: paths,
     fallback: false,
@@ -45,10 +38,9 @@ export async function getStaticPaths() {
  * STATIC PROPS
  * ---------------------- */
 export async function getStaticProps({ params }) {
-  const { normalizeSlugFromSlug } = await import('@/lib/server/files')
-  const { normalizeKBFile, buildKbTree, getFileBySlug, getAllFilesFrontMatter } = await import(
-    '@/lib/mdx'
-  )
+  // const { safeMath } = await import('@/lib/mdx/safeMath')
+  const { toSlug, normalizeSlugFromSlug } = await import('@/lib/server/files')
+  const { buildKbTree, getFileBySlug, getAllFilesFrontMatter } = await import('@/lib/mdx')
 
   const slugArray = Array.isArray(params.slug)
     ? params.slug
@@ -59,13 +51,21 @@ export async function getStaticProps({ params }) {
   const safeSlug = normalizeSlugFromSlug(slug)
   const rawKB = await getAllFilesFrontMatter('kb')
 
-  const allKB = rawKB.map(normalizeKBFile).filter(Boolean)
+  const allKB = rawKB
+    .filter(Boolean)
+    .filter((item) => item.filePath)
+    .map((item) => ({
+      ...item,
+      slug: normalizeSlugFromSlug(toSlug(item.filePath)),
+    }))
+    .filter((item) => item.slug)
 
   const sidebarData = buildKbTree(allKB)
 
   const index = allKB.findIndex((item) => item.slug === safeSlug)
 
   let kbItem = await getFileBySlug('kb', safeSlug)
+  // kbItem = safeMath(kbItem)
   if (!kbItem) {
     return { notFound: true }
   }
