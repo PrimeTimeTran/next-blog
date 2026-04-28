@@ -23,7 +23,6 @@ export async function getStaticProps({ params }) {
   const slug = Array.isArray(params.slug) ? params.slug.join('/') : params.slug
 
   const allPosts = getAllBlogPosts()
-  console.log({ allPosts })
   const postIndex = allPosts.findIndex((p) => p.slug === slug)
 
   const post = await getBlogFileBySlug(slug)

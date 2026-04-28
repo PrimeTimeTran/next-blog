@@ -29,6 +29,7 @@ export default function PostLayout({ toc, frontMatter, authorDetails, next, prev
     return () => window.removeEventListener('scroll', onScroll)
   }, [])
   const { slug, fileName, date, title, images, tags } = frontMatter
+  console.log({ frontMatter })
 
   function focusLanguageTab(evt, language) {
     language = language + '-content'
