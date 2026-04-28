@@ -1,16 +1,23 @@
+---
+tags:
+  - stochastic-calculus
+  - probability
+  - finance
+---
+
 # Itô Integral
 
 ## Definition
 
-The Itô integral is a way to define integration with respect to a stochastic process, specifically Brownian motion (W_t), where standard calculus integrals do not apply due to non-smooth randomness.
+The Itô integral is a way to define integration with respect to a stochastic process, specifically Brownian motion $W_t$, where standard calculus integrals do not apply due to non-smooth randomness.
 
 It defines expressions of the form:
 
 $$
-\int_0^T X_t , dW_t
+\int_0^T X_t \, dW_t
 $$
 
-where (X_t) is a stochastic process.
+where $X_t$ is a stochastic process.
 
 ---
 
@@ -24,12 +31,12 @@ Unlike classical integrals, it integrates against a **random path**, not a smoot
 
 ## Key challenge it solves
 
-Brownian motion (W_t):
+Brownian motion $W_t$:
 
 - is continuous
 - but nowhere differentiable
 
-So classical integrals like Riemann or Lebesgue cannot directly handle (dW_t).
+So classical integrals like Riemann or Lebesgue cannot directly handle $dW_t$.
 
 The Itô integral provides a rigorous definition.
 
@@ -45,7 +52,7 @@ $$
 
 Key rule:
 
-- (X\_{t_i}) is evaluated at the **left endpoint** (non-anticipative)
+- $X_{t_i}$ is evaluated at the **left endpoint** (non-anticipative)
 
 ---
 
@@ -54,7 +61,7 @@ Key rule:
 A key result:
 
 $$
-\mathbb{E}\left[\int_0^T X_t , dW_t\right] = 0
+\mathbb{E}\left[\int_0^T X_t \, dW_t\right] = 0
 $$
 
 This reflects:
@@ -68,10 +75,12 @@ This reflects:
 Unlike classical integrals:
 
 $$
-\text{Var}\left(\int_0^T X_t , dW_t\right) = \mathbb{E}\left[\int_0^T X_t^2 , dt\right]
+\mathrm{Var}\left(\int_0^T X_t \, dW_t\right)
+=
+\mathbb{E}\left[\int_0^T X_t^2 \, dt\right]
 $$
 
-This shows that:
+This shows:
 
 - randomness accumulates through squared magnitude
 
@@ -79,7 +88,7 @@ This shows that:
 
 ## Key intuition
 
-> The Itô integral accumulates _random shocks weighted by the current state of the system_.
+> The Itô integral accumulates random shocks weighted by the current state of the system.
 
 ---
 
@@ -87,7 +96,7 @@ This shows that:
 
 A critical constraint:
 
-> (X_t) cannot depend on future values of (W_t)
+> $X_t$ cannot depend on future values of $W_t$
 
 This ensures:
 

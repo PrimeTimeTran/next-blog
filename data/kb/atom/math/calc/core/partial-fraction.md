@@ -7,7 +7,7 @@ tags:
 
 # 🧠 Divergence Theorem (Gauss’ Theorem) — Atom
 
-The Divergence Theorem connects a **flux across a closed surface** to a **volume integral inside the surface**.
+The Divergence Theorem connects a flux across a closed surface to a volume integral inside the surface.
 
 ---
 
@@ -19,7 +19,7 @@ The Divergence Theorem connects a **flux across a closed surface** to a **volume
 
 # 📐 Statement
 
-Let \( \vec{F} \) be a vector field and \(V\) a solid region with boundary surface \(S\):
+Let $\vec{F}$ be a vector field and $V$ a solid region with boundary surface $S$:
 
 $$
 \iiint_V (\nabla \cdot \vec{F})\, dV
@@ -37,7 +37,7 @@ $$
 \iiint_V (\nabla \cdot \vec{F})\, dV
 $$
 
-- measures **total divergence inside the volume**
+- measures total divergence inside the volume
 - divergence = “source strength”
 
 ---
@@ -48,7 +48,7 @@ $$
 \iint_S \vec{F} \cdot \vec{n}\, dS
 $$
 
-- measures **net outward flux through the surface**
+- measures net outward flux through the surface
 - how much field exits the region
 
 ---
@@ -61,8 +61,6 @@ $$
 
 # 📊 Physical Interpretation
 
-Depending on context:
-
 - fluid flow → net fluid leaving a region
 - electromagnetism → field flux
 - heat flow → energy escaping volume
@@ -74,22 +72,20 @@ Depending on context:
 Use the divergence theorem when:
 
 - computing flux through closed surfaces is hard
-- converting a surface integral into a volume integral is easier
+- converting surface integrals into volume integrals simplifies the problem
 - symmetry exists in 3D regions
 
 ---
 
 # 🔁 Reverse Use
 
-You can also rewrite:
+You can rewrite:
 
 $$
 \iint_S \vec{F} \cdot \vec{n}\, dS
-\;\;\rightarrow\;\;
+\rightarrow
 \iiint_V (\nabla \cdot \vec{F})\, dV
 $$
-
-This is often the simplification step.
 
 ---
 
@@ -97,9 +93,9 @@ This is often the simplification step.
 
 The theorem applies when:
 
-- \( \vec{F} \) is sufficiently smooth
-- \(S\) is a **closed surface**
-- \(V\) is a well-defined volume
+- $\vec{F}$ is sufficiently smooth
+- $S$ is a closed surface
+- $V$ is a well-defined volume
 
 ---
 
@@ -108,7 +104,7 @@ The theorem applies when:
 - [[Surface Integrals]] → flux computation tool
 - [[Triple Integrals]] → volume representation
 - [[Gradient, Divergence, Curl]] → vector calculus operators
-- [[Stokes’ Theorem]] → 2D boundary analogue
+- [[Stokes’ Theorem]] → boundary circulation analogue
 - [[Green’s Theorem]] → 2D version of divergence theorem
 
 ---
@@ -117,7 +113,7 @@ The theorem applies when:
 
 > Surface flow = internal sources
 
-or more compactly:
+or:
 
 > “What leaves must come from inside.”
 
@@ -125,4 +121,4 @@ or more compactly:
 
 # 📌 Summary
 
-The Divergence Theorem converts a difficult surface flux integral into a simpler volume integral by relating outward flow to internal divergence.
+The Divergence Theorem converts a surface flux integral into a volume integral by relating outward flow to internal divergence.

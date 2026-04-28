@@ -1,0 +1,8 @@
+- `SELECT`:
+- Basic `JOIN`:
+- Basic Aggregate Functions:
+- `ORDER BY` By and `GROUP BY`:
+- Advanced `SELECT` and `JOIN`:
+- Subqueries:
+- Advanced String Functions / Regex / Clause:
+- Window Functions:

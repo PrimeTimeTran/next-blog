@@ -1,0 +1,23 @@
+---
+tags:
+  - dsa
+---
+
+- Nodes with values
+- Traversal:
+- Preorder
+- Start from root going counterclockwise.
+- Visit when you reach the node.
+- Inorder
+- Start from root going counterclockwise.
+- Visit when you cross the bottom of the node.
+- Postorder
+- Start from root going counterclockwise.
+- Visit when you leave the node.
+- Parent
+- Child
+- Types
+- Binary:
+  - Only two children, left and right
+- Leaves:
+- Nodes with no children

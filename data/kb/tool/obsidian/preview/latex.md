@@ -2,36 +2,39 @@
 
 ## Latex snippet on the left
 
-$\sum_{n=1}^{\infty}  {C}_{n}x^{n}$
+$\sum_{n=1}^{\infty} C_n x^n$
 
 ## Latex snippet centered
 
-$$\sum_{n=1}^{\infty}  {C}_{n}x^{n}$$
+$$
+\sum_{n=1}^{\infty} C_n x^n
+$$
 
 ## Multi-line: align\* (aligned with & symbol)
 
 $$
-\begin{align*}
+\begin{aligned}
 y &= x^2 + 2x + 1 \\
   &= (x+1)^2
-\end{align*}
+\end{aligned}
 $$
 
 ## Multi-line: gather\* (centered, no alignment)
 
 $$
-\begin{gather*}
-x = 1 \\
-y = 2 \\
-z = 3
-\end{gather*}
+\begin{aligned}
+x &= 1 \\
+y &= 2 \\
+z &= 3
+\end{aligned}
 $$
 
 ## Multi-line: cases (piecewise)
 
 $$
-f(x) = \begin{cases}
-x^2 & \text{if } x \geq 0 \\
+f(x) =
+\begin{cases}
+x^2 & \text{if } x \ge 0 \\
 -x & \text{if } x < 0
 \end{cases}
 $$
@@ -39,19 +42,19 @@ $$
 ## Multi-line: split (long equation)
 
 $$
-\begin{split}
+\begin{aligned}
 (x+y)^3 &= x^3 + 3x^2y + 3xy^2 + y^3 \\
         &= x^3 + y^3 + 3xy(x+y)
-\end{split}
+\end{aligned}
 $$
 
 ## Multi-line: multline\* (auto line breaks)
 
 $$
-\begin{multline*}
-f(x) = (x+1)(x+2)(x+3) \\
-= x^3 + 6x^2 + 11x + 6
-\end{multline*}
+\begin{aligned}
+f(x) &= (x+1)(x+2)(x+3) \\
+     &= x^3 + 6x^2 + 11x + 6
+\end{aligned}
 $$
 
 ## Matrix example

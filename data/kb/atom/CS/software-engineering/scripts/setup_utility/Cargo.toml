@@ -1,0 +1,16 @@
+cargo-features = ["edition2024"]
+
+[package]
+name = "setup_utility"
+version = "0.0.1"
+edition = "2024"
+
+[dependencies]
+
+[[bin]]
+name = "setup_utility"
+path = "src/setup.rs"
+
+[[bin]]
+name = "main"
+path = "src/main.rs"

@@ -1,0 +1,15 @@
+- Ruby
+- C++
+- C
+- GO
+- JS
+- TS
+- Python
+- Dart
+- C#
+- Objective C
+- Bend
+- Mojo
+- Rust
+- Zig
+- Kind

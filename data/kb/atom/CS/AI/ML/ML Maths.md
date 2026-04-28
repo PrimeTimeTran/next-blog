@@ -1,0 +1,10 @@
+[[Gradient Descent]],
+[[Cost Functions]],
+[[Optimization]],
+[[Partial Derivatives]],
+[[Chain Rule in Backpropagation]],
+[[Hessian Matrix]],
+[[Jacobian Matrix]],
+[[Probability Theory and Calculus]],
+[[Bayesian Inference]],
+[[Expectation-Maximization Algorithm]]
