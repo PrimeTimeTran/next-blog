@@ -1,8 +1,6 @@
+import { getKbTree } from '@/lib/content/kb'
 import { getAllKbSlugs } from '@/lib/content/kb'
 import { MDXLayoutRenderer } from '@/components/MDXComponents'
-
-import { getKbTree } from '@/lib/content/kb'
-import { resolveKbItem } from '@/lib/content/kb/resolveKbItem'
 
 export async function getStaticPaths() {
   const slugs = await getAllKbSlugs()
@@ -18,6 +16,7 @@ export async function getStaticPaths() {
 }
 
 export async function getStaticProps(ctx) {
+  const { resolveKbItem } = await import('@/lib/content/server/kb.server')
   const kbItem = await resolveKbItem(ctx.params.slug)
   const kbOutline = getKbTree()
 
