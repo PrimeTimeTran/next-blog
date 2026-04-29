@@ -169,6 +169,7 @@ export default function PostLayout({ toc, frontMatter, authorDetails, next, prev
                           <h2 className="text-xs uppercase tracking-wide text-gray-500 dark:text-gray-400">
                             Previous Article
                           </h2>
+                          {/* #F1FA8C or #E6DB74 */}
                           <Link href={`/blog/${prev.slug}`} className="text-primary-500">
                             {prev.title}
                           </Link>
@@ -206,8 +207,9 @@ export default function PostLayout({ toc, frontMatter, authorDetails, next, prev
               ].join(' ')}
             >
               <PageTitle
+                style={{ color: '#E6DB74' }}
                 className={[
-                  'transition-all duration-300 ease-in-out',
+                  'darl:text-green-300 text-green-600 transition-all duration-300 ease-in-out',
                   shrunk
                     ? 'text-xl font-bold leading-7 opacity-90'
                     : 'text-2xl font-extrabold leading-9 sm:text-4xl sm:leading-10 md:text-4xl md:leading-14',
