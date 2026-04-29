@@ -1,4 +1,11 @@
-# 🧠 Pipeline (correct order)
+# 🧠 MDX Pipeline
+
+A rule-driven document compiler that operates via iterative source transformation + re-tokenization.
+
+- multi-stage processing
+- rules + transforms
+- compiler-like flow
+- extensibility (plugins later)
 
 ```sh
 SOURCE (MDX/text)
