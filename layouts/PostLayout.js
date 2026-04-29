@@ -1,4 +1,5 @@
 import { useState, useEffect } from 'react'
+
 import Tag from '@/components/Tag'
 import Link from '@/components/Link'
 import Image from '@/components/Image'
@@ -19,8 +20,6 @@ const postDateTemplate = { weekday: 'long', year: 'numeric', month: 'long', day:
 
 export default function PostLayout({ toc, frontMatter, authorDetails, next, prev, children }) {
   const [shrunk, setShrunk] = useState(false)
-
-  console.log({ authorDetails })
 
   useEffect(() => {
     const onScroll = () => {

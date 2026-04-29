@@ -69,8 +69,6 @@ export default function KBLayout({ toc, children, sidebarData }) {
     localStorage.setItem(STORAGE_KEY, JSON.stringify(openMap))
   }, [openMap])
 
-  console.log({ sidebarData })
-
   return (
     <div className="min-h-screen w-full">
       <div className="grid w-full grid-cols-1 lg:grid-cols-12">
