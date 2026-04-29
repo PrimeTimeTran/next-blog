@@ -1,118 +1,169 @@
 const { DEBUG } = require('./config')
 const { log, section } = require('./logs')
 
-function tokenize(file, content) {
+function createRegion(type, value, startLine, endLine, startIndex, endIndex) {
+  return {
+    type,
+    value,
+    startLine,
+    endLine,
+    startIndex,
+    endIndex,
+    lines: value.split('\n').map((text, i) => ({
+      text,
+      lineNumber: startLine + i,
+    })),
+  }
+}
+
+function tokenize(content) {
   const regions = []
 
   let i = 0
+  let line = 1
+
   let buffer = ''
+  let regionStartLine = 1
 
-  const flush = () => {
-    if (buffer) {
-      regions.push({
-        type: 'text',
-        value: buffer,
-      })
-      buffer = ''
+  const flushText = (endIndex = null) => {
+    if (!buffer) return
+
+    regions.push(createRegion('text', buffer, regionStartLine, line, null, endIndex))
+
+    buffer = ''
+    regionStartLine = line
+  }
+
+  const readWhile = (predicate) => {
+    const start = i
+    while (i < content.length && predicate(content[i])) {
+      if (content[i] === '\n') line++
+      i++
     }
+    return content.slice(start, i)
   }
 
-  if (DEBUG.tokenizer) {
-    log('tokenizer', `start: ${file}`)
-  }
+  const matchAhead = (str) => content.startsWith(str, i)
 
   while (i < content.length) {
     const c = content[i]
-    const next2 = content.slice(i, i + 2)
-    const next3 = content.slice(i, i + 3)
 
-    /* CODE BLOCK */
-    if (next3 === '```') {
-      flush()
+    /* -------------------------
+     * CODE BLOCK (``` fenced)
+     * ------------------------ */
+    if (matchAhead('```')) {
+      flushText()
 
       const start = i
+      const startLine = line
+
       i += 3
 
-      const end = content.indexOf('```', i)
+      const bodyStart = i
 
-      if (end === -1) {
-        regions.push({ type: 'code', value: content.slice(start) })
+      // IMPORTANT: line-aware search (NOT indexOf on full string)
+      while (i < content.length && !content.startsWith('```', i)) {
+        if (content[i] === '\n') line++
+        i++
+      }
+
+      if (i >= content.length) {
+        const slice = content.slice(start)
+        regions.push(createRegion('code', slice, startLine, line, start, content.length))
         break
       }
 
-      regions.push({
-        type: 'code',
-        value: content.slice(start, end + 3),
-      })
+      // include closing ```
+      i += 3
+      const endLine = line
 
-      i = end + 3
+      const slice = content.slice(start, i)
+
+      regions.push(createRegion('code', slice, startLine, endLine, start, i))
+
       continue
     }
 
-    /* BLOCK MATH */
-    if (next2 === '$$') {
-      flush()
+    /* -------------------------
+     * BLOCK MATH ($$ ... $$)
+     * ------------------------ */
+    if (matchAhead('$$')) {
+      flushText()
 
       const start = i
+      const startLine = line
+
       i += 2
 
-      const end = content.indexOf('$$', i)
+      while (i < content.length && !content.startsWith('$$', i)) {
+        if (content[i] === '\n') line++
+        i++
+      }
 
-      if (end === -1) {
-        buffer += content.slice(start)
+      if (i >= content.length) {
+        const slice = content.slice(start)
+        regions.push(createRegion('math-block', slice, startLine, line, start, content.length))
         break
       }
 
-      regions.push({
-        type: 'math-block',
-        value: content.slice(start, end + 2),
-      })
+      i += 2
+      const endLine = line
 
-      i = end + 2
+      const slice = content.slice(start, i)
+
+      regions.push(createRegion('math-block', slice, startLine, endLine, start, i))
+
       continue
     }
 
-    /* INLINE MATH */
+    /* -------------------------
+     * INLINE MATH ($...$)
+     * ------------------------ */
     if (c === '$') {
-      flush()
+      flushText()
 
       const start = i
+      const startLine = line
+
       i++
 
-      const end = content.indexOf('$', i)
+      let found = false
 
-      if (end === -1) {
+      while (i < content.length) {
+        if (content[i] === '\n') line++
+
+        if (content[i] === '$') {
+          found = true
+          break
+        }
+
+        i++
+      }
+
+      if (!found) {
         buffer += content.slice(start)
         break
       }
 
-      regions.push({
-        type: 'math-inline',
-        value: content.slice(start, end + 1),
-      })
+      i++ // consume closing $
 
-      i = end + 1
+      const slice = content.slice(start, i)
+
+      regions.push(createRegion('math-inline', slice, startLine, line, start, i))
+
       continue
     }
+
+    /* -------------------------
+     * DEFAULT TEXT MODE
+     * ------------------------ */
+    if (c === '\n') line++
 
     buffer += c
     i++
   }
 
-  flush()
-
-  if (DEBUG.tokenizer) {
-    const summary = regions.reduce((a, r) => {
-      a[r.type] = (a[r.type] || 0) + 1
-      return a
-    }, {})
-
-    log('tokenizer', {
-      file,
-      summary,
-      regionCount: regions.length,
-    })
-  }
+  flushText()
 
   return regions
 }

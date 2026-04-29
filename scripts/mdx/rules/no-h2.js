@@ -1,27 +1,31 @@
-function noH2(region) {
-  const lines = region.value.split('\n')
+const { classify } = require('./helpers')
 
-  const diagnostics = []
-  const fixes = []
+module.exports = {
+  name: 'no-h2',
 
-  lines.forEach((line, i) => {
-    if (line.startsWith('## ')) {
-      diagnostics.push({
+  run(line, index, ctx) {
+    if (!line.trim().startsWith('##')) return null
+
+    return [
+      {
         rule: 'no-h2',
         message: 'H2 headings are not allowed',
-        line: i + 1,
+        location: {
+          startLine: index + 1,
+          endLine: index + 1,
+        },
         snippet: line,
-      })
 
-      fixes.push({
-        type: 'replace-line',
-        original: line,
-        replacement: line.replace(/^## /, '# '),
-      })
-    }
-  })
-
-  return { region, diagnostics, fixes }
+        fix: {
+          type: 'replace-range',
+          startLine: index + 1,
+          endLine: index + 1,
+          replacement: '# ' + line.slice(2).trim(),
+        },
+        context: {
+          window: ctx.getWindow(index, 2),
+        },
+      },
+    ]
+  },
 }
-
-module.exports = noH2

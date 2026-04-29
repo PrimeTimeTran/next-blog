@@ -12,7 +12,7 @@ function sanitize(region) {
 
   v = v.replace(/<br>/g, '<br />')
 
-  return { ...region, value: v }
+  return { ...region, value: String(region.value) }
 }
 
 module.exports = {

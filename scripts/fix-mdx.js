@@ -1,6 +1,6 @@
 const fs = require('fs')
 const path = require('path')
-const { extractMathBlocks, restoreMathBlocks } = require('./mdx-lint/utils/protectMath')
+const { extractMathBlocks, restoreMathBlocks } = require('./mdx-OLD/utils/protectMath')
 
 const ROOT = process.cwd()
 

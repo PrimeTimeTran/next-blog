@@ -22,21 +22,22 @@ function walk(dir) {
   return out
 }
 
-function getContext(fileContent, line, radius = 3) {
-  const lines = fileContent.split('\n')
+function getContext(content, line, radius = 2) {
+  const lines = content.split('\n')
 
-  const start = Math.max(0, line - radius - 1)
-  const end = Math.min(lines.length, line + radius)
+  const idx = line - 1
 
-  const slice = lines.slice(start, end)
+  const start = Math.max(0, idx - radius)
+  const end = Math.min(lines.length - 1, idx + radius)
 
-  return slice
-    .map((l, i) => {
-      const lineNo = start + i + 1
-      const marker = lineNo === line ? '❌' : '  '
-      return `${marker} ${lineNo.toString().padStart(4)} | ${l}`
-    })
-    .join('\n')
+  const out = []
+
+  for (let i = start; i <= end; i++) {
+    const prefix = i === idx ? '❌' : '  '
+    out.push(`${prefix} ${String(i + 1).padStart(4)} | ${lines[i]}`)
+  }
+
+  return out.join('\n')
 }
 
 module.exports = {

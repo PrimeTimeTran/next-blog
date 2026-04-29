@@ -24,6 +24,7 @@ const DEBUG = {
   summary: true,
   files: false, // per-file metadata logs
   verbose: true,
+  runRules: true,
 }
 
 module.exports = {

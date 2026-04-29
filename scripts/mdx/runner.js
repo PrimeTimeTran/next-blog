@@ -1,126 +1,75 @@
 const fs = require('fs')
-const path = require('path')
 
 const { render } = require('./render')
-const { diff, section } = require('./logs')
+const { DIAG } = require('./logs')
 const { tokenize } = require('./tokenize')
 const { sanitize } = require('./sanitize')
 const { runRules } = require('./runRules')
 const { walk, getContext } = require('./fs')
-const { DEBUG, DRY_RUN, TARGET_DIR } = require('./config')
+const { TARGET_DIR } = require('./config')
 
-/* -------------------------
- * FIX ENGINE
- * ------------------------ */
-
-function applyFixes(content, fixes) {
-  let out = content
-
-  for (const fix of fixes) {
-    if (fix.type === 'replace-line') {
-      out = out.replace(fix.original, fix.replacement)
-    }
+function assertRegion(r) {
+  if (typeof r.value !== 'string') {
+    console.log('❌ BAD REGION:', r)
+    throw new Error('Region.value must be string')
   }
-
-  return out
 }
 
-/* -------------------------
- * PIPELINE
- * ------------------------ */
+function applyFixes(content, fixes) {
+  const lines = content.split('\n')
+
+  // IMPORTANT: apply bottom-up to avoid shifting indices
+  fixes
+    .sort((a, b) => b.startLine - a.startLine)
+    .forEach((fix) => {
+      const start = fix.startLine - 1
+      const end = fix.endLine - 1
+
+      lines.splice(start, end - start + 1, fix.replacement)
+    })
+
+  return lines.join('\n')
+}
 
 function processFile(file) {
   const original = fs.readFileSync(file, 'utf8')
 
-  // 1. TOKENIZE
-  const regions = tokenize(file, original)
+  // 1. line-based linting ONLY
+  const lines = original.split('\n')
+  const diagnostics = runRules(lines)
 
-  // 2. INITIAL RENDER (baseline)
-  const rebuilt = render(regions)
+  // 2. extract fixes directly from diagnostics
+  const fixes = diagnostics.filter((d) => d.fix).map((d) => d.fix)
 
-  if (DEBUG.diff) {
-    diff(original, rebuilt)
-  }
+  // 3. apply fixes to raw source
+  const fixed = applyFixes(original, fixes)
 
-  const fixes = []
-  const diagnostics = []
+  // 4. tokenize ONLY for rendering/analysis
+  const regions = tokenize(fixed)
 
-  // 3. RULES
-  const processed = regions.map((r) => {
-    const result = runRules(r, file, original)
-
-    if (result.diagnostics?.length) {
-      diagnostics.push(
-        ...result.diagnostics.map((d) => ({
-          file,
-          ...d,
-          context: getContext(original, d.line || 1),
-        }))
-      )
-    }
-
-    if (result.fixes?.length) {
-      fixes.push(...result.fixes)
-    }
-
-    return sanitize(result.region)
+  DIAG.emit('processFile:rules', {
+    diagnostics,
+    fixes,
   })
 
-  // 4. RENDER AFTER RULE PROCESSING
-  let updated = render(processed)
+  // 5. safety check
+  regions.forEach(assertRegion)
 
-  // 5. APPLY FIXES (IMPORTANT: apply to UPDATED, not original)
-  if (fixes.length) {
-    updated = applyFixes(updated, fixes)
-  }
+  DIAG.emit('processFile:finalRegions', regions)
 
-  // 6. DIFF STATE
+  // 6. render final output
+  const updated = render(regions)
+
   const changed = original !== updated
 
   if (changed) {
-    section(`FILE: ${file}`)
-    console.log('🧼 modified')
-
-    if (!DRY_RUN) {
-      fs.writeFileSync(file, updated, 'utf8')
-    }
+    fs.writeFileSync(file, updated, 'utf8')
   }
 
-  // 7. DIAGNOSTICS OUTPUT
-  if (diagnostics.length) {
-    section(`RULE VIOLATIONS: ${file}`)
-
-    if (DEBUG.verbose) {
-      for (const d of diagnostics) {
-        console.log('\n-------------------------')
-        console.log(`Rule: ${d.rule}`)
-        console.log(`Message: ${d.message}`)
-        console.log(`Line: ${d.line}`)
-        console.log('\nContext:\n')
-        console.log(d.context)
-      }
-    } else {
-      for (const d of diagnostics) {
-        console.log({
-          rule: d.rule,
-          message: d.message,
-          snippet: d.snippet,
-          line: d.line,
-        })
-      }
-    }
-  }
-
-  console.log('REGIONS:', regions.length)
-  console.log('FIXES:', fixes.length)
-  console.log('DIAGNOSTICS:', diagnostics.length)
+  DIAG.summarizeFileViolations(file, diagnostics)
 
   return changed
 }
-
-/* -------------------------
- * RUNNER
- * ------------------------ */
 
 function run() {
   const files = walk(TARGET_DIR)
@@ -131,8 +80,8 @@ function run() {
     if (processFile(file)) changed++
   }
 
-  section('DONE')
-  console.log({ changed, mode: DRY_RUN ? 'dry' : 'write' })
+  DIAG.summarizePipeline(changed)
+  DIAG.summarizeScriptRun(changed)
 }
 
 run()
