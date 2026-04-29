@@ -1,8 +1,6 @@
-const { classify } = require('./helpers')
+import { classify } from './helpers.js'
 
-const { DIAG } = require('../logs')
-
-function createRuleContext({ file, lines }) {
+export function createRuleContext({ file, lines }) {
   const isMeaningful = (line) => line && line.trim().length > 0
 
   const getPrevMeaningful = (i) => {
@@ -48,5 +46,3 @@ function createRuleContext({ file, lines }) {
     getWindow,
   }
 }
-
-module.exports = { createRuleContext }

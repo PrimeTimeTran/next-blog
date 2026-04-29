@@ -1,7 +1,7 @@
-const { DEBUG } = require('./config')
-const { log, section } = require('./logs')
+import { DEBUG } from './config'
+import { log } from './logs'
 
-function sanitize(region) {
+export function sanitize(region) {
   if (region.type !== 'text') return region
 
   let v = region.value
@@ -13,8 +13,4 @@ function sanitize(region) {
   v = v.replace(/<br>/g, '<br />')
 
   return { ...region, value: String(region.value) }
-}
-
-module.exports = {
-  sanitize,
 }

@@ -1,19 +1,21 @@
 # 🧠 Pipeline (correct order)
 
 ```sh
-raw file
-  ↓
-tokenizer
-  ↓
-AST-like regions
-  ↓
-rules (diagnostics + fixes)
-  ↓
-fix engine
-  ↓
-renderer
-  ↓
-final output
+SOURCE (MDX/text)
+   ↓
+runRules (semantic analysis)
+   ↓
+fixes (rewrite plan)
+   ↓
+applyFixes (source transformation)
+   ↓
+tokenize (AST creation)
+   ↓
+regions[] (flat AST)
+   ↓
+render (codegen)
+   ↓
+OUTPUT
 ```
 
 ---

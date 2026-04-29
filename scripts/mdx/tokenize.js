@@ -1,6 +1,3 @@
-const { DEBUG } = require('./config')
-const { log, section } = require('./logs')
-
 function createRegion(type, value, startLine, endLine, startIndex, endIndex) {
   return {
     type,
@@ -16,7 +13,7 @@ function createRegion(type, value, startLine, endLine, startIndex, endIndex) {
   }
 }
 
-function tokenize(content) {
+export function tokenize(content) {
   const regions = []
 
   let i = 0
@@ -166,8 +163,4 @@ function tokenize(content) {
   flushText()
 
   return regions
-}
-
-module.exports = {
-  tokenize,
 }

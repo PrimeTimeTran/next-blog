@@ -1,9 +1,9 @@
-const fs = require('fs')
-const path = require('path')
+import fs from 'fs'
+import path from 'path'
 
-const { log } = require('./logs')
+import { log } from './logs.js'
 
-function walk(dir) {
+export function walk(dir) {
   const out = []
   const entries = fs.readdirSync(dir)
 
@@ -22,7 +22,7 @@ function walk(dir) {
   return out
 }
 
-function getContext(content, line, radius = 2) {
+export function getContext(content, line, radius = 2) {
   const lines = content.split('\n')
 
   const idx = line - 1
@@ -38,9 +38,4 @@ function getContext(content, line, radius = 2) {
   }
 
   return out.join('\n')
-}
-
-module.exports = {
-  walk,
-  getContext,
 }

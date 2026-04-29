@@ -1,9 +1,10 @@
-const { createRuleContext } = require('./rules/createRuleContext')
-const noH2 = require('./rules/no-h2')
+import { createRuleContext } from './rules/createRuleContext.js'
+
+import noH2 from './rules/no-h2.js'
 
 const RULES = [noH2]
 
-function runRules(lines, file) {
+export function runRules(lines, file) {
   const diagnostics = []
 
   for (const rule of RULES) {
@@ -13,7 +14,7 @@ function runRules(lines, file) {
     for (let i = 0; i < lines.length; i++) {
       const line = lines[i]
 
-      const result = rule.run(line, i, ctx)
+      const result = rule(line, i, ctx)
 
       if (!result) continue
 
@@ -23,5 +24,3 @@ function runRules(lines, file) {
 
   return diagnostics
 }
-
-module.exports = { runRules }

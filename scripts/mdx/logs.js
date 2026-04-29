@@ -1,18 +1,14 @@
-const { DEBUG, DRY_RUN } = require('./config')
+import { DEBUG, DRY_RUN } from './config.js'
 
-/* -------------------------
- * HELPERS
- * ------------------------ */
-
-function log(key, ...args) {
+export function log(key, ...args) {
   if (DEBUG[key]) console.log(...args)
 }
 
-function section(title) {
+export function section(title) {
   if (DEBUG.summary) console.log(`\n=== ${title} ===`)
 }
 
-const DIAG = {
+export const DIAG = {
   enabled: false,
   buffer: {
     fixes: [],
@@ -121,7 +117,7 @@ ${event.snippet}
   },
 }
 
-function diff(original, rebuilt) {
+export function diff(original, rebuilt) {
   if (!DEBUG.diff) return
 
   section('DIFF')
@@ -144,11 +140,4 @@ function diff(original, rebuilt) {
       break
     }
   }
-}
-
-module.exports = {
-  log,
-  diff,
-  DIAG,
-  section,
 }

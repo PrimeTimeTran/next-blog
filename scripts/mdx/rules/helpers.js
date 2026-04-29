@@ -1,4 +1,4 @@
-function classify(line) {
+export function classify(line) {
   const t = line.trim()
 
   if (!t) return 'empty'
@@ -6,8 +6,4 @@ function classify(line) {
   if (t === '$$') return 'math-fence'
   if (t.startsWith('##')) return 'h2'
   return 'text'
-}
-
-module.exports = {
-  classify,
 }

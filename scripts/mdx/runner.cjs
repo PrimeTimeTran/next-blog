@@ -1,11 +1,10 @@
 const fs = require('fs')
 
-const { render } = require('./render')
+const { walk } = require('./fs')
 const { DIAG } = require('./logs')
+const { render } = require('./render')
 const { tokenize } = require('./tokenize')
-const { sanitize } = require('./sanitize')
 const { runRules } = require('./runRules')
-const { walk, getContext } = require('./fs')
 const { TARGET_DIR } = require('./config')
 
 function assertRegion(r) {
@@ -34,17 +33,13 @@ function applyFixes(content, fixes) {
 function processFile(file) {
   const original = fs.readFileSync(file, 'utf8')
 
-  // 1. line-based linting ONLY
   const lines = original.split('\n')
   const diagnostics = runRules(lines)
 
-  // 2. extract fixes directly from diagnostics
   const fixes = diagnostics.filter((d) => d.fix).map((d) => d.fix)
 
-  // 3. apply fixes to raw source
   const fixed = applyFixes(original, fixes)
 
-  // 4. tokenize ONLY for rendering/analysis
   const regions = tokenize(fixed)
 
   DIAG.emit('processFile:rules', {
@@ -52,12 +47,10 @@ function processFile(file) {
     fixes,
   })
 
-  // 5. safety check
   regions.forEach(assertRegion)
 
   DIAG.emit('processFile:finalRegions', regions)
 
-  // 6. render final output
   const updated = render(regions)
 
   const changed = original !== updated
