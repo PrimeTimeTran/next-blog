@@ -2,7 +2,8 @@ import generateRss from '@/lib/generate-rss'
 
 import { MDXLayoutRenderer } from '@/components/MDXComponents'
 import { getFiles } from '@/lib/content/server/blog.server'
-import { getFileBySlug } from '@/lib/content/server/getFileBySlug'
+
+import { getAuthorBySlug } from '@/lib/content/server/getFileBySlug'
 
 const DEFAULT_LAYOUT = 'PostLayout'
 
@@ -34,19 +35,14 @@ export async function getStaticProps({ params }) {
 
   const prev = allPosts[postIndex + 1] || null
   const next = allPosts[postIndex - 1] || null
-
-  const authorList = post.frontMatter?.authors || ['default']
-
-  const authorDetails = await Promise.all(
-    authorList.map((author) => getFileBySlug('authors', author))
-  )
+  const authorDetails = await getAuthorBySlug('default')
 
   return {
     props: {
       post,
       prev,
       next,
-      authorDetails,
+      authorDetails: [authorDetails],
     },
   }
 }
@@ -56,13 +52,13 @@ export default function Blog({ post, authorDetails, prev, next }) {
 
   return (
     <MDXLayoutRenderer
-      layout={frontMatter.layout || DEFAULT_LAYOUT}
-      mdxSource={mdxSource}
       toc={toc}
-      frontMatter={frontMatter}
-      authorDetails={authorDetails}
       prev={prev}
       next={next}
+      mdxSource={mdxSource}
+      frontMatter={frontMatter}
+      authorDetails={authorDetails}
+      layout={frontMatter.layout || DEFAULT_LAYOUT}
     />
   )
 }

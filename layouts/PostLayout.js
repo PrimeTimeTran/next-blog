@@ -20,6 +20,8 @@ const postDateTemplate = { weekday: 'long', year: 'numeric', month: 'long', day:
 export default function PostLayout({ toc, frontMatter, authorDetails, next, prev, children }) {
   const [shrunk, setShrunk] = useState(false)
 
+  console.log({ authorDetails })
+
   useEffect(() => {
     const onScroll = () => {
       setShrunk(window.scrollY > 40)
@@ -29,7 +31,6 @@ export default function PostLayout({ toc, frontMatter, authorDetails, next, prev
     return () => window.removeEventListener('scroll', onScroll)
   }, [])
   const { slug, fileName, date, title, images, tags } = frontMatter
-  console.log({ frontMatter })
 
   function focusLanguageTab(evt, language) {
     language = language + '-content'
@@ -52,30 +53,35 @@ export default function PostLayout({ toc, frontMatter, authorDetails, next, prev
 
   useEffect(() => {
     function addIdToTabGroups() {
-      var groups = document.getElementsByClassName('tab-group')
+      const groups = document.getElementsByClassName('tab-group')
+
       for (let groupId = 0; groupId < groups.length; groupId++) {
-        var group = groups[groupId]
+        const group = groups[groupId]
+
         group.id = `tab-group-${groupId}`
 
-        var buttonChildren = group.getElementsByClassName('tablinks')
-        for (var j = 0; j < buttonChildren.length; j++) {
-          var buttonChild = buttonChildren[j]
-          buttonChild.id += `-${groupId}-${j}`
+        const buttonChildren = group.getElementsByClassName('tablinks')
+        const contentChildren = group.getElementsByClassName('tabcontent')
+
+        // buttons
+        for (let j = 0; j < buttonChildren.length; j++) {
+          const button = buttonChildren[j]
+
+          const tabId = `tab-${groupId}-${j}`
+          button.id = tabId
+          button.dataset.tabId = tabId
+
+          button.onclick = (e) => focusLanguageTab(e, tabId)
         }
 
-        var children = group.getElementsByClassName('tabcontent')
-        for (var k = 0; k < children.length; k++) {
-          var child = children[k]
-          child.id = `${groupId}-${k}-content`
-        }
-
-        var buttons = group.children[0].children
-        for (var l = 0; l < buttons.length; l++) {
-          var button = buttons[l]
-          button.addEventListener('click', (e) => focusLanguageTab(e, `${groupId}-${l}`))
+        // content
+        for (let k = 0; k < contentChildren.length; k++) {
+          const child = contentChildren[k]
+          child.id = `content-${groupId}-${k}`
         }
       }
     }
+
     addIdToTabGroups()
   }, [])
 
@@ -103,8 +109,11 @@ export default function PostLayout({ toc, frontMatter, authorDetails, next, prev
                 <dt className="sr-only">Authors</dt>
                 <dd>
                   <ul className="flex justify-center space-x-8 sm:space-x-12 xl:block xl:space-x-0 xl:space-y-8">
-                    {authorDetails.map((author) => (
-                      <li className="flex items-center space-x-2" key={author.name}>
+                    {authorDetails.map((author, idx) => (
+                      <li
+                        className="flex items-center space-x-2"
+                        key={idx || author.email || author.github || author.name}
+                      >
                         {author.avatar && (
                           <Image
                             src={author.avatar}
@@ -141,8 +150,8 @@ export default function PostLayout({ toc, frontMatter, authorDetails, next, prev
                         Tags
                       </h2>
                       <div className="flex flex-wrap">
-                        {tags.map((tag) => (
-                          <div key={tag}>
+                        {(tags || []).filter(Boolean).map((tag, idx) => (
+                          <div key={idx}>
                             <span className="-mr-3">
                               <Tag text={tag} />
                             </span>
