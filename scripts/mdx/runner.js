@@ -1,6 +1,10 @@
 const fs = require('fs')
 const path = require('path')
 
+const { DEBUG } = require('./config')
+const { walk } = require('./fs')
+const { log, section } = require('./helpers')
+
 // raw MDX
 //   ↓
 // tokenizer (✔ working)
@@ -10,36 +14,6 @@ const path = require('path')
 // sanitizer (currently minimal)
 //   ↓
 // renderer (✔ lossless)
-
-/* -------------------------
- * DEBUG CONFIG (TOGGLE HERE)
- * ------------------------ */
-
-const DEBUG = {
-  walk: false,
-  tokenizer: false,
-  sanitizer: false,
-  render: false,
-  diff: true,
-  summary: true,
-  files: false, // per-file metadata logs
-}
-
-/* -------------------------
- * HELPERS
- * ------------------------ */
-
-function log(key, ...args) {
-  if (DEBUG[key]) console.log(...args)
-}
-
-function section(title) {
-  if (DEBUG.summary) console.log(`\n=== ${title} ===`)
-}
-
-/* -------------------------
- * CLI
- * ------------------------ */
 
 const args = process.argv.slice(2)
 
@@ -57,27 +31,6 @@ const TARGET_DIR = targetArg
   : path.join(ROOT, 'data', 'kb')
 
 /* -------------------------
- * WALK
- * ------------------------ */
-
-function walk(dir) {
-  const out = []
-  const entries = fs.readdirSync(dir)
-
-  for (const e of entries) {
-    const full = path.join(dir, e)
-    const stat = fs.statSync(full)
-
-    if (stat.isDirectory()) {
-      out.push(...walk(full))
-    } else if (full.endsWith('.md') || full.endsWith('.mdx')) {
-      out.push(full)
-    }
-  }
-
-  log('walk', 'found files:', out.length)
-  return out
-}
 
 /* -------------------------
  * TOKENIZER
