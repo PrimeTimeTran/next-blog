@@ -1,7 +1,7 @@
 const fs = require('fs')
 const path = require('path')
 
-const { log } = require('./helpers')
+const { log } = require('./logs')
 
 function walk(dir) {
   const out = []
@@ -22,6 +22,24 @@ function walk(dir) {
   return out
 }
 
+function getContext(fileContent, line, radius = 3) {
+  const lines = fileContent.split('\n')
+
+  const start = Math.max(0, line - radius - 1)
+  const end = Math.min(lines.length, line + radius)
+
+  const slice = lines.slice(start, end)
+
+  return slice
+    .map((l, i) => {
+      const lineNo = start + i + 1
+      const marker = lineNo === line ? '❌' : '  '
+      return `${marker} ${lineNo.toString().padStart(4)} | ${l}`
+    })
+    .join('\n')
+}
+
 module.exports = {
   walk,
+  getContext,
 }
