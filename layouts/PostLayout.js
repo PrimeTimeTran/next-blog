@@ -99,7 +99,7 @@ export default function PostLayout({ toc, frontMatter, authorDetails, next, prev
           {/* LEFT SIDEBAR */}
           <aside
             id="authorSidebar"
-            className="hidden border-r border-gray-200 dark:border-gray-800 xl:sticky xl:top-0 xl:block xl:h-screen xl:overflow-y-auto"
+            className="hidden border-r border-gray-200 dark:border-gray-800 xl:sticky xl:top-0 xl:block xl:h-screen xl:overflow-y-auto "
           >
             <div className="p-6">
               {' '}

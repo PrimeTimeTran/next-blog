@@ -7,7 +7,6 @@ import siteMetadata from '@/data/siteMetadata'
 import NewsletterForm from '@/components/NewsletterForm'
 import { normalizePost } from '@/lib/content/core/normalize'
 import SectionContainer from '@/components/SectionContainer'
-import { getBlogIndex, getAllBlogPosts } from '@/lib/content/server/blog.server'
 
 import {
   dsa,
@@ -38,15 +37,13 @@ const TOPICS = {
 }
 
 export async function getStaticProps() {
+  const { getAllBlogPosts } = await import('@/lib/content/server/blog.server')
   const rawPosts = getAllBlogPosts()
-  const normalized = rawPosts.map(normalizePost).filter((p) => p && p.date) // 🔥 important
-  const { posts, tagCounts, tagMap } = getBlogIndex(normalized)
+  const normalizedPosts = rawPosts.map(normalizePost).filter((p) => p && p.date)
 
   return {
     props: {
-      posts: posts || [],
-      tagMap: tagMap || {},
-      tagCounts: tagCounts || [],
+      posts: normalizedPosts || [],
     },
   }
 }

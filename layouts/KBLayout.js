@@ -73,7 +73,7 @@ export default function KBLayout({ toc, children, sidebarData }) {
     <div className="min-h-screen w-full">
       <div className="grid w-full grid-cols-1 lg:grid-cols-12">
         {/* LEFT SIDEBAR */}
-        <aside className="col-span-3 hidden lg:block">
+        <aside className="col-span-2 hidden lg:block">
           <div
             ref={scrollRef}
             className="sticky top-0 h-screen overflow-y-auto border-r border-zinc-200"
@@ -87,7 +87,7 @@ export default function KBLayout({ toc, children, sidebarData }) {
         </aside>
 
         {/* MAIN CONTENT */}
-        <main className="col-span-1 lg:col-span-6">
+        <main className="col-span-1 lg:col-span-7">
           <div className="prose prose-lg max-w-none p-6 dark:prose-dark">{children}</div>
         </main>
 

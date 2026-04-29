@@ -16,8 +16,8 @@ export async function getStaticPaths() {
 }
 
 export async function getStaticProps(ctx) {
-  const { resolveKbItem } = await import('@/lib/content/server/kb.server')
-  const kbItem = await resolveKbItem(ctx.params.slug)
+  const { getKbItemBySlug } = await import('@/lib/content/server/getBySlug')
+  const kbItem = await getKbItemBySlug(ctx.params.slug)
   const kbOutline = getKbTree()
 
   if (!kbItem) return { notFound: true }

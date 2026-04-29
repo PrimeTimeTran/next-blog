@@ -3,7 +3,7 @@ import generateRss from '@/lib/generate-rss'
 import { MDXLayoutRenderer } from '@/components/MDXComponents'
 import { getFiles } from '@/lib/content/server/blog.server'
 
-import { getAuthorBySlug } from '@/lib/content/server/getFileBySlug'
+import { getAuthorBySlug } from '@/lib/content/server/getBySlug'
 
 const DEFAULT_LAYOUT = 'PostLayout'
 
@@ -21,7 +21,8 @@ export async function getStaticPaths() {
 }
 
 export async function getStaticProps({ params }) {
-  const { getAllBlogPosts, getBlogFileBySlug } = await import('@/lib/content/server/blog.server')
+  const { getAllBlogPosts } = await import('@/lib/content/server/blog.server')
+  const { getBlogFileBySlug } = await import('@/lib/content/server/getBySlug')
   const slug = Array.isArray(params.slug) ? params.slug.join('/') : params.slug
 
   const allPosts = getAllBlogPosts()
