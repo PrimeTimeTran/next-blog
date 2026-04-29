@@ -8,3 +8,9 @@ A fork of [this](https://github.com/timlrx/tailwind-nextjs-starter-blog) NextJS 
 
 - npm install
 - npm run dev
+
+## Deps
+
+- React
+- Next
+- MDX
