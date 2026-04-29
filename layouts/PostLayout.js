@@ -201,8 +201,8 @@ export default function PostLayout({ toc, frontMatter, authorDetails, next, prev
           <main className="min-w-0">
             <header
               className={[
-                'sticky top-0 z-10 border-b border-gray-200 bg-white px-8 transition-all duration-300 dark:border-gray-800 dark:bg-gray-900',
-                shrunk ? 'py-2' : 'py-6',
+                'duration-900 sticky top-0 z-10 border-b border-gray-200 bg-white p-2 transition-all dark:border-gray-800 dark:bg-gray-900',
+                shrunk ? 'py-2' : '',
               ].join(' ')}
             >
               <PageTitle
