@@ -1,12 +1,12 @@
 import fs from 'fs'
 import path from 'path'
 
-import { walk } from './fs.js'
 import { DIAG } from './logs.js'
 import { render } from './render.js'
 import { tokenize } from './tokenize.js'
 import { runRules } from './runRules.js'
 import { TARGET_DIR } from './config.js'
+import { walk, loadPlugin } from './fs.js'
 import { STAGES, runStage } from './src/stages.js'
 
 let plugins = []
@@ -14,8 +14,7 @@ const targetDir = process.argv[3]
 const pluginPath = process.argv[2]
 
 if (pluginPath) {
-  const resolved = path.resolve(pluginPath)
-  const { plugin } = import(resolved)
+  const plugin = await loadPlugin(pluginPath)
 
   plugins = Array.isArray(plugin) ? plugin : [plugin]
 }
@@ -45,7 +44,11 @@ function applyFixes(content, fixes) {
   return lines.join('\n')
 }
 
-function processFile(file, plugins = []) {
+export function processFile(file, plugins = []) {
+  console.log(
+    'PLUGINS:',
+    plugins.map((p) => p.name)
+  )
   const ctx = {
     file,
     original: null,
@@ -125,12 +128,12 @@ function processFile(file, plugins = []) {
   // -------------------------
   // DIAGNOSTICS
   // -------------------------
-  DIAG.emit('processFile:rules', {
-    diagnostics: ctx.diagnostics,
-    fixes: ctx.fixes,
-  })
+  // DIAG.emit('processFile:rules', {
+  //   diagnostics: ctx.diagnostics,
+  //   fixes: ctx.fixes,
+  // })
 
-  DIAG.emit('processFile:finalRegions', ctx.regions)
+  // DIAG.emit('processFile:finalRegions', ctx.regions)
 
   DIAG.summarizeFileViolations(file, ctx.diagnostics)
 
@@ -150,4 +153,8 @@ function run() {
   DIAG.summarizeScriptRun(changed)
 }
 
-run()
+async function main() {
+  run()
+}
+
+main()

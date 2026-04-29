@@ -1,3 +1,5 @@
+import { DIAG } from '../logs.js'
+
 export const STAGES = {
   BEFORE_READ: 'before_read',
   AFTER_READ: 'after_read',
@@ -21,7 +23,12 @@ export const STAGES = {
 export function runStage(stage, ctx, plugins = []) {
   for (const plugin of plugins) {
     const fn = plugin?.[stage]
+
     if (typeof fn === 'function') {
+      DIAG.emit('stage_run', {
+        stage,
+        plugin: plugin.name,
+      })
       fn(ctx)
     }
   }

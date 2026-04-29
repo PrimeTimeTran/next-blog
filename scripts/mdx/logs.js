@@ -1,4 +1,5 @@
 import { DEBUG, DRY_RUN } from './config.js'
+import { STAGES } from './src/stages.js'
 
 export function log(key, ...args) {
   if (DEBUG[key]) console.log(...args)
@@ -9,7 +10,15 @@ export function section(title) {
 }
 
 export const DIAG = {
-  enabled: false,
+  events: [],
+  enabled: true,
+  mode: 'stages',
+  view: {
+    stage: false,
+    rules: false,
+    render: false,
+    regions: false,
+  },
   buffer: {
     fixes: [],
     render: [],
@@ -18,29 +27,75 @@ export const DIAG = {
   },
   emit(type, payload) {
     if (!this.enabled) return
-    if (!this.buffer[type]) this.buffer[type] = []
 
-    this.buffer[type].push(payload)
+    this.events.push({ type, ...payload })
+
+    const group =
+      type === 'stage_run'
+        ? 'stage'
+        : type.includes('rules')
+        ? 'rules'
+        : type.includes('regions')
+        ? 'regions'
+        : type.includes('render')
+        ? 'render'
+        : null
+
+    if (group && !this.view[group]) return
+
+    // stage output
+    if (type === 'stage_run' && this.view.stage) {
+      console.log('--- STAGE_RUN ---')
+      console.log(payload)
+    }
+
+    // generic output fallback (trace mode)
+    if (this.mode === 'trace') {
+      console.log(`--- ${type.toUpperCase()} ---`)
+      console.log(payload)
+    }
+  },
+  groupByType() {
+    const map = {}
+
+    for (const e of this.events) {
+      if (!map[e.type]) map[e.type] = []
+      map[e.type].push(e)
+    }
+
+    return map
   },
   summarizePipeline() {
     if (!this.enabled) return
 
-    for (const [key, logs] of Object.entries(this.buffer)) {
+    const emitted = new Set(this.events.filter((e) => e.type === 'stage_run').map((e) => e.stage))
+
+    console.log('\n--- STAGES ---')
+    Object.values(STAGES).forEach((stage) => {
+      console.log(emitted.has(stage) ? '✔' : '✖', stage)
+    })
+
+    const grouped = this.groupByType()
+
+    for (const [type, logs] of Object.entries(grouped)) {
       if (!logs.length) continue
 
-      console.log(`\n--- ${key.toUpperCase()} (${logs.length}) ---`)
+      const group =
+        type === 'stage_run'
+          ? 'stage'
+          : type.includes('rules')
+          ? 'rules'
+          : type.includes('regions')
+          ? 'regions'
+          : type.includes('render')
+          ? 'render'
+          : null
 
-      for (const log of logs.slice(0, 10)) {
-        console.log(log)
-      }
+      if (group && !this.view[group]) continue
 
-      if (logs.length > 10) {
-        console.log(`... +${logs.length - 10} more`)
-      }
+      console.log(`\n--- ${type.toUpperCase()} (${logs.length}) ---`)
+      logs.slice(0, 10).forEach((l) => console.log(l))
     }
-
-    // reset after run (important)
-    this.clear()
   },
   summarize(regions, fixes, diagnostics) {
     section('SUMMARY')
@@ -98,22 +153,6 @@ export const DIAG = {
     for (const key in this.buffer) {
       this.buffer[key] = []
     }
-  },
-
-  log(event) {
-    if (!this.enabled) return
-    console.log(`
-🆔 File: ${event.file}
-
-#️⃣ Location: ${event.line}:${event.column}
-
-📐 Rule: ${event.rule}
-
-💬 Message: ${event.message}
-
-📄 Snippet:
-${event.snippet}
-`)
   },
 }
 

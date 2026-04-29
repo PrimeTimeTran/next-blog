@@ -1,5 +1,6 @@
 import fs from 'fs'
 import path from 'path'
+import { pathToFileURL } from 'url'
 
 import { log } from './logs.js'
 
@@ -38,4 +39,10 @@ export function getContext(content, line, radius = 2) {
   }
 
   return out.join('\n')
+}
+
+export async function loadPlugin(path) {
+  const resolved = pathToFileURL(path).href
+  const mod = await import(resolved)
+  return mod.default || mod
 }

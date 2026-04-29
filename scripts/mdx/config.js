@@ -24,5 +24,4 @@ export const DEBUG = {
   summary: true,
   files: false,
   verbose: true,
-  runRules: true,
 }
