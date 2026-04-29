@@ -37,7 +37,7 @@ const TOPICS = {
 }
 
 export async function getStaticProps() {
-  const { getAllBlogPosts } = await import('@/lib/content/server/blog.server')
+  const { getAllBlogPosts } = await import('@/lib/content/server')
   const rawPosts = getAllBlogPosts()
   const normalizedPosts = rawPosts.map(normalizePost).filter((p) => p && p.date)
 

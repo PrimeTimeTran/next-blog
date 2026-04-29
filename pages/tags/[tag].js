@@ -1,16 +1,16 @@
-import { TagSEO } from '@/components/SEO'
-import siteMetadata from '@/data/siteMetadata'
-import ListLayout from '@/layouts/ListLayout'
-import generateRss from '@/lib/generate-rss'
-import { getAllFilesFrontMatter } from '@/lib/mdx'
-import { getAllTags } from '@/lib/tags'
-import kebabCase from '@/lib/utils/kebabCase'
 import fs from 'fs'
 import path from 'path'
+
+import { TagSEO } from '@/components/SEO'
+import generateRss from '@/lib/generate-rss'
+import kebabCase from '@/lib/utils/kebabCase'
+import ListLayout from '@/layouts/ListLayout'
+import siteMetadata from '@/data/siteMetadata'
 
 const root = process.cwd()
 
 export async function getStaticPaths() {
+  const { getAllTags } = await import('@/lib/tags')
   const tags = await getAllTags('blog')
 
   return {
@@ -24,13 +24,16 @@ export async function getStaticPaths() {
 }
 
 export async function getStaticProps({ params }) {
-  const allPosts = await getAllFilesFrontMatter('blog')
-  const filteredPosts = allPosts.filter(
-    (post) =>
-      post.draft !== true &&
-      Array.isArray(post.tags) &&
-      post.tags.map((t) => kebabCase(t)).includes(params.tag)
-  )
+  const { getAllFrontMatter } = await import('@/lib/content/server')
+  const allPosts = await getAllFrontMatter('blog')
+  console.log('allPosts[0]')
+  console.log(allPosts[0])
+  const filteredPosts = allPosts.filter((post) => {
+    if (post.draft) return false
+    if (!Array.isArray(post.tags)) return false
+
+    return post.tags.map((t) => kebabCase(t)).includes(params.tag)
+  })
 
   // rss
   if (filteredPosts.length > 0) {
@@ -44,7 +47,6 @@ export async function getStaticProps({ params }) {
 }
 
 export default function Tag({ posts, tag }) {
-  // Capitalize first letter and convert space to dash
   const title = tag[0].toUpperCase() + tag.split(' ').join('-').slice(1)
   return (
     <>
@@ -52,7 +54,7 @@ export default function Tag({ posts, tag }) {
         title={`${tag} - ${siteMetadata.author}`}
         description={`${tag} tags - ${siteMetadata.author}`}
       />
-      <ListLayout posts={posts} title={title} />
+      <ListLayout type="tag" posts={posts} title={title} />
     </>
   )
 }

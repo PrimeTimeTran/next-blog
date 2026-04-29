@@ -4,28 +4,15 @@ import Tag from '@/components/Tag'
 import Link from '@/components/Link'
 import formatDate from '@/lib/utils/formatDate'
 import Pagination from '@/components/Pagination'
+import { buildContentUrl } from '@/lib/content/core/url'
 import { normalizePost } from '@/lib/content/core/normalize'
-
-// function normalizePost(post) {
-//   if (!post) return null
-
-//   return {
-//     ...post,
-//     frontMatter: {
-//       ...post.frontMatter,
-//       tags: Array.isArray(post.frontMatter?.tags) ? post.frontMatter.tags : [],
-//     },
-//   }
-// }
 
 export default function ListLayout({
   title,
-  posts = [],
   topics,
-  tagMap,
   subtitle,
-  tagCounts,
   pagination,
+  posts = [],
   initialDisplayPosts = [],
 }) {
   const [searchValue, setSearchValue] = useState('')
@@ -98,7 +85,10 @@ export default function ListLayout({
                   <div className="space-y-3 xl:col-span-3">
                     <div>
                       <h3 className="text-2xl font-bold leading-8 tracking-tight">
-                        <Link href={`/${post.slug}`} className="text-gray-900! dark:text-gray-100!">
+                        <Link
+                          href={buildContentUrl('blog', post.slug)}
+                          className="text-gray-900! dark:text-gray-100!"
+                        >
                           {title}
                         </Link>
                       </h3>

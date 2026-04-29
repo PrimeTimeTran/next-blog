@@ -55,11 +55,11 @@ $$\sum_{n=0}^{\infty}2^{n} = 1 + 2 + 4 + 8 + 16 + \space ... $$
 
 The ratio test is a method used to determine the convergence or divergence of infinite series, especially those involving factorials or exponentials.
 
-$$
-\\lim_{n \to \\infty} \\left| \\frac{a_{n+1}}{a_n} \\right|
- **Statement:** For a series $\sum a_n$, compute:
+**Statement:** For a series $\sum a_n$, compute:
 
-$$L = \lim_{n \to \infty} \left| \frac{a_{n+1}}{a_n} \right|$$
+$$
+L = \lim_{n \to \infty} \left| \frac{a_{n+1}}{a_n} \right|
+$$
 
 - **If** $L < 1$: The series converges absolutely.
 - **If** $L > 1$ or $L = \infty$: The series diverges.
@@ -71,9 +71,11 @@ $$L = \lim_{n \to \infty} \left| \frac{a_{n+1}}{a_n} \right|$$
 - Helps quickly identify convergence for many common series in calculus.
 
 ## Integrals
+
 Finding the area under the line/curve of a graph.
 
 ### Rules
+
 - Power Rule
   $$\int x^n \, dx = \frac{x^{n+1}}{n+1} + C$$
 - Exponential
@@ -85,8 +87,8 @@ Finding the area under the line/curve of a graph.
 - Sum & Differences
   $$\int [f(x) \pm g(x)] \, dx = \int f(x) \, dx \pm \int g(x) \, dx$$
 
-
 ### Integration Techniques
+
 Some functions are too complicated. So rules don't cut it. That's why we have
 
 - **Integration of Partial Fractions:**
@@ -109,15 +111,17 @@ Some functions are too complicated. So rules don't cut it. That's why we have
 
   Substitute trigonometric functions for algebraic expressions to simplify integrals involving square roots. Example: For $\int \frac{1}{\sqrt{a^2-x^2}} dx$, use $x = a \sin \theta$.
 
-
 ### Applications of Integrals
+
 Physics.
-  - Center of mass of rigid bodies.
-  - Calculate total work done.
-  - Find magnetic field imposed at a particular point due to an infinite wire.
+
+- Center of mass of rigid bodies.
+- Calculate total work done.
+- Find magnetic field imposed at a particular point due to an infinite wire.
 
 # Conclusion
 
 ## 🌐 References
+
 - https://www.youtube.com/watch?v=8uNod-pxvXg
-$$
+  $$

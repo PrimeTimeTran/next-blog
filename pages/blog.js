@@ -10,7 +10,7 @@ import { pageview } from '../lib/ga'
 export const POSTS_PER_PAGE = 20
 
 export async function getStaticProps() {
-  const { getAllBlogPosts } = await import('@/lib/content/server/blog.server')
+  const { getAllBlogPosts } = await import('@/lib/content/server')
   const rawPosts = getAllBlogPosts()
   const normalizedPosts = rawPosts.map(normalizePost).filter((p) => p && p.date)
   const initialDisplayPosts = normalizedPosts.slice(0, POSTS_PER_PAGE)

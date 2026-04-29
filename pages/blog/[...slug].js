@@ -1,48 +1,53 @@
 import generateRss from '@/lib/generate-rss'
 
 import { MDXLayoutRenderer } from '@/components/MDXComponents'
-import { getFiles } from '@/lib/content/server/blog.server'
 
 const DEFAULT_LAYOUT = 'PostLayout'
 
+const sanitize = (post) => ({
+  ...post,
+  frontMatter: {
+    ...post.frontMatter,
+    date: post.frontMatter?.date ? new Date(post.frontMatter.date).toISOString() : null,
+  },
+})
 export async function getStaticPaths() {
-  const posts = getFiles('blog')
+  const { getFiles } = await import('@/lib/content/server')
+
+  const posts = await getFiles('blog')
 
   return {
-    paths: posts.map((p) => ({
-      params: {
-        slug: p.slug.replace(/^blog\//, '').split('/'),
-      },
-    })),
+    paths: posts
+      .filter((p) => !p.draft)
+      .map((p) => ({
+        params: {
+          slug: p.slug.split('/'),
+        },
+      })),
     fallback: false,
   }
 }
 
 export async function getStaticProps({ params }) {
-  const { getAllBlogPosts } = await import('@/lib/content/server/blog.server')
+  const { getFiles } = await import('@/lib/content/server')
   const { getContentBySlug } = await import('@/lib/content/core/getContentBySlug')
   const slug = Array.isArray(params.slug) ? params.slug.join('/') : params.slug
 
-  const allPosts = getAllBlogPosts()
-  const postIndex = allPosts.findIndex((p) => p.slug === slug)
-
   const post = await getContentBySlug('blog', slug)
 
-  if (!post) {
-    return { notFound: true }
-  }
+  if (!post) return { notFound: true }
 
-  const prev = allPosts[postIndex + 1] || null
-  const next = allPosts[postIndex - 1] || null
-  const authorDetails = await getContentBySlug('authors', 'default')
-  console.log({ authorDetails })
+  const posts = await getFiles('blog')
+  const index = posts.findIndex((p) => p.slug === slug)
+  const prev = posts[index + 1] || null
+  const next = posts[index - 1] || null
 
   return {
     props: {
-      post,
-      prev,
-      next,
-      authorDetails: [authorDetails],
+      post: sanitize(post),
+      prev: prev ? sanitize(prev) : null,
+      next: next ? sanitize(next) : null,
+      authorDetails: [await getContentBySlug('authors', 'default')],
     },
   }
 }

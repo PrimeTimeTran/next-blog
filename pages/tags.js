@@ -62,7 +62,6 @@ function Category({ title, tags, sortedTags, filter }) {
 
 export async function getStaticProps() {
   const tags = await getAllTags('blog')
-  console.log({ tags })
 
   return { props: { tags } }
 }
