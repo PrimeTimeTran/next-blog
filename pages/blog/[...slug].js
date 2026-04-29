@@ -3,8 +3,6 @@ import generateRss from '@/lib/generate-rss'
 import { MDXLayoutRenderer } from '@/components/MDXComponents'
 import { getFiles } from '@/lib/content/server/blog.server'
 
-import { getAuthorBySlug } from '@/lib/content/server/getBySlug'
-
 const DEFAULT_LAYOUT = 'PostLayout'
 
 export async function getStaticPaths() {
@@ -22,13 +20,13 @@ export async function getStaticPaths() {
 
 export async function getStaticProps({ params }) {
   const { getAllBlogPosts } = await import('@/lib/content/server/blog.server')
-  const { getBlogFileBySlug } = await import('@/lib/content/server/getBySlug')
+  const { getContentBySlug } = await import('@/lib/content/core/getContentBySlug')
   const slug = Array.isArray(params.slug) ? params.slug.join('/') : params.slug
 
   const allPosts = getAllBlogPosts()
   const postIndex = allPosts.findIndex((p) => p.slug === slug)
 
-  const post = await getBlogFileBySlug(slug)
+  const post = await getContentBySlug('blog', slug)
 
   if (!post) {
     return { notFound: true }
@@ -36,7 +34,8 @@ export async function getStaticProps({ params }) {
 
   const prev = allPosts[postIndex + 1] || null
   const next = allPosts[postIndex - 1] || null
-  const authorDetails = await getAuthorBySlug('default')
+  const authorDetails = await getContentBySlug('authors', 'default')
+  console.log({ authorDetails })
 
   return {
     props: {

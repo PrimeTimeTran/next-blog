@@ -113,9 +113,9 @@ export default function PostLayout({ toc, frontMatter, authorDetails, next, prev
                         className="flex items-center space-x-2"
                         key={idx || author.email || author.github || author.name}
                       >
-                        {author.avatar && (
+                        {author.frontMatter?.avatar && (
                           <Image
-                            src={author.avatar}
+                            src={author.frontMatter.avatar}
                             width="38px"
                             height="38px"
                             alt="avatar"

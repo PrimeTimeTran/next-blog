@@ -1,10 +1,10 @@
 import { MDXLayoutRenderer } from '@/components/MDXComponents'
-import { getFileBySlug } from '@/lib/content/server/getBySlug'
+import { getContentBySlug } from '@/lib/content/core/getContentBySlug'
 
 const DEFAULT_LAYOUT = 'AuthorLayout'
 
 export async function getStaticProps() {
-  const authorDetails = await getFileBySlug('default', 'authors')
+  const authorDetails = await getContentBySlug('authors', 'default')
 
   if (!authorDetails) {
     return { notFound: true }
