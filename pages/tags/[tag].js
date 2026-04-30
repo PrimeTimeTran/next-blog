@@ -24,8 +24,8 @@ export async function getStaticPaths() {
 }
 
 export async function getStaticProps({ params }) {
-  const { getAllFrontMatter } = await import('@/lib/content/server')
-  const allPosts = await getAllFrontMatter('blog')
+  const { getAllBlogPosts } = await import('@/lib/content/server')
+  const allPosts = await getAllBlogPosts('blog')
   console.log('allPosts[0]')
   console.log(allPosts[0])
   const filteredPosts = allPosts.filter((post) => {
@@ -54,7 +54,7 @@ export default function Tag({ posts, tag }) {
         title={`${tag} - ${siteMetadata.author}`}
         description={`${tag} tags - ${siteMetadata.author}`}
       />
-      <ListLayout type="tag" posts={posts} title={title} />
+      <ListLayout type2="pages/blog/page/[page].js" type="tag" posts={posts} title={title} />
     </>
   )
 }

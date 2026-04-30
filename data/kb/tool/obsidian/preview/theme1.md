@@ -1,8 +1,55 @@
+---
+draft: false
+slug: preview/theme1
+date: '2026-04-30'
+title: 'Preview: Theme 1'
+summary: ''
+tags: ['KB/MD/Obsidian/Blog']
+---
+
 # Markdown/Obsidian/MDX Previewer
 
 Preview changes to output fo Markdown, Obsidian, MDX quick and easy from this file.
 
 > View the results of new themes on Obsidian across all .md/page elements.
+
+## WIP
+
+Quickly see results at the top of the file
+
+### Markdown Links
+
+Markdown format links
+
+- [Go to Heading 2](#heading-2)
+- [Go to section](#pagemarkdown-elements)
+  - Web Links:
+    - Link to URL: [OpenAI](https://openai.com)
+    - Link with titles: [Wikipedia](https://wikipedia.org 'Free encyclopedia')
+    - Reference link: [Google][2]
+
+### Obsidian Links
+
+Obsidian format links
+
+- [[#Markdown Elements]]
+  - Same page section link
+- [[#Markdown Elements|Go To Section with Custom Display Text]]
+  - Same page section link aliased.
+- [[theme2.md#Page/Markdown Elements|Go to Another Note Section with Custom Display Text]]
+  - Another page section link aliased.
+- [[latex.md]]
+  - Filename link.
+- [[Latex.md]]
+  - Capitalized filename link.
+- [[theme2.md]]
+  - theme2.md
+- [[tool/obsidian/preview/latex.md]]
+  - Path link.
+- [[tool/obsidian/preview/latex.md|Latex Preview]]
+  - Path link aliased.
+- ![[latex.md]]
+  - Embed note link(preview of another note/page)
 
 ## Heading 2
 
@@ -136,38 +183,6 @@ This line has an ~~strikethrough~~.
 
 > [!quote]- Quote Callout
 > ![[latex.md]]
-
-### Markdown Links
-
-Markdown format links
-
-- [Go to Heading 2](#heading-2)
-- [Go to section](#pagemarkdown-elements)
-- Link to URL: [OpenAI](https://openai.com)
-- Link with titles: [Wikipedia](https://wikipedia.org 'Free encyclopedia')
-- Reference link: [Google][2]
-
-### Obsidian Links
-
-Obsidian format links
-
-- [[#Markdown Elements]]
-  - Same page section link
-- [[#Markdown Elements|Go to section]]
-  - Same page section link aliased.
-- [[theme2.md#Page/Markdown Elements|Go to another note with section & Display Text]]
-  - Another page section link aliased.
-- [[latex.md]]
-  - Filename link.
-- [[Latex.md]]
-  - Capitalized filename link.
-- [[tool/obsidian/preview/latex.md]]
-  - Path link.
-- [[tool/obsidian/preview/latex.md|Latex Preview]]
-  - Path link aliased.
-- ![[latex.md]]
-  - Embed note link(preview of another note/page)
--
 
 # Reference
 

@@ -1,12 +1,12 @@
 import { PageSEO } from '@/components/SEO'
-import { getFiles } from '@/lib/content/server'
 import ListLayout from '@/layouts/ListLayout'
-import { POSTS_PER_PAGE } from '../../blog'
 import siteMetadata from '@/data/siteMetadata'
+import { POSTS_PER_PAGE } from '@/lib/constants'
 
 export async function getStaticPaths() {
-  const totalPosts = await getFiles('blog')
-  const totalPages = Math.ceil(totalPosts.length / POSTS_PER_PAGE)
+  const { getAllBlogPosts } = await import('@/lib/content/server')
+  const posts = getAllBlogPosts()
+  const totalPages = Math.ceil(posts.length / POSTS_PER_PAGE)
   const paths = Array.from({ length: totalPages }, (_, i) => ({
     params: { page: (i + 1).toString() },
   }))
@@ -21,7 +21,8 @@ export async function getStaticProps(context) {
   const {
     params: { page },
   } = context
-  const posts = await getFiles('blog')
+  const { getAllBlogPosts } = await import('@/lib/content/server')
+  const posts = getAllBlogPosts()
   const pageNumber = parseInt(page)
   const initialDisplayPosts = posts.slice(
     POSTS_PER_PAGE * (pageNumber - 1),
@@ -47,6 +48,7 @@ export default function PostPage({ posts, initialDisplayPosts, pagination }) {
       <PageSEO title={siteMetadata.title} description={siteMetadata.description} />
       <ListLayout
         type="blog"
+        type2="pages/blog/page/[page].js"
         posts={posts}
         initialDisplayPosts={initialDisplayPosts}
         pagination={pagination}

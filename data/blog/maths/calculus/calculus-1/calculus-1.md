@@ -73,7 +73,7 @@ The process of finding a function's derivative, which represents its instantaneo
 
 ### Applications of Derivatives
 
-- Used to know instantenous velocity of an object given a displacement function
+- Used to know instantaneous velocity of an object given a displacement function
 - Optimization: Get max/min of a value of a quantity
 
 ## Integration
@@ -94,7 +94,7 @@ $\int f(x)dx = F(x) + C$
 
 Outputs number
 
-    $\int_a^{b} f(x)dx = F(B) + F(B)
+    $\int_a^{b} f(x)dx = F(b) + F(b)$
 
 Area under the curve from x = a to x = b
 

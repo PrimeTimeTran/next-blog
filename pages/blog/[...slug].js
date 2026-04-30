@@ -12,9 +12,14 @@ const sanitize = (post) => ({
   },
 })
 export async function getStaticPaths() {
-  const { getFiles } = await import('@/lib/content/server')
+  console.log('getStaticPaths')
+  // const { getFiles } = await import('@/lib/content/server')
+  const { getAllBlogPosts } = await import('@/lib/content/server')
 
-  const posts = await getFiles('blog')
+  const posts = await getAllBlogPosts()
+  console.log(posts.map((p) => p.slug))
+  console.log('POST KEYS:', Object.keys(posts[0]))
+  console.log({ post: posts[0] })
 
   return {
     paths: posts
@@ -29,15 +34,18 @@ export async function getStaticPaths() {
 }
 
 export async function getStaticProps({ params }) {
-  const { getFiles } = await import('@/lib/content/server')
+  console.log('getStaticProps')
   const { getContentBySlug } = await import('@/lib/content/core/getContentBySlug')
+  const { getAllBlogPosts } = await import('@/lib/content/server')
   const slug = Array.isArray(params.slug) ? params.slug.join('/') : params.slug
 
   const post = await getContentBySlug('blog', slug)
+  console.log('POST KEYS:', Object.keys(post))
+  console.log({ post })
 
   if (!post) return { notFound: true }
 
-  const posts = await getFiles('blog')
+  const posts = getAllBlogPosts()
   const index = posts.findIndex((p) => p.slug === slug)
   const prev = posts[index + 1] || null
   const next = posts[index - 1] || null

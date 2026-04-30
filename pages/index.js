@@ -5,45 +5,17 @@ import { PageSEO } from '@/components/SEO'
 import ListLayout from '@/layouts/ListLayout'
 import siteMetadata from '@/data/siteMetadata'
 import NewsletterForm from '@/components/NewsletterForm'
-import { normalizePost } from '@/lib/content/core/normalize'
 import SectionContainer from '@/components/SectionContainer'
 
-import {
-  dsa,
-  tech,
-  maths,
-  tools,
-  devops,
-  trading,
-  finance,
-  security,
-  databases,
-  frameworks,
-} from '../lib/constants'
-
-const MAX_DISPLAY = 300
-
-const TOPICS = {
-  Tech: tech,
-  Finance: finance,
-  Trading: trading,
-  DSA: dsa,
-  Frameworks: frameworks,
-  Databases: databases,
-  DevOps: devops,
-  Security: security,
-  Maths: maths,
-  Tools: tools,
-}
+import { TOPICS, MAX_DISPLAY } from '@/lib/constants'
 
 export async function getStaticProps() {
   const { getAllBlogPosts } = await import('@/lib/content/server')
-  const rawPosts = getAllBlogPosts()
-  const normalizedPosts = rawPosts.map(normalizePost).filter((p) => p && p.date)
+  const posts = getAllBlogPosts()
 
   return {
     props: {
-      posts: normalizedPosts || [],
+      posts: posts || [],
     },
   }
 }
@@ -78,18 +50,17 @@ export default function Home({ posts }) {
       )
     }
 
+    console.log({ gogogo: result[0] })
+
     return result
   }, [posts, searchTerm, activeTopic])
-
-  const handleSearch = (e) => {
-    e.preventDefault()
-  }
 
   return (
     <SectionContainer>
       <PageSEO title={siteMetadata.title} description={siteMetadata.description} />
       {/* Posts */}
       <ListLayout
+        type2="pages/index.js"
         pagination={1}
         title="Latest"
         posts={filteredPosts}
