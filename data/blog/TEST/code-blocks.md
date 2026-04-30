@@ -1,0 +1,54 @@
+---
+draft: false
+date: '2030-01-01'
+title: 'TEST: Code blocks'
+summary: 'TESTING of code blocks rendering'
+tags: ['test']
+---
+
+## Code Block (js)
+
+```js
+function fancyAlert(arg) {
+  if (arg) {
+    $.facebox({ div: '#foo' })
+  }
+}
+```
+
+## Code Block with Title (js:fancyAlert.js)
+
+```js:fancyAlert.js
+function fancyAlert(arg) {
+  if (arg) {
+    $.facebox({ div: '#foo' })
+  }
+}
+```
+
+## Show Line Numbers (js showLineNumbers)
+
+```js showLineNumbers
+var twoSum = function (nums, target) {
+  var map = {}
+}
+```
+
+## Show Line Numbers (js {5-7} showLineNumbers)
+
+```js {5-7} showLineNumbers
+import mongoose, { Schema } from 'mongoose'
+import { Auditor } from './Audit'
+
+const userSchema = new Schema({
+  email: {
+    type: String,
+  },
+  firstName: {
+    type: String,
+  },
+  lastName: {
+    type: String,
+  },
+})
+```

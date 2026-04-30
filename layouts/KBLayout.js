@@ -2,7 +2,7 @@ import { useRouter } from 'next/router'
 import { useRef, useState, useEffect } from 'react'
 
 import KBSidebar from '@/components/KBSidebar'
-import TableOfContents from '@/components/TOC'
+import TableOfContents from '@/components/TableOfContents'
 
 const SCROLL_KEY = 'kb-sidebar-scroll'
 const STORAGE_KEY = 'kb-sidebar-open-map'
