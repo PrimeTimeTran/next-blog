@@ -10,7 +10,7 @@ import { discussUrl, editUrl } from '@/lib/utils'
 ------------------------------ */
 export function BlogHeader({ title, date, shrunk }) {
   return (
-    <header className="sticky top-0 z-10 border-b bg-white transition-all duration-300 dark:bg-gray-900">
+    <header className="sticky top-0 z-10 border-b bg-white p-2 transition-all duration-300 dark:bg-gray-900">
       <PageTitle
         style={{ color: '#E6DB74' }}
         className={[

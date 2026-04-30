@@ -1,9 +1,10 @@
+import { useEffect } from 'react'
+
 import { BlogHeader, BlogFooter } from './blocks'
 import Comments from '@/components/comments'
 
 export default function BlogContent({ frontMatter, children, shrunk }) {
   const { title, date } = frontMatter
-
   return (
     <main className="min-w-0">
       <BlogHeader title={title} date={date} shrunk={shrunk} />

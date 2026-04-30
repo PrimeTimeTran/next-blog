@@ -8,7 +8,9 @@ import Snippet from './Snippet'
 import CustomLink from './Link'
 import TOCInline from './TOCInline'
 import BTCOrderBook from './finance/orderbook'
+import { TabGroup } from './TabGroup'
 import { BlogNewsletterForm } from './NewsletterForm'
+import { CodeBlock } from './code/CodeBlock'
 
 export const MDXComponents = {
   Image,
@@ -17,6 +19,8 @@ export const MDXComponents = {
   Snippet,
   BTCOrderBook,
   pre: Pre,
+  TabGroup: TabGroup,
+  CodeBlock: CodeBlock,
   BlogNewsletterForm: BlogNewsletterForm,
   wrapper: ({ components, layout, ...rest }) => {
     const Layout = require(`../layouts/${layout}`).default

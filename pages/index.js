@@ -50,8 +50,6 @@ export default function Home({ posts }) {
       )
     }
 
-    console.log({ gogogo: result[0] })
-
     return result
   }, [posts, searchTerm, activeTopic])
 

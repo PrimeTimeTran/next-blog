@@ -1,5 +1,5 @@
 ---
-draft: false
+draft: true
 date: '2030-01-01'
 title: 'TEST: Code blocks'
 summary: 'TESTING of code blocks rendering'
@@ -14,6 +14,11 @@ function fancyAlert(arg) {
     $.facebox({ div: '#foo' })
   }
 }
+```
+
+```py
+def hello_world():
+  print('hi')
 ```
 
 ## Code Block with Title (js:fancyAlert.js)
