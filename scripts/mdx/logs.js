@@ -12,18 +12,13 @@ export function section(title) {
 export const DIAG = {
   events: [],
   enabled: true,
+  verbose: DEBUG.verbose,
   mode: 'stages',
   view: {
     stage: false,
     rules: false,
     render: false,
     regions: false,
-  },
-  buffer: {
-    fixes: [],
-    render: [],
-    runRules: [],
-    tokenizer: [],
   },
   emit(type, payload) {
     if (!this.enabled) return
@@ -103,10 +98,10 @@ export const DIAG = {
     console.log('FIXES:', fixes.length)
     console.log('DIAGNOSTICS:', diagnostics.length)
   },
-  summarizeFileViolations(file, diagnostics) {
+  summarizeFile(file, diagnostics) {
     if (!diagnostics.length) return
     section(`⚠️ RULE VIOLATIONS: ${file}`)
-    if (DEBUG.verbose) {
+    if (this.verbose) {
       for (const d of diagnostics) {
         console.log('\n-------------------------')
         console.log(`📛 Rule: ${d.rule}`)
@@ -143,16 +138,9 @@ export const DIAG = {
       }
     }
   },
-
   summarizeScriptRun(changed) {
     section('DONE')
     console.log({ changed, mode: DRY_RUN ? 'dry' : 'write' })
-  },
-
-  clear() {
-    for (const key in this.buffer) {
-      this.buffer[key] = []
-    }
   },
 }
 

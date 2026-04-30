@@ -1,5 +1,4 @@
 import fs from 'fs'
-import path from 'path'
 
 import { DIAG } from './logs.js'
 import { render } from './render.js'
@@ -8,6 +7,7 @@ import { runRules } from './runRules.js'
 import { TARGET_DIR } from './config.js'
 import { walk, loadPlugin } from './fs.js'
 import { STAGES, runStage } from './src/stages.js'
+import { applyFixes } from './src/engine.js'
 
 let plugins = []
 const targetDir = process.argv[3]
@@ -20,29 +20,6 @@ if (pluginPath) {
 }
 
 const rootTarget = targetDir || TARGET_DIR
-
-function assertRegion(r) {
-  if (typeof r.value !== 'string') {
-    console.log('❌ BAD REGION:', r)
-    throw new Error('Region.value must be string')
-  }
-}
-
-function applyFixes(content, fixes) {
-  const lines = content.split('\n')
-
-  // IMPORTANT: apply bottom-up to avoid shifting indices
-  fixes
-    .sort((a, b) => b.startLine - a.startLine)
-    .forEach((fix) => {
-      const start = fix.startLine - 1
-      const end = fix.endLine - 1
-
-      lines.splice(start, end - start + 1, fix.replacement)
-    })
-
-  return lines.join('\n')
-}
 
 export function processFile(file, plugins = []) {
   console.log(
@@ -101,8 +78,6 @@ export function processFile(file, plugins = []) {
 
   runStage(STAGES.AFTER_TOKENIZE, ctx, plugins)
 
-  ctx.regions.forEach(assertRegion)
-
   // -------------------------
   // RENDER STAGE
   // -------------------------
@@ -135,12 +110,12 @@ export function processFile(file, plugins = []) {
 
   // DIAG.emit('processFile:finalRegions', ctx.regions)
 
-  DIAG.summarizeFileViolations(file, ctx.diagnostics)
+  DIAG.summarizeFile(file, ctx.diagnostics)
 
   return changed
 }
 
-function run() {
+async function main() {
   const files = walk(rootTarget)
 
   let changed = 0
@@ -151,10 +126,6 @@ function run() {
 
   DIAG.summarizePipeline(changed)
   DIAG.summarizeScriptRun(changed)
-}
-
-async function main() {
-  run()
 }
 
 main()

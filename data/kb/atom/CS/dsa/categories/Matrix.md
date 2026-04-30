@@ -1,7 +1,0 @@
----
-tags:
-  - dsa
----
-
-- Rows
-- Columns

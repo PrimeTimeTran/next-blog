@@ -1,5 +1,0 @@
-- Standard Bots
-- Nala Robotics
-- Universal Robots
-- United Robotics Group
-- Orion Star Robotics Global
