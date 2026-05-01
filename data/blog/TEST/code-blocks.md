@@ -3,6 +3,7 @@ draft: true
 date: '2030-01-01'
 title: 'TEST: Code blocks'
 summary: 'TESTING of code blocks rendering'
+isDev: true
 tags: ['test']
 ---
 

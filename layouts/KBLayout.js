@@ -72,11 +72,8 @@ export default function KBLayout({ toc, children, sidebarData, embedded = false 
       <div className="grid w-full grid-cols-1 lg:grid-cols-12">
         {/* LEFT SIDEBAR */}
         {!embedded && (
-          <aside className="col-span-2 hidden lg:block">
-            <div
-              ref={scrollRef}
-              className="sticky top-0 h-screen overflow-y-auto border-r border-zinc-200"
-            >
+          <aside className="col-span-2 hidden min-w-0 lg:block">
+            <div className="sticky top-0 h-screen overflow-y-auto border-r border-zinc-200">
               {hydrated && (
                 <div className="animate-in fade-in duration-200">
                   <KBSidebar node={sidebarData} openMap={openMap} setOpenMap={setOpenMap} />
@@ -86,12 +83,12 @@ export default function KBLayout({ toc, children, sidebarData, embedded = false 
           </aside>
         )}
 
-        {/* MAIN CONTENT */}
-        <main className="col-span-1 lg:col-span-7">
+        {/* MAIN */}
+        <main className="col-span-1 min-w-0 lg:col-span-7">
           <div
             className={`
-              prose prose prose-lg max-w-none max-w-none p-6 p-6 dark:prose-invert dark:prose-dark
-              ${embedded ? 'kb-embed prose-sm' : 'prose-lg'}
+              prose p-2  dark:prose-invert
+              ${embedded ? 'kb-embed' : 'prose-md'}
             `}
           >
             {children}
@@ -100,8 +97,8 @@ export default function KBLayout({ toc, children, sidebarData, embedded = false 
 
         {/* RIGHT TOC */}
         {!embedded && (
-          <aside className="hidden border-l border-zinc-200 pl-12 xl:col-span-3 xl:block">
-            <div className="sticky top-0 h-screen">
+          <aside className="hidden min-w-0 border-l border-zinc-200 xl:col-span-3 xl:block">
+            <div className="sticky top-0 h-screen w-full overflow-y-auto overflow-x-hidden px-4 py-4">
               <TableOfContents toc={toc ?? []} />
             </div>
           </aside>

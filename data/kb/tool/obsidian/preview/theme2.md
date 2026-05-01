@@ -1,86 +1,38 @@
 ---
 draft: false
-slug: preview/theme2
+slug: preview/theme1
 date: '2026-04-30'
 title: 'Preview: Theme 2'
 summary: ''
 tags: ['KB/MD/Obsidian/Blog']
+isDev: true
 ---
 
-# Markdown/Obsidian/MDX Previewer
+# Theme 2
 
-Preview changes to output fo Markdown, Obsidian, MDX quick and easy from this file.
-
-> View the results of new themes on Obsidian across all .md/page elements.
-
-## WIP
-
-Quickly see results at the top of the file
-
-### Markdown Links
-
-Markdown format links
-
-- [Go to Heading 2](#heading-2)
-- [Go to section](#pagemarkdown-elements)
-  - Web Links:
-  - Link to URL: [OpenAI](https://openai.com)
-  - Link with titles: [Wikipedia](https://wikipedia.org 'Free encyclopedia')
-  - Reference link: [Google][2]
-
-### Obsidian Links
-
-Obsidian format links
+## Table of Contents (TOC)
 
 - [[#Markdown Elements]]
-  - Same page section link
-- [[#Markdown Elements|Go To Section with Custom Display Text]]
-  - Same page section link aliased.
-- [[theme2.md#Page/Markdown Elements|Go to Another Note Section with Custom Display Text]]
-  - Another page section link aliased.
-- [[latex.md]]
-  - Filename link.
-- [[Latex.md]]
-  - Capitalized filename link.
-- [[theme2.md]]
-  - theme2.md
-- [[tool/obsidian/preview/latex.md]]
-  - Path link.
-- [[tool/obsidian/preview/latex.md|Latex Preview]]
-  - Path link aliased.
-- ![[latex.md]]
-  - Embed note link(preview of another note/page)
-
-## Heading 2
-
-> Heading # nests titles in outline(right sidebar)
-
-### Heading 3.1
-
-> Heading 3.1 and 3.2 are siblings/children of 2.
-> In other words, heading 2 has two children
-
-#### Heading 4
-
-##### Heading 5
-
-###### Heading 6
-
-### Heading 3.2
-
-#### Heading 3.2.1
-
-##### Heading 3.2.1.1
-
-###### Heading 3.2.1.1.1
-
-###### Heading 3.2.1.1.2
-
-##### Heading 3.2.2.2
-
-#### Heading 3.2.2
+  - [[#Lists]]
+    - [[#Ordered/Numbered]]
+    - [[#Unordered]]
+  - [[#Emphasis]]
+  - [[#Block Quote]]
+    - [[#Single]]
+    - [[#Nested]]
+      - [[#With Elements]]
+    - [[#Code]]
+    - [[#CSS]]
+    - [[#Callouts]]
+- [[#Links]]
 
 ## Markdown Elements
+
+### Emphasis
+
+This line has an _italic_.
+This line has a **bold**.
+This line has an ~~strikethrough~~.
 
 ### Lists
 
@@ -100,12 +52,6 @@ Obsidian format links
 - ideas
 - concepts
 - thoughts
-
-### Emphasis
-
-This line has an _italic_.
-This line has a **bold**.
-This line has an ~~strikethrough~~.
 
 ### Block Quote
 
@@ -134,55 +80,102 @@ This line has an ~~strikethrough~~.
 
 ### Code
 
+#### Code Block
+
 ```html
 <html>
-  <head> </head>
+  <head></head>
 </html>
 ```
 
-### CSS
+#### MDX & KB Obsidian
 
-- PNG to clipboard
-- Export from Excalidraw
-- Saved to vault
-- Background color transparent
-- Save these settings for a preset
-- Have to rename after every save
+```html showLineNumbers
+<html>
+  <head></head>
+</html>
+```
+
+#### Code Tab Group
+
+- starts with <code>\`\`\`tabgroup</code> and ends with <code>\`\`\`</code>
+- define each language with opening ...py` and closing`...`
+
+> [!tip]- Create Code Tab Group
+> ![[kb-dsl-code-tab-group]]
 
 ### Callouts
 
 > [!note]- Note Callout
-> ![[latex.md]]
+>
+> ```js
+> function helloWorld() {
+>   console.log('hi')
+> }
+> ```
 
 > [!info]- Info Callout
-> ![[latex.md]]
+>
+> - Bullet 1
+> - Bullet 2
+> - Bullet 3
 
 > [!tip]- Tip Callout
-> ![[latex.md]]
+>
+> 1. Bullet 1
+> 2. Bullet 2
+> 3. Bullet 3
 
 > [!success]- Success Callout
-> ![[latex.md]]
+> ![[theme1.md]]
 
 > [!question]- Question Callout
-> ![[latex.md]]
+> ![[theme1.md]]
 
 > [!warning]- Warning Callout
-> ![[latex.md]]
+> ![[theme1.md]]
 
 > [!failure]- Failure Callout
-> ![[latex.md]]
+> ![[theme1.md]]
 
 > [!danger]- Danger Callout
-> ![[latex.md]]
+> ![[theme1.md]]
 
 > [!bug]- Bug Callout
-> ![[latex.md]]
+> ![[theme1.md]]
 
 > [!example]- Example Callout
-> ![[latex.md]]
+> ![[theme1.md]]
 
 > [!quote]- Quote Callout
-> ![[latex.md]]
+> ![[theme1.md]]
+
+## Links
+
+- External(Note) Links
+  - [[theme1.md]]
+    - theme1.md note
+  - [[theme1.md]]
+    - theme1.md with capitalized display text.
+  - [[theme1.md#Markdown Elements|Another Note]]
+    - theme1.md and section.
+  - [[theme1#Lists|theme1 > Lists]]
+    - `note#Header|Display Text`
+    - Aliased with ending `|`
+  - [[theme1#Block Quote|theme1 > Block Quote > Single]]
+    - "Breadcrumbs"
+  - [[theme1#Code|theme1 > Code]]
+    - "Note with Heading"
+  - [[theme1#Code#Code Block|theme1 > Code > Code Block]]
+    - "Note with Heading breadcrumb"
+  - [[tool/obsidian/preview/theme1.md]]
+    - Path link.
+  - [[tool/obsidian/preview/theme1.md|Theme 2 Preview]]
+    - Path link aliased.
+- External(Web) Links
+  - Link to URL: [OpenAI](https://openai.com)
+  - Link with titles: [Wikipedia](https://wikipedia.org 'Free encyclopedia')
+  - Reference link: [Google][2]
 
 # Reference
 

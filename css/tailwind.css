@@ -2,6 +2,26 @@
 @tailwind components;
 @tailwind utilities;
 
+.prose {
+  /* color: white !important; */
+}
+
+.prose blockquote {
+  /* color: white; */
+  border-color: #ccc;
+  background-color: #ddd;
+}
+
+.dark .prose {
+  color: white !important;
+}
+
+.dark .prose blockquote {
+  color: white;
+  border-color: rgb(124, 124, 142);
+  background-color: #262626;
+}
+
 .task-list-item::before {
   @apply hidden;
 }

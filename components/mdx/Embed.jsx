@@ -29,7 +29,7 @@ export function Embed({ id, registry, depth = 0 }) {
   }
 
   return (
-    <div className="my-2 rounded-lg border bg-zinc-50 p-3 dark:bg-zinc-900">
+    <div className="my-2 rounded-lg border bg-zinc-50 p-3 dark:bg-zinc-900" data-embed="true">
       <MDXComponent />
     </div>
   )

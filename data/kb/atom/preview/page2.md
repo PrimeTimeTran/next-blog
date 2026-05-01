@@ -5,6 +5,7 @@ date: '2026-04-30'
 title: 'Preview: Page 2'
 summary: 'Preview of page 2'
 tags: ['KB/MD/Obsidian/Blog']
+isDev: true
 ---
 
 # Page 2

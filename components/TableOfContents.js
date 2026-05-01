@@ -1,22 +1,35 @@
 import { useScrollSpy } from '@/lib/hooks/useScrollSpy'
+import { getHeadingClass } from '@/lib/theme'
 
 function TOCItem({ item, activeId }) {
   const isActive = activeId === item.url
 
+  const level = Math.max(0, (item.depth ?? 1) - 1)
+  const colorClass = getHeadingClass(level)
+
   return (
-    <div style={{ marginLeft: `${(item.depth - 2) * 24}px` }}>
+    <div
+      className={`
+        min-w-0 border-l-2 transition
+        ${isActive ? 'border-blue-500 bg-blue-500/10' : 'border-transparent'}
+        hover:bg-white/5
+      `}
+      style={{ paddingLeft: `${level * 16}px` }}
+    >
       <a
         href={item.url}
-        className={
-          'block py-1 transition ' + (isActive ? 'font-semibold text-blue-500' : 'text-gray-500')
-        }
+        className={`
+          block w-full truncate px-2 py-1 transition
+
+          ${colorClass}
+          ${isActive ? 'font-bold' : 'opacity-70'}
+        `}
       >
         {item.value}
       </a>
     </div>
   )
 }
-
 export default function TableOfContents({ toc = [] }) {
   const activeId = useScrollSpy(toc)
 

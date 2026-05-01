@@ -3,24 +3,25 @@ draft: true
 date: '2030-01-01'
 title: 'TEST: Code Tab Groups'
 summary: 'TESTING of Code Tab Groups rendering'
+isDev: true
 tags: ['test']
 ---
 
 ## Tab Group
 
 ```tabgroup
-<<<py
+...py
 def hello_world():
     print("Hello world")
->>>
-<<<js
+...
+
+...js
 function helloWorld() {
-  console.log("Hello World")
+  console.log('Hi world')
 }
->>>
+...
 
-
-<<<go
+...go
 func climbStairs(n int) int {
   if n == 1 {
     return n
@@ -36,25 +37,20 @@ func climbStairs(n int) int {
   }
   return two
 }
->>>
+...
 ```
 
 ```tabgroup
-
-<<<js
-function helloWorld2() {
-  console.log("Hello World")
+...js
+function helloWorld() {
+  console.log('Hi world')
 }
->>>
-
-
-<<<py
-def hello_world2():
+...
+...py
+def hello_world():
     print("Hello world")
->>>
-
-
-<<<go
+...
+...go
 func climbStairs(n int) int {
   if n == 1 {
     return n
@@ -70,5 +66,34 @@ func climbStairs(n int) int {
   }
   return two
 }
->>>
+...
+```
+
+```tabgroup
+...go
+func climbStairs(n int) int {
+  if n == 1 {
+    return n
+  }
+
+  one := 1
+  two := 2
+
+  for i := 3; i < n + 1; i++ {
+    tmp := one + two
+    one = two
+    two = tmp
+  }
+  return two
+}
+...
+...js
+function helloWorld() {
+  console.log('Hi world')
+}
+...
+...py
+def hello_world():
+    print("Hello world")
+...
 ```

@@ -1,5 +1,3 @@
-import { useEffect } from 'react'
-
 import { BlogHeader, BlogFooter } from './blocks'
 import Comments from '@/components/comments'
 
@@ -11,7 +9,6 @@ export default function BlogContent({ frontMatter, children, shrunk }) {
 
       <article className="p-4">
         <div className="prose max-w-none dark:prose-dark">{children}</div>
-
         <BlogFooter />
         <Comments />
       </article>

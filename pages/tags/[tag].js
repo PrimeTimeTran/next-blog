@@ -26,8 +26,6 @@ export async function getStaticPaths() {
 export async function getStaticProps({ params }) {
   const { getAllBlogPosts } = await import('@/lib/content/server')
   const allPosts = await getAllBlogPosts('blog')
-  console.log('allPosts[0]')
-  console.log(allPosts[0])
   const filteredPosts = allPosts.filter((post) => {
     if (post.draft) return false
     if (!Array.isArray(post.tags)) return false

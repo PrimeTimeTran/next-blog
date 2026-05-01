@@ -1,4 +1,4 @@
-import { useState, useRef, useEffect } from 'react'
+import { useState, useRef } from 'react'
 
 const Pre = ({ children, className, lang }) => {
   const textInput = useRef(null)
@@ -26,11 +26,15 @@ const Pre = ({ children, className, lang }) => {
         <button
           aria-label="Copy code"
           type="button"
-          className={`absolute right-2 top-2 h-8 w-8 rounded border-2 bg-gray-700 p-1 dark:bg-gray-800 ${
-            copied
-              ? 'border-green-400 focus:border-green-400 focus:outline-none'
-              : 'border-gray-300'
-          }`}
+          className={`absolute right-2 top-2 h-8 w-8 rounded border-2 bg-white
+            p-1 text-gray-700 shadow-sm
+            dark:bg-gray-800 dark:text-gray-200
+            ${
+              copied
+                ? 'border-green-400 dark:border-green-400'
+                : 'border-gray-300 dark:border-gray-600'
+            }
+          `}
           onClick={onCopy}
         >
           {/* icon */}
@@ -39,8 +43,10 @@ const Pre = ({ children, className, lang }) => {
 
       <pre
         ref={textInput}
-        className={xLang ? `language-${xLang}` : className}
-        style={{ whiteSpace: 'pre' }}
+        className={`
+          ${xLang ? `language-${xLang}` : ''}
+          
+        `}
       >
         <code className={xLang ? `language-${xLang}` : ''}>{children}</code>
       </pre>

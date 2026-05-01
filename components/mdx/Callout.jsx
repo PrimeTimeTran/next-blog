@@ -1,14 +1,41 @@
-import { useState } from 'react'
+import React, { useState } from 'react'
+import { CgDanger } from 'react-icons/cg'
+import { AiOutlineBug } from 'react-icons/ai'
+import { MdOutlineTipsAndUpdates } from 'react-icons/md'
 
-const calloutStyles = {
-  note: 'border-blue-400 bg-blue-50 dark:bg-blue-950/30',
-  info: 'border-sky-400 bg-sky-50 dark:bg-sky-950/30',
-  tip: 'border-emerald-400 bg-emerald-50 dark:bg-emerald-950/30',
-  success: 'border-green-400 bg-green-50 dark:bg-green-950/30',
-  warning: 'border-yellow-400 bg-yellow-50 dark:bg-yellow-950/30',
-  danger: 'border-red-400 bg-red-50 dark:bg-red-950/30',
-  bug: 'border-pink-400 bg-pink-50 dark:bg-pink-950/30',
-  quote: 'border-zinc-400 bg-zinc-50 dark:bg-zinc-900',
+import { calloutTheme } from '@/lib/theme'
+
+// Reference: Icons
+// https://react-icons.github.io/react-icons/icons/ai/
+import {
+  FiCode,
+  FiInfo,
+  FiXCircle,
+  FiBookOpen,
+  FiFileText,
+  FiHelpCircle,
+  FiCheckCircle,
+  FiAlertTriangle,
+  FiMessageSquare,
+} from 'react-icons/fi'
+
+const calloutIcons = {
+  info: FiInfo,
+  note: FiFileText,
+  danger: CgDanger,
+  bug: AiOutlineBug,
+  success: FiCheckCircle,
+  quote: FiMessageSquare,
+  warning: FiAlertTriangle,
+  tip: MdOutlineTipsAndUpdates,
+
+  // 🔥 missing common ones
+  error: FiXCircle,
+  failure: FiXCircle,
+  question: FiHelpCircle,
+
+  example: FiCode,
+  abstract: FiBookOpen,
 }
 
 export function Callout({
@@ -17,24 +44,32 @@ export function Callout({
   collapsible,
   collapsed: initialCollapsed,
   children,
+  hasEmbed,
 }) {
   const [open, setOpen] = useState(!initialCollapsed)
-  const style = calloutStyles[type] ?? 'border-zinc-300 bg-zinc-50 dark:bg-zinc-900'
+
+  const Icon = calloutIcons[type]
+  const theme = calloutTheme[type] ?? calloutTheme.note
 
   return (
-    <div className={`my-3 w-full rounded-lg border-l-4 px-4 py-3 ${style}`}>
-      {/* header */}
+    <div className={`my-3 w-full rounded-lg border-l-4 p-1 ${theme.border} ${theme.bg}`}>
       <div
-        className="flex cursor-pointer items-center justify-between"
+        className="flex cursor-pointer items-center justify-between gap-2 rounded-md px-2 py-2 hover:bg-black/5 dark:hover:bg-white/5"
         onClick={() => collapsible && setOpen((v) => !v)}
       >
-        <div className="text-sm font-medium">{title || type}</div>
+        <div className="flex items-center gap-2 text-sm font-medium">
+          {Icon && <Icon className="h-4 w-4 opacity-80" />}
+          <span className={theme.text}>{title || type}</span>
+        </div>
 
         {collapsible && <span className="text-xs opacity-60">{open ? '▾' : '▸'}</span>}
       </div>
 
-      {/* body */}
-      {open && <div className="mt-2 text-sm leading-relaxed">{children}</div>}
+      {open && (
+        <div className={`mt-2 text-sm leading-relaxed ${hasEmbed ? 'px-8 py-4' : 'p-2'}`}>
+          {children}
+        </div>
+      )}
     </div>
   )
 }

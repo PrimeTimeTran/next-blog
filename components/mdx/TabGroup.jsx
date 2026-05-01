@@ -1,6 +1,5 @@
 import { useState } from 'react'
 import Prism from 'prismjs'
-// import Pre from './Pre'
 
 import 'prismjs/components/prism-go'
 import 'prismjs/components/prism-clike'
@@ -37,7 +36,6 @@ export function TabGroup({ tabs = '[]' }) {
       <div className="tab flex gap-2">
         {parsed.map((tab, i) => {
           const isActive = i === active
-          console.log(tab.label, isActive)
           return (
             <button
               key={tab.label}

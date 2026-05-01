@@ -63,6 +63,11 @@ module.exports = withBundleAnalyzer({
       test: /\.svg$/,
       use: ['@svgr/webpack'],
     })
+    config.ignoreWarnings = [
+      {
+        module: /tailwind\.css/,
+      },
+    ]
 
     if (!dev && !isServer) {
       Object.assign(config.resolve.alias, {

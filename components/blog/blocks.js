@@ -1,6 +1,6 @@
 import Tag from '@/components/Tag'
 import Link from '@/components/Link'
-import Image from '@/components/Image'
+import Image from '@/components/mdx/Image'
 import PageTitle from '@/components/PageTitle'
 
 import { discussUrl, editUrl } from '@/lib/utils'
