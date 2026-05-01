@@ -3,8 +3,8 @@ import Tag from '@/components/Tag'
 import Link from '@/components/Link'
 import { getAllTags } from '@/lib/tags'
 import { PageSEO } from '@/components/SEO'
-import kebabCase from '@/lib/utils/kebabCase'
-import siteMetadata from '@/data/siteMetadata'
+import kebabCase from '@/lib/utils/kebabab-case'
+import siteMetadata from '@/data/site-metadata'
 import SectionContainer from '@/components/SectionContainer'
 
 import {
@@ -18,7 +18,7 @@ import {
   security,
   databases,
   frameworks,
-} from '../lib/constants'
+} from '../data/constants'
 
 function renderTags(tags, t) {
   return (

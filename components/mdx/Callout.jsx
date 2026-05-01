@@ -3,7 +3,7 @@ import { CgDanger } from 'react-icons/cg'
 import { AiOutlineBug } from 'react-icons/ai'
 import { MdOutlineTipsAndUpdates } from 'react-icons/md'
 
-import { calloutTheme } from '@/lib/theme'
+import { callOutTheme } from '@/lib/theme/theme'
 
 // Reference: Icons
 // https://react-icons.github.io/react-icons/icons/ai/
@@ -29,7 +29,6 @@ const calloutIcons = {
   warning: FiAlertTriangle,
   tip: MdOutlineTipsAndUpdates,
 
-  // 🔥 missing common ones
   error: FiXCircle,
   failure: FiXCircle,
   question: FiHelpCircle,
@@ -38,7 +37,7 @@ const calloutIcons = {
   abstract: FiBookOpen,
 }
 
-export function Callout({
+export function CallOut({
   type = 'note',
   title,
   collapsible,
@@ -49,7 +48,7 @@ export function Callout({
   const [open, setOpen] = useState(!initialCollapsed)
 
   const Icon = calloutIcons[type]
-  const theme = calloutTheme[type] ?? calloutTheme.note
+  const theme = callOutTheme[type] ?? callOutTheme.note
 
   return (
     <div className={`my-3 w-full rounded-lg border-l-4 p-1 ${theme.border} ${theme.bg}`}>

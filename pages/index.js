@@ -3,11 +3,11 @@ import { useState, useMemo } from 'react'
 import Link from '@/components/Link'
 import { PageSEO } from '@/components/SEO'
 import ListLayout from '@/layouts/ListLayout'
-import siteMetadata from '@/data/siteMetadata'
+import siteMetadata from '@/data/site-metadata'
 import NewsletterForm from '@/components/NewsletterForm'
 import SectionContainer from '@/components/SectionContainer'
 
-import { TOPICS, MAX_DISPLAY } from '@/lib/constants'
+import { TOPICS, MAX_DISPLAY } from '@/data/constants'
 
 export async function getStaticProps() {
   const { getAllBlogPosts } = await import('@/lib/content/server')

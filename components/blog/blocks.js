@@ -5,12 +5,9 @@ import PageTitle from '@/components/PageTitle'
 
 import { discussUrl, editUrl } from '@/lib/utils'
 
-/* -----------------------------
-   Blog Header
------------------------------- */
 export function BlogHeader({ title, date, shrunk }) {
   return (
-    <header className="sticky top-0 z-10 border-b bg-white p-2 transition-all duration-300 dark:bg-gray-900">
+    <header className="sticky top-0 z-10 border-b border-slate-200 bg-white p-2 transition-all duration-300 dark:border-slate-800 dark:bg-gray-900">
       <PageTitle
         style={{ color: '#E6DB74' }}
         className={[
@@ -57,7 +54,7 @@ export function BlogFooter({ slug, fileName }) {
 ------------------------------ */
 export function AuthorBlock({ authors = [] }) {
   return (
-    <dl className="pb-10 pt-6 xl:border-b xl:border-gray-200 xl:dark:border-gray-700">
+    <dl className="border-slate-200 pb-10 pt-6 dark:border-slate-800 xl:border-b">
       <dt className="sr-only">Authors</dt>
       <dd>
         <ul className="space-y-6 xl:block">

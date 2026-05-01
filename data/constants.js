@@ -2,6 +2,16 @@ export const POSTS_PER_PAGE = 20
 export const MAX_DISPLAY = 300
 export const DEV_MODE = process.env.NODE_ENV === 'development'
 
+export const LANG_MAP = {
+  go: 'go',
+  rb: 'ruby',
+  rs: 'rust',
+  dart: 'dart',
+  py: 'python',
+  js: 'javascript',
+  ts: 'typescript',
+}
+
 export const maths = [
   'algebra',
   'calculus',

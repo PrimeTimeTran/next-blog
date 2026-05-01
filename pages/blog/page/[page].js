@@ -1,7 +1,7 @@
 import { PageSEO } from '@/components/SEO'
 import ListLayout from '@/layouts/ListLayout'
-import siteMetadata from '@/data/siteMetadata'
-import { POSTS_PER_PAGE } from '@/lib/constants'
+import siteMetadata from '@/data/site-metadata'
+import { POSTS_PER_PAGE } from '@/data/constants'
 
 export async function getStaticPaths() {
   const { getAllBlogPosts } = await import('@/lib/content/server')

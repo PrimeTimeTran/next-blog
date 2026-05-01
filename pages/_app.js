@@ -2,13 +2,28 @@
 
 import '@/css/prism.css'
 import '@/css/tailwind.css'
-import Head from 'next/head'
 import 'katex/dist/katex.css'
+
+// Core languages
+import 'prismjs'
+import 'prismjs/components/prism-go'
+import 'prismjs/components/prism-ruby'
+import 'prismjs/components/prism-dart'
+import 'prismjs/components/prism-rust'
+import 'prismjs/components/prism-python'
+import 'prismjs/components/prism-javascript'
+import 'prismjs/components/prism-typescript'
+
+// Plugins
+import 'prismjs/plugins/line-numbers/prism-line-numbers'
+import 'prismjs/plugins/line-numbers/prism-line-numbers.css'
+
+import Head from 'next/head'
 import Script from 'next/script'
 import { ThemeProvider } from 'next-themes'
 import '@fontsource/inter/variable-full.css'
 
-import siteMetadata from '@/data/siteMetadata'
+import siteMetadata from '@/data/site-metadata'
 import Analytics from '@/components/analytics'
 import LayoutWrapper from '@/components/LayoutWrapper'
 import { ClientReload } from '@/components/ClientReload'

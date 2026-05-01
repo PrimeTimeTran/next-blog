@@ -1,6 +1,6 @@
 const defaultTheme = require('tailwindcss/defaultTheme')
 const colors = require('tailwindcss/colors')
-const { safeList } = require('./lib/theme/tailwindClassGenerators')
+const { safeList } = require('./lib/theme/tailwing-class-generators')
 
 module.exports = {
   experimental: {

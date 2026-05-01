@@ -1,25 +1,23 @@
 import { useMemo } from 'react'
 import { getMDXComponent } from 'mdx-bundler/client'
 
-import Image from '@/components/mdx/Image'
-import Snippet from '@/components/mdx/Snippet'
 import CustomLink from '@/components/Link'
-import TOCInline from '@/components/mdx/TOCInline'
-import { Pre, CodeBlock, TabGroup } from '@/components/mdx/TabGroup'
-
+import Image from '@/components/mdx/Image'
 import { Embed } from '@/components/mdx/Embed'
-import { Callout } from '@/components/mdx/Callout'
+import Snippet from '@/components/mdx/Snippet'
+import { CallOut } from '@/components/mdx/CallOut'
+import TOCInline from '@/components/mdx/TOCInline'
+import { Pre, TabGroup } from '@/components/mdx/Code'
 
 import OrderBook from '@/components/mdx/OrderBook'
-// import CodeBlock from '@/components/mdx/CodeBlock'
-// import CodeOrTab from '@/components/mdx/CodeOrTab'
 import { BlogNewsletterForm } from '@/components/NewsletterForm'
 
-import ListLayout from '@/layouts/ListLayout'
 import KBLayout from '@/layouts/KBLayout'
+import ListLayout from '@/layouts/ListLayout'
 import BlogLayout from '@/layouts/BlogLayout'
 import AuthorLayout from '@/layouts/AuthorLayout'
-import { H1, H2, H3, H4, H5, H6 } from '@/lib/theme'
+
+import { H1, H2, H3, H4, H5, H6 } from '@/lib/theme/theme'
 
 const layouts = {
   KBLayout,
@@ -35,7 +33,7 @@ export const baseComponents = {
   h5: H5,
   h6: H6,
   Image,
-  Callout,
+  CallOut,
   Snippet,
   pre: Pre,
   TOCInline,

@@ -1,7 +1,7 @@
 import Card from '@/components/Card'
 import { PageSEO } from '@/components/SEO'
-import siteMetadata from '@/data/siteMetadata'
-import projectsData from '@/data/projectsData'
+import siteMetadata from '@/data/site-metadata'
+import projectsData from '@/data/projects'
 
 export default function Projects() {
   return (

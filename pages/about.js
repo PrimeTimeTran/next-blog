@@ -1,5 +1,5 @@
 import { MDXLayoutRenderer } from '@/components/MDXComponents'
-import { getContentBySlug } from '@/lib/content/core/getContentBySlug'
+import { getContentBySlug } from '@/lib/content/core/get-content-by-slug'
 
 const DEFAULT_LAYOUT = 'AuthorLayout'
 

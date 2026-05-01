@@ -1,9 +1,9 @@
 import { useEffect } from 'react'
 import { PageSEO } from '@/components/SEO'
 import ListLayout from '@/layouts/ListLayout'
-import siteMetadata from '@/data/siteMetadata'
+import siteMetadata from '@/data/site-metadata'
 import SectionContainer from '@/components/SectionContainer'
-import { POSTS_PER_PAGE } from '@/lib/constants'
+import { POSTS_PER_PAGE } from '@/data/constants'
 import { pageview } from '../lib/ga'
 
 export async function getStaticProps() {

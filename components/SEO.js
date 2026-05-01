@@ -1,7 +1,7 @@
 import React from 'react'
 import Head from 'next/head'
 import { useRouter } from 'next/router'
-import siteMetadata from '@/data/siteMetadata'
+import siteMetadata from '@/data/site-metadata'
 
 const CommonSEO = ({ title, description, ogType, ogImage, twImage, canonicalUrl, publishedAt }) => {
   const router = useRouter()

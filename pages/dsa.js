@@ -1,10 +1,10 @@
 import React, { useEffect, useState, useRef } from 'react'
-import siteMetadata from '@/data/siteMetadata'
+import siteMetadata from '@/data/site-metadata.js'
 import SectionContainer from '@/components/SectionContainer'
-import solutions from '../lib/problems/solutions.js'
+import solutions from '../lib/dsa/problems/solutions.js'
 import SolutionSnippet from '../lib/dsa/solution.js'
-import allProblems from '../lib/problems/problems-all.json'
-import { listPareto, listBlind75, neetCode150, neetCode250 } from '../lib/problems/lists.js'
+import allProblems from '../lib/dsa/problems/problems-all.json'
+import { listPareto, listBlind75, neetCode150, neetCode250 } from '../lib/dsa/problems/lists.js'
 
 const problemCategories = [
   'String',

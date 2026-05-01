@@ -5,6 +5,22 @@
  * https://github.com/PrismJS/prism-themes
  */
 
+html.light pre code {
+  color: #1f2937;
+}
+
+html.light .token.comment {
+  color: #6b7280;
+}
+
+html.light .token.keyword {
+  color: #7c3aed;
+}
+
+html.light .token.string {
+  color: #059669;
+}
+
 /* Code title styles */
 .remark-code-title {
   @apply rounded-t bg-gray-700 px-5 py-3 font-mono text-sm font-bold text-gray-200;
@@ -36,7 +52,7 @@
 }
 
 .line-number::before {
-  @apply mr-4 -ml-2 inline-block w-4 text-right text-gray-400;
+  @apply -ml-2 mr-4 inline-block w-4 text-right text-gray-400;
   content: attr(line);
 }
 

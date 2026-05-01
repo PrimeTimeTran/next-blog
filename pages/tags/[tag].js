@@ -3,9 +3,9 @@ import path from 'path'
 
 import { TagSEO } from '@/components/SEO'
 import generateRss from '@/lib/generate-rss'
-import kebabCase from '@/lib/utils/kebabCase'
+import kebabCase from '@/lib/utils/kebabab-case'
 import ListLayout from '@/layouts/ListLayout'
-import siteMetadata from '@/data/siteMetadata'
+import siteMetadata from '@/data/site-metadata'
 
 const root = process.cwd()
 

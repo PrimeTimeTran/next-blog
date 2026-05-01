@@ -2,7 +2,7 @@ import { useState, useMemo } from 'react'
 
 import Tag from '@/components/Tag'
 import Link from '@/components/Link'
-import formatDate from '@/lib/utils/formatDate'
+import formatDate from '@/lib/utils/formate-date'
 import Pagination from '@/components/Pagination'
 import { buildContentUrl } from '@/lib/content/core/url'
 

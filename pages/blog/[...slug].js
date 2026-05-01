@@ -29,7 +29,7 @@ export async function getStaticPaths() {
 }
 
 export async function getStaticProps({ params }) {
-  const { getContentBySlug } = await import('@/lib/content/core/getContentBySlug')
+  const { getContentBySlug } = await import('@/lib/content/core/get-content-by-slug')
   const { getAllBlogPosts } = await import('@/lib/content/server')
   const slug = Array.isArray(params.slug) ? params.slug.join('/') : params.slug
 

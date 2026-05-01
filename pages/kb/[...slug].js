@@ -17,7 +17,7 @@ export async function getStaticPaths() {
 }
 
 export async function getStaticProps(ctx) {
-  const { getContentBySlug } = await import('@/lib/content/core/getContentBySlug')
+  const { getContentBySlug } = await import('@/lib/content/core/get-content-by-slug')
 
   const kbItem = await getContentBySlug('kb', ctx.params.slug)
 

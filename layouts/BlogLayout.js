@@ -1,5 +1,5 @@
 import { BlogSEO } from '@/components/SEO'
-import siteMetadata from '@/data/siteMetadata'
+import siteMetadata from '@/data/site-metadata'
 import useScrollShrink from '@/lib/hooks/useScrollShrink'
 import ScrollTopAndComment from '@/components/ScrollTopAndComment'
 

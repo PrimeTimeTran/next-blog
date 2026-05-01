@@ -5,7 +5,7 @@ import { FiClipboard } from 'react-icons/fi'
 import { useTheme } from 'next-themes'
 import { docco, dark } from 'react-syntax-highlighter/dist/cjs/styles/hljs'
 
-import { snippets } from '../lib/code-snippets.js'
+import { snippets } from '../data/snippets-sorting-algorithms.js'
 
 const LanguagePicker = ({ selectedLanguage, onLanguageChange }) => {
   const languages = ['python', 'javascript']

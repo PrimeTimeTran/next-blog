@@ -6,8 +6,8 @@ import ThemeSwitch from './ThemeSwitch'
 import { route, useRouter } from 'next/router'
 import SectionContainer from './SectionContainer'
 
-import siteMetadata from '@/data/siteMetadata'
-import headerNavLinks from '@/data/headerNavLinks'
+import siteMetadata from '@/data/site-metadata'
+import headerNavLinks from '@/data/nav-links'
 
 const LayoutWrapper = ({ children }) => {
   const router = useRouter()
