@@ -99,7 +99,7 @@ This line has an ~~strikethrough~~.
 #### Code Tab Group
 
 - starts with <code>\`\`\`tabgroup</code> and ends with <code>\`\`\`</code>
-- define each language with opening ...py` and closing`...`
+- define each language with opening `:::py` and closing `:::`
 
 > [!tip]- Create Code Tab Group
 > ![[kb-dsl-code-tab-group]]
