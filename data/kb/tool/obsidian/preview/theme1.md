@@ -90,10 +90,10 @@ This line has an ~~strikethrough~~.
 
 #### MDX & KB Obsidian
 
-```html showLineNumbers
-<html>
-  <head></head>
-</html>
+```js showLineNumbers
+function helloWorld() {
+  console.log('Hi')
+}
 ```
 
 #### Code Tab Group

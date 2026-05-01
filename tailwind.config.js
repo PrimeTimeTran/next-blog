@@ -9,7 +9,7 @@ module.exports = {
 
   // Enables "embedded" components
   // components/mdx/Callout.jsx
-  safelist: [...safeList, 'w-full', 'rounded-lg', 'border-l-4', 'text-sm', 'leading-relaxed'],
+  safelist: [...safeList, 'w-full', 'rounded-lg', 'border-l-4', 'text-sm', 'leading-relaxed', 'prose', 'dark:prose-dark', 'bg-blue-500/20'],
   content: [
     './pages/**/*.js',
     './components/**/*.js',

@@ -40,9 +40,9 @@ var twoSum = function (nums, target) {
 }
 ```
 
-## Show Line Numbers (js {5-7} showLineNumbers)
+## Show Line Numbers (js {1-5} showLineNumbers)
 
-```js {5-7} showLineNumbers
+```js {1-4} showLineNumbers
 import mongoose, { Schema } from 'mongoose'
 import { Auditor } from './Audit'
 

@@ -110,3 +110,11 @@ table {
   font-size: 0.8rem;
   line-height: 1.4;
 }
+
+.line-numbers-rows {
+  z-index: 0; /* Keep numbers behind the highlight if necessary */
+}
+.line-container {
+  position: relative;
+  z-index: 1;
+}

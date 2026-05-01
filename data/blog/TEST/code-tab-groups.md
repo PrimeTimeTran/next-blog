@@ -7,21 +7,19 @@ isDev: true
 tags: ['test']
 ---
 
-## Tab Group
-
-```tabgroup
-...py
+```tabgroup showLineNumbers
+!!!!!py
 def hello_world():
     print("Hello world")
-...
+py!!!!!
 
-...js
+!!!!!js
 function helloWorld() {
   console.log('Hi world')
 }
-...
+js!!!!!
 
-...go
+!!!!!go
 func climbStairs(n int) int {
   if n == 1 {
     return n
@@ -37,20 +35,25 @@ func climbStairs(n int) int {
   }
   return two
 }
-...
+go!!!!!
 ```
 
 ```tabgroup
-...js
+
+!!!!!js {1-5, 5-10}
 function helloWorld() {
   console.log('Hi world')
 }
-...
-...py
+js!!!!!
+
+!!!!!py 1
 def hello_world():
     print("Hello world")
-...
-...go
+py!!!!!
+
+
+
+!!!!!go {1-3, 5-7, 9-10}
 func climbStairs(n int) int {
   if n == 1 {
     return n
@@ -66,34 +69,5 @@ func climbStairs(n int) int {
   }
   return two
 }
-...
-```
-
-```tabgroup
-...go
-func climbStairs(n int) int {
-  if n == 1 {
-    return n
-  }
-
-  one := 1
-  two := 2
-
-  for i := 3; i < n + 1; i++ {
-    tmp := one + two
-    one = two
-    two = tmp
-  }
-  return two
-}
-...
-...js
-function helloWorld() {
-  console.log('Hi world')
-}
-...
-...py
-def hello_world():
-    print("Hello world")
-...
+go!!!!!
 ```

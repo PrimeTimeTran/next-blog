@@ -1,17 +1,18 @@
 import { useMemo } from 'react'
 import { getMDXComponent } from 'mdx-bundler/client'
 
-import Pre from '@/components/mdx/Pre'
 import Image from '@/components/mdx/Image'
 import Snippet from '@/components/mdx/Snippet'
 import CustomLink from '@/components/Link'
 import TOCInline from '@/components/mdx/TOCInline'
-import { TabGroup } from '@/components/mdx/TabGroup'
+import { Pre, CodeBlock, TabGroup } from '@/components/mdx/TabGroup'
 
 import { Embed } from '@/components/mdx/Embed'
 import { Callout } from '@/components/mdx/Callout'
 
 import OrderBook from '@/components/mdx/OrderBook'
+// import CodeBlock from '@/components/mdx/CodeBlock'
+// import CodeOrTab from '@/components/mdx/CodeOrTab'
 import { BlogNewsletterForm } from '@/components/NewsletterForm'
 
 import ListLayout from '@/layouts/ListLayout'
@@ -37,10 +38,11 @@ export const baseComponents = {
   Callout,
   Snippet,
   pre: Pre,
-  TabGroup,
   TOCInline,
   a: CustomLink,
   OrderBook,
+  tabGroup: TabGroup,
+  TabGroup: TabGroup,
   BlogNewsletterForm,
 }
 
