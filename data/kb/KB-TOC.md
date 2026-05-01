@@ -11,5 +11,6 @@ tags: ['KB/MD/Obsidian/Blog']
 
 - [[page1]]
 - [[page2]]
+- [[page3]]
 - [[theme1]]
 - [[theme2]]

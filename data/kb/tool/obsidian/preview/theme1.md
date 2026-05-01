@@ -21,35 +21,36 @@ Quickly see results at the top of the file
 
 Markdown format links
 
-- [Go to Heading 2](#heading-2)
-- [Go to section](#pagemarkdown-elements)
-  - Web Links:
-    - Link to URL: [OpenAI](https://openai.com)
-    - Link with titles: [Wikipedia](https://wikipedia.org 'Free encyclopedia')
-    - Reference link: [Google][2]
+- Internal links
+- Same Note
+  - [[#Heading 3.1]]
+    - [[#Heading 3.2]]
+      - [[#Heading 3.2.1]]
+        - [[#Heading 3.2.1.1]]
+          - [[#Heading 3.2.1.1.1]]
+          - [[#Heading 3.2.1.1.2]]
+      - [[#Heading 3.2.2]]
+- External(Note) Links
+  - [[theme2.md]]
+    - theme2.md
+  - [[Theme2.md]]
+    - Capitalized filename link.
+  - [[theme2.md#Markdown Elements|Another Note]]
+    - Another page section link aliased.
+  - [[theme2#Heading 2|theme2 > Heading 2]]
+  - [[theme2#Heading 2#Heading 3.1|theme2 > Heading 2 > Heading 2.3.1]]
+  - [[tool/obsidian/preview/theme2.md]]
+    - Path link.
+  - [[tool/obsidian/preview/theme2.md|Latex Preview]]
+    - Path link aliased.
+- External(Web) Links
+  - Link to URL: [OpenAI](https://openai.com)
+  - Link with titles: [Wikipedia](https://wikipedia.org 'Free encyclopedia')
+  - Reference link: [Google][2]
 
 ### Obsidian Links
 
 Obsidian format links
-
-- [[#Markdown Elements]]
-  - Same page section link
-- [[#Markdown Elements|Go To Section with Custom Display Text]]
-  - Same page section link aliased.
-- [[theme2.md#Page/Markdown Elements|Go to Another Note Section with Custom Display Text]]
-  - Another page section link aliased.
-- [[latex.md]]
-  - Filename link.
-- [[Latex.md]]
-  - Capitalized filename link.
-- [[theme2.md]]
-  - theme2.md
-- [[tool/obsidian/preview/latex.md]]
-  - Path link.
-- [[tool/obsidian/preview/latex.md|Latex Preview]]
-  - Path link aliased.
-- ![[latex.md]]
-  - Embed note link(preview of another note/page)
 
 ## Heading 2
 

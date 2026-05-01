@@ -59,8 +59,6 @@ export default function KBLayout({ toc, children, sidebarData }) {
       ...savedMap, // user overrides after
       ...routeMap, // route ALWAYS wins for expansion
     })
-    console.log('ROUTE:', routeMap)
-    console.log('SAVED:', savedMap)
 
     setHydrated(true)
   }, [router.isReady, router.asPath])
