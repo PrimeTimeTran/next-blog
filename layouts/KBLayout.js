@@ -7,7 +7,7 @@ import TableOfContents from '@/components/TableOfContents'
 const SCROLL_KEY = 'kb-sidebar-scroll'
 const STORAGE_KEY = 'kb-sidebar-open-map'
 
-export default function KBLayout({ toc, children, sidebarData }) {
+export default function KBLayout({ toc, children, sidebarData, embedded = false }) {
   const router = useRouter()
   const [openMap, setOpenMap] = useState({})
   const [hydrated, setHydrated] = useState(false)
@@ -68,33 +68,44 @@ export default function KBLayout({ toc, children, sidebarData }) {
   }, [openMap])
 
   return (
-    <div className="min-h-screen w-full">
+    <div className={`min-h-screen w-full ${embedded ? 'embedded' : ''}`}>
       <div className="grid w-full grid-cols-1 lg:grid-cols-12">
         {/* LEFT SIDEBAR */}
-        <aside className="col-span-2 hidden lg:block">
-          <div
-            ref={scrollRef}
-            className="sticky top-0 h-screen overflow-y-auto border-r border-zinc-200"
-          >
-            {hydrated && (
-              <div className="animate-in fade-in duration-200">
-                <KBSidebar node={sidebarData} openMap={openMap} setOpenMap={setOpenMap} />
-              </div>
-            )}
-          </div>
-        </aside>
+        {!embedded && (
+          <aside className="col-span-2 hidden lg:block">
+            <div
+              ref={scrollRef}
+              className="sticky top-0 h-screen overflow-y-auto border-r border-zinc-200"
+            >
+              {hydrated && (
+                <div className="animate-in fade-in duration-200">
+                  <KBSidebar node={sidebarData} openMap={openMap} setOpenMap={setOpenMap} />
+                </div>
+              )}
+            </div>
+          </aside>
+        )}
 
         {/* MAIN CONTENT */}
         <main className="col-span-1 lg:col-span-7">
-          <div className="prose prose-lg max-w-none p-6 dark:prose-dark">{children}</div>
+          <div
+            className={`
+              prose prose prose-lg max-w-none max-w-none p-6 p-6 dark:prose-invert dark:prose-dark
+              ${embedded ? 'kb-embed prose-sm' : 'prose-lg'}
+            `}
+          >
+            {children}
+          </div>
         </main>
 
         {/* RIGHT TOC */}
-        <aside className="hidden border-l border-zinc-200 pl-12 xl:col-span-3 xl:block">
-          <div className="sticky top-0 h-screen">
-            <TableOfContents toc={toc ?? []} />
-          </div>
-        </aside>
+        {!embedded && (
+          <aside className="hidden border-l border-zinc-200 pl-12 xl:col-span-3 xl:block">
+            <div className="sticky top-0 h-screen">
+              <TableOfContents toc={toc ?? []} />
+            </div>
+          </aside>
+        )}
       </div>
     </div>
   )

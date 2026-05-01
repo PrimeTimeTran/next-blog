@@ -156,19 +156,30 @@ This line has an ~~strikethrough~~.
 ### Callouts
 
 > [!note]- Note Callout
-> ![[latex.md]]
+>
+> ```js
+> function helloWorld() {
+>   console.log('hi')
+> }
+> ```
 
 > [!info]- Info Callout
-> ![[latex.md]]
+>
+> - Bullet 1
+> - Bullet 2
+> - Bullet 3
 
 > [!tip]- Tip Callout
-> ![[latex.md]]
+>
+> 1. Bullet 1
+> 2. Bullet 2
+> 3. Bullet 3
 
 > [!success]- Success Callout
-> ![[latex.md]]
+> ![[theme2.md]]
 
 > [!question]- Question Callout
-> ![[latex.md]]
+> ![[theme1.md]]
 
 > [!warning]- Warning Callout
 > ![[latex.md]]
