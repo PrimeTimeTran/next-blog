@@ -1,8 +1,6 @@
-# Loi Tran's [Blog](https://github.com/PrimeTimeTran/next-blog)
+# PrimeTimeTrans's [Blog](https://github.com/PrimeTimeTran/kb-blog)
 
-- [Site](https://loi-tran-blog.netlify.app/)
-
-A fork of [this](https://github.com/timlrx/tailwind-nextjs-starter-blog) NextJS Blog Starter template.
+- [Live Site](kb-blog-primetimetran.vercel.app)
 
 ## Setup
 
@@ -14,3 +12,12 @@ A fork of [this](https://github.com/timlrx/tailwind-nextjs-starter-blog) NextJS 
 - React
 - Next
 - MDX
+- Tailwind
+- Remix
+  - Prism
+  - Rehype
+- Vercel
+
+## Reference
+
+A fork of [this](https://github.com/timlrx/tailwind-nextjs-starter-blog) NextJS Blog Starter template.
