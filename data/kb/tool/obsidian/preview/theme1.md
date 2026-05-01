@@ -38,7 +38,10 @@ Markdown format links
   - [[theme2.md#Markdown Elements|Another Note]]
     - Another page section link aliased.
   - [[theme2#Heading 2|theme2 > Heading 2]]
+  - [[theme2#Heading 3.1|theme2 > Heading 2 > Heading 2.3.1]]
+    - "Nested Heading"
   - [[theme2#Heading 2#Heading 3.1|theme2 > Heading 2 > Heading 2.3.1]]
+    - "Heading Hierarchy"
   - [[tool/obsidian/preview/theme2.md]]
     - Path link.
   - [[tool/obsidian/preview/theme2.md|Latex Preview]]
