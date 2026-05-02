@@ -23,7 +23,6 @@ Cue → Craving → Response → Reward
 
 - Design your environment to highlight good habits
 - Use **habit stacking**:
-
   - “After I [current habit], I will [new habit]”
 
 - Use visual cues (leave things in plain sight)
@@ -31,7 +30,6 @@ Cue → Craving → Response → Reward
 #### Invert:
 
 - Make bad habits **invisible**
-
   - Remove triggers
   - Reduce exposure
 
@@ -46,7 +44,6 @@ Cue → Craving → Response → Reward
 #### Invert:
 
 - Make bad habits **unattractive**
-
   - Highlight negative consequences
   - Shift identity (“I’m not the type of person who…”)
 
@@ -56,7 +53,6 @@ Cue → Craving → Response → Reward
 
 - Reduce friction (lower effort = higher consistency)
 - Use the **2-minute rule**:
-
   - Scale habits down to a version that takes <2 minutes
 
 - Focus on starting, not finishing
@@ -64,7 +60,6 @@ Cue → Craving → Response → Reward
 #### Invert:
 
 - Make bad habits **difficult**
-
   - Add friction (time, steps, effort)
   - Use commitment devices
 
@@ -79,7 +74,6 @@ Cue → Craving → Response → Reward
 #### Invert:
 
 - Make bad habits **unsatisfying**
-
   - Add accountability
   - Use consequences
 

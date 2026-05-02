@@ -17,7 +17,6 @@ Requirements of the app from a user perspective.
   - [ ] As a user I can select a topic which filters for problems belonging to that topic.
   - [ ] As a user I can search for a term which filters for problems with that term in the title.
 - [ ] As a user I can view a individual problem so I can study it:
-
   - [ ] As a user I can see the description of a problem so I can understand the requirements.
   - [ ] As a user I can see the test cases of a problem so that I have an example of inputs and their expected outputs so that I have passing test cases for reference.
   - [ ] As a user I can submit a solution to a problem which is evaluated as a submission.

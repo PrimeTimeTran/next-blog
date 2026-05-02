@@ -2,24 +2,26 @@ const defaultTheme = require('tailwindcss/defaultTheme')
 const colors = require('tailwindcss/colors')
 const { safeList } = require('./lib/theme/tailwind-class-generators.cjs')
 
+const { callOutTheme } = require('./lib/theme/theme.cjs')
+
+const flatten = (obj) => Object.values(obj).flatMap((v) => Object.values(v).flat())
+
+const safelist = [
+  ...safeList,
+  ...flatten(callOutTheme),
+  'text-[#b58cff]',
+  'text-[#ff7ac6]',
+  'text-[#8bdfff]',
+  'text-[#5ee38a]',
+  'text-[#f7e26b]',
+]
 module.exports = {
   experimental: {
     // optimizeUniversalDefaults: true,
   },
-
   // Enables "embedded" components
   // components/mdx/Callout.jsx
-  safelist: [
-    ...safeList,
-    'w-full',
-    'rounded-lg',
-    'border-l-4',
-    'text-sm',
-    'leading-relaxed',
-    'prose',
-    'dark:prose-dark',
-    'bg-blue-500/20',
-  ],
+  safelist,
   content: [
     './pages/**/*.js',
     './components/**/*.js',

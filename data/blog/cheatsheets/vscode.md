@@ -30,7 +30,7 @@ Must know VSCode hotkeys
 
 - Toggle focus between editor panes & panels
 
-  `` Ctrl + `  ``
+  ``Ctrl + ` ``
 
 - Increase/Decrease editor pane width
 

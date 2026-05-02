@@ -3,7 +3,6 @@
 ## **Ikigai (生き甲斐)** → **Life / Meaning**
 
 - Belongs with:
-
   - _Ichigo ichie_
   - _Kintsugi_
   - _Ma_
@@ -20,7 +19,6 @@
 ## **Kaizen (改善)** → **Work / Discipline / Growth**
 
 - Belongs with:
-
   - _Hansei_
   - _Ganbaru_
   - _Ho-Ren-So_
@@ -31,7 +29,6 @@
   > Continuous, incremental improvement over time.
 
 - It pairs especially well with **Hansei**:
-
   - Reflect → adjust → improve → repeat
 
 ---
@@ -39,7 +36,6 @@
 ## **Wabi-Sabi (侘寂)** → **Aesthetics / Beauty** _(with philosophical spillover)_
 
 - Belongs with:
-
   - _Mono no aware_
   - _Yūgen_
   - _Shibui_
@@ -50,7 +46,6 @@
   > Beauty in imperfection, impermanence, and incompleteness
 
 - But it leaks into mindset too—similar to:
-
   - accepting flaws
   - letting things be unfinished
 

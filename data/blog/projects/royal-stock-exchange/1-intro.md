@@ -35,7 +35,6 @@ Robinhood, WeBull, Interactive Brokers, E-Trade, Charles Schwab, the list goes o
 ### Initial thoughts
 
 - .NET projects/solutions are collections of smaller "projects".
-
   - If you're from Node.JS/Rails, this means each project has it's own package.json/Gemfile/dependencies.
 
   - Notice each project has it's own "Dependencies" directory. API/Common/DataAccess/Services/Tests.
@@ -64,7 +63,6 @@ Robinhood, WeBull, Interactive Brokers, E-Trade, Charles Schwab, the list goes o
   ```
 
 - I'm going to use a few patterns in this project.
-
   - [MVC](https://learn.microsoft.com/en-us/aspnet/mvc/overview/older-versions-1/getting-started-with-mvc/getting-started-with-mvc-part1)
   - [Service](https://learn.microsoft.com/en-us/aspnet/mvc/overview/older-versions-1/models-data/validating-with-a-service-layer-cs)
   - [Repository](https://learn.microsoft.com/en-us/dotnet/architecture/microservices/microservice-ddd-cqrs-patterns/infrastructure-persistence-layer-design)

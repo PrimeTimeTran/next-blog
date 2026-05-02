@@ -33,7 +33,6 @@ Instead of writing everything chronologically, you:
 
 - Headings or categories (e.g., “Habits,” “Philosophy,” “Business”)
 - Entries under each with:
-
   - Quote or idea
   - Source
   - Your commentary

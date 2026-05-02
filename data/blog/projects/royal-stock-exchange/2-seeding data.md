@@ -86,7 +86,6 @@ into an ORM, defining classes, or adding migration headaches to our list of prob
   ```
 
 - Most importantly, `Prices` for tracking prices over time which'll be displayed as candlesticks in a chart.
-
   - Define `Prices`.
   - Define variables which we'll update for each time series item.
   - Run a loop which creates a `Price` item and inserts it into the db.

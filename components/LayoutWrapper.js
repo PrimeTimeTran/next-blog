@@ -25,9 +25,9 @@ const LayoutWrapper = ({ children }) => {
             </div>
           </div>
         </Link>
-        <Link href="/kb/tool/obsidian/preview/theme1" aria-label={siteMetadata.headerTitle}>
+        {/* <Link href="/kb/tool/obsidian/preview/theme1" aria-label={siteMetadata.headerTitle}>
           <div>Knowledge Base</div>
-        </Link>
+        </Link> */}
         <div className="flex items-center">
           <div className="hidden sm:flex">
             <div className="hidden sm:flex">
@@ -58,7 +58,7 @@ const LayoutWrapper = ({ children }) => {
         <SectionContainer isSnippets={isHome}>{children}</SectionContainer>
       </main>
 
-      {/* <Footer /> */}
+      <Footer />
     </div>
   )
 }

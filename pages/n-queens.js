@@ -59,8 +59,7 @@ export default function NQueensVisualizer({ n = 4, delay = 300 }) {
         row.map((cell, c) => (
           <div
             key={`${r}-${c}`}
-            className={`flex h-20 w-20 items-center justify-center border
-              ${(r + c) % 2 === 0 ? 'bg-gray-200' : 'bg-white'}`}
+            className={`flex h-20 w-20 items-center justify-center border ${(r + c) % 2 === 0 ? 'bg-gray-200' : 'bg-white'}`}
           >
             <span className="text-3xl text-red-600">{cell === 'Q' && '♛'}</span>
           </div>

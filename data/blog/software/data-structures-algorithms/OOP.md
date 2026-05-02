@@ -23,7 +23,6 @@ In summary, the abstraction principle in OOP allows developers to separate the i
 ### Negatives
 
 - Software/requirements will change. Thus we cannot anticipate where we'll need to "cut". Do not draw boundaries too early.
-
   - Wrong abstraction is worse than no abstraction.
   - Programs evolve and tech debt builds up. Wrong decisions get magnified over time.
   - Waiting and seeing, learning more has a lot of value.

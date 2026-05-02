@@ -9,21 +9,12 @@ function TOCItem({ item, activeId }) {
 
   return (
     <div
-      className={`
-        min-w-0 border-l-2 transition
-        ${isActive ? 'border-blue-500 bg-blue-500/10' : 'border-transparent'}
-        hover:bg-white/5
-      `}
+      className={`min-w-0 border-l-2 transition ${isActive ? 'border-blue-500 bg-blue-500/10' : 'border-transparent'} hover:bg-white/5`}
       style={{ paddingLeft: `${level * 16}px` }}
     >
       <a
         href={item.url}
-        className={`
-          block w-full truncate px-2 py-1 transition
-
-          ${colorClass}
-          ${isActive ? 'font-bold' : 'opacity-70'}
-        `}
+        className={`block w-full truncate px-2 py-1 transition ${colorClass} ${isActive ? 'font-bold' : 'opacity-70'} `}
       >
         {item.value}
       </a>
@@ -39,7 +30,7 @@ export default function TableOfContents({ toc = [] }) {
 
   return (
     <nav className="text-sm">
-      {(toc??[]).map((item) => (
+      {(toc ?? []).map((item) => (
         <TOCItem key={item.url} item={item} activeId={activeId} />
       ))}
     </nav>

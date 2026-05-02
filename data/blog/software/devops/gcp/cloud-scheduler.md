@@ -37,7 +37,6 @@ Suppose you want to trigger a Cloud Run service every day at midnight. Here’s 
    [Google Cloud Scheduler Console](https://console.cloud.google.com/cloudscheduler?hl=en&project=[PROJECT-ID])
 
 2. **Create a new job:**
-
    - Click "Create Job".
    - Enter a name and description.
    - Set the frequency using cron syntax (e.g., `0 0 * * *` for midnight daily).

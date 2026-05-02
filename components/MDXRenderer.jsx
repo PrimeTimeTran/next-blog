@@ -2,6 +2,7 @@ import React, { useMemo } from 'react'
 import { getMDXComponent } from 'mdx-bundler/client'
 import { layouts } from '@/layouts'
 import { log } from '@/lib/debug/logger'
+import { RegistryContext } from '@/lib/hooks/useRegistry'
 
 export default function MDXRenderer({
   mdxSource,
@@ -12,14 +13,18 @@ export default function MDXRenderer({
 }) {
   const Component = useMemo(() => getMDXComponent(mdxSource), [mdxSource])
 
-  log.bundle('HAS TABGROUP IN MDX:', mdxSource.includes('TabGroup'))
-  log.bundle('HAS LOWERCASE:', mdxSource.includes('tabgroup'))
+  log.bundle('Embed:', !!components.Embed)
+  log.bundle('Embed IN MDX:', mdxSource.includes('Embed'))
+  log.bundle('LOWERCASE:', mdxSource.includes('embed'))
   log.bundle('COMPONENTS KEYS:', Object.keys(components))
-  log.bundle('HAS TABGROUP:', !!components.TabGroup)
 
   const WrappedLayout = typeof Layout === 'string' ? layouts[Layout] : Layout
-
-  const content = <Component components={components} />
+  const content = (
+    <RegistryContext.Provider value={components.__registry}>
+      <Component components={components} />
+    </RegistryContext.Provider>
+  )
+  // const content = <Component components={components} />
 
   if (!WrappedLayout) return content
 

@@ -1,3 +1,5 @@
+import { layouts } from '@/layouts'
+
 import CustomLink from '@/components/Link'
 import Image from '@/components/mdx/Image'
 import { Embed } from '@/components/mdx/Embed'
@@ -9,7 +11,7 @@ import { Pre, TabGroup } from '@/components/mdx/Code'
 import OrderBook from '@/components/mdx/OrderBook'
 import { BlogNewsletterForm } from '@/components/NewsletterForm'
 
-import { H1, H2, H3, H4, H5, H6 } from '@/lib/theme/theme.cjs'
+import { H1, H2, H3, H4, H5, H6 } from '@/components/HeadingComponents'
 
 export const baseComponents = {
   h1: H1,
@@ -29,4 +31,15 @@ export const baseComponents = {
   tabGroup: TabGroup,
   TabGroup: TabGroup,
   BlogNewsletterForm,
+}
+
+export function createMDXComponents(registry = {}, embedded) {
+  return {
+    ...baseComponents,
+
+    wrapper: ({ layout, ...rest }) => {
+      const Layout = layouts[layout] || layouts.KBLayout
+      return <Layout {...rest} embedded={embedded} />
+    },
+  }
 }

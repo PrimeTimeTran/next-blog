@@ -17,7 +17,6 @@
 ## Flutter
 
 - Structure
-
   - lib
     - main.dart
   - pubspec.yaml
@@ -27,7 +26,6 @@
   - tests
 
 - Widgets
-
   - Row, Column, Padding, Center,
   - Text, Container,
   - Scaffold
@@ -35,19 +33,16 @@
     - [x] App store preview
 
 - Importing
-
   - Relative
   - Absolute
   - Barrel
 
 - Routing
-
   - Stack
   - Tab
   - Drawer
 
 - Apps
-
   - [x] Weather
     - Widgets, data fetching, params
   - [x] Todo

@@ -19,7 +19,6 @@ A deep dive on algorithms pertinent to graph problems within the realm of data s
 Here are the Key Features sections for the requested algorithms:
 
 - **Key Features:**
-
   - Explores nodes level by level (breadth-first).
   - Guarantees the shortest path in unweighted graphs.
   - Uses a queue for traversal.
@@ -41,7 +40,6 @@ Here are the Key Features sections for the requested algorithms:
 **Detecting cycles, connected components, topological sorting.**
 
 - **Key Features:**
-
   - Explores as far as possible along each branch before backtracking (depth-first).
   - Uses a stack (explicit or recursion) for traversal.
   - Commonly used for:
@@ -63,7 +61,6 @@ Here are the Key Features sections for the requested algorithms:
 **Dijkstra’s algorithm for shortest path in weighted graphs, Prim’s algorithm for Minimum Spanning Tree (MST).**
 
 - **Key Features:**
-
   - A data structure that allows retrieval of the smallest (or largest) element efficiently.
   - Used in graph algorithms like:
     - Dijkstra's
@@ -83,7 +80,6 @@ Here are the Key Features sections for the requested algorithms:
 Dijkstra's algorithm is used to find the **shortest path** from a source node to all other nodes in a **weighted, non-negative graph**. It uses a **priority queue (min-heap)** to always extend the path with the lowest cost first. It is optimal for graphs with non-negative weights but does not handle negative cycles.
 
 - **Key Features:**
-
   - Finds the shortest path from a source node to all other nodes in a weighted graph.
   - Works only with non-negative edge weights.
   - Uses a priority queue (min-heap) to extend the path with the lowest cost first.
@@ -93,7 +89,6 @@ Dijkstra's algorithm is used to find the **shortest path** from a source node to
     - Pathfinding in weighted graphs.
 
 - **LeetCode Problems:**
-
   - [743. Network Delay Time](https://leetcode.com/problems/network-delay-time/) - Find the time it takes for all nodes to receive a signal from a starting node.
   - [787. Cheapest Flights Within K Stops](https://leetcode.com/problems/cheapest-flights-within-k-stops/) - Find the cheapest flight path with at most K stops.
   - [1514. Path with Maximum Probability](https://leetcode.com/problems/path-with-maximum-probability/) - Find the path with the highest probability.
@@ -107,7 +102,6 @@ Dijkstra's algorithm is used to find the **shortest path** from a source node to
 The **A\* Search Algorithm** is a heuristic-based algorithm used for pathfinding and graph traversal. It is widely used in AI and game development.
 
 - **Key Features:**
-
   - Combines the benefits of Dijkstra's algorithm and greedy best-first search.
   - Uses a heuristic function to guide the search.
 
@@ -125,7 +119,6 @@ The **A\* Search Algorithm** is a heuristic-based algorithm used for pathfinding
 Prim's algorithm is used to find the **Minimum Spanning Tree (MST)** of a connected, weighted, and undirected graph. It builds the MST by **greedily choosing the minimum edge** that connects a vertex in the tree to a vertex outside the tree, using a priority queue for efficiency.
 
 - **Key Features:**
-
   - Used to find the Minimum Spanning Tree (MST) of a connected, weighted, and undirected graph.
   - Greedily chooses the minimum edge that connects a vertex in the tree to a vertex outside the tree.
   - Uses a priority queue (min-heap) for efficiency.
@@ -134,7 +127,6 @@ Prim's algorithm is used to find the **Minimum Spanning Tree (MST)** of a connec
     - Optimizing resource usage in connected systems.
 
 - **LeetCode Problems:**
-
   - [261. Graph Valid Tree](https://leetcode.com/problems/graph-valid-tree/) - Check if the graph is a valid tree.
   - [1135. Connecting Cities With Minimum Cost](https://leetcode.com/problems/connecting-cities-with-minimum-cost/) - Find the minimum cost to connect all cities.
   - [1168. Optimize Water Distribution in a Village](https://leetcode.com/problems/optimize-water-distribution-in-a-village/) - Minimize the cost of supplying water to all houses.
@@ -148,7 +140,6 @@ Prim's algorithm is used to find the **Minimum Spanning Tree (MST)** of a connec
 **Finding connected components, cycle detection in undirected graphs, Kruskal’s MST.**
 
 - **Key Features:**
-
   - A data structure used to efficiently manage and merge disjoint sets.
   - Supports two main operations:
   - Find: Determines which set a particular element belongs to.
@@ -159,7 +150,6 @@ Prim's algorithm is used to find the **Minimum Spanning Tree (MST)** of a connec
     - Supporting Kruskal’s algorithm for Minimum Spanning Tree (MST).
 
 - **LeetCode Problems:**
-
   - [261. Graph Valid Tree](https://leetcode.com/problems/graph-valid-tree/) — Determine if the graph is a valid tree.
   - [323. Number of Connected Components in an Undirected Graph](https://leetcode.com/problems/number-of-connected-components-in-an-undirected-graph/) — Count the number of connected components.
   - [684. Redundant Connection](https://leetcode.com/problems/redundant-connection/) — Find the edge that, when removed, will make the graph a tree.
@@ -172,7 +162,6 @@ Prim's algorithm is used to find the **Minimum Spanning Tree (MST)** of a connec
 Kruskal's algorithm is also used to find the **Minimum Spanning Tree (MST)** of a graph. It works by sorting all edges by weight and adding them one by one to the MST, ensuring that no cycles are formed (using **Union-Find** for cycle detection).
 
 - **Key Features:**
-
   - Used to find the Minimum Spanning Tree (MST) of a graph.
   - Works by:
   - Sorting all edges by weight.
@@ -182,7 +171,6 @@ Kruskal's algorithm is also used to find the **Minimum Spanning Tree (MST)** of 
     - Optimizing resource usage in connected systems.
 
 - **LeetCode Problems:**
-
   - [684. Redundant Connection](https://leetcode.com/problems/redundant-connection/) - Find the edge that, when removed, will make the graph a tree.
   - [1135. Connecting Cities With Minimum Cost](https://leetcode.com/problems/connecting-cities-with-minimum-cost/) - Find the minimum cost to connect all cities. (Also solvable with Prim's)
   - [1168. Optimize Water Distribution in a Village](https://leetcode.com/problems/optimize-water-distribution-in-a-village/) - Find the minimum cost for water distribution.
@@ -196,7 +184,6 @@ Kruskal's algorithm is also used to find the **Minimum Spanning Tree (MST)** of 
 Topological Sort is used to **order nodes in a Directed Acyclic Graph (DAG)** such that for every directed edge `U -> V`, node `U` appears before node `V` in the ordering. It's particularly useful for **task scheduling** and **dependency resolution**.
 
 - **Key Features:**
-
   - Orders nodes in a Directed Acyclic Graph (DAG) such that for every directed edge U -> V, node U appears before node V in the ordering.
   - Commonly used for:
     - Task scheduling.
@@ -204,7 +191,6 @@ Topological Sort is used to **order nodes in a Directed Acyclic Graph (DAG)** su
     - Analyzing precedence relationships in workflows.
 
 - **LeetCode Problems:**
-
   - [207. Course Schedule](https://leetcode.com/problems/course-schedule/) - Determine if you can finish all courses given prerequisites.
   - [210. Course Schedule II](https://leetcode.com/problems/course-schedule-ii/) - Find an order in which you can take the courses.
   - [310. Minimum Height Trees](https://leetcode.com/problems/minimum-height-trees/) - Find the roots of minimum height trees.
@@ -218,7 +204,6 @@ Topological Sort is used to **order nodes in a Directed Acyclic Graph (DAG)** su
 The **Bellman-Ford Algorithm** is used to find the shortest path from a single source to all other vertices in a graph. It works with graphs that have negative weight edges but cannot handle negative weight cycles.
 
 - **Key Features:**
-
   - Handles negative weights.
   - Slower than Dijkstra's algorithm for graphs without negative weights.
 
@@ -236,7 +221,6 @@ The **Bellman-Ford Algorithm** is used to find the shortest path from a single s
 The **Floyd-Warshall Algorithm** is used to find the shortest paths between all pairs of vertices in a graph. It works for both directed and undirected graphs and handles negative weights but not negative weight cycles.
 
 - **Key Features:**
-
   - Solves the all-pairs shortest path problem.
   - Uses dynamic programming.
 
@@ -254,7 +238,6 @@ The **Floyd-Warshall Algorithm** is used to find the shortest paths between all 
 The **Tarjan's Algorithm** is used to find strongly connected components (SCCs) in a directed graph. It uses depth-first search (DFS) and is highly efficient.
 
 - **Key Features:**
-
   - Finds SCCs in O(V + E) time.
   - Useful for analyzing graph connectivity.
 
@@ -272,7 +255,6 @@ The **Tarjan's Algorithm** is used to find strongly connected components (SCCs) 
 The **Kosaraju's Algorithm** is another method to find SCCs in a directed graph. It involves two passes of DFS: one on the original graph and one on the transposed graph.
 
 - **Key Features:**
-
   - Finds SCCs in O(V + E) time.
   - Simpler to implement conceptually compared to Tarjan's.
 
@@ -290,7 +272,6 @@ The **Kosaraju's Algorithm** is another method to find SCCs in a directed graph.
 The **Edmonds-Karp Algorithm** is an implementation of the Ford-Fulkerson method for finding the maximum flow in a flow network. It uses BFS to find augmenting paths.
 
 - **Key Features:**
-
   - Solves the maximum flow problem.
   - Runs in O(VE²) time.
 
@@ -308,7 +289,6 @@ The **Edmonds-Karp Algorithm** is an implementation of the Ford-Fulkerson method
 The **Hopcroft-Karp Algorithm** is used to find the maximum matching in a bipartite graph. It alternates between BFS and DFS to find augmenting paths.
 
 - **Key Features:**
-
   - Solves the maximum bipartite matching problem.
   - Runs in O(E√V) time.
 
@@ -326,7 +306,6 @@ The **Hopcroft-Karp Algorithm** is used to find the maximum matching in a bipart
 The **Johnson's Algorithm** is used to find shortest paths between all pairs of vertices in a sparse graph with negative weights. It combines Bellman-Ford and Dijkstra's algorithms.
 
 - **Key Features:**
-
   - Handles negative weights.
   - Efficient for sparse graphs.
 

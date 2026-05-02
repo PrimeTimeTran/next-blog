@@ -104,15 +104,12 @@ For finance experts, options are not just bets on price movement—they’re fle
 # 🌐 References
 
 - Put Credit Spread:
-
   - https://www.youtube.com/watch?v=nvJ_43579z8&ab_channel=SMBCapital
 
 - S
-
   - https://www.youtube.com/watch?v=4d6qj5vtrBQ&ab_channel=SMBCapital
 
 - 30 Delta Spread
-
   - https://youtu.be/Ko9E9OFYsf8?t=223
 
 - Modified Risk Reversal Strategy

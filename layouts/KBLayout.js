@@ -84,12 +84,7 @@ export default function KBLayout({ toc, children, embedded = false, outline }) {
 
         {/* MAIN */}
         <main className="col-span-1 min-w-0 lg:col-span-7">
-          <div
-            className={`
-              prose p-2  dark:prose-invert
-              ${embedded ? 'kb-embed' : 'prose-md'}
-            `}
-          >
+          <div className={`prose p-2 dark:prose-invert ${embedded ? 'kb-embed' : 'prose-md'} `}>
             {children}
           </div>
         </main>

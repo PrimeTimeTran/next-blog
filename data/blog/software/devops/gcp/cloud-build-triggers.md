@@ -26,7 +26,6 @@ Cloud Build Triggers are configurations in Google Cloud that listen for events i
 Suppose you want to automatically build and deploy your frontend app whenever you push to the `main` branch. Here’s how you can set it up:
 
 1. **Create a Cloud Build Trigger in the GCP Console:**
-
    - Go to Cloud Build > Triggers.
    - Click "Create Trigger".
    - Connect your source repository (e.g., GitHub).

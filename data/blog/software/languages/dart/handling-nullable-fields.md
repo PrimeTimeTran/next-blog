@@ -49,18 +49,15 @@ class ArticleDetail extends Article {
 Personally, I find that option 2 is the best.
 
 1. Use a Base Class + Extension/Detail Class
-
    - Define a base Article entity/model for the common fields (used in lists).
    - Define an ArticleDetail class that extends Article and adds extra fields (used in detail views).
    - This avoids lots of nullable fields and keeps your code clear.
 
 2. Use Composition (Optional)
-
    - Have a base Article and a separate ArticleExtra class for details.
    - The detail page fetches and attaches the extra info as needed.
 
 3. Use Factory Constructors for Parsing
-
    - When parsing from JSON, use a factory to decide which class to instantiate based on available fields.
 
 ## Why not just use nullable fields?

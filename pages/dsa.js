@@ -240,7 +240,7 @@ export default function DSA() {
             Data Structures & Algorithms
           </h1>
           <p className="text-lg leading-7 text-gray-500 dark:text-gray-400">{siteMetadata.dsa}</p>
-          <div className="flex w-full flex-row flex-wrap ">
+          <div className="flex w-full flex-row flex-wrap">
             {(orderedTags ?? []).map((tag) => (
               <div key={tag} className="space-x-6 space-y-2">
                 <button

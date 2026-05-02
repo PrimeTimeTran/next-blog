@@ -7,6 +7,88 @@ summary: 'TESTING of Code Tab Groups rendering'
 tags: ['test']
 ---
 
+# Code Tab Groups Examples
+
+## Dart
+
+```tabgroup
+
+!!!!!dart 1
+int add(int a, int b) {
+  return a + b;
+}
+dart!!!!!
+
+!!!!!dart 2
+class User {
+  final String name;
+
+  User(this.name);
+
+  String greet() => "Hello $name";
+}
+dart!!!!!
+
+!!!!!dart 3
+enum Status { loading, success, error }
+dart!!!!!
+
+!!!!!dart 4
+Future<String> fetchData() async {
+  return "done";
+}
+dart!!!!!
+
+!!!!!dart 5
+List<int> squares = List.generate(10, (i) => i * i);
+dart!!!!!
+```
+
+## Go
+
+```tabgroup
+
+!!!!!go 1
+func add(a int, b int) int {
+  return a + b
+}
+go!!!!!
+
+!!!!!go 2
+type User struct {
+  Name string
+}
+
+func (u User) Greet() string {
+  return "Hello " + u.Name
+}
+go!!!!!
+
+!!!!!go 3
+// slice
+nums := []int{1, 2, 3}
+go!!!!!
+
+!!!!!go 4
+// switch
+switch x := 2; x {
+case 1:
+  fmt.Println("one")
+case 2:
+  fmt.Println("two")
+}
+go!!!!!
+
+!!!!!go 5
+// goroutine
+go func() {
+  fmt.Println("async")
+}()
+go!!!!!
+```
+
+## Javascript
+
 ```tabgroup
 
 !!!!!js 1
@@ -44,6 +126,8 @@ function debounce(fn, delay) {
 }
 js!!!!!
 ```
+
+## Typescript
 
 ```tabgroup
 
@@ -91,6 +175,8 @@ async function fetchData() {
 ts!!!!!
 ```
 
+## Python
+
 ```tabgroup
 
 !!!!!py 1
@@ -126,79 +212,7 @@ async def fetch_data():
 py!!!!!
 ```
 
-```tabgroup
-
-!!!!!dart 1
-int add(int a, int b) {
-  return a + b;
-}
-dart!!!!!
-
-!!!!!dart 2
-class User {
-  final String name;
-
-  User(this.name);
-
-  String greet() => "Hello $name";
-}
-dart!!!!!
-
-!!!!!dart 3
-enum Status { loading, success, error }
-dart!!!!!
-
-!!!!!dart 4
-Future<String> fetchData() async {
-  return "done";
-}
-dart!!!!!
-
-!!!!!dart 5
-List<int> squares = List.generate(10, (i) => i * i);
-dart!!!!!
-```
-
-```tabgroup
-
-!!!!!go 1
-func add(a int, b int) int {
-  return a + b
-}
-go!!!!!
-
-!!!!!go 2
-type User struct {
-  Name string
-}
-
-func (u User) Greet() string {
-  return "Hello " + u.Name
-}
-go!!!!!
-
-!!!!!go 3
-// slice
-nums := []int{1, 2, 3}
-go!!!!!
-
-!!!!!go 4
-// switch
-switch x := 2; x {
-case 1:
-  fmt.Println("one")
-case 2:
-  fmt.Println("two")
-}
-go!!!!!
-
-!!!!!go 5
-// goroutine
-go func() {
-  fmt.Println("async")
-}()
-go!!!!!
-```
+## Rust
 
 ```tabgroup
 
@@ -240,6 +254,8 @@ rs!!!!!
 let v: Vec<i32> = vec![1, 2, 3];
 rs!!!!!
 ```
+
+## Ruby
 
 ```tabgroup
 

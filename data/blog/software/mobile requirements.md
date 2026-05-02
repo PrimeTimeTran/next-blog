@@ -29,13 +29,11 @@ for proficiently at using that framework.
 - How to run emulator/simulator on local & device:
 - How to view request logs:
 - Navigation
-
   - Stack
   - Drawer
   - Tab
 
 - Render UI elements such as text, images, icons:
-
   - Change text/image/icon attributes such as size, style, color
 
 - Fetch data:

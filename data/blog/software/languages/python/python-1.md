@@ -12,7 +12,6 @@ summary: 'Awesome Python modules'
   - bisect_left
   - bisect_right
 - Iterators
-
   - accumulate
   - count
   - groupby

@@ -2,7 +2,6 @@ import js from '@eslint/js'
 import globals from 'globals'
 import react from 'eslint-plugin-react'
 import reactHooks from 'eslint-plugin-react-hooks'
-import prettier from 'eslint-plugin-prettier'
 import next from '@next/eslint-plugin-next'
 
 export default [
@@ -13,11 +12,12 @@ export default [
   // APP (browser / react / next)
   // -------------------------
   {
-    files: ['pages/**/*', 'components/**/*', 'app/**/*'],
+    files: ['pages/**/*', 'components/**/*', 'app/**/*', 'lib/**/*', '**/*.{js,jsx,ts,tsx}'],
 
     languageOptions: {
       ecmaVersion: 'latest',
       sourceType: 'module',
+
       globals: {
         ...globals.browser,
       },
@@ -26,21 +26,17 @@ export default [
     plugins: {
       react,
       'react-hooks': reactHooks,
-      prettier,
-      // '@next/next': next,
     },
 
     rules: {
       ...react.configs.recommended.rules,
       ...reactHooks.configs.recommended.rules,
-
-      'prettier/prettier': 'error',
       'no-unused-vars': 'warn',
       'react/react-in-jsx-scope': 'off',
       'react/no-unescaped-entities': 'off',
 
-      // IMPORTANT: keep OFF in hybrid projects
-      'no-undef': 'off',
+      // ❌ REMOVE THIS
+      // 'no-undef': 'off',
     },
   },
 
@@ -71,6 +67,10 @@ export default [
         fetch: true,
         URL: true,
         document: true, // if browser-like scripts
+      },
+      env: {
+        browser: true,
+        node: true,
       },
     },
 

@@ -76,7 +76,7 @@ export function Pre(props) {
         </div>
       )}
 
-      <pre className="!m-0 overflow-x-auto bg-slate-100 py-2 font-mono text-sm leading-relaxed dark:bg-slate-950 ">
+      <pre className="!m-0 overflow-x-auto bg-slate-100 py-2 font-mono text-sm leading-relaxed dark:bg-slate-950">
         <code className="block min-w-full" dangerouslySetInnerHTML={{ __html: transformedHtml }} />
       </pre>
     </div>
@@ -93,7 +93,7 @@ export function TabGroup({ tabs }) {
   return (
     <div className="my-6 overflow-hidden rounded-xl border border-slate-200 bg-[#0d1117] dark:border-slate-800">
       {/* Header (distinct surface) */}
-      <div className="border-b border-slate-200 bg-slate-900/50 p-2 dark:border-slate-800 ">
+      <div className="border-b border-slate-200 bg-slate-900/50 p-2 dark:border-slate-800">
         <div className="flex gap-1 overflow-x-auto">
           {(parsed ?? []).map((tab, i) => {
             const isActive = i === active
@@ -130,10 +130,7 @@ export function TabGroup({ tabs }) {
             return (
               <div
                 key={`${tab.lang}-${i}`}
-                className={`
-                  transition-opacity duration-150
-                  ${isActive ? 'opacity-100' : 'pointer-events-none absolute inset-0 opacity-0'}
-                `}
+                className={`transition-opacity duration-150 ${isActive ? 'opacity-100' : 'pointer-events-none absolute inset-0 opacity-0'} `}
               >
                 <Pre
                   lang={tab.lang}

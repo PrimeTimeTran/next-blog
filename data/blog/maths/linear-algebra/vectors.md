@@ -59,7 +59,6 @@ The result of multiple is scaling the vector if the x is positive. If dividing i
   $$
   \overline{a} + \overline{b} = \begin{bmatrix} a_{x} + b_{x} \\ a_{y} + b_{y} \end{bmatrix}
   $$
-
   - Adding: new point.
   - Subtracting: calculate a vector from one point to another.
 

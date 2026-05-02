@@ -14,44 +14,42 @@ import ListLayout from '@/layouts/ListLayout'
 import BlogLayout from '@/layouts/BlogLayout'
 import AuthorLayout from '@/layouts/AuthorLayout'
 
-import { H1, H2, H3, H4, H5, H6 } from '@/lib/theme/theme.cjs'
+// const layouts = {
+//   KBLayout,
+//   ListLayout,
+//   BlogLayout,
+//   AuthorLayout,
+// }
+// export const baseComponents = {
+//   h1: H1,
+//   h2: H2,
+//   h3: H3,
+//   h4: H4,
+//   h5: H5,
+//   h6: H6,
+//   Image,
+//   Embed,
+//   CallOut,
+//   Snippet,
+//   pre: Pre,
+//   TOCInline,
+//   a: CustomLink,
+//   OrderBook,
+//   tabGroup: TabGroup,
+//   TabGroup: TabGroup,
+//   BlogNewsletterForm,
+// }
 
-const layouts = {
-  KBLayout,
-  ListLayout,
-  BlogLayout,
-  AuthorLayout,
-}
-export const baseComponents = {
-  h1: H1,
-  h2: H2,
-  h3: H3,
-  h4: H4,
-  h5: H5,
-  h6: H6,
-  Image,
-  Embed,
-  CallOut,
-  Snippet,
-  pre: Pre,
-  TOCInline,
-  a: CustomLink,
-  OrderBook,
-  tabGroup: TabGroup,
-  TabGroup: TabGroup,
-  BlogNewsletterForm,
-}
-
-export function createMDXComponents(registry = {}, embedded) {
-  return {
-    ...baseComponents,
-    // Embed: (props) => <Embed {...props} registry={registry} depth={props.depth ?? 0} />,
-    wrapper: ({ layout, ...rest }) => {
-      const Layout = layouts[layout] || KBLayout
-      return <Layout {...rest} embedded={embedded} />
-    },
-  }
-}
+// export function createMDXComponents(registry = {}, embedded) {
+//   return {
+//     ...baseComponents,
+//     // Embed: (props) => <Embed {...props} registry={registry} depth={props.depth ?? 0} />,
+//     wrapper: ({ layout, ...rest }) => {
+//       const Layout = layouts[layout] || KBLayout
+//       return <Layout {...rest} embedded={embedded} />
+//     },
+//   }
+// }
 
 // export const MDXLayoutRenderer = ({ layout, mdxSource, registry, ...rest }) => {
 //   const components = useMemo(() => createMDXComponents(registry), [registry])

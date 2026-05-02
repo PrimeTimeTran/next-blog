@@ -18,7 +18,6 @@ Run your business on a **simple, structured system** that aligns:
 Get everyone aligned on where you're going.
 
 - Define:
-
   - Core values
   - Core focus (purpose + niche)
   - 10-year target
@@ -34,13 +33,11 @@ Get everyone aligned on where you're going.
 Right people, right seats.
 
 - Use **GWC Framework**:
-
   - **Gets it** (understands role)
   - **Wants it** (motivated)
   - **Capacity** (has ability)
 
 - Tools:
-
   - Accountability chart (not org chart)
   - Core values filter
 
@@ -51,7 +48,6 @@ Right people, right seats.
 Manage with numbers, not feelings.
 
 - Create a **Scorecard**:
-
   - 5–15 weekly metrics
   - Each has an owner
   - Clear “on track / off track”
@@ -63,7 +59,6 @@ Manage with numbers, not feelings.
 Solve problems at the root.
 
 - Use **IDS**:
-
   - **Identify** the real issue
   - **Discuss** openly
   - **Solve** with action
@@ -96,7 +91,6 @@ Execute with discipline.
 
 - 3–7 most important goals per quarter
 - Must be:
-
   - Specific
   - Measurable
   - Owned by one person
@@ -109,7 +103,6 @@ Execute with discipline.
 - Predictive > historical
 - Owner per metric
 - Example:
-
   - Leads generated
   - Sales calls booked
   - Revenue
@@ -132,7 +125,6 @@ Execute with discipline.
 
 - Focus on **functions**, not titles
 - Clear ownership:
-
   - Visionary
   - Integrator
   - Departments (Sales, Marketing, Ops, Finance)

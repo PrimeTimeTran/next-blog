@@ -95,11 +95,8 @@ In summary, Deep Dives ensure your design is robust, resilient, and ready for pr
 1.  Storage
 
     **Relational**(SQL/normalized tables) vs **Document**(NoSQL/nested json) stores:
-
     - **ACID vs BASE**:
-
       - **ACID**:
-
         - **Atomicity**:
 
           "All or Nothing". A transaction must either complete fully or not at all. No partial changes.
@@ -117,11 +114,9 @@ In summary, Deep Dives ensure your design is robust, resilient, and ready for pr
           "Once Committed, It Stays". Once a transaction is committed, it will survive crashes or power loss.
 
       - **BASE**:
-
         - **Basic Availability**:
 
           "System Always Responds". The system guarantees availability, even in the presence of failures.
-
           - You may not get the most up-to-date data, but you will get a response.
           - Prioritizes uptime over perfect accuracy.
           - Example:
@@ -131,7 +126,6 @@ In summary, Deep Dives ensure your design is robust, resilient, and ready for pr
         - **Soft State**:
 
           "State May Change Without Input". The system's state may change over time, even without new writes, due to asynchronous replication or internal updates.
-
           - The data may temporarily be inconsistent or incomplete.
 
           - This is tolerated because the system is designed to reconcile state over time.
@@ -143,7 +137,6 @@ In summary, Deep Dives ensure your design is robust, resilient, and ready for pr
         - **Eventual Consistency**:
 
           "It Will Be Right… Eventually". Given enough time (and no new updates), all replicas of the data will converge to the same value.
-
           - There is no guarantee of immediate consistency across nodes.
 
           - Systems sacrifice consistency in the short term for availability and partition tolerance.
@@ -155,7 +148,6 @@ In summary, Deep Dives ensure your design is robust, resilient, and ready for pr
 2.  Scalability
 
     How to scale it to support more users & requests.
-
     - Compute
       - Vertical(beefier machines with more storage/ram)
       - Horizontal(multiple machines)
@@ -164,7 +156,6 @@ In summary, Deep Dives ensure your design is robust, resilient, and ready for pr
       - Consistent Hashing:
 
 3.  Networking
-
     - Application Layer:
       - HTTP/HTTPS
       - REST vs GraphQL vs GRPC
@@ -172,7 +163,6 @@ In summary, Deep Dives ensure your design is robust, resilient, and ready for pr
       - DNS Resolution
       - Websockets vs SSE
     - Transport Layer:
-
       - TCP:
 
         Transmission Control Protocol, is connection-oriented, reliable, and ensures data integrity and order, making it suitable for applications like web browsing and email.
@@ -187,21 +177,17 @@ In summary, Deep Dives ensure your design is robust, resilient, and ready for pr
       - Load Balancing
       - Firewalls, ACLS
 
-4.  Latency, Throughput & Performance
-
-    -
+4.  ## Latency, Throughput & Performance
 
 5.  Fault Tolerance & Redundancy
 
     Failures are enviable
-
     - Replication strategies. Failure detection systems
     -
 
 6.  CAP Theorem
 
     Consistency, availability, partition tolerance
-
     - Partition Tolerance: Guaranteed
     -
 

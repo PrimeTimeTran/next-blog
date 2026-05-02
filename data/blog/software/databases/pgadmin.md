@@ -15,22 +15,18 @@ MacOS
 ### Navigation
 
 - Focus forward tab menus & submenus
-
   - opt + tab
     - Once in submenu, use arrows to move forward/backward
     - fn + right for end
     - fn + left for start
 
 - Focus backward tab menus
-
   - opt + shift + tab
 
 - Switch between tabs(Query, Scratch Pad, Data Output)
-
   - opt + shift + tab
 
 - Focus query tabs
-
   - fn + tab
 
   - Tabbed panel forward
@@ -51,7 +47,6 @@ MacOS
 ### Running
 
 - Run query
-
   - fn + F5
 
 - Run focused query(query at cursor when multiple queries in the query panel)

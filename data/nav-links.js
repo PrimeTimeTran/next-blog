@@ -1,6 +1,6 @@
 const headerNavLinks = [
+  { href: '/kb', title: 'Knowledge Base' },
   { href: '/', title: 'Blog' },
-  // { href: '/kb', title: 'Knowledge Base' },
   { href: '/tags', title: 'Tags' },
   { href: '/dsa', title: 'DSA' },
   // { href: '/snippets', title: 'Snippets' },

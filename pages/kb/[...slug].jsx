@@ -4,7 +4,6 @@ import { buildKbRegistry } from '@/lib/content/core/kb'
 
 import MDXRenderer from '@/components/MDXRenderer'
 import { baseComponents } from '@/mdx'
-import { layouts } from '@/layouts'
 
 export async function getStaticPaths() {
   const slugs = await getAllKbSlugs()
@@ -44,8 +43,11 @@ export default function Page({ kbItem, registry, outline }) {
   return (
     <MDXRenderer
       mdxSource={kbItem.mdxSource}
-      components={baseComponents}
-      layout={'KBLayout'}
+      components={{
+        ...baseComponents,
+        __registry: registry,
+      }}
+      layout="KBLayout"
       layoutProps={{
         registry,
         outline,

@@ -55,7 +55,6 @@ Simplify concepts where I could
 Google and/or review AWS documentation when I didn't understand a concept/content in video
 
 - [T3P - Technology To The Point](https://www.youtube.com/watch?v=l1MpOD92oUg&t=4047s)
-
   - Pro
     - Question format like the exam.
     - Answer and possible answers provided like the exam.
@@ -64,16 +63,13 @@ Google and/or review AWS documentation when I didn't understand a concept/conten
     - Did not always provide explanations for answers.
 
 - [Certificate Hub Academy](https://www.youtube.com/watch?v=RbdC3tuEFcY&list=PLkDAY85mt5IAYrOVDVU5r6ieg7cejwGo0&index=4)
-
   - Pro
     - Question format like the exam.
   - Con
     - Monotone felt annoying after a while.
 
 - [Tech Talks](https://www.youtube.com/watch?v=-FtcnssIp345zQ&t=7717s)
-
   - Pro
-
     - Presented slides of the AWS services.
     - Walked through the use of services.
 
@@ -81,9 +77,7 @@ Google and/or review AWS documentation when I didn't understand a concept/conten
     - At times felt overwhelmed by the amount of concepts.
 
 - [Simplilearn](https://www.youtube.com/watch?v=35JSBXkjuhk&t=5147s)
-
   - Pro
-
     - Presented slides of the AWS services with explanations.
 
   - Con
