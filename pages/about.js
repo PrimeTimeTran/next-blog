@@ -19,12 +19,12 @@ export async function getStaticProps() {
 
 export default function About({ authorDetails }) {
   if (!authorDetails) return null
-
-  return (
-    <MDXLayoutRenderer
-      layout={authorDetails.frontMatter?.layout || DEFAULT_LAYOUT}
-      mdxSource={authorDetails.mdxSource}
-      frontMatter={authorDetails.frontMatter}
-    />
-  )
+  return <div>fofofo</div>
+  // return (
+  //   <MDXLayoutRenderer
+  //     layout={authorDetails.frontMatter?.layout || DEFAULT_LAYOUT}
+  //     mdxSource={authorDetails.mdxSource}
+  //     frontMatter={authorDetails.frontMatter}
+  //   />
+  // )
 }

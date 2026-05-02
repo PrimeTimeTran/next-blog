@@ -84,6 +84,7 @@ export function Pre(props) {
 }
 
 export function TabGroup({ tabs }) {
+  console.log({ tabs })
   const [active, setActive] = useState(0)
 
   const parsed = typeof tabs === 'string' ? safeJsonParse(tabs, []) : tabs

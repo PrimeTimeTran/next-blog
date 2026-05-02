@@ -1,6 +1,8 @@
 import generateRss from '@/lib/generate-rss'
 
 import MDXRenderer from '@/components/MDXRenderer'
+import { baseComponents } from '@/mdx'
+import { log } from '@/lib/debug/logger'
 
 const sanitize = (post) => ({
   ...post,
@@ -30,7 +32,7 @@ export async function getStaticProps({ params }) {
   const { getContentBySlug } = await import('@/lib/content/core/get-content-by-slug')
   const { getAllBlogPosts } = await import('@/lib/content/server')
   const slug = Array.isArray(params.slug) ? params.slug.join('/') : params.slug
-
+  log.bundle('5. Loading individual blog post from slug: ', slug)
   const post = await getContentBySlug('blog', slug)
 
   if (!post) return { notFound: true }
@@ -59,9 +61,10 @@ export default function Blog({ post, authorDetails, prev, next }) {
       prev={prev}
       next={next}
       mdxSource={mdxSource}
+      layout={'BlogLayout'}
       frontMatter={frontMatter}
       authorDetails={authorDetails}
-      layout={'BlogLayout'}
+      components={baseComponents}
       layoutProps={{
         frontMatter,
         toc,

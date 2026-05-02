@@ -1,6 +1,3 @@
-import { useMemo } from 'react'
-import { getMDXComponent } from 'mdx-bundler/client'
-
 import CustomLink from '@/components/Link'
 import Image from '@/components/mdx/Image'
 import { Embed } from '@/components/mdx/Embed'
@@ -56,20 +53,20 @@ export function createMDXComponents(registry = {}, embedded) {
   }
 }
 
-export const MDXLayoutRenderer = ({ layout, mdxSource, registry, ...rest }) => {
-  const components = useMemo(() => createMDXComponents(registry), [registry])
+// export const MDXLayoutRenderer = ({ layout, mdxSource, registry, ...rest }) => {
+//   const components = useMemo(() => createMDXComponents(registry), [registry])
 
-  const MDXContent = useMemo(() => {
-    if (!mdxSource) return null
-    return getMDXComponent(mdxSource)
-  }, [mdxSource])
+//   const MDXContent = useMemo(() => {
+//     if (!mdxSource) return null
+//     return getMDXComponent(mdxSource)
+//   }, [mdxSource])
 
-  if (!mdxSource || !MDXContent) return null
+//   if (!mdxSource || !MDXContent) return null
 
-  return (
-    <MDXContent
-      components={components} // 👈 THIS is the missing link
-      {...rest}
-    />
-  )
-}
+//   return (
+//     <MDXContent
+//       components={components} // 👈 THIS is the missing link
+//       {...rest}
+//     />
+//   )
+// }

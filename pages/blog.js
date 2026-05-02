@@ -5,10 +5,13 @@ import siteMetadata from '@/data/site-metadata'
 import SectionContainer from '@/components/SectionContainer'
 import { POSTS_PER_PAGE } from '@/data/constants'
 import { pageview } from '../lib/ga'
+import { log } from '@/lib/debug/logger'
 
 export async function getStaticProps() {
+  log.bundle('1. Get all Blog Posts from during build')
   const { getAllBlogPosts } = await import('@/lib/content/server')
   const posts = getAllBlogPosts()
+  log.bundle('4. Blog posts land in client: ', posts)
   const initialDisplayPosts = posts.slice(0, POSTS_PER_PAGE)
   const pagination = {
     currentPage: 1,
