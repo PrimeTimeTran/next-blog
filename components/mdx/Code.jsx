@@ -5,7 +5,7 @@ import { LANG_MAP } from '@/data/constants'
 
 function extractText(node) {
   if (typeof node === 'string') return node
-  if (Array.isArray(node)) return node.map(extractText).join('')
+  if (Array.isArray(node)) return (node ?? []).map(extractText).join('')
   if (React.isValidElement(node)) return extractText(node.props.children)
   return ''
 }
@@ -47,7 +47,7 @@ export function Pre(props) {
   const hasHighlights = highlightSet.size > 0
 
   // ---- render ----
-  const transformedHtml = lines
+  const transformedHtml = (lines ?? [])
     .map((line, index) => {
       const lineNumber = index + 1
       const isHighlighted = hasHighlights && highlightSet.has(lineNumber)
@@ -84,7 +84,6 @@ export function Pre(props) {
 }
 
 export function TabGroup({ tabs }) {
-  console.log({ tabs })
   const [active, setActive] = useState(0)
 
   const parsed = typeof tabs === 'string' ? safeJsonParse(tabs, []) : tabs
@@ -96,7 +95,7 @@ export function TabGroup({ tabs }) {
       {/* Header (distinct surface) */}
       <div className="border-b border-slate-200 bg-slate-900/50 p-2 dark:border-slate-800 ">
         <div className="flex gap-1 overflow-x-auto">
-          {parsed.map((tab, i) => {
+          {(parsed ?? []).map((tab, i) => {
             const isActive = i === active
 
             return (
@@ -125,7 +124,7 @@ export function TabGroup({ tabs }) {
       {/* Panels */}
       <div className="max-h-[600px] min-h-[300px] overflow-auto bg-slate-100 transition-colors duration-200 dark:bg-slate-950">
         <div className="relative">
-          {parsed.map((tab, i) => {
+          {(parsed ?? []).map((tab, i) => {
             const isActive = i === active
 
             return (

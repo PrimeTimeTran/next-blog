@@ -22,7 +22,7 @@ Shout out this [blog post](https://www.mssqltips.com/sqlservertip/7432/sql-cheat
 - Run SQL Sever container using Docker image. Specifically for M1
   architecture with the `--platform linux/arm64/v8` flag.
 
-  ```ssh
+  ```sh
   docker run -d --name mssql-server --platform linux/arm64/v8 -e ACCEPT_EULA=Y -e SA_PASSWORD=reallyStrongPwd123 -p 1433:1433 mcr.microsoft.com/azure-sql-edge
   ```
 

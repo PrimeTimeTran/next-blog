@@ -14,7 +14,7 @@ export default function ProjectionChart({ text, base = 10, growth = 1.15, points
       {text && <p className="mb-3 text-gray-700 dark:text-gray-300">{text}</p>}
 
       <div className="flex h-24 items-end gap-2">
-        {data.map((value, i) => (
+        {(data ?? []).map((value, i) => (
           <div key={i} className="flex flex-col items-center">
             <div
               className="w-6 rounded bg-blue-500"

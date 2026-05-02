@@ -1,9 +1,9 @@
 import { useState } from 'react'
-import SyntaxHighlighter from 'react-syntax-highlighter'
+// import SyntaxHighlighter from 'react-syntax-highlighter'
 import { CopyToClipboard } from 'react-copy-to-clipboard'
 import { FiClipboard } from 'react-icons/fi'
 import { useTheme } from 'next-themes'
-import { docco, dark } from 'react-syntax-highlighter/dist/cjs/styles/hljs'
+// import { docco, dark } from 'react-syntax-highlighter/dist/cjs/styles/hljs'
 
 import { snippets } from '../data/snippets-sorting-algorithms.js'
 
@@ -12,7 +12,7 @@ const LanguagePicker = ({ selectedLanguage, onLanguageChange }) => {
 
   return (
     <div className="mb-4 flex space-x-4">
-      {languages.map((lang) => (
+      {(languages ?? []).map((lang) => (
         <button
           key={lang}
           className={`rounded px-4 py-2 ${
@@ -29,14 +29,16 @@ const LanguagePicker = ({ selectedLanguage, onLanguageChange }) => {
 
 function Snippet({ code, language, handleCopy }) {
   const { theme } = useTheme()
-  const snippetStyle = theme === 'dark' ? dark : docco
-  const borderColor = theme === 'dark' ? 'white' : 'black'
+  // const snippetStyle = theme === 'dark' ? dark : docco
+  // const borderColor = theme === 'dark' ? 'white' : 'black'
+  const snippetStyle = {}
+  const borderColor = {}
   const containerStyle = {
     width: '400px',
     height: '300px',
     overflow: 'auto',
     borderColor: borderColor,
-    backgroundColor: snippetStyle.hljs.background || 'inherit',
+    backgroundColor: snippetStyle?.hljs?.background || 'inherit',
   }
   return (
     <div className="relative m-3 flex-1 rounded border" style={containerStyle}>
@@ -45,9 +47,10 @@ function Snippet({ code, language, handleCopy }) {
           <FiClipboard size={20} />
         </button>
       </CopyToClipboard>
-      <SyntaxHighlighter language={language} style={snippetStyle}>
+      <pre>{code}</pre>
+      {/* <SyntaxHighlighter language={language} style={snippetStyle}>
         {code}
-      </SyntaxHighlighter>
+      </SyntaxHighlighter> */}
     </div>
   )
 }

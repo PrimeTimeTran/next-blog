@@ -43,7 +43,7 @@ export default function KBLayout({ toc, children, embedded = false, outline }) {
     const saved = localStorage.getItem(STORAGE_KEY)
     const savedMap = saved ? JSON.parse(saved) : {}
 
-    const path = router.asPath.replace('/kb/', '').split('/').filter(Boolean)
+    const path = router.asPath.replace('/kb/', '').split('/')?.filter(Boolean)
 
     const routeMap = {}
 

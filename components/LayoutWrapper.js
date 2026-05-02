@@ -31,7 +31,7 @@ const LayoutWrapper = ({ children }) => {
         <div className="flex items-center">
           <div className="hidden sm:flex">
             <div className="hidden sm:flex">
-              {headerNavLinks.map((link) => {
+              {(headerNavLinks ?? []).map((link) => {
                 const isActive = currentRoute === link.href
                 return (
                   <Link

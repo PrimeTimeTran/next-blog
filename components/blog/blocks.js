@@ -58,7 +58,7 @@ export function AuthorBlock({ authors = [] }) {
       <dt className="sr-only">Authors</dt>
       <dd>
         <ul className="space-y-6 xl:block">
-          {authors.map((author, idx) => (
+          {(authors ?? []).map((author, idx) => (
             <li key={idx} className="flex items-center space-x-3">
               {author.frontMatter?.avatar && (
                 <Image
@@ -95,7 +95,7 @@ export function TagBlock({ tags = [] }) {
     <div className="xl:py-8">
       <h2 className="text-xs uppercase tracking-wide text-gray-500">Tags</h2>
       <div className="flex flex-wrap">
-        {tags.filter(Boolean).map((tag, idx) => (
+        {((tags ?? [])?.filter(Boolean) ?? []).map((tag, idx) => (
           <Tag key={idx} text={tag} />
         ))}
       </div>

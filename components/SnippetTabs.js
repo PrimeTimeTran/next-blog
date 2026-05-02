@@ -33,7 +33,7 @@ export default function SnippetTabs({ snippets = [] }) {
     <div className="tab-group" style={{ marginBottom: '1.5rem' }}>
       {/* Tab Header */}
       <div style={{ display: 'flex', borderBottom: '1px solid #333' }}>
-        {snippets.map((snippet, index) => (
+        {(snippets ?? []).map((snippet, index) => (
           <button
             key={index}
             onClick={() => setActiveIndex(index)}
@@ -75,7 +75,7 @@ export default function SnippetTabs({ snippets = [] }) {
         </button>
 
         {/* Tab Content */}
-        {snippets.map((snippet, index) => {
+        {(snippets ?? []).map((snippet, index) => {
           if (index !== activeIndex) return null
 
           return (

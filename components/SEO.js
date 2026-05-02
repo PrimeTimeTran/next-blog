@@ -29,7 +29,7 @@ const CommonSEO = ({ title, description, ogType, ogImage, twImage, canonicalUrl,
 
       {/* Optional: add image dimensions for LinkedIn */}
       {ogImage.constructor.name === 'Array' ? (
-        ogImage.map(({ url, width = 1200, height = 630 }) => (
+        (ogImage ?? []).map(({ url, width = 1200, height = 630 }) => (
           <React.Fragment key={url}>
             <meta property="og:image" content={url} />
             <meta property="og:image:width" content={width} />
@@ -118,7 +118,7 @@ export const BlogSEO = ({
       ? [images]
       : images
 
-  const featuredImages = imagesArr.map((img) => {
+  const featuredImages = (imagesArr ?? []).map((img) => {
     return {
       '@type': 'ImageObject',
       url: img.includes('http') ? img : siteMetadata.siteUrl + img,
@@ -127,7 +127,7 @@ export const BlogSEO = ({
 
   let authorList
   if (authorDetails) {
-    authorList = authorDetails.map((author) => {
+    authorList = (authorDetails ?? []).map((author) => {
       return {
         '@type': 'Person',
         name: author.name,

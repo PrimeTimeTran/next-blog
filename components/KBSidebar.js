@@ -6,7 +6,7 @@ export default function SidebarNode({ node = [], openMap, setOpenMap }) {
 
   return (
     <ul className="pl-1">
-      {node.map((item) => (
+      {(node ?? []).map((item) => (
         <SidebarItem
           key={item.slug || item.name}
           item={item}

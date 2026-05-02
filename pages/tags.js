@@ -36,7 +36,7 @@ function renderTags(tags, t) {
 
 function Category({ title, tags, sortedTags, filter }) {
   const [open, setOpen] = React.useState(true)
-  const categoryTags = sortedTags.filter((t) => {
+  const categoryTags = (sortedTags ?? [])?.filter((t) => {
     return filter.includes(t.toLowerCase())
   })
   return (
@@ -51,7 +51,7 @@ function Category({ title, tags, sortedTags, filter }) {
       </button>
       {open && (
         <div className="mb-6 flex flex-wrap">
-          {categoryTags.map((t) => {
+          {(categoryTags ?? []).map((t) => {
             return renderTags(tags, t)
           })}
         </div>
@@ -97,7 +97,7 @@ export default function Tags({ tags }) {
           <div className="w-full">
             <h1 className="text-2xl font-bold">Misc</h1>
             <div className="mb-6 flex flex-wrap">
-              {sortedTags.map((t) => {
+              {(sortedTags ?? []).map((t) => {
                 if (misc.includes(t.toLowerCase())) return null
                 return renderTags(tags, t)
               })}

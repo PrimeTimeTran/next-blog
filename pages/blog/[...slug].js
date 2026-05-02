@@ -17,13 +17,11 @@ export async function getStaticPaths() {
   const posts = await getAllBlogPosts()
 
   return {
-    paths: posts
-      .filter((p) => !p.draft)
-      .map((p) => ({
-        params: {
-          slug: p.slug.split('/'),
-        },
-      })),
+    paths: ((posts ?? []).filter((p) => !p.draft) ?? []).map((p) => ({
+      params: {
+        slug: p.slug.split('/'),
+      },
+    })),
     fallback: false,
   }
 }

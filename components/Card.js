@@ -1,7 +1,6 @@
 import Image from './mdx/Image'
 import Link from './Link'
 
-
 const Card = ({ title, description, imgSrc, href, tech }) => (
   <div className="md p-4 md:w-1/2" style={{ maxWidth: '544px' }}>
     <div
@@ -52,7 +51,7 @@ const Card = ({ title, description, imgSrc, href, tech }) => (
         <br />
         <br />
         {tech &&
-          tech.map((item) => (
+          (tech ?? []).map((item) => (
             <a
               key={item}
               href={`https://loi-tran-blog.netlify.app/tags/${encodeURIComponent(

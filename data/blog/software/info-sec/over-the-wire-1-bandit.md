@@ -464,7 +464,7 @@ diff passwords.new passwords.old
 The password for the next level is stored in a file readme in the homedirectory.
 Unfortunately, someone has modified .bashrc to log you out when you log in with SSH.
 
-```ssh
+```sh
 ssh bandit18@bandit.labs.overthewire.org -p 2220 "cat ~/readme"
 ```
 
@@ -485,7 +485,7 @@ Execute it without arguments to find out how to use it. The password for this
 level can be found in the usual place (/etc/bandit_pass), after you have used the
 setuid binary.
 
-```ssh
+```sh
 ssh bandit19@bandit.labs.overthewire.org -p 2220
 ```
 
@@ -562,7 +562,7 @@ A program is running automatically at regular intervals from cron, the time-base
 job scheduler. Look in /etc/cron.d/ for the configuration and see what command
 is being executed.
 
-```ssh
+```sh
 ssh bandit21@bandit.labs.overthewire.org -p 2220
 ```
 
@@ -593,7 +593,7 @@ A program is running automatically at regular intervals from cron, the time-base
 
 NOTE: Looking at shell scripts written by other people is a very useful skill. The script for this level is intentionally made easy to read. If you are having problems understanding what it does, try executing it to see the debug information it prints.
 
-```ssh
+```sh
 ssh bandit22@bandit.labs.overthewire.org -p 2220
 ```
 
@@ -640,7 +640,7 @@ very big step and you should be proud of yourself when you beat this level!
 NOTE 2: Keep in mind that your shell script is removed once executed, so you may
 want to keep a copy around…
 
-```ssh
+```sh
 ssh bandit23@bandit.labs.overthewire.org -p 2220
 ```
 
@@ -703,7 +703,7 @@ permissions on the current dir.
 A daemon is listening on port 30002 and will give you the password for bandit25 if given the password for bandit24 and a secret numeric 4-digit pincode. There is no way to retrieve the pincode except by going through all of the 10000 combinations, called brute-forcing.
 You do not need to create new connections each time
 
-```ssh
+```sh
 ssh bandit24@bandit.labs.overthewire.org -p 2220
 ```
 
@@ -739,7 +739,7 @@ Our script will brute force all possible solutions.
 
 Logging in to bandit26 from bandit25 should be fairly easy… The shell for user bandit26 is not /bin/bash, but something else. Find out what it is, how it works and how to break out of it.
 
-```ssh
+```sh
 ssh bandit25@bandit.labs.overthewire.org -p 2220
 ```
 
@@ -762,7 +762,7 @@ We can use the `more` shell with vim mode to read out of it with command.
 
 Good job getting a shell! Now hurry and grab the password for bandit27!
 
-```ssh
+```sh
 ssh bandit26@bandit.labs.overthewire.org -p 2220
 ```
 
@@ -790,7 +790,7 @@ The password for the user bandit27-git is the same as for the user bandit27.
 
 Clone the repository and find the password for the next level.
 
-```ssh
+```sh
 ssh bandit27@bandit.labs.overthewire.org -p 2220
 ```
 
@@ -800,7 +800,7 @@ YnQpBuifNMas1hcUFk70ZmqkhUU2EuaS
 
 Clone repo and read password for the next level. Make sure you add a port.
 
-```ssh
+```sh
 git clone ssh://bandit27-git@localhost:2220/home/bandit27-git/repo
 ```
 
@@ -811,7 +811,7 @@ The password for the user bandit28-git is the same as for the user bandit28.
 
 Clone the repository and find the password for the next level.
 
-```ssh
+```sh
 ssh bandit28@bandit.labs.overthewire.org -p 2220
 ```
 
@@ -835,7 +835,7 @@ The password for the user bandit29-git is the same as for the user bandit29.
 
 Clone the repository and find the password for the next level.
 
-```ssh
+```sh
 ssh bandit29@bandit.labs.overthewire.org -p 2220
 ```
 
@@ -854,7 +854,7 @@ The password for the user bandit30-git is the same as for the user bandit30.
 
 Clone the repository and find the password for the next level.
 
-```ssh
+```sh
 ssh bandit30@bandit.labs.overthewire.org -p 2220
 ```
 
@@ -873,7 +873,7 @@ The password for the user bandit31-git is the same as for the user bandit31.
 
 Clone the repository and find the password for the next level.
 
-```ssh
+```sh
 ssh bandit31@bandit.labs.overthewire.org -p 2220
 ```
 
@@ -889,7 +889,7 @@ git clone ssh://bandit31-git@localhost:2220/home/bandit31-git/repo
 
 After all this git stuff its time for another escape. Good luck!
 
-```ssh
+```sh
 ssh bandit32@bandit.labs.overthewire.org -p 2220
 ```
 
@@ -901,7 +901,7 @@ rmCBvG56y58BXzv98yZGdO7ATVL5dW8y
 
 After all this git stuff its time for another escape. Good luck!
 
-```ssh
+```sh
 ssh bandit33@bandit.labs.overthewire.org -p 2220
 ```
 

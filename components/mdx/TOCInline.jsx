@@ -32,7 +32,7 @@ const TOCInline = ({
     ? new RegExp('^(' + exclude.join('|') + ')$', 'i')
     : new RegExp('^(' + exclude + ')$', 'i')
 
-  const filteredToc = toc.filter(
+  const filteredToc = (toc ?? []).filter(
     (heading) =>
       heading.depth >= fromHeading && heading.depth <= toHeading && !re.test(heading.value)
   )
@@ -44,7 +44,7 @@ const TOCInline = ({
 
   const tocList = (
     <ul>
-      {filteredToc.map((heading) => (
+      {(filteredToc ?? []).map((heading) => (
         <li key={heading.value} className={getMarginClass(heading.depth)}>
           <a href={heading.url}>{heading.value}</a>
         </li>

@@ -29,7 +29,7 @@ export default function ListLayout({
   const filteredBlogPosts = useMemo(() => {
     const term = searchValue.toLowerCase()
 
-    return safePosts.filter((post) => {
+    return safePosts?.filter((post) => {
       if (!term) return true
 
       const searchContent = post.title + ' ' + post.summary + ' ' + post.tags.join(' ')

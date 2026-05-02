@@ -10,7 +10,7 @@ export async function getStaticPaths() {
   const slugs = await getAllKbSlugs()
 
   return {
-    paths: slugs.map((slug) => ({
+    paths: (slugs ?? []).map((slug) => ({
       params: {
         slug: slug.split('/'),
       },

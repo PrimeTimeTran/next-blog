@@ -28,9 +28,11 @@ export default function Home({ posts }) {
   const filteredPosts = useMemo(() => {
     let result = posts
     if (activeTopic) {
-      const topicTags = TOPICS[activeTopic].map((tag) => tag.replace(' ', '-').toLowerCase())
+      const topicTags = (TOPICS[activeTopic] ?? []).map((tag) =>
+        tag.replace(' ', '-').toLowerCase()
+      )
 
-      result = result.filter(
+      result = (result ?? [])?.filter(
         (post) =>
           post.tags &&
           post.tags.some((tag) => topicTags.includes(tag.replace(' ', '-').toLowerCase()))
@@ -41,7 +43,7 @@ export default function Home({ posts }) {
     if (searchTerm) {
       const term = searchTerm.toLowerCase()
 
-      result = result.filter(
+      result = (result ?? [])?.filter(
         (post) =>
           (post.title && post.title.toLowerCase().includes(term)) ||
           (post.summary && post.summary.toLowerCase().includes(term)) ||
@@ -71,7 +73,7 @@ export default function Home({ posts }) {
             </h1>
 
             <div className="my-1 mb-6 flex space-x-2 overflow-x-auto text-primary-500">
-              {Object.entries(TOPICS).map(([topicName, topics]) => (
+              {(Object.entries(TOPICS) ?? []).map(([topicName, topics]) => (
                 <button
                   key={topicName}
                   onClick={() => setActiveTopic(activeTopic === topicName ? null : topicName)}

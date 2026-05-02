@@ -30,20 +30,20 @@ const problemCategories = [
   'Monotonic Queue',
 ]
 
-const tags = allProblems.map((problem) => problem.tags).flat()
+const tags = (allProblems ?? []).map((problem) => problem.tags).flat()
 const uniqueTags = Array.from(new Set(tags))
 
-const orderedTags = problemCategories.filter((cat) => uniqueTags.includes(cat))
+const orderedTags = (problemCategories ?? []).filter((cat) => uniqueTags.includes(cat))
 
 const tagCounts = {}
 orderedTags.forEach((tag) => {
-  tagCounts[tag] = allProblems.filter((problem) => problem.tags.includes(tag)).length
+  tagCounts[tag] = (allProblems ?? []).filter((problem) => problem.tags.includes(tag)).length
 })
 
 export default function DSA() {
   const sidebarRef = useRef(null)
   const [sortBy, setSortBy] = useState('none')
-  const [filteredProblems, setFilteredProblems] = useState(allProblems)
+  const [filteredProblems, setFilteredProblems] = useState(allProblems || [])
   const [selectedTags, setSelectedTags] = useState([])
   const [selectedDifficulties, setSelectedDifficulties] = useState(['e', 'm', 'h'])
   const [selectedList, setSelectedList] = useState('all')
@@ -57,34 +57,36 @@ export default function DSA() {
 
     // Filter by list
     if (selectedList === 'pareto') {
-      problems = problems.filter((problem) => listPareto.includes(problem.lc.id))
+      problems = (problems ?? []).filter((problem) => listPareto.includes(problem.lc.id))
     } else if (selectedList === 'blind75') {
-      problems = problems.filter((problem) => listBlind75.includes(problem.lc.id))
+      problems = (problems ?? []).filter((problem) => listBlind75.includes(problem.lc.id))
     } else if (selectedList === 'neetCode150') {
-      problems = problems.filter((problem) => neetCode150.includes(problem.lc.id))
+      problems = (problems ?? []).filter((problem) => neetCode150.includes(problem.lc.id))
     } else if (selectedList === 'neetCode250') {
-      problems = problems.filter((problem) => neetCode250.includes(problem.lc.id))
+      problems = (problems ?? []).filter((problem) => neetCode250.includes(problem.lc.id))
     }
 
     // Filter by tags
     if (selectedTags.length > 0) {
-      problems = problems.filter((problem) =>
+      problems = (problems ?? []).filter((problem) =>
         selectedTags.some((tag) =>
-          problem.tags.map((t) => t.toLowerCase()).includes(tag.toLowerCase())
+          (problem.tags ?? []).map((t) => t.toLowerCase()).includes(tag.toLowerCase())
         )
       )
     }
 
     // Filter by difficulties
     if (selectedDifficulties.length > 0) {
-      problems = problems.filter((problem) => selectedDifficulties.includes(problem.difficulty))
+      problems = (problems ?? []).filter((problem) =>
+        selectedDifficulties.includes(problem.difficulty)
+      )
     }
 
     // Filter by premium
     if (selectedPremium === 'free') {
-      problems = problems.filter((problem) => !problem.lc.premium)
+      problems = (problems ?? []).filter((problem) => !problem.lc.premium)
     } else if (selectedPremium === 'premium') {
-      problems = problems.filter((problem) => problem.lc.premium)
+      problems = (problems ?? []).filter((problem) => problem.lc.premium)
     }
 
     // Sort
@@ -151,18 +153,20 @@ export default function DSA() {
 
     window.addEventListener('keydown', onKeyDown)
     return () => window.removeEventListener('keydown', onKeyDown)
-  }, [handleNext, handleRandom, handleShuffle, filteredProblems])
+  }, [filteredProblems])
 
   const onTagSelect = (tag) => {
     setSelectedTags((prev) => {
       const already = prev.includes(tag)
-      return already ? prev.filter((t) => t !== tag) : [...prev, tag]
+      return already ? (prev ?? []).filter((t) => t !== tag) : [...prev, tag]
     })
   }
 
   const toggleDifficulty = (difficulty) => {
     setSelectedDifficulties((prev) =>
-      prev.includes(difficulty) ? prev.filter((d) => d !== difficulty) : [...prev, difficulty]
+      prev.includes(difficulty)
+        ? (prev ?? []).filter((d) => d !== difficulty)
+        : [...prev, difficulty]
     )
   }
 
@@ -194,7 +198,7 @@ export default function DSA() {
   }
 
   const handleShuffle = useCallback(() => {
-    const shuffled = [...filteredProblems].sort(() => 0.5 - Math.random())
+    const shuffled = (filteredProblems ?? []).sort(() => 0.5 - Math.random())
     setFilteredProblems(shuffled)
   }, [filteredProblems])
 
@@ -204,7 +208,7 @@ export default function DSA() {
 
   const handleNext = useCallback(() => {
     setRandomlySelected((prev) => {
-      const problem = filteredProblems.find((p) => !prev.includes(p.lc.id))
+      const problem = (filteredProblems ?? []).find((p) => !prev.includes(p.lc.id))
 
       if (!problem) return prev
 
@@ -216,7 +220,7 @@ export default function DSA() {
 
   const handleRandom = useCallback(() => {
     setRandomlySelected((prev) => {
-      const unseen = filteredProblems.filter((p) => !prev.includes(p.lc.id))
+      const unseen = (filteredProblems ?? []).filter((p) => !prev.includes(p.lc.id))
 
       if (!unseen.length) return prev
 
@@ -237,7 +241,7 @@ export default function DSA() {
           </h1>
           <p className="text-lg leading-7 text-gray-500 dark:text-gray-400">{siteMetadata.dsa}</p>
           <div className="flex w-full flex-row flex-wrap ">
-            {orderedTags.map((tag) => (
+            {(orderedTags ?? []).map((tag) => (
               <div key={tag} className="space-x-6 space-y-2">
                 <button
                   type="button"
@@ -439,7 +443,7 @@ export default function DSA() {
       </div>
       <hr className="border-gray-600" />
       <div>
-        {filteredProblems.map((problem, i) => (
+        {(filteredProblems ?? []).map((problem, i) => (
           <div key={problem.lc.id}>
             <div className="flex items-start gap-2">
               <span className="w-12 text-right">{i + 1}. </span>
@@ -482,7 +486,7 @@ export default function DSA() {
           </button>
         </div>
         {focusedSolution &&
-          focusedSolution.solutions.map((solution, idx) => {
+          (focusedSolution.solutions ?? []).map((solution, idx) => {
             return <SolutionSnippet solution={solution} key={idx} />
           })}
       </div>

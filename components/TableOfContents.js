@@ -39,7 +39,7 @@ export default function TableOfContents({ toc = [] }) {
 
   return (
     <nav className="text-sm">
-      {toc.map((item) => (
+      {(toc??[]).map((item) => (
         <TOCItem key={item.url} item={item} activeId={activeId} />
       ))}
     </nav>

@@ -60,7 +60,7 @@ We'll use [Docker](https://www.docker.com/) to containerize them so we can deplo
       ```
     </div>
     <div id="#3" className="tabcontent">
-      ```conf
+      ```sh
       # ./db/config/postgresql.conf
 
       wal_level = replica
@@ -71,7 +71,7 @@ We'll use [Docker](https://www.docker.com/) to containerize them so we can deplo
       ```
     </div>
     <div id="#4" className="tabcontent">
-      ```conf
+      ```sh
       # ./db/config/pg_hba.conf
 
       local   all             all                                     trust
@@ -80,7 +80,7 @@ We'll use [Docker](https://www.docker.com/) to containerize them so we can deplo
       ```
     </div>
     <div id="#5" className="tabcontent">
-      ```conf
+      ```sh
       # ./db/replication.sql
 
       CREATE TABLE IF NOT EXISTS Wizards (

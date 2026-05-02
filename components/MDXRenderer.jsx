@@ -1,6 +1,7 @@
 import React, { useMemo } from 'react'
 import { getMDXComponent } from 'mdx-bundler/client'
 import { layouts } from '@/layouts'
+import { log } from '@/lib/debug/logger'
 
 export default function MDXRenderer({
   mdxSource,
@@ -11,10 +12,10 @@ export default function MDXRenderer({
 }) {
   const Component = useMemo(() => getMDXComponent(mdxSource), [mdxSource])
 
-  console.log('HAS TABGROUP IN MDX:', mdxSource.includes('TabGroup'))
-  console.log('HAS LOWERCASE:', mdxSource.includes('tabgroup'))
-  console.log('COMPONENTS KEYS:', Object.keys(components))
-  console.log('HAS TABGROUP:', !!components.TabGroup)
+  log.bundle('HAS TABGROUP IN MDX:', mdxSource.includes('TabGroup'))
+  log.bundle('HAS LOWERCASE:', mdxSource.includes('tabgroup'))
+  log.bundle('COMPONENTS KEYS:', Object.keys(components))
+  log.bundle('HAS TABGROUP:', !!components.TabGroup)
 
   const WrappedLayout = typeof Layout === 'string' ? layouts[Layout] : Layout
 

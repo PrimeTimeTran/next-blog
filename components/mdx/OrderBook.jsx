@@ -40,7 +40,7 @@ export default function OrderBook({
           </tr>
         </thead>
         <tbody>
-          {Array.from({ length: Math.max(bids.length, asks.length) }).map((_, idx) => (
+          {(Array.from({ length: Math.max(bids.length, asks.length) }) ?? []).map((_, idx) => (
             <tr key={idx}>
               <td>{bids[idx] ? bids[idx].amount : ''}</td>
               <td style={{ color: 'green' }}>{bids[idx] ? bids[idx].price : ''}</td>
