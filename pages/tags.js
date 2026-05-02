@@ -3,7 +3,7 @@ import Tag from '@/components/Tag'
 import Link from '@/components/Link'
 import { getAllTags } from '@/lib/tags'
 import { PageSEO } from '@/components/SEO'
-import kebabCase from '@/lib/utils/kebabab-case'
+import kebabCase from '@/lib/utils/kebab-case'
 import siteMetadata from '@/data/site-metadata'
 import SectionContainer from '@/components/SectionContainer'
 

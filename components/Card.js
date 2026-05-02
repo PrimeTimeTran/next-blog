@@ -1,6 +1,7 @@
 import Image from './mdx/Image'
 import Link from './Link'
 
+
 const Card = ({ title, description, imgSrc, href, tech }) => (
   <div className="md p-4 md:w-1/2" style={{ maxWidth: '544px' }}>
     <div

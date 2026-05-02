@@ -17,7 +17,7 @@ import ListLayout from '@/layouts/ListLayout'
 import BlogLayout from '@/layouts/BlogLayout'
 import AuthorLayout from '@/layouts/AuthorLayout'
 
-import { H1, H2, H3, H4, H5, H6 } from '@/lib/theme/theme'
+import { H1, H2, H3, H4, H5, H6 } from '@/lib/theme/theme.cjs'
 
 const layouts = {
   KBLayout,
@@ -33,6 +33,7 @@ export const baseComponents = {
   h5: H5,
   h6: H6,
   Image,
+  Embed,
   CallOut,
   Snippet,
   pre: Pre,
@@ -47,7 +48,7 @@ export const baseComponents = {
 export function createMDXComponents(registry = {}, embedded) {
   return {
     ...baseComponents,
-    Embed: (props) => <Embed {...props} registry={registry} depth={props.depth ?? 0} />,
+    // Embed: (props) => <Embed {...props} registry={registry} depth={props.depth ?? 0} />,
     wrapper: ({ layout, ...rest }) => {
       const Layout = layouts[layout] || KBLayout
       return <Layout {...rest} embedded={embedded} />
@@ -58,13 +59,17 @@ export function createMDXComponents(registry = {}, embedded) {
 export const MDXLayoutRenderer = ({ layout, mdxSource, registry, ...rest }) => {
   const components = useMemo(() => createMDXComponents(registry), [registry])
 
-  const MDXLayout = useMemo(() => {
+  const MDXContent = useMemo(() => {
     if (!mdxSource) return null
-
     return getMDXComponent(mdxSource)
-  }, [mdxSource, components])
+  }, [mdxSource])
 
-  if (!mdxSource || !MDXLayout) return null
+  if (!mdxSource || !MDXContent) return null
 
-  return <MDXLayout layout={layout} components={components} registry={registry} {...rest} />
+  return (
+    <MDXContent
+      components={components} // 👈 THIS is the missing link
+      {...rest}
+    />
+  )
 }

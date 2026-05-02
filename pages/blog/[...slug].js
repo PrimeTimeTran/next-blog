@@ -1,8 +1,6 @@
 import generateRss from '@/lib/generate-rss'
 
-import { MDXLayoutRenderer } from '@/components/MDXComponents'
-
-const DEFAULT_LAYOUT = 'BlogLayout'
+import MDXRenderer from '@/components/MDXRenderer'
 
 const sanitize = (post) => ({
   ...post,
@@ -56,14 +54,22 @@ export default function Blog({ post, authorDetails, prev, next }) {
   const { mdxSource, toc, frontMatter } = post
 
   return (
-    <MDXLayoutRenderer
+    <MDXRenderer
       toc={toc}
       prev={prev}
       next={next}
       mdxSource={mdxSource}
       frontMatter={frontMatter}
       authorDetails={authorDetails}
-      layout={frontMatter.layout || DEFAULT_LAYOUT}
+      layout={'BlogLayout'}
+      layoutProps={{
+        frontMatter,
+        toc,
+        prev,
+        next,
+        authorDetails,
+        post,
+      }}
     />
   )
 }

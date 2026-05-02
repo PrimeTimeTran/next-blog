@@ -1,6 +1,6 @@
 const defaultTheme = require('tailwindcss/defaultTheme')
 const colors = require('tailwindcss/colors')
-const { safeList } = require('./lib/theme/tailwing-class-generators')
+const { safeList } = require('./lib/theme/tailwind-class-generators.cjs')
 
 module.exports = {
   experimental: {
@@ -9,7 +9,17 @@ module.exports = {
 
   // Enables "embedded" components
   // components/mdx/Callout.jsx
-  safelist: [...safeList, 'w-full', 'rounded-lg', 'border-l-4', 'text-sm', 'leading-relaxed', 'prose', 'dark:prose-dark', 'bg-blue-500/20'],
+  safelist: [
+    ...safeList,
+    'w-full',
+    'rounded-lg',
+    'border-l-4',
+    'text-sm',
+    'leading-relaxed',
+    'prose',
+    'dark:prose-dark',
+    'bg-blue-500/20',
+  ],
   content: [
     './pages/**/*.js',
     './components/**/*.js',

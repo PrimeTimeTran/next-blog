@@ -1,5 +1,5 @@
 import { useScrollSpy } from '@/lib/hooks/useScrollSpy'
-import { getHeadingClass } from '@/lib/theme/theme'
+import { getHeadingClass } from '@/lib/theme/theme.cjs'
 
 function TOCItem({ item, activeId }) {
   const isActive = activeId === item.url

@@ -1,4 +1,4 @@
-import React, { useEffect, useState, useRef } from 'react'
+import React, { useEffect, useState, useRef, useCallback } from 'react'
 import siteMetadata from '@/data/site-metadata.js'
 import SectionContainer from '@/components/SectionContainer'
 import solutions from '../lib/dsa/problems/solutions.js'
@@ -151,7 +151,7 @@ export default function DSA() {
 
     window.addEventListener('keydown', onKeyDown)
     return () => window.removeEventListener('keydown', onKeyDown)
-  }, [filteredProblems])
+  }, [handleNext, handleRandom, handleShuffle, filteredProblems])
 
   const onTagSelect = (tag) => {
     setSelectedTags((prev) => {
@@ -193,16 +193,16 @@ export default function DSA() {
     return solutions.find((s) => s.id === problem.lc.id)
   }
 
-  const handleShuffle = () => {
+  const handleShuffle = useCallback(() => {
     const shuffled = [...filteredProblems].sort(() => 0.5 - Math.random())
     setFilteredProblems(shuffled)
-  }
+  }, [filteredProblems])
 
   const markAttempted = (problem) => {
     setRandomlySelected((prev) => (prev.includes(problem.lc.id) ? prev : [...prev, problem.lc.id]))
   }
 
-  const handleNext = () => {
+  const handleNext = useCallback(() => {
     setRandomlySelected((prev) => {
       const problem = filteredProblems.find((p) => !prev.includes(p.lc.id))
 
@@ -212,9 +212,9 @@ export default function DSA() {
 
       return [...prev, problem.lc.id]
     })
-  }
+  }, [filteredProblems])
 
-  const handleRandom = () => {
+  const handleRandom = useCallback(() => {
     setRandomlySelected((prev) => {
       const unseen = filteredProblems.filter((p) => !prev.includes(p.lc.id))
 
@@ -226,7 +226,7 @@ export default function DSA() {
 
       return [...prev, problem.lc.id]
     })
-  }
+  }, [filteredProblems])
 
   return (
     <SectionContainer>

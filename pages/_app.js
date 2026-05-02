@@ -34,10 +34,14 @@ const isSocket = process.env.SOCKET
 export default function App({ Component, pageProps }) {
   return (
     <ThemeProvider attribute="class" defaultTheme={siteMetadata.theme}>
+      <Head></Head>
       <Script
         strategy="lazyOnload"
         src={`https://www.googletagmanager.com/gtag/js?id=${process.env.NEXT_PUBLIC_GOOGLE_ANALYTICS}`}
       />
+      <LayoutWrapper>
+        <Component {...pageProps} />
+      </LayoutWrapper>
       <Script strategy="lazyOnload">
         {`
             window.dataLayer = window.dataLayer || [];
@@ -48,12 +52,17 @@ export default function App({ Component, pageProps }) {
             });
         `}
       </Script>
-      <Head></Head>
-      {isDevelopment && isSocket && <ClientReload />}
-      <Analytics />
-      <LayoutWrapper>
-        <Component {...pageProps} />
-      </LayoutWrapper>
     </ThemeProvider>
   )
 }
+
+// export default function App({ Component, pageProps }) {
+//   return (
+// <Script
+//   strategy="lazyOnload"
+//   src={`https://www.googletagmanager.com/gtag/js?id=${process.env.NEXT_PUBLIC_GOOGLE_ANALYTICS}`}
+// />
+//       {isDevelopment && isSocket && <ClientReload />}
+//       <Analytics />
+//   )
+// }

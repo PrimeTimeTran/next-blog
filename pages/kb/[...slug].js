@@ -1,7 +1,10 @@
 import { getKbTree } from '@/lib/content/core/kb'
-import { buildKbRegistry } from '@/lib/content/core/kb'
 import { getAllKbSlugs } from '@/lib/content/core/kb'
-import { MDXLayoutRenderer } from '@/components/MDXComponents'
+import { buildKbRegistry } from '@/lib/content/core/kb'
+
+import MDXRenderer from '@/components/MDXRenderer'
+import { baseComponents } from '@/mdx'
+import { layouts } from '@/layouts'
 
 export async function getStaticPaths() {
   const slugs = await getAllKbSlugs()
@@ -35,20 +38,21 @@ export async function getStaticProps(ctx) {
   }
 }
 
-export default function Page({ kbItem, registry, outline, ...rest }) {
+export default function Page({ kbItem, registry, outline }) {
   if (!kbItem) return null
 
-  const layout = kbItem?.frontMatter?.layout || 'KBLayout'
-
   return (
-    <MDXLayoutRenderer
-      layout={layout}
-      registry={registry}
+    <MDXRenderer
       mdxSource={kbItem.mdxSource}
-      sidebarData={outline}
-      toc={kbItem.toc}
-      {...kbItem.frontMatter}
-      {...rest}
+      components={baseComponents}
+      layout={'KBLayout'}
+      layoutProps={{
+        registry,
+        outline,
+        frontMatter: kbItem.frontMatter,
+        toc: kbItem.toc,
+        post: kbItem,
+      }}
     />
   )
 }

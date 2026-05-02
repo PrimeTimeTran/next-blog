@@ -3,7 +3,7 @@ import path from 'path'
 
 import { TagSEO } from '@/components/SEO'
 import generateRss from '@/lib/generate-rss'
-import kebabCase from '@/lib/utils/kebabab-case'
+import kebabCase from '@/lib/utils/kebab-case'
 import ListLayout from '@/layouts/ListLayout'
 import siteMetadata from '@/data/site-metadata'
 

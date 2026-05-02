@@ -7,7 +7,7 @@ import TableOfContents from '@/components/TableOfContents'
 const SCROLL_KEY = 'kb-sidebar-scroll'
 const STORAGE_KEY = 'kb-sidebar-open-map'
 
-export default function KBLayout({ toc, children, sidebarData, embedded = false }) {
+export default function KBLayout({ toc, children, embedded = false, outline }) {
   const router = useRouter()
   const [openMap, setOpenMap] = useState({})
   const [hydrated, setHydrated] = useState(false)
@@ -25,7 +25,6 @@ export default function KBLayout({ toc, children, sidebarData, embedded = false 
     })
   }, [router.asPath])
 
-  // persist scroll
   useEffect(() => {
     const el = scrollRef.current
     if (!el) return
@@ -76,7 +75,7 @@ export default function KBLayout({ toc, children, sidebarData, embedded = false 
             <div className="sticky top-0 h-screen overflow-y-auto border-r border-zinc-200">
               {hydrated && (
                 <div className="animate-in fade-in duration-200">
-                  <KBSidebar node={sidebarData} openMap={openMap} setOpenMap={setOpenMap} />
+                  <KBSidebar node={outline} openMap={openMap} setOpenMap={setOpenMap} />
                 </div>
               )}
             </div>

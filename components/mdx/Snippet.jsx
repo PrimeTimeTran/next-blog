@@ -1,6 +1,4 @@
 import React from 'react'
-import { Prism as SyntaxHighlighter } from 'react-syntax-highlighter'
-import { oneDark } from 'react-syntax-highlighter/dist/cjs/styles/prism'
 
 export default function Snippet({
   fileName = '',
@@ -19,14 +17,7 @@ export default function Snippet({
         {fileName && (
           <div style={{ fontSize: '0.9em', marginBottom: '0.5em', color: '#888' }}>{fileName}</div>
         )}
-        <SyntaxHighlighter
-          wrapLongLines
-          style={oneDark}
-          language={language}
-          showLineNumbers={showLineNumbers}
-        >
-          {code}
-        </SyntaxHighlighter>
+        <pre>{code}</pre>
       </div>
     </div>
   )
