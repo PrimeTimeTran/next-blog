@@ -69,14 +69,14 @@ export function Pre(props) {
     .join('')
 
   return (
-    <div className="not-prose overflow-hidden bg-[#0d1117] text-slate-200">
+    <div className="not-prose overflow-hidden bg-slate-50 dark:bg-[#0d1117] text-slate-200">
       {title && (
-        <div className="border-b border-slate-700 bg-slate-800/50 px-4 py-2 font-mono text-xs text-slate-400">
+        <div className="px-4 py-2 font-mono text-xs text-slate-400 border-l-2 border-blue-500 bg-blue-500/10">
           {title}
         </div>
       )}
 
-      <pre className="!m-0 overflow-x-auto bg-slate-100 py-2 font-mono text-sm leading-relaxed dark:bg-slate-950">
+      <pre className="m-0! overflow-x-auto bg-slate-100 py-2 font-mono text-sm leading-relaxed dark:bg-slate-950">
         <code className="block min-w-full" dangerouslySetInnerHTML={{ __html: transformedHtml }} />
       </pre>
     </div>
@@ -91,10 +91,11 @@ export function TabGroup({ tabs }) {
   if (!parsed?.length) return null
 
   return (
-    <div className="my-6 overflow-hidden rounded-xl border border-slate-200 bg-[#0d1117] dark:border-slate-800">
+    // <div className="my-6 overflow-hidden border border-slate-200 bg-[#0d1117] dark:border-slate-800">
+    <div className="not-prose overflow-hidden bg-slate-50 dark:bg-[#0d1117] text-slate-200">
       {/* Header (distinct surface) */}
-      <div className="border-b border-slate-200 bg-slate-900/50 p-2 dark:border-slate-800">
-        <div className="flex gap-1 overflow-x-auto">
+      <div className="px-4 py-2 font-mono text-xs text-slate-400 border-l-2 border-blue-500 bg-blue-500/10">
+        <div className="flex gap-1">
           {(parsed ?? []).map((tab, i) => {
             const isActive = i === active
 
@@ -105,7 +106,7 @@ export function TabGroup({ tabs }) {
                 className={[
                   'relative rounded-md px-3 py-1.5 text-sm font-medium transition',
                   isActive
-                    ? 'bg-slate-300 text-slate-100 shadow-sm dark:bg-slate-800'
+                    ? 'bg-slate-300 shadow-sm dark:bg-slate-800 text-zinc-500 dark:text-zinc-100'
                     : 'text-slate-400 hover:bg-slate-800/30 hover:text-slate-200',
                 ].join(' ')}
               >

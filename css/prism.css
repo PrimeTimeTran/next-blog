@@ -1,10 +1,11 @@
 /**
- * CSS Styles for code highlighting.
- * Feel free to customize token styles 
- * by copying from a prismjs compatible theme:
- * https://github.com/PrismJS/prism-themes
- */
+* CSS Styles for code highlighting.
+* Feel free to customize token styles 
+* by copying from a prismjs compatible theme:
+* https://github.com/PrismJS/prism-themes
+*/
 
+@reference "tailwindcss";
 html.light pre code {
   color: #1f2937;
 }
@@ -23,7 +24,7 @@ html.light .token.string {
 
 /* Code title styles */
 .remark-code-title {
-  @apply rounded-t bg-gray-700 px-5 py-3 font-mono text-sm font-bold text-gray-200;
+  @apply rounded-t-md bg-gray-700 px-5 py-3 font-mono text-sm font-bold text-gray-200;
 }
 
 .remark-code-title + div > pre {
@@ -40,15 +41,15 @@ html.light .token.string {
 }
 
 .code-line.inserted {
-  @apply bg-green-500 bg-opacity-20;
+  @apply bg-green-500 bg-black/20;
 }
 
 .code-line.deleted {
-  @apply bg-red-500 bg-opacity-20;
+  @apply bg-red-500 bg-black/20;
 }
 
 .highlight-line {
-  @apply -mx-4 border-l-4 border-primary-500 bg-gray-700 bg-opacity-50;
+  @apply -mx-4 border-l-4 bg-gray-700 bg-black/50;
 }
 
 .line-number::before {
@@ -56,14 +57,6 @@ html.light .token.string {
   content: attr(line);
 }
 
-/* Token styles */
-/**
- * MIT License
- * Copyright (c) 2018 Sarah Drasner
- * Sarah Drasner's[@sdras] Night Owl
- * Ported by Sara vieria [@SaraVieira]
- * Added by Souvik Mandal [@SimpleIndian]
- */
 .token.comment,
 .token.prolog,
 .token.cdata {

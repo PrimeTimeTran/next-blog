@@ -37,10 +37,10 @@ const LayoutWrapper = ({ children }) => {
                   <Link
                     key={link.title}
                     href={link.href}
-                    className={`p-4 font-medium ${
+                    className={`p-4 font-medium transition-colors ${
                       isActive
-                        ? 'text-blue-800 dark:text-blue-400'
-                        : 'text-gray-700 hover:text-blue-500 dark:text-gray-300'
+                        ? 'text-primary-600 dark:text-primary-400'
+                        : 'text-zinc-600 hover:text-primary-500 dark:text-zinc-300 dark:hover:text-primary-400'
                     }`}
                   >
                     {link.title}

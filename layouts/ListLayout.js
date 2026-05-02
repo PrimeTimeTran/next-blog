@@ -49,7 +49,7 @@ export default function ListLayout({
     <>
       <div className="divide-y divide-gray-200 dark:divide-gray-700">
         <div className="space-y-2 pb-8 pt-6 md:space-y-5">
-          <h1 className="text-2xl font-extrabold tracking-tight text-gray-900 dark:text-gray-100 sm:text-4xl">
+          <h1 className="text-2xl font-extrabold tracking-tight text-primary-400 sm:text-4xl">
             {title}
           </h1>
 

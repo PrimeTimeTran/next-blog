@@ -27,11 +27,17 @@ import siteMetadata from '@/data/site-metadata'
 import Analytics from '@/components/analytics'
 import LayoutWrapper from '@/components/LayoutWrapper'
 import { ClientReload } from '@/components/ClientReload'
+import PreviewTailwind from './PreviewTailwind'
+import PreviewDesignSystem from './PreviewDesignSystem'
 
 const isDevelopment = process.env.NODE_ENV === 'development'
 const isSocket = process.env.SOCKET
 
 export default function App({ Component, pageProps }) {
+  // 💡 IDEA: Debug styling/tailwind easier
+  // return <div className="text-primary-400 font-bold">PRIMARY TEST</div>
+  // return <PreviewTailwind />
+  // return <PreviewDesignSystem />
   return (
     <ThemeProvider attribute="class" defaultTheme={siteMetadata.theme}>
       <Head></Head>
@@ -58,10 +64,6 @@ export default function App({ Component, pageProps }) {
 
 // export default function App({ Component, pageProps }) {
 //   return (
-// <Script
-//   strategy="lazyOnload"
-//   src={`https://www.googletagmanager.com/gtag/js?id=${process.env.NEXT_PUBLIC_GOOGLE_ANALYTICS}`}
-// />
 //       {isDevelopment && isSocket && <ClientReload />}
 //       <Analytics />
 //   )

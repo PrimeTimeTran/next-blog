@@ -17,7 +17,11 @@ export default [
     languageOptions: {
       ecmaVersion: 'latest',
       sourceType: 'module',
-
+      parserOptions: {
+        ecmaFeatures: {
+          jsx: true,
+        },
+      },
       globals: {
         ...globals.browser,
       },
@@ -34,7 +38,7 @@ export default [
       'no-unused-vars': 'warn',
       'react/react-in-jsx-scope': 'off',
       'react/no-unescaped-entities': 'off',
-
+      'react/prop-types': 'warn',
       // ❌ REMOVE THIS
       // 'no-undef': 'off',
     },

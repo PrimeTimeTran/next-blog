@@ -1,13 +1,26 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
+/* Tailwind V4 syntax */
+@import 'tailwindcss';
 
-.prose {
-  /* color: white !important; */
+/* Configure using Tai */
+@config "../tailwind.config.cjs";
+
+@import './prism.css';
+
+/* =========================================================
+   GLOBAL BASE OVERRIDES
+========================================================= */
+
+*,
+html {
+  -webkit-print-color-adjust: exact;
+  print-color-adjust: exact;
 }
 
+/* =========================================================
+   TYPOGRAPHY / PROSE (MDX / content rendering)
+========================================================= */
+
 .prose blockquote {
-  /* color: white; */
   border-color: #ccc;
   background-color: #ddd;
 }
@@ -22,13 +35,21 @@
   background-color: #262626;
 }
 
-.task-list-item::before {
-  @apply hidden;
-}
+/* =========================================================
+   TASK LISTS (MDX / Markdown enhancements)
+========================================================= */
 
 .task-list-item {
   @apply list-none;
 }
+
+.task-list-item::before {
+  @apply hidden;
+}
+
+/* =========================================================
+   FOOTNOTES / CITATIONS
+========================================================= */
 
 .footnotes {
   @apply mt-12 border-t border-gray-200 pt-8 dark:border-gray-700;
@@ -38,12 +59,20 @@
   @apply my-5;
 }
 
+/* =========================================================
+   FORMS / INPUT BEHAVIOR FIXES
+========================================================= */
+
 input:-webkit-autofill,
 input:-webkit-autofill:focus {
   transition:
     background-color 600000s 0s,
     color 600000s 0s;
 }
+
+/* =========================================================
+   TABS SYSTEM (MDX UI COMPONENTS)
+========================================================= */
 
 .tab {
   overflow: hidden;
@@ -89,15 +118,24 @@ input:-webkit-autofill:focus {
 .tab-group > .tabcontent {
   display: block;
 }
+
 .tab-group > .tabcontent ~ .tabcontent {
   display: none;
 }
+
+/* =========================================================
+   TABLES
+========================================================= */
 
 table {
   display: block;
   overflow-x: auto;
   white-space: nowrap;
 }
+
+/* =========================================================
+   SIDEBAR BEHAVIOR
+========================================================= */
 
 .sidebar-collapsed {
   width: 0 !important;
@@ -108,14 +146,23 @@ table {
   transition: width 0.3s ease;
 }
 
+/* =========================================================
+   KB / EMBED SYSTEM
+========================================================= */
+
 .kb-embed {
   font-size: 0.8rem;
   line-height: 1.4;
 }
 
+/* =========================================================
+   CODE / PRISM / LINE HIGHLIGHTING
+========================================================= */
+
 .line-numbers-rows {
-  z-index: 0; /* Keep numbers behind the highlight if necessary */
+  z-index: 0;
 }
+
 .line-container {
   position: relative;
   z-index: 1;

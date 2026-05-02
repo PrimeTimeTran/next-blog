@@ -91,7 +91,7 @@ export default function KBLayout({ toc, children, embedded = false, outline }) {
 
         {/* RIGHT TOC */}
         {!embedded && (
-          <aside className="hidden min-w-0 border-l border-zinc-200 xl:col-span-3 xl:block">
+          <aside className="hidden min-w-0 border-l border-zinc-200 text-zinc-900 dark:border-zinc-800 dark:text-zinc-100 xl:col-span-3 xl:block">
             <div className="sticky top-0 h-screen w-full overflow-y-auto overflow-x-hidden px-4 py-4">
               <TableOfContents toc={toc ?? []} />
             </div>
