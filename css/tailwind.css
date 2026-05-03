@@ -28,6 +28,9 @@ strong {
    TYPOGRAPHY / PROSE (MDX / content rendering)
 ========================================================= */
 
+.prose {
+  @apply border-slate-200 dark:border-slate-800;
+}
 .prose code:not(pre code) {
   @apply dark:bg-zinc-800;
 }

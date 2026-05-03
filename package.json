@@ -6,13 +6,15 @@
   "scripts": {
     "start": "cross-env SOCKET=true node ./scripts/next-remote-watch.js ./data",
     "dev": "next dev",
-    "build": "next build && node ./scripts/generate-sitemap.cjs",
+    "dev2": "concurrently \"node scripts/watch-terms.js\" \"next dev\"",
+    "build": "node scripts/build-terms.js && next build && node ./scripts/generate-sitemap.cjs",
     "serve": "next start",
     "analyze": "cross-env ANALYZE=true next build",
     "lint": "eslint . --ext .js,.jsx,.ts,.tsx",
     "prepare": "husky install",
     "lint:fix": "eslint . --fix",
-    "lint:strict": "eslint . --max-warnings=0"
+    "lint:strict": "eslint . --max-warnings=0",
+    "build:terms": "node scripts/build-terms.js"
   },
   "dependencies": {
     "@fontsource/inter": "4.5.2",
@@ -23,6 +25,8 @@
     "@tailwindcss/typography": "^0.5.0",
     "builtin-modules": "^5.1.0",
     "chalk": "^5.6.2",
+    "chokidar": "^5.0.0",
+    "concurrently": "^9.2.1",
     "esbuild": "^0.19.12",
     "eslint-plugin-tailwindcss": "^3.18.3",
     "framer-motion": "^12.38.0",
@@ -83,7 +87,8 @@
     "prettier-plugin-tailwindcss": "^0.8.0",
     "socket.io": "^4.4.0",
     "socket.io-client": "^4.4.0",
-    "tailwindcss": "^4.2.4"
+    "tailwindcss": "^4.2.4",
+    "tsconfig-paths": "^4.2.0"
   },
   "lint-staged": {
     "*.+(js|jsx|ts|tsx)": [

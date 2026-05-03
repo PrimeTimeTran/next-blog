@@ -1,4 +1,5 @@
-import { useRouter } from 'next/router'
+'use client'
+import { useRouter } from 'next/navigation'
 
 import Logo from '@/data/logo.svg'
 import { Link } from '@/components/mdx'

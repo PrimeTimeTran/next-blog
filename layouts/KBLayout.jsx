@@ -75,7 +75,7 @@ export default function KBLayout({ toc, children, embedded = false, outline }) {
       <div className="grid w-full grid-cols-1 lg:grid-cols-12">
         {/* LEFT SIDEBAR */}
         <aside className="col-span-2 hidden min-w-0 lg:block">
-          <div className="sticky top-0 h-screen overflow-y-auto border-r border-zinc-200">
+          <div className="sticky top-0 h-screen overflow-y-auto border-r dark:border-slate-800 border-zinc-200">
             {hydrated && (
               <div className="animate-in fade-in duration-200">
                 <KBSidebar node={outline} openMap={openMap} setOpenMap={setOpenMap} />

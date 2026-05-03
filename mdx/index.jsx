@@ -8,6 +8,7 @@ import { Pre, TabGroup } from '@/components/mdx/Code'
 import { TOCInline } from '@/components/mdx/TOCInline'
 import { OrderBook } from '@/components/mdx/OrderBook'
 import { CustomLink as Link } from '@/components/mdx/Link'
+import { Term } from '@/components/mdx/Term'
 
 import { BlogNewsletterForm } from '@/components/NewsletterForm'
 import { H1, H2, H3, H4, H5, H6 } from '@/components/HeadingComponents'
@@ -21,6 +22,7 @@ export const baseComponents = {
   h6: H6,
   Image,
   Embed,
+  Term,
   CallOut,
   Snippet,
   pre: Pre,

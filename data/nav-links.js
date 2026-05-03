@@ -1,8 +1,8 @@
-import { GiGiftOfKnowledge } from 'react-icons/gi'
-import { GoProjectSymlink } from 'react-icons/go'
-import { SiThealgorithms } from 'react-icons/si'
 import { TiTags } from 'react-icons/ti'
 import { RiBloggerLine } from 'react-icons/ri'
+import { SiThealgorithms } from 'react-icons/si'
+import { GoProjectSymlink } from 'react-icons/go'
+import { GiGiftOfKnowledge } from 'react-icons/gi'
 import { SiLibreofficewriter } from 'react-icons/si'
 
 const headerNavLinks = [

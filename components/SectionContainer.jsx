@@ -1,8 +1,9 @@
-import { useRouter } from 'next/router'
+'use client'
+import { usePathname } from 'next/navigation'
 
 export default function SectionContainer({ isSnippets = false, children }) {
-  const router = useRouter()
-  const path = router.asPath.split(/[?#]/)[0]
+  const pathname = usePathname()
+  const path = pathname.split(/[?#]/)[0]
   const isBlog = path === '/blog' || (path.startsWith('/blog/') && !path.startsWith('/blog/page/'))
   const isKB = path === '/kb' || (path.startsWith('/kb/') && !path.startsWith('/kb/page/'))
   return (
