@@ -1,6 +1,6 @@
 import React from 'react'
 import Tag from '@/components/Tag'
-import Link from '@/components/Link'
+import { Link } from '@/components/mdx'
 import { getAllTags } from '@/lib/tags'
 import { PageSEO } from '@/components/SEO'
 import kebabCase from '@/lib/utils/kebab-case'

@@ -1,5 +1,5 @@
 const headerNavLinks = [
-  { href: '/kb', title: 'Knowledge Base' },
+  { href: '/kb/tool/obsidian/preview/theme1', title: 'Knowledge Base' },
   { href: '/', title: 'Blog' },
   { href: '/tags', title: 'Tags' },
   { href: '/dsa', title: 'DSA' },

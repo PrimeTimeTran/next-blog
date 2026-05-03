@@ -6,7 +6,7 @@ summary: 'Condors: Balancing Risk and Reward in Options Trading. Learn how condo
 tags: ['finance', 'options', 'investment strategies', 'condor']
 ---
 
-import ProjectionChart from 'components/mdx/ProjectionChart'
+import { ProjectionChart } from 'components/mdx/ProjectionChart'
 
 # Introduction
 

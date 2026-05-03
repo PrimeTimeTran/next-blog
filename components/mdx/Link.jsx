@@ -1,6 +1,6 @@
 import Link from 'next/link'
 
-export default function CustomLink({ href = '', children, ...props }) {
+export function CustomLink({ href = '', children, ...props }) {
   const isExternal = href.startsWith('http')
 
   if (isExternal) {

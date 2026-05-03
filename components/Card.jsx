@@ -1,5 +1,5 @@
-import Image from './mdx/Image'
-import Link from './Link'
+import { Image } from '@/components/mdx'
+import { Link } from '@/components/mdx'
 
 const Card = ({ title, description, imgSrc, href, tech }) => (
   <div className="md p-4 md:w-1/2" style={{ maxWidth: '544px' }}>

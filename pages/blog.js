@@ -9,8 +9,8 @@ import { log } from '@/lib/debug/logger'
 
 export async function getStaticProps() {
   log.bundle('1. Get all Blog Posts from during build')
-  const { getAllBlogPosts } = await import('@/lib/content/server')
-  const posts = getAllBlogPosts()
+  const { getAllBlogPosts } = await import('@/lib/content/server/blog.server')
+  const posts = await getAllBlogPosts()
   log.bundle('4. Blog posts land in client: ', posts)
   const initialDisplayPosts = posts.slice(0, POSTS_PER_PAGE)
   const pagination = {

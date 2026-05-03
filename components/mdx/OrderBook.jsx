@@ -1,6 +1,6 @@
 import React from 'react'
 
-export default function OrderBook({
+export function OrderBook({
   symbol = 'TSLA',
   bids = [
     { price: 250.1, amount: 50 },

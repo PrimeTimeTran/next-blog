@@ -1,5 +1,6 @@
 import React, { useMemo } from 'react'
 import { getMDXComponent } from 'mdx-bundler/client'
+
 import { layouts } from '@/layouts'
 import { log } from '@/lib/debug/logger'
 import { RegistryContext } from '@/lib/hooks/useRegistry'

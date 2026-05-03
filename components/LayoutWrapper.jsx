@@ -1,4 +1,4 @@
-import Link from './Link'
+import { Link } from '@/components/mdx'
 import Footer from './Footer'
 import Logo from '@/data/logo.svg'
 import MobileNav from './MobileNav'

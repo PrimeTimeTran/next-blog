@@ -1,7 +1,7 @@
 import { useEffect, useState } from 'react'
 import { useTheme } from 'next-themes'
 
-import { logEvent } from '../components/analytics/GoogleAnalytics'
+import { logEvent } from './analytics/GoogleAnalytics'
 
 const ThemeSwitch = () => {
   const [mounted, setMounted] = useState(false)

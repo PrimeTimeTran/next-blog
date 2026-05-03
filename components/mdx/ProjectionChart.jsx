@@ -1,6 +1,6 @@
 import { useMemo } from 'react'
 
-export default function ProjectionChart({ text, base = 10, growth = 1.15, points = 6 }) {
+export function ProjectionChart({ text, base = 10, growth = 1.15, points = 6 }) {
   const data = useMemo(() => {
     return Array.from({ length: points }, (_, i) => {
       return Math.round(base * Math.pow(growth, i))

@@ -1,6 +1,9 @@
-import generateRss from '@/lib/generate-rss'
+// import generateRss from '@/lib/generate-rss'
 
-import MDXRenderer from '@/components/MDXRenderer'
+import MDXRenderer from '@/mdx/Renderer'
+import { getAllBlogPosts } from '@/lib/content/server/blog.server'
+import { getContentBySlug } from '@/lib/content/core/get-content-by-slug'
+
 import { baseComponents } from '@/mdx'
 import { log } from '@/lib/debug/logger'
 
@@ -11,48 +14,54 @@ const sanitize = (post) => ({
     date: post.frontMatter?.date ? new Date(post.frontMatter.date).toISOString() : null,
   },
 })
+
+const SKIP_STATIC_PATHS = false
+const SKIP_STATIC_PROPS = false
+
 export async function getStaticPaths() {
-  const { getAllBlogPosts } = await import('@/lib/content/server')
-
-  const posts = await getAllBlogPosts()
-
-  return {
-    paths: ((posts ?? []).filter((p) => !p.draft) ?? []).map((p) => ({
-      params: {
-        slug: p.slug.split('/'),
-      },
-    })),
-    fallback: false,
+  if (SKIP_STATIC_PATHS) {
+    return { paths: [], fallback: false }
+  } else {
+    const posts = await getAllBlogPosts()
+    return {
+      paths: ((posts ?? []).filter((p) => !p.draft) ?? []).map((p) => ({
+        params: {
+          slug: p.slug.split('/'),
+        },
+      })),
+      fallback: false,
+    }
   }
 }
 
 export async function getStaticProps({ params }) {
-  const { getContentBySlug } = await import('@/lib/content/core/get-content-by-slug')
-  const { getAllBlogPosts } = await import('@/lib/content/server')
-  const slug = Array.isArray(params.slug) ? params.slug.join('/') : params.slug
-  log.bundle('5. Loading individual blog post from slug: ', slug)
-  const post = await getContentBySlug('blog', slug)
+  if (SKIP_STATIC_PROPS) {
+    return {}
+  } else {
+    const slug = Array.isArray(params.slug) ? params.slug.join('/') : params.slug
+    log.bundle('5. Loading individual blog post from slug: ', slug)
+    const post = await getContentBySlug('blog', slug)
 
-  if (!post) return { notFound: true }
+    if (!post) return { notFound: true }
 
-  const posts = getAllBlogPosts()
-  const index = posts.findIndex((p) => p.slug === slug)
-  const prev = posts[index + 1] || null
-  const next = posts[index - 1] || null
+    const posts = await getAllBlogPosts()
+    const index = posts.findIndex((p) => p.slug === slug)
+    const prev = posts[index + 1] || null
+    const next = posts[index - 1] || null
 
-  return {
-    props: {
-      post: sanitize(post),
-      prev: prev ? sanitize(prev) : null,
-      next: next ? sanitize(next) : null,
-      authorDetails: [await getContentBySlug('authors', 'default')],
-    },
+    return {
+      props: {
+        post: sanitize(post),
+        prev: prev ? sanitize(prev) : null,
+        next: next ? sanitize(next) : null,
+        authorDetails: [await getContentBySlug('authors', 'default')],
+      },
+    }
   }
 }
 
 export default function Blog({ post, authorDetails, prev, next }) {
   const { mdxSource, toc, frontMatter } = post
-
   return (
     <MDXRenderer
       toc={toc}
@@ -74,3 +83,7 @@ export default function Blog({ post, authorDetails, prev, next }) {
     />
   )
 }
+
+// export default function Page() {
+//   return <div>hi</div>
+// }

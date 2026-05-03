@@ -1,11 +1,9 @@
-import { getKbTree } from '@/lib/content/core/kb'
-import { getAllKbSlugs } from '@/lib/content/core/kb'
-import { buildKbRegistry } from '@/lib/content/core/kb'
-
-import MDXRenderer from '@/components/MDXRenderer'
+import MDXRenderer from '@/mdx/Renderer'
 import { baseComponents } from '@/mdx'
 
 export async function getStaticPaths() {
+  const { getAllKbSlugs } = await import('@/lib/content/core/kb')
+
   const slugs = await getAllKbSlugs()
 
   return {
@@ -19,13 +17,14 @@ export async function getStaticPaths() {
 }
 
 export async function getStaticProps(ctx) {
+  const { buildKbRegistry, getKbTree } = await import('@/lib/content/server/kb.server')
   const { getContentBySlug } = await import('@/lib/content/core/get-content-by-slug')
 
   const kbItem = await getContentBySlug('kb', ctx.params.slug)
 
   if (!kbItem) return { notFound: true }
 
-  const outline = getKbTree()
+  const outline = await getKbTree()
   const registry = await buildKbRegistry()
 
   return {
@@ -58,3 +57,7 @@ export default function Page({ kbItem, registry, outline }) {
     />
   )
 }
+
+// export default function Page() {
+//   return <div>hi</div>
+// }

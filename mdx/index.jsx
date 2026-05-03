@@ -1,16 +1,15 @@
 import { layouts } from '@/layouts'
 
-import CustomLink from '@/components/Link'
-import Image from '@/components/mdx/Image'
+import { Image } from '@/components/mdx/Image'
 import { Embed } from '@/components/mdx/Embed'
-import Snippet from '@/components/mdx/Snippet'
 import { CallOut } from '@/components/mdx/CallOut'
-import TOCInline from '@/components/mdx/TOCInline'
+import { Snippet } from '@/components/mdx/Snippet'
 import { Pre, TabGroup } from '@/components/mdx/Code'
+import { TOCInline } from '@/components/mdx/TOCInline'
+import { OrderBook } from '@/components/mdx/OrderBook'
+import { CustomLink as Link } from '@/components/mdx/Link'
 
-import OrderBook from '@/components/mdx/OrderBook'
 import { BlogNewsletterForm } from '@/components/NewsletterForm'
-
 import { H1, H2, H3, H4, H5, H6 } from '@/components/HeadingComponents'
 
 export const baseComponents = {
@@ -26,7 +25,7 @@ export const baseComponents = {
   Snippet,
   pre: Pre,
   TOCInline,
-  a: CustomLink,
+  a: Link,
   OrderBook,
   tabGroup: TabGroup,
   TabGroup: TabGroup,

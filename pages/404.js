@@ -1,4 +1,4 @@
-import Link from '@/components/Link'
+import { Link } from '@/components/mdx'
 import { PageSEO } from '@/components/SEO'
 import siteMetadata from '@/data/site-metadata'
 

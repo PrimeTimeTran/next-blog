@@ -1,13 +1,13 @@
 import Tag from '@/components/Tag'
-import Link from '@/components/Link'
-import Image from '@/components/mdx/Image'
+import { Link } from '@/components/mdx'
+import { Image } from '@/components/mdx'
 import PageTitle from '@/components/PageTitle'
 
 import { discussUrl, editUrl } from '@/lib/utils'
 
 export function BlogHeader({ title, date, shrunk }) {
   return (
-    <header className="sticky top-0 z-10 border-b border-slate-200 bg-white p-2 transition-all duration-300 dark:border-slate-800 dark:bg-gray-900">
+    <header className="sticky top-0 z-10 border-b border-slate-200 p-2 transition-all duration-300 dark:border-slate-800">
       <PageTitle
         style={{ color: '#E6DB74' }}
         className={[

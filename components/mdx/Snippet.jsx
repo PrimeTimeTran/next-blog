@@ -1,11 +1,6 @@
 import React from 'react'
 
-export default function Snippet({
-  fileName = '',
-  code = '',
-  language = 'python',
-  showLineNumbers = true,
-}) {
+export function Snippet({ fileName = '', code = '', language = 'python', showLineNumbers = true }) {
   return (
     <div className="tab-group">
       <div className="tab">

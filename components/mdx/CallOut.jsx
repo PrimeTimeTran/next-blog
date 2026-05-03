@@ -5,7 +5,7 @@ import { MdOutlineTipsAndUpdates } from 'react-icons/md'
 
 import { callOutTheme } from '@/lib/theme/theme.cjs'
 
-// Reference: Icons
+// 💡 Reference: Icons
 // https://react-icons.github.io/react-icons/icons/ai/
 import {
   FiCode,

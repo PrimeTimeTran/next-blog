@@ -1,6 +1,6 @@
 // import { MDXLayoutRenderer } from '@/components/MDXComponents'
 import { getContentBySlug } from '@/lib/content/core/get-content-by-slug'
-import MDXRenderer from '@/components/MDXRenderer'
+import MDXRenderer from '@/mdx/Renderer'
 
 export async function getStaticProps() {
   const authorDetails = await getContentBySlug('authors', 'default')

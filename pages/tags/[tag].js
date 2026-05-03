@@ -24,7 +24,7 @@ export async function getStaticPaths() {
 }
 
 export async function getStaticProps({ params }) {
-  const { getAllBlogPosts } = await import('@/lib/content/server')
+  const { getAllBlogPosts } = await import('@/lib/content/server/blog.server')
   const allPosts = await getAllBlogPosts('blog')
   const filteredPosts = (allPosts ?? [])?.filter((post) => {
     if (post.draft) return false
@@ -35,9 +35,11 @@ export async function getStaticProps({ params }) {
 
   // rss
   if (filteredPosts.length > 0) {
-    const rss = generateRss(filteredPosts, `tags/${params.tag}/feed.xml`)
+    const rss = await generateRss(filteredPosts, `tags/${params.tag}/feed.xml`)
+
     const rssPath = path.join(root, 'public', 'tags', params.tag)
     fs.mkdirSync(rssPath, { recursive: true })
+
     fs.writeFileSync(path.join(rssPath, 'feed.xml'), rss)
   }
 

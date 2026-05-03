@@ -1,6 +1,6 @@
 import { useState, useMemo } from 'react'
 
-import Link from '@/components/Link'
+import { Link } from '@/components/mdx'
 import { PageSEO } from '@/components/SEO'
 import ListLayout from '@/layouts/ListLayout'
 import siteMetadata from '@/data/site-metadata'
@@ -10,8 +10,8 @@ import SectionContainer from '@/components/SectionContainer'
 import { TOPICS, MAX_DISPLAY } from '@/data/constants'
 
 export async function getStaticProps() {
-  const { getAllBlogPosts } = await import('@/lib/content/server')
-  const posts = getAllBlogPosts()
+  const { getAllBlogPosts } = await import('@/lib/content/server/blog.server')
+  const posts = await getAllBlogPosts()
 
   return {
     props: {
