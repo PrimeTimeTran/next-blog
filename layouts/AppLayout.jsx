@@ -18,7 +18,7 @@ const AppLayout = ({ children }) => {
 
   return (
     <div className="flex min-h-screen flex-col">
-      <header className="flex shrink-0 items-center justify-between p-4 sm:px-6">
+      <header className="flex shrink-0 items-center justify-between sm:px-6 sticky top-0 border-b border-slate-200 dark:border-slate-800 bg-white dark:bg-black z-100">
         <Link href="/" aria-label={siteMetadata.headerTitle}>
           <div className="flex items-center">
             <Logo />

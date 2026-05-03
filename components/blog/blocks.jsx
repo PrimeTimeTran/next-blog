@@ -7,9 +7,8 @@ import { discussUrl, editUrl } from '@/lib/utils'
 
 export function BlogHeader({ title, date, shrunk }) {
   return (
-    <header className="sticky top-0 z-10 border-b border-slate-200 dark:border-slate-800 bg-white/90 dark:bg-black/60 backdrop-blur transition-all duration-300 p-2">
+    <header className="sticky top-13   z-10 border-b border-slate-200 dark:border-slate-800 bg-white/90 dark:bg-black/60 backdrop-blur transition-all duration-300 p-2">
       <PageTitle
-        style={{ color: '#E6DB74' }}
         className={[
           'transition-[font-size,line-height,opacity,transform] duration-300 ease-in-out',
           'text-primary-400 dark:text-primary-600',
