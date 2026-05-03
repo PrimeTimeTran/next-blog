@@ -1,6 +1,7 @@
 // import { MDXLayoutRenderer } from '@/components/MDXComponents'
 import { getContentBySlug } from '@/lib/content/core/get-content-by-slug'
 import MDXRenderer from '@/mdx/Renderer'
+import { createMDXComponents } from '@/mdx'
 
 export async function getStaticProps() {
   const authorDetails = await getContentBySlug('authors', 'default')
@@ -21,6 +22,8 @@ export default function About({ authorDetails }) {
   return (
     <MDXRenderer
       layout={'AuthorLayout'}
+      // baseComponents={baseComponents}
+      components={createMDXComponents({}, false)}
       mdxSource={authorDetails.mdxSource}
       frontMatter={authorDetails.frontMatter}
     />

@@ -1,3 +1,4 @@
+import Link from 'next/link'
 import { TiTags } from 'react-icons/ti'
 import { RiBloggerLine } from 'react-icons/ri'
 import { SiThealgorithms } from 'react-icons/si'
@@ -8,8 +9,9 @@ import { SiLibreofficewriter } from 'react-icons/si'
 import { terms } from '@/data/generated/terms'
 import { termBacklinks } from '@/data/generated/backlinks'
 
-export default function TermPage({ params }) {
-  const slug = Array.isArray(params.slug) ? params.slug[0] : params.slug
+export default async function TermPage({ params }) {
+  let { slug } = await params
+  slug = Array.isArray(slug) ? slug[0] : slug
   const key = slug.toLowerCase()
   const term = terms[key]
   const backlinks = termBacklinks[key] || []
@@ -21,6 +23,8 @@ export default function TermPage({ params }) {
       </div>
     )
   }
+
+  console.log({ term, backlinks })
 
   return (
     <article className="mx-auto max-w-3xl p-8">
@@ -43,6 +47,7 @@ export default function TermPage({ params }) {
       {/* META GRID */}
       <div className="space-y-10">
         {/* TAGS */}
+
         {term.tags?.length > 0 && (
           <section>
             <div className="mb-3 flex items-center gap-2 text-xs font-semibold uppercase tracking-wider text-gray-500">
@@ -51,18 +56,20 @@ export default function TermPage({ params }) {
             </div>
 
             <div className="flex flex-wrap gap-2">
-              {term.tags.map((tag) => (
-                <span
-                  key={tag}
-                  className="rounded-full border border-gray-200 bg-gray-50 px-3 py-1 text-xs text-gray-700 dark:border-gray-800 dark:bg-gray-900 dark:text-gray-300"
-                >
-                  {tag}
-                </span>
-              ))}
+              {term.tags.map((tag) => {
+                const slug = tag.toLowerCase().trim().replace(/\s+/g, '-')
+
+                return (
+                  <Link key={tag} href={`/tags/${slug}`}>
+                    <span className="cursor-pointer rounded-full border border-gray-200 bg-gray-50 px-3 py-1 text-xs text-gray-700 transition hover:bg-gray-100 dark:border-gray-800 dark:bg-gray-900 dark:text-gray-300 dark:hover:bg-gray-800">
+                      {tag}
+                    </span>
+                  </Link>
+                )
+              })}
             </div>
           </section>
         )}
-
         {/* ALIASES */}
         {term.aliases?.length > 0 && (
           <section>
@@ -83,7 +90,6 @@ export default function TermPage({ params }) {
             </div>
           </section>
         )}
-
         {/* RELATED (future graph layer) */}
         <section>
           <div className="mb-3 flex items-center gap-2 text-xs font-semibold uppercase tracking-wider text-gray-500">
@@ -93,7 +99,6 @@ export default function TermPage({ params }) {
 
           <div className="text-sm text-gray-500 dark:text-gray-400">No relations indexed yet.</div>
         </section>
-
         {/* CATEGORY / DOMAIN (future expansion) */}
         <section>
           <div className="mb-3 flex items-center gap-2 text-xs font-semibold uppercase tracking-wider text-gray-500">
@@ -103,7 +108,6 @@ export default function TermPage({ params }) {
 
           <div className="text-sm text-gray-500 dark:text-gray-400">Unclassified</div>
         </section>
-
         {/* NOTES / EXTENSION HOOK */}
         <section>
           <div className="mb-3 flex items-center gap-2 text-xs font-semibold uppercase tracking-wider text-gray-500">
@@ -113,7 +117,6 @@ export default function TermPage({ params }) {
 
           <div className="text-sm text-gray-500 dark:text-gray-400">No additional notes.</div>
         </section>
-
         {/* BACKLINKS */}
         {backlinks.length > 0 && (
           <section className="mt-10">

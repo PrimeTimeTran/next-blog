@@ -1,651 +1,88 @@
 export const termBacklinks = {
-  "git": [
+  "terms3d-transformations": [],
+  "termsa-b-testing": [],
+  "termsa-star-search": [],
+  "termsabductive-reasoning": [],
+  "termsabstract-class": [
     {
-      "file": "/Users/future/l.blog/data/blog/software/info-sec/over-the-wire-1-bandit.md",
-      "type": "blog",
-      "count": 40,
-      "draft": false
-    },
-    {
-      "file": "/Users/future/l.blog/data/blog/TEST/introducing-tailwind-nextjs-starter-blog.mdx",
-      "type": "blog",
-      "count": 27,
-      "draft": true
-    },
-    {
-      "file": "/Users/future/l.blog/data/blog/software/git/rebase.md",
-      "type": "blog",
-      "count": 24,
-      "draft": false
-    },
-    {
-      "file": "/Users/future/l.blog/data/blog/software/system-design/flutter-netlify-deploy.md",
-      "type": "blog",
-      "count": 22,
-      "draft": false
-    },
-    {
-      "file": "/Users/future/l.blog/data/blog/TEST/github-markdown-guide.mdx",
-      "type": "blog",
-      "count": 19,
-      "draft": true
-    },
-    {
-      "file": "/Users/future/l.blog/data/blog/software/git/pre-commit.md",
-      "type": "blog",
-      "count": 16,
-      "draft": false
-    },
-    {
-      "file": "/Users/future/l.blog/data/blog/TEST/TEST-TERMS.md",
-      "type": "blog",
-      "count": 12,
-      "draft": true
-    },
-    {
-      "file": "/Users/future/l.blog/data/kb/atom/CS/git-worktree-git-submodule-git-monorepo.md",
-      "type": "kb",
-      "count": 10,
-      "draft": false
-    },
-    {
-      "file": "/Users/future/l.blog/data/blog/software/git/partial-add.md",
-      "type": "blog",
-      "count": 8,
-      "draft": false
-    },
-    {
-      "file": "/Users/future/l.blog/data/blog/finance/high-frequency-trading.md",
-      "type": "blog",
-      "count": 6,
-      "draft": true
-    },
-    {
-      "file": "/Users/future/l.blog/data/blog/opinions/why-flutter-is-better-than-react-native.md",
-      "type": "blog",
-      "count": 6,
-      "draft": false
-    },
-    {
-      "file": "/Users/future/l.blog/data/blog/software/system-design/1-DSAFine-Mono.md",
-      "type": "blog",
-      "count": 5,
-      "draft": true
-    },
-    {
-      "file": "/Users/future/l.blog/data/blog/software/frameworks/flutter/semantic-stoic.md",
-      "type": "blog",
-      "count": 4,
-      "draft": false
-    },
-    {
-      "file": "/Users/future/l.blog/data/blog/software/system-design/graphql.md",
-      "type": "blog",
-      "count": 4,
-      "draft": false
-    },
-    {
-      "file": "/Users/future/l.blog/data/blog/software/devops/gcp/gcp-pipeline.md",
-      "type": "blog",
-      "count": 3,
-      "draft": true
-    },
-    {
-      "file": "/Users/future/l.blog/data/blog/software/frameworks/logging-app-load-times-with-firebase.md",
-      "type": "blog",
-      "count": 3,
-      "draft": false
-    },
-    {
-      "file": "/Users/future/l.blog/data/blog/ai/ai-search-agent.md",
+      "file": "/Users/future/l.blog/data/blog/software/design patterns/repository.md",
       "type": "blog",
       "count": 2,
       "draft": false
     },
     {
-      "file": "/Users/future/l.blog/data/blog/projects/royal-stock-exchange/1-intro.md",
-      "type": "blog",
-      "count": 2,
-      "draft": false
-    },
-    {
-      "file": "/Users/future/l.blog/data/blog/software/devops/gcp/cloud-build-triggers.md",
-      "type": "blog",
-      "count": 2,
-      "draft": false
-    },
-    {
-      "file": "/Users/future/l.blog/data/blog/software/frameworks/flutter/flutter-poker-1.md",
-      "type": "blog",
-      "count": 2,
-      "draft": true
-    },
-    {
-      "file": "/Users/future/l.blog/data/blog/software/languages/python/uv-package-manager.md",
-      "type": "blog",
-      "count": 2,
-      "draft": false
-    },
-    {
-      "file": "/Users/future/l.blog/data/blog/software/system-design/build-api-cache.md",
-      "type": "blog",
-      "count": 2,
-      "draft": false
-    },
-    {
-      "file": "/Users/future/l.blog/data/blog/software/system-design/build-backend-api.md",
-      "type": "blog",
-      "count": 2,
-      "draft": false
-    },
-    {
-      "file": "/Users/future/l.blog/data/blog/software/system-design/build-db-cluster-docker.md",
-      "type": "blog",
-      "count": 2,
-      "draft": false
-    },
-    {
-      "file": "/Users/future/l.blog/data/blog/software/system-design/flutter-theme.md",
-      "type": "blog",
-      "count": 2,
-      "draft": false
-    },
-    {
-      "file": "/Users/future/l.blog/data/blog/software/system-design/microservices.md",
-      "type": "blog",
-      "count": 2,
-      "draft": false
-    },
-    {
-      "file": "/Users/future/l.blog/data/blog/software/system-design/system-design-auditing.md",
-      "type": "blog",
-      "count": 2,
-      "draft": false
-    },
-    {
-      "file": "/Users/future/l.blog/data/blog/software/system-design/system-design-distributed-systems.md",
-      "type": "blog",
-      "count": 2,
-      "draft": false
-    },
-    {
-      "file": "/Users/future/l.blog/data/blog/TEST/guide-to-using-images-in-nextjs.mdx",
-      "type": "blog",
-      "count": 1,
-      "draft": true
-    },
-    {
-      "file": "/Users/future/l.blog/data/blog/books/12.the-thing-you-can-see-only-when-you-slow-down.md",
+      "file": "/Users/future/l.blog/data/blog/software/design patterns/factory.md",
       "type": "blog",
       "count": 1,
       "draft": false
     },
     {
-      "file": "/Users/future/l.blog/data/blog/cheatsheets/jetbrains.md",
-      "type": "blog",
-      "count": 1,
-      "draft": false
-    },
-    {
-      "file": "/Users/future/l.blog/data/blog/cheatsheets/vscode.md",
-      "type": "blog",
-      "count": 1,
-      "draft": false
-    },
-    {
-      "file": "/Users/future/l.blog/data/blog/finance/quant/crash-course.md",
-      "type": "blog",
-      "count": 1,
-      "draft": true
-    },
-    {
-      "file": "/Users/future/l.blog/data/blog/software/computer-organization.md",
-      "type": "blog",
-      "count": 1,
-      "draft": true
-    },
-    {
-      "file": "/Users/future/l.blog/data/blog/software/design patterns/decorator.md",
-      "type": "blog",
-      "count": 1,
-      "draft": false
-    },
-    {
-      "file": "/Users/future/l.blog/data/blog/software/frameworks/flutter/flutter lacks webview support.md",
-      "type": "blog",
-      "count": 1,
-      "draft": true
-    },
-    {
-      "file": "/Users/future/l.blog/data/blog/software/info-sec/csrf.md",
-      "type": "blog",
-      "count": 1,
-      "draft": false
-    },
-    {
-      "file": "/Users/future/l.blog/data/blog/software/languages/rust/rust-projects.md",
-      "type": "blog",
-      "count": 1,
-      "draft": true
-    },
-    {
-      "file": "/Users/future/l.blog/data/blog/software/sprints.md",
-      "type": "blog",
-      "count": 1,
-      "draft": false
-    },
-    {
-      "file": "/Users/future/l.blog/data/blog/software/starters/python-graphql.md",
-      "type": "blog",
-      "count": 1,
-      "draft": false
-    },
-    {
-      "file": "/Users/future/l.blog/data/blog/software/system-design/build-message-queue.md",
+      "file": "/Users/future/l.blog/data/blog/software/design patterns/observer.md",
       "type": "blog",
       "count": 1,
       "draft": false
     }
   ],
-  "javascript": [
+  "termsabstract-classes": [
     {
-      "file": "/Users/future/l.blog/data/blog/TEST/introducing-tailwind-nextjs-starter-blog.mdx",
+      "file": "/Users/future/l.blog/data/blog/software/data-structures-algorithms/OOP.md",
       "type": "blog",
-      "count": 57,
+      "count": 1,
+      "draft": false
+    }
+  ],
+  "termsabstraction-over-pods": [],
+  "termsabstraction": [
+    {
+      "file": "/Users/future/l.blog/data/blog/software/data-structures-algorithms/OOP.md",
+      "type": "blog",
+      "count": 8,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/politics/1-go.md",
+      "type": "blog",
+      "count": 1,
       "draft": true
     },
     {
-      "file": "/Users/future/l.blog/data/blog/software/system-design/microservices.md",
+      "file": "/Users/future/l.blog/data/blog/questions/complexity.md",
       "type": "blog",
-      "count": 31,
+      "count": 1,
       "draft": false
     },
     {
       "file": "/Users/future/l.blog/data/blog/software/system-design/system-design-auditing.md",
       "type": "blog",
-      "count": 30,
+      "count": 1,
       "draft": false
-    },
+    }
+  ],
+  "termsaccelerometer": [],
+  "termsaccess-control": [
     {
-      "file": "/Users/future/l.blog/data/blog/projects/royal-stock-exchange/4-scaling.md",
-      "type": "blog",
-      "count": 24,
-      "draft": false
-    },
-    {
-      "file": "/Users/future/l.blog/data/blog/software/data-structures-algorithms/dynamic-programming.md",
-      "type": "blog",
-      "count": 24,
-      "draft": false
-    },
-    {
-      "file": "/Users/future/l.blog/data/blog/software/frameworks/logging-app-load-times-with-firebase.md",
-      "type": "blog",
-      "count": 21,
-      "draft": false
-    },
-    {
-      "file": "/Users/future/l.blog/data/blog/leetcode/200-number-of-islands.md",
-      "type": "blog",
-      "count": 20,
-      "draft": false
-    },
-    {
-      "file": "/Users/future/l.blog/data/blog/opinions/why-flutter-is-better-than-react-native.md",
-      "type": "blog",
-      "count": 20,
-      "draft": false
-    },
-    {
-      "file": "/Users/future/l.blog/data/blog/software/data-structures-algorithms/algorithms/sorting-old.md",
-      "type": "blog",
-      "count": 20,
-      "draft": true
-    },
-    {
-      "file": "/Users/future/l.blog/data/blog/software/system-design/appium-mocha.md",
-      "type": "blog",
-      "count": 20,
-      "draft": false
-    },
-    {
-      "file": "/Users/future/l.blog/data/blog/leetcode/121-best-time-to-sell-stock.md",
-      "type": "blog",
-      "count": 17,
-      "draft": false
-    },
-    {
-      "file": "/Users/future/l.blog/data/blog/leetcode/16-3-sum-closest.md",
-      "type": "blog",
-      "count": 16,
-      "draft": false
-    },
-    {
-      "file": "/Users/future/l.blog/data/blog/leetcode/1-two-sum.md",
-      "type": "blog",
-      "count": 15,
-      "draft": false
-    },
-    {
-      "file": "/Users/future/l.blog/data/blog/leetcode/217-contains-duplicate.md",
-      "type": "blog",
-      "count": 15,
-      "draft": false
-    },
-    {
-      "file": "/Users/future/l.blog/data/blog/TEST/TEST-TERMS.md",
-      "type": "blog",
-      "count": 12,
-      "draft": true
-    },
-    {
-      "file": "/Users/future/l.blog/data/blog/TEST/code-tab-groups.md",
-      "type": "blog",
-      "count": 12,
-      "draft": true
-    },
-    {
-      "file": "/Users/future/l.blog/data/blog/software/databases/nosql/mongodb.md",
-      "type": "blog",
-      "count": 11,
-      "draft": false
-    },
-    {
-      "file": "/Users/future/l.blog/data/blog/TEST/code-blocks.md",
-      "type": "blog",
-      "count": 10,
-      "draft": true
-    },
-    {
-      "file": "/Users/future/l.blog/data/blog/leetcode/70-climbing-stairs.md",
-      "type": "blog",
-      "count": 10,
-      "draft": false
-    },
-    {
-      "file": "/Users/future/l.blog/data/blog/software/system-design/build-backend-api.md",
-      "type": "blog",
-      "count": 10,
-      "draft": false
-    },
-    {
-      "file": "/Users/future/l.blog/data/blog/software/data-structures-algorithms/graph-programming.md",
-      "type": "blog",
-      "count": 9,
-      "draft": true
-    },
-    {
-      "file": "/Users/future/l.blog/data/blog/TEST/guide-to-using-images-in-nextjs.mdx",
-      "type": "blog",
-      "count": 8,
-      "draft": true
-    },
-    {
-      "file": "/Users/future/l.blog/data/blog/software/info-sec/xss.md",
-      "type": "blog",
-      "count": 7,
-      "draft": false
-    },
-    {
-      "file": "/Users/future/l.blog/data/kb/atom/CS/page-router-vs-app-router.md",
-      "type": "kb",
-      "count": 6,
-      "draft": false
-    },
-    {
-      "file": "/Users/future/l.blog/data/blog/software/data-structures-algorithms/graph.md",
-      "type": "blog",
-      "count": 6,
-      "draft": true
-    },
-    {
-      "file": "/Users/future/l.blog/data/blog/software/design patterns/factory.md",
-      "type": "blog",
-      "count": 6,
-      "draft": false
-    },
-    {
-      "file": "/Users/future/l.blog/data/blog/software/design patterns/repository.md",
-      "type": "blog",
-      "count": 6,
-      "draft": false
-    },
-    {
-      "file": "/Users/future/l.blog/data/blog/software/system-design/build-message-queue.md",
-      "type": "blog",
-      "count": 6,
-      "draft": false
-    },
-    {
-      "file": "/Users/future/l.blog/data/blog/leetcode/238-product-of-array-except-self.md",
-      "type": "blog",
-      "count": 5,
-      "draft": true
-    },
-    {
-      "file": "/Users/future/l.blog/data/blog/leetcode/252-meeting-rooms.md",
-      "type": "blog",
-      "count": 5,
-      "draft": true
-    },
-    {
-      "file": "/Users/future/l.blog/data/blog/leetcode/253-meeting-rooms-ii.md",
-      "type": "blog",
-      "count": 5,
-      "draft": true
-    },
-    {
-      "file": "/Users/future/l.blog/data/blog/leetcode/261-graph-valid-tree.md",
-      "type": "blog",
-      "count": 5,
-      "draft": true
-    },
-    {
-      "file": "/Users/future/l.blog/data/blog/software/design patterns/observer.md",
-      "type": "blog",
-      "count": 5,
-      "draft": false
-    },
-    {
-      "file": "/Users/future/l.blog/data/blog/software/design patterns/singleton.md",
-      "type": "blog",
-      "count": 5,
-      "draft": false
-    },
-    {
-      "file": "/Users/future/l.blog/data/blog/software/languages/js/js-1.md",
-      "type": "blog",
-      "count": 5,
-      "draft": true
-    },
-    {
-      "file": "/Users/future/l.blog/data/blog/software/system-design/build-api-cache.md",
-      "type": "blog",
-      "count": 5,
-      "draft": false
-    },
-    {
-      "file": "/Users/future/l.blog/data/blog/TEST/github-markdown-guide.mdx",
-      "type": "blog",
-      "count": 4,
-      "draft": true
-    },
-    {
-      "file": "/Users/future/l.blog/data/blog/software/system-design/firebase environments.md",
-      "type": "blog",
-      "count": 4,
-      "draft": true
-    },
-    {
-      "file": "/Users/future/l.blog/data/blog/TEST/MDX.mdx",
-      "type": "blog",
-      "count": 3,
-      "draft": true
-    },
-    {
-      "file": "/Users/future/l.blog/data/blog/TEST/terms.md",
-      "type": "blog",
-      "count": 3,
-      "draft": true
-    },
-    {
-      "file": "/Users/future/l.blog/data/blog/software/devops/gcp/aws-lambda.md",
-      "type": "blog",
-      "count": 3,
-      "draft": true
-    },
-    {
-      "file": "/Users/future/l.blog/data/blog/software/frameworks/next/introducing-multi-part-posts-with-nested-routing.md",
-      "type": "blog",
-      "count": 3,
-      "draft": true
-    },
-    {
-      "file": "/Users/future/l.blog/data/blog/software/system-design/graphql.md",
-      "type": "blog",
-      "count": 3,
-      "draft": false
-    },
-    {
-      "file": "/Users/future/l.blog/data/blog/software/system-design/system-design-1-bitly.md",
-      "type": "blog",
-      "count": 3,
-      "draft": false
-    },
-    {
-      "file": "/Users/future/l.blog/data/kb/kb-dsl-code-tab-group.md",
-      "type": "kb",
-      "count": 2,
-      "draft": false
-    },
-    {
-      "file": "/Users/future/l.blog/data/kb/tool/obsidian/preview/theme1.md",
-      "type": "kb",
-      "count": 2,
-      "draft": false
-    },
-    {
-      "file": "/Users/future/l.blog/data/blog/TEST/pictures-of-canada.mdx",
-      "type": "blog",
-      "count": 2,
-      "draft": true
-    },
-    {
-      "file": "/Users/future/l.blog/data/blog/projects/bakesuite.md",
-      "type": "blog",
-      "count": 2,
-      "draft": false
-    },
-    {
-      "file": "/Users/future/l.blog/data/blog/projects/royal-stock-exchange/1-intro.md",
-      "type": "blog",
-      "count": 2,
-      "draft": false
-    },
-    {
-      "file": "/Users/future/l.blog/data/blog/software/data-structures-algorithms/OOP.md",
-      "type": "blog",
-      "count": 2,
-      "draft": false
-    },
-    {
-      "file": "/Users/future/l.blog/data/blog/software/devops/gcp/aws-cloud-practiitioner.md",
-      "type": "blog",
-      "count": 2,
-      "draft": true
-    },
-    {
-      "file": "/Users/future/l.blog/data/blog/software/devops/gcp/cloud-build-triggers.md",
-      "type": "blog",
-      "count": 2,
-      "draft": false
-    },
-    {
-      "file": "/Users/future/l.blog/data/blog/software/frameworks/flutter/vscode launch json.md",
-      "type": "blog",
-      "count": 2,
-      "draft": true
-    },
-    {
-      "file": "/Users/future/l.blog/data/blog/software/git/pre-commit.md",
-      "type": "blog",
-      "count": 2,
-      "draft": false
-    },
-    {
-      "file": "/Users/future/l.blog/data/kb/tool/obsidian/preview/theme2.md",
+      "file": "/Users/future/l.blog/data/kb/atom/CS/git-worktree-git-submodule-git-monorepo.md",
       "type": "kb",
       "count": 1,
       "draft": false
     },
     {
-      "file": "/Users/future/l.blog/data/blog/TEST/deriving-ols-estimator.mdx",
-      "type": "blog",
-      "count": 1,
-      "draft": true
-    },
-    {
-      "file": "/Users/future/l.blog/data/blog/cheatsheets/expo.md",
+      "file": "/Users/future/l.blog/data/blog/software/devops/gcp/cloud-scheduler.md",
       "type": "blog",
       "count": 1,
       "draft": false
     },
     {
-      "file": "/Users/future/l.blog/data/blog/software/databases/psql.md",
+      "file": "/Users/future/l.blog/data/blog/software/devops/gcp/secret-manager.md",
       "type": "blog",
       "count": 1,
       "draft": false
-    },
+    }
+  ],
+  "termsaccessibility": [],
+  "termsaccuracy": [
     {
-      "file": "/Users/future/l.blog/data/blog/software/frameworks/flutter/flutter-tiktok-1.md",
-      "type": "blog",
-      "count": 1,
-      "draft": false
-    },
-    {
-      "file": "/Users/future/l.blog/data/blog/software/frameworks/flutter/semantic-stoic.md",
-      "type": "blog",
-      "count": 1,
-      "draft": false
-    },
-    {
-      "file": "/Users/future/l.blog/data/blog/software/info-sec/over-the-wire-1-bandit.md",
-      "type": "blog",
-      "count": 1,
-      "draft": false
-    },
-    {
-      "file": "/Users/future/l.blog/data/blog/software/info-sec/over-the-wire-3-natas.md",
-      "type": "blog",
-      "count": 1,
-      "draft": false
-    },
-    {
-      "file": "/Users/future/l.blog/data/blog/software/languages/dart/handling-nullable-fields.md",
-      "type": "blog",
-      "count": 1,
-      "draft": false
-    },
-    {
-      "file": "/Users/future/l.blog/data/blog/software/languages/java/java-spring.md",
-      "type": "blog",
-      "count": 1,
-      "draft": false
-    },
-    {
-      "file": "/Users/future/l.blog/data/blog/software/mobile requirements.md",
-      "type": "blog",
-      "count": 1,
-      "draft": false
-    },
-    {
-      "file": "/Users/future/l.blog/data/blog/software/regex.md",
-      "type": "blog",
-      "count": 1,
-      "draft": true
-    },
-    {
-      "file": "/Users/future/l.blog/data/blog/software/system-design/1-DSAFine-Mono.md",
+      "file": "/Users/future/l.blog/data/blog/exchange/intro-2.md",
       "type": "blog",
       "count": 1,
       "draft": true
@@ -657,143 +94,740 @@ export const termBacklinks = {
       "draft": false
     }
   ],
-  "nextjs": [
+  "termsacid-properties": [
     {
-      "file": "/Users/future/l.blog/data/blog/TEST/introducing-tailwind-nextjs-starter-blog.mdx",
+      "file": "/Users/future/l.blog/data/blog/software/databases/sql/1_toc.md",
       "type": "blog",
-      "count": 40,
-      "draft": true
-    },
-    {
-      "file": "/Users/future/l.blog/data/kb/atom/CS/page-router-vs-app-router.md",
-      "type": "kb",
-      "count": 6,
-      "draft": false
-    },
-    {
-      "file": "/Users/future/l.blog/data/blog/software/frameworks/next/introducing-multi-part-posts-with-nested-routing.md",
-      "type": "blog",
-      "count": 5,
-      "draft": true
-    },
-    {
-      "file": "/Users/future/l.blog/data/blog/TEST/terms.md",
-      "type": "blog",
-      "count": 4,
-      "draft": true
-    },
-    {
-      "file": "/Users/future/l.blog/data/blog/TEST/guide-to-using-images-in-nextjs.mdx",
-      "type": "blog",
-      "count": 3,
+      "count": 1,
       "draft": true
     }
   ],
-  "python": [
+  "termsaction-space": [],
+  "termsactivation-function": [],
+  "termsactivity-selection": [],
+  "termsadam-optimizer": [],
+  "termsadd": [
     {
-      "file": "/Users/future/l.blog/data/blog/software/languages/python/django.md",
+      "file": "/Users/future/l.blog/data/blog/software/design patterns/repository.md",
       "type": "blog",
-      "count": 41,
-      "draft": true
-    },
-    {
-      "file": "/Users/future/l.blog/data/blog/leetcode/200-number-of-islands.md",
-      "type": "blog",
-      "count": 32,
+      "count": 10,
       "draft": false
     },
     {
-      "file": "/Users/future/l.blog/data/blog/software/data-structures-algorithms/algorithms/sorting-old.md",
+      "file": "/Users/future/l.blog/data/blog/software/frameworks/flutter/flutter-tiktok-2.md",
       "type": "blog",
-      "count": 32,
-      "draft": true
-    },
-    {
-      "file": "/Users/future/l.blog/data/blog/software/data-structures-algorithms/graph-theory.md",
-      "type": "blog",
-      "count": 32,
-      "draft": true
-    },
-    {
-      "file": "/Users/future/l.blog/data/blog/leetcode/121-best-time-to-sell-stock.md",
-      "type": "blog",
-      "count": 30,
-      "draft": false
-    },
-    {
-      "file": "/Users/future/l.blog/data/blog/leetcode/16-3-sum-closest.md",
-      "type": "blog",
-      "count": 29,
-      "draft": false
-    },
-    {
-      "file": "/Users/future/l.blog/data/blog/leetcode/1-two-sum.md",
-      "type": "blog",
-      "count": 24,
-      "draft": false
-    },
-    {
-      "file": "/Users/future/l.blog/data/blog/TEST/TEST-TERMS.md",
-      "type": "blog",
-      "count": 21,
-      "draft": true
-    },
-    {
-      "file": "/Users/future/l.blog/data/blog/software/system-design/build-message-queue.md",
-      "type": "blog",
-      "count": 21,
-      "draft": false
-    },
-    {
-      "file": "/Users/future/l.blog/data/blog/leetcode/217-contains-duplicate.md",
-      "type": "blog",
-      "count": 20,
-      "draft": false
-    },
-    {
-      "file": "/Users/future/l.blog/data/blog/software/languages/python/heapq.md",
-      "type": "blog",
-      "count": 18,
-      "draft": false
-    },
-    {
-      "file": "/Users/future/l.blog/data/blog/leetcode/70-climbing-stairs.md",
-      "type": "blog",
-      "count": 16,
-      "draft": false
-    },
-    {
-      "file": "/Users/future/l.blog/data/blog/software/system-design/build-backend-api.md",
-      "type": "blog",
-      "count": 14,
+      "count": 8,
       "draft": false
     },
     {
       "file": "/Users/future/l.blog/data/blog/TEST/code-tab-groups.md",
       "type": "blog",
-      "count": 12,
+      "count": 6,
       "draft": true
     },
     {
-      "file": "/Users/future/l.blog/data/blog/software/devops/gcp/cloud-run-job.md",
+      "file": "/Users/future/l.blog/data/blog/leetcode/200-number-of-islands.md",
       "type": "blog",
-      "count": 12,
+      "count": 6,
       "draft": false
     },
     {
-      "file": "/Users/future/l.blog/data/blog/finance/options/black-scholes.md",
+      "file": "/Users/future/l.blog/data/blog/software/data-structures-algorithms/graph-programming.md",
       "type": "blog",
-      "count": 11,
+      "count": 6,
+      "draft": true
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/system-design/system-design-auditing.md",
+      "type": "blog",
+      "count": 6,
       "draft": false
     },
     {
-      "file": "/Users/future/l.blog/data/blog/software/system-design/build-api-cache.md",
+      "file": "/Users/future/l.blog/data/blog/software/system-design/appium-mocha.md",
       "type": "blog",
-      "count": 11,
+      "count": 5,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/system-design/flutter-theme.md",
+      "type": "blog",
+      "count": 5,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/system-design/microservices.md",
+      "type": "blog",
+      "count": 5,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/finance/high-frequency-trading.md",
+      "type": "blog",
+      "count": 4,
+      "draft": true
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/leetcode/742-network-delay-time.md",
+      "type": "blog",
+      "count": 4,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/git/pre-commit.md",
+      "type": "blog",
+      "count": 4,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/TEST/introducing-tailwind-nextjs-starter-blog.mdx",
+      "type": "blog",
+      "count": 3,
+      "draft": true
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/git/partial-add.md",
+      "type": "blog",
+      "count": 3,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/git/rebase.md",
+      "type": "blog",
+      "count": 3,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/system-design/build-backend-api.md",
+      "type": "blog",
+      "count": 3,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/system-design/flutter-netlify-deploy.md",
+      "type": "blog",
+      "count": 3,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/TEST/MDX.mdx",
+      "type": "blog",
+      "count": 2,
+      "draft": true
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/leetcode/217-contains-duplicate.md",
+      "type": "blog",
+      "count": 2,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/projects/bakesuite.md",
+      "type": "blog",
+      "count": 2,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/data-structures-algorithms/dynamic-programming.md",
+      "type": "blog",
+      "count": 2,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/data-structures-algorithms/graph-theory.md",
+      "type": "blog",
+      "count": 2,
+      "draft": true
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/frameworks/flutter/flutter-tiktok-1.md",
+      "type": "blog",
+      "count": 2,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/languages/go/go-routines.md",
+      "type": "blog",
+      "count": 2,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/system-design/build-message-queue.md",
+      "type": "blog",
+      "count": 2,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/finance/options/strategies/spreads.md",
+      "type": "blog",
+      "count": 1,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/finance/terms/institutional-retail.md",
+      "type": "blog",
+      "count": 1,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/leetcode/1-two-sum.md",
+      "type": "blog",
+      "count": 1,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/leetcode/261-graph-valid-tree.md",
+      "type": "blog",
+      "count": 1,
+      "draft": true
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/leetcode/463-island-perimeter.md",
+      "type": "blog",
+      "count": 1,
+      "draft": true
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/projects/royal-stock-exchange/2-seeding data.md",
+      "type": "blog",
+      "count": 1,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/data-structures-algorithms/OOP.md",
+      "type": "blog",
+      "count": 1,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/data-structures-algorithms/graph-algorithms.md",
+      "type": "blog",
+      "count": 1,
+      "draft": true
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/databases/nosql/mongodb.md",
+      "type": "blog",
+      "count": 1,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/databases/sql/1_toc.md",
+      "type": "blog",
+      "count": 1,
+      "draft": true
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/databases/sql/lag.md",
+      "type": "blog",
+      "count": 1,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/design patterns/decorator.md",
+      "type": "blog",
+      "count": 1,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/design patterns/observer.md",
+      "type": "blog",
+      "count": 1,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/devops/gcp/cloud-build-triggers.md",
+      "type": "blog",
+      "count": 1,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/devops/gcp/cloud-scheduler.md",
+      "type": "blog",
+      "count": 1,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/devops/gcp/gcp-pipeline.md",
+      "type": "blog",
+      "count": 1,
+      "draft": true
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/devops/gcp/memory-store.md",
+      "type": "blog",
+      "count": 1,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/devops/gcp/secret-manager.md",
+      "type": "blog",
+      "count": 1,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/frameworks/flutter/flutter android customize app icon.md",
+      "type": "blog",
+      "count": 1,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/frameworks/flutter/flutter lacks webview support.md",
+      "type": "blog",
+      "count": 1,
+      "draft": true
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/frameworks/flutter/flutter-poker-1.md",
+      "type": "blog",
+      "count": 1,
+      "draft": true
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/frameworks/logging-app-load-times-with-firebase.md",
+      "type": "blog",
+      "count": 1,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/frameworks/next/introducing-multi-part-posts-with-nested-routing.md",
+      "type": "blog",
+      "count": 1,
+      "draft": true
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/info-sec/over-the-wire-1-bandit.md",
+      "type": "blog",
+      "count": 1,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/languages/python/django.md",
+      "type": "blog",
+      "count": 1,
+      "draft": true
+    }
+  ],
+  "termsaddition-rule": [],
+  "termsadjacency-list": [
+    {
+      "file": "/Users/future/l.blog/data/blog/leetcode/742-network-delay-time.md",
+      "type": "blog",
+      "count": 5,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/data-structures-algorithms/graph-algorithms.md",
+      "type": "blog",
+      "count": 1,
+      "draft": true
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/data-structures-algorithms/graph-programming.md",
+      "type": "blog",
+      "count": 1,
+      "draft": true
+    }
+  ],
+  "termsadjacency-matrix": [],
+  "termsagent": [
+    {
+      "file": "/Users/future/l.blog/data/kb/atom/CS/AI.md",
+      "type": "kb",
+      "count": 1,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/ai/ai-search-agent.md",
+      "type": "blog",
+      "count": 1,
+      "draft": false
+    }
+  ],
+  "termsaggregation-pipeline": [],
+  "termsaggregation": [
+    {
+      "file": "/Users/future/l.blog/data/blog/projects/royal-stock-exchange/4-scaling.md",
+      "type": "blog",
+      "count": 5,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/finance/quant/calculus-for-quants.md",
+      "type": "blog",
+      "count": 1,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/finance/quant/maths.md",
+      "type": "blog",
+      "count": 1,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/databases/nosql/mongodb.md",
+      "type": "blog",
+      "count": 1,
+      "draft": false
+    }
+  ],
+  "termsai-alignment": [],
+  "termsaks": [],
+  "termsalgorithm-correctness": [],
+  "termsalgorithm-design": [],
+  "termsalpha-beta-pruning": [],
+  "termsalpha": [
+    {
+      "file": "/Users/future/l.blog/data/blog/finance/formulas.md",
+      "type": "blog",
+      "count": 2,
+      "draft": true
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/finance/quant/symbols.md",
+      "type": "blog",
+      "count": 2,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/maths/calculus/lambda.md",
+      "type": "blog",
+      "count": 2,
+      "draft": true
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/finance/index.md",
+      "type": "blog",
+      "count": 1,
+      "draft": true
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/finance/quant/maths.md",
+      "type": "blog",
+      "count": 1,
+      "draft": false
+    }
+  ],
+  "termsalternating-series-test": [],
+  "termsalternative-hypothesis": [],
+  "termsamortized-analysis": [
+    {
+      "file": "/Users/future/l.blog/data/blog/software/data-structures-algorithms/terms.md",
+      "type": "blog",
+      "count": 1,
+      "draft": true
+    }
+  ],
+  "termsanagram": [],
+  "termsand": [
+    {
+      "file": "/Users/future/l.blog/data/blog/projects/royal-stock-exchange/4-scaling.md",
+      "type": "blog",
+      "count": 152,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/data-structures-algorithms/OOP.md",
+      "type": "blog",
+      "count": 56,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/info-sec/over-the-wire-1-bandit.md",
+      "type": "blog",
+      "count": 49,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/system-design/process-overview.md",
+      "type": "blog",
+      "count": 49,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/TEST/the-time-machine.mdx",
+      "type": "blog",
+      "count": 45,
+      "draft": true
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/finance/high-frequency-trading.md",
+      "type": "blog",
+      "count": 44,
+      "draft": true
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/finance/options/strategies/trading-strategies.md",
+      "type": "blog",
+      "count": 41,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/exchange/intro-2.md",
+      "type": "blog",
+      "count": 36,
+      "draft": true
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/data-structures-algorithms/graph-theory.md",
+      "type": "blog",
+      "count": 31,
+      "draft": true
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/databases/sql/1_toc.md",
+      "type": "blog",
+      "count": 29,
+      "draft": true
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/system-design/process-deepdive.md",
+      "type": "blog",
+      "count": 28,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/TEST/introducing-tailwind-nextjs-starter-blog.mdx",
+      "type": "blog",
+      "count": 26,
+      "draft": true
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/politics/1-go.md",
+      "type": "blog",
+      "count": 26,
+      "draft": true
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/personal/cognitive-dissonance.md",
+      "type": "blog",
+      "count": 25,
+      "draft": true
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/finance/futures.md",
+      "type": "blog",
+      "count": 24,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/personal/stoicism.md",
+      "type": "blog",
+      "count": 24,
+      "draft": true
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/finance/options/strategies/introduction.md",
+      "type": "blog",
+      "count": 19,
       "draft": false
     },
     {
       "file": "/Users/future/l.blog/data/blog/software/data-structures-algorithms/algorithms/sorting.md",
+      "type": "blog",
+      "count": 19,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/devops/gcp/secret-manager.md",
+      "type": "blog",
+      "count": 19,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/system-design/appium-mocha.md",
+      "type": "blog",
+      "count": 19,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/questions/leadership.md",
+      "type": "blog",
+      "count": 17,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/data-structures-algorithms/patterns-graph.md",
+      "type": "blog",
+      "count": 17,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/finance/terms/institutional-retail.md",
+      "type": "blog",
+      "count": 15,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/leetcode/16-3-sum-closest.md",
+      "type": "blog",
+      "count": 15,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/maths/calculus/calculus-3/calculus-3.md",
+      "type": "blog",
+      "count": 15,
+      "draft": true
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/exchange/intro-1.md",
+      "type": "blog",
+      "count": 14,
+      "draft": true
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/exchange/intro-4.md",
+      "type": "blog",
+      "count": 14,
+      "draft": true
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/finance/terms/index-fund.md",
+      "type": "blog",
+      "count": 13,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/finance/federal-reserve-vs-treasury-department.md",
+      "type": "blog",
+      "count": 12,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/finance/options/strategies/spreads.md",
+      "type": "blog",
+      "count": 12,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/finance/terms/mutual-funds.md",
+      "type": "blog",
+      "count": 12,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/projects/royal-stock-exchange/3-portfolio.md",
+      "type": "blog",
+      "count": 12,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/devops/gcp/vcp-connectors.md",
+      "type": "blog",
+      "count": 12,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/system-design/build-message-queue.md",
+      "type": "blog",
+      "count": 12,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/exchange/intro-3.md",
+      "type": "blog",
+      "count": 11,
+      "draft": true
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/leetcode/200-number-of-islands.md",
+      "type": "blog",
+      "count": 11,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/data-structures-algorithms/dynamic-programming.md",
+      "type": "blog",
+      "count": 11,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/finance/options/strategies/condor.md",
+      "type": "blog",
+      "count": 10,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/finance/options/strategies/straddle.md",
+      "type": "blog",
+      "count": 10,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/finance/quant/statistics.md",
+      "type": "blog",
+      "count": 10,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/leetcode/121-best-time-to-sell-stock.md",
+      "type": "blog",
+      "count": 10,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/maths/calculus/multivariable-calc.md",
+      "type": "blog",
+      "count": 10,
+      "draft": true
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/questions/complexity.md",
+      "type": "blog",
+      "count": 10,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/databases/psql.md",
+      "type": "blog",
+      "count": 10,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/TEST/github-markdown-guide.mdx",
+      "type": "blog",
+      "count": 9,
+      "draft": true
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/books/12.the-thing-you-can-see-only-when-you-slow-down.md",
+      "type": "blog",
+      "count": 9,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/exchange/intro-7.md",
+      "type": "blog",
+      "count": 9,
+      "draft": true
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/finance/index.md",
+      "type": "blog",
+      "count": 9,
+      "draft": true
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/finance/options/strategies/strangle.md",
+      "type": "blog",
+      "count": 9,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/finance/quant/slippage.md",
+      "type": "blog",
+      "count": 9,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/finance/terms/secondary-market.md",
+      "type": "blog",
+      "count": 9,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/same-problems-different-tools.md",
       "type": "blog",
       "count": 9,
       "draft": false
@@ -805,52 +839,2928 @@ export const termBacklinks = {
       "draft": true
     },
     {
-      "file": "/Users/future/l.blog/data/blog/TEST/pictures-of-canada.mdx",
+      "file": "/Users/future/l.blog/data/blog/software/databases/sql/remote-clone-to-local.md",
+      "type": "blog",
+      "count": 9,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/devops/gcp/cloud-run.md",
+      "type": "blog",
+      "count": 9,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/git/pre-commit.md",
+      "type": "blog",
+      "count": 9,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/system-design/firebase environments.md",
+      "type": "blog",
+      "count": 9,
+      "draft": true
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/ai/ai-as-fractals.md",
       "type": "blog",
       "count": 8,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/finance/quant/symbols.md",
+      "type": "blog",
+      "count": 8,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/finance/terms/extrinsic-value.md",
+      "type": "blog",
+      "count": 8,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/finance/terms/intrinsic-value.md",
+      "type": "blog",
+      "count": 8,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/finance/terms/quadruple-witching.md",
+      "type": "blog",
+      "count": 8,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/maths/calculus/fundamental-theorem-of-calculus.md",
+      "type": "blog",
+      "count": 8,
+      "draft": true
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/maths/statistics/mean-median-mode.md",
+      "type": "blog",
+      "count": 8,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/demos-not-memos.md",
+      "type": "blog",
+      "count": 8,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/devops/gcp/cloud-run-job.md",
+      "type": "blog",
+      "count": 8,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/frameworks/flutter/flutter-tiktok-1.md",
+      "type": "blog",
+      "count": 8,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/git/partial-add.md",
+      "type": "blog",
+      "count": 8,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/languages/dart/handling-nullable-fields.md",
+      "type": "blog",
+      "count": 8,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/languages/rust/rust-projects.md",
+      "type": "blog",
+      "count": 8,
+      "draft": true
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/system-design/build-backend-api.md",
+      "type": "blog",
+      "count": 8,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/system-design/microservices.md",
+      "type": "blog",
+      "count": 8,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/system-design/system-design-distributed-systems.md",
+      "type": "blog",
+      "count": 8,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/finance/options/greeks.md",
+      "type": "blog",
+      "count": 7,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/finance/quant/charts/premium-flow-trends.md",
+      "type": "blog",
+      "count": 7,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/finance/quant/order-books.md",
+      "type": "blog",
+      "count": 7,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/finance/terms/net-asset-value.md",
+      "type": "blog",
+      "count": 7,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/finance/terms/open-ended-funds.md",
+      "type": "blog",
+      "count": 7,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/opinions/why-flutter-is-better-than-react-native.md",
+      "type": "blog",
+      "count": 7,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/databases/sql/clone-db.md",
+      "type": "blog",
+      "count": 7,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/devops/gcp/aws-cloud-practiitioner.md",
+      "type": "blog",
+      "count": 7,
+      "draft": true
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/git/rebase.md",
+      "type": "blog",
+      "count": 7,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/sprints.md",
+      "type": "blog",
+      "count": 7,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/TEST/TEST-TERMS.md",
+      "type": "blog",
+      "count": 6,
+      "draft": true
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/TEST/deriving-ols-estimator.mdx",
+      "type": "blog",
+      "count": 6,
+      "draft": true
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/finance/indicators/implied-volatility-rank.md",
+      "type": "blog",
+      "count": 6,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/finance/indicators/relative-strength-index.md",
+      "type": "blog",
+      "count": 6,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/finance/options/black-scholes.md",
+      "type": "blog",
+      "count": 6,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/leetcode/1-two-sum.md",
+      "type": "blog",
+      "count": 6,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/politics/communism.md",
+      "type": "blog",
+      "count": 6,
+      "draft": true
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/design patterns/decorator.md",
+      "type": "blog",
+      "count": 6,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/devops/gcp/cloud-build-triggers.md",
+      "type": "blog",
+      "count": 6,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/devops/gcp/cloud-scheduler.md",
+      "type": "blog",
+      "count": 6,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/devops/gcp/memory-store.md",
+      "type": "blog",
+      "count": 6,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/system-design/graphql.md",
+      "type": "blog",
+      "count": 6,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/ai/vibe-coders.md",
+      "type": "blog",
+      "count": 5,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/exchange/intro-6.md",
+      "type": "blog",
+      "count": 5,
+      "draft": true
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/finance/indicators/premium-flow-with-z-scores.md",
+      "type": "blog",
+      "count": 5,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/finance/indicators/put-call-ratio.md",
+      "type": "blog",
+      "count": 5,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/finance/options/open-frac.md",
+      "type": "blog",
+      "count": 5,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/finance/quant/maths.md",
+      "type": "blog",
+      "count": 5,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/finance/terms/closed-ended-funds.md",
+      "type": "blog",
+      "count": 5,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/finance/toc.md",
+      "type": "blog",
+      "count": 5,
+      "draft": true
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/maths/discrete-symbols.md",
+      "type": "blog",
+      "count": 5,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/data-structures-algorithms/terms.md",
+      "type": "blog",
+      "count": 5,
+      "draft": true
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/frameworks/logging-app-load-times-with-firebase.md",
+      "type": "blog",
+      "count": 5,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/languages/java/java-spring.md",
+      "type": "blog",
+      "count": 5,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/system-design/flutter-theme.md",
+      "type": "blog",
+      "count": 5,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/system-design/system-design-auditing.md",
+      "type": "blog",
+      "count": 5,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/TEST/guide-to-using-images-in-nextjs.mdx",
+      "type": "blog",
+      "count": 4,
+      "draft": true
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/exchange/intro-5.md",
+      "type": "blog",
+      "count": 4,
+      "draft": true
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/finance/business/hostile-takeover.md",
+      "type": "blog",
+      "count": 4,
+      "draft": true
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/finance/indicators/sharpe-ratio.md",
+      "type": "blog",
+      "count": 4,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/finance/options/volume.md",
+      "type": "blog",
+      "count": 4,
       "draft": true
     },
     {
       "file": "/Users/future/l.blog/data/blog/finance/quant/crash-course.md",
       "type": "blog",
-      "count": 8,
+      "count": 4,
       "draft": true
     },
     {
-      "file": "/Users/future/l.blog/data/blog/leetcode/238-product-of-array-except-self.md",
+      "file": "/Users/future/l.blog/data/blog/leetcode/742-network-delay-time.md",
       "type": "blog",
-      "count": 8,
+      "count": 4,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/maths/statistics/variance-standard-deviation.md",
+      "type": "blog",
+      "count": 4,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/bike-shedding.md",
+      "type": "blog",
+      "count": 4,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/data-structures-algorithms/trees.md",
+      "type": "blog",
+      "count": 4,
       "draft": true
     },
     {
-      "file": "/Users/future/l.blog/data/blog/leetcode/239-sliding-window-maximum.md",
+      "file": "/Users/future/l.blog/data/blog/software/databases/nosql/mongodb.md",
       "type": "blog",
-      "count": 8,
+      "count": 4,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/design patterns/observer.md",
+      "type": "blog",
+      "count": 4,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/design patterns/singleton.md",
+      "type": "blog",
+      "count": 4,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/info-sec/over-the-wire-2-leviathan.md",
+      "type": "blog",
+      "count": 4,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/system-design/build-api-cache.md",
+      "type": "blog",
+      "count": 4,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/kb/atom/CS/AI.md",
+      "type": "kb",
+      "count": 3,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/kb/atom/CS/git-worktree-git-submodule-git-monorepo.md",
+      "type": "kb",
+      "count": 3,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/kb/tool/obsidian/preview/theme1.md",
+      "type": "kb",
+      "count": 3,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/kb/tool/obsidian/preview/theme2.md",
+      "type": "kb",
+      "count": 3,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/TEST/pictures-of-canada.mdx",
+      "type": "blog",
+      "count": 3,
       "draft": true
     },
     {
-      "file": "/Users/future/l.blog/data/blog/leetcode/252-meeting-rooms.md",
+      "file": "/Users/future/l.blog/data/blog/bug-reports/reddit.md",
       "type": "blog",
-      "count": 8,
-      "draft": true
+      "count": 3,
+      "draft": false
     },
     {
-      "file": "/Users/future/l.blog/data/blog/leetcode/253-meeting-rooms-ii.md",
+      "file": "/Users/future/l.blog/data/blog/finance/indicators/leading-and-lagging-indicators.md",
       "type": "blog",
-      "count": 8,
+      "count": 3,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/finance/quant/calculus-for-quants.md",
+      "type": "blog",
+      "count": 3,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/finance/terms/warrant.md",
+      "type": "blog",
+      "count": 3,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/finance/thesis-jaime.md",
+      "type": "blog",
+      "count": 3,
       "draft": true
     },
     {
       "file": "/Users/future/l.blog/data/blog/leetcode/261-graph-valid-tree.md",
       "type": "blog",
-      "count": 8,
+      "count": 3,
       "draft": true
     },
     {
       "file": "/Users/future/l.blog/data/blog/leetcode/463-island-perimeter.md",
       "type": "blog",
-      "count": 8,
+      "count": 3,
       "draft": true
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/leetcode/70-climbing-stairs.md",
+      "type": "blog",
+      "count": 3,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/data-structures-algorithms/algorithms/union-find.md",
+      "type": "blog",
+      "count": 3,
+      "draft": true
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/data-structures-algorithms/graph-algorithms.md",
+      "type": "blog",
+      "count": 3,
+      "draft": true
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/design patterns/repository.md",
+      "type": "blog",
+      "count": 3,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/devops/gcp/aws-lambda.md",
+      "type": "blog",
+      "count": 3,
+      "draft": true
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/frameworks/flutter/flutter-tiktok-2.md",
+      "type": "blog",
+      "count": 3,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/frameworks/flutter/semantic-stoic.md",
+      "type": "blog",
+      "count": 3,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/frameworks/next/introducing-multi-part-posts-with-nested-routing.md",
+      "type": "blog",
+      "count": 3,
+      "draft": true
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/info-sec/csrf.md",
+      "type": "blog",
+      "count": 3,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/info-sec/over-the-wire-0-intro.md",
+      "type": "blog",
+      "count": 3,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/info-sec/over-the-wire-3-natas.md",
+      "type": "blog",
+      "count": 3,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/languages/go/go-routines.md",
+      "type": "blog",
+      "count": 3,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/mobile requirements.md",
+      "type": "blog",
+      "count": 3,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/finance/IPO.md",
+      "type": "blog",
+      "count": 2,
+      "draft": true
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/finance/RDO.md",
+      "type": "blog",
+      "count": 2,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/finance/options/open-interest.md",
+      "type": "blog",
+      "count": 2,
+      "draft": true
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/finance/terms/exchange-traded-funds.md",
+      "type": "blog",
+      "count": 2,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/maths/calculus/differentiation.md",
+      "type": "blog",
+      "count": 2,
+      "draft": true
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/maths/calculus/intro.md",
+      "type": "blog",
+      "count": 2,
+      "draft": true
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/projects/royal-stock-exchange/2-seeding data.md",
+      "type": "blog",
+      "count": 2,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/questions/running-a-company.md",
+      "type": "blog",
+      "count": 2,
+      "draft": true
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/data-structures-algorithms/cheatsheet.md",
+      "type": "blog",
+      "count": 2,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/data-structures-algorithms/pointers.md",
+      "type": "blog",
+      "count": 2,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/design patterns/factory.md",
+      "type": "blog",
+      "count": 2,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/frameworks/flutter/flutter lacks webview support.md",
+      "type": "blog",
+      "count": 2,
+      "draft": true
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/info-sec/xss.md",
+      "type": "blog",
+      "count": 2,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/languages/ruby/ruby-lambda.md",
+      "type": "blog",
+      "count": 2,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/system-design/1-ticketmaster.md",
+      "type": "blog",
+      "count": 2,
+      "draft": true
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/system-design/build-db-cluster-docker.md",
+      "type": "blog",
+      "count": 2,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/kb/atom/CS/page-router-vs-app-router.md",
+      "type": "kb",
+      "count": 1,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/ai/ai-search-agent.md",
+      "type": "blog",
+      "count": 1,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/cheatsheets/expo.md",
+      "type": "blog",
+      "count": 1,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/cheatsheets/shell.md",
+      "type": "blog",
+      "count": 1,
+      "draft": true
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/cheatsheets/vim.md",
+      "type": "blog",
+      "count": 1,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/finance/options/strategies/income.md",
+      "type": "blog",
+      "count": 1,
+      "draft": true
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/finance/quant/pair-trading.md",
+      "type": "blog",
+      "count": 1,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/finance/stock-market-size.md",
+      "type": "blog",
+      "count": 1,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/finance/terms/upside-downside.md",
+      "type": "blog",
+      "count": 1,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/finance/trading/25-10-02-dkng-cds.md",
+      "type": "blog",
+      "count": 1,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/leetcode/217-contains-duplicate.md",
+      "type": "blog",
+      "count": 1,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/leetcode/238-product-of-array-except-self.md",
+      "type": "blog",
+      "count": 1,
+      "draft": true
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/leetcode/252-meeting-rooms.md",
+      "type": "blog",
+      "count": 1,
+      "draft": true
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/leetcode/253-meeting-rooms-ii.md",
+      "type": "blog",
+      "count": 1,
+      "draft": true
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/maths/calculus/calculus-2/calculus-2.md",
+      "type": "blog",
+      "count": 1,
+      "draft": true
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/projects/bakesuite.md",
+      "type": "blog",
+      "count": 1,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/projects/royal-stock-exchange/1-intro.md",
+      "type": "blog",
+      "count": 1,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/projects/royal-stock-exchange/5-demo.md",
+      "type": "blog",
+      "count": 1,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/data-structures-algorithms/algorithms/dp.md",
+      "type": "blog",
+      "count": 1,
+      "draft": true
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/data-structures-algorithms/algorithms/sorting-old.md",
+      "type": "blog",
+      "count": 1,
+      "draft": true
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/data-structures-algorithms/graph-programming.md",
+      "type": "blog",
+      "count": 1,
+      "draft": true
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/databases/sql/inspect-table.md",
+      "type": "blog",
+      "count": 1,
+      "draft": true
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/databases/sql/lag.md",
+      "type": "blog",
+      "count": 1,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/databases/sql/optimization.md",
+      "type": "blog",
+      "count": 1,
+      "draft": true
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/databases/sql/procedures-list.md",
+      "type": "blog",
+      "count": 1,
+      "draft": true
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/frameworks/flutter/android connectivity issues - connection refused.md",
+      "type": "blog",
+      "count": 1,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/info-sec/vm tools.md",
+      "type": "blog",
+      "count": 1,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/languages/python/heapq.md",
+      "type": "blog",
+      "count": 1,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/languages/python/uv-package-manager.md",
+      "type": "blog",
+      "count": 1,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/system-design/0-template.md",
+      "type": "blog",
+      "count": 1,
+      "draft": true
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/system-design/1-LeetCode.md",
+      "type": "blog",
+      "count": 1,
+      "draft": true
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/system-design/1-data-science.md",
+      "type": "blog",
+      "count": 1,
+      "draft": true
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/system-design/key-numbers.md",
+      "type": "blog",
+      "count": 1,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/system-design/system-design-1-bitly.md",
+      "type": "blog",
+      "count": 1,
+      "draft": false
+    }
+  ],
+  "termsandroid-integration": [
+    {
+      "file": "/Users/future/l.blog/data/blog/software/system-design/appium-mocha.md",
+      "type": "blog",
+      "count": 1,
+      "draft": false
+    }
+  ],
+  "termsandroid": [
+    {
+      "file": "/Users/future/l.blog/data/blog/software/system-design/appium-mocha.md",
+      "type": "blog",
+      "count": 23,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/frameworks/flutter/android connectivity issues - connection refused.md",
+      "type": "blog",
+      "count": 14,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/frameworks/flutter/flutter android customize app icon.md",
+      "type": "blog",
+      "count": 12,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/system-design/firebase environments.md",
+      "type": "blog",
+      "count": 6,
+      "draft": true
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/languages/java/java-spring.md",
+      "type": "blog",
+      "count": 4,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/mobile requirements.md",
+      "type": "blog",
+      "count": 4,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/cheatsheets/expo.md",
+      "type": "blog",
+      "count": 3,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/projects/royal-stock-exchange/5-demo.md",
+      "type": "blog",
+      "count": 2,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/frameworks/logging-app-load-times-with-firebase.md",
+      "type": "blog",
+      "count": 2,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/cheatsheets/jetbrains.md",
+      "type": "blog",
+      "count": 1,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/frameworks/flutter/flutter lacks webview support.md",
+      "type": "blog",
+      "count": 1,
+      "draft": true
+    }
+  ],
+  "termsangle-between-vectors": [],
+  "termsangular": [
+    {
+      "file": "/Users/future/l.blog/data/blog/same-problems-different-tools.md",
+      "type": "blog",
+      "count": 2,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/info-sec/xss.md",
+      "type": "blog",
+      "count": 1,
+      "draft": false
+    }
+  ],
+  "termsapi-routes": [
+    {
+      "file": "/Users/future/l.blog/data/kb/atom/CS/page-router-vs-app-router.md",
+      "type": "kb",
+      "count": 1,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/TEST/introducing-tailwind-nextjs-starter-blog.mdx",
+      "type": "blog",
+      "count": 1,
+      "draft": true
+    }
+  ],
+  "termsapi-server": [
+    {
+      "file": "/Users/future/l.blog/data/blog/software/system-design/microservices.md",
+      "type": "blog",
+      "count": 1,
+      "draft": false
+    }
+  ],
+  "termsapi-versioning": [],
+  "termsapi": [
+    {
+      "file": "/Users/future/l.blog/data/blog/software/system-design/microservices.md",
+      "type": "blog",
+      "count": 26,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/frameworks/flutter/flutter-tiktok-1.md",
+      "type": "blog",
+      "count": 16,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/system-design/system-design-auditing.md",
+      "type": "blog",
+      "count": 11,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/devops/gcp/aws-lambda.md",
+      "type": "blog",
+      "count": 10,
+      "draft": true
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/system-design/build-api-cache.md",
+      "type": "blog",
+      "count": 7,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/system-design/build-backend-api.md",
+      "type": "blog",
+      "count": 7,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/kb/atom/CS/page-router-vs-app-router.md",
+      "type": "kb",
+      "count": 5,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/frameworks/flutter/flutter-tiktok-2.md",
+      "type": "blog",
+      "count": 4,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/system-design/process-overview.md",
+      "type": "blog",
+      "count": 3,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/TEST/introducing-tailwind-nextjs-starter-blog.mdx",
+      "type": "blog",
+      "count": 2,
+      "draft": true
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/cheatsheets/kubernetes.md",
+      "type": "blog",
+      "count": 2,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/devops/gcp/cloud-run-job.md",
+      "type": "blog",
+      "count": 2,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/devops/gcp/secret-manager.md",
+      "type": "blog",
+      "count": 2,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/system-design/1-ticketmaster.md",
+      "type": "blog",
+      "count": 2,
+      "draft": true
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/TEST/guide-to-using-images-in-nextjs.mdx",
+      "type": "blog",
+      "count": 1,
+      "draft": true
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/projects/royal-stock-exchange/1-intro.md",
+      "type": "blog",
+      "count": 1,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/design patterns/decorator.md",
+      "type": "blog",
+      "count": 1,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/design patterns/repository.md",
+      "type": "blog",
+      "count": 1,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/devops/gcp/cloud-build-triggers.md",
+      "type": "blog",
+      "count": 1,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/frameworks/flutter/android connectivity issues - connection refused.md",
+      "type": "blog",
+      "count": 1,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/frameworks/flutter/vscode launch json.md",
+      "type": "blog",
+      "count": 1,
+      "draft": true
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/languages/go/go-routines.md",
+      "type": "blog",
+      "count": 1,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/languages/java/java-spring.md",
+      "type": "blog",
+      "count": 1,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/system-design/graphql.md",
+      "type": "blog",
+      "count": 1,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/system-design/process-deepdive.md",
+      "type": "blog",
+      "count": 1,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/system-design/system-design-1-bitly.md",
+      "type": "blog",
+      "count": 1,
+      "draft": false
+    }
+  ],
+  "termsapp-router": [
+    {
+      "file": "/Users/future/l.blog/data/kb/atom/CS/page-router-vs-app-router.md",
+      "type": "kb",
+      "count": 6,
+      "draft": false
+    }
+  ],
+  "termsapp-store-deployment": [],
+  "termsapparmor": [],
+  "termsapt": [],
+  "termsarc-length": [],
+  "termsarea-between-curves": [],
+  "termsarea-under-curve": [],
+  "termsargo-cd": [],
+  "termsarima": [
+    {
+      "file": "/Users/future/l.blog/data/blog/finance/quant/crash-course.md",
+      "type": "blog",
+      "count": 1,
+      "draft": true
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/finance/quant/statistics.md",
+      "type": "blog",
+      "count": 1,
+      "draft": false
+    }
+  ],
+  "termsarray": [
+    {
+      "file": "/Users/future/l.blog/data/blog/software/data-structures-algorithms/dynamic-programming.md",
+      "type": "blog",
+      "count": 26,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/TEST/deriving-ols-estimator.mdx",
+      "type": "blog",
+      "count": 12,
+      "draft": true
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/leetcode/217-contains-duplicate.md",
+      "type": "blog",
+      "count": 3,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/leetcode/1-two-sum.md",
+      "type": "blog",
+      "count": 2,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/leetcode/121-best-time-to-sell-stock.md",
+      "type": "blog",
+      "count": 2,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/leetcode/238-product-of-array-except-self.md",
+      "type": "blog",
+      "count": 2,
+      "draft": true
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/leetcode/239-sliding-window-maximum.md",
+      "type": "blog",
+      "count": 2,
+      "draft": true
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/data-structures-algorithms/algorithms/sorting.md",
+      "type": "blog",
+      "count": 2,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/data-structures-algorithms/cheatsheet.md",
+      "type": "blog",
+      "count": 2,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/data-structures-algorithms/priority-queue.md",
+      "type": "blog",
+      "count": 2,
+      "draft": true
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/frameworks/flutter/flutter-tiktok-2.md",
+      "type": "blog",
+      "count": 2,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/TEST/code-tab-groups.md",
+      "type": "blog",
+      "count": 1,
+      "draft": true
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/TEST/introducing-tailwind-nextjs-starter-blog.mdx",
+      "type": "blog",
+      "count": 1,
+      "draft": true
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/finance/high-frequency-trading.md",
+      "type": "blog",
+      "count": 1,
+      "draft": true
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/leetcode/16-3-sum-closest.md",
+      "type": "blog",
+      "count": 1,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/leetcode/252-meeting-rooms.md",
+      "type": "blog",
+      "count": 1,
+      "draft": true
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/leetcode/253-meeting-rooms-ii.md",
+      "type": "blog",
+      "count": 1,
+      "draft": true
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/data-structures-algorithms/terms.md",
+      "type": "blog",
+      "count": 1,
+      "draft": true
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/frameworks/flutter/flutter-tiktok-1.md",
+      "type": "blog",
+      "count": 1,
+      "draft": false
+    }
+  ],
+  "termsartifact-storage": [],
+  "termsartificial-intelligence": [
+    {
+      "file": "/Users/future/l.blog/data/kb/atom/CS/AI.md",
+      "type": "kb",
+      "count": 3,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/ai/ai-as-fractals.md",
+      "type": "blog",
+      "count": 1,
+      "draft": false
+    }
+  ],
+  "termsasset-allocation": [
+    {
+      "file": "/Users/future/l.blog/data/blog/finance/toc.md",
+      "type": "blog",
+      "count": 1,
+      "draft": true
+    }
+  ],
+  "termsassociation": [
+    {
+      "file": "/Users/future/l.blog/data/blog/finance/trading/25-10-02-dkng-cds.md",
+      "type": "blog",
+      "count": 1,
+      "draft": false
+    }
+  ],
+  "termsasymptotic-analysis": [],
+  "termsasync-await": [],
+  "termsasync-widget": [],
+  "termsatomic-design": [],
+  "termsatomic-operations": [],
+  "termsatomicity": [
+    {
+      "file": "/Users/future/l.blog/data/blog/software/system-design/process-overview.md",
+      "type": "blog",
+      "count": 1,
+      "draft": false
+    }
+  ],
+  "termsattention-matrices": [],
+  "termsattention-mechanism": [],
+  "termsattribute": [
+    {
+      "file": "/Users/future/l.blog/data/blog/TEST/introducing-tailwind-nextjs-starter-blog.mdx",
+      "type": "blog",
+      "count": 1,
+      "draft": true
+    }
+  ],
+  "termsauc": [],
+  "termsaugmented-matrix": [],
+  "termsauthentication-middleware": [],
+  "termsauthentication": [
+    {
+      "file": "/Users/future/l.blog/data/blog/software/system-design/build-db-cluster-docker.md",
+      "type": "blog",
+      "count": 2,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/exchange/intro-2.md",
+      "type": "blog",
+      "count": 1,
+      "draft": true
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/devops/gcp/cloud-scheduler.md",
+      "type": "blog",
+      "count": 1,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/info-sec/csrf.md",
+      "type": "blog",
+      "count": 1,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/system-design/process-deepdive.md",
+      "type": "blog",
+      "count": 1,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/system-design/system-design-auditing.md",
+      "type": "blog",
+      "count": 1,
+      "draft": false
+    }
+  ],
+  "termsauthjs": [],
+  "termsauthorization": [
+    {
+      "file": "/Users/future/l.blog/data/blog/exchange/intro-3.md",
+      "type": "blog",
+      "count": 4,
+      "draft": true
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/system-design/system-design-auditing.md",
+      "type": "blog",
+      "count": 3,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/exchange/intro-6.md",
+      "type": "blog",
+      "count": 1,
+      "draft": true
+    }
+  ],
+  "termsauto-scaling": [],
+  "termsautomated-deployment": [],
+  "termsautonomous-agent": [],
+  "termsautoregressive-model": [],
+  "termsaverage-case": [],
+  "termsavg": [
+    {
+      "file": "/Users/future/l.blog/data/blog/software/databases/sql/1_toc.md",
+      "type": "blog",
+      "count": 2,
+      "draft": true
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/system-design/key-numbers.md",
+      "type": "blog",
+      "count": 1,
+      "draft": false
+    }
+  ],
+  "termsaws-ecs": [],
+  "termsaws": [
+    {
+      "file": "/Users/future/l.blog/data/blog/software/devops/gcp/aws-cloud-practiitioner.md",
+      "type": "blog",
+      "count": 14,
+      "draft": true
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/devops/gcp/aws-lambda.md",
+      "type": "blog",
+      "count": 3,
+      "draft": true
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/languages/go/go-routines.md",
+      "type": "blog",
+      "count": 3,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/same-problems-different-tools.md",
+      "type": "blog",
+      "count": 2,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/finance/quant/crash-course.md",
+      "type": "blog",
+      "count": 1,
+      "draft": true
+    }
+  ],
+  "termsazure-container-instances": [],
+  "termsb-tree-index": [],
+  "termsbabel": [
+    {
+      "file": "/Users/future/l.blog/data/blog/opinions/why-flutter-is-better-than-react-native.md",
+      "type": "blog",
+      "count": 1,
+      "draft": false
+    }
+  ],
+  "termsbackend-for-frontend": [],
+  "termsbackend": [
+    {
+      "file": "/Users/future/l.blog/data/blog/TEST/TEST-TERMS.md",
+      "type": "blog",
+      "count": 2,
+      "draft": true
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/system-design/build-api-cache.md",
+      "type": "blog",
+      "count": 2,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/system-design/build-backend-api.md",
+      "type": "blog",
+      "count": 2,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/projects/royal-stock-exchange/3-portfolio.md",
+      "type": "blog",
+      "count": 1,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/databases/nosql/mongodb.md",
+      "type": "blog",
+      "count": 1,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/devops/gcp/aws-lambda.md",
+      "type": "blog",
+      "count": 1,
+      "draft": true
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/languages/python/uv-package-manager.md",
+      "type": "blog",
+      "count": 1,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/starters/python-graphql.md",
+      "type": "blog",
+      "count": 1,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/system-design/flutter-theme.md",
+      "type": "blog",
+      "count": 1,
+      "draft": false
+    }
+  ],
+  "termsbackground-process": [
+    {
+      "file": "/Users/future/l.blog/data/blog/software/info-sec/over-the-wire-1-bandit.md",
+      "type": "blog",
+      "count": 2,
+      "draft": false
+    }
+  ],
+  "termsbackground-tasks": [
+    {
+      "file": "/Users/future/l.blog/data/blog/software/devops/gcp/cloud-run-job.md",
+      "type": "blog",
+      "count": 2,
+      "draft": false
+    }
+  ],
+  "termsbackpropagation": [],
+  "termsbacktracking": [
+    {
+      "file": "/Users/future/l.blog/data/blog/leetcode/742-network-delay-time.md",
+      "type": "blog",
+      "count": 1,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/data-structures-algorithms/cheatsheet.md",
+      "type": "blog",
+      "count": 1,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/data-structures-algorithms/patterns-graph.md",
+      "type": "blog",
+      "count": 1,
+      "draft": false
+    }
+  ],
+  "termsbalance-sheet": [],
+  "termsbalanced-bst": [],
+  "termsbase-case": [
+    {
+      "file": "/Users/future/l.blog/data/blog/software/data-structures-algorithms/graph-theory.md",
+      "type": "blog",
+      "count": 2,
+      "draft": true
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/leetcode/322-coin-change.md",
+      "type": "blog",
+      "count": 1,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/data-structures-algorithms/dynamic-programming.md",
+      "type": "blog",
+      "count": 1,
+      "draft": false
+    }
+  ],
+  "termsbase-image": [],
+  "termsbash-automation": [],
+  "termsbash": [
+    {
+      "file": "/Users/future/l.blog/data/blog/software/info-sec/over-the-wire-1-bandit.md",
+      "type": "blog",
+      "count": 12,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/git/pre-commit.md",
+      "type": "blog",
+      "count": 5,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/TEST/introducing-tailwind-nextjs-starter-blog.mdx",
+      "type": "blog",
+      "count": 4,
+      "draft": true
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/frameworks/flutter/flutter-tiktok-1.md",
+      "type": "blog",
+      "count": 3,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/languages/java/java-spring.md",
+      "type": "blog",
+      "count": 3,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/system-design/build-db-cluster-docker.md",
+      "type": "blog",
+      "count": 3,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/frameworks/flutter/flutter-tiktok-2.md",
+      "type": "blog",
+      "count": 2,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/system-design/firebase environments.md",
+      "type": "blog",
+      "count": 2,
+      "draft": true
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/projects/royal-stock-exchange/1-intro.md",
+      "type": "blog",
+      "count": 1,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/design patterns/decorator.md",
+      "type": "blog",
+      "count": 1,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/system-design/microservices.md",
+      "type": "blog",
+      "count": 1,
+      "draft": false
+    }
+  ],
+  "termsbasis-transformation": [],
+  "termsbasis-vectors": [],
+  "termsbasis": [
+    {
+      "file": "/Users/future/l.blog/data/blog/finance/futures.md",
+      "type": "blog",
+      "count": 2,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/TEST/introducing-tailwind-nextjs-starter-blog.mdx",
+      "type": "blog",
+      "count": 1,
+      "draft": true
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/TEST/the-time-machine.mdx",
+      "type": "blog",
+      "count": 1,
+      "draft": true
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/finance/options/strategies/trading-strategies.md",
+      "type": "blog",
+      "count": 1,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/databases/sql/lag.md",
+      "type": "blog",
+      "count": 1,
+      "draft": false
+    }
+  ],
+  "termsbatch-normalization": [],
+  "termsbayes-theorem": [],
+  "termsbayesian-inference": [
+    {
+      "file": "/Users/future/l.blog/data/blog/finance/quant/statistics.md",
+      "type": "blog",
+      "count": 1,
+      "draft": false
+    }
+  ],
+  "termsbayesian-networks": [
+    {
+      "file": "/Users/future/l.blog/data/kb/atom/CS/AI.md",
+      "type": "kb",
+      "count": 1,
+      "draft": false
+    }
+  ],
+  "termsbayesian-updating": [],
+  "termsbehavior": [
+    {
+      "file": "/Users/future/l.blog/data/blog/software/data-structures-algorithms/OOP.md",
+      "type": "blog",
+      "count": 10,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/system-design/appium-mocha.md",
+      "type": "blog",
+      "count": 7,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/kb/atom/CS/AI.md",
+      "type": "kb",
+      "count": 4,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/exchange/intro-5.md",
+      "type": "blog",
+      "count": 2,
+      "draft": true
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/system-design/process-overview.md",
+      "type": "blog",
+      "count": 2,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/ai/vibe-coders.md",
+      "type": "blog",
+      "count": 1,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/exchange/intro-2.md",
+      "type": "blog",
+      "count": 1,
+      "draft": true
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/exchange/intro-4.md",
+      "type": "blog",
+      "count": 1,
+      "draft": true
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/exchange/intro-6.md",
+      "type": "blog",
+      "count": 1,
+      "draft": true
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/finance/options/open-frac.md",
+      "type": "blog",
+      "count": 1,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/finance/quant/calculus-for-quants.md",
+      "type": "blog",
+      "count": 1,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/finance/quant/pair-trading.md",
+      "type": "blog",
+      "count": 1,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/finance/thesis-jaime.md",
+      "type": "blog",
+      "count": 1,
+      "draft": true
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/finance/toc.md",
+      "type": "blog",
+      "count": 1,
+      "draft": true
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/maths/calculus/multivariable-calc.md",
+      "type": "blog",
+      "count": 1,
+      "draft": true
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/personal/cognitive-dissonance.md",
+      "type": "blog",
+      "count": 1,
+      "draft": true
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/personal/stoicism.md",
+      "type": "blog",
+      "count": 1,
+      "draft": true
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/projects/royal-stock-exchange/4-scaling.md",
+      "type": "blog",
+      "count": 1,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/same-problems-different-tools.md",
+      "type": "blog",
+      "count": 1,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/design patterns/decorator.md",
+      "type": "blog",
+      "count": 1,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/info-sec/csrf.md",
+      "type": "blog",
+      "count": 1,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/system-design/key-numbers.md",
+      "type": "blog",
+      "count": 1,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/system-design/system-design-auditing.md",
+      "type": "blog",
+      "count": 1,
+      "draft": false
+    }
+  ],
+  "termsbellman-ford": [],
+  "termsbernoulli-distribution": [],
+  "termsbert": [],
+  "termsbest-case": [],
+  "termsbeta": [
+    {
+      "file": "/Users/future/l.blog/data/blog/TEST/deriving-ols-estimator.mdx",
+      "type": "blog",
+      "count": 26,
+      "draft": true
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/finance/quant/pair-trading.md",
+      "type": "blog",
+      "count": 2,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/finance/quant/symbols.md",
+      "type": "blog",
+      "count": 2,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/finance/formulas.md",
+      "type": "blog",
+      "count": 1,
+      "draft": true
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/finance/toc.md",
+      "type": "blog",
+      "count": 1,
+      "draft": true
+    }
+  ],
+  "termsbetween": [
+    {
+      "file": "/Users/future/l.blog/data/blog/personal/cognitive-dissonance.md",
+      "type": "blog",
+      "count": 7,
+      "draft": true
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/data-structures-algorithms/OOP.md",
+      "type": "blog",
+      "count": 4,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/exchange/intro-6.md",
+      "type": "blog",
+      "count": 3,
+      "draft": true
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/finance/futures.md",
+      "type": "blog",
+      "count": 3,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/projects/royal-stock-exchange/4-scaling.md",
+      "type": "blog",
+      "count": 3,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/data-structures-algorithms/patterns-graph.md",
+      "type": "blog",
+      "count": 3,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/system-design/appium-mocha.md",
+      "type": "blog",
+      "count": 3,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/TEST/the-time-machine.mdx",
+      "type": "blog",
+      "count": 2,
+      "draft": true
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/finance/indicators/implied-volatility-rank.md",
+      "type": "blog",
+      "count": 2,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/finance/indicators/relative-strength-index.md",
+      "type": "blog",
+      "count": 2,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/finance/quant/pair-trading.md",
+      "type": "blog",
+      "count": 2,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/questions/running-a-company.md",
+      "type": "blog",
+      "count": 2,
+      "draft": true
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/data-structures-algorithms/algorithms/dijkstras.md",
+      "type": "blog",
+      "count": 2,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/databases/sql/1_toc.md",
+      "type": "blog",
+      "count": 2,
+      "draft": true
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/devops/gcp/vcp-connectors.md",
+      "type": "blog",
+      "count": 2,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/system-design/process-overview.md",
+      "type": "blog",
+      "count": 2,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/TEST/deriving-ols-estimator.mdx",
+      "type": "blog",
+      "count": 1,
+      "draft": true
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/cheatsheets/vscode.md",
+      "type": "blog",
+      "count": 1,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/exchange/intro-1.md",
+      "type": "blog",
+      "count": 1,
+      "draft": true
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/exchange/intro-4.md",
+      "type": "blog",
+      "count": 1,
+      "draft": true
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/exchange/intro-7.md",
+      "type": "blog",
+      "count": 1,
+      "draft": true
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/finance/RDO.md",
+      "type": "blog",
+      "count": 1,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/finance/federal-reserve-vs-treasury-department.md",
+      "type": "blog",
+      "count": 1,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/finance/indicators/sharpe-ratio.md",
+      "type": "blog",
+      "count": 1,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/finance/options/strategies/spreads.md",
+      "type": "blog",
+      "count": 1,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/finance/options/strategies/trading-strategies.md",
+      "type": "blog",
+      "count": 1,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/finance/quant/order-books.md",
+      "type": "blog",
+      "count": 1,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/finance/quant/slippage.md",
+      "type": "blog",
+      "count": 1,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/finance/terms/closed-ended-funds.md",
+      "type": "blog",
+      "count": 1,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/finance/terms/institutional-retail.md",
+      "type": "blog",
+      "count": 1,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/finance/terms/intrinsic-value.md",
+      "type": "blog",
+      "count": 1,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/finance/terms/secondary-market.md",
+      "type": "blog",
+      "count": 1,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/leetcode/1-two-sum.md",
+      "type": "blog",
+      "count": 1,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/leetcode/121-best-time-to-sell-stock.md",
+      "type": "blog",
+      "count": 1,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/leetcode/16-3-sum-closest.md",
+      "type": "blog",
+      "count": 1,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/leetcode/261-graph-valid-tree.md",
+      "type": "blog",
+      "count": 1,
+      "draft": true
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/maths/calculus/multivariable-calc.md",
+      "type": "blog",
+      "count": 1,
+      "draft": true
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/personal/stoicism.md",
+      "type": "blog",
+      "count": 1,
+      "draft": true
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/politics/1-go.md",
+      "type": "blog",
+      "count": 1,
+      "draft": true
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/projects/royal-stock-exchange/3-portfolio.md",
+      "type": "blog",
+      "count": 1,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/data-structures-algorithms/cheatsheet.md",
+      "type": "blog",
+      "count": 1,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/data-structures-algorithms/graph-programming.md",
+      "type": "blog",
+      "count": 1,
+      "draft": true
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/databases/pgadmin.md",
+      "type": "blog",
+      "count": 1,
+      "draft": true
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/design patterns/observer.md",
+      "type": "blog",
+      "count": 1,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/design patterns/repository.md",
+      "type": "blog",
+      "count": 1,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/devops/gcp/cloud-run.md",
+      "type": "blog",
+      "count": 1,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/frameworks/flutter/flutter-tiktok-1.md",
+      "type": "blog",
+      "count": 1,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/frameworks/flutter/navigators.md",
+      "type": "blog",
+      "count": 1,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/git/rebase.md",
+      "type": "blog",
+      "count": 1,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/info-sec/over-the-wire-1-bandit.md",
+      "type": "blog",
+      "count": 1,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/system-design/flutter-theme.md",
+      "type": "blog",
+      "count": 1,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/system-design/key-numbers.md",
+      "type": "blog",
+      "count": 1,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/system-design/process-deepdive.md",
+      "type": "blog",
+      "count": 1,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/system-design/system-design-distributed-systems.md",
+      "type": "blog",
+      "count": 1,
+      "draft": false
+    }
+  ],
+  "termsbfs": [
+    {
+      "file": "/Users/future/l.blog/data/blog/software/data-structures-algorithms/graph-programming.md",
+      "type": "blog",
+      "count": 5,
+      "draft": true
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/data-structures-algorithms/patterns-graph.md",
+      "type": "blog",
+      "count": 3,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/data-structures-algorithms/cheatsheet.md",
+      "type": "blog",
+      "count": 2,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/data-structures-algorithms/graph-algorithms.md",
+      "type": "blog",
+      "count": 2,
+      "draft": true
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/data-structures-algorithms/priority-queue.md",
+      "type": "blog",
+      "count": 2,
+      "draft": true
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/ai/ai-search-agent.md",
+      "type": "blog",
+      "count": 1,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/leetcode/742-network-delay-time.md",
+      "type": "blog",
+      "count": 1,
+      "draft": false
+    }
+  ],
+  "termsbias-variance-tradeoff": [],
+  "termsbiconditional": [],
+  "termsbig-o-notation": [],
+  "termsbig-omega": [],
+  "termsbig-theta": [],
+  "termsbigtable": [],
+  "termsbijective": [],
+  "termsbin": [
+    {
+      "file": "/Users/future/l.blog/data/blog/software/info-sec/over-the-wire-1-bandit.md",
+      "type": "blog",
+      "count": 10,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/info-sec/over-the-wire-2-leviathan.md",
+      "type": "blog",
+      "count": 5,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/system-design/flutter-netlify-deploy.md",
+      "type": "blog",
+      "count": 4,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/git/pre-commit.md",
+      "type": "blog",
+      "count": 2,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/cheatsheets/kubernetes.md",
+      "type": "blog",
+      "count": 1,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/languages/java/java-spring.md",
+      "type": "blog",
+      "count": 1,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/languages/rust/rust-projects.md",
+      "type": "blog",
+      "count": 1,
+      "draft": true
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/system-design/build-api-cache.md",
+      "type": "blog",
+      "count": 1,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/system-design/build-backend-api.md",
+      "type": "blog",
+      "count": 1,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/system-design/build-db-cluster-docker.md",
+      "type": "blog",
+      "count": 1,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/system-design/build-message-queue.md",
+      "type": "blog",
+      "count": 1,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/system-design/firebase environments.md",
+      "type": "blog",
+      "count": 1,
+      "draft": true
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/system-design/microservices.md",
+      "type": "blog",
+      "count": 1,
+      "draft": false
+    }
+  ],
+  "termsbinary-search-tree": [
+    {
+      "file": "/Users/future/l.blog/data/blog/software/data-structures-algorithms/cheatsheet.md",
+      "type": "blog",
+      "count": 3,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/data-structures-algorithms/graph-theory.md",
+      "type": "blog",
+      "count": 2,
+      "draft": true
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/data-structures-algorithms/trees.md",
+      "type": "blog",
+      "count": 2,
+      "draft": true
+    }
+  ],
+  "termsbinary-search": [
+    {
+      "file": "/Users/future/l.blog/data/blog/software/data-structures-algorithms/cheatsheet.md",
+      "type": "blog",
+      "count": 3,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/data-structures-algorithms/algorithms/tree-traversals.md",
+      "type": "blog",
+      "count": 2,
+      "draft": true
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/data-structures-algorithms/graph-theory.md",
+      "type": "blog",
+      "count": 2,
+      "draft": true
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/data-structures-algorithms/trees.md",
+      "type": "blog",
+      "count": 2,
+      "draft": true
+    }
+  ],
+  "termsbinary-tree": [
+    {
+      "file": "/Users/future/l.blog/data/blog/software/data-structures-algorithms/trees.md",
+      "type": "blog",
+      "count": 11,
+      "draft": true
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/data-structures-algorithms/graph-theory.md",
+      "type": "blog",
+      "count": 7,
+      "draft": true
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/data-structures-algorithms/algorithms/tree-traversals.md",
+      "type": "blog",
+      "count": 3,
+      "draft": true
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/data-structures-algorithms/cheatsheet.md",
+      "type": "blog",
+      "count": 2,
+      "draft": false
+    }
+  ],
+  "termsbind-mounts": [],
+  "termsbinomial-coefficient": [],
+  "termsbinomial-distribution": [],
+  "termsbipartite-graph": [
+    {
+      "file": "/Users/future/l.blog/data/blog/software/data-structures-algorithms/patterns-graph.md",
+      "type": "blog",
+      "count": 1,
+      "draft": false
+    }
+  ],
+  "termsbit-manipulation": [],
+  "termsbit-masking": [],
+  "termsbloc": [],
+  "termsblue-green-deployment": [],
+  "termsbonds": [
+    {
+      "file": "/Users/future/l.blog/data/blog/finance/terms/mutual-funds.md",
+      "type": "blog",
+      "count": 3,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/finance/federal-reserve-vs-treasury-department.md",
+      "type": "blog",
+      "count": 1,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/finance/options/strategies/trading-strategies.md",
+      "type": "blog",
+      "count": 1,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/finance/quant/crash-course.md",
+      "type": "blog",
+      "count": 1,
+      "draft": true
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/finance/terms/index-fund.md",
+      "type": "blog",
+      "count": 1,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/finance/terms/secondary-market.md",
+      "type": "blog",
+      "count": 1,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/finance/toc.md",
+      "type": "blog",
+      "count": 1,
+      "draft": true
+    }
+  ],
+  "termsbox-model": [],
+  "termsboyce-codd-normal-form": [],
+  "termsbreadth-first-search": [],
+  "termsbridge-network": [],
+  "termsbridge": [
+    {
+      "file": "/Users/future/l.blog/data/blog/exchange/intro-7.md",
+      "type": "blog",
+      "count": 1,
+      "draft": true
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/devops/gcp/vcp-connectors.md",
+      "type": "blog",
+      "count": 1,
+      "draft": false
+    }
+  ],
+  "termsbst-deletion": [],
+  "termsbst-insertion": [],
+  "termsbst-search": [],
+  "termsbubble-sort": [
+    {
+      "file": "/Users/future/l.blog/data/blog/software/data-structures-algorithms/algorithms/sorting.md",
+      "type": "blog",
+      "count": 4,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/data-structures-algorithms/algorithms/sorting-old.md",
+      "type": "blog",
+      "count": 2,
+      "draft": true
+    }
+  ],
+  "termsbuild-context": [],
+  "termsbuild-image": [],
+  "termsbuild-once-run-anywhere": [],
+  "termsbuild-phase": [],
+  "termsbuild-process": [
+    {
+      "file": "/Users/future/l.blog/data/blog/TEST/guide-to-using-images-in-nextjs.mdx",
+      "type": "blog",
+      "count": 1,
+      "draft": true
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/system-design/firebase environments.md",
+      "type": "blog",
+      "count": 1,
+      "draft": true
+    }
+  ],
+  "termsbuild": [
+    {
+      "file": "/Users/future/l.blog/data/blog/software/devops/gcp/cloud-build-triggers.md",
+      "type": "blog",
+      "count": 17,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/frameworks/flutter/navigators.md",
+      "type": "blog",
+      "count": 14,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/cheatsheets/expo.md",
+      "type": "blog",
+      "count": 12,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/frameworks/flutter/flutter-tiktok-1.md",
+      "type": "blog",
+      "count": 11,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/system-design/microservices.md",
+      "type": "blog",
+      "count": 10,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/system-design/flutter-netlify-deploy.md",
+      "type": "blog",
+      "count": 9,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/system-design/appium-mocha.md",
+      "type": "blog",
+      "count": 6,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/TEST/guide-to-using-images-in-nextjs.mdx",
+      "type": "blog",
+      "count": 4,
+      "draft": true
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/frameworks/flutter/flutter-tiktok-2.md",
+      "type": "blog",
+      "count": 4,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/finance/quant/crash-course.md",
+      "type": "blog",
+      "count": 3,
+      "draft": true
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/leetcode/742-network-delay-time.md",
+      "type": "blog",
+      "count": 3,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/devops/gcp/gcp-pipeline.md",
+      "type": "blog",
+      "count": 3,
+      "draft": true
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/devops/gcp/secret-manager.md",
+      "type": "blog",
+      "count": 3,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/languages/rust/rust-projects.md",
+      "type": "blog",
+      "count": 3,
+      "draft": true
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/system-design/build-db-cluster-docker.md",
+      "type": "blog",
+      "count": 3,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/system-design/system-design-auditing.md",
+      "type": "blog",
+      "count": 3,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/exchange/intro-1.md",
+      "type": "blog",
+      "count": 2,
+      "draft": true
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/finance/high-frequency-trading.md",
+      "type": "blog",
+      "count": 2,
+      "draft": true
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/finance/index.md",
+      "type": "blog",
+      "count": 2,
+      "draft": true
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/same-problems-different-tools.md",
+      "type": "blog",
+      "count": 2,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/devops/gcp/cloud-run.md",
+      "type": "blog",
+      "count": 2,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/frameworks/flutter/flutter android customize app icon.md",
+      "type": "blog",
+      "count": 2,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/languages/dart/dart.3.10.md",
+      "type": "blog",
+      "count": 2,
+      "draft": true
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/system-design/build-backend-api.md",
+      "type": "blog",
+      "count": 2,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/system-design/firebase environments.md",
+      "type": "blog",
+      "count": 2,
+      "draft": true
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/system-design/flutter-theme.md",
+      "type": "blog",
+      "count": 2,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/kb/atom/CS/AI.md",
+      "type": "kb",
+      "count": 1,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/kb/atom/CS/git-worktree-git-submodule-git-monorepo.md",
+      "type": "kb",
+      "count": 1,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/TEST/introducing-tailwind-nextjs-starter-blog.mdx",
+      "type": "blog",
+      "count": 1,
+      "draft": true
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/exchange/intro-7.md",
+      "type": "blog",
+      "count": 1,
+      "draft": true
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/finance/indicators/premium-flow-with-z-scores.md",
+      "type": "blog",
+      "count": 1,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/finance/options/strategies/spreads.md",
+      "type": "blog",
+      "count": 1,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/finance/quant/maths.md",
+      "type": "blog",
+      "count": 1,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/finance/quant/symbols.md",
+      "type": "blog",
+      "count": 1,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/finance/terms/exchange-traded-funds.md",
+      "type": "blog",
+      "count": 1,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/opinions/why-flutter-is-better-than-react-native.md",
+      "type": "blog",
+      "count": 1,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/projects/royal-stock-exchange/1-intro.md",
+      "type": "blog",
+      "count": 1,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/projects/royal-stock-exchange/3-portfolio.md",
+      "type": "blog",
+      "count": 1,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/projects/royal-stock-exchange/4-scaling.md",
+      "type": "blog",
+      "count": 1,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/devops/gcp/vcp-connectors.md",
+      "type": "blog",
+      "count": 1,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/frameworks/flutter/semantic-stoic.md",
+      "type": "blog",
+      "count": 1,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/frameworks/react.md",
+      "type": "blog",
+      "count": 1,
+      "draft": true
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/git/pre-commit.md",
+      "type": "blog",
+      "count": 1,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/languages/go/go-routines.md",
+      "type": "blog",
+      "count": 1,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/languages/python/uv-package-manager.md",
+      "type": "blog",
+      "count": 1,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/system-design/1-DSAFine-Mono.md",
+      "type": "blog",
+      "count": 1,
+      "draft": true
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/system-design/build-api-cache.md",
+      "type": "blog",
+      "count": 1,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/system-design/process-deepdive.md",
+      "type": "blog",
+      "count": 1,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/system-design/system-design-distributed-systems.md",
+      "type": "blog",
+      "count": 1,
+      "draft": false
+    }
+  ],
+  "termsbundle-analysis": [],
+  "termsbundling": [
+    {
+      "file": "/Users/future/l.blog/data/blog/software/data-structures-algorithms/OOP.md",
+      "type": "blog",
+      "count": 1,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/design patterns/decorator.md",
+      "type": "blog",
+      "count": 1,
+      "draft": false
+    }
+  ],
+  "termsbutton": [
+    {
+      "file": "/Users/future/l.blog/data/blog/leetcode/200-number-of-islands.md",
+      "type": "blog",
+      "count": 56,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/data-structures-algorithms/algorithms/sorting-old.md",
+      "type": "blog",
+      "count": 48,
+      "draft": true
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/data-structures-algorithms/dynamic-programming.md",
+      "type": "blog",
+      "count": 48,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/leetcode/1-two-sum.md",
+      "type": "blog",
+      "count": 36,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/leetcode/121-best-time-to-sell-stock.md",
+      "type": "blog",
+      "count": 36,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/leetcode/16-3-sum-closest.md",
+      "type": "blog",
+      "count": 36,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/leetcode/217-contains-duplicate.md",
+      "type": "blog",
+      "count": 24,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/leetcode/70-climbing-stairs.md",
+      "type": "blog",
+      "count": 24,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/system-design/build-db-cluster-docker.md",
+      "type": "blog",
+      "count": 16,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/leetcode/252-meeting-rooms.md",
+      "type": "blog",
+      "count": 14,
+      "draft": true
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/leetcode/253-meeting-rooms-ii.md",
+      "type": "blog",
+      "count": 14,
+      "draft": true
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/leetcode/261-graph-valid-tree.md",
+      "type": "blog",
+      "count": 14,
+      "draft": true
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/leetcode/238-product-of-array-except-self.md",
+      "type": "blog",
+      "count": 12,
+      "draft": true
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/system-design/appium-mocha.md",
+      "type": "blog",
+      "count": 11,
+      "draft": false
     },
     {
       "file": "/Users/future/l.blog/data/blog/leetcode/742-network-delay-time.md",
@@ -883,53 +3793,306 @@ export const termBacklinks = {
       "draft": false
     },
     {
-      "file": "/Users/future/l.blog/data/blog/software/system-design/microservices.md",
+      "file": "/Users/future/l.blog/data/blog/software/system-design/system-design-auditing.md",
       "type": "blog",
-      "count": 6,
+      "count": 8,
       "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/system-design/flutter-theme.md",
+      "type": "blog",
+      "count": 7,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/opinions/why-flutter-is-better-than-react-native.md",
+      "type": "blog",
+      "count": 4,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/system-design/build-api-cache.md",
+      "type": "blog",
+      "count": 4,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/leetcode/239-sliding-window-maximum.md",
+      "type": "blog",
+      "count": 2,
+      "draft": true
     },
     {
       "file": "/Users/future/l.blog/data/blog/leetcode/322-coin-change.md",
       "type": "blog",
-      "count": 5,
+      "count": 2,
       "draft": false
     },
     {
-      "file": "/Users/future/l.blog/data/blog/software/frameworks/flutter/semantic-stoic.md",
+      "file": "/Users/future/l.blog/data/blog/leetcode/463-island-perimeter.md",
       "type": "blog",
-      "count": 5,
-      "draft": false
+      "count": 2,
+      "draft": true
     },
     {
-      "file": "/Users/future/l.blog/data/blog/software/info-sec/over-the-wire-1-bandit.md",
+      "file": "/Users/future/l.blog/data/blog/TEST/introducing-tailwind-nextjs-starter-blog.mdx",
       "type": "blog",
-      "count": 5,
-      "draft": false
+      "count": 1,
+      "draft": true
     },
     {
-      "file": "/Users/future/l.blog/data/blog/software/languages/go/go-routines.md",
+      "file": "/Users/future/l.blog/data/blog/software/frameworks/flutter/flutter-tiktok-2.md",
       "type": "blog",
-      "count": 4,
+      "count": 1,
       "draft": false
-    },
+    }
+  ],
+  "termscache": [
     {
-      "file": "/Users/future/l.blog/data/blog/software/languages/python/uv-package-manager.md",
+      "file": "/Users/future/l.blog/data/blog/software/system-design/build-api-cache.md",
       "type": "blog",
-      "count": 4,
+      "count": 22,
       "draft": false
     },
     {
-      "file": "/Users/future/l.blog/data/blog/software/system-design/system-design-auditing.md",
+      "file": "/Users/future/l.blog/data/blog/projects/royal-stock-exchange/4-scaling.md",
+      "type": "blog",
+      "count": 10,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/finance/high-frequency-trading.md",
+      "type": "blog",
+      "count": 3,
+      "draft": true
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/system-design/build-backend-api.md",
       "type": "blog",
       "count": 3,
       "draft": false
     },
     {
-      "file": "/Users/future/l.blog/data/kb/kb-dsl-code-tab-group.md",
-      "type": "kb",
+      "file": "/Users/future/l.blog/data/blog/software/system-design/process-deepdive.md",
+      "type": "blog",
+      "count": 3,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/projects/royal-stock-exchange/3-portfolio.md",
+      "type": "blog",
       "count": 2,
       "draft": false
     },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/data-structures-algorithms/dynamic-programming.md",
+      "type": "blog",
+      "count": 2,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/devops/gcp/cloud-run-job.md",
+      "type": "blog",
+      "count": 2,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/languages/dart/dart.3.10.md",
+      "type": "blog",
+      "count": 2,
+      "draft": true
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/system-design/key-numbers.md",
+      "type": "blog",
+      "count": 2,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/kb/atom/CS/page-router-vs-app-router.md",
+      "type": "kb",
+      "count": 1,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/data-structures-algorithms/algorithms/dp.md",
+      "type": "blog",
+      "count": 1,
+      "draft": true
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/data-structures-algorithms/algorithms/sorting.md",
+      "type": "blog",
+      "count": 1,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/design patterns/singleton.md",
+      "type": "blog",
+      "count": 1,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/devops/gcp/cloud-build-triggers.md",
+      "type": "blog",
+      "count": 1,
+      "draft": false
+    }
+  ],
+  "termscaching-behavior": [],
+  "termscaching-layer": [
+    {
+      "file": "/Users/future/l.blog/data/blog/projects/royal-stock-exchange/4-scaling.md",
+      "type": "blog",
+      "count": 3,
+      "draft": false
+    }
+  ],
+  "termscaching-layers": [],
+  "termscaching": [
+    {
+      "file": "/Users/future/l.blog/data/blog/projects/royal-stock-exchange/4-scaling.md",
+      "type": "blog",
+      "count": 11,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/kb/atom/CS/page-router-vs-app-router.md",
+      "type": "kb",
+      "count": 3,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/devops/gcp/memory-store.md",
+      "type": "blog",
+      "count": 3,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/exchange/intro-2.md",
+      "type": "blog",
+      "count": 1,
+      "draft": true
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/data-structures-algorithms/cheatsheet.md",
+      "type": "blog",
+      "count": 1,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/data-structures-algorithms/dynamic-programming.md",
+      "type": "blog",
+      "count": 1,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/design patterns/decorator.md",
+      "type": "blog",
+      "count": 1,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/design patterns/singleton.md",
+      "type": "blog",
+      "count": 1,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/system-design/system-design-distributed-systems.md",
+      "type": "blog",
+      "count": 1,
+      "draft": false
+    }
+  ],
+  "termscall-option": [
+    {
+      "file": "/Users/future/l.blog/data/blog/finance/formulas.md",
+      "type": "blog",
+      "count": 2,
+      "draft": true
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/finance/quant/symbols.md",
+      "type": "blog",
+      "count": 2,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/finance/index.md",
+      "type": "blog",
+      "count": 1,
+      "draft": true
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/finance/indicators/put-call-ratio.md",
+      "type": "blog",
+      "count": 1,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/finance/options/black-scholes.md",
+      "type": "blog",
+      "count": 1,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/finance/options/greeks.md",
+      "type": "blog",
+      "count": 1,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/finance/options/strategies/introduction.md",
+      "type": "blog",
+      "count": 1,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/finance/terms/extrinsic-value.md",
+      "type": "blog",
+      "count": 1,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/finance/terms/intrinsic-value.md",
+      "type": "blog",
+      "count": 1,
+      "draft": false
+    }
+  ],
+  "termscall-stack": [
+    {
+      "file": "/Users/future/l.blog/data/blog/software/data-structures-algorithms/cheatsheet.md",
+      "type": "blog",
+      "count": 1,
+      "draft": false
+    }
+  ],
+  "termscamera-access": [],
+  "termscamera": [],
+  "termscanary-deployment": [],
+  "termscartesian-product": [],
+  "termscash-flow-statement": [],
+  "termscassandra": [],
+  "termscatch-all-routes": [
+    {
+      "file": "/Users/future/l.blog/data/blog/software/frameworks/next/introducing-multi-part-posts-with-nested-routing.md",
+      "type": "blog",
+      "count": 1,
+      "draft": true
+    }
+  ],
+  "termscategorical-data": [],
+  "termscausal-consistency": [
+    {
+      "file": "/Users/future/l.blog/data/blog/software/system-design/process-deepdive.md",
+      "type": "blog",
+      "count": 1,
+      "draft": false
+    }
+  ],
+  "termscdn": [
     {
       "file": "/Users/future/l.blog/data/blog/TEST/guide-to-using-images-in-nextjs.mdx",
       "type": "blog",
@@ -937,10 +4100,1036 @@ export const termBacklinks = {
       "draft": true
     },
     {
-      "file": "/Users/future/l.blog/data/blog/cheatsheets/vim.md",
+      "file": "/Users/future/l.blog/data/blog/software/system-design/process-deepdive.md",
+      "type": "blog",
+      "count": 1,
+      "draft": false
+    }
+  ],
+  "termscenter": [
+    {
+      "file": "/Users/future/l.blog/data/blog/software/frameworks/flutter/navigators.md",
+      "type": "blog",
+      "count": 10,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/system-design/appium-mocha.md",
+      "type": "blog",
+      "count": 6,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/maths/statistics/mean-median-mode.md",
       "type": "blog",
       "count": 2,
       "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/system-design/flutter-theme.md",
+      "type": "blog",
+      "count": 2,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/maths/calculus/calculus-2/calculus-2.md",
+      "type": "blog",
+      "count": 1,
+      "draft": true
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/frameworks/flutter/flutter-poker-1.md",
+      "type": "blog",
+      "count": 1,
+      "draft": true
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/frameworks/flutter/flutter-tiktok-2.md",
+      "type": "blog",
+      "count": 1,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/languages/python/heapq.md",
+      "type": "blog",
+      "count": 1,
+      "draft": false
+    }
+  ],
+  "termscgroups": [],
+  "termschain-rule": [
+    {
+      "file": "/Users/future/l.blog/data/blog/maths/calculus/calculus-1/calculus-1.md",
+      "type": "blog",
+      "count": 2,
+      "draft": true
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/maths/calculus/differentiation.md",
+      "type": "blog",
+      "count": 2,
+      "draft": true
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/finance/quant/calculus-for-quants.md",
+      "type": "blog",
+      "count": 1,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/finance/quant/crash-course.md",
+      "type": "blog",
+      "count": 1,
+      "draft": true
+    }
+  ],
+  "termschaining": [],
+  "termschange-of-basis": [],
+  "termschange-of-variables": [
+    {
+      "file": "/Users/future/l.blog/data/blog/maths/calculus/calculus-3/calculus-3.md",
+      "type": "blog",
+      "count": 1,
+      "draft": true
+    }
+  ],
+  "termscheck-constraint": [],
+  "termschi-square-distribution": [],
+  "termschild-class": [],
+  "termschmod": [
+    {
+      "file": "/Users/future/l.blog/data/blog/software/info-sec/over-the-wire-1-bandit.md",
+      "type": "blog",
+      "count": 5,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/cheatsheets/shell.md",
+      "type": "blog",
+      "count": 1,
+      "draft": true
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/git/pre-commit.md",
+      "type": "blog",
+      "count": 1,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/info-sec/over-the-wire-2-leviathan.md",
+      "type": "blog",
+      "count": 1,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/system-design/build-db-cluster-docker.md",
+      "type": "blog",
+      "count": 1,
+      "draft": false
+    }
+  ],
+  "termscholesky-decomposition": [],
+  "termschown": [
+    {
+      "file": "/Users/future/l.blog/data/blog/software/system-design/build-db-cluster-docker.md",
+      "type": "blog",
+      "count": 2,
+      "draft": false
+    }
+  ],
+  "termsci-cd-pipelines": [],
+  "termsci-cd": [],
+  "termscircular-linked-list": [],
+  "termsclass-component": [],
+  "termsclass-diagram": [],
+  "termsclass": [
+    {
+      "file": "/Users/future/l.blog/data/blog/software/frameworks/flutter/flutter-tiktok-1.md",
+      "type": "blog",
+      "count": 31,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/data-structures-algorithms/OOP.md",
+      "type": "blog",
+      "count": 19,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/design patterns/observer.md",
+      "type": "blog",
+      "count": 17,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/data-structures-algorithms/graph-theory.md",
+      "type": "blog",
+      "count": 16,
+      "draft": true
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/design patterns/factory.md",
+      "type": "blog",
+      "count": 16,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/frameworks/flutter/navigators.md",
+      "type": "blog",
+      "count": 15,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/leetcode/200-number-of-islands.md",
+      "type": "blog",
+      "count": 12,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/languages/dart/handling-nullable-fields.md",
+      "type": "blog",
+      "count": 10,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/leetcode/1-two-sum.md",
+      "type": "blog",
+      "count": 9,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/leetcode/121-best-time-to-sell-stock.md",
+      "type": "blog",
+      "count": 9,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/leetcode/16-3-sum-closest.md",
+      "type": "blog",
+      "count": 9,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/design patterns/singleton.md",
+      "type": "blog",
+      "count": 8,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/frameworks/flutter/flutter-tiktok-2.md",
+      "type": "blog",
+      "count": 8,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/design patterns/repository.md",
+      "type": "blog",
+      "count": 7,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/system-design/flutter-theme.md",
+      "type": "blog",
+      "count": 7,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/TEST/code-tab-groups.md",
+      "type": "blog",
+      "count": 6,
+      "draft": true
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/leetcode/217-contains-duplicate.md",
+      "type": "blog",
+      "count": 6,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/leetcode/70-climbing-stairs.md",
+      "type": "blog",
+      "count": 6,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/design patterns/decorator.md",
+      "type": "blog",
+      "count": 6,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/leetcode/742-network-delay-time.md",
+      "type": "blog",
+      "count": 4,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/languages/java/java-spring.md",
+      "type": "blog",
+      "count": 4,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/languages/rust/rust-projects.md",
+      "type": "blog",
+      "count": 2,
+      "draft": true
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/finance/indicators/put-call-ratio.md",
+      "type": "blog",
+      "count": 1,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/leetcode/238-product-of-array-except-self.md",
+      "type": "blog",
+      "count": 1,
+      "draft": true
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/leetcode/252-meeting-rooms.md",
+      "type": "blog",
+      "count": 1,
+      "draft": true
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/leetcode/253-meeting-rooms-ii.md",
+      "type": "blog",
+      "count": 1,
+      "draft": true
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/leetcode/322-coin-change.md",
+      "type": "blog",
+      "count": 1,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/leetcode/463-island-perimeter.md",
+      "type": "blog",
+      "count": 1,
+      "draft": true
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/projects/royal-stock-exchange/1-intro.md",
+      "type": "blog",
+      "count": 1,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/same-problems-different-tools.md",
+      "type": "blog",
+      "count": 1,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/data-structures-algorithms/algorithms/tree-traversals.md",
+      "type": "blog",
+      "count": 1,
+      "draft": true
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/data-structures-algorithms/graph-algorithms.md",
+      "type": "blog",
+      "count": 1,
+      "draft": true
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/data-structures-algorithms/hash-table.md",
+      "type": "blog",
+      "count": 1,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/languages/dart/dart.3.10.md",
+      "type": "blog",
+      "count": 1,
+      "draft": true
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/system-design/build-message-queue.md",
+      "type": "blog",
+      "count": 1,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/system-design/system-design-auditing.md",
+      "type": "blog",
+      "count": 1,
+      "draft": false
+    }
+  ],
+  "termsclasses": [
+    {
+      "file": "/Users/future/l.blog/data/blog/software/data-structures-algorithms/OOP.md",
+      "type": "blog",
+      "count": 6,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/TEST/pictures-of-canada.mdx",
+      "type": "blog",
+      "count": 2,
+      "draft": true
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/exchange/intro-2.md",
+      "type": "blog",
+      "count": 1,
+      "draft": true
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/finance/high-frequency-trading.md",
+      "type": "blog",
+      "count": 1,
+      "draft": true
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/finance/terms/index-fund.md",
+      "type": "blog",
+      "count": 1,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/opinions/why-flutter-is-better-than-react-native.md",
+      "type": "blog",
+      "count": 1,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/projects/royal-stock-exchange/2-seeding data.md",
+      "type": "blog",
+      "count": 1,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/same-problems-different-tools.md",
+      "type": "blog",
+      "count": 1,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/design patterns/decorator.md",
+      "type": "blog",
+      "count": 1,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/design patterns/factory.md",
+      "type": "blog",
+      "count": 1,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/languages/dart/handling-nullable-fields.md",
+      "type": "blog",
+      "count": 1,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/languages/rust/rust-projects.md",
+      "type": "blog",
+      "count": 1,
+      "draft": true
+    }
+  ],
+  "termsclassification": [
+    {
+      "file": "/Users/future/l.blog/data/blog/finance/quant/crash-course.md",
+      "type": "blog",
+      "count": 1,
+      "draft": true
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/finance/quant/statistics.md",
+      "type": "blog",
+      "count": 1,
+      "draft": false
+    }
+  ],
+  "termsclean-architecture": [
+    {
+      "file": "/Users/future/l.blog/data/blog/software/languages/dart/handling-nullable-fields.md",
+      "type": "blog",
+      "count": 1,
+      "draft": false
+    }
+  ],
+  "termsclient-components": [],
+  "termsclient-fetch": [],
+  "termsclient-server-model": [],
+  "termsclient-side-rendering": [],
+  "termsclient-side-routing": [],
+  "termsclosed-form": [],
+  "termsclosures": [
+    {
+      "file": "/Users/future/l.blog/data/blog/software/system-design/system-design-auditing.md",
+      "type": "blog",
+      "count": 2,
+      "draft": false
+    }
+  ],
+  "termscls": [
+    {
+      "file": "/Users/future/l.blog/data/blog/software/design patterns/singleton.md",
+      "type": "blog",
+      "count": 6,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/TEST/guide-to-using-images-in-nextjs.mdx",
+      "type": "blog",
+      "count": 1,
+      "draft": true
+    }
+  ],
+  "termscluster-autoscaler": [],
+  "termscluster-ip": [],
+  "termscluster-logs": [],
+  "termscluster-sampling": [],
+  "termscluster": [
+    {
+      "file": "/Users/future/l.blog/data/blog/cheatsheets/kubernetes.md",
+      "type": "blog",
+      "count": 3,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/projects/royal-stock-exchange/4-scaling.md",
+      "type": "blog",
+      "count": 3,
+      "draft": false
+    }
+  ],
+  "termscmd": [
+    {
+      "file": "/Users/future/l.blog/data/blog/cheatsheets/vscode.md",
+      "type": "blog",
+      "count": 12,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/cheatsheets/jetbrains.md",
+      "type": "blog",
+      "count": 7,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/opinions/why-flutter-is-better-than-react-native.md",
+      "type": "blog",
+      "count": 2,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/system-design/microservices.md",
+      "type": "blog",
+      "count": 2,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/databases/pgadmin.md",
+      "type": "blog",
+      "count": 1,
+      "draft": true
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/languages/java/java-spring.md",
+      "type": "blog",
+      "count": 1,
+      "draft": false
+    }
+  ],
+  "termscms-integration": [],
+  "termscni-plugins": [],
+  "termscnn": [],
+  "termscode-splitting": [],
+  "termscoin-change": [],
+  "termscollision": [
+    {
+      "file": "/Users/future/l.blog/data/blog/software/system-design/microservices.md",
+      "type": "blog",
+      "count": 1,
+      "draft": false
+    }
+  ],
+  "termscolors": [
+    {
+      "file": "/Users/future/l.blog/data/blog/software/frameworks/flutter/flutter-tiktok-1.md",
+      "type": "blog",
+      "count": 14,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/system-design/appium-mocha.md",
+      "type": "blog",
+      "count": 6,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/frameworks/flutter/flutter-tiktok-2.md",
+      "type": "blog",
+      "count": 5,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/frameworks/flutter/flutter-poker-1.md",
+      "type": "blog",
+      "count": 4,
+      "draft": true
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/data-structures-algorithms/patterns-graph.md",
+      "type": "blog",
+      "count": 2,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/books/DSA python.md",
+      "type": "blog",
+      "count": 1,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/projects/bakesuite.md",
+      "type": "blog",
+      "count": 1,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/git/partial-add.md",
+      "type": "blog",
+      "count": 1,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/system-design/flutter-theme.md",
+      "type": "blog",
+      "count": 1,
+      "draft": false
+    }
+  ],
+  "termscolumn-family": [],
+  "termscolumn-oriented-storage": [],
+  "termscolumn": [
+    {
+      "file": "/Users/future/l.blog/data/blog/software/frameworks/flutter/flutter-tiktok-2.md",
+      "type": "blog",
+      "count": 7,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/TEST/github-markdown-guide.mdx",
+      "type": "blog",
+      "count": 5,
+      "draft": true
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/data-structures-algorithms/patterns-graph.md",
+      "type": "blog",
+      "count": 4,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/databases/sql/alter-tables.md",
+      "type": "blog",
+      "count": 4,
+      "draft": true
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/system-design/build-message-queue.md",
+      "type": "blog",
+      "count": 3,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/projects/royal-stock-exchange/4-scaling.md",
+      "type": "blog",
+      "count": 2,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/frameworks/flutter/navigators.md",
+      "type": "blog",
+      "count": 2,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/languages/dart/dart.3.10.md",
+      "type": "blog",
+      "count": 2,
+      "draft": true
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/system-design/flutter-theme.md",
+      "type": "blog",
+      "count": 2,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/databases/sql/1_toc.md",
+      "type": "blog",
+      "count": 1,
+      "draft": true
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/databases/sql/lag.md",
+      "type": "blog",
+      "count": 1,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/frameworks/flutter/flutter-poker-1.md",
+      "type": "blog",
+      "count": 1,
+      "draft": true
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/frameworks/flutter/flutter-tiktok-1.md",
+      "type": "blog",
+      "count": 1,
+      "draft": false
+    }
+  ],
+  "termscolumnar-database": [],
+  "termscombinations": [
+    {
+      "file": "/Users/future/l.blog/data/blog/maths/combinatorics/combinatorics.md",
+      "type": "blog",
+      "count": 1,
+      "draft": true
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/data-structures-algorithms/dynamic-programming.md",
+      "type": "blog",
+      "count": 1,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/data-structures-algorithms/terms.md",
+      "type": "blog",
+      "count": 1,
+      "draft": true
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/info-sec/over-the-wire-1-bandit.md",
+      "type": "blog",
+      "count": 1,
+      "draft": false
+    }
+  ],
+  "termscommands": [
+    {
+      "file": "/Users/future/l.blog/data/blog/software/databases/nosql/mongodb.md",
+      "type": "blog",
+      "count": 3,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/databases/sql/remote-clone-to-local.md",
+      "type": "blog",
+      "count": 3,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/databases/psql.md",
+      "type": "blog",
+      "count": 2,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/info-sec/over-the-wire-1-bandit.md",
+      "type": "blog",
+      "count": 2,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/cheatsheets/expo.md",
+      "type": "blog",
+      "count": 1,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/cheatsheets/jetbrains.md",
+      "type": "blog",
+      "count": 1,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/cheatsheets/kubernetes.md",
+      "type": "blog",
+      "count": 1,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/cheatsheets/shell.md",
+      "type": "blog",
+      "count": 1,
+      "draft": true
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/finance/high-frequency-trading.md",
+      "type": "blog",
+      "count": 1,
+      "draft": true
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/databases/sql/clone-db.md",
+      "type": "blog",
+      "count": 1,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/git/partial-add.md",
+      "type": "blog",
+      "count": 1,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/languages/rust/rust-projects.md",
+      "type": "blog",
+      "count": 1,
+      "draft": true
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/system-design/SQL Server Setup.md",
+      "type": "blog",
+      "count": 1,
+      "draft": false
+    }
+  ],
+  "termscommit-phase": [],
+  "termscommit": [
+    {
+      "file": "/Users/future/l.blog/data/blog/software/git/pre-commit.md",
+      "type": "blog",
+      "count": 27,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/git/rebase.md",
+      "type": "blog",
+      "count": 14,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/git/partial-add.md",
+      "type": "blog",
+      "count": 3,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/info-sec/over-the-wire-1-bandit.md",
+      "type": "blog",
+      "count": 2,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/system-design/flutter-netlify-deploy.md",
+      "type": "blog",
+      "count": 2,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/kb/atom/CS/git-worktree-git-submodule-git-monorepo.md",
+      "type": "kb",
+      "count": 1,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/TEST/TEST-TERMS.md",
+      "type": "blog",
+      "count": 1,
+      "draft": true
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/cheatsheets/jetbrains.md",
+      "type": "blog",
+      "count": 1,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/databases/sql/1_toc.md",
+      "type": "blog",
+      "count": 1,
+      "draft": true
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/devops/gcp/secret-manager.md",
+      "type": "blog",
+      "count": 1,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/system-design/build-message-queue.md",
+      "type": "blog",
+      "count": 1,
+      "draft": false
+    }
+  ],
+  "termscommon-table-expression": [],
+  "termscomparison-test": [],
+  "termscompile-time-polymorphism": [],
+  "termscomplement-rule": [],
+  "termscomplement": [
+    {
+      "file": "/Users/future/l.blog/data/blog/maths/discrete-symbols.md",
+      "type": "blog",
+      "count": 2,
+      "draft": false
+    }
+  ],
+  "termscomplexity-theory": [],
+  "termscomponent-architecture": [],
+  "termscomponent-based-architecture": [],
+  "termscomponent-driven-ui": [],
+  "termscomponent-tree": [],
+  "termscomponent": [
+    {
+      "file": "/Users/future/l.blog/data/blog/TEST/introducing-tailwind-nextjs-starter-blog.mdx",
+      "type": "blog",
+      "count": 7,
+      "draft": true
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/TEST/guide-to-using-images-in-nextjs.mdx",
+      "type": "blog",
+      "count": 6,
+      "draft": true
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/opinions/why-flutter-is-better-than-react-native.md",
+      "type": "blog",
+      "count": 3,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/kb/atom/CS/page-router-vs-app-router.md",
+      "type": "kb",
+      "count": 2,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/exchange/intro-2.md",
+      "type": "blog",
+      "count": 2,
+      "draft": true
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/TEST/MDX.mdx",
+      "type": "blog",
+      "count": 1,
+      "draft": true
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/TEST/pictures-of-canada.mdx",
+      "type": "blog",
+      "count": 1,
+      "draft": true
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/finance/options/strategies/condor.md",
+      "type": "blog",
+      "count": 1,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/finance/options/strategies/trading-strategies.md",
+      "type": "blog",
+      "count": 1,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/finance/quant/maths.md",
+      "type": "blog",
+      "count": 1,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/finance/quant/statistics.md",
+      "type": "blog",
+      "count": 1,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/questions/complexity.md",
+      "type": "blog",
+      "count": 1,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/same-problems-different-tools.md",
+      "type": "blog",
+      "count": 1,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/data-structures-algorithms/algorithms/union-find.md",
+      "type": "blog",
+      "count": 1,
+      "draft": true
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/data-structures-algorithms/graph-programming.md",
+      "type": "blog",
+      "count": 1,
+      "draft": true
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/system-design/appium-mocha.md",
+      "type": "blog",
+      "count": 1,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/system-design/build-message-queue.md",
+      "type": "blog",
+      "count": 1,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/system-design/process-deepdive.md",
+      "type": "blog",
+      "count": 1,
+      "draft": false
+    }
+  ],
+  "termscomponents": [
+    {
+      "file": "/Users/future/l.blog/data/blog/software/data-structures-algorithms/patterns-graph.md",
+      "type": "blog",
+      "count": 11,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/system-design/process-overview.md",
+      "type": "blog",
+      "count": 6,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/kb/atom/CS/page-router-vs-app-router.md",
+      "type": "kb",
+      "count": 3,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/TEST/introducing-tailwind-nextjs-starter-blog.mdx",
+      "type": "blog",
+      "count": 3,
+      "draft": true
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/opinions/why-flutter-is-better-than-react-native.md",
+      "type": "blog",
+      "count": 3,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/TEST/MDX.mdx",
+      "type": "blog",
+      "count": 2,
+      "draft": true
     },
     {
       "file": "/Users/future/l.blog/data/blog/finance/high-frequency-trading.md",
@@ -949,25 +5138,553 @@ export const termBacklinks = {
       "draft": true
     },
     {
-      "file": "/Users/future/l.blog/data/blog/software/data-structures-algorithms/OOP.md",
+      "file": "/Users/future/l.blog/data/blog/projects/royal-stock-exchange/4-scaling.md",
       "type": "blog",
       "count": 2,
       "draft": false
     },
     {
-      "file": "/Users/future/l.blog/data/blog/software/data-structures-algorithms/hash-table.md",
-      "type": "blog",
-      "count": 2,
-      "draft": false
-    },
-    {
-      "file": "/Users/future/l.blog/data/blog/software/data-structures-algorithms/terms.md",
+      "file": "/Users/future/l.blog/data/blog/software/data-structures-algorithms/algorithms/union-find.md",
       "type": "blog",
       "count": 2,
       "draft": true
     },
     {
-      "file": "/Users/future/l.blog/data/blog/software/databases/sql/clone-db.md",
+      "file": "/Users/future/l.blog/data/blog/software/system-design/build-message-queue.md",
+      "type": "blog",
+      "count": 2,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/kb/atom/CS/AI.md",
+      "type": "kb",
+      "count": 1,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/exchange/intro-2.md",
+      "type": "blog",
+      "count": 1,
+      "draft": true
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/finance/options/black-scholes.md",
+      "type": "blog",
+      "count": 1,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/finance/options/strategies/condor.md",
+      "type": "blog",
+      "count": 1,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/same-problems-different-tools.md",
+      "type": "blog",
+      "count": 1,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/data-structures-algorithms/cheatsheet.md",
+      "type": "blog",
+      "count": 1,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/data-structures-algorithms/graph-programming.md",
+      "type": "blog",
+      "count": 1,
+      "draft": true
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/design patterns/factory.md",
+      "type": "blog",
+      "count": 1,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/design patterns/observer.md",
+      "type": "blog",
+      "count": 1,
+      "draft": false
+    }
+  ],
+  "termscomposability": [],
+  "termscompositing": [],
+  "termscomposition-of-functions": [],
+  "termscomposition-over-inheritance": [],
+  "termscomposition": [
+    {
+      "file": "/Users/future/l.blog/data/blog/software/languages/dart/handling-nullable-fields.md",
+      "type": "blog",
+      "count": 3,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/kb/atom/CS/page-router-vs-app-router.md",
+      "type": "kb",
+      "count": 2,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/maths/calculus/differentiation.md",
+      "type": "blog",
+      "count": 1,
+      "draft": true
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/same-problems-different-tools.md",
+      "type": "blog",
+      "count": 1,
+      "draft": false
+    }
+  ],
+  "termscompound-index": [],
+  "termscomputability": [],
+  "termscomputer-vision": [],
+  "termsconcavity": [],
+  "termsconcrete-class": [],
+  "termsconcurrent-rendering": [],
+  "termsconditional-probability": [],
+  "termsconditionals": [],
+  "termsconfidence-interval": [],
+  "termsconfig-map": [],
+  "termsconfigmap": [],
+  "termsconfounding-variables": [],
+  "termsconfusion-matrix": [],
+  "termscongruence": [],
+  "termsconnectivity": [
+    {
+      "file": "/Users/future/l.blog/data/blog/finance/high-frequency-trading.md",
+      "type": "blog",
+      "count": 2,
+      "draft": true
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/data-structures-algorithms/algorithms/union-find.md",
+      "type": "blog",
+      "count": 1,
+      "draft": true
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/data-structures-algorithms/cheatsheet.md",
+      "type": "blog",
+      "count": 1,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/data-structures-algorithms/patterns-graph.md",
+      "type": "blog",
+      "count": 1,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/mobile requirements.md",
+      "type": "blog",
+      "count": 1,
+      "draft": false
+    }
+  ],
+  "termsconservative-field": [
+    {
+      "file": "/Users/future/l.blog/data/blog/maths/calculus/multivariable-calc.md",
+      "type": "blog",
+      "count": 1,
+      "draft": true
+    }
+  ],
+  "termsconsistency-tradeoffs": [],
+  "termsconsistency": [
+    {
+      "file": "/Users/future/l.blog/data/blog/projects/royal-stock-exchange/4-scaling.md",
+      "type": "blog",
+      "count": 9,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/system-design/process-deepdive.md",
+      "type": "blog",
+      "count": 8,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/system-design/process-overview.md",
+      "type": "blog",
+      "count": 7,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/system-design/1-ticketmaster.md",
+      "type": "blog",
+      "count": 3,
+      "draft": true
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/system-design/system-design-distributed-systems.md",
+      "type": "blog",
+      "count": 3,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/TEST/deriving-ols-estimator.mdx",
+      "type": "blog",
+      "count": 1,
+      "draft": true
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/exchange/intro-2.md",
+      "type": "blog",
+      "count": 1,
+      "draft": true
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/exchange/intro-7.md",
+      "type": "blog",
+      "count": 1,
+      "draft": true
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/politics/1-go.md",
+      "type": "blog",
+      "count": 1,
+      "draft": true
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/devops/gcp/cloud-build-triggers.md",
+      "type": "blog",
+      "count": 1,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/git/pre-commit.md",
+      "type": "blog",
+      "count": 1,
+      "draft": false
+    }
+  ],
+  "termsconsistent-hashing": [
+    {
+      "file": "/Users/future/l.blog/data/blog/software/system-design/process-overview.md",
+      "type": "blog",
+      "count": 1,
+      "draft": false
+    }
+  ],
+  "termsconst-constructor": [],
+  "termsconst-widgets": [],
+  "termsconstraints": [
+    {
+      "file": "/Users/future/l.blog/data/blog/software/system-design/process-overview.md",
+      "type": "blog",
+      "count": 3,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/exchange/intro-1.md",
+      "type": "blog",
+      "count": 1,
+      "draft": true
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/exchange/intro-6.md",
+      "type": "blog",
+      "count": 1,
+      "draft": true
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/projects/royal-stock-exchange/4-scaling.md",
+      "type": "blog",
+      "count": 1,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/same-problems-different-tools.md",
+      "type": "blog",
+      "count": 1,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/data-structures-algorithms/priority-queue.md",
+      "type": "blog",
+      "count": 1,
+      "draft": true
+    }
+  ],
+  "termsconstructor": [
+    {
+      "file": "/Users/future/l.blog/data/blog/TEST/code-tab-groups.md",
+      "type": "blog",
+      "count": 1,
+      "draft": true
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/design patterns/observer.md",
+      "type": "blog",
+      "count": 1,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/design patterns/repository.md",
+      "type": "blog",
+      "count": 1,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/design patterns/singleton.md",
+      "type": "blog",
+      "count": 1,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/frameworks/flutter/flutter-tiktok-1.md",
+      "type": "blog",
+      "count": 1,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/system-design/system-design-auditing.md",
+      "type": "blog",
+      "count": 1,
+      "draft": false
+    }
+  ],
+  "termscontainer-crash-loops": [],
+  "termscontainer-deployment": [],
+  "termscontainer-filesystem-layers": [],
+  "termscontainer-isolation": [],
+  "termscontainer-networking": [],
+  "termscontainer-orchestration": [],
+  "termscontainer-process": [],
+  "termscontainer-registry": [
+    {
+      "file": "/Users/future/l.blog/data/blog/software/devops/gcp/cloud-run.md",
+      "type": "blog",
+      "count": 1,
+      "draft": false
+    }
+  ],
+  "termscontainer-runtime": [],
+  "termscontainer-to-container-communication": [],
+  "termscontainer": [
+    {
+      "file": "/Users/future/l.blog/data/blog/software/system-design/build-db-cluster-docker.md",
+      "type": "blog",
+      "count": 7,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/system-design/microservices.md",
+      "type": "blog",
+      "count": 6,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/devops/gcp/cloud-run.md",
+      "type": "blog",
+      "count": 5,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/frameworks/flutter/flutter-poker-1.md",
+      "type": "blog",
+      "count": 4,
+      "draft": true
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/frameworks/flutter/flutter-tiktok-1.md",
+      "type": "blog",
+      "count": 4,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/frameworks/flutter/navigators.md",
+      "type": "blog",
+      "count": 4,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/system-design/appium-mocha.md",
+      "type": "blog",
+      "count": 4,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/devops/gcp/cloud-run-job.md",
+      "type": "blog",
+      "count": 1,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/system-design/SQL Server Setup.md",
+      "type": "blog",
+      "count": 1,
+      "draft": false
+    }
+  ],
+  "termscontainerd": [],
+  "termscontainerization": [
+    {
+      "file": "/Users/future/l.blog/data/blog/software/system-design/microservices.md",
+      "type": "blog",
+      "count": 3,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/devops/gcp/cloud-run-job.md",
+      "type": "blog",
+      "count": 1,
+      "draft": false
+    }
+  ],
+  "termscontent-management-systems": [],
+  "termscontent-security-policy": [
+    {
+      "file": "/Users/future/l.blog/data/blog/TEST/introducing-tailwind-nextjs-starter-blog.mdx",
+      "type": "blog",
+      "count": 2,
+      "draft": true
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/info-sec/xss.md",
+      "type": "blog",
+      "count": 1,
+      "draft": false
+    }
+  ],
+  "termscontext-api": [],
+  "termscontext-free-languages": [],
+  "termscontinuity": [
+    {
+      "file": "/Users/future/l.blog/data/blog/finance/quant/calculus-for-quants.md",
+      "type": "blog",
+      "count": 1,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/maths/calculus/calculus-1/calculus-1.md",
+      "type": "blog",
+      "count": 1,
+      "draft": true
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/maths/calculus/calculus-3/calculus-3.md",
+      "type": "blog",
+      "count": 1,
+      "draft": true
+    }
+  ],
+  "termscontinuous-data": [],
+  "termscontinuous-deployment": [
+    {
+      "file": "/Users/future/l.blog/data/blog/software/devops/gcp/cloud-build-triggers.md",
+      "type": "blog",
+      "count": 1,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/sprints.md",
+      "type": "blog",
+      "count": 1,
+      "draft": false
+    }
+  ],
+  "termscontinuous-integration": [
+    {
+      "file": "/Users/future/l.blog/data/blog/software/devops/gcp/cloud-build-triggers.md",
+      "type": "blog",
+      "count": 1,
+      "draft": false
+    }
+  ],
+  "termscontract": [
+    {
+      "file": "/Users/future/l.blog/data/blog/finance/futures.md",
+      "type": "blog",
+      "count": 13,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/exchange/intro-2.md",
+      "type": "blog",
+      "count": 1,
+      "draft": true
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/finance/options/strategies/introduction.md",
+      "type": "blog",
+      "count": 1,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/languages/dart/handling-nullable-fields.md",
+      "type": "blog",
+      "count": 1,
+      "draft": false
+    }
+  ],
+  "termscontrol-group": [],
+  "termscontrol-plane": [],
+  "termscontroller-manager": [],
+  "termscontrollers": [
+    {
+      "file": "/Users/future/l.blog/data/blog/software/design patterns/decorator.md",
+      "type": "blog",
+      "count": 2,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/projects/royal-stock-exchange/3-portfolio.md",
+      "type": "blog",
+      "count": 1,
+      "draft": false
+    }
+  ],
+  "termsconvergence": [
+    {
+      "file": "/Users/future/l.blog/data/blog/maths/calculus/calculus-2/calculus-2.md",
+      "type": "blog",
+      "count": 4,
+      "draft": true
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/finance/quant/pair-trading.md",
+      "type": "blog",
+      "count": 1,
+      "draft": false
+    }
+  ],
+  "termsconvolutional-neural-network": [],
+  "termscookies": [
+    {
+      "file": "/Users/future/l.blog/data/blog/software/info-sec/csrf.md",
+      "type": "blog",
+      "count": 3,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/info-sec/xss.md",
+      "type": "blog",
+      "count": 3,
+      "draft": false
+    }
+  ],
+  "termscoordinate-systems": [],
+  "termscopy": [
+    {
+      "file": "/Users/future/l.blog/data/blog/software/system-design/microservices.md",
+      "type": "blog",
+      "count": 6,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/info-sec/over-the-wire-1-bandit.md",
+      "type": "blog",
+      "count": 4,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/cheatsheets/vim.md",
       "type": "blog",
       "count": 2,
       "draft": false
@@ -979,31 +5696,429 @@ export const termBacklinks = {
       "draft": false
     },
     {
-      "file": "/Users/future/l.blog/data/blog/software/languages/java/java-spring.md",
-      "type": "blog",
-      "count": 2,
-      "draft": false
-    },
-    {
-      "file": "/Users/future/l.blog/data/blog/software/languages/python/flask-hot-reload.md",
-      "type": "blog",
-      "count": 2,
-      "draft": false
-    },
-    {
-      "file": "/Users/future/l.blog/data/blog/software/starters/python-graphql.md",
-      "type": "blog",
-      "count": 2,
-      "draft": false
-    },
-    {
       "file": "/Users/future/l.blog/data/blog/software/system-design/appium-mocha.md",
       "type": "blog",
       "count": 2,
       "draft": false
     },
     {
-      "file": "/Users/future/l.blog/data/blog/software/system-design/graphql.md",
+      "file": "/Users/future/l.blog/data/blog/TEST/introducing-tailwind-nextjs-starter-blog.mdx",
+      "type": "blog",
+      "count": 1,
+      "draft": true
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/data-structures-algorithms/algorithms/tree-traversals.md",
+      "type": "blog",
+      "count": 1,
+      "draft": true
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/databases/sql/clone-db.md",
+      "type": "blog",
+      "count": 1,
+      "draft": false
+    }
+  ],
+  "termscore-web-vitals": [],
+  "termscorporate-bonds": [],
+  "termscorrelated-subquery": [],
+  "termscorrelation-matrices": [
+    {
+      "file": "/Users/future/l.blog/data/blog/finance/quant/statistics.md",
+      "type": "blog",
+      "count": 1,
+      "draft": false
+    }
+  ],
+  "termscorrelation": [
+    {
+      "file": "/Users/future/l.blog/data/blog/finance/quant/pair-trading.md",
+      "type": "blog",
+      "count": 2,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/finance/quant/symbols.md",
+      "type": "blog",
+      "count": 2,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/finance/formulas.md",
+      "type": "blog",
+      "count": 1,
+      "draft": true
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/finance/quant/maths.md",
+      "type": "blog",
+      "count": 1,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/finance/quant/statistics.md",
+      "type": "blog",
+      "count": 1,
+      "draft": false
+    }
+  ],
+  "termscors": [
+    {
+      "file": "/Users/future/l.blog/data/blog/software/system-design/microservices.md",
+      "type": "blog",
+      "count": 7,
+      "draft": false
+    }
+  ],
+  "termscount": [
+    {
+      "file": "/Users/future/l.blog/data/blog/leetcode/200-number-of-islands.md",
+      "type": "blog",
+      "count": 79,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/data-structures-algorithms/graph-programming.md",
+      "type": "blog",
+      "count": 8,
+      "draft": true
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/system-design/appium-mocha.md",
+      "type": "blog",
+      "count": 6,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/leetcode/253-meeting-rooms-ii.md",
+      "type": "blog",
+      "count": 4,
+      "draft": true
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/projects/royal-stock-exchange/2-seeding data.md",
+      "type": "blog",
+      "count": 4,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/data-structures-algorithms/dynamic-programming.md",
+      "type": "blog",
+      "count": 4,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/data-structures-algorithms/patterns-graph.md",
+      "type": "blog",
+      "count": 3,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/data-structures-algorithms/algorithms/union-find.md",
+      "type": "blog",
+      "count": 2,
+      "draft": true
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/data-structures-algorithms/trees.md",
+      "type": "blog",
+      "count": 2,
+      "draft": true
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/databases/sql/1_toc.md",
+      "type": "blog",
+      "count": 2,
+      "draft": true
+    },
+    {
+      "file": "/Users/future/l.blog/data/kb/atom/CS/git-worktree-git-submodule-git-monorepo.md",
+      "type": "kb",
+      "count": 1,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/databases/nosql/mongodb.md",
+      "type": "blog",
+      "count": 1,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/databases/sql/group-by.md",
+      "type": "blog",
+      "count": 1,
+      "draft": true
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/languages/python/python-1.md",
+      "type": "blog",
+      "count": 1,
+      "draft": true
+    }
+  ],
+  "termscountable-structures": [],
+  "termscounting-sort": [],
+  "termscoupon-rate": [],
+  "termscovariance-matrices": [
+    {
+      "file": "/Users/future/l.blog/data/blog/finance/quant/maths.md",
+      "type": "blog",
+      "count": 1,
+      "draft": false
+    }
+  ],
+  "termscovariance": [
+    {
+      "file": "/Users/future/l.blog/data/blog/finance/quant/maths.md",
+      "type": "blog",
+      "count": 3,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/finance/formulas.md",
+      "type": "blog",
+      "count": 1,
+      "draft": true
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/finance/quant/statistics.md",
+      "type": "blog",
+      "count": 1,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/finance/quant/symbols.md",
+      "type": "blog",
+      "count": 1,
+      "draft": false
+    }
+  ],
+  "termscpi": [
+    {
+      "file": "/Users/future/l.blog/data/blog/finance/indicators/leading-and-lagging-indicators.md",
+      "type": "blog",
+      "count": 1,
+      "draft": false
+    }
+  ],
+  "termscpu-usage": [],
+  "termscqrs": [
+    {
+      "file": "/Users/future/l.blog/data/blog/projects/royal-stock-exchange/1-intro.md",
+      "type": "blog",
+      "count": 1,
+      "draft": false
+    }
+  ],
+  "termscrashloop-backoff": [],
+  "termscreate": [
+    {
+      "file": "/Users/future/l.blog/data/blog/software/frameworks/flutter/flutter-tiktok-1.md",
+      "type": "blog",
+      "count": 13,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/frameworks/flutter/flutter-tiktok-2.md",
+      "type": "blog",
+      "count": 9,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/info-sec/over-the-wire-1-bandit.md",
+      "type": "blog",
+      "count": 9,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/system-design/system-design-auditing.md",
+      "type": "blog",
+      "count": 8,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/system-design/build-db-cluster-docker.md",
+      "type": "blog",
+      "count": 6,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/system-design/microservices.md",
+      "type": "blog",
+      "count": 6,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/projects/royal-stock-exchange/2-seeding data.md",
+      "type": "blog",
+      "count": 5,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/devops/gcp/aws-lambda.md",
+      "type": "blog",
+      "count": 5,
+      "draft": true
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/system-design/flutter-netlify-deploy.md",
+      "type": "blog",
+      "count": 5,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/databases/sql/1_toc.md",
+      "type": "blog",
+      "count": 4,
+      "draft": true
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/devops/gcp/cloud-scheduler.md",
+      "type": "blog",
+      "count": 4,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/devops/gcp/memory-store.md",
+      "type": "blog",
+      "count": 4,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/system-design/SQL Server Setup.md",
+      "type": "blog",
+      "count": 4,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/system-design/appium-mocha.md",
+      "type": "blog",
+      "count": 4,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/cheatsheets/expo.md",
+      "type": "blog",
+      "count": 3,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/data-structures-algorithms/OOP.md",
+      "type": "blog",
+      "count": 3,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/databases/nosql/mongodb.md",
+      "type": "blog",
+      "count": 3,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/devops/gcp/vcp-connectors.md",
+      "type": "blog",
+      "count": 3,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/frameworks/flutter/flutter-poker-1.md",
+      "type": "blog",
+      "count": 3,
+      "draft": true
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/system-design/build-backend-api.md",
+      "type": "blog",
+      "count": 3,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/system-design/build-message-queue.md",
+      "type": "blog",
+      "count": 3,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/TEST/introducing-tailwind-nextjs-starter-blog.mdx",
+      "type": "blog",
+      "count": 2,
+      "draft": true
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/cheatsheets/kubernetes.md",
+      "type": "blog",
+      "count": 2,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/finance/options/strategies/trading-strategies.md",
+      "type": "blog",
+      "count": 2,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/databases/sql/optimization.md",
+      "type": "blog",
+      "count": 2,
+      "draft": true
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/devops/gcp/cloud-build-triggers.md",
+      "type": "blog",
+      "count": 2,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/devops/gcp/cloud-run-job.md",
+      "type": "blog",
+      "count": 2,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/devops/gcp/gcp-pipeline.md",
+      "type": "blog",
+      "count": 2,
+      "draft": true
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/frameworks/next/introducing-multi-part-posts-with-nested-routing.md",
+      "type": "blog",
+      "count": 2,
+      "draft": true
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/info-sec/over-the-wire-2-leviathan.md",
+      "type": "blog",
+      "count": 2,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/languages/java/java-spring.md",
+      "type": "blog",
+      "count": 2,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/languages/python/heapq.md",
+      "type": "blog",
+      "count": 2,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/system-design/build-api-cache.md",
+      "type": "blog",
+      "count": 2,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/system-design/firebase environments.md",
+      "type": "blog",
+      "count": 2,
+      "draft": true
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/system-design/flutter-theme.md",
       "type": "blog",
       "count": 2,
       "draft": false
@@ -1021,49 +6136,91 @@ export const termBacklinks = {
       "draft": false
     },
     {
-      "file": "/Users/future/l.blog/data/blog/TEST/code-blocks.md",
+      "file": "/Users/future/l.blog/data/blog/TEST/github-markdown-guide.mdx",
       "type": "blog",
       "count": 1,
       "draft": true
     },
     {
-      "file": "/Users/future/l.blog/data/blog/TEST/introducing-tailwind-nextjs-starter-blog.mdx",
+      "file": "/Users/future/l.blog/data/blog/TEST/pictures-of-canada.mdx",
       "type": "blog",
       "count": 1,
       "draft": true
     },
     {
-      "file": "/Users/future/l.blog/data/blog/finance/index.md",
+      "file": "/Users/future/l.blog/data/blog/exchange/intro-3.md",
       "type": "blog",
       "count": 1,
       "draft": true
     },
     {
-      "file": "/Users/future/l.blog/data/blog/finance/indicators/sharpe-ratio.md",
+      "file": "/Users/future/l.blog/data/blog/exchange/intro-4.md",
+      "type": "blog",
+      "count": 1,
+      "draft": true
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/finance/terms/closed-ended-funds.md",
       "type": "blog",
       "count": 1,
       "draft": false
     },
     {
-      "file": "/Users/future/l.blog/data/blog/finance/options/open-frac.md",
+      "file": "/Users/future/l.blog/data/blog/finance/terms/quadruple-witching.md",
       "type": "blog",
       "count": 1,
       "draft": false
     },
     {
-      "file": "/Users/future/l.blog/data/blog/software/computer-organization.md",
+      "file": "/Users/future/l.blog/data/blog/leetcode/121-best-time-to-sell-stock.md",
+      "type": "blog",
+      "count": 1,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/data-structures-algorithms/algorithms/sorting.md",
+      "type": "blog",
+      "count": 1,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/data-structures-algorithms/algorithms/union-find.md",
       "type": "blog",
       "count": 1,
       "draft": true
     },
     {
-      "file": "/Users/future/l.blog/data/blog/software/data-structures-algorithms/graph-algorithms.md",
+      "file": "/Users/future/l.blog/data/blog/software/databases/sql/remote-clone-to-local.md",
+      "type": "blog",
+      "count": 1,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/databases/sql/setup-pg-macos.md",
       "type": "blog",
       "count": 1,
       "draft": true
     },
     {
-      "file": "/Users/future/l.blog/data/blog/software/data-structures-algorithms/pointers.md",
+      "file": "/Users/future/l.blog/data/blog/software/design patterns/decorator.md",
+      "type": "blog",
+      "count": 1,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/design patterns/factory.md",
+      "type": "blog",
+      "count": 1,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/devops/gcp/aws-cloud-practiitioner.md",
+      "type": "blog",
+      "count": 1,
+      "draft": true
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/devops/gcp/secret-manager.md",
       "type": "blog",
       "count": 1,
       "draft": false
@@ -1081,6 +6238,16366 @@ export const termBacklinks = {
       "draft": false
     },
     {
+      "file": "/Users/future/l.blog/data/blog/software/languages/python/django.md",
+      "type": "blog",
+      "count": 1,
+      "draft": true
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/languages/ruby/ruby-lambda.md",
+      "type": "blog",
+      "count": 1,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/mobile requirements.md",
+      "type": "blog",
+      "count": 1,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/system-design/1-DSAFine-Mono.md",
+      "type": "blog",
+      "count": 1,
+      "draft": true
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/system-design/process-overview.md",
+      "type": "blog",
+      "count": 1,
+      "draft": false
+    }
+  ],
+  "termscreated": [
+    {
+      "file": "/Users/future/l.blog/data/blog/software/system-design/system-design-auditing.md",
+      "type": "blog",
+      "count": 3,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/design patterns/factory.md",
+      "type": "blog",
+      "count": 2,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/finance/terms/secondary-market.md",
+      "type": "blog",
+      "count": 1,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/data-structures-algorithms/algorithms/sorting.md",
+      "type": "blog",
+      "count": 1,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/frameworks/flutter/flutter-tiktok-1.md",
+      "type": "blog",
+      "count": 1,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/frameworks/flutter/flutter-tiktok-2.md",
+      "type": "blog",
+      "count": 1,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/frameworks/next/introducing-multi-part-posts-with-nested-routing.md",
+      "type": "blog",
+      "count": 1,
+      "draft": true
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/info-sec/over-the-wire-1-bandit.md",
+      "type": "blog",
+      "count": 1,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/languages/java/java-spring.md",
+      "type": "blog",
+      "count": 1,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/sprints.md",
+      "type": "blog",
+      "count": 1,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/system-design/SQL Server Setup.md",
+      "type": "blog",
+      "count": 1,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/system-design/build-db-cluster-docker.md",
+      "type": "blog",
+      "count": 1,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/system-design/microservices.md",
+      "type": "blog",
+      "count": 1,
+      "draft": false
+    }
+  ],
+  "termscredit-rating": [],
+  "termscritical-css": [],
+  "termscritical-points": [],
+  "termscron-job": [
+    {
+      "file": "/Users/future/l.blog/data/blog/software/devops/gcp/cloud-run-job.md",
+      "type": "blog",
+      "count": 4,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/info-sec/over-the-wire-1-bandit.md",
+      "type": "blog",
+      "count": 2,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/devops/gcp/cloud-scheduler.md",
+      "type": "blog",
+      "count": 1,
+      "draft": false
+    }
+  ],
+  "termscron-jobs": [
+    {
+      "file": "/Users/future/l.blog/data/blog/software/devops/gcp/cloud-run-job.md",
+      "type": "blog",
+      "count": 2,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/info-sec/over-the-wire-1-bandit.md",
+      "type": "blog",
+      "count": 1,
+      "draft": false
+    }
+  ],
+  "termscross-join": [],
+  "termscross-platform-development": [],
+  "termscross-product": [],
+  "termscross-validation": [],
+  "termscsrf": [
+    {
+      "file": "/Users/future/l.blog/data/blog/software/info-sec/csrf.md",
+      "type": "blog",
+      "count": 11,
+      "draft": false
+    }
+  ],
+  "termscss-modules": [],
+  "termscss": [
+    {
+      "file": "/Users/future/l.blog/data/blog/TEST/introducing-tailwind-nextjs-starter-blog.mdx",
+      "type": "blog",
+      "count": 6,
+      "draft": true
+    },
+    {
+      "file": "/Users/future/l.blog/data/kb/tool/obsidian/preview/theme1.md",
+      "type": "kb",
+      "count": 2,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/kb/tool/obsidian/preview/theme2.md",
+      "type": "kb",
+      "count": 2,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/TEST/pictures-of-canada.mdx",
+      "type": "blog",
+      "count": 1,
+      "draft": true
+    }
+  ],
+  "termscubit": [],
+  "termscupertino-design": [],
+  "termscurl": [
+    {
+      "file": "/Users/future/l.blog/data/blog/software/devops/gcp/aws-lambda.md",
+      "type": "blog",
+      "count": 5,
+      "draft": true
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/system-design/system-design-auditing.md",
+      "type": "blog",
+      "count": 4,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/cheatsheets/kubernetes.md",
+      "type": "blog",
+      "count": 3,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/maths/calculus/multivariable-calc.md",
+      "type": "blog",
+      "count": 2,
+      "draft": true
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/system-design/build-message-queue.md",
+      "type": "blog",
+      "count": 2,
+      "draft": false
+    }
+  ],
+  "termscurve-sketching": [],
+  "termscustom-hooks": [],
+  "termscycle-detection": [
+    {
+      "file": "/Users/future/l.blog/data/blog/software/data-structures-algorithms/patterns-graph.md",
+      "type": "blog",
+      "count": 3,
+      "draft": false
+    }
+  ],
+  "termscycle": [
+    {
+      "file": "/Users/future/l.blog/data/blog/software/data-structures-algorithms/patterns-graph.md",
+      "type": "blog",
+      "count": 3,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/ai/ai-as-fractals.md",
+      "type": "blog",
+      "count": 1,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/data-structures-algorithms/algorithms/union-find.md",
+      "type": "blog",
+      "count": 1,
+      "draft": true
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/sprints.md",
+      "type": "blog",
+      "count": 1,
+      "draft": false
+    }
+  ],
+  "termscylindrical-coordinates": [],
+  "termscypress": [],
+  "termsdaemon-set": [],
+  "termsdaemon": [
+    {
+      "file": "/Users/future/l.blog/data/blog/software/info-sec/over-the-wire-1-bandit.md",
+      "type": "blog",
+      "count": 1,
+      "draft": false
+    }
+  ],
+  "termsdag": [
+    {
+      "file": "/Users/future/l.blog/data/blog/software/data-structures-algorithms/patterns-graph.md",
+      "type": "blog",
+      "count": 3,
+      "draft": false
+    }
+  ],
+  "termsdart-sdk": [],
+  "termsdart": [
+    {
+      "file": "/Users/future/l.blog/data/blog/software/frameworks/flutter/flutter-tiktok-1.md",
+      "type": "blog",
+      "count": 28,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/frameworks/flutter/flutter-tiktok-2.md",
+      "type": "blog",
+      "count": 21,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/leetcode/200-number-of-islands.md",
+      "type": "blog",
+      "count": 16,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/data-structures-algorithms/algorithms/sorting-old.md",
+      "type": "blog",
+      "count": 16,
+      "draft": true
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/leetcode/121-best-time-to-sell-stock.md",
+      "type": "blog",
+      "count": 15,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/leetcode/16-3-sum-closest.md",
+      "type": "blog",
+      "count": 13,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/system-design/flutter-theme.md",
+      "type": "blog",
+      "count": 13,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/leetcode/1-two-sum.md",
+      "type": "blog",
+      "count": 12,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/TEST/code-tab-groups.md",
+      "type": "blog",
+      "count": 11,
+      "draft": true
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/leetcode/217-contains-duplicate.md",
+      "type": "blog",
+      "count": 10,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/opinions/why-flutter-is-better-than-react-native.md",
+      "type": "blog",
+      "count": 9,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/leetcode/70-climbing-stairs.md",
+      "type": "blog",
+      "count": 8,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/frameworks/logging-app-load-times-with-firebase.md",
+      "type": "blog",
+      "count": 7,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/leetcode/238-product-of-array-except-self.md",
+      "type": "blog",
+      "count": 4,
+      "draft": true
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/leetcode/252-meeting-rooms.md",
+      "type": "blog",
+      "count": 4,
+      "draft": true
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/leetcode/253-meeting-rooms-ii.md",
+      "type": "blog",
+      "count": 4,
+      "draft": true
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/leetcode/261-graph-valid-tree.md",
+      "type": "blog",
+      "count": 4,
+      "draft": true
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/design patterns/factory.md",
+      "type": "blog",
+      "count": 4,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/design patterns/observer.md",
+      "type": "blog",
+      "count": 4,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/design patterns/repository.md",
+      "type": "blog",
+      "count": 4,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/design patterns/singleton.md",
+      "type": "blog",
+      "count": 4,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/frameworks/flutter/navigators.md",
+      "type": "blog",
+      "count": 4,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/frameworks/flutter/vscode launch json.md",
+      "type": "blog",
+      "count": 3,
+      "draft": true
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/languages/dart/dart.3.10.md",
+      "type": "blog",
+      "count": 3,
+      "draft": true
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/languages/dart/handling-nullable-fields.md",
+      "type": "blog",
+      "count": 2,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/frameworks/flutter/android connectivity issues - connection refused.md",
+      "type": "blog",
+      "count": 1,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/frameworks/flutter/flutter-poker-1.md",
+      "type": "blog",
+      "count": 1,
+      "draft": true
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/mobile requirements.md",
+      "type": "blog",
+      "count": 1,
+      "draft": false
+    }
+  ],
+  "termsdata-analysis": [],
+  "termsdata-denormalization": [],
+  "termsdata-encapsulation": [],
+  "termsdata-fetching": [
+    {
+      "file": "/Users/future/l.blog/data/kb/atom/CS/page-router-vs-app-router.md",
+      "type": "kb",
+      "count": 4,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/system-design/graphql.md",
+      "type": "blog",
+      "count": 1,
+      "draft": false
+    }
+  ],
+  "termsdata-integrity": [
+    {
+      "file": "/Users/future/l.blog/data/blog/projects/royal-stock-exchange/4-scaling.md",
+      "type": "blog",
+      "count": 4,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/databases/sql/1_toc.md",
+      "type": "blog",
+      "count": 1,
+      "draft": true
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/system-design/process-overview.md",
+      "type": "blog",
+      "count": 1,
+      "draft": false
+    }
+  ],
+  "termsdata-layer": [],
+  "termsdata-modeling": [
+    {
+      "file": "/Users/future/l.blog/data/blog/projects/royal-stock-exchange/4-scaling.md",
+      "type": "blog",
+      "count": 2,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/system-design/process-deepdive.md",
+      "type": "blog",
+      "count": 1,
+      "draft": false
+    }
+  ],
+  "termsdata-partitioning": [
+    {
+      "file": "/Users/future/l.blog/data/blog/software/system-design/system-design-distributed-systems.md",
+      "type": "blog",
+      "count": 1,
+      "draft": false
+    }
+  ],
+  "termsdata-preprocessing": [],
+  "termsdata-replication": [
+    {
+      "file": "/Users/future/l.blog/data/blog/software/system-design/build-db-cluster-docker.md",
+      "type": "blog",
+      "count": 2,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/projects/royal-stock-exchange/4-scaling.md",
+      "type": "blog",
+      "count": 1,
+      "draft": false
+    }
+  ],
+  "termsdata-representation": [],
+  "termsdata-structure-flexibility": [],
+  "termsdata-structures": [
+    {
+      "file": "/Users/future/l.blog/data/blog/software/data-structures-algorithms/graph-theory.md",
+      "type": "blog",
+      "count": 2,
+      "draft": true
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/TEST/TEST-TERMS.md",
+      "type": "blog",
+      "count": 1,
+      "draft": true
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/books/DSA python.md",
+      "type": "blog",
+      "count": 1,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/finance/high-frequency-trading.md",
+      "type": "blog",
+      "count": 1,
+      "draft": true
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/projects/royal-stock-exchange/4-scaling.md",
+      "type": "blog",
+      "count": 1,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/data-structures-algorithms/algorithms/sorting.md",
+      "type": "blog",
+      "count": 1,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/data-structures-algorithms/patterns-graph.md",
+      "type": "blog",
+      "count": 1,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/data-structures-algorithms/terms.md",
+      "type": "blog",
+      "count": 1,
+      "draft": true
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/system-design/graphql.md",
+      "type": "blog",
+      "count": 1,
+      "draft": false
+    }
+  ],
+  "termsdata": [
+    {
+      "file": "/Users/future/l.blog/data/blog/projects/royal-stock-exchange/4-scaling.md",
+      "type": "blog",
+      "count": 86,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/system-design/build-api-cache.md",
+      "type": "blog",
+      "count": 21,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/finance/high-frequency-trading.md",
+      "type": "blog",
+      "count": 19,
+      "draft": true
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/info-sec/over-the-wire-1-bandit.md",
+      "type": "blog",
+      "count": 18,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/system-design/process-overview.md",
+      "type": "blog",
+      "count": 17,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/finance/quant/crash-course.md",
+      "type": "blog",
+      "count": 14,
+      "draft": true
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/data-structures-algorithms/OOP.md",
+      "type": "blog",
+      "count": 14,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/design patterns/repository.md",
+      "type": "blog",
+      "count": 14,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/kb/atom/CS/page-router-vs-app-router.md",
+      "type": "kb",
+      "count": 12,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/databases/sql/1_toc.md",
+      "type": "blog",
+      "count": 12,
+      "draft": true
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/TEST/introducing-tailwind-nextjs-starter-blog.mdx",
+      "type": "blog",
+      "count": 11,
+      "draft": true
+    },
+    {
+      "file": "/Users/future/l.blog/data/kb/atom/CS/AI.md",
+      "type": "kb",
+      "count": 9,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/system-design/build-db-cluster-docker.md",
+      "type": "blog",
+      "count": 9,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/maths/statistics/variance-standard-deviation.md",
+      "type": "blog",
+      "count": 8,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/data-structures-algorithms/cheatsheet.md",
+      "type": "blog",
+      "count": 8,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/databases/sql/clone-db.md",
+      "type": "blog",
+      "count": 8,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/system-design/process-deepdive.md",
+      "type": "blog",
+      "count": 7,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/exchange/intro-2.md",
+      "type": "blog",
+      "count": 6,
+      "draft": true
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/maths/statistics/mean-median-mode.md",
+      "type": "blog",
+      "count": 6,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/data-structures-algorithms/graph-theory.md",
+      "type": "blog",
+      "count": 6,
+      "draft": true
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/devops/gcp/cloud-run-job.md",
+      "type": "blog",
+      "count": 6,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/system-design/system-design-auditing.md",
+      "type": "blog",
+      "count": 6,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/frameworks/logging-app-load-times-with-firebase.md",
+      "type": "blog",
+      "count": 5,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/system-design/appium-mocha.md",
+      "type": "blog",
+      "count": 5,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/system-design/graphql.md",
+      "type": "blog",
+      "count": 5,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/projects/royal-stock-exchange/3-portfolio.md",
+      "type": "blog",
+      "count": 4,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/databases/psql.md",
+      "type": "blog",
+      "count": 4,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/databases/sql/remote-clone-to-local.md",
+      "type": "blog",
+      "count": 4,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/info-sec/xss.md",
+      "type": "blog",
+      "count": 4,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/system-design/build-message-queue.md",
+      "type": "blog",
+      "count": 4,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/exchange/intro-3.md",
+      "type": "blog",
+      "count": 3,
+      "draft": true
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/finance/quant/statistics.md",
+      "type": "blog",
+      "count": 3,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/projects/royal-stock-exchange/1-intro.md",
+      "type": "blog",
+      "count": 3,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/projects/royal-stock-exchange/2-seeding data.md",
+      "type": "blog",
+      "count": 3,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/data-structures-algorithms/patterns-graph.md",
+      "type": "blog",
+      "count": 3,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/design patterns/decorator.md",
+      "type": "blog",
+      "count": 3,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/frameworks/next/introducing-multi-part-posts-with-nested-routing.md",
+      "type": "blog",
+      "count": 3,
+      "draft": true
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/TEST/TEST-TERMS.md",
+      "type": "blog",
+      "count": 2,
+      "draft": true
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/TEST/code-tab-groups.md",
+      "type": "blog",
+      "count": 2,
+      "draft": true
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/cheatsheets/big-o.mdx",
+      "type": "blog",
+      "count": 2,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/projects/royal-stock-exchange/5-demo.md",
+      "type": "blog",
+      "count": 2,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/same-problems-different-tools.md",
+      "type": "blog",
+      "count": 2,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/data-structures-algorithms/algorithms/sorting.md",
+      "type": "blog",
+      "count": 2,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/data-structures-algorithms/algorithms/tree-traversals.md",
+      "type": "blog",
+      "count": 2,
+      "draft": true
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/databases/nosql/mongodb.md",
+      "type": "blog",
+      "count": 2,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/devops/gcp/cloud-scheduler.md",
+      "type": "blog",
+      "count": 2,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/devops/gcp/memory-store.md",
+      "type": "blog",
+      "count": 2,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/frameworks/flutter/semantic-stoic.md",
+      "type": "blog",
+      "count": 2,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/system-design/flutter-theme.md",
+      "type": "blog",
+      "count": 2,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/system-design/system-design-distributed-systems.md",
+      "type": "blog",
+      "count": 2,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/kb/atom/CS/git-worktree-git-submodule-git-monorepo.md",
+      "type": "kb",
+      "count": 1,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/TEST/guide-to-using-images-in-nextjs.mdx",
+      "type": "blog",
+      "count": 1,
+      "draft": true
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/ai/ai-search-agent.md",
+      "type": "blog",
+      "count": 1,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/books/DSA python.md",
+      "type": "blog",
+      "count": 1,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/exchange/intro-5.md",
+      "type": "blog",
+      "count": 1,
+      "draft": true
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/finance/index.md",
+      "type": "blog",
+      "count": 1,
+      "draft": true
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/finance/indicators/leading-and-lagging-indicators.md",
+      "type": "blog",
+      "count": 1,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/finance/indicators/premium-flow-with-z-scores.md",
+      "type": "blog",
+      "count": 1,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/finance/terms/open-ended-funds.md",
+      "type": "blog",
+      "count": 1,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/finance/thesis-jaime.md",
+      "type": "blog",
+      "count": 1,
+      "draft": true
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/finance/toc.md",
+      "type": "blog",
+      "count": 1,
+      "draft": true
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/leetcode/742-network-delay-time.md",
+      "type": "blog",
+      "count": 1,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/questions/running-a-company.md",
+      "type": "blog",
+      "count": 1,
+      "draft": true
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/data-structures-algorithms/terms.md",
+      "type": "blog",
+      "count": 1,
+      "draft": true
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/databases/pgadmin.md",
+      "type": "blog",
+      "count": 1,
+      "draft": true
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/databases/sql/alter-tables.md",
+      "type": "blog",
+      "count": 1,
+      "draft": true
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/databases/sql/inspect-table.md",
+      "type": "blog",
+      "count": 1,
+      "draft": true
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/devops/gcp/secret-manager.md",
+      "type": "blog",
+      "count": 1,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/devops/gcp/vcp-connectors.md",
+      "type": "blog",
+      "count": 1,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/frameworks/flutter/flutter-poker-1.md",
+      "type": "blog",
+      "count": 1,
+      "draft": true
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/frameworks/flutter/flutter-tiktok-2.md",
+      "type": "blog",
+      "count": 1,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/languages/dart/dart.3.10.md",
+      "type": "blog",
+      "count": 1,
+      "draft": true
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/languages/go/go-routines.md",
+      "type": "blog",
+      "count": 1,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/mobile requirements.md",
+      "type": "blog",
+      "count": 1,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/system-design/1-ticketmaster.md",
+      "type": "blog",
+      "count": 1,
+      "draft": true
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/system-design/SQL Server Setup.md",
+      "type": "blog",
+      "count": 1,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/system-design/build-backend-api.md",
+      "type": "blog",
+      "count": 1,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/system-design/microservices.md",
+      "type": "blog",
+      "count": 1,
+      "draft": false
+    }
+  ],
+  "termsdatabase-persistence": [],
+  "termsdatabase": [
+    {
+      "file": "/Users/future/l.blog/data/blog/projects/royal-stock-exchange/4-scaling.md",
+      "type": "blog",
+      "count": 23,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/databases/sql/clone-db.md",
+      "type": "blog",
+      "count": 12,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/databases/sql/remote-clone-to-local.md",
+      "type": "blog",
+      "count": 10,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/databases/nosql/mongodb.md",
+      "type": "blog",
+      "count": 6,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/system-design/SQL Server Setup.md",
+      "type": "blog",
+      "count": 5,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/system-design/build-api-cache.md",
+      "type": "blog",
+      "count": 5,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/system-design/build-db-cluster-docker.md",
+      "type": "blog",
+      "count": 3,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/databases/sql/1_toc.md",
+      "type": "blog",
+      "count": 2,
+      "draft": true
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/design patterns/repository.md",
+      "type": "blog",
+      "count": 2,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/design patterns/singleton.md",
+      "type": "blog",
+      "count": 2,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/languages/rust/rust-projects.md",
+      "type": "blog",
+      "count": 2,
+      "draft": true
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/cheatsheets/postgres.md",
+      "type": "blog",
+      "count": 1,
+      "draft": true
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/projects/royal-stock-exchange/3-portfolio.md",
+      "type": "blog",
+      "count": 1,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/databases/psql.md",
+      "type": "blog",
+      "count": 1,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/design patterns/factory.md",
+      "type": "blog",
+      "count": 1,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/devops/gcp/cloud-run-job.md",
+      "type": "blog",
+      "count": 1,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/devops/gcp/secret-manager.md",
+      "type": "blog",
+      "count": 1,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/devops/gcp/vcp-connectors.md",
+      "type": "blog",
+      "count": 1,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/system-design/1-ticketmaster.md",
+      "type": "blog",
+      "count": 1,
+      "draft": true
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/system-design/build-message-queue.md",
+      "type": "blog",
+      "count": 1,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/system-design/process-overview.md",
+      "type": "blog",
+      "count": 1,
+      "draft": false
+    }
+  ],
+  "termsdataset": [
+    {
+      "file": "/Users/future/l.blog/data/blog/maths/statistics/mean-median-mode.md",
+      "type": "blog",
+      "count": 7,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/maths/statistics/variance-standard-deviation.md",
+      "type": "blog",
+      "count": 6,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/cheatsheets/big-o.mdx",
+      "type": "blog",
+      "count": 2,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/ai/ai-as-fractals.md",
+      "type": "blog",
+      "count": 1,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/finance/stock-market-size.md",
+      "type": "blog",
+      "count": 1,
+      "draft": false
+    }
+  ],
+  "termsdbscan": [
+    {
+      "file": "/Users/future/l.blog/data/blog/finance/quant/crash-course.md",
+      "type": "blog",
+      "count": 1,
+      "draft": true
+    }
+  ],
+  "termsde-morgan-laws": [],
+  "termsdebugger": [
+    {
+      "file": "/Users/future/l.blog/data/blog/software/languages/python/flask-hot-reload.md",
+      "type": "blog",
+      "count": 2,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/cheatsheets/jetbrains.md",
+      "type": "blog",
+      "count": 1,
+      "draft": false
+    }
+  ],
+  "termsdecision-theory": [],
+  "termsdecision-tree": [],
+  "termsdeclarative-config": [],
+  "termsdeclarative-infrastructure": [],
+  "termsdeclarative-ui": [],
+  "termsdecorator-pattern": [
+    {
+      "file": "/Users/future/l.blog/data/blog/software/design patterns/decorator.md",
+      "type": "blog",
+      "count": 2,
+      "draft": false
+    }
+  ],
+  "termsdecreasing-function": [],
+  "termsdeductive-reasoning": [],
+  "termsdeep-learning": [
+    {
+      "file": "/Users/future/l.blog/data/kb/atom/CS/AI.md",
+      "type": "kb",
+      "count": 3,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/finance/quant/crash-course.md",
+      "type": "blog",
+      "count": 1,
+      "draft": true
+    }
+  ],
+  "termsdeep-linking": [],
+  "termsdefinite-integral": [
+    {
+      "file": "/Users/future/l.blog/data/blog/maths/calculus/fundamental-theorem-of-calculus.md",
+      "type": "blog",
+      "count": 2,
+      "draft": true
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/maths/calculus/intro.md",
+      "type": "blog",
+      "count": 1,
+      "draft": true
+    }
+  ],
+  "termsdegree": [
+    {
+      "file": "/Users/future/l.blog/data/blog/finance/toc.md",
+      "type": "blog",
+      "count": 1,
+      "draft": true
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/maths/calculus/calculus-2/calculus-2.md",
+      "type": "blog",
+      "count": 1,
+      "draft": true
+    }
+  ],
+  "termsdelete": [
+    {
+      "file": "/Users/future/l.blog/data/blog/cheatsheets/vim.md",
+      "type": "blog",
+      "count": 3,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/databases/sql/1_toc.md",
+      "type": "blog",
+      "count": 2,
+      "draft": true
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/devops/gcp/aws-lambda.md",
+      "type": "blog",
+      "count": 2,
+      "draft": true
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/exchange/intro-3.md",
+      "type": "blog",
+      "count": 1,
+      "draft": true
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/databases/nosql/mongodb.md",
+      "type": "blog",
+      "count": 1,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/design patterns/observer.md",
+      "type": "blog",
+      "count": 1,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/devops/gcp/cloud-sql-commands.md",
+      "type": "blog",
+      "count": 1,
+      "draft": true
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/system-design/system-design-auditing.md",
+      "type": "blog",
+      "count": 1,
+      "draft": false
+    }
+  ],
+  "termsdenormalization-tradeoffs": [],
+  "termsdenormalization": [
+    {
+      "file": "/Users/future/l.blog/data/blog/projects/royal-stock-exchange/4-scaling.md",
+      "type": "blog",
+      "count": 2,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/databases/sql/1_toc.md",
+      "type": "blog",
+      "count": 1,
+      "draft": true
+    }
+  ],
+  "termsdense-rank": [],
+  "termsdependencies": [
+    {
+      "file": "/Users/future/l.blog/data/blog/software/system-design/appium-mocha.md",
+      "type": "blog",
+      "count": 4,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/kb/atom/CS/git-worktree-git-submodule-git-monorepo.md",
+      "type": "kb",
+      "count": 2,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/projects/royal-stock-exchange/1-intro.md",
+      "type": "blog",
+      "count": 2,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/system-design/build-api-cache.md",
+      "type": "blog",
+      "count": 2,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/system-design/build-message-queue.md",
+      "type": "blog",
+      "count": 2,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/questions/complexity.md",
+      "type": "blog",
+      "count": 1,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/devops/gcp/cloud-run-job.md",
+      "type": "blog",
+      "count": 1,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/devops/gcp/cloud-run.md",
+      "type": "blog",
+      "count": 1,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/system-design/microservices.md",
+      "type": "blog",
+      "count": 1,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/system-design/system-design-auditing.md",
+      "type": "blog",
+      "count": 1,
+      "draft": false
+    }
+  ],
+  "termsdependency-array": [],
+  "termsdependency-injection": [],
+  "termsdependency-inversion-principle": [],
+  "termsdependency": [
+    {
+      "file": "/Users/future/l.blog/data/kb/atom/CS/git-worktree-git-submodule-git-monorepo.md",
+      "type": "kb",
+      "count": 2,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/data-structures-algorithms/patterns-graph.md",
+      "type": "blog",
+      "count": 2,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/same-problems-different-tools.md",
+      "type": "blog",
+      "count": 1,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/design patterns/observer.md",
+      "type": "blog",
+      "count": 1,
+      "draft": false
+    }
+  ],
+  "termsdeployment-environments": [],
+  "termsdeployment": [
+    {
+      "file": "/Users/future/l.blog/data/blog/cheatsheets/kubernetes.md",
+      "type": "blog",
+      "count": 5,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/same-problems-different-tools.md",
+      "type": "blog",
+      "count": 3,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/TEST/introducing-tailwind-nextjs-starter-blog.mdx",
+      "type": "blog",
+      "count": 2,
+      "draft": true
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/devops/gcp/cloud-build-triggers.md",
+      "type": "blog",
+      "count": 2,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/system-design/build-backend-api.md",
+      "type": "blog",
+      "count": 2,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/finance/high-frequency-trading.md",
+      "type": "blog",
+      "count": 1,
+      "draft": true
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/questions/leadership.md",
+      "type": "blog",
+      "count": 1,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/devops/gcp/secret-manager.md",
+      "type": "blog",
+      "count": 1,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/languages/python/flask-hot-reload.md",
+      "type": "blog",
+      "count": 1,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/sprints.md",
+      "type": "blog",
+      "count": 1,
+      "draft": false
+    }
+  ],
+  "termsdepth-first-search": [],
+  "termsdepth": [
+    {
+      "file": "/Users/future/l.blog/data/blog/software/data-structures-algorithms/trees.md",
+      "type": "blog",
+      "count": 3,
+      "draft": true
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/finance/quant/order-books.md",
+      "type": "blog",
+      "count": 2,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/data-structures-algorithms/graph-theory.md",
+      "type": "blog",
+      "count": 2,
+      "draft": true
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/data-structures-algorithms/patterns-graph.md",
+      "type": "blog",
+      "count": 2,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/data-structures-algorithms/graph.md",
+      "type": "blog",
+      "count": 1,
+      "draft": true
+    }
+  ],
+  "termsdeque": [
+    {
+      "file": "/Users/future/l.blog/data/blog/software/data-structures-algorithms/cheatsheet.md",
+      "type": "blog",
+      "count": 2,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/data-structures-algorithms/graph-theory.md",
+      "type": "blog",
+      "count": 1,
+      "draft": true
+    }
+  ],
+  "termsderivative": [
+    {
+      "file": "/Users/future/l.blog/data/blog/maths/calculus/differentiation.md",
+      "type": "blog",
+      "count": 10,
+      "draft": true
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/maths/calculus/calculus-1/calculus-1.md",
+      "type": "blog",
+      "count": 5,
+      "draft": true
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/maths/calculus/intro.md",
+      "type": "blog",
+      "count": 5,
+      "draft": true
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/maths/calculus/fundamental-theorem-of-calculus.md",
+      "type": "blog",
+      "count": 3,
+      "draft": true
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/TEST/deriving-ols-estimator.mdx",
+      "type": "blog",
+      "count": 1,
+      "draft": true
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/finance/options/open-interest.md",
+      "type": "blog",
+      "count": 1,
+      "draft": true
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/finance/terms/quadruple-witching.md",
+      "type": "blog",
+      "count": 1,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/finance/terms/warrant.md",
+      "type": "blog",
+      "count": 1,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/maths/calculus/multivariable-calc.md",
+      "type": "blog",
+      "count": 1,
+      "draft": true
+    }
+  ],
+  "termsdesired-state-management": [],
+  "termsdesired-state": [],
+  "termsdesktop": [
+    {
+      "file": "/Users/future/l.blog/data/blog/software/info-sec/vm tools.md",
+      "type": "blog",
+      "count": 1,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/system-design/appium-mocha.md",
+      "type": "blog",
+      "count": 1,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/system-design/system-design-auditing.md",
+      "type": "blog",
+      "count": 1,
+      "draft": false
+    }
+  ],
+  "termsdeterminant": [
+    {
+      "file": "/Users/future/l.blog/data/blog/finance/quant/maths.md",
+      "type": "blog",
+      "count": 1,
+      "draft": false
+    }
+  ],
+  "termsdev": [
+    {
+      "file": "/Users/future/l.blog/data/blog/software/frameworks/flutter/flutter-tiktok-1.md",
+      "type": "blog",
+      "count": 17,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/system-design/appium-mocha.md",
+      "type": "blog",
+      "count": 10,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/cheatsheets/expo.md",
+      "type": "blog",
+      "count": 6,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/system-design/firebase environments.md",
+      "type": "blog",
+      "count": 6,
+      "draft": true
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/devops/gcp/secret-manager.md",
+      "type": "blog",
+      "count": 5,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/frameworks/flutter/flutter-tiktok-2.md",
+      "type": "blog",
+      "count": 5,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/devops/gcp/cloud-sql-commands.md",
+      "type": "blog",
+      "count": 4,
+      "draft": true
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/system-design/system-design-auditing.md",
+      "type": "blog",
+      "count": 4,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/kb/atom/CS/git-worktree-git-submodule-git-monorepo.md",
+      "type": "kb",
+      "count": 2,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/frameworks/flutter/flutter android customize app icon.md",
+      "type": "blog",
+      "count": 2,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/system-design/flutter-theme.md",
+      "type": "blog",
+      "count": 2,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/TEST/guide-to-using-images-in-nextjs.mdx",
+      "type": "blog",
+      "count": 1,
+      "draft": true
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/TEST/introducing-tailwind-nextjs-starter-blog.mdx",
+      "type": "blog",
+      "count": 1,
+      "draft": true
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/projects/royal-stock-exchange/1-intro.md",
+      "type": "blog",
+      "count": 1,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/databases/sql/clone-db.md",
+      "type": "blog",
+      "count": 1,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/devops/gcp/gcp-pipeline.md",
+      "type": "blog",
+      "count": 1,
+      "draft": true
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/git/pre-commit.md",
+      "type": "blog",
+      "count": 1,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/languages/dart/dart.3.10.md",
+      "type": "blog",
+      "count": 1,
+      "draft": true
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/languages/go/go-routines.md",
+      "type": "blog",
+      "count": 1,
+      "draft": false
+    }
+  ],
+  "termsdf": [
+    {
+      "file": "/Users/future/l.blog/data/blog/maths/calculus/calculus-1/calculus-1.md",
+      "type": "blog",
+      "count": 1,
+      "draft": true
+    }
+  ],
+  "termsdfa": [],
+  "termsdfs": [
+    {
+      "file": "/Users/future/l.blog/data/blog/leetcode/200-number-of-islands.md",
+      "type": "blog",
+      "count": 77,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/data-structures-algorithms/graph-programming.md",
+      "type": "blog",
+      "count": 7,
+      "draft": true
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/leetcode/463-island-perimeter.md",
+      "type": "blog",
+      "count": 6,
+      "draft": true
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/data-structures-algorithms/patterns-graph.md",
+      "type": "blog",
+      "count": 5,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/leetcode/261-graph-valid-tree.md",
+      "type": "blog",
+      "count": 3,
+      "draft": true
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/data-structures-algorithms/graph-algorithms.md",
+      "type": "blog",
+      "count": 2,
+      "draft": true
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/ai/ai-search-agent.md",
+      "type": "blog",
+      "count": 1,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/data-structures-algorithms/cheatsheet.md",
+      "type": "blog",
+      "count": 1,
+      "draft": false
+    }
+  ],
+  "termsdiagonal-matrix": [],
+  "termsdiagonalization": [],
+  "termsdifference-quotient": [],
+  "termsdifference": [
+    {
+      "file": "/Users/future/l.blog/data/blog/software/frameworks/logging-app-load-times-with-firebase.md",
+      "type": "blog",
+      "count": 5,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/maths/calculus/differentiation.md",
+      "type": "blog",
+      "count": 4,
+      "draft": true
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/leetcode/121-best-time-to-sell-stock.md",
+      "type": "blog",
+      "count": 3,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/maths/discrete-symbols.md",
+      "type": "blog",
+      "count": 3,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/exchange/intro-6.md",
+      "type": "blog",
+      "count": 2,
+      "draft": true
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/finance/options/strategies/spreads.md",
+      "type": "blog",
+      "count": 2,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/finance/options/strategies/trading-strategies.md",
+      "type": "blog",
+      "count": 2,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/finance/quant/slippage.md",
+      "type": "blog",
+      "count": 2,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/leetcode/1-two-sum.md",
+      "type": "blog",
+      "count": 2,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/maths/calculus/calculus-1/calculus-1.md",
+      "type": "blog",
+      "count": 2,
+      "draft": true
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/TEST/the-time-machine.mdx",
+      "type": "blog",
+      "count": 1,
+      "draft": true
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/finance/indicators/leading-and-lagging-indicators.md",
+      "type": "blog",
+      "count": 1,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/finance/terms/intrinsic-value.md",
+      "type": "blog",
+      "count": 1,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/finance/terms/secondary-market.md",
+      "type": "blog",
+      "count": 1,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/leetcode/16-3-sum-closest.md",
+      "type": "blog",
+      "count": 1,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/git/rebase.md",
+      "type": "blog",
+      "count": 1,
+      "draft": false
+    }
+  ],
+  "termsdiffing-algorithm": [],
+  "termsdiffusion-model": [],
+  "termsdijkstra-algorithm": [
+    {
+      "file": "/Users/future/l.blog/data/blog/leetcode/742-network-delay-time.md",
+      "type": "blog",
+      "count": 1,
+      "draft": false
+    }
+  ],
+  "termsdimension": [
+    {
+      "file": "/Users/future/l.blog/data/blog/TEST/the-time-machine.mdx",
+      "type": "blog",
+      "count": 7,
+      "draft": true
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/TEST/guide-to-using-images-in-nextjs.mdx",
+      "type": "blog",
+      "count": 1,
+      "draft": true
+    }
+  ],
+  "termsdimensionality-reduction": [
+    {
+      "file": "/Users/future/l.blog/data/blog/finance/quant/crash-course.md",
+      "type": "blog",
+      "count": 1,
+      "draft": true
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/finance/quant/maths.md",
+      "type": "blog",
+      "count": 1,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/finance/quant/statistics.md",
+      "type": "blog",
+      "count": 1,
+      "draft": false
+    }
+  ],
+  "termsdio": [],
+  "termsdirect-proof": [],
+  "termsdirected-graph": [
+    {
+      "file": "/Users/future/l.blog/data/blog/software/data-structures-algorithms/patterns-graph.md",
+      "type": "blog",
+      "count": 2,
+      "draft": false
+    }
+  ],
+  "termsdirection": [
+    {
+      "file": "/Users/future/l.blog/data/blog/finance/options/strategies/trading-strategies.md",
+      "type": "blog",
+      "count": 5,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/finance/options/strategies/straddle.md",
+      "type": "blog",
+      "count": 4,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/finance/options/strategies/strangle.md",
+      "type": "blog",
+      "count": 4,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/TEST/the-time-machine.mdx",
+      "type": "blog",
+      "count": 3,
+      "draft": true
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/finance/quant/pair-trading.md",
+      "type": "blog",
+      "count": 2,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/TEST/code-tab-groups.md",
+      "type": "blog",
+      "count": 1,
+      "draft": true
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/finance/indicators/implied-volatility-rank.md",
+      "type": "blog",
+      "count": 1,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/finance/options/strategies/introduction.md",
+      "type": "blog",
+      "count": 1,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/finance/options/strategies/spreads.md",
+      "type": "blog",
+      "count": 1,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/finance/terms/extrinsic-value.md",
+      "type": "blog",
+      "count": 1,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/languages/rust/rust-projects.md",
+      "type": "blog",
+      "count": 1,
+      "draft": true
+    }
+  ],
+  "termsdirectional-derivative": [],
+  "termsdiscrete-data": [],
+  "termsdiscrete-mathematics": [],
+  "termsdisjoint-set": [
+    {
+      "file": "/Users/future/l.blog/data/blog/software/data-structures-algorithms/cheatsheet.md",
+      "type": "blog",
+      "count": 2,
+      "draft": false
+    }
+  ],
+  "termsdisk-method": [],
+  "termsdisk": [
+    {
+      "file": "/Users/future/l.blog/data/blog/projects/royal-stock-exchange/3-portfolio.md",
+      "type": "blog",
+      "count": 2,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/projects/royal-stock-exchange/4-scaling.md",
+      "type": "blog",
+      "count": 2,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/finance/high-frequency-trading.md",
+      "type": "blog",
+      "count": 1,
+      "draft": true
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/frameworks/logging-app-load-times-with-firebase.md",
+      "type": "blog",
+      "count": 1,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/languages/rust/rust-projects.md",
+      "type": "blog",
+      "count": 1,
+      "draft": true
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/system-design/build-message-queue.md",
+      "type": "blog",
+      "count": 1,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/system-design/key-numbers.md",
+      "type": "blog",
+      "count": 1,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/system-design/process-deepdive.md",
+      "type": "blog",
+      "count": 1,
+      "draft": false
+    }
+  ],
+  "termsdistance-formula-in-3d": [],
+  "termsdistributed-database": [],
+  "termsdistributed-systems": [
+    {
+      "file": "/Users/future/l.blog/data/blog/projects/royal-stock-exchange/4-scaling.md",
+      "type": "blog",
+      "count": 2,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/system-design/process-deepdive.md",
+      "type": "blog",
+      "count": 1,
+      "draft": false
+    }
+  ],
+  "termsdivergence-theorem": [
+    {
+      "file": "/Users/future/l.blog/data/blog/maths/calculus/multivariable-calc.md",
+      "type": "blog",
+      "count": 2,
+      "draft": true
+    }
+  ],
+  "termsdivergence": [
+    {
+      "file": "/Users/future/l.blog/data/blog/maths/calculus/calculus-2/calculus-2.md",
+      "type": "blog",
+      "count": 3,
+      "draft": true
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/maths/calculus/multivariable-calc.md",
+      "type": "blog",
+      "count": 3,
+      "draft": true
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/finance/indicators/relative-strength-index.md",
+      "type": "blog",
+      "count": 1,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/maths/calculus/calculus-3/calculus-3.md",
+      "type": "blog",
+      "count": 1,
+      "draft": true
+    }
+  ],
+  "termsdiversification": [
+    {
+      "file": "/Users/future/l.blog/data/blog/finance/terms/index-fund.md",
+      "type": "blog",
+      "count": 2,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/finance/quant/crash-course.md",
+      "type": "blog",
+      "count": 1,
+      "draft": true
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/finance/quant/maths.md",
+      "type": "blog",
+      "count": 1,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/finance/terms/mutual-funds.md",
+      "type": "blog",
+      "count": 1,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/finance/terms/open-ended-funds.md",
+      "type": "blog",
+      "count": 1,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/finance/toc.md",
+      "type": "blog",
+      "count": 1,
+      "draft": true
+    }
+  ],
+  "termsdividends": [
+    {
+      "file": "/Users/future/l.blog/data/blog/finance/terms/extrinsic-value.md",
+      "type": "blog",
+      "count": 1,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/finance/terms/mutual-funds.md",
+      "type": "blog",
+      "count": 1,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/finance/toc.md",
+      "type": "blog",
+      "count": 1,
+      "draft": true
+    }
+  ],
+  "termsdivisibility": [],
+  "termsdnf": [],
+  "termsdns-in-cluster": [],
+  "termsdns-in-docker": [],
+  "termsdns-resolution-inside-docker": [],
+  "termsdns": [
+    {
+      "file": "/Users/future/l.blog/data/blog/software/frameworks/flutter/android connectivity issues - connection refused.md",
+      "type": "blog",
+      "count": 2,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/system-design/process-overview.md",
+      "type": "blog",
+      "count": 1,
+      "draft": false
+    }
+  ],
+  "termsdocker-build-pipeline": [],
+  "termsdocker-build-pipelines": [],
+  "termsdocker-build": [
+    {
+      "file": "/Users/future/l.blog/data/blog/software/system-design/microservices.md",
+      "type": "blog",
+      "count": 2,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/devops/gcp/cloud-run.md",
+      "type": "blog",
+      "count": 1,
+      "draft": false
+    }
+  ],
+  "termsdocker-cli": [],
+  "termsdocker-client": [],
+  "termsdocker-container": [
+    {
+      "file": "/Users/future/l.blog/data/blog/software/devops/gcp/cloud-run.md",
+      "type": "blog",
+      "count": 1,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/system-design/build-db-cluster-docker.md",
+      "type": "blog",
+      "count": 1,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/system-design/microservices.md",
+      "type": "blog",
+      "count": 1,
+      "draft": false
+    }
+  ],
+  "termsdocker-daemon": [],
+  "termsdocker-dependency": [],
+  "termsdocker-desktop": [],
+  "termsdocker-engine": [],
+  "termsdocker-exec-shell": [],
+  "termsdocker-exec": [
+    {
+      "file": "/Users/future/l.blog/data/blog/software/system-design/build-db-cluster-docker.md",
+      "type": "blog",
+      "count": 2,
+      "draft": false
+    }
+  ],
+  "termsdocker-hub": [],
+  "termsdocker-image": [
+    {
+      "file": "/Users/future/l.blog/data/blog/software/system-design/microservices.md",
+      "type": "blog",
+      "count": 2,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/system-design/SQL Server Setup.md",
+      "type": "blog",
+      "count": 1,
+      "draft": false
+    }
+  ],
+  "termsdocker-inspect": [],
+  "termsdocker-login": [],
+  "termsdocker-logs": [],
+  "termsdocker-ps": [
+    {
+      "file": "/Users/future/l.blog/data/blog/software/system-design/microservices.md",
+      "type": "blog",
+      "count": 1,
+      "draft": false
+    }
+  ],
+  "termsdocker-pull": [],
+  "termsdocker-push": [
+    {
+      "file": "/Users/future/l.blog/data/blog/software/devops/gcp/cloud-run.md",
+      "type": "blog",
+      "count": 1,
+      "draft": false
+    }
+  ],
+  "termsdocker-registry": [],
+  "termsdocker-run": [
+    {
+      "file": "/Users/future/l.blog/data/blog/software/system-design/microservices.md",
+      "type": "blog",
+      "count": 2,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/cheatsheets/shell.md",
+      "type": "blog",
+      "count": 1,
+      "draft": true
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/system-design/SQL Server Setup.md",
+      "type": "blog",
+      "count": 1,
+      "draft": false
+    }
+  ],
+  "termsdocker-runtime-in-k8s": [],
+  "termsdocker-stop": [],
+  "termsdocker-swarm": [],
+  "termsdocker-vs-kubernetes": [],
+  "termsdocker": [
+    {
+      "file": "/Users/future/l.blog/data/blog/software/system-design/microservices.md",
+      "type": "blog",
+      "count": 19,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/system-design/build-db-cluster-docker.md",
+      "type": "blog",
+      "count": 15,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/system-design/SQL Server Setup.md",
+      "type": "blog",
+      "count": 4,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/devops/gcp/cloud-run.md",
+      "type": "blog",
+      "count": 3,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/devops/gcp/cloud-build-triggers.md",
+      "type": "blog",
+      "count": 2,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/cheatsheets/shell.md",
+      "type": "blog",
+      "count": 1,
+      "draft": true
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/finance/quant/crash-course.md",
+      "type": "blog",
+      "count": 1,
+      "draft": true
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/projects/royal-stock-exchange/1-intro.md",
+      "type": "blog",
+      "count": 1,
+      "draft": false
+    }
+  ],
+  "termsdockerfile": [
+    {
+      "file": "/Users/future/l.blog/data/blog/software/system-design/microservices.md",
+      "type": "blog",
+      "count": 3,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/devops/gcp/cloud-build-triggers.md",
+      "type": "blog",
+      "count": 1,
+      "draft": false
+    }
+  ],
+  "termsdocument-database": [],
+  "termsdocument-model": [],
+  "termsdollar-cost-averaging": [],
+  "termsdom": [
+    {
+      "file": "/Users/future/l.blog/data/blog/software/info-sec/xss.md",
+      "type": "blog",
+      "count": 2,
+      "draft": false
+    }
+  ],
+  "termsdomain-layer": [],
+  "termsdomain-name": [],
+  "termsdomain-of-discourse": [],
+  "termsdomain": [
+    {
+      "file": "/Users/future/l.blog/data/blog/projects/royal-stock-exchange/4-scaling.md",
+      "type": "blog",
+      "count": 1,
+      "draft": false
+    }
+  ],
+  "termsdot-product": [
+    {
+      "file": "/Users/future/l.blog/data/blog/maths/linear-algebra/vectors.md",
+      "type": "blog",
+      "count": 1,
+      "draft": true
+    }
+  ],
+  "termsdouble-integral": [
+    {
+      "file": "/Users/future/l.blog/data/blog/maths/calculus/multivariable-calc.md",
+      "type": "blog",
+      "count": 1,
+      "draft": true
+    }
+  ],
+  "termsdoubly-linked-list": [],
+  "termsdrawdown": [
+    {
+      "file": "/Users/future/l.blog/data/blog/finance/formulas.md",
+      "type": "blog",
+      "count": 1,
+      "draft": true
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/finance/quant/crash-course.md",
+      "type": "blog",
+      "count": 1,
+      "draft": true
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/finance/quant/statistics.md",
+      "type": "blog",
+      "count": 1,
+      "draft": false
+    }
+  ],
+  "termsdropout": [],
+  "termsdu": [
+    {
+      "file": "/Users/future/l.blog/data/blog/maths/calculus/calculus-2/calculus-2.md",
+      "type": "blog",
+      "count": 2,
+      "draft": true
+    }
+  ],
+  "termsdurability": [
+    {
+      "file": "/Users/future/l.blog/data/blog/exchange/intro-2.md",
+      "type": "blog",
+      "count": 3,
+      "draft": true
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/system-design/build-message-queue.md",
+      "type": "blog",
+      "count": 1,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/system-design/process-overview.md",
+      "type": "blog",
+      "count": 1,
+      "draft": false
+    }
+  ],
+  "termsduration": [
+    {
+      "file": "/Users/future/l.blog/data/blog/software/frameworks/logging-app-load-times-with-firebase.md",
+      "type": "blog",
+      "count": 8,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/TEST/the-time-machine.mdx",
+      "type": "blog",
+      "count": 1,
+      "draft": true
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/finance/quant/crash-course.md",
+      "type": "blog",
+      "count": 1,
+      "draft": true
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/sprints.md",
+      "type": "blog",
+      "count": 1,
+      "draft": false
+    }
+  ],
+  "termsdynamic-array": [],
+  "termsdynamic-dispatch": [],
+  "termsdynamic-programming": [
+    {
+      "file": "/Users/future/l.blog/data/blog/software/data-structures-algorithms/algorithms/dp.md",
+      "type": "blog",
+      "count": 1,
+      "draft": true
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/data-structures-algorithms/dynamic-programming.md",
+      "type": "blog",
+      "count": 1,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/data-structures-algorithms/patterns-graph.md",
+      "type": "blog",
+      "count": 1,
+      "draft": false
+    }
+  ],
+  "termsdynamic-routes": [
+    {
+      "file": "/Users/future/l.blog/data/kb/atom/CS/page-router-vs-app-router.md",
+      "type": "kb",
+      "count": 1,
+      "draft": false
+    }
+  ],
+  "termsdynamodb": [
+    {
+      "file": "/Users/future/l.blog/data/blog/software/devops/gcp/aws-lambda.md",
+      "type": "blog",
+      "count": 2,
+      "draft": true
+    }
+  ],
+  "termsearly-stopping": [],
+  "termsearnings-per-share": [],
+  "termsebitda": [],
+  "termsedge-functions": [],
+  "termsedge-runtime-deployment": [],
+  "termsedge-runtime": [],
+  "termsedge": [
+    {
+      "file": "/Users/future/l.blog/data/blog/software/data-structures-algorithms/patterns-graph.md",
+      "type": "blog",
+      "count": 7,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/data-structures-algorithms/graph-programming.md",
+      "type": "blog",
+      "count": 4,
+      "draft": true
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/system-design/SQL Server Setup.md",
+      "type": "blog",
+      "count": 3,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/exchange/intro-1.md",
+      "type": "blog",
+      "count": 2,
+      "draft": true
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/system-design/process-overview.md",
+      "type": "blog",
+      "count": 2,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/exchange/intro-6.md",
+      "type": "blog",
+      "count": 1,
+      "draft": true
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/finance/indicators/implied-volatility-rank.md",
+      "type": "blog",
+      "count": 1,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/finance/indicators/premium-flow-with-z-scores.md",
+      "type": "blog",
+      "count": 1,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/finance/terms/extrinsic-value.md",
+      "type": "blog",
+      "count": 1,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/leetcode/261-graph-valid-tree.md",
+      "type": "blog",
+      "count": 1,
+      "draft": true
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/data-structures-algorithms/algorithms/union-find.md",
+      "type": "blog",
+      "count": 1,
+      "draft": true
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/databases/psql.md",
+      "type": "blog",
+      "count": 1,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/languages/rust/rust-projects.md",
+      "type": "blog",
+      "count": 1,
+      "draft": true
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/system-design/1-LeetCode.md",
+      "type": "blog",
+      "count": 1,
+      "draft": true
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/system-design/appium-mocha.md",
+      "type": "blog",
+      "count": 1,
+      "draft": false
+    }
+  ],
+  "termsedges": [
+    {
+      "file": "/Users/future/l.blog/data/blog/software/data-structures-algorithms/graph-programming.md",
+      "type": "blog",
+      "count": 14,
+      "draft": true
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/leetcode/261-graph-valid-tree.md",
+      "type": "blog",
+      "count": 5,
+      "draft": true
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/leetcode/742-network-delay-time.md",
+      "type": "blog",
+      "count": 4,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/data-structures-algorithms/cheatsheet.md",
+      "type": "blog",
+      "count": 4,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/data-structures-algorithms/patterns-graph.md",
+      "type": "blog",
+      "count": 4,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/leetcode/200-number-of-islands.md",
+      "type": "blog",
+      "count": 1,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/data-structures-algorithms/algorithms/union-find.md",
+      "type": "blog",
+      "count": 1,
+      "draft": true
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/data-structures-algorithms/graph-algorithms.md",
+      "type": "blog",
+      "count": 1,
+      "draft": true
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/data-structures-algorithms/priority-queue.md",
+      "type": "blog",
+      "count": 1,
+      "draft": true
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/system-design/graphql.md",
+      "type": "blog",
+      "count": 1,
+      "draft": false
+    }
+  ],
+  "termsedit-distance": [],
+  "termseffect-timing": [],
+  "termseigen-decomposition": [],
+  "termseigenvalue": [],
+  "termseigenvalues": [
+    {
+      "file": "/Users/future/l.blog/data/blog/finance/quant/maths.md",
+      "type": "blog",
+      "count": 2,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/finance/quant/crash-course.md",
+      "type": "blog",
+      "count": 1,
+      "draft": true
+    }
+  ],
+  "termseigenvector": [],
+  "termseigenvectors": [
+    {
+      "file": "/Users/future/l.blog/data/blog/finance/quant/crash-course.md",
+      "type": "blog",
+      "count": 1,
+      "draft": true
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/finance/quant/maths.md",
+      "type": "blog",
+      "count": 1,
+      "draft": false
+    }
+  ],
+  "termseks": [],
+  "termselement-tree": [],
+  "termselement": [
+    {
+      "file": "/Users/future/l.blog/data/blog/maths/discrete-symbols.md",
+      "type": "blog",
+      "count": 10,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/data-structures-algorithms/priority-queue.md",
+      "type": "blog",
+      "count": 6,
+      "draft": true
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/system-design/appium-mocha.md",
+      "type": "blog",
+      "count": 4,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/data-structures-algorithms/algorithms/sorting.md",
+      "type": "blog",
+      "count": 3,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/TEST/github-markdown-guide.mdx",
+      "type": "blog",
+      "count": 2,
+      "draft": true
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/data-structures-algorithms/graph-theory.md",
+      "type": "blog",
+      "count": 2,
+      "draft": true
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/data-structures-algorithms/patterns-graph.md",
+      "type": "blog",
+      "count": 2,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/data-structures-algorithms/trees.md",
+      "type": "blog",
+      "count": 2,
+      "draft": true
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/languages/go/go-routines.md",
+      "type": "blog",
+      "count": 2,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/leetcode/217-contains-duplicate.md",
+      "type": "blog",
+      "count": 1,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/data-structures-algorithms/dynamic-programming.md",
+      "type": "blog",
+      "count": 1,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/frameworks/flutter/flutter-tiktok-1.md",
+      "type": "blog",
+      "count": 1,
+      "draft": false
+    }
+  ],
+  "termsembeddings": [],
+  "termsempty-set": [
+    {
+      "file": "/Users/future/l.blog/data/blog/maths/discrete-symbols.md",
+      "type": "blog",
+      "count": 2,
+      "draft": false
+    }
+  ],
+  "termsencapsulation": [
+    {
+      "file": "/Users/future/l.blog/data/blog/software/data-structures-algorithms/OOP.md",
+      "type": "blog",
+      "count": 8,
+      "draft": false
+    }
+  ],
+  "termsencoding-categorical-variables": [],
+  "termsentailment": [],
+  "termsentity-relationship-diagram": [],
+  "termsentity": [
+    {
+      "file": "/Users/future/l.blog/data/blog/projects/royal-stock-exchange/1-intro.md",
+      "type": "blog",
+      "count": 2,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/TEST/deriving-ols-estimator.mdx",
+      "type": "blog",
+      "count": 1,
+      "draft": true
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/finance/terms/net-asset-value.md",
+      "type": "blog",
+      "count": 1,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/languages/dart/handling-nullable-fields.md",
+      "type": "blog",
+      "count": 1,
+      "draft": false
+    }
+  ],
+  "termsentry": [
+    {
+      "file": "/Users/future/l.blog/data/blog/finance/high-frequency-trading.md",
+      "type": "blog",
+      "count": 3,
+      "draft": true
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/finance/options/strategies/trading-strategies.md",
+      "type": "blog",
+      "count": 2,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/ai/vibe-coders.md",
+      "type": "blog",
+      "count": 1,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/finance/indicators/relative-strength-index.md",
+      "type": "blog",
+      "count": 1,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/finance/quant/pair-trading.md",
+      "type": "blog",
+      "count": 1,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/devops/gcp/aws-lambda.md",
+      "type": "blog",
+      "count": 1,
+      "draft": true
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/system-design/build-api-cache.md",
+      "type": "blog",
+      "count": 1,
+      "draft": false
+    }
+  ],
+  "termsentrypoint": [
+    {
+      "file": "/Users/future/l.blog/data/blog/software/system-design/build-db-cluster-docker.md",
+      "type": "blog",
+      "count": 4,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/system-design/build-backend-api.md",
+      "type": "blog",
+      "count": 2,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/system-design/build-message-queue.md",
+      "type": "blog",
+      "count": 2,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/devops/gcp/secret-manager.md",
+      "type": "blog",
+      "count": 1,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/languages/go/go-routines.md",
+      "type": "blog",
+      "count": 1,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/languages/java/java-spring.md",
+      "type": "blog",
+      "count": 1,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/system-design/system-design-auditing.md",
+      "type": "blog",
+      "count": 1,
+      "draft": false
+    }
+  ],
+  "termsenv": [
+    {
+      "file": "/Users/future/l.blog/data/blog/software/system-design/appium-mocha.md",
+      "type": "blog",
+      "count": 9,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/system-design/system-design-auditing.md",
+      "type": "blog",
+      "count": 9,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/devops/gcp/secret-manager.md",
+      "type": "blog",
+      "count": 5,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/cheatsheets/kubernetes.md",
+      "type": "blog",
+      "count": 2,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/system-design/build-backend-api.md",
+      "type": "blog",
+      "count": 2,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/system-design/firebase environments.md",
+      "type": "blog",
+      "count": 2,
+      "draft": true
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/frameworks/logging-app-load-times-with-firebase.md",
+      "type": "blog",
+      "count": 1,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/system-design/system-design-1-bitly.md",
+      "type": "blog",
+      "count": 1,
+      "draft": false
+    }
+  ],
+  "termsenvironment-consistency": [],
+  "termsenvironment-parity": [],
+  "termsenvironment-variables": [
+    {
+      "file": "/Users/future/l.blog/data/blog/software/devops/gcp/secret-manager.md",
+      "type": "blog",
+      "count": 1,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/languages/python/flask-hot-reload.md",
+      "type": "blog",
+      "count": 1,
+      "draft": false
+    }
+  ],
+  "termsenvironment": [
+    {
+      "file": "/Users/future/l.blog/data/blog/software/system-design/build-backend-api.md",
+      "type": "blog",
+      "count": 7,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/system-design/build-db-cluster-docker.md",
+      "type": "blog",
+      "count": 3,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/system-design/firebase environments.md",
+      "type": "blog",
+      "count": 3,
+      "draft": true
+    },
+    {
+      "file": "/Users/future/l.blog/data/kb/atom/CS/AI.md",
+      "type": "kb",
+      "count": 2,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/devops/gcp/secret-manager.md",
+      "type": "blog",
+      "count": 2,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/languages/python/flask-hot-reload.md",
+      "type": "blog",
+      "count": 2,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/finance/high-frequency-trading.md",
+      "type": "blog",
+      "count": 1,
+      "draft": true
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/finance/options/greeks.md",
+      "type": "blog",
+      "count": 1,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/questions/leadership.md",
+      "type": "blog",
+      "count": 1,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/databases/sql/clone-db.md",
+      "type": "blog",
+      "count": 1,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/databases/sql/remote-clone-to-local.md",
+      "type": "blog",
+      "count": 1,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/devops/gcp/cloud-run.md",
+      "type": "blog",
+      "count": 1,
+      "draft": false
+    }
+  ],
+  "termsephemeral-storage": [],
+  "termsequity": [
+    {
+      "file": "/Users/future/l.blog/data/blog/exchange/intro-1.md",
+      "type": "blog",
+      "count": 3,
+      "draft": true
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/finance/RDO.md",
+      "type": "blog",
+      "count": 3,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/finance/toc.md",
+      "type": "blog",
+      "count": 2,
+      "draft": true
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/finance/terms/index-fund.md",
+      "type": "blog",
+      "count": 1,
+      "draft": false
+    }
+  ],
+  "termsequivalence-relation": [],
+  "termserd": [],
+  "termserror": [
+    {
+      "file": "/Users/future/l.blog/data/blog/software/system-design/appium-mocha.md",
+      "type": "blog",
+      "count": 50,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/system-design/system-design-auditing.md",
+      "type": "blog",
+      "count": 7,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/devops/gcp/cloud-run-job.md",
+      "type": "blog",
+      "count": 3,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/TEST/code-tab-groups.md",
+      "type": "blog",
+      "count": 2,
+      "draft": true
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/databases/sql/1_toc.md",
+      "type": "blog",
+      "count": 2,
+      "draft": true
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/frameworks/flutter/flutter lacks webview support.md",
+      "type": "blog",
+      "count": 2,
+      "draft": true
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/frameworks/logging-app-load-times-with-firebase.md",
+      "type": "blog",
+      "count": 2,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/system-design/build-message-queue.md",
+      "type": "blog",
+      "count": 2,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/TEST/deriving-ols-estimator.mdx",
+      "type": "blog",
+      "count": 1,
+      "draft": true
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/bug-reports/reddit.md",
+      "type": "blog",
+      "count": 1,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/finance/high-frequency-trading.md",
+      "type": "blog",
+      "count": 1,
+      "draft": true
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/finance/quant/calculus-for-quants.md",
+      "type": "blog",
+      "count": 1,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/finance/quant/symbols.md",
+      "type": "blog",
+      "count": 1,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/leetcode/217-contains-duplicate.md",
+      "type": "blog",
+      "count": 1,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/design patterns/factory.md",
+      "type": "blog",
+      "count": 1,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/design patterns/observer.md",
+      "type": "blog",
+      "count": 1,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/frameworks/flutter/android connectivity issues - connection refused.md",
+      "type": "blog",
+      "count": 1,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/languages/js/js-1.md",
+      "type": "blog",
+      "count": 1,
+      "draft": true
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/languages/ruby/ruby-lambda.md",
+      "type": "blog",
+      "count": 1,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/system-design/process-deepdive.md",
+      "type": "blog",
+      "count": 1,
+      "draft": false
+    }
+  ],
+  "termseslint": [
+    {
+      "file": "/Users/future/l.blog/data/blog/software/git/pre-commit.md",
+      "type": "blog",
+      "count": 6,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/opinions/why-flutter-is-better-than-react-native.md",
+      "type": "blog",
+      "count": 1,
+      "draft": false
+    }
+  ],
+  "termsetc": [
+    {
+      "file": "/Users/future/l.blog/data/blog/software/info-sec/over-the-wire-1-bandit.md",
+      "type": "blog",
+      "count": 23,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/system-design/build-db-cluster-docker.md",
+      "type": "blog",
+      "count": 10,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/info-sec/over-the-wire-2-leviathan.md",
+      "type": "blog",
+      "count": 4,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/books/12.the-thing-you-can-see-only-when-you-slow-down.md",
+      "type": "blog",
+      "count": 3,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/info-sec/over-the-wire-3-natas.md",
+      "type": "blog",
+      "count": 3,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/TEST/introducing-tailwind-nextjs-starter-blog.mdx",
+      "type": "blog",
+      "count": 2,
+      "draft": true
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/finance/options/strategies/directional.md",
+      "type": "blog",
+      "count": 2,
+      "draft": true
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/sprints.md",
+      "type": "blog",
+      "count": 2,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/finance/high-frequency-trading.md",
+      "type": "blog",
+      "count": 1,
+      "draft": true
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/finance/quant/calculus-for-quants.md",
+      "type": "blog",
+      "count": 1,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/finance/quant/crash-course.md",
+      "type": "blog",
+      "count": 1,
+      "draft": true
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/finance/quant/statistics.md",
+      "type": "blog",
+      "count": 1,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/projects/royal-stock-exchange/3-portfolio.md",
+      "type": "blog",
+      "count": 1,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/info-sec/xss.md",
+      "type": "blog",
+      "count": 1,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/languages/dart/handling-nullable-fields.md",
+      "type": "blog",
+      "count": 1,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/languages/rust/rust-projects.md",
+      "type": "blog",
+      "count": 1,
+      "draft": true
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/system-design/1-ticketmaster.md",
+      "type": "blog",
+      "count": 1,
+      "draft": true
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/system-design/graphql.md",
+      "type": "blog",
+      "count": 1,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/system-design/process-overview.md",
+      "type": "blog",
+      "count": 1,
+      "draft": false
+    }
+  ],
+  "termsetcd": [],
+  "termseuclidean-algorithm": [],
+  "termsevent-bubbling": [],
+  "termsevent-delegation": [],
+  "termsevent-driven-architecture": [],
+  "termsevent-handling": [
+    {
+      "file": "/Users/future/l.blog/data/blog/software/design patterns/observer.md",
+      "type": "blog",
+      "count": 2,
+      "draft": false
+    }
+  ],
+  "termsevent-listeners": [],
+  "termsevent-loop": [],
+  "termsevent-sourcing": [],
+  "termsevent": [
+    {
+      "file": "/Users/future/l.blog/data/blog/software/system-design/system-design-auditing.md",
+      "type": "blog",
+      "count": 14,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/design patterns/observer.md",
+      "type": "blog",
+      "count": 10,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/system-design/1-ticketmaster.md",
+      "type": "blog",
+      "count": 6,
+      "draft": true
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/system-design/build-message-queue.md",
+      "type": "blog",
+      "count": 3,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/finance/terms/quadruple-witching.md",
+      "type": "blog",
+      "count": 2,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/data-structures-algorithms/patterns-graph.md",
+      "type": "blog",
+      "count": 2,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/devops/gcp/cloud-build-triggers.md",
+      "type": "blog",
+      "count": 2,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/frameworks/logging-app-load-times-with-firebase.md",
+      "type": "blog",
+      "count": 2,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/finance/high-frequency-trading.md",
+      "type": "blog",
+      "count": 1,
+      "draft": true
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/leetcode/121-best-time-to-sell-stock.md",
+      "type": "blog",
+      "count": 1,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/maths/combinatorics/combinatorics.md",
+      "type": "blog",
+      "count": 1,
+      "draft": true
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/devops/gcp/cloud-run-job.md",
+      "type": "blog",
+      "count": 1,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/system-design/flutter-theme.md",
+      "type": "blog",
+      "count": 1,
+      "draft": false
+    }
+  ],
+  "termseventual-consistency": [
+    {
+      "file": "/Users/future/l.blog/data/blog/projects/royal-stock-exchange/4-scaling.md",
+      "type": "blog",
+      "count": 1,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/system-design/process-deepdive.md",
+      "type": "blog",
+      "count": 1,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/system-design/process-overview.md",
+      "type": "blog",
+      "count": 1,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/system-design/system-design-distributed-systems.md",
+      "type": "blog",
+      "count": 1,
+      "draft": false
+    }
+  ],
+  "termseverything-is-a-file": [],
+  "termseverything-is-a-widget": [],
+  "termsexec": [
+    {
+      "file": "/Users/future/l.blog/data/blog/software/system-design/build-db-cluster-docker.md",
+      "type": "blog",
+      "count": 3,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/cheatsheets/kubernetes.md",
+      "type": "blog",
+      "count": 2,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/languages/rust/rust-projects.md",
+      "type": "blog",
+      "count": 1,
+      "draft": true
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/regex.md",
+      "type": "blog",
+      "count": 1,
+      "draft": true
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/system-design/system-design-auditing.md",
+      "type": "blog",
+      "count": 1,
+      "draft": false
+    }
+  ],
+  "termsexecution-plan": [],
+  "termsexpanded": [
+    {
+      "file": "/Users/future/l.blog/data/blog/software/frameworks/flutter/flutter-poker-1.md",
+      "type": "blog",
+      "count": 2,
+      "draft": true
+    }
+  ],
+  "termsexpectation": [
+    {
+      "file": "/Users/future/l.blog/data/blog/finance/indicators/implied-volatility-rank.md",
+      "type": "blog",
+      "count": 1,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/finance/quant/statistics.md",
+      "type": "blog",
+      "count": 1,
+      "draft": false
+    }
+  ],
+  "termsexpected-return": [
+    {
+      "file": "/Users/future/l.blog/data/blog/finance/formulas.md",
+      "type": "blog",
+      "count": 1,
+      "draft": true
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/finance/quant/symbols.md",
+      "type": "blog",
+      "count": 1,
+      "draft": false
+    }
+  ],
+  "termsexpected-utility": [],
+  "termsexpectimax": [],
+  "termsexperiment": [
+    {
+      "file": "/Users/future/l.blog/data/blog/exchange/intro-3.md",
+      "type": "blog",
+      "count": 5,
+      "draft": true
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/TEST/the-time-machine.mdx",
+      "type": "blog",
+      "count": 2,
+      "draft": true
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/exchange/intro-4.md",
+      "type": "blog",
+      "count": 2,
+      "draft": true
+    }
+  ],
+  "termsexpo-go": [],
+  "termsexpo-router": [],
+  "termsexpo-sdk": [],
+  "termsexpo": [
+    {
+      "file": "/Users/future/l.blog/data/blog/software/system-design/appium-mocha.md",
+      "type": "blog",
+      "count": 9,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/cheatsheets/expo.md",
+      "type": "blog",
+      "count": 7,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/opinions/why-flutter-is-better-than-react-native.md",
+      "type": "blog",
+      "count": 1,
+      "draft": false
+    }
+  ],
+  "termsexponential-distribution": [],
+  "termsexpose": [
+    {
+      "file": "/Users/future/l.blog/data/blog/cheatsheets/kubernetes.md",
+      "type": "blog",
+      "count": 3,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/finance/options/strategies/introduction.md",
+      "type": "blog",
+      "count": 1,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/system-design/graphql.md",
+      "type": "blog",
+      "count": 1,
+      "draft": false
+    }
+  ],
+  "termsexpress": [
+    {
+      "file": "/Users/future/l.blog/data/blog/software/system-design/microservices.md",
+      "type": "blog",
+      "count": 5,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/system-design/system-design-1-bitly.md",
+      "type": "blog",
+      "count": 3,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/finance/options/strategies/spreads.md",
+      "type": "blog",
+      "count": 1,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/system-design/build-backend-api.md",
+      "type": "blog",
+      "count": 1,
+      "draft": false
+    }
+  ],
+  "termsexpression-evaluation": [],
+  "termsexternal-name": [],
+  "termsexternal-validity": [],
+  "termsf1-score": [],
+  "termsfactorial": [
+    {
+      "file": "/Users/future/l.blog/data/blog/TEST/code-tab-groups.md",
+      "type": "blog",
+      "count": 2,
+      "draft": true
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/cheatsheets/big-o.mdx",
+      "type": "blog",
+      "count": 1,
+      "draft": false
+    }
+  ],
+  "termsfactory-pattern": [
+    {
+      "file": "/Users/future/l.blog/data/blog/software/design patterns/factory.md",
+      "type": "blog",
+      "count": 2,
+      "draft": false
+    }
+  ],
+  "termsfailed": [
+    {
+      "file": "/Users/future/l.blog/data/blog/exchange/intro-3.md",
+      "type": "blog",
+      "count": 1,
+      "draft": true
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/devops/gcp/cloud-run-job.md",
+      "type": "blog",
+      "count": 1,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/git/pre-commit.md",
+      "type": "blog",
+      "count": 1,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/system-design/build-message-queue.md",
+      "type": "blog",
+      "count": 1,
+      "draft": false
+    }
+  ],
+  "termsfast-and-slow-pointers": [],
+  "termsfdisk": [],
+  "termsfeature-based-structure": [],
+  "termsfeature-engineering": [],
+  "termsfeature-extraction": [],
+  "termsfeature-folders": [],
+  "termsfeature-scaling": [],
+  "termsfeature-vectors": [],
+  "termsfeatures": [
+    {
+      "file": "/Users/future/l.blog/data/blog/software/data-structures-algorithms/patterns-graph.md",
+      "type": "blog",
+      "count": 17,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/TEST/introducing-tailwind-nextjs-starter-blog.mdx",
+      "type": "blog",
+      "count": 3,
+      "draft": true
+    },
+    {
+      "file": "/Users/future/l.blog/data/kb/atom/CS/page-router-vs-app-router.md",
+      "type": "kb",
+      "count": 2,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/ai/vibe-coders.md",
+      "type": "blog",
+      "count": 2,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/databases/psql.md",
+      "type": "blog",
+      "count": 2,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/TEST/github-markdown-guide.mdx",
+      "type": "blog",
+      "count": 1,
+      "draft": true
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/TEST/pictures-of-canada.mdx",
+      "type": "blog",
+      "count": 1,
+      "draft": true
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/exchange/intro-7.md",
+      "type": "blog",
+      "count": 1,
+      "draft": true
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/finance/trading/25-10-02-dkng-cds.md",
+      "type": "blog",
+      "count": 1,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/opinions/why-flutter-is-better-than-react-native.md",
+      "type": "blog",
+      "count": 1,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/projects/bakesuite.md",
+      "type": "blog",
+      "count": 1,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/projects/royal-stock-exchange/4-scaling.md",
+      "type": "blog",
+      "count": 1,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/questions/leadership.md",
+      "type": "blog",
+      "count": 1,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/databases/sql/remote-clone-to-local.md",
+      "type": "blog",
+      "count": 1,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/design patterns/decorator.md",
+      "type": "blog",
+      "count": 1,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/devops/gcp/aws-cloud-practiitioner.md",
+      "type": "blog",
+      "count": 1,
+      "draft": true
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/devops/gcp/cloud-build-triggers.md",
+      "type": "blog",
+      "count": 1,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/frameworks/flutter/flutter-tiktok-1.md",
+      "type": "blog",
+      "count": 1,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/frameworks/flutter/navigators.md",
+      "type": "blog",
+      "count": 1,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/frameworks/next/introducing-multi-part-posts-with-nested-routing.md",
+      "type": "blog",
+      "count": 1,
+      "draft": true
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/git/rebase.md",
+      "type": "blog",
+      "count": 1,
+      "draft": false
+    }
+  ],
+  "termsfederal-reserve": [
+    {
+      "file": "/Users/future/l.blog/data/blog/finance/federal-reserve-vs-treasury-department.md",
+      "type": "blog",
+      "count": 5,
+      "draft": false
+    }
+  ],
+  "termsfeedforward-network": [],
+  "termsfenwick-tree": [
+    {
+      "file": "/Users/future/l.blog/data/blog/software/data-structures-algorithms/cheatsheet.md",
+      "type": "blog",
+      "count": 2,
+      "draft": false
+    }
+  ],
+  "termsfetch": [
+    {
+      "file": "/Users/future/l.blog/data/kb/atom/CS/page-router-vs-app-router.md",
+      "type": "kb",
+      "count": 5,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/system-design/microservices.md",
+      "type": "blog",
+      "count": 2,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/projects/royal-stock-exchange/3-portfolio.md",
+      "type": "blog",
+      "count": 1,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/data-structures-algorithms/dynamic-programming.md",
+      "type": "blog",
+      "count": 1,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/devops/gcp/cloud-run-job.md",
+      "type": "blog",
+      "count": 1,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/info-sec/over-the-wire-1-bandit.md",
+      "type": "blog",
+      "count": 1,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/info-sec/xss.md",
+      "type": "blog",
+      "count": 1,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/mobile requirements.md",
+      "type": "blog",
+      "count": 1,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/system-design/appium-mocha.md",
+      "type": "blog",
+      "count": 1,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/system-design/graphql.md",
+      "type": "blog",
+      "count": 1,
+      "draft": false
+    }
+  ],
+  "termsfibonacci-dp": [],
+  "termsfile-based-routing": [],
+  "termsfile-permissions": [],
+  "termsfile-storage": [],
+  "termsfile-system": [
+    {
+      "file": "/Users/future/l.blog/data/blog/software/info-sec/over-the-wire-1-bandit.md",
+      "type": "blog",
+      "count": 2,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/languages/rust/rust-projects.md",
+      "type": "blog",
+      "count": 2,
+      "draft": true
+    }
+  ],
+  "termsfilesystem-sandbox": [],
+  "termsfilesystem-types": [],
+  "termsfiltering": [
+    {
+      "file": "/Users/future/l.blog/data/blog/ai/ai-as-fractals.md",
+      "type": "blog",
+      "count": 1,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/exchange/intro-4.md",
+      "type": "blog",
+      "count": 1,
+      "draft": true
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/finance/high-frequency-trading.md",
+      "type": "blog",
+      "count": 1,
+      "draft": true
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/finance/indicators/premium-flow-with-z-scores.md",
+      "type": "blog",
+      "count": 1,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/databases/sql/1_toc.md",
+      "type": "blog",
+      "count": 1,
+      "draft": true
+    }
+  ],
+  "termsfind": [
+    {
+      "file": "/Users/future/l.blog/data/blog/software/data-structures-algorithms/patterns-graph.md",
+      "type": "blog",
+      "count": 50,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/info-sec/over-the-wire-1-bandit.md",
+      "type": "blog",
+      "count": 16,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/data-structures-algorithms/priority-queue.md",
+      "type": "blog",
+      "count": 13,
+      "draft": true
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/data-structures-algorithms/algorithms/union-find.md",
+      "type": "blog",
+      "count": 8,
+      "draft": true
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/design patterns/decorator.md",
+      "type": "blog",
+      "count": 4,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/personal/cognitive-dissonance.md",
+      "type": "blog",
+      "count": 3,
+      "draft": true
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/databases/nosql/mongodb.md",
+      "type": "blog",
+      "count": 3,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/languages/python/heapq.md",
+      "type": "blog",
+      "count": 3,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/leetcode/121-best-time-to-sell-stock.md",
+      "type": "blog",
+      "count": 2,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/leetcode/16-3-sum-closest.md",
+      "type": "blog",
+      "count": 2,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/maths/calculus/fundamental-theorem-of-calculus.md",
+      "type": "blog",
+      "count": 2,
+      "draft": true
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/data-structures-algorithms/cheatsheet.md",
+      "type": "blog",
+      "count": 2,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/info-sec/over-the-wire-0-intro.md",
+      "type": "blog",
+      "count": 2,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/languages/dart/handling-nullable-fields.md",
+      "type": "blog",
+      "count": 2,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/system-design/appium-mocha.md",
+      "type": "blog",
+      "count": 2,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/system-design/process-deepdive.md",
+      "type": "blog",
+      "count": 2,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/TEST/deriving-ols-estimator.mdx",
+      "type": "blog",
+      "count": 1,
+      "draft": true
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/books/12.the-thing-you-can-see-only-when-you-slow-down.md",
+      "type": "blog",
+      "count": 1,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/bug-reports/reddit.md",
+      "type": "blog",
+      "count": 1,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/finance/high-frequency-trading.md",
+      "type": "blog",
+      "count": 1,
+      "draft": true
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/leetcode/253-meeting-rooms-ii.md",
+      "type": "blog",
+      "count": 1,
+      "draft": true
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/leetcode/742-network-delay-time.md",
+      "type": "blog",
+      "count": 1,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/maths/calculus/calculus-1/calculus-1.md",
+      "type": "blog",
+      "count": 1,
+      "draft": true
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/maths/calculus/calculus-2/calculus-2.md",
+      "type": "blog",
+      "count": 1,
+      "draft": true
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/personal/stoicism.md",
+      "type": "blog",
+      "count": 1,
+      "draft": true
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/projects/royal-stock-exchange/2-seeding data.md",
+      "type": "blog",
+      "count": 1,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/data-structures-algorithms/algorithms/sorting.md",
+      "type": "blog",
+      "count": 1,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/data-structures-algorithms/graph-algorithms.md",
+      "type": "blog",
+      "count": 1,
+      "draft": true
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/data-structures-algorithms/graph-programming.md",
+      "type": "blog",
+      "count": 1,
+      "draft": true
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/databases/sql/1_toc.md",
+      "type": "blog",
+      "count": 1,
+      "draft": true
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/frameworks/logging-app-load-times-with-firebase.md",
+      "type": "blog",
+      "count": 1,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/info-sec/over-the-wire-2-leviathan.md",
+      "type": "blog",
+      "count": 1,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/languages/java/java-spring.md",
+      "type": "blog",
+      "count": 1,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/system-design/system-design-auditing.md",
+      "type": "blog",
+      "count": 1,
+      "draft": false
+    }
+  ],
+  "termsfinite-automata": [],
+  "termsfirebase-firestore": [],
+  "termsfirebase": [
+    {
+      "file": "/Users/future/l.blog/data/blog/software/system-design/firebase environments.md",
+      "type": "blog",
+      "count": 6,
+      "draft": true
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/frameworks/logging-app-load-times-with-firebase.md",
+      "type": "blog",
+      "count": 3,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/TEST/introducing-tailwind-nextjs-starter-blog.mdx",
+      "type": "blog",
+      "count": 1,
+      "draft": true
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/frameworks/flutter/semantic-stoic.md",
+      "type": "blog",
+      "count": 1,
+      "draft": false
+    }
+  ],
+  "termsfirestore": [],
+  "termsfirewall": [
+    {
+      "file": "/Users/future/l.blog/data/blog/software/devops/gcp/vcp-connectors.md",
+      "type": "blog",
+      "count": 3,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/system-design/process-deepdive.md",
+      "type": "blog",
+      "count": 1,
+      "draft": false
+    }
+  ],
+  "termsfirst-derivative-test": [],
+  "termsfirst-normal-form": [],
+  "termsfirst-order-logic": [],
+  "termsfiscal-policy": [
+    {
+      "file": "/Users/future/l.blog/data/blog/finance/federal-reserve-vs-treasury-department.md",
+      "type": "blog",
+      "count": 2,
+      "draft": false
+    }
+  ],
+  "termsflat-network": [],
+  "termsflatlist-optimization": [],
+  "termsflatlist": [],
+  "termsflex": [
+    {
+      "file": "/Users/future/l.blog/data/blog/TEST/pictures-of-canada.mdx",
+      "type": "blog",
+      "count": 4,
+      "draft": true
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/system-design/appium-mocha.md",
+      "type": "blog",
+      "count": 2,
+      "draft": false
+    }
+  ],
+  "termsflexbox-layout": [],
+  "termsflexbox": [
+    {
+      "file": "/Users/future/l.blog/data/blog/TEST/pictures-of-canada.mdx",
+      "type": "blog",
+      "count": 1,
+      "draft": true
+    }
+  ],
+  "termsflexible-schema": [],
+  "termsflexible": [
+    {
+      "file": "/Users/future/l.blog/data/blog/projects/royal-stock-exchange/4-scaling.md",
+      "type": "blog",
+      "count": 4,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/system-design/build-backend-api.md",
+      "type": "blog",
+      "count": 2,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/kb/atom/CS/page-router-vs-app-router.md",
+      "type": "kb",
+      "count": 1,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/TEST/TEST-TERMS.md",
+      "type": "blog",
+      "count": 1,
+      "draft": true
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/TEST/github-markdown-guide.mdx",
+      "type": "blog",
+      "count": 1,
+      "draft": true
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/TEST/introducing-tailwind-nextjs-starter-blog.mdx",
+      "type": "blog",
+      "count": 1,
+      "draft": true
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/finance/options/strategies/strangle.md",
+      "type": "blog",
+      "count": 1,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/finance/options/strategies/trading-strategies.md",
+      "type": "blog",
+      "count": 1,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/leetcode/16-3-sum-closest.md",
+      "type": "blog",
+      "count": 1,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/design patterns/decorator.md",
+      "type": "blog",
+      "count": 1,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/devops/gcp/cloud-run-job.md",
+      "type": "blog",
+      "count": 1,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/devops/gcp/cloud-run.md",
+      "type": "blog",
+      "count": 1,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/devops/gcp/cloud-scheduler.md",
+      "type": "blog",
+      "count": 1,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/devops/gcp/vcp-connectors.md",
+      "type": "blog",
+      "count": 1,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/system-design/flutter-theme.md",
+      "type": "blog",
+      "count": 1,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/system-design/graphql.md",
+      "type": "blog",
+      "count": 1,
+      "draft": false
+    }
+  ],
+  "termsflipper": [],
+  "termsfloyd-warshall": [],
+  "termsflutter-devtools": [],
+  "termsflutter-sdk": [],
+  "termsflutter": [
+    {
+      "file": "/Users/future/l.blog/data/blog/software/frameworks/flutter/flutter-tiktok-1.md",
+      "type": "blog",
+      "count": 43,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/system-design/flutter-netlify-deploy.md",
+      "type": "blog",
+      "count": 23,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/opinions/why-flutter-is-better-than-react-native.md",
+      "type": "blog",
+      "count": 22,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/frameworks/flutter/flutter-tiktok-2.md",
+      "type": "blog",
+      "count": 13,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/languages/dart/dart.3.10.md",
+      "type": "blog",
+      "count": 6,
+      "draft": true
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/system-design/flutter-theme.md",
+      "type": "blog",
+      "count": 5,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/frameworks/flutter/flutter lacks webview support.md",
+      "type": "blog",
+      "count": 4,
+      "draft": true
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/projects/royal-stock-exchange/1-intro.md",
+      "type": "blog",
+      "count": 2,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/frameworks/flutter/navigators.md",
+      "type": "blog",
+      "count": 2,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/frameworks/logging-app-load-times-with-firebase.md",
+      "type": "blog",
+      "count": 2,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/mobile requirements.md",
+      "type": "blog",
+      "count": 2,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/projects/royal-stock-exchange/3-portfolio.md",
+      "type": "blog",
+      "count": 1,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/frameworks/flutter/android connectivity issues - connection refused.md",
+      "type": "blog",
+      "count": 1,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/frameworks/flutter/flutter-poker-1.md",
+      "type": "blog",
+      "count": 1,
+      "draft": true
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/frameworks/flutter/semantic-stoic.md",
+      "type": "blog",
+      "count": 1,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/frameworks/flutter/vscode launch json.md",
+      "type": "blog",
+      "count": 1,
+      "draft": true
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/system-design/1-DSAFine-Mono.md",
+      "type": "blog",
+      "count": 1,
+      "draft": true
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/system-design/appium-mocha.md",
+      "type": "blog",
+      "count": 1,
+      "draft": false
+    }
+  ],
+  "termsflux": [
+    {
+      "file": "/Users/future/l.blog/data/blog/maths/calculus/multivariable-calc.md",
+      "type": "blog",
+      "count": 1,
+      "draft": true
+    }
+  ],
+  "termsfor-all": [
+    {
+      "file": "/Users/future/l.blog/data/blog/projects/royal-stock-exchange/4-scaling.md",
+      "type": "blog",
+      "count": 3,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/data-structures-algorithms/patterns-graph.md",
+      "type": "blog",
+      "count": 3,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/leetcode/742-network-delay-time.md",
+      "type": "blog",
+      "count": 2,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/maths/discrete-symbols.md",
+      "type": "blog",
+      "count": 2,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/exchange/intro-2.md",
+      "type": "blog",
+      "count": 1,
+      "draft": true
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/personal/stoicism.md",
+      "type": "blog",
+      "count": 1,
+      "draft": true
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/data-structures-algorithms/OOP.md",
+      "type": "blog",
+      "count": 1,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/data-structures-algorithms/priority-queue.md",
+      "type": "blog",
+      "count": 1,
+      "draft": true
+    }
+  ],
+  "termsforce-cache": [],
+  "termsforeign-key": [
+    {
+      "file": "/Users/future/l.blog/data/blog/software/databases/sql/1_toc.md",
+      "type": "blog",
+      "count": 1,
+      "draft": true
+    }
+  ],
+  "termsfork": [
+    {
+      "file": "/Users/future/l.blog/data/blog/software/languages/rust/rust-projects.md",
+      "type": "blog",
+      "count": 1,
+      "draft": true
+    }
+  ],
+  "termsform": [
+    {
+      "file": "/Users/future/l.blog/data/blog/software/system-design/appium-mocha.md",
+      "type": "blog",
+      "count": 12,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/maths/calculus/multivariable-calc.md",
+      "type": "blog",
+      "count": 3,
+      "draft": true
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/maths/calculus/fundamental-theorem-of-calculus.md",
+      "type": "blog",
+      "count": 2,
+      "draft": true
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/info-sec/xss.md",
+      "type": "blog",
+      "count": 2,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/TEST/introducing-tailwind-nextjs-starter-blog.mdx",
+      "type": "blog",
+      "count": 1,
+      "draft": true
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/finance/options/strategies/condor.md",
+      "type": "blog",
+      "count": 1,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/finance/quant/symbols.md",
+      "type": "blog",
+      "count": 1,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/data-structures-algorithms/OOP.md",
+      "type": "blog",
+      "count": 1,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/databases/nosql/mongodb.md",
+      "type": "blog",
+      "count": 1,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/frameworks/flutter/navigators.md",
+      "type": "blog",
+      "count": 1,
+      "draft": false
+    }
+  ],
+  "termsformal-reasoning": [],
+  "termsformal-verification": [],
+  "termsforms": [
+    {
+      "file": "/Users/future/l.blog/data/blog/maths/calculus/multivariable-calc.md",
+      "type": "blog",
+      "count": 2,
+      "draft": true
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/data-structures-algorithms/OOP.md",
+      "type": "blog",
+      "count": 2,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/system-design/appium-mocha.md",
+      "type": "blog",
+      "count": 2,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/info-sec/csrf.md",
+      "type": "blog",
+      "count": 1,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/info-sec/xss.md",
+      "type": "blog",
+      "count": 1,
+      "draft": false
+    }
+  ],
+  "termsfoundation-of-computer-science": [],
+  "termsfrom": [
+    {
+      "file": "/Users/future/l.blog/data/blog/software/system-design/system-design-auditing.md",
+      "type": "blog",
+      "count": 14,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/info-sec/over-the-wire-1-bandit.md",
+      "type": "blog",
+      "count": 11,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/system-design/build-message-queue.md",
+      "type": "blog",
+      "count": 10,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/system-design/appium-mocha.md",
+      "type": "blog",
+      "count": 9,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/projects/royal-stock-exchange/4-scaling.md",
+      "type": "blog",
+      "count": 8,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/data-structures-algorithms/dynamic-programming.md",
+      "type": "blog",
+      "count": 8,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/system-design/build-backend-api.md",
+      "type": "blog",
+      "count": 8,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/data-structures-algorithms/OOP.md",
+      "type": "blog",
+      "count": 7,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/data-structures-algorithms/patterns-graph.md",
+      "type": "blog",
+      "count": 7,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/TEST/the-time-machine.mdx",
+      "type": "blog",
+      "count": 6,
+      "draft": true
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/finance/options/strategies/condor.md",
+      "type": "blog",
+      "count": 6,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/finance/options/strategies/trading-strategies.md",
+      "type": "blog",
+      "count": 6,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/leetcode/742-network-delay-time.md",
+      "type": "blog",
+      "count": 6,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/data-structures-algorithms/algorithms/sorting.md",
+      "type": "blog",
+      "count": 6,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/devops/gcp/cloud-run-job.md",
+      "type": "blog",
+      "count": 6,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/system-design/1-LeetCode.md",
+      "type": "blog",
+      "count": 6,
+      "draft": true
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/system-design/build-api-cache.md",
+      "type": "blog",
+      "count": 6,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/TEST/github-markdown-guide.mdx",
+      "type": "blog",
+      "count": 5,
+      "draft": true
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/finance/terms/mutual-funds.md",
+      "type": "blog",
+      "count": 5,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/finance/terms/secondary-market.md",
+      "type": "blog",
+      "count": 5,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/system-design/build-db-cluster-docker.md",
+      "type": "blog",
+      "count": 5,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/kb/atom/CS/AI.md",
+      "type": "kb",
+      "count": 4,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/TEST/introducing-tailwind-nextjs-starter-blog.mdx",
+      "type": "blog",
+      "count": 4,
+      "draft": true
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/leetcode/121-best-time-to-sell-stock.md",
+      "type": "blog",
+      "count": 4,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/maths/statistics/variance-standard-deviation.md",
+      "type": "blog",
+      "count": 4,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/politics/1-go.md",
+      "type": "blog",
+      "count": 4,
+      "draft": true
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/databases/sql/1_toc.md",
+      "type": "blog",
+      "count": 4,
+      "draft": true
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/databases/sql/lag.md",
+      "type": "blog",
+      "count": 4,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/devops/gcp/memory-store.md",
+      "type": "blog",
+      "count": 4,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/git/pre-commit.md",
+      "type": "blog",
+      "count": 4,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/languages/go/go-routines.md",
+      "type": "blog",
+      "count": 4,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/system-design/flutter-theme.md",
+      "type": "blog",
+      "count": 4,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/cheatsheets/vim.md",
+      "type": "blog",
+      "count": 3,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/exchange/intro-2.md",
+      "type": "blog",
+      "count": 3,
+      "draft": true
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/finance/futures.md",
+      "type": "blog",
+      "count": 3,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/finance/options/greeks.md",
+      "type": "blog",
+      "count": 3,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/finance/options/strategies/introduction.md",
+      "type": "blog",
+      "count": 3,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/maths/calculus/fundamental-theorem-of-calculus.md",
+      "type": "blog",
+      "count": 3,
+      "draft": true
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/projects/royal-stock-exchange/3-portfolio.md",
+      "type": "blog",
+      "count": 3,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/data-structures-algorithms/cheatsheet.md",
+      "type": "blog",
+      "count": 3,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/databases/sql/clone-db.md",
+      "type": "blog",
+      "count": 3,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/databases/sql/remote-clone-to-local.md",
+      "type": "blog",
+      "count": 3,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/info-sec/csrf.md",
+      "type": "blog",
+      "count": 3,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/system-design/microservices.md",
+      "type": "blog",
+      "count": 3,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/TEST/MDX.mdx",
+      "type": "blog",
+      "count": 2,
+      "draft": true
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/TEST/code-blocks.md",
+      "type": "blog",
+      "count": 2,
+      "draft": true
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/TEST/guide-to-using-images-in-nextjs.mdx",
+      "type": "blog",
+      "count": 2,
+      "draft": true
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/ai/ai-as-fractals.md",
+      "type": "blog",
+      "count": 2,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/books/12.the-thing-you-can-see-only-when-you-slow-down.md",
+      "type": "blog",
+      "count": 2,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/cheatsheets/kubernetes.md",
+      "type": "blog",
+      "count": 2,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/exchange/intro-4.md",
+      "type": "blog",
+      "count": 2,
+      "draft": true
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/finance/business/hostile-takeover.md",
+      "type": "blog",
+      "count": 2,
+      "draft": true
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/finance/high-frequency-trading.md",
+      "type": "blog",
+      "count": 2,
+      "draft": true
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/finance/index.md",
+      "type": "blog",
+      "count": 2,
+      "draft": true
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/finance/options/strategies/neutral.md",
+      "type": "blog",
+      "count": 2,
+      "draft": true
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/finance/quant/pair-trading.md",
+      "type": "blog",
+      "count": 2,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/finance/stock-market-size.md",
+      "type": "blog",
+      "count": 2,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/leetcode/16-3-sum-closest.md",
+      "type": "blog",
+      "count": 2,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/maths/calculus/intro.md",
+      "type": "blog",
+      "count": 2,
+      "draft": true
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/opinions/why-flutter-is-better-than-react-native.md",
+      "type": "blog",
+      "count": 2,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/questions/leadership.md",
+      "type": "blog",
+      "count": 2,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/same-problems-different-tools.md",
+      "type": "blog",
+      "count": 2,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/data-structures-algorithms/graph-theory.md",
+      "type": "blog",
+      "count": 2,
+      "draft": true
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/data-structures-algorithms/priority-queue.md",
+      "type": "blog",
+      "count": 2,
+      "draft": true
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/data-structures-algorithms/terms.md",
+      "type": "blog",
+      "count": 2,
+      "draft": true
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/data-structures-algorithms/trees.md",
+      "type": "blog",
+      "count": 2,
+      "draft": true
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/databases/sql/group-by.md",
+      "type": "blog",
+      "count": 2,
+      "draft": true
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/design patterns/repository.md",
+      "type": "blog",
+      "count": 2,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/frameworks/flutter/semantic-stoic.md",
+      "type": "blog",
+      "count": 2,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/frameworks/logging-app-load-times-with-firebase.md",
+      "type": "blog",
+      "count": 2,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/git/rebase.md",
+      "type": "blog",
+      "count": 2,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/info-sec/over-the-wire-3-natas.md",
+      "type": "blog",
+      "count": 2,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/info-sec/xss.md",
+      "type": "blog",
+      "count": 2,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/system-design/SQL Server Setup.md",
+      "type": "blog",
+      "count": 2,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/system-design/process-deepdive.md",
+      "type": "blog",
+      "count": 2,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/system-design/process-overview.md",
+      "type": "blog",
+      "count": 2,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/TEST/TEST-TERMS.md",
+      "type": "blog",
+      "count": 1,
+      "draft": true
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/cheatsheets/big-o.mdx",
+      "type": "blog",
+      "count": 1,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/cheatsheets/vscode.md",
+      "type": "blog",
+      "count": 1,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/exchange/intro-5.md",
+      "type": "blog",
+      "count": 1,
+      "draft": true
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/exchange/intro-6.md",
+      "type": "blog",
+      "count": 1,
+      "draft": true
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/finance/federal-reserve-vs-treasury-department.md",
+      "type": "blog",
+      "count": 1,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/finance/indicators/implied-volatility-rank.md",
+      "type": "blog",
+      "count": 1,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/finance/indicators/relative-strength-index.md",
+      "type": "blog",
+      "count": 1,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/finance/indicators/sharpe-ratio.md",
+      "type": "blog",
+      "count": 1,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/finance/options/strategies/straddle.md",
+      "type": "blog",
+      "count": 1,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/finance/options/strategies/strangle.md",
+      "type": "blog",
+      "count": 1,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/finance/quant/crash-course.md",
+      "type": "blog",
+      "count": 1,
+      "draft": true
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/finance/terms/closed-ended-funds.md",
+      "type": "blog",
+      "count": 1,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/finance/terms/exchange-traded-funds.md",
+      "type": "blog",
+      "count": 1,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/finance/terms/institutional-retail.md",
+      "type": "blog",
+      "count": 1,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/finance/terms/intrinsic-value.md",
+      "type": "blog",
+      "count": 1,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/finance/terms/quadruple-witching.md",
+      "type": "blog",
+      "count": 1,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/finance/terms/upside-downside.md",
+      "type": "blog",
+      "count": 1,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/finance/toc.md",
+      "type": "blog",
+      "count": 1,
+      "draft": true
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/leetcode/239-sliding-window-maximum.md",
+      "type": "blog",
+      "count": 1,
+      "draft": true
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/leetcode/261-graph-valid-tree.md",
+      "type": "blog",
+      "count": 1,
+      "draft": true
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/leetcode/322-coin-change.md",
+      "type": "blog",
+      "count": 1,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/leetcode/70-climbing-stairs.md",
+      "type": "blog",
+      "count": 1,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/maths/calculus/calculus-1/calculus-1.md",
+      "type": "blog",
+      "count": 1,
+      "draft": true
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/maths/calculus/multivariable-calc.md",
+      "type": "blog",
+      "count": 1,
+      "draft": true
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/maths/linear-algebra/vectors.md",
+      "type": "blog",
+      "count": 1,
+      "draft": true
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/politics/communism.md",
+      "type": "blog",
+      "count": 1,
+      "draft": true
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/projects/bakesuite.md",
+      "type": "blog",
+      "count": 1,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/projects/royal-stock-exchange/1-intro.md",
+      "type": "blog",
+      "count": 1,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/bike-shedding.md",
+      "type": "blog",
+      "count": 1,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/data-structures-algorithms/algorithms/tree-traversals.md",
+      "type": "blog",
+      "count": 1,
+      "draft": true
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/data-structures-algorithms/graph-programming.md",
+      "type": "blog",
+      "count": 1,
+      "draft": true
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/data-structures-algorithms/pointers.md",
+      "type": "blog",
+      "count": 1,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/databases/psql.md",
+      "type": "blog",
+      "count": 1,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/databases/sql/inspect-table.md",
+      "type": "blog",
+      "count": 1,
+      "draft": true
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/databases/sql/optimization.md",
+      "type": "blog",
+      "count": 1,
+      "draft": true
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/databases/sql/procedures-list.md",
+      "type": "blog",
+      "count": 1,
+      "draft": true
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/design patterns/factory.md",
+      "type": "blog",
+      "count": 1,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/design patterns/observer.md",
+      "type": "blog",
+      "count": 1,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/devops/gcp/aws-cloud-practiitioner.md",
+      "type": "blog",
+      "count": 1,
+      "draft": true
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/devops/gcp/vcp-connectors.md",
+      "type": "blog",
+      "count": 1,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/frameworks/flutter/android connectivity issues - connection refused.md",
+      "type": "blog",
+      "count": 1,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/info-sec/over-the-wire-2-leviathan.md",
+      "type": "blog",
+      "count": 1,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/info-sec/vm tools.md",
+      "type": "blog",
+      "count": 1,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/languages/dart/handling-nullable-fields.md",
+      "type": "blog",
+      "count": 1,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/languages/python/heapq.md",
+      "type": "blog",
+      "count": 1,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/system-design/1-ticketmaster.md",
+      "type": "blog",
+      "count": 1,
+      "draft": true
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/system-design/firebase environments.md",
+      "type": "blog",
+      "count": 1,
+      "draft": true
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/system-design/graphql.md",
+      "type": "blog",
+      "count": 1,
+      "draft": false
+    }
+  ],
+  "termsfrontend": [
+    {
+      "file": "/Users/future/l.blog/data/blog/TEST/TEST-TERMS.md",
+      "type": "blog",
+      "count": 1,
+      "draft": true
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/devops/gcp/cloud-build-triggers.md",
+      "type": "blog",
+      "count": 1,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/devops/gcp/gcp-pipeline.md",
+      "type": "blog",
+      "count": 1,
+      "draft": true
+    }
+  ],
+  "termsfull-outer-join": [],
+  "termsfull-stack-composition": [],
+  "termsfull-stack-framework": [],
+  "termsfull-stack": [
+    {
+      "file": "/Users/future/l.blog/data/blog/software/system-design/microservices.md",
+      "type": "blog",
+      "count": 1,
+      "draft": false
+    }
+  ],
+  "termsfull-table-scan": [],
+  "termsfunction": [
+    {
+      "file": "/Users/future/l.blog/data/blog/leetcode/200-number-of-islands.md",
+      "type": "blog",
+      "count": 18,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/system-design/appium-mocha.md",
+      "type": "blog",
+      "count": 17,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/system-design/system-design-auditing.md",
+      "type": "blog",
+      "count": 17,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/data-structures-algorithms/dynamic-programming.md",
+      "type": "blog",
+      "count": 15,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/leetcode/121-best-time-to-sell-stock.md",
+      "type": "blog",
+      "count": 13,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/languages/go/go-routines.md",
+      "type": "blog",
+      "count": 13,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/maths/calculus/calculus-1/calculus-1.md",
+      "type": "blog",
+      "count": 11,
+      "draft": true
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/TEST/code-tab-groups.md",
+      "type": "blog",
+      "count": 10,
+      "draft": true
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/leetcode/16-3-sum-closest.md",
+      "type": "blog",
+      "count": 8,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/maths/calculus/fundamental-theorem-of-calculus.md",
+      "type": "blog",
+      "count": 8,
+      "draft": true
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/leetcode/1-two-sum.md",
+      "type": "blog",
+      "count": 6,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/leetcode/217-contains-duplicate.md",
+      "type": "blog",
+      "count": 5,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/leetcode/70-climbing-stairs.md",
+      "type": "blog",
+      "count": 5,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/frameworks/logging-app-load-times-with-firebase.md",
+      "type": "blog",
+      "count": 5,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/system-design/system-design-1-bitly.md",
+      "type": "blog",
+      "count": 5,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/maths/calculus/calculus-2/calculus-2.md",
+      "type": "blog",
+      "count": 4,
+      "draft": true
+    },
+    {
+      "file": "/Users/future/l.blog/data/kb/atom/CS/AI.md",
+      "type": "kb",
+      "count": 3,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/TEST/code-blocks.md",
+      "type": "blog",
+      "count": 3,
+      "draft": true
+    },
+    {
+      "file": "/Users/future/l.blog/data/kb/tool/obsidian/preview/theme1.md",
+      "type": "kb",
+      "count": 2,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/TEST/github-markdown-guide.mdx",
+      "type": "blog",
+      "count": 2,
+      "draft": true
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/TEST/guide-to-using-images-in-nextjs.mdx",
+      "type": "blog",
+      "count": 2,
+      "draft": true
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/leetcode/261-graph-valid-tree.md",
+      "type": "blog",
+      "count": 2,
+      "draft": true
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/maths/calculus/multivariable-calc.md",
+      "type": "blog",
+      "count": 2,
+      "draft": true
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/data-structures-algorithms/OOP.md",
+      "type": "blog",
+      "count": 2,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/frameworks/flutter/flutter-tiktok-2.md",
+      "type": "blog",
+      "count": 2,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/kb/atom/CS/page-router-vs-app-router.md",
+      "type": "kb",
+      "count": 1,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/kb/kb-dsl-code-tab-group.md",
+      "type": "kb",
+      "count": 1,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/kb/tool/obsidian/preview/theme2.md",
+      "type": "kb",
+      "count": 1,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/TEST/MDX.mdx",
+      "type": "blog",
+      "count": 1,
+      "draft": true
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/TEST/TEST-TERMS.md",
+      "type": "blog",
+      "count": 1,
+      "draft": true
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/finance/quant/symbols.md",
+      "type": "blog",
+      "count": 1,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/finance/terms/institutional-retail.md",
+      "type": "blog",
+      "count": 1,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/maths/calculus/differentiation.md",
+      "type": "blog",
+      "count": 1,
+      "draft": true
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/maths/calculus/intro.md",
+      "type": "blog",
+      "count": 1,
+      "draft": true
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/politics/1-go.md",
+      "type": "blog",
+      "count": 1,
+      "draft": true
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/data-structures-algorithms/algorithms/sorting.md",
+      "type": "blog",
+      "count": 1,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/data-structures-algorithms/cheatsheet.md",
+      "type": "blog",
+      "count": 1,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/data-structures-algorithms/graph-theory.md",
+      "type": "blog",
+      "count": 1,
+      "draft": true
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/data-structures-algorithms/patterns-graph.md",
+      "type": "blog",
+      "count": 1,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/databases/sql/1_toc.md",
+      "type": "blog",
+      "count": 1,
+      "draft": true
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/databases/sql/group-by.md",
+      "type": "blog",
+      "count": 1,
+      "draft": true
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/databases/sql/lag.md",
+      "type": "blog",
+      "count": 1,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/databases/sql/procedures-list.md",
+      "type": "blog",
+      "count": 1,
+      "draft": true
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/devops/gcp/aws-lambda.md",
+      "type": "blog",
+      "count": 1,
+      "draft": true
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/info-sec/over-the-wire-2-leviathan.md",
+      "type": "blog",
+      "count": 1,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/info-sec/over-the-wire-3-natas.md",
+      "type": "blog",
+      "count": 1,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/languages/js/js-1.md",
+      "type": "blog",
+      "count": 1,
+      "draft": true
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/regex.md",
+      "type": "blog",
+      "count": 1,
+      "draft": true
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/system-design/microservices.md",
+      "type": "blog",
+      "count": 1,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/system-design/system-design-distributed-systems.md",
+      "type": "blog",
+      "count": 1,
+      "draft": false
+    }
+  ],
+  "termsfunctional-component": [],
+  "termsfunctions": [
+    {
+      "file": "/Users/future/l.blog/data/blog/maths/calculus/calculus-2/calculus-2.md",
+      "type": "blog",
+      "count": 5,
+      "draft": true
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/finance/quant/calculus-for-quants.md",
+      "type": "blog",
+      "count": 4,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/maths/calculus/lambda.md",
+      "type": "blog",
+      "count": 4,
+      "draft": true
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/databases/sql/1_toc.md",
+      "type": "blog",
+      "count": 4,
+      "draft": true
+    },
+    {
+      "file": "/Users/future/l.blog/data/kb/atom/CS/page-router-vs-app-router.md",
+      "type": "kb",
+      "count": 3,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/kb/atom/CS/AI.md",
+      "type": "kb",
+      "count": 2,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/maths/calculus/calculus-1/calculus-1.md",
+      "type": "blog",
+      "count": 2,
+      "draft": true
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/maths/calculus/calculus-3/calculus-3.md",
+      "type": "blog",
+      "count": 2,
+      "draft": true
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/maths/calculus/differentiation.md",
+      "type": "blog",
+      "count": 2,
+      "draft": true
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/TEST/deriving-ols-estimator.mdx",
+      "type": "blog",
+      "count": 1,
+      "draft": true
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/finance/federal-reserve-vs-treasury-department.md",
+      "type": "blog",
+      "count": 1,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/finance/quant/maths.md",
+      "type": "blog",
+      "count": 1,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/finance/toc.md",
+      "type": "blog",
+      "count": 1,
+      "draft": true
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/opinions/why-flutter-is-better-than-react-native.md",
+      "type": "blog",
+      "count": 1,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/projects/royal-stock-exchange/4-scaling.md",
+      "type": "blog",
+      "count": 1,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/data-structures-algorithms/OOP.md",
+      "type": "blog",
+      "count": 1,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/data-structures-algorithms/algorithms/sorting.md",
+      "type": "blog",
+      "count": 1,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/databases/psql.md",
+      "type": "blog",
+      "count": 1,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/devops/gcp/vcp-connectors.md",
+      "type": "blog",
+      "count": 1,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/languages/ruby/ruby-lambda.md",
+      "type": "blog",
+      "count": 1,
+      "draft": false
+    }
+  ],
+  "termsfundamental-theorem-of-calculus": [
+    {
+      "file": "/Users/future/l.blog/data/blog/maths/calculus/fundamental-theorem-of-calculus.md",
+      "type": "blog",
+      "count": 3,
+      "draft": true
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/maths/calculus/multivariable-calc.md",
+      "type": "blog",
+      "count": 2,
+      "draft": true
+    }
+  ],
+  "termsfuture-builder": [],
+  "termsfuture": [
+    {
+      "file": "/Users/future/l.blog/data/blog/finance/futures.md",
+      "type": "blog",
+      "count": 5,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/finance/indicators/leading-and-lagging-indicators.md",
+      "type": "blog",
+      "count": 4,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/frameworks/logging-app-load-times-with-firebase.md",
+      "type": "blog",
+      "count": 4,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/leetcode/121-best-time-to-sell-stock.md",
+      "type": "blog",
+      "count": 3,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/personal/cognitive-dissonance.md",
+      "type": "blog",
+      "count": 3,
+      "draft": true
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/TEST/github-markdown-guide.mdx",
+      "type": "blog",
+      "count": 2,
+      "draft": true
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/bug-reports/reddit.md",
+      "type": "blog",
+      "count": 2,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/system-design/build-backend-api.md",
+      "type": "blog",
+      "count": 2,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/system-design/process-deepdive.md",
+      "type": "blog",
+      "count": 2,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/TEST/code-tab-groups.md",
+      "type": "blog",
+      "count": 1,
+      "draft": true
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/TEST/the-time-machine.mdx",
+      "type": "blog",
+      "count": 1,
+      "draft": true
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/finance/indicators/implied-volatility-rank.md",
+      "type": "blog",
+      "count": 1,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/finance/terms/extrinsic-value.md",
+      "type": "blog",
+      "count": 1,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/finance/terms/implied-volatility.md",
+      "type": "blog",
+      "count": 1,
+      "draft": true
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/finance/terms/intrinsic-value.md",
+      "type": "blog",
+      "count": 1,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/finance/thesis-jaime.md",
+      "type": "blog",
+      "count": 1,
+      "draft": true
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/opinions/why-flutter-is-better-than-react-native.md",
+      "type": "blog",
+      "count": 1,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/projects/royal-stock-exchange/3-portfolio.md",
+      "type": "blog",
+      "count": 1,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/projects/royal-stock-exchange/4-scaling.md",
+      "type": "blog",
+      "count": 1,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/databases/psql.md",
+      "type": "blog",
+      "count": 1,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/databases/sql/setup-pg-macos.md",
+      "type": "blog",
+      "count": 1,
+      "draft": true
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/frameworks/flutter/navigators.md",
+      "type": "blog",
+      "count": 1,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/languages/python/uv-package-manager.md",
+      "type": "blog",
+      "count": 1,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/system-design/process-overview.md",
+      "type": "blog",
+      "count": 1,
+      "draft": false
+    }
+  ],
+  "termsfutures": [
+    {
+      "file": "/Users/future/l.blog/data/blog/finance/futures.md",
+      "type": "blog",
+      "count": 19,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/finance/terms/quadruple-witching.md",
+      "type": "blog",
+      "count": 3,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/finance/options/open-interest.md",
+      "type": "blog",
+      "count": 1,
+      "draft": true
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/finance/toc.md",
+      "type": "blog",
+      "count": 1,
+      "draft": true
+    }
+  ],
+  "termsgame-tree": [],
+  "termsgan": [],
+  "termsgatsby": [
+    {
+      "file": "/Users/future/l.blog/data/blog/software/devops/gcp/aws-cloud-practiitioner.md",
+      "type": "blog",
+      "count": 3,
+      "draft": true
+    }
+  ],
+  "termsgaussian-elimination": [],
+  "termsgdp": [],
+  "termsgeneralization": [
+    {
+      "file": "/Users/future/l.blog/data/kb/atom/CS/AI.md",
+      "type": "kb",
+      "count": 1,
+      "draft": false
+    }
+  ],
+  "termsgenerative-adversarial-network": [],
+  "termsgenerative-ai": [],
+  "termsgeometric-distribution": [],
+  "termsgeometric-series": [],
+  "termsgeometry-of-vectors": [],
+  "termsgesture-detector": [],
+  "termsgesture-handling": [],
+  "termsget-server-side-props": [],
+  "termsget-static-props": [],
+  "termsgetter": [],
+  "termsgithub-actions-docker": [],
+  "termsgithub-actions": [],
+  "termsgitops": [],
+  "termsgke": [
+    {
+      "file": "/Users/future/l.blog/data/blog/software/devops/gcp/cloud-build-triggers.md",
+      "type": "blog",
+      "count": 1,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/devops/gcp/secret-manager.md",
+      "type": "blog",
+      "count": 1,
+      "draft": false
+    }
+  ],
+  "termsglobal-css": [],
+  "termsglove": [],
+  "termsgo-router": [
+    {
+      "file": "/Users/future/l.blog/data/blog/projects/royal-stock-exchange/5-demo.md",
+      "type": "blog",
+      "count": 1,
+      "draft": false
+    }
+  ],
+  "termsgoal-stack-planning": [],
+  "termsgoal-state": [
+    {
+      "file": "/Users/future/l.blog/data/blog/ai/ai-search-agent.md",
+      "type": "blog",
+      "count": 1,
+      "draft": false
+    }
+  ],
+  "termsgoogle-cloud-run": [
+    {
+      "file": "/Users/future/l.blog/data/blog/software/devops/gcp/cloud-run.md",
+      "type": "blog",
+      "count": 2,
+      "draft": false
+    }
+  ],
+  "termsgoogle-play-deployment": [],
+  "termsgps": [],
+  "termsgpt": [],
+  "termsgradient-descent": [],
+  "termsgradient": [
+    {
+      "file": "/Users/future/l.blog/data/blog/finance/quant/crash-course.md",
+      "type": "blog",
+      "count": 1,
+      "draft": true
+    }
+  ],
+  "termsgrafana": [],
+  "termsgram-schmidt-process": [],
+  "termsgrammar": [],
+  "termsgraph-algorithms": [
+    {
+      "file": "/Users/future/l.blog/data/blog/software/data-structures-algorithms/patterns-graph.md",
+      "type": "blog",
+      "count": 1,
+      "draft": false
+    }
+  ],
+  "termsgraph-database": [],
+  "termsgraph": [
+    {
+      "file": "/Users/future/l.blog/data/blog/software/data-structures-algorithms/graph-programming.md",
+      "type": "blog",
+      "count": 67,
+      "draft": true
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/data-structures-algorithms/patterns-graph.md",
+      "type": "blog",
+      "count": 38,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/data-structures-algorithms/graph.md",
+      "type": "blog",
+      "count": 14,
+      "draft": true
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/leetcode/261-graph-valid-tree.md",
+      "type": "blog",
+      "count": 3,
+      "draft": true
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/leetcode/742-network-delay-time.md",
+      "type": "blog",
+      "count": 2,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/data-structures-algorithms/algorithms/union-find.md",
+      "type": "blog",
+      "count": 2,
+      "draft": true
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/data-structures-algorithms/cheatsheet.md",
+      "type": "blog",
+      "count": 2,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/ai/ai-search-agent.md",
+      "type": "blog",
+      "count": 1,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/maths/calculus/calculus-2/calculus-2.md",
+      "type": "blog",
+      "count": 1,
+      "draft": true
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/data-structures-algorithms/algorithms/dijkstras.md",
+      "type": "blog",
+      "count": 1,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/data-structures-algorithms/graph-algorithms.md",
+      "type": "blog",
+      "count": 1,
+      "draft": true
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/data-structures-algorithms/graph-theory.md",
+      "type": "blog",
+      "count": 1,
+      "draft": true
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/data-structures-algorithms/priority-queue.md",
+      "type": "blog",
+      "count": 1,
+      "draft": true
+    }
+  ],
+  "termsgraphql-schema": [],
+  "termsgraphql": [
+    {
+      "file": "/Users/future/l.blog/data/blog/software/system-design/graphql.md",
+      "type": "blog",
+      "count": 13,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/starters/python-graphql.md",
+      "type": "blog",
+      "count": 2,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/system-design/process-overview.md",
+      "type": "blog",
+      "count": 2,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/languages/python/uv-package-manager.md",
+      "type": "blog",
+      "count": 1,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/system-design/process-deepdive.md",
+      "type": "blog",
+      "count": 1,
+      "draft": false
+    }
+  ],
+  "termsgreatest-common-divisor": [],
+  "termsgreedy-algorithm": [],
+  "termsgreedy-best-first-search": [],
+  "termsgreeks": [
+    {
+      "file": "/Users/future/l.blog/data/blog/finance/options/greeks.md",
+      "type": "blog",
+      "count": 5,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/finance/index.md",
+      "type": "blog",
+      "count": 4,
+      "draft": true
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/finance/quant/crash-course.md",
+      "type": "blog",
+      "count": 3,
+      "draft": true
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/finance/quant/calculus-for-quants.md",
+      "type": "blog",
+      "count": 1,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/finance/quant/maths.md",
+      "type": "blog",
+      "count": 1,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/finance/quant/symbols.md",
+      "type": "blog",
+      "count": 1,
+      "draft": false
+    }
+  ],
+  "termsgreen-theorem": [],
+  "termsgrid": [
+    {
+      "file": "/Users/future/l.blog/data/blog/leetcode/200-number-of-islands.md",
+      "type": "blog",
+      "count": 129,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/data-structures-algorithms/graph-programming.md",
+      "type": "blog",
+      "count": 28,
+      "draft": true
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/leetcode/463-island-perimeter.md",
+      "type": "blog",
+      "count": 11,
+      "draft": true
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/data-structures-algorithms/dynamic-programming.md",
+      "type": "blog",
+      "count": 5,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/data-structures-algorithms/patterns-graph.md",
+      "type": "blog",
+      "count": 4,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/TEST/introducing-tailwind-nextjs-starter-blog.mdx",
+      "type": "blog",
+      "count": 1,
+      "draft": true
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/TEST/pictures-of-canada.mdx",
+      "type": "blog",
+      "count": 1,
+      "draft": true
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/data-structures-algorithms/priority-queue.md",
+      "type": "blog",
+      "count": 1,
+      "draft": true
+    }
+  ],
+  "termsgridview": [],
+  "termsgross-margin": [],
+  "termsgroup-by": [
+    {
+      "file": "/Users/future/l.blog/data/blog/software/databases/sql/1_toc.md",
+      "type": "blog",
+      "count": 3,
+      "draft": true
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/databases/sql/group-by.md",
+      "type": "blog",
+      "count": 3,
+      "draft": true
+    }
+  ],
+  "termsgroups": [
+    {
+      "file": "/Users/future/l.blog/data/blog/finance/terms/institutional-retail.md",
+      "type": "blog",
+      "count": 3,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/TEST/code-tab-groups.md",
+      "type": "blog",
+      "count": 1,
+      "draft": true
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/same-problems-different-tools.md",
+      "type": "blog",
+      "count": 1,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/data-structures-algorithms/graph-programming.md",
+      "type": "blog",
+      "count": 1,
+      "draft": true
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/databases/sql/1_toc.md",
+      "type": "blog",
+      "count": 1,
+      "draft": true
+    }
+  ],
+  "termsgrowth-investing": [],
+  "termsgyroscope": [],
+  "termshard-links": [],
+  "termsharmonic-series": [],
+  "termshash-function": [],
+  "termshash-index": [],
+  "termshash-map-storage": [],
+  "termshash-map": [
+    {
+      "file": "/Users/future/l.blog/data/blog/leetcode/217-contains-duplicate.md",
+      "type": "blog",
+      "count": 2,
+      "draft": false
+    }
+  ],
+  "termshash-set": [],
+  "termshash-table": [
+    {
+      "file": "/Users/future/l.blog/data/blog/software/data-structures-algorithms/cheatsheet.md",
+      "type": "blog",
+      "count": 2,
+      "draft": false
+    }
+  ],
+  "termshashed-index": [],
+  "termshaving": [
+    {
+      "file": "/Users/future/l.blog/data/blog/software/databases/sql/1_toc.md",
+      "type": "blog",
+      "count": 3,
+      "draft": true
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/TEST/the-time-machine.mdx",
+      "type": "blog",
+      "count": 2,
+      "draft": true
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/projects/bakesuite.md",
+      "type": "blog",
+      "count": 1,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/data-structures-algorithms/OOP.md",
+      "type": "blog",
+      "count": 1,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/databases/nosql/mongodb.md",
+      "type": "blog",
+      "count": 1,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/databases/sql/remote-clone-to-local.md",
+      "type": "blog",
+      "count": 1,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/info-sec/over-the-wire-1-bandit.md",
+      "type": "blog",
+      "count": 1,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/languages/java/java-spring.md",
+      "type": "blog",
+      "count": 1,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/languages/ruby/ruby-lambda.md",
+      "type": "blog",
+      "count": 1,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/system-design/appium-mocha.md",
+      "type": "blog",
+      "count": 1,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/system-design/flutter-netlify-deploy.md",
+      "type": "blog",
+      "count": 1,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/system-design/microservices.md",
+      "type": "blog",
+      "count": 1,
+      "draft": false
+    }
+  ],
+  "termshealth-checks": [
+    {
+      "file": "/Users/future/l.blog/data/blog/software/system-design/process-deepdive.md",
+      "type": "blog",
+      "count": 1,
+      "draft": false
+    }
+  ],
+  "termsheap-sort": [],
+  "termsheap": [
+    {
+      "file": "/Users/future/l.blog/data/blog/software/languages/python/heapq.md",
+      "type": "blog",
+      "count": 16,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/data-structures-algorithms/cheatsheet.md",
+      "type": "blog",
+      "count": 6,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/data-structures-algorithms/patterns-graph.md",
+      "type": "blog",
+      "count": 5,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/data-structures-algorithms/priority-queue.md",
+      "type": "blog",
+      "count": 4,
+      "draft": true
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/data-structures-algorithms/algorithms/priority-queue.md",
+      "type": "blog",
+      "count": 1,
+      "draft": true
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/languages/rust/rust-projects.md",
+      "type": "blog",
+      "count": 1,
+      "draft": true
+    }
+  ],
+  "termsheight": [
+    {
+      "file": "/Users/future/l.blog/data/blog/software/data-structures-algorithms/patterns-graph.md",
+      "type": "blog",
+      "count": 9,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/TEST/guide-to-using-images-in-nextjs.mdx",
+      "type": "blog",
+      "count": 3,
+      "draft": true
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/system-design/appium-mocha.md",
+      "type": "blog",
+      "count": 3,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/frameworks/flutter/flutter-poker-1.md",
+      "type": "blog",
+      "count": 2,
+      "draft": true
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/frameworks/flutter/navigators.md",
+      "type": "blog",
+      "count": 2,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/cheatsheets/vscode.md",
+      "type": "blog",
+      "count": 1,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/leetcode/463-island-perimeter.md",
+      "type": "blog",
+      "count": 1,
+      "draft": true
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/frameworks/flutter/flutter-tiktok-2.md",
+      "type": "blog",
+      "count": 1,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/system-design/flutter-theme.md",
+      "type": "blog",
+      "count": 1,
+      "draft": false
+    }
+  ],
+  "termshelm": [],
+  "termsheuristic-search": [],
+  "termsheuristic": [
+    {
+      "file": "/Users/future/l.blog/data/blog/software/data-structures-algorithms/patterns-graph.md",
+      "type": "blog",
+      "count": 2,
+      "draft": false
+    }
+  ],
+  "termshidden-markov-model": [],
+  "termshierarchical-clustering": [],
+  "termshierarchical-inheritance": [],
+  "termsholdout-validation": [],
+  "termshome-directory": [
+    {
+      "file": "/Users/future/l.blog/data/blog/software/info-sec/over-the-wire-1-bandit.md",
+      "type": "blog",
+      "count": 2,
+      "draft": false
+    }
+  ],
+  "termshook-composition": [],
+  "termshooks": [
+    {
+      "file": "/Users/future/l.blog/data/blog/software/git/pre-commit.md",
+      "type": "blog",
+      "count": 18,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/system-design/system-design-auditing.md",
+      "type": "blog",
+      "count": 9,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/same-problems-different-tools.md",
+      "type": "blog",
+      "count": 1,
+      "draft": false
+    }
+  ],
+  "termshorizontal-pod-autoscaler": [],
+  "termshorizontal-scaling": [
+    {
+      "file": "/Users/future/l.blog/data/blog/software/system-design/build-message-queue.md",
+      "type": "blog",
+      "count": 1,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/system-design/system-design-distributed-systems.md",
+      "type": "blog",
+      "count": 1,
+      "draft": false
+    }
+  ],
+  "termshorizontal-vs-vertical-scaling": [],
+  "termshost-based-routing": [],
+  "termshost-network": [],
+  "termshosting": [
+    {
+      "file": "/Users/future/l.blog/data/blog/TEST/introducing-tailwind-nextjs-starter-blog.mdx",
+      "type": "blog",
+      "count": 2,
+      "draft": true
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/TEST/guide-to-using-images-in-nextjs.mdx",
+      "type": "blog",
+      "count": 1,
+      "draft": true
+    }
+  ],
+  "termshot-reload": [
+    {
+      "file": "/Users/future/l.blog/data/blog/software/languages/dart/dart.3.10.md",
+      "type": "blog",
+      "count": 1,
+      "draft": true
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/system-design/build-backend-api.md",
+      "type": "blog",
+      "count": 1,
+      "draft": false
+    }
+  ],
+  "termshtml-elements": [],
+  "termshtml": [
+    {
+      "file": "/Users/future/l.blog/data/blog/software/frameworks/flutter/flutter-tiktok-1.md",
+      "type": "blog",
+      "count": 16,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/kb/tool/obsidian/preview/theme2.md",
+      "type": "kb",
+      "count": 6,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/frameworks/flutter/flutter-tiktok-2.md",
+      "type": "blog",
+      "count": 4,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/kb/tool/obsidian/preview/theme1.md",
+      "type": "kb",
+      "count": 3,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/info-sec/xss.md",
+      "type": "blog",
+      "count": 3,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/TEST/deriving-ols-estimator.mdx",
+      "type": "blog",
+      "count": 2,
+      "draft": true
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/info-sec/over-the-wire-2-leviathan.md",
+      "type": "blog",
+      "count": 2,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/info-sec/over-the-wire-3-natas.md",
+      "type": "blog",
+      "count": 2,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/languages/python/django.md",
+      "type": "blog",
+      "count": 2,
+      "draft": true
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/system-design/build-backend-api.md",
+      "type": "blog",
+      "count": 2,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/finance/high-frequency-trading.md",
+      "type": "blog",
+      "count": 1,
+      "draft": true
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/data-structures-algorithms/cheatsheet.md",
+      "type": "blog",
+      "count": 1,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/databases/nosql/mongodb.md",
+      "type": "blog",
+      "count": 1,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/databases/sql/remote-clone-to-local.md",
+      "type": "blog",
+      "count": 1,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/design patterns/decorator.md",
+      "type": "blog",
+      "count": 1,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/devops/gcp/aws-cloud-practiitioner.md",
+      "type": "blog",
+      "count": 1,
+      "draft": true
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/devops/gcp/aws-lambda.md",
+      "type": "blog",
+      "count": 1,
+      "draft": true
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/info-sec/csrf.md",
+      "type": "blog",
+      "count": 1,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/languages/go/go-routines.md",
+      "type": "blog",
+      "count": 1,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/languages/python/heapq.md",
+      "type": "blog",
+      "count": 1,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/system-design/appium-mocha.md",
+      "type": "blog",
+      "count": 1,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/system-design/key-numbers.md",
+      "type": "blog",
+      "count": 1,
+      "draft": false
+    }
+  ],
+  "termshtop": [],
+  "termshttp": [
+    {
+      "file": "/Users/future/l.blog/data/blog/software/languages/go/go-routines.md",
+      "type": "blog",
+      "count": 17,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/devops/gcp/cloud-scheduler.md",
+      "type": "blog",
+      "count": 6,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/info-sec/over-the-wire-3-natas.md",
+      "type": "blog",
+      "count": 6,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/system-design/system-design-auditing.md",
+      "type": "blog",
+      "count": 6,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/system-design/build-backend-api.md",
+      "type": "blog",
+      "count": 5,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/TEST/github-markdown-guide.mdx",
+      "type": "blog",
+      "count": 4,
+      "draft": true
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/cheatsheets/kubernetes.md",
+      "type": "blog",
+      "count": 3,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/TEST/introducing-tailwind-nextjs-starter-blog.mdx",
+      "type": "blog",
+      "count": 2,
+      "draft": true
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/devops/gcp/cloud-run-job.md",
+      "type": "blog",
+      "count": 2,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/languages/java/java-spring.md",
+      "type": "blog",
+      "count": 2,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/system-design/build-message-queue.md",
+      "type": "blog",
+      "count": 2,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/system-design/graphql.md",
+      "type": "blog",
+      "count": 2,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/system-design/microservices.md",
+      "type": "blog",
+      "count": 2,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/projects/bakesuite.md",
+      "type": "blog",
+      "count": 1,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/same-problems-different-tools.md",
+      "type": "blog",
+      "count": 1,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/devops/gcp/aws-lambda.md",
+      "type": "blog",
+      "count": 1,
+      "draft": true
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/frameworks/flutter/android connectivity issues - connection refused.md",
+      "type": "blog",
+      "count": 1,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/frameworks/flutter/flutter android customize app icon.md",
+      "type": "blog",
+      "count": 1,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/info-sec/over-the-wire-1-bandit.md",
+      "type": "blog",
+      "count": 1,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/languages/dart/dart.3.10.md",
+      "type": "blog",
+      "count": 1,
+      "draft": true
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/languages/python/django.md",
+      "type": "blog",
+      "count": 1,
+      "draft": true
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/languages/python/flask-hot-reload.md",
+      "type": "blog",
+      "count": 1,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/languages/rust/rust-projects.md",
+      "type": "blog",
+      "count": 1,
+      "draft": true
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/system-design/appium-mocha.md",
+      "type": "blog",
+      "count": 1,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/system-design/build-api-cache.md",
+      "type": "blog",
+      "count": 1,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/system-design/process-overview.md",
+      "type": "blog",
+      "count": 1,
+      "draft": false
+    }
+  ],
+  "termshttps": [
+    {
+      "file": "/Users/future/l.blog/data/blog/software/data-structures-algorithms/patterns-graph.md",
+      "type": "blog",
+      "count": 76,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/TEST/introducing-tailwind-nextjs-starter-blog.mdx",
+      "type": "blog",
+      "count": 52,
+      "draft": true
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/data-structures-algorithms/priority-queue.md",
+      "type": "blog",
+      "count": 20,
+      "draft": true
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/frameworks/flutter/flutter-tiktok-1.md",
+      "type": "blog",
+      "count": 20,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/data-structures-algorithms/graph-theory.md",
+      "type": "blog",
+      "count": 17,
+      "draft": true
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/data-structures-algorithms/trees.md",
+      "type": "blog",
+      "count": 16,
+      "draft": true
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/frameworks/flutter/flutter-tiktok-2.md",
+      "type": "blog",
+      "count": 15,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/finance/high-frequency-trading.md",
+      "type": "blog",
+      "count": 13,
+      "draft": true
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/devops/gcp/aws-cloud-practiitioner.md",
+      "type": "blog",
+      "count": 13,
+      "draft": true
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/finance/analysis-tools.md",
+      "type": "blog",
+      "count": 12,
+      "draft": true
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/projects/royal-stock-exchange/1-intro.md",
+      "type": "blog",
+      "count": 12,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/data-structures-algorithms/graph-programming.md",
+      "type": "blog",
+      "count": 10,
+      "draft": true
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/system-design/build-backend-api.md",
+      "type": "blog",
+      "count": 10,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/system-design/microservices.md",
+      "type": "blog",
+      "count": 10,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/devops/gcp/aws-lambda.md",
+      "type": "blog",
+      "count": 9,
+      "draft": true
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/languages/go/go-routines.md",
+      "type": "blog",
+      "count": 9,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/TEST/pictures-of-canada.mdx",
+      "type": "blog",
+      "count": 8,
+      "draft": true
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/languages/java/java-spring.md",
+      "type": "blog",
+      "count": 7,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/books/DSA python.md",
+      "type": "blog",
+      "count": 6,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/data-structures-algorithms/algorithms/dijkstras.md",
+      "type": "blog",
+      "count": 6,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/data-structures-algorithms/algorithms/union-find.md",
+      "type": "blog",
+      "count": 6,
+      "draft": true
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/frameworks/logging-app-load-times-with-firebase.md",
+      "type": "blog",
+      "count": 6,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/kb/tool/obsidian/preview/theme1.md",
+      "type": "kb",
+      "count": 5,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/kb/tool/obsidian/preview/theme2.md",
+      "type": "kb",
+      "count": 5,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/TEST/guide-to-using-images-in-nextjs.mdx",
+      "type": "blog",
+      "count": 5,
+      "draft": true
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/projects/royal-stock-exchange/3-portfolio.md",
+      "type": "blog",
+      "count": 5,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/data-structures-algorithms/algorithms/priority-queue.md",
+      "type": "blog",
+      "count": 5,
+      "draft": true
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/design patterns/decorator.md",
+      "type": "blog",
+      "count": 5,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/devops/gcp/cloud-run-job.md",
+      "type": "blog",
+      "count": 5,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/frameworks/flutter/semantic-stoic.md",
+      "type": "blog",
+      "count": 5,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/git/partial-add.md",
+      "type": "blog",
+      "count": 5,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/system-design/appium-mocha.md",
+      "type": "blog",
+      "count": 5,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/system-design/build-message-queue.md",
+      "type": "blog",
+      "count": 5,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/system-design/flutter-netlify-deploy.md",
+      "type": "blog",
+      "count": 5,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/TEST/github-markdown-guide.mdx",
+      "type": "blog",
+      "count": 4,
+      "draft": true
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/finance/food-tours.md",
+      "type": "blog",
+      "count": 4,
+      "draft": true
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/finance/options/strategies/trading-strategies.md",
+      "type": "blog",
+      "count": 4,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/opinions/why-flutter-is-better-than-react-native.md",
+      "type": "blog",
+      "count": 4,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/system-design/build-db-cluster-docker.md",
+      "type": "blog",
+      "count": 4,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/system-design/system-design-auditing.md",
+      "type": "blog",
+      "count": 4,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/finance/IPO.md",
+      "type": "blog",
+      "count": 3,
+      "draft": true
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/projects/royal-stock-exchange/5-demo.md",
+      "type": "blog",
+      "count": 3,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/frameworks/flutter/flutter lacks webview support.md",
+      "type": "blog",
+      "count": 3,
+      "draft": true
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/info-sec/vm tools.md",
+      "type": "blog",
+      "count": 3,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/system-design/SQL Server Setup.md",
+      "type": "blog",
+      "count": 3,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/system-design/build-api-cache.md",
+      "type": "blog",
+      "count": 3,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/system-design/firebase environments.md",
+      "type": "blog",
+      "count": 3,
+      "draft": true
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/system-design/flutter-theme.md",
+      "type": "blog",
+      "count": 3,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/ai/ai-search-agent.md",
+      "type": "blog",
+      "count": 2,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/cheatsheets/dot-net-core.md",
+      "type": "blog",
+      "count": 2,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/cheatsheets/expo.md",
+      "type": "blog",
+      "count": 2,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/finance/trading/copy-trading-sites.md",
+      "type": "blog",
+      "count": 2,
+      "draft": true
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/projects/bakesuite.md",
+      "type": "blog",
+      "count": 2,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/data-structures-algorithms/graph-algorithms.md",
+      "type": "blog",
+      "count": 2,
+      "draft": true
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/devops/gcp/cloud-scheduler.md",
+      "type": "blog",
+      "count": 2,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/frameworks/flutter/android connectivity issues - connection refused.md",
+      "type": "blog",
+      "count": 2,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/git/pre-commit.md",
+      "type": "blog",
+      "count": 2,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/languages/python/uv-package-manager.md",
+      "type": "blog",
+      "count": 2,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/languages/rust/rust-projects.md",
+      "type": "blog",
+      "count": 2,
+      "draft": true
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/system-design/graphql.md",
+      "type": "blog",
+      "count": 2,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/system-design/system-design-1-bitly.md",
+      "type": "blog",
+      "count": 2,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/system-design/system-design-distributed-systems.md",
+      "type": "blog",
+      "count": 2,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/TEST/MDX.mdx",
+      "type": "blog",
+      "count": 1,
+      "draft": true
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/TEST/deriving-ols-estimator.mdx",
+      "type": "blog",
+      "count": 1,
+      "draft": true
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/TEST/the-time-machine.mdx",
+      "type": "blog",
+      "count": 1,
+      "draft": true
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/bug-reports/reddit.md",
+      "type": "blog",
+      "count": 1,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/cheatsheets/big-o.mdx",
+      "type": "blog",
+      "count": 1,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/finance/indicators/sharpe-ratio.md",
+      "type": "blog",
+      "count": 1,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/finance/options/black-scholes.md",
+      "type": "blog",
+      "count": 1,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/finance/stock-market-size.md",
+      "type": "blog",
+      "count": 1,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/leetcode/742-network-delay-time.md",
+      "type": "blog",
+      "count": 1,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/maths/calculus/calculus-1/calculus-1.md",
+      "type": "blog",
+      "count": 1,
+      "draft": true
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/maths/calculus/calculus-2/calculus-2.md",
+      "type": "blog",
+      "count": 1,
+      "draft": true
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/maths/calculus/lambda.md",
+      "type": "blog",
+      "count": 1,
+      "draft": true
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/projects/royal-stock-exchange/2-seeding data.md",
+      "type": "blog",
+      "count": 1,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/computer-organization.md",
+      "type": "blog",
+      "count": 1,
+      "draft": true
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/databases/psql.md",
+      "type": "blog",
+      "count": 1,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/databases/sql/remote-clone-to-local.md",
+      "type": "blog",
+      "count": 1,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/devops/gcp/cloud-build-triggers.md",
+      "type": "blog",
+      "count": 1,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/devops/gcp/cloud-run.md",
+      "type": "blog",
+      "count": 1,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/frameworks/flutter/flutter android customize app icon.md",
+      "type": "blog",
+      "count": 1,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/frameworks/flutter/flutter-poker-1.md",
+      "type": "blog",
+      "count": 1,
+      "draft": true
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/frameworks/next/introducing-multi-part-posts-with-nested-routing.md",
+      "type": "blog",
+      "count": 1,
+      "draft": true
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/frameworks/react.md",
+      "type": "blog",
+      "count": 1,
+      "draft": true
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/info-sec/csrf.md",
+      "type": "blog",
+      "count": 1,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/info-sec/over-the-wire-0-intro.md",
+      "type": "blog",
+      "count": 1,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/info-sec/over-the-wire-2-leviathan.md",
+      "type": "blog",
+      "count": 1,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/info-sec/over-the-wire-3-natas.md",
+      "type": "blog",
+      "count": 1,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/info-sec/xss.md",
+      "type": "blog",
+      "count": 1,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/languages/dart/dart.3.10.md",
+      "type": "blog",
+      "count": 1,
+      "draft": true
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/languages/js/js-1.md",
+      "type": "blog",
+      "count": 1,
+      "draft": true
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/languages/python/heapq.md",
+      "type": "blog",
+      "count": 1,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/languages/ruby/ruby-lambda.md",
+      "type": "blog",
+      "count": 1,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/starters/python-graphql.md",
+      "type": "blog",
+      "count": 1,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/system-design/process-overview.md",
+      "type": "blog",
+      "count": 1,
+      "draft": false
+    }
+  ],
+  "termshuffman-encoding": [],
+  "termshuman-feedback": [],
+  "termshybrid-rendering-model": [],
+  "termshybrid-rendering": [],
+  "termshydration-styles": [],
+  "termshydration": [],
+  "termshyperparameter-tuning": [],
+  "termsidentity-matrix": [],
+  "termsimage-build-failures": [],
+  "termsimage-cache": [],
+  "termsimage-classification": [],
+  "termsimage-deployment": [],
+  "termsimage-generation": [],
+  "termsimage-optimization": [
+    {
+      "file": "/Users/future/l.blog/data/blog/TEST/introducing-tailwind-nextjs-starter-blog.mdx",
+      "type": "blog",
+      "count": 3,
+      "draft": true
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/TEST/guide-to-using-images-in-nextjs.mdx",
+      "type": "blog",
+      "count": 1,
+      "draft": true
+    }
+  ],
+  "termsimage-repository": [],
+  "termsimage-scanning": [],
+  "termsimage-segmentation": [],
+  "termsimage-size-optimization": [],
+  "termsimage-slimming": [],
+  "termsimage-tag": [
+    {
+      "file": "/Users/future/l.blog/data/blog/TEST/guide-to-using-images-in-nextjs.mdx",
+      "type": "blog",
+      "count": 1,
+      "draft": true
+    }
+  ],
+  "termsimage-tagging": [],
+  "termsimage": [
+    {
+      "file": "/Users/future/l.blog/data/blog/TEST/guide-to-using-images-in-nextjs.mdx",
+      "type": "blog",
+      "count": 21,
+      "draft": true
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/TEST/introducing-tailwind-nextjs-starter-blog.mdx",
+      "type": "blog",
+      "count": 11,
+      "draft": true
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/data-structures-algorithms/graph-algorithms.md",
+      "type": "blog",
+      "count": 7,
+      "draft": true
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/system-design/microservices.md",
+      "type": "blog",
+      "count": 6,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/devops/gcp/cloud-run.md",
+      "type": "blog",
+      "count": 3,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/system-design/build-db-cluster-docker.md",
+      "type": "blog",
+      "count": 3,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/cheatsheets/kubernetes.md",
+      "type": "blog",
+      "count": 2,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/devops/gcp/memory-store.md",
+      "type": "blog",
+      "count": 2,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/devops/gcp/secret-manager.md",
+      "type": "blog",
+      "count": 2,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/system-design/SQL Server Setup.md",
+      "type": "blog",
+      "count": 2,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/kb/atom/CS/AI.md",
+      "type": "kb",
+      "count": 1,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/TEST/pictures-of-canada.mdx",
+      "type": "blog",
+      "count": 1,
+      "draft": true
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/projects/bakesuite.md",
+      "type": "blog",
+      "count": 1,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/devops/gcp/cloud-run-job.md",
+      "type": "blog",
+      "count": 1,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/devops/gcp/vcp-connectors.md",
+      "type": "blog",
+      "count": 1,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/info-sec/csrf.md",
+      "type": "blog",
+      "count": 1,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/mobile requirements.md",
+      "type": "blog",
+      "count": 1,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/system-design/key-numbers.md",
+      "type": "blog",
+      "count": 1,
+      "draft": false
+    }
+  ],
+  "termsimmutability": [],
+  "termsimmutable-infrastructure": [],
+  "termsimmutable-state": [],
+  "termsimplication": [
+    {
+      "file": "/Users/future/l.blog/data/blog/maths/discrete-symbols.md",
+      "type": "blog",
+      "count": 1,
+      "draft": false
+    }
+  ],
+  "termsimplied-volatility": [
+    {
+      "file": "/Users/future/l.blog/data/blog/finance/indicators/implied-volatility-rank.md",
+      "type": "blog",
+      "count": 9,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/finance/index.md",
+      "type": "blog",
+      "count": 1,
+      "draft": true
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/finance/options/greeks.md",
+      "type": "blog",
+      "count": 1,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/finance/options/strategies/trading-strategies.md",
+      "type": "blog",
+      "count": 1,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/finance/quant/crash-course.md",
+      "type": "blog",
+      "count": 1,
+      "draft": true
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/finance/terms/implied-volatility.md",
+      "type": "blog",
+      "count": 1,
+      "draft": true
+    }
+  ],
+  "termsin": [
+    {
+      "file": "/Users/future/l.blog/data/blog/software/data-structures-algorithms/patterns-graph.md",
+      "type": "blog",
+      "count": 60,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/info-sec/over-the-wire-1-bandit.md",
+      "type": "blog",
+      "count": 52,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/projects/royal-stock-exchange/4-scaling.md",
+      "type": "blog",
+      "count": 31,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/data-structures-algorithms/algorithms/sorting.md",
+      "type": "blog",
+      "count": 23,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/TEST/the-time-machine.mdx",
+      "type": "blog",
+      "count": 22,
+      "draft": true
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/data-structures-algorithms/graph-theory.md",
+      "type": "blog",
+      "count": 22,
+      "draft": true
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/politics/1-go.md",
+      "type": "blog",
+      "count": 19,
+      "draft": true
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/data-structures-algorithms/dynamic-programming.md",
+      "type": "blog",
+      "count": 19,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/opinions/why-flutter-is-better-than-react-native.md",
+      "type": "blog",
+      "count": 17,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/TEST/introducing-tailwind-nextjs-starter-blog.mdx",
+      "type": "blog",
+      "count": 16,
+      "draft": true
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/system-design/system-design-auditing.md",
+      "type": "blog",
+      "count": 16,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/data-structures-algorithms/OOP.md",
+      "type": "blog",
+      "count": 15,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/languages/go/go-routines.md",
+      "type": "blog",
+      "count": 15,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/finance/high-frequency-trading.md",
+      "type": "blog",
+      "count": 14,
+      "draft": true
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/finance/options/strategies/trading-strategies.md",
+      "type": "blog",
+      "count": 14,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/leetcode/217-contains-duplicate.md",
+      "type": "blog",
+      "count": 14,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/maths/discrete-symbols.md",
+      "type": "blog",
+      "count": 14,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/personal/cognitive-dissonance.md",
+      "type": "blog",
+      "count": 14,
+      "draft": true
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/personal/stoicism.md",
+      "type": "blog",
+      "count": 14,
+      "draft": true
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/data-structures-algorithms/algorithms/tree-traversals.md",
+      "type": "blog",
+      "count": 13,
+      "draft": true
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/data-structures-algorithms/priority-queue.md",
+      "type": "blog",
+      "count": 13,
+      "draft": true
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/TEST/guide-to-using-images-in-nextjs.mdx",
+      "type": "blog",
+      "count": 10,
+      "draft": true
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/leetcode/16-3-sum-closest.md",
+      "type": "blog",
+      "count": 10,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/leetcode/200-number-of-islands.md",
+      "type": "blog",
+      "count": 10,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/data-structures-algorithms/graph-programming.md",
+      "type": "blog",
+      "count": 10,
+      "draft": true
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/system-design/build-backend-api.md",
+      "type": "blog",
+      "count": 10,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/leetcode/742-network-delay-time.md",
+      "type": "blog",
+      "count": 9,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/maths/calculus/multivariable-calc.md",
+      "type": "blog",
+      "count": 9,
+      "draft": true
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/maths/statistics/variance-standard-deviation.md",
+      "type": "blog",
+      "count": 9,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/data-structures-algorithms/cheatsheet.md",
+      "type": "blog",
+      "count": 9,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/frameworks/logging-app-load-times-with-firebase.md",
+      "type": "blog",
+      "count": 9,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/languages/java/java-spring.md",
+      "type": "blog",
+      "count": 9,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/languages/rust/rust-projects.md",
+      "type": "blog",
+      "count": 9,
+      "draft": true
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/system-design/process-overview.md",
+      "type": "blog",
+      "count": 9,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/ai/ai-as-fractals.md",
+      "type": "blog",
+      "count": 8,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/bug-reports/reddit.md",
+      "type": "blog",
+      "count": 8,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/finance/futures.md",
+      "type": "blog",
+      "count": 8,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/finance/quant/maths.md",
+      "type": "blog",
+      "count": 8,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/leetcode/1-two-sum.md",
+      "type": "blog",
+      "count": 8,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/leetcode/121-best-time-to-sell-stock.md",
+      "type": "blog",
+      "count": 8,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/data-structures-algorithms/hash-table.md",
+      "type": "blog",
+      "count": 8,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/databases/sql/1_toc.md",
+      "type": "blog",
+      "count": 8,
+      "draft": true
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/design patterns/repository.md",
+      "type": "blog",
+      "count": 8,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/frameworks/flutter/flutter-tiktok-2.md",
+      "type": "blog",
+      "count": 8,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/TEST/github-markdown-guide.mdx",
+      "type": "blog",
+      "count": 7,
+      "draft": true
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/exchange/intro-1.md",
+      "type": "blog",
+      "count": 7,
+      "draft": true
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/finance/indicators/put-call-ratio.md",
+      "type": "blog",
+      "count": 7,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/finance/options/black-scholes.md",
+      "type": "blog",
+      "count": 7,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/devops/gcp/cloud-run-job.md",
+      "type": "blog",
+      "count": 7,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/cheatsheets/big-o.mdx",
+      "type": "blog",
+      "count": 6,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/finance/options/greeks.md",
+      "type": "blog",
+      "count": 6,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/finance/terms/intrinsic-value.md",
+      "type": "blog",
+      "count": 6,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/finance/terms/net-asset-value.md",
+      "type": "blog",
+      "count": 6,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/maths/calculus/calculus-3/calculus-3.md",
+      "type": "blog",
+      "count": 6,
+      "draft": true
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/politics/communism.md",
+      "type": "blog",
+      "count": 6,
+      "draft": true
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/databases/nosql/mongodb.md",
+      "type": "blog",
+      "count": 6,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/demos-not-memos.md",
+      "type": "blog",
+      "count": 6,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/design patterns/decorator.md",
+      "type": "blog",
+      "count": 6,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/git/pre-commit.md",
+      "type": "blog",
+      "count": 6,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/info-sec/csrf.md",
+      "type": "blog",
+      "count": 6,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/info-sec/xss.md",
+      "type": "blog",
+      "count": 6,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/languages/dart/handling-nullable-fields.md",
+      "type": "blog",
+      "count": 6,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/system-design/appium-mocha.md",
+      "type": "blog",
+      "count": 6,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/kb/atom/CS/git-worktree-git-submodule-git-monorepo.md",
+      "type": "kb",
+      "count": 5,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/kb/atom/CS/page-router-vs-app-router.md",
+      "type": "kb",
+      "count": 5,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/TEST/TEST-TERMS.md",
+      "type": "blog",
+      "count": 5,
+      "draft": true
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/TEST/pictures-of-canada.mdx",
+      "type": "blog",
+      "count": 5,
+      "draft": true
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/books/12.the-thing-you-can-see-only-when-you-slow-down.md",
+      "type": "blog",
+      "count": 5,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/cheatsheets/vscode.md",
+      "type": "blog",
+      "count": 5,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/exchange/intro-4.md",
+      "type": "blog",
+      "count": 5,
+      "draft": true
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/finance/indicators/sharpe-ratio.md",
+      "type": "blog",
+      "count": 5,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/finance/quant/calculus-for-quants.md",
+      "type": "blog",
+      "count": 5,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/finance/quant/slippage.md",
+      "type": "blog",
+      "count": 5,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/finance/quant/symbols.md",
+      "type": "blog",
+      "count": 5,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/finance/terms/secondary-market.md",
+      "type": "blog",
+      "count": 5,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/maths/statistics/mean-median-mode.md",
+      "type": "blog",
+      "count": 5,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/projects/royal-stock-exchange/2-seeding data.md",
+      "type": "blog",
+      "count": 5,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/devops/gcp/cloud-build-triggers.md",
+      "type": "blog",
+      "count": 5,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/devops/gcp/cloud-run.md",
+      "type": "blog",
+      "count": 5,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/frameworks/flutter/flutter-tiktok-1.md",
+      "type": "blog",
+      "count": 5,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/frameworks/next/introducing-multi-part-posts-with-nested-routing.md",
+      "type": "blog",
+      "count": 5,
+      "draft": true
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/git/rebase.md",
+      "type": "blog",
+      "count": 5,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/system-design/1-LeetCode.md",
+      "type": "blog",
+      "count": 5,
+      "draft": true
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/system-design/build-message-queue.md",
+      "type": "blog",
+      "count": 5,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/system-design/graphql.md",
+      "type": "blog",
+      "count": 5,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/exchange/intro-3.md",
+      "type": "blog",
+      "count": 4,
+      "draft": true
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/finance/business/hostile-takeover.md",
+      "type": "blog",
+      "count": 4,
+      "draft": true
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/finance/indicators/premium-flow-with-z-scores.md",
+      "type": "blog",
+      "count": 4,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/finance/options/open-frac.md",
+      "type": "blog",
+      "count": 4,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/finance/options/strategies/introduction.md",
+      "type": "blog",
+      "count": 4,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/finance/quant/charts/premium-flow-trends.md",
+      "type": "blog",
+      "count": 4,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/finance/quant/order-books.md",
+      "type": "blog",
+      "count": 4,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/finance/terms/extrinsic-value.md",
+      "type": "blog",
+      "count": 4,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/finance/terms/index-fund.md",
+      "type": "blog",
+      "count": 4,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/finance/terms/mutual-funds.md",
+      "type": "blog",
+      "count": 4,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/leetcode/238-product-of-array-except-self.md",
+      "type": "blog",
+      "count": 4,
+      "draft": true
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/maths/calculus/intro.md",
+      "type": "blog",
+      "count": 4,
+      "draft": true
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/same-problems-different-tools.md",
+      "type": "blog",
+      "count": 4,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/data-structures-algorithms/algorithms/sorting-old.md",
+      "type": "blog",
+      "count": 4,
+      "draft": true
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/data-structures-algorithms/graph-algorithms.md",
+      "type": "blog",
+      "count": 4,
+      "draft": true
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/data-structures-algorithms/trees.md",
+      "type": "blog",
+      "count": 4,
+      "draft": true
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/databases/sql/lag.md",
+      "type": "blog",
+      "count": 4,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/design patterns/observer.md",
+      "type": "blog",
+      "count": 4,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/devops/gcp/secret-manager.md",
+      "type": "blog",
+      "count": 4,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/devops/gcp/vcp-connectors.md",
+      "type": "blog",
+      "count": 4,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/info-sec/over-the-wire-2-leviathan.md",
+      "type": "blog",
+      "count": 4,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/system-design/build-api-cache.md",
+      "type": "blog",
+      "count": 4,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/system-design/firebase environments.md",
+      "type": "blog",
+      "count": 4,
+      "draft": true
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/system-design/flutter-theme.md",
+      "type": "blog",
+      "count": 4,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/system-design/microservices.md",
+      "type": "blog",
+      "count": 4,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/TEST/deriving-ols-estimator.mdx",
+      "type": "blog",
+      "count": 3,
+      "draft": true
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/exchange/intro-2.md",
+      "type": "blog",
+      "count": 3,
+      "draft": true
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/exchange/intro-6.md",
+      "type": "blog",
+      "count": 3,
+      "draft": true
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/finance/RDO.md",
+      "type": "blog",
+      "count": 3,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/finance/federal-reserve-vs-treasury-department.md",
+      "type": "blog",
+      "count": 3,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/finance/index.md",
+      "type": "blog",
+      "count": 3,
+      "draft": true
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/finance/indicators/leading-and-lagging-indicators.md",
+      "type": "blog",
+      "count": 3,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/finance/indicators/relative-strength-index.md",
+      "type": "blog",
+      "count": 3,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/finance/options/strategies/straddle.md",
+      "type": "blog",
+      "count": 3,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/finance/terms/institutional-retail.md",
+      "type": "blog",
+      "count": 3,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/finance/terms/quadruple-witching.md",
+      "type": "blog",
+      "count": 3,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/finance/terms/warrant.md",
+      "type": "blog",
+      "count": 3,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/finance/toc.md",
+      "type": "blog",
+      "count": 3,
+      "draft": true
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/leetcode/463-island-perimeter.md",
+      "type": "blog",
+      "count": 3,
+      "draft": true
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/questions/running-a-company.md",
+      "type": "blog",
+      "count": 3,
+      "draft": true
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/data-structures-algorithms/algorithms/dp.md",
+      "type": "blog",
+      "count": 3,
+      "draft": true
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/data-structures-algorithms/algorithms/union-find.md",
+      "type": "blog",
+      "count": 3,
+      "draft": true
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/data-structures-algorithms/terms.md",
+      "type": "blog",
+      "count": 3,
+      "draft": true
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/design patterns/factory.md",
+      "type": "blog",
+      "count": 3,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/devops/gcp/aws-cloud-practiitioner.md",
+      "type": "blog",
+      "count": 3,
+      "draft": true
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/devops/gcp/cloud-scheduler.md",
+      "type": "blog",
+      "count": 3,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/devops/gcp/memory-store.md",
+      "type": "blog",
+      "count": 3,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/info-sec/over-the-wire-3-natas.md",
+      "type": "blog",
+      "count": 3,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/info-sec/vm tools.md",
+      "type": "blog",
+      "count": 3,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/system-design/build-db-cluster-docker.md",
+      "type": "blog",
+      "count": 3,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/system-design/process-deepdive.md",
+      "type": "blog",
+      "count": 3,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/kb/atom/CS/AI.md",
+      "type": "kb",
+      "count": 2,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/exchange/intro-5.md",
+      "type": "blog",
+      "count": 2,
+      "draft": true
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/finance/options/strategies/condor.md",
+      "type": "blog",
+      "count": 2,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/finance/terms/closed-ended-funds.md",
+      "type": "blog",
+      "count": 2,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/finance/terms/exchange-traded-funds.md",
+      "type": "blog",
+      "count": 2,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/finance/terms/open-ended-funds.md",
+      "type": "blog",
+      "count": 2,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/finance/terms/upside-downside.md",
+      "type": "blog",
+      "count": 2,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/leetcode/253-meeting-rooms-ii.md",
+      "type": "blog",
+      "count": 2,
+      "draft": true
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/leetcode/322-coin-change.md",
+      "type": "blog",
+      "count": 2,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/leetcode/70-climbing-stairs.md",
+      "type": "blog",
+      "count": 2,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/maths/calculus/fundamental-theorem-of-calculus.md",
+      "type": "blog",
+      "count": 2,
+      "draft": true
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/projects/royal-stock-exchange/3-portfolio.md",
+      "type": "blog",
+      "count": 2,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/bike-shedding.md",
+      "type": "blog",
+      "count": 2,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/data-structures-algorithms/pointers.md",
+      "type": "blog",
+      "count": 2,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/databases/pgadmin.md",
+      "type": "blog",
+      "count": 2,
+      "draft": true
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/databases/psql.md",
+      "type": "blog",
+      "count": 2,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/databases/sql/alter-tables.md",
+      "type": "blog",
+      "count": 2,
+      "draft": true
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/databases/sql/clone-db.md",
+      "type": "blog",
+      "count": 2,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/databases/sql/remote-clone-to-local.md",
+      "type": "blog",
+      "count": 2,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/frameworks/flutter/navigators.md",
+      "type": "blog",
+      "count": 2,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/frameworks/flutter/semantic-stoic.md",
+      "type": "blog",
+      "count": 2,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/info-sec/over-the-wire-0-intro.md",
+      "type": "blog",
+      "count": 2,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/languages/python/heapq.md",
+      "type": "blog",
+      "count": 2,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/languages/python/uv-package-manager.md",
+      "type": "blog",
+      "count": 2,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/languages/ruby/ruby-lambda.md",
+      "type": "blog",
+      "count": 2,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/system-design/flutter-netlify-deploy.md",
+      "type": "blog",
+      "count": 2,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/TEST/MDX.mdx",
+      "type": "blog",
+      "count": 1,
+      "draft": true
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/TEST/code-tab-groups.md",
+      "type": "blog",
+      "count": 1,
+      "draft": true
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/ai/ai-search-agent.md",
+      "type": "blog",
+      "count": 1,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/ai/vibe-coders.md",
+      "type": "blog",
+      "count": 1,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/books/DSA python.md",
+      "type": "blog",
+      "count": 1,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/cheatsheets/expo.md",
+      "type": "blog",
+      "count": 1,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/exchange/intro-7.md",
+      "type": "blog",
+      "count": 1,
+      "draft": true
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/finance/formulas.md",
+      "type": "blog",
+      "count": 1,
+      "draft": true
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/finance/indicators/implied-volatility-rank.md",
+      "type": "blog",
+      "count": 1,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/finance/options/open-interest.md",
+      "type": "blog",
+      "count": 1,
+      "draft": true
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/finance/options/strategies/spreads.md",
+      "type": "blog",
+      "count": 1,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/finance/options/strategies/strangle.md",
+      "type": "blog",
+      "count": 1,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/finance/options/volume.md",
+      "type": "blog",
+      "count": 1,
+      "draft": true
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/finance/quant/crash-course.md",
+      "type": "blog",
+      "count": 1,
+      "draft": true
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/finance/stock-market-size.md",
+      "type": "blog",
+      "count": 1,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/finance/thesis-jaime.md",
+      "type": "blog",
+      "count": 1,
+      "draft": true
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/finance/trading/25-10-02-dkng-cds.md",
+      "type": "blog",
+      "count": 1,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/leetcode/239-sliding-window-maximum.md",
+      "type": "blog",
+      "count": 1,
+      "draft": true
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/leetcode/252-meeting-rooms.md",
+      "type": "blog",
+      "count": 1,
+      "draft": true
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/leetcode/261-graph-valid-tree.md",
+      "type": "blog",
+      "count": 1,
+      "draft": true
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/maths/calculus/calculus-2/calculus-2.md",
+      "type": "blog",
+      "count": 1,
+      "draft": true
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/maths/combinatorics/combinatorics.md",
+      "type": "blog",
+      "count": 1,
+      "draft": true
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/projects/bakesuite.md",
+      "type": "blog",
+      "count": 1,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/projects/royal-stock-exchange/1-intro.md",
+      "type": "blog",
+      "count": 1,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/projects/royal-stock-exchange/5-demo.md",
+      "type": "blog",
+      "count": 1,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/questions/complexity.md",
+      "type": "blog",
+      "count": 1,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/questions/leadership.md",
+      "type": "blog",
+      "count": 1,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/data-structures-algorithms/algorithms/priority-queue.md",
+      "type": "blog",
+      "count": 1,
+      "draft": true
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/databases/sql/procedures-list.md",
+      "type": "blog",
+      "count": 1,
+      "draft": true
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/frameworks/flutter/flutter android customize app icon.md",
+      "type": "blog",
+      "count": 1,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/frameworks/flutter/flutter lacks webview support.md",
+      "type": "blog",
+      "count": 1,
+      "draft": true
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/frameworks/flutter/flutter-poker-1.md",
+      "type": "blog",
+      "count": 1,
+      "draft": true
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/git/partial-add.md",
+      "type": "blog",
+      "count": 1,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/languages/python/flask-hot-reload.md",
+      "type": "blog",
+      "count": 1,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/mobile requirements.md",
+      "type": "blog",
+      "count": 1,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/sprints.md",
+      "type": "blog",
+      "count": 1,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/system-design/1-ticketmaster.md",
+      "type": "blog",
+      "count": 1,
+      "draft": true
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/system-design/system-design-distributed-systems.md",
+      "type": "blog",
+      "count": 1,
+      "draft": false
+    }
+  ],
+  "termsinclusion-exclusion-principle": [],
+  "termsincome-statement": [],
+  "termsincreasing-function": [],
+  "termsincremental-builds": [],
+  "termsincremental-static-regeneration": [],
+  "termsindefinite-integral": [],
+  "termsindex-investing": [],
+  "termsindex-optimization": [],
+  "termsindex": [
+    {
+      "file": "/Users/future/l.blog/data/blog/software/frameworks/flutter/navigators.md",
+      "type": "blog",
+      "count": 14,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/finance/terms/index-fund.md",
+      "type": "blog",
+      "count": 13,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/data-structures-algorithms/hash-table.md",
+      "type": "blog",
+      "count": 8,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/projects/royal-stock-exchange/4-scaling.md",
+      "type": "blog",
+      "count": 4,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/frameworks/flutter/flutter-tiktok-1.md",
+      "type": "blog",
+      "count": 4,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/finance/futures.md",
+      "type": "blog",
+      "count": 3,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/leetcode/1-two-sum.md",
+      "type": "blog",
+      "count": 3,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/leetcode/322-coin-change.md",
+      "type": "blog",
+      "count": 3,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/frameworks/flutter/flutter-tiktok-2.md",
+      "type": "blog",
+      "count": 3,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/system-design/system-design-auditing.md",
+      "type": "blog",
+      "count": 3,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/TEST/introducing-tailwind-nextjs-starter-blog.mdx",
+      "type": "blog",
+      "count": 2,
+      "draft": true
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/finance/terms/mutual-funds.md",
+      "type": "blog",
+      "count": 2,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/finance/terms/quadruple-witching.md",
+      "type": "blog",
+      "count": 2,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/data-structures-algorithms/algorithms/sorting.md",
+      "type": "blog",
+      "count": 2,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/databases/nosql/mongodb.md",
+      "type": "blog",
+      "count": 2,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/databases/sql/indexes.md",
+      "type": "blog",
+      "count": 2,
+      "draft": true
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/databases/sql/optimization.md",
+      "type": "blog",
+      "count": 2,
+      "draft": true
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/design patterns/decorator.md",
+      "type": "blog",
+      "count": 2,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/devops/gcp/aws-cloud-practiitioner.md",
+      "type": "blog",
+      "count": 2,
+      "draft": true
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/finance/formulas.md",
+      "type": "blog",
+      "count": 1,
+      "draft": true
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/finance/index.md",
+      "type": "blog",
+      "count": 1,
+      "draft": true
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/finance/indicators/leading-and-lagging-indicators.md",
+      "type": "blog",
+      "count": 1,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/finance/indicators/relative-strength-index.md",
+      "type": "blog",
+      "count": 1,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/finance/options/strategies/condor.md",
+      "type": "blog",
+      "count": 1,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/finance/options/strategies/trading-strategies.md",
+      "type": "blog",
+      "count": 1,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/leetcode/16-3-sum-closest.md",
+      "type": "blog",
+      "count": 1,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/leetcode/217-contains-duplicate.md",
+      "type": "blog",
+      "count": 1,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/computer-organization.md",
+      "type": "blog",
+      "count": 1,
+      "draft": true
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/data-structures-algorithms/cheatsheet.md",
+      "type": "blog",
+      "count": 1,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/data-structures-algorithms/dynamic-programming.md",
+      "type": "blog",
+      "count": 1,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/data-structures-algorithms/graph-theory.md",
+      "type": "blog",
+      "count": 1,
+      "draft": true
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/databases/sql/1_toc.md",
+      "type": "blog",
+      "count": 1,
+      "draft": true
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/info-sec/over-the-wire-3-natas.md",
+      "type": "blog",
+      "count": 1,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/languages/python/django.md",
+      "type": "blog",
+      "count": 1,
+      "draft": true
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/system-design/0-template.md",
+      "type": "blog",
+      "count": 1,
+      "draft": true
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/system-design/1-data-science.md",
+      "type": "blog",
+      "count": 1,
+      "draft": true
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/system-design/1-ticketmaster.md",
+      "type": "blog",
+      "count": 1,
+      "draft": true
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/system-design/microservices.md",
+      "type": "blog",
+      "count": 1,
+      "draft": false
+    }
+  ],
+  "termsindexes": [
+    {
+      "file": "/Users/future/l.blog/data/blog/finance/terms/index-fund.md",
+      "type": "blog",
+      "count": 2,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/data-structures-algorithms/algorithms/sorting.md",
+      "type": "blog",
+      "count": 2,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/databases/sql/1_toc.md",
+      "type": "blog",
+      "count": 2,
+      "draft": true
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/projects/royal-stock-exchange/4-scaling.md",
+      "type": "blog",
+      "count": 1,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/databases/sql/optimization.md",
+      "type": "blog",
+      "count": 1,
+      "draft": true
+    }
+  ],
+  "termsindexing": [
+    {
+      "file": "/Users/future/l.blog/data/blog/projects/royal-stock-exchange/4-scaling.md",
+      "type": "blog",
+      "count": 8,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/databases/psql.md",
+      "type": "blog",
+      "count": 1,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/languages/rust/rust-projects.md",
+      "type": "blog",
+      "count": 1,
+      "draft": true
+    }
+  ],
+  "termsinduction": [],
+  "termsinductive-reasoning": [],
+  "termsinductive-step": [],
+  "termsinference-rules": [],
+  "termsinference": [
+    {
+      "file": "/Users/future/l.blog/data/kb/atom/CS/AI.md",
+      "type": "kb",
+      "count": 3,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/finance/quant/statistics.md",
+      "type": "blog",
+      "count": 2,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/finance/quant/maths.md",
+      "type": "blog",
+      "count": 1,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/leetcode/70-climbing-stairs.md",
+      "type": "blog",
+      "count": 1,
+      "draft": false
+    }
+  ],
+  "termsinfinite-limit": [],
+  "termsinflation": [
+    {
+      "file": "/Users/future/l.blog/data/blog/finance/indicators/leading-and-lagging-indicators.md",
+      "type": "blog",
+      "count": 1,
+      "draft": false
+    }
+  ],
+  "termsinflection-point": [],
+  "termsinformation-hiding": [
+    {
+      "file": "/Users/future/l.blog/data/blog/software/data-structures-algorithms/OOP.md",
+      "type": "blog",
+      "count": 1,
+      "draft": false
+    }
+  ],
+  "termsingress-controller": [],
+  "termsingress": [],
+  "termsinheritance": [
+    {
+      "file": "/Users/future/l.blog/data/blog/software/data-structures-algorithms/OOP.md",
+      "type": "blog",
+      "count": 7,
+      "draft": false
+    }
+  ],
+  "termsinit-system": [],
+  "termsinitial-conditions": [],
+  "termsinitial-state": [],
+  "termsinjective": [],
+  "termsinkwell": [],
+  "termsinline-styles": [],
+  "termsinner-join": [
+    {
+      "file": "/Users/future/l.blog/data/blog/software/databases/sql/1_toc.md",
+      "type": "blog",
+      "count": 1,
+      "draft": true
+    }
+  ],
+  "termsinode": [],
+  "termsinorder-traversal": [
+    {
+      "file": "/Users/future/l.blog/data/blog/software/data-structures-algorithms/graph-theory.md",
+      "type": "blog",
+      "count": 1,
+      "draft": true
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/data-structures-algorithms/trees.md",
+      "type": "blog",
+      "count": 1,
+      "draft": true
+    }
+  ],
+  "termsinsert": [
+    {
+      "file": "/Users/future/l.blog/data/blog/software/system-design/SQL Server Setup.md",
+      "type": "blog",
+      "count": 5,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/projects/royal-stock-exchange/2-seeding data.md",
+      "type": "blog",
+      "count": 4,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/data-structures-algorithms/hash-table.md",
+      "type": "blog",
+      "count": 4,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/databases/nosql/mongodb.md",
+      "type": "blog",
+      "count": 2,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/databases/sql/1_toc.md",
+      "type": "blog",
+      "count": 2,
+      "draft": true
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/system-design/build-db-cluster-docker.md",
+      "type": "blog",
+      "count": 2,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/exchange/intro-3.md",
+      "type": "blog",
+      "count": 1,
+      "draft": true
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/exchange/intro-4.md",
+      "type": "blog",
+      "count": 1,
+      "draft": true
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/data-structures-algorithms/algorithms/sorting.md",
+      "type": "blog",
+      "count": 1,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/data-structures-algorithms/graph-theory.md",
+      "type": "blog",
+      "count": 1,
+      "draft": true
+    }
+  ],
+  "termsinsertion-sort": [
+    {
+      "file": "/Users/future/l.blog/data/blog/software/data-structures-algorithms/algorithms/sorting.md",
+      "type": "blog",
+      "count": 4,
+      "draft": false
+    }
+  ],
+  "termsinspect-container-state": [],
+  "termsinstance": [
+    {
+      "file": "/Users/future/l.blog/data/blog/software/design patterns/singleton.md",
+      "type": "blog",
+      "count": 12,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/TEST/the-time-machine.mdx",
+      "type": "blog",
+      "count": 4,
+      "draft": true
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/devops/gcp/memory-store.md",
+      "type": "blog",
+      "count": 4,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/frameworks/flutter/flutter-tiktok-2.md",
+      "type": "blog",
+      "count": 2,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/system-design/build-db-cluster-docker.md",
+      "type": "blog",
+      "count": 2,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/data-structures-algorithms/OOP.md",
+      "type": "blog",
+      "count": 1,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/design patterns/decorator.md",
+      "type": "blog",
+      "count": 1,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/devops/gcp/cloud-sql-commands.md",
+      "type": "blog",
+      "count": 1,
+      "draft": true
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/devops/gcp/vcp-connectors.md",
+      "type": "blog",
+      "count": 1,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/frameworks/flutter/flutter-tiktok-1.md",
+      "type": "blog",
+      "count": 1,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/frameworks/logging-app-load-times-with-firebase.md",
+      "type": "blog",
+      "count": 1,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/languages/dart/handling-nullable-fields.md",
+      "type": "blog",
+      "count": 1,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/system-design/system-design-auditing.md",
+      "type": "blog",
+      "count": 1,
+      "draft": false
+    }
+  ],
+  "termsinstruction-layers": [],
+  "termsintegral-test": [],
+  "termsintegration-by-parts": [
+    {
+      "file": "/Users/future/l.blog/data/blog/maths/calculus/calculus-2/calculus-2.md",
+      "type": "blog",
+      "count": 1,
+      "draft": true
+    }
+  ],
+  "termsinter-container-communication": [],
+  "termsinterest-rate-risk": [],
+  "termsinterest-rates": [
+    {
+      "file": "/Users/future/l.blog/data/blog/finance/federal-reserve-vs-treasury-department.md",
+      "type": "blog",
+      "count": 2,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/finance/options/greeks.md",
+      "type": "blog",
+      "count": 2,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/finance/index.md",
+      "type": "blog",
+      "count": 1,
+      "draft": true
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/finance/indicators/leading-and-lagging-indicators.md",
+      "type": "blog",
+      "count": 1,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/finance/quant/symbols.md",
+      "type": "blog",
+      "count": 1,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/finance/terms/extrinsic-value.md",
+      "type": "blog",
+      "count": 1,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/finance/toc.md",
+      "type": "blog",
+      "count": 1,
+      "draft": true
+    }
+  ],
+  "termsinterface-segregation-principle": [],
+  "termsinterface": [
+    {
+      "file": "/Users/future/l.blog/data/blog/software/data-structures-algorithms/OOP.md",
+      "type": "blog",
+      "count": 6,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/design patterns/factory.md",
+      "type": "blog",
+      "count": 3,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/design patterns/repository.md",
+      "type": "blog",
+      "count": 3,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/system-design/process-overview.md",
+      "type": "blog",
+      "count": 3,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/TEST/code-tab-groups.md",
+      "type": "blog",
+      "count": 2,
+      "draft": true
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/same-problems-different-tools.md",
+      "type": "blog",
+      "count": 1,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/design patterns/decorator.md",
+      "type": "blog",
+      "count": 1,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/system-design/system-design-auditing.md",
+      "type": "blog",
+      "count": 1,
+      "draft": false
+    }
+  ],
+  "termsinterfaces": [
+    {
+      "file": "/Users/future/l.blog/data/blog/exchange/intro-7.md",
+      "type": "blog",
+      "count": 2,
+      "draft": true
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/exchange/intro-3.md",
+      "type": "blog",
+      "count": 1,
+      "draft": true
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/exchange/intro-6.md",
+      "type": "blog",
+      "count": 1,
+      "draft": true
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/same-problems-different-tools.md",
+      "type": "blog",
+      "count": 1,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/data-structures-algorithms/OOP.md",
+      "type": "blog",
+      "count": 1,
+      "draft": false
+    }
+  ],
+  "termsinternal-validity": [],
+  "termsinternet": [
+    {
+      "file": "/Users/future/l.blog/data/blog/software/devops/gcp/vcp-connectors.md",
+      "type": "blog",
+      "count": 2,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/frameworks/flutter/android connectivity issues - connection refused.md",
+      "type": "blog",
+      "count": 2,
+      "draft": false
+    }
+  ],
+  "termsinterquartile-range": [],
+  "termsintersection": [
+    {
+      "file": "/Users/future/l.blog/data/blog/maths/discrete-symbols.md",
+      "type": "blog",
+      "count": 2,
+      "draft": false
+    }
+  ],
+  "termsinterval-estimation": [],
+  "termsinterval-scheduling": [],
+  "termsinverse-function": [],
+  "termsinverse": [
+    {
+      "file": "/Users/future/l.blog/data/blog/maths/calculus/fundamental-theorem-of-calculus.md",
+      "type": "blog",
+      "count": 3,
+      "draft": true
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/finance/quant/maths.md",
+      "type": "blog",
+      "count": 1,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/finance/terms/upside-downside.md",
+      "type": "blog",
+      "count": 1,
+      "draft": false
+    }
+  ],
+  "termsios-integration": [],
+  "termsios": [
+    {
+      "file": "/Users/future/l.blog/data/blog/software/system-design/appium-mocha.md",
+      "type": "blog",
+      "count": 12,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/cheatsheets/expo.md",
+      "type": "blog",
+      "count": 7,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/mobile requirements.md",
+      "type": "blog",
+      "count": 4,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/system-design/firebase environments.md",
+      "type": "blog",
+      "count": 3,
+      "draft": true
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/projects/royal-stock-exchange/5-demo.md",
+      "type": "blog",
+      "count": 2,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/frameworks/flutter/flutter lacks webview support.md",
+      "type": "blog",
+      "count": 2,
+      "draft": true
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/frameworks/logging-app-load-times-with-firebase.md",
+      "type": "blog",
+      "count": 2,
+      "draft": false
+    }
+  ],
+  "termsiostat": [],
+  "termsiot-data-storage": [],
+  "termsip-address": [
+    {
+      "file": "/Users/future/l.blog/data/blog/software/databases/sql/remote-clone-to-local.md",
+      "type": "blog",
+      "count": 1,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/devops/gcp/memory-store.md",
+      "type": "blog",
+      "count": 1,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/frameworks/flutter/android connectivity issues - connection refused.md",
+      "type": "blog",
+      "count": 1,
+      "draft": false
+    }
+  ],
+  "termsipo": [
+    {
+      "file": "/Users/future/l.blog/data/blog/finance/RDO.md",
+      "type": "blog",
+      "count": 7,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/finance/IPO.md",
+      "type": "blog",
+      "count": 6,
+      "draft": true
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/finance/terms/closed-ended-funds.md",
+      "type": "blog",
+      "count": 2,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/finance/terms/secondary-market.md",
+      "type": "blog",
+      "count": 1,
+      "draft": false
+    }
+  ],
+  "termsis-null": [
+    {
+      "file": "/Users/future/l.blog/data/blog/software/design patterns/decorator.md",
+      "type": "blog",
+      "count": 1,
+      "draft": false
+    }
+  ],
+  "termsisolation": [
+    {
+      "file": "/Users/future/l.blog/data/kb/atom/CS/git-worktree-git-submodule-git-monorepo.md",
+      "type": "kb",
+      "count": 2,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/finance/indicators/put-call-ratio.md",
+      "type": "blog",
+      "count": 1,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/devops/gcp/cloud-run.md",
+      "type": "blog",
+      "count": 1,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/devops/gcp/vcp-connectors.md",
+      "type": "blog",
+      "count": 1,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/system-design/process-overview.md",
+      "type": "blog",
+      "count": 1,
+      "draft": false
+    }
+  ],
+  "termsisr": [
+    {
+      "file": "/Users/future/l.blog/data/kb/atom/CS/page-router-vs-app-router.md",
+      "type": "kb",
+      "count": 2,
+      "draft": false
+    }
+  ],
+  "termsiterated-integral": [],
+  "termsjacobian": [],
+  "termsjamstack": [],
+  "termsjavascript": [
+    {
+      "file": "/Users/future/l.blog/data/blog/leetcode/121-best-time-to-sell-stock.md",
+      "type": "blog",
+      "count": 4,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/leetcode/200-number-of-islands.md",
+      "type": "blog",
+      "count": 4,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/leetcode/217-contains-duplicate.md",
+      "type": "blog",
+      "count": 4,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/data-structures-algorithms/algorithms/sorting-old.md",
+      "type": "blog",
+      "count": 4,
+      "draft": true
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/TEST/TEST-TERMS.md",
+      "type": "blog",
+      "count": 3,
+      "draft": true
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/leetcode/1-two-sum.md",
+      "type": "blog",
+      "count": 3,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/leetcode/16-3-sum-closest.md",
+      "type": "blog",
+      "count": 3,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/leetcode/70-climbing-stairs.md",
+      "type": "blog",
+      "count": 2,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/info-sec/xss.md",
+      "type": "blog",
+      "count": 2,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/system-design/microservices.md",
+      "type": "blog",
+      "count": 2,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/TEST/MDX.mdx",
+      "type": "blog",
+      "count": 1,
+      "draft": true
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/TEST/code-tab-groups.md",
+      "type": "blog",
+      "count": 1,
+      "draft": true
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/TEST/guide-to-using-images-in-nextjs.mdx",
+      "type": "blog",
+      "count": 1,
+      "draft": true
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/leetcode/238-product-of-array-except-self.md",
+      "type": "blog",
+      "count": 1,
+      "draft": true
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/leetcode/252-meeting-rooms.md",
+      "type": "blog",
+      "count": 1,
+      "draft": true
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/leetcode/253-meeting-rooms-ii.md",
+      "type": "blog",
+      "count": 1,
+      "draft": true
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/leetcode/261-graph-valid-tree.md",
+      "type": "blog",
+      "count": 1,
+      "draft": true
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/design patterns/factory.md",
+      "type": "blog",
+      "count": 1,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/design patterns/observer.md",
+      "type": "blog",
+      "count": 1,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/design patterns/repository.md",
+      "type": "blog",
+      "count": 1,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/design patterns/singleton.md",
+      "type": "blog",
+      "count": 1,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/languages/js/js-1.md",
+      "type": "blog",
+      "count": 1,
+      "draft": true
+    }
+  ],
+  "termsjest": [],
+  "termsjob": [
+    {
+      "file": "/Users/future/l.blog/data/blog/software/devops/gcp/cloud-run-job.md",
+      "type": "blog",
+      "count": 12,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/devops/gcp/cloud-scheduler.md",
+      "type": "blog",
+      "count": 7,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/info-sec/over-the-wire-1-bandit.md",
+      "type": "blog",
+      "count": 6,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/system-design/SQL Server Setup.md",
+      "type": "blog",
+      "count": 6,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/system-design/build-message-queue.md",
+      "type": "blog",
+      "count": 2,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/same-problems-different-tools.md",
+      "type": "blog",
+      "count": 1,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/system-design/automated-tasks.md",
+      "type": "blog",
+      "count": 1,
+      "draft": true
+    }
+  ],
+  "termsjoin-condition": [],
+  "termsjoin-keys": [],
+  "termsjoins-vs-denormalization": [],
+  "termsjoins": [
+    {
+      "file": "/Users/future/l.blog/data/blog/software/databases/sql/1_toc.md",
+      "type": "blog",
+      "count": 2,
+      "draft": true
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/system-design/process-deepdive.md",
+      "type": "blog",
+      "count": 1,
+      "draft": false
+    }
+  ],
+  "termsjournalctl": [],
+  "termsjs-runtime": [],
+  "termsjson-document": [],
+  "termsjsx": [
+    {
+      "file": "/Users/future/l.blog/data/blog/TEST/introducing-tailwind-nextjs-starter-blog.mdx",
+      "type": "blog",
+      "count": 2,
+      "draft": true
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/TEST/pictures-of-canada.mdx",
+      "type": "blog",
+      "count": 1,
+      "draft": true
+    }
+  ],
+  "termsjwt": [
+    {
+      "file": "/Users/future/l.blog/data/blog/software/system-design/system-design-auditing.md",
+      "type": "blog",
+      "count": 4,
+      "draft": false
+    }
+  ],
+  "termsk-fold-cross-validation": [],
+  "termsk-means-clustering": [],
+  "termsk-nearest-neighbors": [],
+  "termskernel": [
+    {
+      "file": "/Users/future/l.blog/data/blog/finance/high-frequency-trading.md",
+      "type": "blog",
+      "count": 12,
+      "draft": true
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/languages/rust/rust-projects.md",
+      "type": "blog",
+      "count": 3,
+      "draft": true
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/finance/quant/statistics.md",
+      "type": "blog",
+      "count": 1,
+      "draft": false
+    }
+  ],
+  "termskey-based-authentication": [],
+  "termskey-value-store": [],
+  "termskill": [
+    {
+      "file": "/Users/future/l.blog/data/blog/finance/high-frequency-trading.md",
+      "type": "blog",
+      "count": 1,
+      "draft": true
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/projects/royal-stock-exchange/3-portfolio.md",
+      "type": "blog",
+      "count": 1,
+      "draft": false
+    }
+  ],
+  "termskind": [
+    {
+      "file": "/Users/future/l.blog/data/blog/books/12.the-thing-you-can-see-only-when-you-slow-down.md",
+      "type": "blog",
+      "count": 2,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/exchange/intro-3.md",
+      "type": "blog",
+      "count": 2,
+      "draft": true
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/TEST/the-time-machine.mdx",
+      "type": "blog",
+      "count": 1,
+      "draft": true
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/languages/rust/rust-projects.md",
+      "type": "blog",
+      "count": 1,
+      "draft": true
+    }
+  ],
+  "termskmp-algorithm": [],
+  "termsknapsack-problem": [],
+  "termsknowledge-base": [
+    {
+      "file": "/Users/future/l.blog/data/kb/KB-TOC.md",
+      "type": "kb",
+      "count": 1,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/finance/thesis-jaime.md",
+      "type": "blog",
+      "count": 1,
+      "draft": true
+    }
+  ],
+  "termsknowledge-representation": [],
+  "termskruskal-algorithm": [],
+  "termskube-proxy": [],
+  "termskubectl-apply": [],
+  "termskubectl": [
+    {
+      "file": "/Users/future/l.blog/data/blog/cheatsheets/kubernetes.md",
+      "type": "blog",
+      "count": 13,
+      "draft": false
+    }
+  ],
+  "termskubelet-runs-container": [],
+  "termskubelet": [],
+  "termskubernetes-networking-model": [],
+  "termskubernetes-node-base": [],
+  "termskubernetes": [
+    {
+      "file": "/Users/future/l.blog/data/blog/cheatsheets/kubernetes.md",
+      "type": "blog",
+      "count": 1,
+      "draft": false
+    }
+  ],
+  "termskurtosis": [
+    {
+      "file": "/Users/future/l.blog/data/blog/finance/quant/crash-course.md",
+      "type": "blog",
+      "count": 1,
+      "draft": true
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/finance/quant/statistics.md",
+      "type": "blog",
+      "count": 1,
+      "draft": false
+    }
+  ],
+  "termskustomize": [],
+  "termsl1-regularization": [],
+  "termsl2-regularization": [],
+  "termslabels": [
+    {
+      "file": "/Users/future/l.blog/data/blog/politics/1-go.md",
+      "type": "blog",
+      "count": 4,
+      "draft": true
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/politics/communism.md",
+      "type": "blog",
+      "count": 2,
+      "draft": true
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/design patterns/decorator.md",
+      "type": "blog",
+      "count": 1,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/devops/gcp/secret-manager.md",
+      "type": "blog",
+      "count": 1,
+      "draft": false
+    }
+  ],
+  "termslagrange-multipliers": [
+    {
+      "file": "/Users/future/l.blog/data/blog/finance/quant/calculus-for-quants.md",
+      "type": "blog",
+      "count": 1,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/finance/quant/crash-course.md",
+      "type": "blog",
+      "count": 1,
+      "draft": true
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/maths/calculus/calculus-3/calculus-3.md",
+      "type": "blog",
+      "count": 1,
+      "draft": true
+    }
+  ],
+  "termslanguage-model": [],
+  "termslaplacian": [],
+  "termslasso-regression": [],
+  "termslatent-spaces": [],
+  "termslayer-caching": [],
+  "termslayer-reuse": [],
+  "termslayer": [
+    {
+      "file": "/Users/future/l.blog/data/blog/projects/royal-stock-exchange/4-scaling.md",
+      "type": "blog",
+      "count": 3,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/system-design/process-overview.md",
+      "type": "blog",
+      "count": 3,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/projects/royal-stock-exchange/1-intro.md",
+      "type": "blog",
+      "count": 2,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/data-structures-algorithms/cheatsheet.md",
+      "type": "blog",
+      "count": 2,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/system-design/process-deepdive.md",
+      "type": "blog",
+      "count": 2,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/kb/atom/CS/page-router-vs-app-router.md",
+      "type": "kb",
+      "count": 1,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/ai/ai-as-fractals.md",
+      "type": "blog",
+      "count": 1,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/finance/high-frequency-trading.md",
+      "type": "blog",
+      "count": 1,
+      "draft": true
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/finance/toc.md",
+      "type": "blog",
+      "count": 1,
+      "draft": true
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/design patterns/decorator.md",
+      "type": "blog",
+      "count": 1,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/design patterns/repository.md",
+      "type": "blog",
+      "count": 1,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/info-sec/csrf.md",
+      "type": "blog",
+      "count": 1,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/system-design/system-design-auditing.md",
+      "type": "blog",
+      "count": 1,
+      "draft": false
+    }
+  ],
+  "termslayered-filesystem": [],
+  "termslayers": [
+    {
+      "file": "/Users/future/l.blog/data/kb/atom/CS/AI.md",
+      "type": "kb",
+      "count": 1,
+      "draft": false
+    }
+  ],
+  "termslayout-builder": [],
+  "termslayout-phase": [],
+  "termslayout-shift": [
+    {
+      "file": "/Users/future/l.blog/data/blog/TEST/guide-to-using-images-in-nextjs.mdx",
+      "type": "blog",
+      "count": 1,
+      "draft": true
+    }
+  ],
+  "termslayout": [
+    {
+      "file": "/Users/future/l.blog/data/kb/atom/CS/page-router-vs-app-router.md",
+      "type": "kb",
+      "count": 3,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/TEST/introducing-tailwind-nextjs-starter-blog.mdx",
+      "type": "blog",
+      "count": 3,
+      "draft": true
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/system-design/microservices.md",
+      "type": "blog",
+      "count": 2,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/TEST/guide-to-using-images-in-nextjs.mdx",
+      "type": "blog",
+      "count": 1,
+      "draft": true
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/finance/high-frequency-trading.md",
+      "type": "blog",
+      "count": 1,
+      "draft": true
+    }
+  ],
+  "termslazy-loading": [
+    {
+      "file": "/Users/future/l.blog/data/blog/TEST/guide-to-using-images-in-nextjs.mdx",
+      "type": "blog",
+      "count": 1,
+      "draft": true
+    }
+  ],
+  "termslazy-rendering": [],
+  "termslca": [],
+  "termslcp": [],
+  "termsleader-follower-model": [],
+  "termsleaf-node": [],
+  "termsleast-privilege": [],
+  "termsleast-squares": [
+    {
+      "file": "/Users/future/l.blog/data/blog/TEST/deriving-ols-estimator.mdx",
+      "type": "blog",
+      "count": 1,
+      "draft": true
+    }
+  ],
+  "termsleft-join": [
+    {
+      "file": "/Users/future/l.blog/data/blog/software/databases/sql/1_toc.md",
+      "type": "blog",
+      "count": 1,
+      "draft": true
+    }
+  ],
+  "termslemmatization": [],
+  "termslevel-curves": [],
+  "termslevel-order-traversal": [
+    {
+      "file": "/Users/future/l.blog/data/blog/software/data-structures-algorithms/graph-theory.md",
+      "type": "blog",
+      "count": 1,
+      "draft": true
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/data-structures-algorithms/trees.md",
+      "type": "blog",
+      "count": 1,
+      "draft": true
+    }
+  ],
+  "termslifting-state-up": [],
+  "termslike": [
+    {
+      "file": "/Users/future/l.blog/data/blog/software/languages/rust/rust-projects.md",
+      "type": "blog",
+      "count": 7,
+      "draft": true
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/system-design/process-overview.md",
+      "type": "blog",
+      "count": 7,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/devops/gcp/aws-cloud-practiitioner.md",
+      "type": "blog",
+      "count": 5,
+      "draft": true
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/finance/options/strategies/introduction.md",
+      "type": "blog",
+      "count": 4,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/finance/terms/index-fund.md",
+      "type": "blog",
+      "count": 4,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/projects/royal-stock-exchange/4-scaling.md",
+      "type": "blog",
+      "count": 4,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/git/pre-commit.md",
+      "type": "blog",
+      "count": 4,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/ai/ai-as-fractals.md",
+      "type": "blog",
+      "count": 3,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/finance/quant/crash-course.md",
+      "type": "blog",
+      "count": 3,
+      "draft": true
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/projects/royal-stock-exchange/3-portfolio.md",
+      "type": "blog",
+      "count": 3,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/system-design/build-backend-api.md",
+      "type": "blog",
+      "count": 3,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/TEST/github-markdown-guide.mdx",
+      "type": "blog",
+      "count": 2,
+      "draft": true
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/TEST/guide-to-using-images-in-nextjs.mdx",
+      "type": "blog",
+      "count": 2,
+      "draft": true
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/TEST/introducing-tailwind-nextjs-starter-blog.mdx",
+      "type": "blog",
+      "count": 2,
+      "draft": true
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/finance/indicators/implied-volatility-rank.md",
+      "type": "blog",
+      "count": 2,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/finance/indicators/leading-and-lagging-indicators.md",
+      "type": "blog",
+      "count": 2,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/opinions/why-flutter-is-better-than-react-native.md",
+      "type": "blog",
+      "count": 2,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/databases/sql/1_toc.md",
+      "type": "blog",
+      "count": 2,
+      "draft": true
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/languages/dart/handling-nullable-fields.md",
+      "type": "blog",
+      "count": 2,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/languages/go/go-routines.md",
+      "type": "blog",
+      "count": 2,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/system-design/graphql.md",
+      "type": "blog",
+      "count": 2,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/system-design/system-design-distributed-systems.md",
+      "type": "blog",
+      "count": 2,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/kb/atom/CS/AI.md",
+      "type": "kb",
+      "count": 1,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/kb/atom/CS/git-worktree-git-submodule-git-monorepo.md",
+      "type": "kb",
+      "count": 1,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/TEST/TEST-TERMS.md",
+      "type": "blog",
+      "count": 1,
+      "draft": true
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/books/DSA python.md",
+      "type": "blog",
+      "count": 1,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/exchange/intro-3.md",
+      "type": "blog",
+      "count": 1,
+      "draft": true
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/exchange/intro-5.md",
+      "type": "blog",
+      "count": 1,
+      "draft": true
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/finance/high-frequency-trading.md",
+      "type": "blog",
+      "count": 1,
+      "draft": true
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/finance/index.md",
+      "type": "blog",
+      "count": 1,
+      "draft": true
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/finance/indicators/premium-flow-with-z-scores.md",
+      "type": "blog",
+      "count": 1,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/finance/options/strategies/straddle.md",
+      "type": "blog",
+      "count": 1,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/finance/options/strategies/trading-strategies.md",
+      "type": "blog",
+      "count": 1,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/finance/terms/closed-ended-funds.md",
+      "type": "blog",
+      "count": 1,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/finance/terms/exchange-traded-funds.md",
+      "type": "blog",
+      "count": 1,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/finance/terms/extrinsic-value.md",
+      "type": "blog",
+      "count": 1,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/finance/terms/intrinsic-value.md",
+      "type": "blog",
+      "count": 1,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/finance/terms/secondary-market.md",
+      "type": "blog",
+      "count": 1,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/finance/toc.md",
+      "type": "blog",
+      "count": 1,
+      "draft": true
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/leetcode/16-3-sum-closest.md",
+      "type": "blog",
+      "count": 1,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/leetcode/217-contains-duplicate.md",
+      "type": "blog",
+      "count": 1,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/politics/1-go.md",
+      "type": "blog",
+      "count": 1,
+      "draft": true
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/politics/communism.md",
+      "type": "blog",
+      "count": 1,
+      "draft": true
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/same-problems-different-tools.md",
+      "type": "blog",
+      "count": 1,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/data-structures-algorithms/OOP.md",
+      "type": "blog",
+      "count": 1,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/data-structures-algorithms/patterns-graph.md",
+      "type": "blog",
+      "count": 1,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/data-structures-algorithms/priority-queue.md",
+      "type": "blog",
+      "count": 1,
+      "draft": true
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/databases/nosql/mongodb.md",
+      "type": "blog",
+      "count": 1,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/databases/psql.md",
+      "type": "blog",
+      "count": 1,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/demos-not-memos.md",
+      "type": "blog",
+      "count": 1,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/design patterns/decorator.md",
+      "type": "blog",
+      "count": 1,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/design patterns/singleton.md",
+      "type": "blog",
+      "count": 1,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/devops/gcp/cloud-build-triggers.md",
+      "type": "blog",
+      "count": 1,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/devops/gcp/cloud-run-job.md",
+      "type": "blog",
+      "count": 1,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/devops/gcp/secret-manager.md",
+      "type": "blog",
+      "count": 1,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/devops/gcp/vcp-connectors.md",
+      "type": "blog",
+      "count": 1,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/frameworks/flutter/android connectivity issues - connection refused.md",
+      "type": "blog",
+      "count": 1,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/frameworks/next/introducing-multi-part-posts-with-nested-routing.md",
+      "type": "blog",
+      "count": 1,
+      "draft": true
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/git/partial-add.md",
+      "type": "blog",
+      "count": 1,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/info-sec/csrf.md",
+      "type": "blog",
+      "count": 1,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/info-sec/over-the-wire-0-intro.md",
+      "type": "blog",
+      "count": 1,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/info-sec/over-the-wire-2-leviathan.md",
+      "type": "blog",
+      "count": 1,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/info-sec/vm tools.md",
+      "type": "blog",
+      "count": 1,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/info-sec/xss.md",
+      "type": "blog",
+      "count": 1,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/languages/java/java-spring.md",
+      "type": "blog",
+      "count": 1,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/system-design/appium-mocha.md",
+      "type": "blog",
+      "count": 1,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/system-design/process-deepdive.md",
+      "type": "blog",
+      "count": 1,
+      "draft": false
+    }
+  ],
+  "termslikelihood": [
+    {
+      "file": "/Users/future/l.blog/data/blog/finance/quant/maths.md",
+      "type": "blog",
+      "count": 1,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/finance/quant/statistics.md",
+      "type": "blog",
+      "count": 1,
+      "draft": false
+    }
+  ],
+  "termslimit-laws": [],
+  "termslimit-of-sequence": [],
+  "termslimit": [
+    {
+      "file": "/Users/future/l.blog/data/blog/maths/calculus/intro.md",
+      "type": "blog",
+      "count": 4,
+      "draft": true
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/databases/sql/1_toc.md",
+      "type": "blog",
+      "count": 3,
+      "draft": true
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/databases/sql/lag.md",
+      "type": "blog",
+      "count": 2,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/finance/index.md",
+      "type": "blog",
+      "count": 1,
+      "draft": true
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/finance/options/strategies/introduction.md",
+      "type": "blog",
+      "count": 1,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/finance/options/strategies/spreads.md",
+      "type": "blog",
+      "count": 1,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/finance/quant/crash-course.md",
+      "type": "blog",
+      "count": 1,
+      "draft": true
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/finance/quant/slippage.md",
+      "type": "blog",
+      "count": 1,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/finance/quant/statistics.md",
+      "type": "blog",
+      "count": 1,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/maths/calculus/calculus-1/calculus-1.md",
+      "type": "blog",
+      "count": 1,
+      "draft": true
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/projects/royal-stock-exchange/2-seeding data.md",
+      "type": "blog",
+      "count": 1,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/projects/royal-stock-exchange/4-scaling.md",
+      "type": "blog",
+      "count": 1,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/design patterns/decorator.md",
+      "type": "blog",
+      "count": 1,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/system-design/graphql.md",
+      "type": "blog",
+      "count": 1,
+      "draft": false
+    }
+  ],
+  "termslinear-algebra": [
+    {
+      "file": "/Users/future/l.blog/data/blog/finance/quant/maths.md",
+      "type": "blog",
+      "count": 3,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/finance/quant/crash-course.md",
+      "type": "blog",
+      "count": 1,
+      "draft": true
+    }
+  ],
+  "termslinear-approximation": [],
+  "termslinear-independence": [],
+  "termslinear-mappings": [],
+  "termslinear-regression": [
+    {
+      "file": "/Users/future/l.blog/data/blog/finance/quant/statistics.md",
+      "type": "blog",
+      "count": 1,
+      "draft": false
+    }
+  ],
+  "termslinear-relationship": [],
+  "termslinear-search": [],
+  "termslinear-transformation": [],
+  "termslines-in-space": [],
+  "termslinked-list": [
+    {
+      "file": "/Users/future/l.blog/data/blog/software/data-structures-algorithms/cheatsheet.md",
+      "type": "blog",
+      "count": 2,
+      "draft": false
+    }
+  ],
+  "termslinux-security": [],
+  "termslinux": [
+    {
+      "file": "/Users/future/l.blog/data/blog/finance/high-frequency-trading.md",
+      "type": "blog",
+      "count": 5,
+      "draft": true
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/system-design/SQL Server Setup.md",
+      "type": "blog",
+      "count": 2,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/finance/quant/crash-course.md",
+      "type": "blog",
+      "count": 1,
+      "draft": true
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/projects/royal-stock-exchange/1-intro.md",
+      "type": "blog",
+      "count": 1,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/info-sec/over-the-wire-0-intro.md",
+      "type": "blog",
+      "count": 1,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/info-sec/over-the-wire-1-bandit.md",
+      "type": "blog",
+      "count": 1,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/languages/rust/rust-projects.md",
+      "type": "blog",
+      "count": 1,
+      "draft": true
+    }
+  ],
+  "termsliskov-substitution-principle": [],
+  "termslist-virtualization": [],
+  "termslistview": [
+    {
+      "file": "/Users/future/l.blog/data/blog/software/frameworks/flutter/flutter-tiktok-2.md",
+      "type": "blog",
+      "count": 9,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/frameworks/flutter/flutter-tiktok-1.md",
+      "type": "blog",
+      "count": 2,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/bug-reports/reddit.md",
+      "type": "blog",
+      "count": 1,
+      "draft": false
+    }
+  ],
+  "termsload-average": [],
+  "termsload-balancer": [],
+  "termsload-balancing": [
+    {
+      "file": "/Users/future/l.blog/data/blog/projects/royal-stock-exchange/4-scaling.md",
+      "type": "blog",
+      "count": 1,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/system-design/build-db-cluster-docker.md",
+      "type": "blog",
+      "count": 1,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/system-design/process-deepdive.md",
+      "type": "blog",
+      "count": 1,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/system-design/process-overview.md",
+      "type": "blog",
+      "count": 1,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/system-design/system-design-distributed-systems.md",
+      "type": "blog",
+      "count": 1,
+      "draft": false
+    }
+  ],
+  "termsloading": [
+    {
+      "file": "/Users/future/l.blog/data/blog/TEST/code-tab-groups.md",
+      "type": "blog",
+      "count": 2,
+      "draft": true
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/frameworks/logging-app-load-times-with-firebase.md",
+      "type": "blog",
+      "count": 2,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/TEST/guide-to-using-images-in-nextjs.mdx",
+      "type": "blog",
+      "count": 1,
+      "draft": true
+    }
+  ],
+  "termslocal-maxima": [],
+  "termslocal-minima": [],
+  "termslocation-services": [],
+  "termslocking": [
+    {
+      "file": "/Users/future/l.blog/data/blog/finance/high-frequency-trading.md",
+      "type": "blog",
+      "count": 1,
+      "draft": true
+    }
+  ],
+  "termslog-aggregation": [],
+  "termslog-loss": [],
+  "termslog-rotation": [],
+  "termslog-storage": [],
+  "termslogic": [
+    {
+      "file": "/Users/future/l.blog/data/blog/software/design patterns/decorator.md",
+      "type": "blog",
+      "count": 9,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/design patterns/repository.md",
+      "type": "blog",
+      "count": 3,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/system-design/system-design-auditing.md",
+      "type": "blog",
+      "count": 3,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/kb/atom/CS/AI.md",
+      "type": "kb",
+      "count": 2,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/exchange/intro-3.md",
+      "type": "blog",
+      "count": 2,
+      "draft": true
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/maths/discrete-symbols.md",
+      "type": "blog",
+      "count": 2,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/system-design/appium-mocha.md",
+      "type": "blog",
+      "count": 2,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/system-design/build-message-queue.md",
+      "type": "blog",
+      "count": 2,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/system-design/microservices.md",
+      "type": "blog",
+      "count": 2,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/bug-reports/reddit.md",
+      "type": "blog",
+      "count": 1,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/exchange/intro-7.md",
+      "type": "blog",
+      "count": 1,
+      "draft": true
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/finance/high-frequency-trading.md",
+      "type": "blog",
+      "count": 1,
+      "draft": true
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/finance/index.md",
+      "type": "blog",
+      "count": 1,
+      "draft": true
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/finance/quant/pair-trading.md",
+      "type": "blog",
+      "count": 1,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/design patterns/factory.md",
+      "type": "blog",
+      "count": 1,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/devops/gcp/cloud-run-job.md",
+      "type": "blog",
+      "count": 1,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/frameworks/flutter/flutter-poker-1.md",
+      "type": "blog",
+      "count": 1,
+      "draft": true
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/frameworks/flutter/flutter-tiktok-1.md",
+      "type": "blog",
+      "count": 1,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/info-sec/csrf.md",
+      "type": "blog",
+      "count": 1,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/info-sec/over-the-wire-3-natas.md",
+      "type": "blog",
+      "count": 1,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/system-design/1-LeetCode.md",
+      "type": "blog",
+      "count": 1,
+      "draft": true
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/system-design/process-overview.md",
+      "type": "blog",
+      "count": 1,
+      "draft": false
+    }
+  ],
+  "termslogical-equivalence": [
+    {
+      "file": "/Users/future/l.blog/data/blog/maths/discrete-symbols.md",
+      "type": "blog",
+      "count": 1,
+      "draft": false
+    }
+  ],
+  "termslogical-operators": [
+    {
+      "file": "/Users/future/l.blog/data/blog/software/data-structures-algorithms/graph-theory.md",
+      "type": "blog",
+      "count": 1,
+      "draft": true
+    }
+  ],
+  "termslogical-proofs": [],
+  "termslogistic-regression": [
+    {
+      "file": "/Users/future/l.blog/data/blog/finance/quant/statistics.md",
+      "type": "blog",
+      "count": 1,
+      "draft": false
+    }
+  ],
+  "termslongest-common-subsequence": [],
+  "termslongest-increasing-subsequence": [],
+  "termsloops": [
+    {
+      "file": "/Users/future/l.blog/data/blog/cheatsheets/big-o.mdx",
+      "type": "blog",
+      "count": 2,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/leetcode/16-3-sum-closest.md",
+      "type": "blog",
+      "count": 1,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/leetcode/200-number-of-islands.md",
+      "type": "blog",
+      "count": 1,
+      "draft": false
+    }
+  ],
+  "termsloss-function": [],
+  "termslsblk": [],
+  "termslstm": [
+    {
+      "file": "/Users/future/l.blog/data/blog/finance/quant/crash-course.md",
+      "type": "blog",
+      "count": 1,
+      "draft": true
+    }
+  ],
+  "termslu-decomposition": [],
+  "termsmachine-learning": [
+    {
+      "file": "/Users/future/l.blog/data/kb/atom/CS/AI.md",
+      "type": "kb",
+      "count": 2,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/finance/quant/crash-course.md",
+      "type": "blog",
+      "count": 1,
+      "draft": true
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/finance/quant/statistics.md",
+      "type": "blog",
+      "count": 1,
+      "draft": false
+    }
+  ],
+  "termsmaclaurin-series": [],
+  "termsmagnitude": [
+    {
+      "file": "/Users/future/l.blog/data/blog/maths/linear-algebra/vectors.md",
+      "type": "blog",
+      "count": 1,
+      "draft": true
+    }
+  ],
+  "termsmapping": [
+    {
+      "file": "/Users/future/l.blog/data/blog/software/system-design/microservices.md",
+      "type": "blog",
+      "count": 2,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/same-problems-different-tools.md",
+      "type": "blog",
+      "count": 1,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/system-design/process-overview.md",
+      "type": "blog",
+      "count": 1,
+      "draft": false
+    }
+  ],
+  "termsmargin-of-error": [],
+  "termsmarket-cap": [
+    {
+      "file": "/Users/future/l.blog/data/blog/bug-reports/reddit.md",
+      "type": "blog",
+      "count": 1,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/finance/stock-market-size.md",
+      "type": "blog",
+      "count": 1,
+      "draft": false
+    }
+  ],
+  "termsmarkov-decision-process": [],
+  "termsmaster-theorem": [],
+  "termsmaterial-design": [],
+  "termsmatrix-addition": [],
+  "termsmatrix-conditioning": [],
+  "termsmatrix-multiplication": [
+    {
+      "file": "/Users/future/l.blog/data/blog/finance/quant/maths.md",
+      "type": "blog",
+      "count": 1,
+      "draft": false
+    }
+  ],
+  "termsmatrix-representation": [],
+  "termsmatrix": [
+    {
+      "file": "/Users/future/l.blog/data/blog/TEST/deriving-ols-estimator.mdx",
+      "type": "blog",
+      "count": 7,
+      "draft": true
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/data-structures-algorithms/patterns-graph.md",
+      "type": "blog",
+      "count": 7,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/data-structures-algorithms/priority-queue.md",
+      "type": "blog",
+      "count": 7,
+      "draft": true
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/finance/quant/maths.md",
+      "type": "blog",
+      "count": 3,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/leetcode/200-number-of-islands.md",
+      "type": "blog",
+      "count": 2,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/finance/quant/crash-course.md",
+      "type": "blog",
+      "count": 1,
+      "draft": true
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/finance/quant/symbols.md",
+      "type": "blog",
+      "count": 1,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/data-structures-algorithms/dynamic-programming.md",
+      "type": "blog",
+      "count": 1,
+      "draft": false
+    }
+  ],
+  "termsmax": [
+    {
+      "file": "/Users/future/l.blog/data/blog/leetcode/121-best-time-to-sell-stock.md",
+      "type": "blog",
+      "count": 17,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/data-structures-algorithms/graph-theory.md",
+      "type": "blog",
+      "count": 6,
+      "draft": true
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/finance/options/strategies/trading-strategies.md",
+      "type": "blog",
+      "count": 5,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/finance/options/strategies/spreads.md",
+      "type": "blog",
+      "count": 4,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/data-structures-algorithms/cheatsheet.md",
+      "type": "blog",
+      "count": 3,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/data-structures-algorithms/priority-queue.md",
+      "type": "blog",
+      "count": 2,
+      "draft": true
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/databases/sql/1_toc.md",
+      "type": "blog",
+      "count": 2,
+      "draft": true
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/leetcode/239-sliding-window-maximum.md",
+      "type": "blog",
+      "count": 1,
+      "draft": true
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/leetcode/253-meeting-rooms-ii.md",
+      "type": "blog",
+      "count": 1,
+      "draft": true
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/maths/calculus/calculus-1/calculus-1.md",
+      "type": "blog",
+      "count": 1,
+      "draft": true
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/data-structures-algorithms/algorithms/priority-queue.md",
+      "type": "blog",
+      "count": 1,
+      "draft": true
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/data-structures-algorithms/patterns-graph.md",
+      "type": "blog",
+      "count": 1,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/frameworks/flutter/vscode launch json.md",
+      "type": "blog",
+      "count": 1,
+      "draft": true
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/languages/python/heapq.md",
+      "type": "blog",
+      "count": 1,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/system-design/appium-mocha.md",
+      "type": "blog",
+      "count": 1,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/system-design/build-api-cache.md",
+      "type": "blog",
+      "count": 1,
+      "draft": false
+    }
+  ],
+  "termsmaximum-likelihood-estimation": [],
+  "termsmean-absolute-error": [],
+  "termsmean-squared-error": [],
+  "termsmean-value-theorem": [],
+  "termsmean": [
+    {
+      "file": "/Users/future/l.blog/data/blog/maths/statistics/mean-median-mode.md",
+      "type": "blog",
+      "count": 7,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/maths/statistics/variance-standard-deviation.md",
+      "type": "blog",
+      "count": 5,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/finance/quant/pair-trading.md",
+      "type": "blog",
+      "count": 3,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/TEST/the-time-machine.mdx",
+      "type": "blog",
+      "count": 2,
+      "draft": true
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/finance/indicators/premium-flow-with-z-scores.md",
+      "type": "blog",
+      "count": 2,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/finance/quant/crash-course.md",
+      "type": "blog",
+      "count": 2,
+      "draft": true
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/finance/quant/statistics.md",
+      "type": "blog",
+      "count": 2,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/politics/1-go.md",
+      "type": "blog",
+      "count": 2,
+      "draft": true
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/demos-not-memos.md",
+      "type": "blog",
+      "count": 2,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/ai/ai-as-fractals.md",
+      "type": "blog",
+      "count": 1,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/finance/indicators/sharpe-ratio.md",
+      "type": "blog",
+      "count": 1,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/finance/options/greeks.md",
+      "type": "blog",
+      "count": 1,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/finance/options/strategies/condor.md",
+      "type": "blog",
+      "count": 1,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/finance/quant/maths.md",
+      "type": "blog",
+      "count": 1,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/finance/quant/symbols.md",
+      "type": "blog",
+      "count": 1,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/maths/calculus/fundamental-theorem-of-calculus.md",
+      "type": "blog",
+      "count": 1,
+      "draft": true
+    }
+  ],
+  "termsmeans-ends-analysis": [],
+  "termsmeasurement-bias": [],
+  "termsmedia-queries": [],
+  "termsmedia-query": [],
+  "termsmedian": [
+    {
+      "file": "/Users/future/l.blog/data/blog/maths/statistics/mean-median-mode.md",
+      "type": "blog",
+      "count": 9,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/finance/quant/statistics.md",
+      "type": "blog",
+      "count": 2,
+      "draft": false
+    }
+  ],
+  "termsmemo": [
+    {
+      "file": "/Users/future/l.blog/data/blog/software/data-structures-algorithms/dynamic-programming.md",
+      "type": "blog",
+      "count": 58,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/data-structures-algorithms/algorithms/dp.md",
+      "type": "blog",
+      "count": 1,
+      "draft": true
+    }
+  ],
+  "termsmemoization": [
+    {
+      "file": "/Users/future/l.blog/data/blog/software/data-structures-algorithms/dynamic-programming.md",
+      "type": "blog",
+      "count": 3,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/data-structures-algorithms/algorithms/dp.md",
+      "type": "blog",
+      "count": 1,
+      "draft": true
+    }
+  ],
+  "termsmemory-usage": [
+    {
+      "file": "/Users/future/l.blog/data/blog/projects/royal-stock-exchange/4-scaling.md",
+      "type": "blog",
+      "count": 5,
+      "draft": false
+    }
+  ],
+  "termsmerge-linked-lists": [],
+  "termsmerge-sort": [
+    {
+      "file": "/Users/future/l.blog/data/blog/software/data-structures-algorithms/algorithms/sorting.md",
+      "type": "blog",
+      "count": 5,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/data-structures-algorithms/algorithms/sorting-old.md",
+      "type": "blog",
+      "count": 1,
+      "draft": true
+    }
+  ],
+  "termsmethod-overloading": [
+    {
+      "file": "/Users/future/l.blog/data/blog/software/data-structures-algorithms/OOP.md",
+      "type": "blog",
+      "count": 1,
+      "draft": false
+    }
+  ],
+  "termsmethod-overriding": [],
+  "termsmethod": [
+    {
+      "file": "/Users/future/l.blog/data/blog/software/data-structures-algorithms/OOP.md",
+      "type": "blog",
+      "count": 4,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/data-structures-algorithms/patterns-graph.md",
+      "type": "blog",
+      "count": 2,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/design patterns/observer.md",
+      "type": "blog",
+      "count": 2,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/devops/gcp/cloud-scheduler.md",
+      "type": "blog",
+      "count": 2,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/frameworks/flutter/flutter-tiktok-1.md",
+      "type": "blog",
+      "count": 2,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/system-design/system-design-auditing.md",
+      "type": "blog",
+      "count": 2,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/TEST/guide-to-using-images-in-nextjs.mdx",
+      "type": "blog",
+      "count": 1,
+      "draft": true
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/finance/RDO.md",
+      "type": "blog",
+      "count": 1,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/maths/calculus/calculus-2/calculus-2.md",
+      "type": "blog",
+      "count": 1,
+      "draft": true
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/data-structures-algorithms/graph-theory.md",
+      "type": "blog",
+      "count": 1,
+      "draft": true
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/data-structures-algorithms/terms.md",
+      "type": "blog",
+      "count": 1,
+      "draft": true
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/languages/go/go-routines.md",
+      "type": "blog",
+      "count": 1,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/languages/ruby/ruby-lambda.md",
+      "type": "blog",
+      "count": 1,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/sprints.md",
+      "type": "blog",
+      "count": 1,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/system-design/appium-mocha.md",
+      "type": "blog",
+      "count": 1,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/system-design/build-api-cache.md",
+      "type": "blog",
+      "count": 1,
+      "draft": false
+    }
+  ],
+  "termsmetrics-server": [],
+  "termsmetrics-tracking": [],
+  "termsmetro-bundler": [],
+  "termsmicro-environment-isolation": [],
+  "termsmicroservices": [
+    {
+      "file": "/Users/future/l.blog/data/blog/software/system-design/microservices.md",
+      "type": "blog",
+      "count": 5,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/kb/atom/CS/git-worktree-git-submodule-git-monorepo.md",
+      "type": "kb",
+      "count": 1,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/projects/royal-stock-exchange/1-intro.md",
+      "type": "blog",
+      "count": 1,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/system-design/process-deepdive.md",
+      "type": "blog",
+      "count": 1,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/system-design/process-overview.md",
+      "type": "blog",
+      "count": 1,
+      "draft": false
+    }
+  ],
+  "termsmiddleware": [
+    {
+      "file": "/Users/future/l.blog/data/blog/software/system-design/system-design-auditing.md",
+      "type": "blog",
+      "count": 6,
+      "draft": false
+    }
+  ],
+  "termsmin": [
+    {
+      "file": "/Users/future/l.blog/data/blog/software/data-structures-algorithms/patterns-graph.md",
+      "type": "blog",
+      "count": 8,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/data-structures-algorithms/algorithms/sorting.md",
+      "type": "blog",
+      "count": 7,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/data-structures-algorithms/algorithms/sorting-old.md",
+      "type": "blog",
+      "count": 6,
+      "draft": true
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/data-structures-algorithms/cheatsheet.md",
+      "type": "blog",
+      "count": 3,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/TEST/deriving-ols-estimator.mdx",
+      "type": "blog",
+      "count": 2,
+      "draft": true
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/data-structures-algorithms/priority-queue.md",
+      "type": "blog",
+      "count": 2,
+      "draft": true
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/databases/sql/1_toc.md",
+      "type": "blog",
+      "count": 2,
+      "draft": true
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/exchange/intro-2.md",
+      "type": "blog",
+      "count": 1,
+      "draft": true
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/leetcode/322-coin-change.md",
+      "type": "blog",
+      "count": 1,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/maths/calculus/calculus-1/calculus-1.md",
+      "type": "blog",
+      "count": 1,
+      "draft": true
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/data-structures-algorithms/graph-programming.md",
+      "type": "blog",
+      "count": 1,
+      "draft": true
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/languages/python/heapq.md",
+      "type": "blog",
+      "count": 1,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/sprints.md",
+      "type": "blog",
+      "count": 1,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/system-design/key-numbers.md",
+      "type": "blog",
+      "count": 1,
+      "draft": false
+    }
+  ],
+  "termsmini-batch-gradient-descent": [],
+  "termsminikube": [
+    {
+      "file": "/Users/future/l.blog/data/blog/cheatsheets/kubernetes.md",
+      "type": "blog",
+      "count": 1,
+      "draft": false
+    }
+  ],
+  "termsminimal-base-images": [],
+  "termsminimax": [],
+  "termsminimum-spanning-tree": [
+    {
+      "file": "/Users/future/l.blog/data/blog/software/data-structures-algorithms/patterns-graph.md",
+      "type": "blog",
+      "count": 6,
+      "draft": false
+    }
+  ],
+  "termsmixins": [],
+  "termsmod": [],
+  "termsmode": [
+    {
+      "file": "/Users/future/l.blog/data/blog/maths/statistics/mean-median-mode.md",
+      "type": "blog",
+      "count": 9,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/system-design/build-backend-api.md",
+      "type": "blog",
+      "count": 3,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/finance/quant/statistics.md",
+      "type": "blog",
+      "count": 2,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/languages/python/flask-hot-reload.md",
+      "type": "blog",
+      "count": 2,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/finance/index.md",
+      "type": "blog",
+      "count": 1,
+      "draft": true
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/projects/royal-stock-exchange/5-demo.md",
+      "type": "blog",
+      "count": 1,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/frameworks/flutter/android connectivity issues - connection refused.md",
+      "type": "blog",
+      "count": 1,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/frameworks/flutter/flutter android customize app icon.md",
+      "type": "blog",
+      "count": 1,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/info-sec/over-the-wire-1-bandit.md",
+      "type": "blog",
+      "count": 1,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/system-design/flutter-theme.md",
+      "type": "blog",
+      "count": 1,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/system-design/microservices.md",
+      "type": "blog",
+      "count": 1,
+      "draft": false
+    }
+  ],
+  "termsmodel-evaluation": [],
+  "termsmodel-training": [],
+  "termsmodel": [
+    {
+      "file": "/Users/future/l.blog/data/kb/atom/CS/page-router-vs-app-router.md",
+      "type": "kb",
+      "count": 7,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/system-design/system-design-auditing.md",
+      "type": "blog",
+      "count": 7,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/kb/atom/CS/AI.md",
+      "type": "kb",
+      "count": 4,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/projects/royal-stock-exchange/4-scaling.md",
+      "type": "blog",
+      "count": 4,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/kb/atom/CS/git-worktree-git-submodule-git-monorepo.md",
+      "type": "kb",
+      "count": 3,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/finance/quant/crash-course.md",
+      "type": "blog",
+      "count": 3,
+      "draft": true
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/git/rebase.md",
+      "type": "blog",
+      "count": 3,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/finance/options/black-scholes.md",
+      "type": "blog",
+      "count": 2,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/finance/quant/calculus-for-quants.md",
+      "type": "blog",
+      "count": 2,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/finance/quant/maths.md",
+      "type": "blog",
+      "count": 2,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/finance/quant/pair-trading.md",
+      "type": "blog",
+      "count": 2,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/finance/quant/statistics.md",
+      "type": "blog",
+      "count": 2,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/data-structures-algorithms/OOP.md",
+      "type": "blog",
+      "count": 2,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/system-design/build-message-queue.md",
+      "type": "blog",
+      "count": 2,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/exchange/intro-3.md",
+      "type": "blog",
+      "count": 1,
+      "draft": true
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/finance/formulas.md",
+      "type": "blog",
+      "count": 1,
+      "draft": true
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/finance/indicators/sharpe-ratio.md",
+      "type": "blog",
+      "count": 1,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/finance/quant/symbols.md",
+      "type": "blog",
+      "count": 1,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/finance/toc.md",
+      "type": "blog",
+      "count": 1,
+      "draft": true
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/personal/stoicism.md",
+      "type": "blog",
+      "count": 1,
+      "draft": true
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/same-problems-different-tools.md",
+      "type": "blog",
+      "count": 1,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/languages/dart/handling-nullable-fields.md",
+      "type": "blog",
+      "count": 1,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/system-design/key-numbers.md",
+      "type": "blog",
+      "count": 1,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/system-design/process-deepdive.md",
+      "type": "blog",
+      "count": 1,
+      "draft": false
+    }
+  ],
+  "termsmodular-arithmetic": [],
+  "termsmodular-inverse": [],
+  "termsmomentum-investing": [],
+  "termsmomentum": [
+    {
+      "file": "/Users/future/l.blog/data/blog/finance/indicators/relative-strength-index.md",
+      "type": "blog",
+      "count": 2,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/finance/quant/charts/premium-flow-trends.md",
+      "type": "blog",
+      "count": 2,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/finance/thesis-jaime.md",
+      "type": "blog",
+      "count": 2,
+      "draft": true
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/finance/quant/crash-course.md",
+      "type": "blog",
+      "count": 1,
+      "draft": true
+    }
+  ],
+  "termsmonetary-policy": [
+    {
+      "file": "/Users/future/l.blog/data/blog/finance/federal-reserve-vs-treasury-department.md",
+      "type": "blog",
+      "count": 3,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/finance/toc.md",
+      "type": "blog",
+      "count": 1,
+      "draft": true
+    }
+  ],
+  "termsmongodb-query": [],
+  "termsmongodb": [
+    {
+      "file": "/Users/future/l.blog/data/blog/software/databases/nosql/mongodb.md",
+      "type": "blog",
+      "count": 9,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/system-design/system-design-auditing.md",
+      "type": "blog",
+      "count": 1,
+      "draft": false
+    }
+  ],
+  "termsmonolith": [
+    {
+      "file": "/Users/future/l.blog/data/blog/software/devops/gcp/aws-lambda.md",
+      "type": "blog",
+      "count": 1,
+      "draft": true
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/system-design/process-overview.md",
+      "type": "blog",
+      "count": 1,
+      "draft": false
+    }
+  ],
+  "termsmonorepo-support": [],
+  "termsmonotonic-queue": [],
+  "termsmonotonic-stack": [],
+  "termsmount-points": [],
+  "termsmount": [],
+  "termsmounting": [],
+  "termsmoving-average": [
+    {
+      "file": "/Users/future/l.blog/data/blog/finance/formulas.md",
+      "type": "blog",
+      "count": 1,
+      "draft": true
+    }
+  ],
+  "termsmulti-agent-system": [],
+  "termsmulti-container-pod": [],
+  "termsmulti-document-transaction": [],
+  "termsmulti-stage-build": [],
+  "termsmulti-stage-builds": [],
+  "termsmultilevel-inheritance": [],
+  "termsmultiple-inheritance": [],
+  "termsmultiple-regression": [],
+  "termsmultiplication-principle": [],
+  "termsmultiplication-rule": [],
+  "termsmultivariable-function": [],
+  "termsmultivariate-data": [],
+  "termsmvc": [
+    {
+      "file": "/Users/future/l.blog/data/blog/projects/royal-stock-exchange/1-intro.md",
+      "type": "blog",
+      "count": 5,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/system-design/system-design-auditing.md",
+      "type": "blog",
+      "count": 1,
+      "draft": false
+    }
+  ],
+  "termsmvvm": [],
+  "termsmysql": [],
+  "termsn-ary-tree": [],
+  "termsnaive-bayes": [],
+  "termsnamespace": [
+    {
+      "file": "/Users/future/l.blog/data/blog/cheatsheets/kubernetes.md",
+      "type": "blog",
+      "count": 1,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/projects/royal-stock-exchange/1-intro.md",
+      "type": "blog",
+      "count": 1,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/design patterns/decorator.md",
+      "type": "blog",
+      "count": 1,
+      "draft": false
+    }
+  ],
+  "termsnamespaces": [
+    {
+      "file": "/Users/future/l.blog/data/blog/cheatsheets/kubernetes.md",
+      "type": "blog",
+      "count": 2,
+      "draft": false
+    }
+  ],
+  "termsnative-component": [],
+  "termsnative-modules": [
+    {
+      "file": "/Users/future/l.blog/data/blog/software/languages/java/java-spring.md",
+      "type": "blog",
+      "count": 1,
+      "draft": false
+    }
+  ],
+  "termsnative-plugins": [],
+  "termsnative-ui-abstraction": [],
+  "termsnatural-language-processing": [],
+  "termsnavigation": [
+    {
+      "file": "/Users/future/l.blog/data/blog/software/frameworks/flutter/flutter-tiktok-1.md",
+      "type": "blog",
+      "count": 12,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/frameworks/flutter/flutter-tiktok-2.md",
+      "type": "blog",
+      "count": 4,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/kb/atom/CS/page-router-vs-app-router.md",
+      "type": "kb",
+      "count": 2,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/TEST/introducing-tailwind-nextjs-starter-blog.mdx",
+      "type": "blog",
+      "count": 2,
+      "draft": true
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/projects/royal-stock-exchange/3-portfolio.md",
+      "type": "blog",
+      "count": 1,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/projects/royal-stock-exchange/5-demo.md",
+      "type": "blog",
+      "count": 1,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/databases/pgadmin.md",
+      "type": "blog",
+      "count": 1,
+      "draft": true
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/frameworks/flutter/navigators.md",
+      "type": "blog",
+      "count": 1,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/mobile requirements.md",
+      "type": "blog",
+      "count": 1,
+      "draft": false
+    }
+  ],
+  "termsnavigator-10": [],
+  "termsnavigator-20": [],
+  "termsnavigator": [
+    {
+      "file": "/Users/future/l.blog/data/blog/software/frameworks/flutter/navigators.md",
+      "type": "blog",
+      "count": 19,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/frameworks/flutter/flutter-tiktok-1.md",
+      "type": "blog",
+      "count": 2,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/frameworks/flutter/flutter-tiktok-2.md",
+      "type": "blog",
+      "count": 1,
+      "draft": false
+    }
+  ],
+  "termsneo4j": [],
+  "termsnested-documents": [],
+  "termsnested-select": [
+    {
+      "file": "/Users/future/l.blog/data/blog/software/databases/sql/1_toc.md",
+      "type": "blog",
+      "count": 1,
+      "draft": true
+    }
+  ],
+  "termsnestjs": [
+    {
+      "file": "/Users/future/l.blog/data/blog/software/system-design/build-backend-api.md",
+      "type": "blog",
+      "count": 2,
+      "draft": false
+    }
+  ],
+  "termsnet-income": [],
+  "termsnetlify": [
+    {
+      "file": "/Users/future/l.blog/data/blog/software/system-design/flutter-netlify-deploy.md",
+      "type": "blog",
+      "count": 6,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/TEST/introducing-tailwind-nextjs-starter-blog.mdx",
+      "type": "blog",
+      "count": 4,
+      "draft": true
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/devops/gcp/aws-cloud-practiitioner.md",
+      "type": "blog",
+      "count": 2,
+      "draft": true
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/same-problems-different-tools.md",
+      "type": "blog",
+      "count": 1,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/languages/ruby/ruby-lambda.md",
+      "type": "blog",
+      "count": 1,
+      "draft": false
+    }
+  ],
+  "termsnetstat": [],
+  "termsnetwork-policies": [],
+  "termsneural-network-weights": [],
+  "termsneural-network": [],
+  "termsnext-auth": [],
+  "termsnext-build": [],
+  "termsnext-export": [],
+  "termsnext-greater-element": [],
+  "termsnext-image": [],
+  "termsnext-token-prediction": [],
+  "termsnextjs-routing": [],
+  "termsnextjs": [
+    {
+      "file": "/Users/future/l.blog/data/blog/TEST/introducing-tailwind-nextjs-starter-blog.mdx",
+      "type": "blog",
+      "count": 7,
+      "draft": true
+    },
+    {
+      "file": "/Users/future/l.blog/data/kb/atom/CS/page-router-vs-app-router.md",
+      "type": "kb",
+      "count": 3,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/frameworks/next/introducing-multi-part-posts-with-nested-routing.md",
+      "type": "blog",
+      "count": 2,
+      "draft": true
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/TEST/guide-to-using-images-in-nextjs.mdx",
+      "type": "blog",
+      "count": 1,
+      "draft": true
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/TEST/terms.md",
+      "type": "blog",
+      "count": 1,
+      "draft": true
+    }
+  ],
+  "termsnfa": [],
+  "termsnice": [
+    {
+      "file": "/Users/future/l.blog/data/blog/finance/high-frequency-trading.md",
+      "type": "blog",
+      "count": 1,
+      "draft": true
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/projects/royal-stock-exchange/3-portfolio.md",
+      "type": "blog",
+      "count": 1,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/frameworks/flutter/semantic-stoic.md",
+      "type": "blog",
+      "count": 1,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/system-design/build-message-queue.md",
+      "type": "blog",
+      "count": 1,
+      "draft": false
+    }
+  ],
+  "termsno-store": [],
+  "termsnode-port": [],
+  "termsnode-server": [],
+  "termsnode": [
+    {
+      "file": "/Users/future/l.blog/data/blog/software/data-structures-algorithms/graph-theory.md",
+      "type": "blog",
+      "count": 40,
+      "draft": true
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/leetcode/742-network-delay-time.md",
+      "type": "blog",
+      "count": 17,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/data-structures-algorithms/algorithms/tree-traversals.md",
+      "type": "blog",
+      "count": 12,
+      "draft": true
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/data-structures-algorithms/patterns-graph.md",
+      "type": "blog",
+      "count": 8,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/data-structures-algorithms/cheatsheet.md",
+      "type": "blog",
+      "count": 6,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/data-structures-algorithms/graph-programming.md",
+      "type": "blog",
+      "count": 5,
+      "draft": true
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/leetcode/200-number-of-islands.md",
+      "type": "blog",
+      "count": 4,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/data-structures-algorithms/algorithms/dijkstras.md",
+      "type": "blog",
+      "count": 4,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/system-design/appium-mocha.md",
+      "type": "blog",
+      "count": 3,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/system-design/microservices.md",
+      "type": "blog",
+      "count": 2,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/TEST/TEST-TERMS.md",
+      "type": "blog",
+      "count": 1,
+      "draft": true
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/TEST/introducing-tailwind-nextjs-starter-blog.mdx",
+      "type": "blog",
+      "count": 1,
+      "draft": true
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/ai/ai-search-agent.md",
+      "type": "blog",
+      "count": 1,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/finance/high-frequency-trading.md",
+      "type": "blog",
+      "count": 1,
+      "draft": true
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/projects/royal-stock-exchange/1-intro.md",
+      "type": "blog",
+      "count": 1,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/projects/royal-stock-exchange/4-scaling.md",
+      "type": "blog",
+      "count": 1,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/data-structures-algorithms/priority-queue.md",
+      "type": "blog",
+      "count": 1,
+      "draft": true
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/devops/gcp/cloud-build-triggers.md",
+      "type": "blog",
+      "count": 1,
+      "draft": false
+    }
+  ],
+  "termsnodejs": [
+    {
+      "file": "/Users/future/l.blog/data/blog/projects/royal-stock-exchange/1-intro.md",
+      "type": "blog",
+      "count": 1,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/devops/gcp/cloud-build-triggers.md",
+      "type": "blog",
+      "count": 1,
+      "draft": false
+    }
+  ],
+  "termsnodes": [
+    {
+      "file": "/Users/future/l.blog/data/blog/software/data-structures-algorithms/algorithms/tree-traversals.md",
+      "type": "blog",
+      "count": 12,
+      "draft": true
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/leetcode/742-network-delay-time.md",
+      "type": "blog",
+      "count": 11,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/data-structures-algorithms/patterns-graph.md",
+      "type": "blog",
+      "count": 10,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/data-structures-algorithms/graph-theory.md",
+      "type": "blog",
+      "count": 9,
+      "draft": true
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/data-structures-algorithms/cheatsheet.md",
+      "type": "blog",
+      "count": 5,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/projects/royal-stock-exchange/4-scaling.md",
+      "type": "blog",
+      "count": 3,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/data-structures-algorithms/graph-programming.md",
+      "type": "blog",
+      "count": 3,
+      "draft": true
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/cheatsheets/kubernetes.md",
+      "type": "blog",
+      "count": 2,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/leetcode/261-graph-valid-tree.md",
+      "type": "blog",
+      "count": 2,
+      "draft": true
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/data-structures-algorithms/trees.md",
+      "type": "blog",
+      "count": 2,
+      "draft": true
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/ai/ai-search-agent.md",
+      "type": "blog",
+      "count": 1,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/leetcode/200-number-of-islands.md",
+      "type": "blog",
+      "count": 1,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/data-structures-algorithms/algorithms/dijkstras.md",
+      "type": "blog",
+      "count": 1,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/data-structures-algorithms/algorithms/union-find.md",
+      "type": "blog",
+      "count": 1,
+      "draft": true
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/data-structures-algorithms/graph-algorithms.md",
+      "type": "blog",
+      "count": 1,
+      "draft": true
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/data-structures-algorithms/priority-queue.md",
+      "type": "blog",
+      "count": 1,
+      "draft": true
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/system-design/process-overview.md",
+      "type": "blog",
+      "count": 1,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/system-design/system-design-distributed-systems.md",
+      "type": "blog",
+      "count": 1,
+      "draft": false
+    }
+  ],
+  "termsnomad": [],
+  "termsnormal-distribution": [
+    {
+      "file": "/Users/future/l.blog/data/blog/finance/formulas.md",
+      "type": "blog",
+      "count": 1,
+      "draft": true
+    }
+  ],
+  "termsnormalization": [
+    {
+      "file": "/Users/future/l.blog/data/blog/software/databases/sql/1_toc.md",
+      "type": "blog",
+      "count": 1,
+      "draft": true
+    }
+  ],
+  "termsnosql": [
+    {
+      "file": "/Users/future/l.blog/data/blog/software/system-design/process-deepdive.md",
+      "type": "blog",
+      "count": 3,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/databases/nosql/mongodb.md",
+      "type": "blog",
+      "count": 1,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/design patterns/repository.md",
+      "type": "blog",
+      "count": 1,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/system-design/process-overview.md",
+      "type": "blog",
+      "count": 1,
+      "draft": false
+    }
+  ],
+  "termsnot": [
+    {
+      "file": "/Users/future/l.blog/data/blog/politics/1-go.md",
+      "type": "blog",
+      "count": 33,
+      "draft": true
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/projects/royal-stock-exchange/2-seeding data.md",
+      "type": "blog",
+      "count": 20,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/data-structures-algorithms/graph-theory.md",
+      "type": "blog",
+      "count": 17,
+      "draft": true
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/exchange/intro-1.md",
+      "type": "blog",
+      "count": 13,
+      "draft": true
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/maths/discrete-symbols.md",
+      "type": "blog",
+      "count": 13,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/TEST/the-time-machine.mdx",
+      "type": "blog",
+      "count": 12,
+      "draft": true
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/finance/options/strategies/trading-strategies.md",
+      "type": "blog",
+      "count": 8,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/exchange/intro-7.md",
+      "type": "blog",
+      "count": 7,
+      "draft": true
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/exchange/intro-3.md",
+      "type": "blog",
+      "count": 6,
+      "draft": true
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/system-design/appium-mocha.md",
+      "type": "blog",
+      "count": 6,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/exchange/intro-6.md",
+      "type": "blog",
+      "count": 5,
+      "draft": true
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/system-design/build-message-queue.md",
+      "type": "blog",
+      "count": 5,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/system-design/process-overview.md",
+      "type": "blog",
+      "count": 5,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/projects/royal-stock-exchange/4-scaling.md",
+      "type": "blog",
+      "count": 4,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/same-problems-different-tools.md",
+      "type": "blog",
+      "count": 4,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/languages/go/go-routines.md",
+      "type": "blog",
+      "count": 4,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/system-design/build-backend-api.md",
+      "type": "blog",
+      "count": 4,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/system-design/process-deepdive.md",
+      "type": "blog",
+      "count": 4,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/TEST/guide-to-using-images-in-nextjs.mdx",
+      "type": "blog",
+      "count": 3,
+      "draft": true
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/personal/cognitive-dissonance.md",
+      "type": "blog",
+      "count": 3,
+      "draft": true
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/politics/communism.md",
+      "type": "blog",
+      "count": 3,
+      "draft": true
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/questions/running-a-company.md",
+      "type": "blog",
+      "count": 3,
+      "draft": true
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/data-structures-algorithms/patterns-graph.md",
+      "type": "blog",
+      "count": 3,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/languages/dart/handling-nullable-fields.md",
+      "type": "blog",
+      "count": 3,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/system-design/SQL Server Setup.md",
+      "type": "blog",
+      "count": 3,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/kb/atom/CS/git-worktree-git-submodule-git-monorepo.md",
+      "type": "kb",
+      "count": 2,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/ai/ai-as-fractals.md",
+      "type": "blog",
+      "count": 2,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/finance/RDO.md",
+      "type": "blog",
+      "count": 2,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/finance/high-frequency-trading.md",
+      "type": "blog",
+      "count": 2,
+      "draft": true
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/finance/indicators/implied-volatility-rank.md",
+      "type": "blog",
+      "count": 2,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/finance/indicators/put-call-ratio.md",
+      "type": "blog",
+      "count": 2,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/finance/options/strategies/introduction.md",
+      "type": "blog",
+      "count": 2,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/finance/quant/pair-trading.md",
+      "type": "blog",
+      "count": 2,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/finance/quant/slippage.md",
+      "type": "blog",
+      "count": 2,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/finance/terms/closed-ended-funds.md",
+      "type": "blog",
+      "count": 2,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/finance/terms/institutional-retail.md",
+      "type": "blog",
+      "count": 2,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/finance/terms/secondary-market.md",
+      "type": "blog",
+      "count": 2,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/finance/terms/warrant.md",
+      "type": "blog",
+      "count": 2,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/leetcode/742-network-delay-time.md",
+      "type": "blog",
+      "count": 2,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/opinions/why-flutter-is-better-than-react-native.md",
+      "type": "blog",
+      "count": 2,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/projects/royal-stock-exchange/3-portfolio.md",
+      "type": "blog",
+      "count": 2,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/questions/leadership.md",
+      "type": "blog",
+      "count": 2,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/data-structures-algorithms/algorithms/sorting.md",
+      "type": "blog",
+      "count": 2,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/data-structures-algorithms/dynamic-programming.md",
+      "type": "blog",
+      "count": 2,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/demos-not-memos.md",
+      "type": "blog",
+      "count": 2,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/design patterns/factory.md",
+      "type": "blog",
+      "count": 2,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/design patterns/repository.md",
+      "type": "blog",
+      "count": 2,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/info-sec/over-the-wire-1-bandit.md",
+      "type": "blog",
+      "count": 2,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/kb/atom/CS/page-router-vs-app-router.md",
+      "type": "kb",
+      "count": 1,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/ai/ai-search-agent.md",
+      "type": "blog",
+      "count": 1,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/cheatsheets/kubernetes.md",
+      "type": "blog",
+      "count": 1,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/exchange/intro-2.md",
+      "type": "blog",
+      "count": 1,
+      "draft": true
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/exchange/intro-4.md",
+      "type": "blog",
+      "count": 1,
+      "draft": true
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/exchange/intro-5.md",
+      "type": "blog",
+      "count": 1,
+      "draft": true
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/finance/futures.md",
+      "type": "blog",
+      "count": 1,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/finance/index.md",
+      "type": "blog",
+      "count": 1,
+      "draft": true
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/finance/options/strategies/spreads.md",
+      "type": "blog",
+      "count": 1,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/finance/quant/crash-course.md",
+      "type": "blog",
+      "count": 1,
+      "draft": true
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/finance/quant/order-books.md",
+      "type": "blog",
+      "count": 1,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/finance/terms/index-fund.md",
+      "type": "blog",
+      "count": 1,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/finance/toc.md",
+      "type": "blog",
+      "count": 1,
+      "draft": true
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/leetcode/200-number-of-islands.md",
+      "type": "blog",
+      "count": 1,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/leetcode/217-contains-duplicate.md",
+      "type": "blog",
+      "count": 1,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/leetcode/463-island-perimeter.md",
+      "type": "blog",
+      "count": 1,
+      "draft": true
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/maths/calculus/calculus-1/calculus-1.md",
+      "type": "blog",
+      "count": 1,
+      "draft": true
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/maths/calculus/fundamental-theorem-of-calculus.md",
+      "type": "blog",
+      "count": 1,
+      "draft": true
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/maths/calculus/multivariable-calc.md",
+      "type": "blog",
+      "count": 1,
+      "draft": true
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/projects/royal-stock-exchange/1-intro.md",
+      "type": "blog",
+      "count": 1,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/bike-shedding.md",
+      "type": "blog",
+      "count": 1,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/data-structures-algorithms/OOP.md",
+      "type": "blog",
+      "count": 1,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/data-structures-algorithms/algorithms/sorting-old.md",
+      "type": "blog",
+      "count": 1,
+      "draft": true
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/data-structures-algorithms/graph-algorithms.md",
+      "type": "blog",
+      "count": 1,
+      "draft": true
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/databases/sql/1_toc.md",
+      "type": "blog",
+      "count": 1,
+      "draft": true
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/databases/sql/clone-db.md",
+      "type": "blog",
+      "count": 1,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/databases/sql/procedures-list.md",
+      "type": "blog",
+      "count": 1,
+      "draft": true
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/design patterns/decorator.md",
+      "type": "blog",
+      "count": 1,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/design patterns/observer.md",
+      "type": "blog",
+      "count": 1,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/design patterns/singleton.md",
+      "type": "blog",
+      "count": 1,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/devops/gcp/aws-cloud-practiitioner.md",
+      "type": "blog",
+      "count": 1,
+      "draft": true
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/devops/gcp/cloud-run-job.md",
+      "type": "blog",
+      "count": 1,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/devops/gcp/vcp-connectors.md",
+      "type": "blog",
+      "count": 1,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/frameworks/flutter/android connectivity issues - connection refused.md",
+      "type": "blog",
+      "count": 1,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/frameworks/flutter/flutter lacks webview support.md",
+      "type": "blog",
+      "count": 1,
+      "draft": true
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/frameworks/logging-app-load-times-with-firebase.md",
+      "type": "blog",
+      "count": 1,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/git/pre-commit.md",
+      "type": "blog",
+      "count": 1,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/info-sec/csrf.md",
+      "type": "blog",
+      "count": 1,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/info-sec/xss.md",
+      "type": "blog",
+      "count": 1,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/languages/python/flask-hot-reload.md",
+      "type": "blog",
+      "count": 1,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/system-design/1-LeetCode.md",
+      "type": "blog",
+      "count": 1,
+      "draft": true
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/system-design/build-db-cluster-docker.md",
+      "type": "blog",
+      "count": 1,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/system-design/flutter-netlify-deploy.md",
+      "type": "blog",
+      "count": 1,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/system-design/graphql.md",
+      "type": "blog",
+      "count": 1,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/system-design/system-design-1-bitly.md",
+      "type": "blog",
+      "count": 1,
+      "draft": false
+    }
+  ],
+  "termsnotifications": [
+    {
+      "file": "/Users/future/l.blog/data/blog/software/design patterns/decorator.md",
+      "type": "blog",
+      "count": 1,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/design patterns/observer.md",
+      "type": "blog",
+      "count": 1,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/devops/gcp/cloud-scheduler.md",
+      "type": "blog",
+      "count": 1,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/system-design/flutter-theme.md",
+      "type": "blog",
+      "count": 1,
+      "draft": false
+    }
+  ],
+  "termsnull-hypothesis": [],
+  "termsnumerical-data": [],
+  "termsnumerical-methods": [
+    {
+      "file": "/Users/future/l.blog/data/blog/finance/quant/maths.md",
+      "type": "blog",
+      "count": 1,
+      "draft": false
+    }
+  ],
+  "termsnuxt": [
+    {
+      "file": "/Users/future/l.blog/data/blog/software/system-design/system-design-auditing.md",
+      "type": "blog",
+      "count": 8,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/system-design/1-DSAFine-Mono.md",
+      "type": "blog",
+      "count": 1,
+      "draft": true
+    }
+  ],
+  "termsoauth": [],
+  "termsobject-detection": [],
+  "termsobject": [
+    {
+      "file": "/Users/future/l.blog/data/blog/software/data-structures-algorithms/OOP.md",
+      "type": "blog",
+      "count": 19,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/design patterns/decorator.md",
+      "type": "blog",
+      "count": 18,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/system-design/system-design-auditing.md",
+      "type": "blog",
+      "count": 5,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/projects/royal-stock-exchange/4-scaling.md",
+      "type": "blog",
+      "count": 4,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/design patterns/factory.md",
+      "type": "blog",
+      "count": 3,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/TEST/the-time-machine.mdx",
+      "type": "blog",
+      "count": 2,
+      "draft": true
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/maths/discrete-symbols.md",
+      "type": "blog",
+      "count": 2,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/design patterns/observer.md",
+      "type": "blog",
+      "count": 2,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/design patterns/singleton.md",
+      "type": "blog",
+      "count": 2,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/exchange/intro-1.md",
+      "type": "blog",
+      "count": 1,
+      "draft": true
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/leetcode/217-contains-duplicate.md",
+      "type": "blog",
+      "count": 1,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/maths/calculus/calculus-1/calculus-1.md",
+      "type": "blog",
+      "count": 1,
+      "draft": true
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/languages/ruby/ruby-lambda.md",
+      "type": "blog",
+      "count": 1,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/system-design/build-api-cache.md",
+      "type": "blog",
+      "count": 1,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/system-design/system-design-1-bitly.md",
+      "type": "blog",
+      "count": 1,
+      "draft": false
+    }
+  ],
+  "termsobserver-pattern": [
+    {
+      "file": "/Users/future/l.blog/data/blog/software/design patterns/observer.md",
+      "type": "blog",
+      "count": 2,
+      "draft": false
+    }
+  ],
+  "termsone-hot-encoding": [],
+  "termsone-sided-limit": [],
+  "termsopen-addressing": [],
+  "termsopen-closed-principle": [],
+  "termsoperating-income": [],
+  "termsoperating-system": [
+    {
+      "file": "/Users/future/l.blog/data/blog/questions/running-a-company.md",
+      "type": "blog",
+      "count": 2,
+      "draft": true
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/languages/rust/rust-projects.md",
+      "type": "blog",
+      "count": 1,
+      "draft": true
+    }
+  ],
+  "termsoperator-overloading": [],
+  "termsoptimal-substructure": [],
+  "termsoptimization": [
+    {
+      "file": "/Users/future/l.blog/data/blog/finance/quant/maths.md",
+      "type": "blog",
+      "count": 6,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/projects/royal-stock-exchange/4-scaling.md",
+      "type": "blog",
+      "count": 6,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/TEST/introducing-tailwind-nextjs-starter-blog.mdx",
+      "type": "blog",
+      "count": 5,
+      "draft": true
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/finance/quant/calculus-for-quants.md",
+      "type": "blog",
+      "count": 4,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/finance/quant/crash-course.md",
+      "type": "blog",
+      "count": 3,
+      "draft": true
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/finance/quant/statistics.md",
+      "type": "blog",
+      "count": 3,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/finance/quant/symbols.md",
+      "type": "blog",
+      "count": 3,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/kb/atom/CS/AI.md",
+      "type": "kb",
+      "count": 2,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/TEST/guide-to-using-images-in-nextjs.mdx",
+      "type": "blog",
+      "count": 2,
+      "draft": true
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/finance/quant/pair-trading.md",
+      "type": "blog",
+      "count": 1,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/finance/toc.md",
+      "type": "blog",
+      "count": 1,
+      "draft": true
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/maths/calculus/calculus-1/calculus-1.md",
+      "type": "blog",
+      "count": 1,
+      "draft": true
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/maths/calculus/calculus-3/calculus-3.md",
+      "type": "blog",
+      "count": 1,
+      "draft": true
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/data-structures-algorithms/dynamic-programming.md",
+      "type": "blog",
+      "count": 1,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/databases/sql/1_toc.md",
+      "type": "blog",
+      "count": 1,
+      "draft": true
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/languages/rust/rust-projects.md",
+      "type": "blog",
+      "count": 1,
+      "draft": true
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/system-design/build-message-queue.md",
+      "type": "blog",
+      "count": 1,
+      "draft": false
+    }
+  ],
+  "termsoptions": [
+    {
+      "file": "/Users/future/l.blog/data/blog/finance/index.md",
+      "type": "blog",
+      "count": 17,
+      "draft": true
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/finance/options/strategies/introduction.md",
+      "type": "blog",
+      "count": 13,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/finance/indicators/put-call-ratio.md",
+      "type": "blog",
+      "count": 10,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/finance/quant/symbols.md",
+      "type": "blog",
+      "count": 9,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/finance/options/greeks.md",
+      "type": "blog",
+      "count": 8,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/finance/options/strategies/straddle.md",
+      "type": "blog",
+      "count": 8,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/finance/options/strategies/strangle.md",
+      "type": "blog",
+      "count": 8,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/finance/options/strategies/trading-strategies.md",
+      "type": "blog",
+      "count": 8,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/finance/indicators/implied-volatility-rank.md",
+      "type": "blog",
+      "count": 7,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/finance/options/strategies/condor.md",
+      "type": "blog",
+      "count": 6,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/finance/options/open-frac.md",
+      "type": "blog",
+      "count": 5,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/finance/indicators/premium-flow-with-z-scores.md",
+      "type": "blog",
+      "count": 4,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/finance/terms/intrinsic-value.md",
+      "type": "blog",
+      "count": 4,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/finance/options/black-scholes.md",
+      "type": "blog",
+      "count": 3,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/finance/options/volume.md",
+      "type": "blog",
+      "count": 3,
+      "draft": true
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/finance/terms/extrinsic-value.md",
+      "type": "blog",
+      "count": 3,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/finance/terms/quadruple-witching.md",
+      "type": "blog",
+      "count": 3,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/finance/high-frequency-trading.md",
+      "type": "blog",
+      "count": 2,
+      "draft": true
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/finance/options/strategies/spreads.md",
+      "type": "blog",
+      "count": 2,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/finance/quant/crash-course.md",
+      "type": "blog",
+      "count": 2,
+      "draft": true
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/databases/sql/lag.md",
+      "type": "blog",
+      "count": 2,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/devops/gcp/secret-manager.md",
+      "type": "blog",
+      "count": 2,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/finance/futures.md",
+      "type": "blog",
+      "count": 1,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/finance/options/open-interest.md",
+      "type": "blog",
+      "count": 1,
+      "draft": true
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/finance/terms/open-ended-funds.md",
+      "type": "blog",
+      "count": 1,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/finance/toc.md",
+      "type": "blog",
+      "count": 1,
+      "draft": true
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/databases/sql/remote-clone-to-local.md",
+      "type": "blog",
+      "count": 1,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/languages/go/go-routines.md",
+      "type": "blog",
+      "count": 1,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/sprints.md",
+      "type": "blog",
+      "count": 1,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/system-design/appium-mocha.md",
+      "type": "blog",
+      "count": 1,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/system-design/system-design-auditing.md",
+      "type": "blog",
+      "count": 1,
+      "draft": false
+    }
+  ],
+  "termsor": [
+    {
+      "file": "/Users/future/l.blog/data/blog/finance/options/strategies/trading-strategies.md",
+      "type": "blog",
+      "count": 31,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/finance/high-frequency-trading.md",
+      "type": "blog",
+      "count": 20,
+      "draft": true
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/finance/futures.md",
+      "type": "blog",
+      "count": 12,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/data-structures-algorithms/patterns-graph.md",
+      "type": "blog",
+      "count": 12,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/system-design/process-overview.md",
+      "type": "blog",
+      "count": 12,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/leetcode/200-number-of-islands.md",
+      "type": "blog",
+      "count": 11,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/languages/rust/rust-projects.md",
+      "type": "blog",
+      "count": 11,
+      "draft": true
+    },
+    {
+      "file": "/Users/future/l.blog/data/kb/atom/CS/AI.md",
+      "type": "kb",
+      "count": 9,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/TEST/introducing-tailwind-nextjs-starter-blog.mdx",
+      "type": "blog",
+      "count": 9,
+      "draft": true
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/exchange/intro-3.md",
+      "type": "blog",
+      "count": 9,
+      "draft": true
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/maths/discrete-symbols.md",
+      "type": "blog",
+      "count": 9,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/personal/cognitive-dissonance.md",
+      "type": "blog",
+      "count": 9,
+      "draft": true
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/data-structures-algorithms/terms.md",
+      "type": "blog",
+      "count": 8,
+      "draft": true
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/finance/indicators/premium-flow-with-z-scores.md",
+      "type": "blog",
+      "count": 7,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/politics/1-go.md",
+      "type": "blog",
+      "count": 7,
+      "draft": true
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/projects/royal-stock-exchange/4-scaling.md",
+      "type": "blog",
+      "count": 7,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/design patterns/decorator.md",
+      "type": "blog",
+      "count": 7,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/TEST/the-time-machine.mdx",
+      "type": "blog",
+      "count": 6,
+      "draft": true
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/finance/indicators/implied-volatility-rank.md",
+      "type": "blog",
+      "count": 6,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/finance/options/strategies/spreads.md",
+      "type": "blog",
+      "count": 6,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/maths/calculus/calculus-2/calculus-2.md",
+      "type": "blog",
+      "count": 6,
+      "draft": true
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/data-structures-algorithms/OOP.md",
+      "type": "blog",
+      "count": 6,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/data-structures-algorithms/graph-theory.md",
+      "type": "blog",
+      "count": 6,
+      "draft": true
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/demos-not-memos.md",
+      "type": "blog",
+      "count": 6,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/devops/gcp/cloud-scheduler.md",
+      "type": "blog",
+      "count": 6,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/git/pre-commit.md",
+      "type": "blog",
+      "count": 6,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/info-sec/xss.md",
+      "type": "blog",
+      "count": 6,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/TEST/github-markdown-guide.mdx",
+      "type": "blog",
+      "count": 5,
+      "draft": true
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/finance/indicators/leading-and-lagging-indicators.md",
+      "type": "blog",
+      "count": 5,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/finance/indicators/sharpe-ratio.md",
+      "type": "blog",
+      "count": 5,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/finance/quant/slippage.md",
+      "type": "blog",
+      "count": 5,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/leetcode/463-island-perimeter.md",
+      "type": "blog",
+      "count": 5,
+      "draft": true
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/questions/complexity.md",
+      "type": "blog",
+      "count": 5,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/databases/nosql/mongodb.md",
+      "type": "blog",
+      "count": 5,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/databases/sql/remote-clone-to-local.md",
+      "type": "blog",
+      "count": 5,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/design patterns/repository.md",
+      "type": "blog",
+      "count": 5,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/devops/gcp/cloud-run-job.md",
+      "type": "blog",
+      "count": 5,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/devops/gcp/cloud-run.md",
+      "type": "blog",
+      "count": 5,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/cheatsheets/big-o.mdx",
+      "type": "blog",
+      "count": 4,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/finance/options/open-frac.md",
+      "type": "blog",
+      "count": 4,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/finance/options/strategies/introduction.md",
+      "type": "blog",
+      "count": 4,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/finance/options/strategies/straddle.md",
+      "type": "blog",
+      "count": 4,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/finance/terms/index-fund.md",
+      "type": "blog",
+      "count": 4,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/finance/terms/intrinsic-value.md",
+      "type": "blog",
+      "count": 4,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/finance/terms/mutual-funds.md",
+      "type": "blog",
+      "count": 4,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/personal/stoicism.md",
+      "type": "blog",
+      "count": 4,
+      "draft": true
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/data-structures-algorithms/dynamic-programming.md",
+      "type": "blog",
+      "count": 4,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/devops/gcp/cloud-build-triggers.md",
+      "type": "blog",
+      "count": 4,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/info-sec/csrf.md",
+      "type": "blog",
+      "count": 4,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/languages/go/go-routines.md",
+      "type": "blog",
+      "count": 4,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/system-design/graphql.md",
+      "type": "blog",
+      "count": 4,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/TEST/TEST-TERMS.md",
+      "type": "blog",
+      "count": 3,
+      "draft": true
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/TEST/deriving-ols-estimator.mdx",
+      "type": "blog",
+      "count": 3,
+      "draft": true
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/ai/ai-search-agent.md",
+      "type": "blog",
+      "count": 3,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/exchange/intro-7.md",
+      "type": "blog",
+      "count": 3,
+      "draft": true
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/finance/business/hostile-takeover.md",
+      "type": "blog",
+      "count": 3,
+      "draft": true
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/finance/indicators/relative-strength-index.md",
+      "type": "blog",
+      "count": 3,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/finance/options/black-scholes.md",
+      "type": "blog",
+      "count": 3,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/finance/options/strategies/condor.md",
+      "type": "blog",
+      "count": 3,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/finance/quant/charts/premium-flow-trends.md",
+      "type": "blog",
+      "count": 3,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/finance/terms/closed-ended-funds.md",
+      "type": "blog",
+      "count": 3,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/finance/terms/institutional-retail.md",
+      "type": "blog",
+      "count": 3,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/finance/terms/net-asset-value.md",
+      "type": "blog",
+      "count": 3,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/finance/terms/secondary-market.md",
+      "type": "blog",
+      "count": 3,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/maths/statistics/mean-median-mode.md",
+      "type": "blog",
+      "count": 3,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/questions/leadership.md",
+      "type": "blog",
+      "count": 3,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/data-structures-algorithms/cheatsheet.md",
+      "type": "blog",
+      "count": 3,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/databases/sql/clone-db.md",
+      "type": "blog",
+      "count": 3,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/design patterns/factory.md",
+      "type": "blog",
+      "count": 3,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/system-design/appium-mocha.md",
+      "type": "blog",
+      "count": 3,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/system-design/build-db-cluster-docker.md",
+      "type": "blog",
+      "count": 3,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/system-design/build-message-queue.md",
+      "type": "blog",
+      "count": 3,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/system-design/process-deepdive.md",
+      "type": "blog",
+      "count": 3,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/system-design/system-design-auditing.md",
+      "type": "blog",
+      "count": 3,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/kb/atom/CS/page-router-vs-app-router.md",
+      "type": "kb",
+      "count": 2,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/TEST/guide-to-using-images-in-nextjs.mdx",
+      "type": "blog",
+      "count": 2,
+      "draft": true
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/ai/ai-as-fractals.md",
+      "type": "blog",
+      "count": 2,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/exchange/intro-1.md",
+      "type": "blog",
+      "count": 2,
+      "draft": true
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/exchange/intro-2.md",
+      "type": "blog",
+      "count": 2,
+      "draft": true
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/exchange/intro-4.md",
+      "type": "blog",
+      "count": 2,
+      "draft": true
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/finance/RDO.md",
+      "type": "blog",
+      "count": 2,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/finance/federal-reserve-vs-treasury-department.md",
+      "type": "blog",
+      "count": 2,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/finance/index.md",
+      "type": "blog",
+      "count": 2,
+      "draft": true
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/finance/indicators/put-call-ratio.md",
+      "type": "blog",
+      "count": 2,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/finance/options/strategies/strangle.md",
+      "type": "blog",
+      "count": 2,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/finance/terms/extrinsic-value.md",
+      "type": "blog",
+      "count": 2,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/maths/calculus/calculus-1/calculus-1.md",
+      "type": "blog",
+      "count": 2,
+      "draft": true
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/data-structures-algorithms/algorithms/tree-traversals.md",
+      "type": "blog",
+      "count": 2,
+      "draft": true
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/devops/gcp/memory-store.md",
+      "type": "blog",
+      "count": 2,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/devops/gcp/secret-manager.md",
+      "type": "blog",
+      "count": 2,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/git/rebase.md",
+      "type": "blog",
+      "count": 2,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/info-sec/over-the-wire-1-bandit.md",
+      "type": "blog",
+      "count": 2,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/sprints.md",
+      "type": "blog",
+      "count": 2,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/kb/atom/CS/git-worktree-git-submodule-git-monorepo.md",
+      "type": "kb",
+      "count": 1,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/exchange/intro-5.md",
+      "type": "blog",
+      "count": 1,
+      "draft": true
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/exchange/intro-6.md",
+      "type": "blog",
+      "count": 1,
+      "draft": true
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/finance/options/greeks.md",
+      "type": "blog",
+      "count": 1,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/finance/quant/crash-course.md",
+      "type": "blog",
+      "count": 1,
+      "draft": true
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/finance/quant/order-books.md",
+      "type": "blog",
+      "count": 1,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/finance/quant/pair-trading.md",
+      "type": "blog",
+      "count": 1,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/finance/quant/symbols.md",
+      "type": "blog",
+      "count": 1,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/finance/terms/exchange-traded-funds.md",
+      "type": "blog",
+      "count": 1,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/finance/terms/quadruple-witching.md",
+      "type": "blog",
+      "count": 1,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/finance/terms/warrant.md",
+      "type": "blog",
+      "count": 1,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/finance/thesis-jaime.md",
+      "type": "blog",
+      "count": 1,
+      "draft": true
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/finance/toc.md",
+      "type": "blog",
+      "count": 1,
+      "draft": true
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/leetcode/121-best-time-to-sell-stock.md",
+      "type": "blog",
+      "count": 1,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/leetcode/238-product-of-array-except-self.md",
+      "type": "blog",
+      "count": 1,
+      "draft": true
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/leetcode/70-climbing-stairs.md",
+      "type": "blog",
+      "count": 1,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/maths/calculus/intro.md",
+      "type": "blog",
+      "count": 1,
+      "draft": true
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/maths/statistics/variance-standard-deviation.md",
+      "type": "blog",
+      "count": 1,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/opinions/why-flutter-is-better-than-react-native.md",
+      "type": "blog",
+      "count": 1,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/projects/royal-stock-exchange/2-seeding data.md",
+      "type": "blog",
+      "count": 1,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/projects/royal-stock-exchange/3-portfolio.md",
+      "type": "blog",
+      "count": 1,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/bike-shedding.md",
+      "type": "blog",
+      "count": 1,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/data-structures-algorithms/algorithms/sorting.md",
+      "type": "blog",
+      "count": 1,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/data-structures-algorithms/priority-queue.md",
+      "type": "blog",
+      "count": 1,
+      "draft": true
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/databases/sql/1_toc.md",
+      "type": "blog",
+      "count": 1,
+      "draft": true
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/databases/sql/alter-tables.md",
+      "type": "blog",
+      "count": 1,
+      "draft": true
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/design patterns/singleton.md",
+      "type": "blog",
+      "count": 1,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/devops/gcp/aws-cloud-practiitioner.md",
+      "type": "blog",
+      "count": 1,
+      "draft": true
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/devops/gcp/vcp-connectors.md",
+      "type": "blog",
+      "count": 1,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/frameworks/flutter/flutter-tiktok-2.md",
+      "type": "blog",
+      "count": 1,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/frameworks/flutter/navigators.md",
+      "type": "blog",
+      "count": 1,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/frameworks/logging-app-load-times-with-firebase.md",
+      "type": "blog",
+      "count": 1,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/languages/ruby/ruby-lambda.md",
+      "type": "blog",
+      "count": 1,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/system-design/0-template.md",
+      "type": "blog",
+      "count": 1,
+      "draft": true
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/system-design/1-data-science.md",
+      "type": "blog",
+      "count": 1,
+      "draft": true
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/system-design/1-ticketmaster.md",
+      "type": "blog",
+      "count": 1,
+      "draft": true
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/system-design/build-api-cache.md",
+      "type": "blog",
+      "count": 1,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/system-design/system-design-distributed-systems.md",
+      "type": "blog",
+      "count": 1,
+      "draft": false
+    }
+  ],
+  "termsoracle-database": [],
+  "termsorder-by": [
+    {
+      "file": "/Users/future/l.blog/data/blog/software/databases/sql/1_toc.md",
+      "type": "blog",
+      "count": 2,
+      "draft": true
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/databases/sql/lag.md",
+      "type": "blog",
+      "count": 1,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/databases/sql/procedures-list.md",
+      "type": "blog",
+      "count": 1,
+      "draft": true
+    }
+  ],
+  "termsorthogonal-matrix": [],
+  "termsorthogonal-vectors": [],
+  "termsorthogonality": [],
+  "termsorthonormal-basis": [],
+  "termsoutcome": [
+    {
+      "file": "/Users/future/l.blog/data/kb/atom/CS/AI.md",
+      "type": "kb",
+      "count": 1,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/TEST/deriving-ols-estimator.mdx",
+      "type": "blog",
+      "count": 1,
+      "draft": true
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/books/12.the-thing-you-can-see-only-when-you-slow-down.md",
+      "type": "blog",
+      "count": 1,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/personal/cognitive-dissonance.md",
+      "type": "blog",
+      "count": 1,
+      "draft": true
+    }
+  ],
+  "termsover-the-air-updates": [],
+  "termsoverfitting": [
+    {
+      "file": "/Users/future/l.blog/data/blog/finance/quant/statistics.md",
+      "type": "blog",
+      "count": 1,
+      "draft": false
+    }
+  ],
+  "termsoverlapping-subproblems": [],
+  "termsoverlay-network": [],
+  "termsownership": [
+    {
+      "file": "/Users/future/l.blog/data/blog/exchange/intro-1.md",
+      "type": "blog",
+      "count": 3,
+      "draft": true
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/questions/leadership.md",
+      "type": "blog",
+      "count": 3,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/exchange/intro-7.md",
+      "type": "blog",
+      "count": 1,
+      "draft": true
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/languages/rust/crash-course.md",
+      "type": "blog",
+      "count": 1,
+      "draft": true
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/system-design/process-overview.md",
+      "type": "blog",
+      "count": 1,
+      "draft": false
+    }
+  ],
+  "termsp-series": [],
+  "termsp-value": [],
+  "termspackage-installation": [],
+  "termspacman": [
+    {
+      "file": "/Users/future/l.blog/data/blog/finance/business/hostile-takeover.md",
+      "type": "blog",
+      "count": 1,
+      "draft": true
+    }
+  ],
+  "termspadding": [
+    {
+      "file": "/Users/future/l.blog/data/blog/software/frameworks/flutter/navigators.md",
+      "type": "blog",
+      "count": 9,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/frameworks/flutter/flutter-tiktok-2.md",
+      "type": "blog",
+      "count": 5,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/frameworks/flutter/flutter-poker-1.md",
+      "type": "blog",
+      "count": 4,
+      "draft": true
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/data-structures-algorithms/graph-theory.md",
+      "type": "blog",
+      "count": 1,
+      "draft": true
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/system-design/appium-mocha.md",
+      "type": "blog",
+      "count": 1,
+      "draft": false
+    }
+  ],
+  "termspage": [
+    {
+      "file": "/Users/future/l.blog/data/blog/software/frameworks/flutter/flutter-tiktok-2.md",
+      "type": "blog",
+      "count": 7,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/frameworks/flutter/navigators.md",
+      "type": "blog",
+      "count": 7,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/TEST/introducing-tailwind-nextjs-starter-blog.mdx",
+      "type": "blog",
+      "count": 6,
+      "draft": true
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/frameworks/flutter/flutter-tiktok-1.md",
+      "type": "blog",
+      "count": 5,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/kb/atom/CS/page-router-vs-app-router.md",
+      "type": "kb",
+      "count": 4,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/info-sec/over-the-wire-3-natas.md",
+      "type": "blog",
+      "count": 4,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/info-sec/xss.md",
+      "type": "blog",
+      "count": 3,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/languages/dart/handling-nullable-fields.md",
+      "type": "blog",
+      "count": 3,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/kb/atom/preview/page1.md",
+      "type": "kb",
+      "count": 1,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/kb/atom/preview/page2.md",
+      "type": "kb",
+      "count": 1,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/kb/atom/preview/page3.md",
+      "type": "kb",
+      "count": 1,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/TEST/deriving-ols-estimator.mdx",
+      "type": "blog",
+      "count": 1,
+      "draft": true
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/TEST/guide-to-using-images-in-nextjs.mdx",
+      "type": "blog",
+      "count": 1,
+      "draft": true
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/books/12.the-thing-you-can-see-only-when-you-slow-down.md",
+      "type": "blog",
+      "count": 1,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/exchange/intro-3.md",
+      "type": "blog",
+      "count": 1,
+      "draft": true
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/devops/gcp/secret-manager.md",
+      "type": "blog",
+      "count": 1,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/languages/rust/rust-projects.md",
+      "type": "blog",
+      "count": 1,
+      "draft": true
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/system-design/0-template.md",
+      "type": "blog",
+      "count": 1,
+      "draft": true
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/system-design/1-data-science.md",
+      "type": "blog",
+      "count": 1,
+      "draft": true
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/system-design/1-ticketmaster.md",
+      "type": "blog",
+      "count": 1,
+      "draft": true
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/system-design/build-db-cluster-docker.md",
+      "type": "blog",
+      "count": 1,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/system-design/flutter-netlify-deploy.md",
+      "type": "blog",
+      "count": 1,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/system-design/key-numbers.md",
+      "type": "blog",
+      "count": 1,
+      "draft": false
+    }
+  ],
+  "termspages-router": [
+    {
+      "file": "/Users/future/l.blog/data/kb/atom/CS/page-router-vs-app-router.md",
+      "type": "kb",
+      "count": 6,
+      "draft": false
+    }
+  ],
+  "termspaint-phase": [],
+  "termspalindrome": [],
+  "termsparallel-routes": [],
+  "termsparameter": [
+    {
+      "file": "/Users/future/l.blog/data/blog/software/frameworks/flutter/flutter-tiktok-1.md",
+      "type": "blog",
+      "count": 10,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/frameworks/flutter/flutter-tiktok-2.md",
+      "type": "blog",
+      "count": 6,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/info-sec/over-the-wire-3-natas.md",
+      "type": "blog",
+      "count": 1,
+      "draft": false
+    }
+  ],
+  "termsparameterized-queries": [],
+  "termsparent-class": [
+    {
+      "file": "/Users/future/l.blog/data/blog/software/data-structures-algorithms/OOP.md",
+      "type": "blog",
+      "count": 1,
+      "draft": false
+    }
+  ],
+  "termsparent-image": [],
+  "termsparent-process": [],
+  "termspartial-derivatives": [
+    {
+      "file": "/Users/future/l.blog/data/blog/maths/calculus/calculus-3/calculus-3.md",
+      "type": "blog",
+      "count": 3,
+      "draft": true
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/finance/quant/calculus-for-quants.md",
+      "type": "blog",
+      "count": 1,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/finance/quant/maths.md",
+      "type": "blog",
+      "count": 1,
+      "draft": false
+    }
+  ],
+  "termspartial-fractions": [
+    {
+      "file": "/Users/future/l.blog/data/blog/maths/calculus/calculus-2/calculus-2.md",
+      "type": "blog",
+      "count": 1,
+      "draft": true
+    }
+  ],
+  "termspartition-by": [],
+  "termspartition-tolerance": [
+    {
+      "file": "/Users/future/l.blog/data/blog/software/system-design/process-deepdive.md",
+      "type": "blog",
+      "count": 3,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/system-design/process-overview.md",
+      "type": "blog",
+      "count": 3,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/system-design/system-design-distributed-systems.md",
+      "type": "blog",
+      "count": 1,
+      "draft": false
+    }
+  ],
+  "termspartition": [
+    {
+      "file": "/Users/future/l.blog/data/blog/software/system-design/process-deepdive.md",
+      "type": "blog",
+      "count": 3,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/system-design/process-overview.md",
+      "type": "blog",
+      "count": 3,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/data-structures-algorithms/algorithms/sorting.md",
+      "type": "blog",
+      "count": 1,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/system-design/system-design-distributed-systems.md",
+      "type": "blog",
+      "count": 1,
+      "draft": false
+    }
+  ],
+  "termspath-based-routing": [],
+  "termspath": [
+    {
+      "file": "/Users/future/l.blog/data/blog/software/data-structures-algorithms/patterns-graph.md",
+      "type": "blog",
+      "count": 49,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/data-structures-algorithms/priority-queue.md",
+      "type": "blog",
+      "count": 8,
+      "draft": true
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/finance/high-frequency-trading.md",
+      "type": "blog",
+      "count": 7,
+      "draft": true
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/frameworks/logging-app-load-times-with-firebase.md",
+      "type": "blog",
+      "count": 5,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/languages/java/java-spring.md",
+      "type": "blog",
+      "count": 5,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/data-structures-algorithms/algorithms/dijkstras.md",
+      "type": "blog",
+      "count": 4,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/data-structures-algorithms/graph-programming.md",
+      "type": "blog",
+      "count": 4,
+      "draft": true
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/data-structures-algorithms/trees.md",
+      "type": "blog",
+      "count": 4,
+      "draft": true
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/languages/dart/dart.3.10.md",
+      "type": "blog",
+      "count": 4,
+      "draft": true
+    },
+    {
+      "file": "/Users/future/l.blog/data/kb/tool/obsidian/preview/theme1.md",
+      "type": "kb",
+      "count": 2,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/kb/tool/obsidian/preview/theme2.md",
+      "type": "kb",
+      "count": 2,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/ai/ai-search-agent.md",
+      "type": "blog",
+      "count": 2,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/data-structures-algorithms/algorithms/union-find.md",
+      "type": "blog",
+      "count": 2,
+      "draft": true
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/data-structures-algorithms/graph-theory.md",
+      "type": "blog",
+      "count": 2,
+      "draft": true
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/git/partial-add.md",
+      "type": "blog",
+      "count": 2,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/info-sec/over-the-wire-1-bandit.md",
+      "type": "blog",
+      "count": 2,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/system-design/build-api-cache.md",
+      "type": "blog",
+      "count": 2,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/TEST/pictures-of-canada.mdx",
+      "type": "blog",
+      "count": 1,
+      "draft": true
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/exchange/intro-4.md",
+      "type": "blog",
+      "count": 1,
+      "draft": true
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/finance/index.md",
+      "type": "blog",
+      "count": 1,
+      "draft": true
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/maths/calculus/multivariable-calc.md",
+      "type": "blog",
+      "count": 1,
+      "draft": true
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/data-structures-algorithms/algorithms/priority-queue.md",
+      "type": "blog",
+      "count": 1,
+      "draft": true
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/data-structures-algorithms/cheatsheet.md",
+      "type": "blog",
+      "count": 1,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/databases/sql/remote-clone-to-local.md",
+      "type": "blog",
+      "count": 1,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/frameworks/flutter/flutter android customize app icon.md",
+      "type": "blog",
+      "count": 1,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/frameworks/flutter/flutter-tiktok-1.md",
+      "type": "blog",
+      "count": 1,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/frameworks/next/introducing-multi-part-posts-with-nested-routing.md",
+      "type": "blog",
+      "count": 1,
+      "draft": true
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/info-sec/over-the-wire-3-natas.md",
+      "type": "blog",
+      "count": 1,
+      "draft": false
+    }
+  ],
+  "termspattern-matching": [
+    {
+      "file": "/Users/future/l.blog/data/blog/software/databases/sql/1_toc.md",
+      "type": "blog",
+      "count": 1,
+      "draft": true
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/languages/rust/rust-projects.md",
+      "type": "blog",
+      "count": 1,
+      "draft": true
+    }
+  ],
+  "termspaused": [],
+  "termspca": [
+    {
+      "file": "/Users/future/l.blog/data/blog/finance/quant/crash-course.md",
+      "type": "blog",
+      "count": 2,
+      "draft": true
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/finance/quant/statistics.md",
+      "type": "blog",
+      "count": 1,
+      "draft": false
+    }
+  ],
+  "termspending": [
+    {
+      "file": "/Users/future/l.blog/data/blog/exchange/intro-7.md",
+      "type": "blog",
+      "count": 1,
+      "draft": true
+    }
+  ],
+  "termsperceptron": [],
+  "termsperformance-overlay": [],
+  "termspermissions": [
+    {
+      "file": "/Users/future/l.blog/data/blog/software/info-sec/over-the-wire-1-bandit.md",
+      "type": "blog",
+      "count": 3,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/info-sec/over-the-wire-2-leviathan.md",
+      "type": "blog",
+      "count": 2,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/system-design/build-db-cluster-docker.md",
+      "type": "blog",
+      "count": 2,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/cheatsheets/shell.md",
+      "type": "blog",
+      "count": 1,
+      "draft": true
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/exchange/intro-7.md",
+      "type": "blog",
+      "count": 1,
+      "draft": true
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/devops/gcp/cloud-run-job.md",
+      "type": "blog",
+      "count": 1,
+      "draft": false
+    }
+  ],
+  "termspermutations": [
+    {
+      "file": "/Users/future/l.blog/data/blog/maths/combinatorics/combinatorics.md",
+      "type": "blog",
+      "count": 1,
+      "draft": true
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/data-structures-algorithms/terms.md",
+      "type": "blog",
+      "count": 1,
+      "draft": true
+    }
+  ],
+  "termspersistent-storage": [],
+  "termspersistent-volume-claim": [],
+  "termspersistent-volume": [],
+  "termspid": [],
+  "termspigeonhole-principle": [],
+  "termsping": [],
+  "termspipeline": [
+    {
+      "file": "/Users/future/l.blog/data/blog/same-problems-different-tools.md",
+      "type": "blog",
+      "count": 2,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/devops/gcp/cloud-build-triggers.md",
+      "type": "blog",
+      "count": 2,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/TEST/TEST-TERMS.md",
+      "type": "blog",
+      "count": 1,
+      "draft": true
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/projects/royal-stock-exchange/4-scaling.md",
+      "type": "blog",
+      "count": 1,
+      "draft": false
+    }
+  ],
+  "termspipes": [
+    {
+      "file": "/Users/future/l.blog/data/blog/software/languages/rust/rust-projects.md",
+      "type": "blog",
+      "count": 1,
+      "draft": true
+    }
+  ],
+  "termsplanes": [
+    {
+      "file": "/Users/future/l.blog/data/blog/TEST/the-time-machine.mdx",
+      "type": "blog",
+      "count": 2,
+      "draft": true
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/maths/calculus/calculus-3/calculus-3.md",
+      "type": "blog",
+      "count": 1,
+      "draft": true
+    }
+  ],
+  "termsplanning-agent": [],
+  "termsplanning-problem": [],
+  "termsplatform-channels": [],
+  "termsplatform-specific-styles": [],
+  "termspod-abstraction": [],
+  "termspod-logs": [],
+  "termspod-security-policies": [],
+  "termspod-to-pod-communication": [],
+  "termspod": [
+    {
+      "file": "/Users/future/l.blog/data/blog/cheatsheets/kubernetes.md",
+      "type": "blog",
+      "count": 2,
+      "draft": false
+    }
+  ],
+  "termspoint-estimation": [
+    {
+      "file": "/Users/future/l.blog/data/blog/software/sprints.md",
+      "type": "blog",
+      "count": 1,
+      "draft": false
+    }
+  ],
+  "termspoisson-distribution": [],
+  "termspolicy-gradient": [],
+  "termspolicy": [
+    {
+      "file": "/Users/future/l.blog/data/blog/finance/federal-reserve-vs-treasury-department.md",
+      "type": "blog",
+      "count": 7,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/TEST/introducing-tailwind-nextjs-starter-blog.mdx",
+      "type": "blog",
+      "count": 2,
+      "draft": true
+    },
+    {
+      "file": "/Users/future/l.blog/data/kb/atom/CS/AI.md",
+      "type": "kb",
+      "count": 1,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/exchange/intro-7.md",
+      "type": "blog",
+      "count": 1,
+      "draft": true
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/finance/options/strategies/trading-strategies.md",
+      "type": "blog",
+      "count": 1,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/finance/toc.md",
+      "type": "blog",
+      "count": 1,
+      "draft": true
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/devops/gcp/cloud-sql-commands.md",
+      "type": "blog",
+      "count": 1,
+      "draft": true
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/devops/gcp/secret-manager.md",
+      "type": "blog",
+      "count": 1,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/info-sec/xss.md",
+      "type": "blog",
+      "count": 1,
+      "draft": false
+    }
+  ],
+  "termspolymorphism": [
+    {
+      "file": "/Users/future/l.blog/data/blog/software/data-structures-algorithms/OOP.md",
+      "type": "blog",
+      "count": 5,
+      "draft": false
+    }
+  ],
+  "termspolynomial-regression": [],
+  "termspopulation": [
+    {
+      "file": "/Users/future/l.blog/data/blog/software/devops/gcp/cloud-run-job.md",
+      "type": "blog",
+      "count": 2,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/maths/statistics/variance-standard-deviation.md",
+      "type": "blog",
+      "count": 1,
+      "draft": false
+    }
+  ],
+  "termsport-conflicts": [],
+  "termsport-mapping": [],
+  "termsportfolio-optimization": [
+    {
+      "file": "/Users/future/l.blog/data/blog/finance/quant/calculus-for-quants.md",
+      "type": "blog",
+      "count": 2,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/finance/quant/symbols.md",
+      "type": "blog",
+      "count": 2,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/finance/quant/maths.md",
+      "type": "blog",
+      "count": 1,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/finance/quant/pair-trading.md",
+      "type": "blog",
+      "count": 1,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/finance/quant/statistics.md",
+      "type": "blog",
+      "count": 1,
+      "draft": false
+    }
+  ],
+  "termsportfolio-variance": [
+    {
+      "file": "/Users/future/l.blog/data/blog/finance/formulas.md",
+      "type": "blog",
+      "count": 1,
+      "draft": true
+    }
+  ],
+  "termsports": [
+    {
+      "file": "/Users/future/l.blog/data/blog/software/info-sec/over-the-wire-1-bandit.md",
+      "type": "blog",
+      "count": 4,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/system-design/microservices.md",
+      "type": "blog",
+      "count": 4,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/system-design/build-db-cluster-docker.md",
+      "type": "blog",
+      "count": 3,
+      "draft": false
+    }
+  ],
+  "termspositioning": [],
+  "termspositive-definite-matrices": [],
+  "termsposterior-probability": [],
+  "termspostgresql": [
+    {
+      "file": "/Users/future/l.blog/data/blog/software/system-design/build-db-cluster-docker.md",
+      "type": "blog",
+      "count": 29,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/databases/sql/remote-clone-to-local.md",
+      "type": "blog",
+      "count": 8,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/databases/psql.md",
+      "type": "blog",
+      "count": 7,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/databases/sql/setup-pg-macos.md",
+      "type": "blog",
+      "count": 3,
+      "draft": true
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/databases/sql/clone-db.md",
+      "type": "blog",
+      "count": 2,
+      "draft": false
+    }
+  ],
+  "termspostorder-traversal": [],
+  "termspower-rule": [
+    {
+      "file": "/Users/future/l.blog/data/blog/maths/calculus/calculus-2/calculus-2.md",
+      "type": "blog",
+      "count": 1,
+      "draft": true
+    }
+  ],
+  "termspower-series": [
+    {
+      "file": "/Users/future/l.blog/data/blog/maths/calculus/calculus-2/calculus-2.md",
+      "type": "blog",
+      "count": 1,
+      "draft": true
+    }
+  ],
+  "termspower-set": [
+    {
+      "file": "/Users/future/l.blog/data/blog/maths/discrete-symbols.md",
+      "type": "blog",
+      "count": 1,
+      "draft": false
+    }
+  ],
+  "termsppi": [
+    {
+      "file": "/Users/future/l.blog/data/blog/finance/indicators/leading-and-lagging-indicators.md",
+      "type": "blog",
+      "count": 1,
+      "draft": false
+    }
+  ],
+  "termsprecision": [
+    {
+      "file": "/Users/future/l.blog/data/blog/TEST/the-time-machine.mdx",
+      "type": "blog",
+      "count": 1,
+      "draft": true
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/finance/options/strategies/spreads.md",
+      "type": "blog",
+      "count": 1,
+      "draft": false
+    }
+  ],
+  "termspredicate": [
+    {
+      "file": "/Users/future/l.blog/data/blog/software/data-structures-algorithms/terms.md",
+      "type": "blog",
+      "count": 1,
+      "draft": true
+    }
+  ],
+  "termsprefetching": [],
+  "termsprefix-sum": [],
+  "termspreorder-traversal": [
+    {
+      "file": "/Users/future/l.blog/data/blog/software/data-structures-algorithms/algorithms/tree-traversals.md",
+      "type": "blog",
+      "count": 1,
+      "draft": true
+    }
+  ],
+  "termsprepared-statements": [],
+  "termspresentation-layer": [],
+  "termspressable": [],
+  "termsprim-algorithm": [],
+  "termsprimary-key": [
+    {
+      "file": "/Users/future/l.blog/data/blog/projects/royal-stock-exchange/2-seeding data.md",
+      "type": "blog",
+      "count": 4,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/databases/sql/1_toc.md",
+      "type": "blog",
+      "count": 1,
+      "draft": true
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/system-design/SQL Server Setup.md",
+      "type": "blog",
+      "count": 1,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/system-design/build-db-cluster-docker.md",
+      "type": "blog",
+      "count": 1,
+      "draft": false
+    }
+  ],
+  "termsprime-factorization": [],
+  "termsprime-numbers": [],
+  "termsprincipal-component-analysis": [
+    {
+      "file": "/Users/future/l.blog/data/blog/finance/quant/maths.md",
+      "type": "blog",
+      "count": 1,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/finance/quant/statistics.md",
+      "type": "blog",
+      "count": 1,
+      "draft": false
+    }
+  ],
+  "termsprincipal-directions": [],
+  "termsprior-probability": [],
+  "termspriority-queue": [
+    {
+      "file": "/Users/future/l.blog/data/blog/leetcode/742-network-delay-time.md",
+      "type": "blog",
+      "count": 6,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/data-structures-algorithms/patterns-graph.md",
+      "type": "blog",
+      "count": 5,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/data-structures-algorithms/priority-queue.md",
+      "type": "blog",
+      "count": 5,
+      "draft": true
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/data-structures-algorithms/cheatsheet.md",
+      "type": "blog",
+      "count": 2,
+      "draft": false
+    }
+  ],
+  "termsprisma": [],
+  "termsprivate-company": [],
+  "termsprivate-registry": [],
+  "termsprivate": [
+    {
+      "file": "/Users/future/l.blog/data/blog/software/devops/gcp/vcp-connectors.md",
+      "type": "blog",
+      "count": 10,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/info-sec/over-the-wire-1-bandit.md",
+      "type": "blog",
+      "count": 6,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/finance/RDO.md",
+      "type": "blog",
+      "count": 5,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/devops/gcp/memory-store.md",
+      "type": "blog",
+      "count": 4,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/languages/java/java-spring.md",
+      "type": "blog",
+      "count": 4,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/data-structures-algorithms/OOP.md",
+      "type": "blog",
+      "count": 1,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/frameworks/flutter/android connectivity issues - connection refused.md",
+      "type": "blog",
+      "count": 1,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/system-design/1-LeetCode.md",
+      "type": "blog",
+      "count": 1,
+      "draft": true
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/system-design/microservices.md",
+      "type": "blog",
+      "count": 1,
+      "draft": false
+    }
+  ],
+  "termsprivilege-escalation": [],
+  "termsprobabilistic-models": [],
+  "termsprobabilistic-reasoning": [],
+  "termsprobability-distribution": [],
+  "termsprobability": [
+    {
+      "file": "/Users/future/l.blog/data/blog/software/data-structures-algorithms/patterns-graph.md",
+      "type": "blog",
+      "count": 8,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/finance/quant/maths.md",
+      "type": "blog",
+      "count": 4,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/finance/quant/symbols.md",
+      "type": "blog",
+      "count": 4,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/data-structures-algorithms/priority-queue.md",
+      "type": "blog",
+      "count": 3,
+      "draft": true
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/finance/quant/crash-course.md",
+      "type": "blog",
+      "count": 2,
+      "draft": true
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/finance/quant/statistics.md",
+      "type": "blog",
+      "count": 2,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/data-structures-algorithms/algorithms/dijkstras.md",
+      "type": "blog",
+      "count": 2,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/finance/options/greeks.md",
+      "type": "blog",
+      "count": 1,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/finance/quant/calculus-for-quants.md",
+      "type": "blog",
+      "count": 1,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/finance/toc.md",
+      "type": "blog",
+      "count": 1,
+      "draft": true
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/maths/calculus/fundamental-theorem-of-calculus.md",
+      "type": "blog",
+      "count": 1,
+      "draft": true
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/maths/calculus/intro.md",
+      "type": "blog",
+      "count": 1,
+      "draft": true
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/data-structures-algorithms/algorithms/priority-queue.md",
+      "type": "blog",
+      "count": 1,
+      "draft": true
+    }
+  ],
+  "termsproblem-solving": [
+    {
+      "file": "/Users/future/l.blog/data/blog/software/data-structures-algorithms/patterns-graph.md",
+      "type": "blog",
+      "count": 1,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/system-design/process-overview.md",
+      "type": "blog",
+      "count": 1,
+      "draft": false
+    }
+  ],
+  "termsproc": [],
+  "termsprocess": [
+    {
+      "file": "/Users/future/l.blog/data/blog/software/system-design/appium-mocha.md",
+      "type": "blog",
+      "count": 12,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/languages/go/go-routines.md",
+      "type": "blog",
+      "count": 9,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/data-structures-algorithms/algorithms/tree-traversals.md",
+      "type": "blog",
+      "count": 4,
+      "draft": true
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/system-design/process-overview.md",
+      "type": "blog",
+      "count": 4,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/system-design/system-design-auditing.md",
+      "type": "blog",
+      "count": 4,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/data-structures-algorithms/algorithms/sorting.md",
+      "type": "blog",
+      "count": 3,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/data-structures-algorithms/cheatsheet.md",
+      "type": "blog",
+      "count": 3,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/languages/rust/rust-projects.md",
+      "type": "blog",
+      "count": 3,
+      "draft": true
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/finance/IPO.md",
+      "type": "blog",
+      "count": 2,
+      "draft": true
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/finance/RDO.md",
+      "type": "blog",
+      "count": 2,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/questions/leadership.md",
+      "type": "blog",
+      "count": 2,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/info-sec/over-the-wire-1-bandit.md",
+      "type": "blog",
+      "count": 2,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/system-design/build-message-queue.md",
+      "type": "blog",
+      "count": 2,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/system-design/process-deepdive.md",
+      "type": "blog",
+      "count": 2,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/TEST/guide-to-using-images-in-nextjs.mdx",
+      "type": "blog",
+      "count": 1,
+      "draft": true
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/finance/business/hostile-takeover.md",
+      "type": "blog",
+      "count": 1,
+      "draft": true
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/finance/high-frequency-trading.md",
+      "type": "blog",
+      "count": 1,
+      "draft": true
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/finance/index.md",
+      "type": "blog",
+      "count": 1,
+      "draft": true
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/finance/indicators/implied-volatility-rank.md",
+      "type": "blog",
+      "count": 1,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/finance/terms/index-fund.md",
+      "type": "blog",
+      "count": 1,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/leetcode/742-network-delay-time.md",
+      "type": "blog",
+      "count": 1,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/maths/calculus/calculus-1/calculus-1.md",
+      "type": "blog",
+      "count": 1,
+      "draft": true
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/maths/calculus/fundamental-theorem-of-calculus.md",
+      "type": "blog",
+      "count": 1,
+      "draft": true
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/projects/royal-stock-exchange/2-seeding data.md",
+      "type": "blog",
+      "count": 1,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/projects/royal-stock-exchange/4-scaling.md",
+      "type": "blog",
+      "count": 1,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/questions/running-a-company.md",
+      "type": "blog",
+      "count": 1,
+      "draft": true
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/data-structures-algorithms/algorithms/dijkstras.md",
+      "type": "blog",
+      "count": 1,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/data-structures-algorithms/priority-queue.md",
+      "type": "blog",
+      "count": 1,
+      "draft": true
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/databases/sql/clone-db.md",
+      "type": "blog",
+      "count": 1,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/databases/sql/remote-clone-to-local.md",
+      "type": "blog",
+      "count": 1,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/design patterns/factory.md",
+      "type": "blog",
+      "count": 1,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/devops/gcp/cloud-run-job.md",
+      "type": "blog",
+      "count": 1,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/git/rebase.md",
+      "type": "blog",
+      "count": 1,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/system-design/build-db-cluster-docker.md",
+      "type": "blog",
+      "count": 1,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/system-design/firebase environments.md",
+      "type": "blog",
+      "count": 1,
+      "draft": true
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/system-design/system-design-1-bitly.md",
+      "type": "blog",
+      "count": 1,
+      "draft": false
+    }
+  ],
+  "termsproduct-rule": [
+    {
+      "file": "/Users/future/l.blog/data/blog/maths/calculus/calculus-1/calculus-1.md",
+      "type": "blog",
+      "count": 2,
+      "draft": true
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/maths/calculus/differentiation.md",
+      "type": "blog",
+      "count": 2,
+      "draft": true
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/maths/calculus/calculus-2/calculus-2.md",
+      "type": "blog",
+      "count": 1,
+      "draft": true
+    }
+  ],
+  "termsprogressive-enhancement": [],
+  "termsprojection-matrix": [],
+  "termsprojection": [],
+  "termsprometheus": [],
+  "termspromises": [
+    {
+      "file": "/Users/future/l.blog/data/blog/exchange/intro-6.md",
+      "type": "blog",
+      "count": 1,
+      "draft": true
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/devops/gcp/aws-lambda.md",
+      "type": "blog",
+      "count": 1,
+      "draft": true
+    }
+  ],
+  "termsproof-by-contradiction": [],
+  "termsproof-by-contrapositive": [],
+  "termsproof": [
+    {
+      "file": "/Users/future/l.blog/data/blog/exchange/intro-5.md",
+      "type": "blog",
+      "count": 1,
+      "draft": true
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/exchange/intro-7.md",
+      "type": "blog",
+      "count": 1,
+      "draft": true
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/finance/high-frequency-trading.md",
+      "type": "blog",
+      "count": 1,
+      "draft": true
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/system-design/appium-mocha.md",
+      "type": "blog",
+      "count": 1,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/system-design/process-deepdive.md",
+      "type": "blog",
+      "count": 1,
+      "draft": false
+    }
+  ],
+  "termsprop-drilling": [],
+  "termsproposition": [
+    {
+      "file": "/Users/future/l.blog/data/blog/software/devops/gcp/aws-cloud-practiitioner.md",
+      "type": "blog",
+      "count": 1,
+      "draft": true
+    }
+  ],
+  "termspropositional-logic": [],
+  "termsprops": [
+    {
+      "file": "/Users/future/l.blog/data/kb/atom/CS/page-router-vs-app-router.md",
+      "type": "kb",
+      "count": 1,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/opinions/why-flutter-is-better-than-react-native.md",
+      "type": "blog",
+      "count": 1,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/data-structures-algorithms/OOP.md",
+      "type": "blog",
+      "count": 1,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/data-structures-algorithms/cheatsheet.md",
+      "type": "blog",
+      "count": 1,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/data-structures-algorithms/patterns-graph.md",
+      "type": "blog",
+      "count": 1,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/devops/gcp/aws-cloud-practiitioner.md",
+      "type": "blog",
+      "count": 1,
+      "draft": true
+    }
+  ],
+  "termsprotected": [
+    {
+      "file": "/Users/future/l.blog/data/blog/software/design patterns/decorator.md",
+      "type": "blog",
+      "count": 1,
+      "draft": false
+    }
+  ],
+  "termsprototypes": [
+    {
+      "file": "/Users/future/l.blog/data/blog/software/demos-not-memos.md",
+      "type": "blog",
+      "count": 2,
+      "draft": false
+    }
+  ],
+  "termsprovider": [
+    {
+      "file": "/Users/future/l.blog/data/blog/software/system-design/flutter-theme.md",
+      "type": "blog",
+      "count": 8,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/TEST/introducing-tailwind-nextjs-starter-blog.mdx",
+      "type": "blog",
+      "count": 3,
+      "draft": true
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/same-problems-different-tools.md",
+      "type": "blog",
+      "count": 1,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/info-sec/csrf.md",
+      "type": "blog",
+      "count": 1,
+      "draft": false
+    }
+  ],
+  "termsps": [
+    {
+      "file": "/Users/future/l.blog/data/blog/software/system-design/microservices.md",
+      "type": "blog",
+      "count": 1,
+      "draft": false
+    }
+  ],
+  "termspub-package-manager": [],
+  "termspublic-company": [
+    {
+      "file": "/Users/future/l.blog/data/blog/finance/RDO.md",
+      "type": "blog",
+      "count": 2,
+      "draft": false
+    }
+  ],
+  "termspublic": [
+    {
+      "file": "/Users/future/l.blog/data/blog/politics/1-go.md",
+      "type": "blog",
+      "count": 9,
+      "draft": true
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/leetcode/200-number-of-islands.md",
+      "type": "blog",
+      "count": 7,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/politics/communism.md",
+      "type": "blog",
+      "count": 7,
+      "draft": true
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/finance/RDO.md",
+      "type": "blog",
+      "count": 6,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/projects/royal-stock-exchange/1-intro.md",
+      "type": "blog",
+      "count": 6,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/data-structures-algorithms/OOP.md",
+      "type": "blog",
+      "count": 6,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/languages/java/java-spring.md",
+      "type": "blog",
+      "count": 6,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/exchange/intro-1.md",
+      "type": "blog",
+      "count": 5,
+      "draft": true
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/exchange/intro-3.md",
+      "type": "blog",
+      "count": 5,
+      "draft": true
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/exchange/intro-4.md",
+      "type": "blog",
+      "count": 4,
+      "draft": true
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/exchange/intro-5.md",
+      "type": "blog",
+      "count": 4,
+      "draft": true
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/leetcode/1-two-sum.md",
+      "type": "blog",
+      "count": 3,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/leetcode/121-best-time-to-sell-stock.md",
+      "type": "blog",
+      "count": 3,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/leetcode/16-3-sum-closest.md",
+      "type": "blog",
+      "count": 3,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/devops/gcp/vcp-connectors.md",
+      "type": "blog",
+      "count": 3,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/exchange/intro-2.md",
+      "type": "blog",
+      "count": 2,
+      "draft": true
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/finance/IPO.md",
+      "type": "blog",
+      "count": 2,
+      "draft": true
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/finance/terms/closed-ended-funds.md",
+      "type": "blog",
+      "count": 2,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/finance/terms/secondary-market.md",
+      "type": "blog",
+      "count": 2,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/leetcode/217-contains-duplicate.md",
+      "type": "blog",
+      "count": 2,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/leetcode/70-climbing-stairs.md",
+      "type": "blog",
+      "count": 2,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/TEST/code-tab-groups.md",
+      "type": "blog",
+      "count": 1,
+      "draft": true
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/TEST/guide-to-using-images-in-nextjs.mdx",
+      "type": "blog",
+      "count": 1,
+      "draft": true
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/TEST/introducing-tailwind-nextjs-starter-blog.mdx",
+      "type": "blog",
+      "count": 1,
+      "draft": true
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/exchange/intro-6.md",
+      "type": "blog",
+      "count": 1,
+      "draft": true
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/finance/business/hostile-takeover.md",
+      "type": "blog",
+      "count": 1,
+      "draft": true
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/finance/federal-reserve-vs-treasury-department.md",
+      "type": "blog",
+      "count": 1,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/finance/toc.md",
+      "type": "blog",
+      "count": 1,
+      "draft": true
+    },
+    {
       "file": "/Users/future/l.blog/data/blog/software/system-design/build-db-cluster-docker.md",
       "type": "blog",
       "count": 1,
@@ -1093,11 +22610,261 @@ export const termBacklinks = {
       "draft": false
     }
   ],
-  "dsa": [
+  "termspull-image": [],
+  "termspull": [
+    {
+      "file": "/Users/future/l.blog/data/blog/software/devops/gcp/cloud-run-job.md",
+      "type": "blog",
+      "count": 2,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/system-design/flutter-netlify-deploy.md",
+      "type": "blog",
+      "count": 2,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/devops/gcp/cloud-build-triggers.md",
+      "type": "blog",
+      "count": 1,
+      "draft": false
+    }
+  ],
+  "termspure-component": [],
+  "termspush-image": [],
+  "termspush-notifications": [],
+  "termspush": [
+    {
+      "file": "/Users/future/l.blog/data/blog/software/data-structures-algorithms/graph-programming.md",
+      "type": "blog",
+      "count": 8,
+      "draft": true
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/devops/gcp/cloud-build-triggers.md",
+      "type": "blog",
+      "count": 5,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/frameworks/flutter/navigators.md",
+      "type": "blog",
+      "count": 4,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/data-structures-algorithms/dynamic-programming.md",
+      "type": "blog",
+      "count": 3,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/data-structures-algorithms/graph.md",
+      "type": "blog",
+      "count": 3,
+      "draft": true
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/leetcode/261-graph-valid-tree.md",
+      "type": "blog",
+      "count": 2,
+      "draft": true
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/devops/gcp/cloud-run.md",
+      "type": "blog",
+      "count": 2,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/git/rebase.md",
+      "type": "blog",
+      "count": 2,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/system-design/flutter-netlify-deploy.md",
+      "type": "blog",
+      "count": 2,
+      "draft": false
+    },
     {
       "file": "/Users/future/l.blog/data/blog/TEST/TEST-TERMS.md",
       "type": "blog",
-      "count": 15,
+      "count": 1,
+      "draft": true
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/finance/high-frequency-trading.md",
+      "type": "blog",
+      "count": 1,
+      "draft": true
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/design patterns/observer.md",
+      "type": "blog",
+      "count": 1,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/git/pre-commit.md",
+      "type": "blog",
+      "count": 1,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/languages/rust/rust-projects.md",
+      "type": "blog",
+      "count": 1,
+      "draft": true
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/platforms/ios/template.md",
+      "type": "blog",
+      "count": 1,
+      "draft": true
+    }
+  ],
+  "termsput-option": [
+    {
+      "file": "/Users/future/l.blog/data/blog/finance/options/strategies/introduction.md",
+      "type": "blog",
+      "count": 3,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/finance/quant/symbols.md",
+      "type": "blog",
+      "count": 2,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/finance/indicators/put-call-ratio.md",
+      "type": "blog",
+      "count": 1,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/finance/options/black-scholes.md",
+      "type": "blog",
+      "count": 1,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/finance/options/greeks.md",
+      "type": "blog",
+      "count": 1,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/finance/options/strategies/straddle.md",
+      "type": "blog",
+      "count": 1,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/finance/options/strategies/strangle.md",
+      "type": "blog",
+      "count": 1,
+      "draft": false
+    }
+  ],
+  "termsq-learning": [],
+  "termsqr-decomposition": [],
+  "termsquantifiers": [],
+  "termsquantitative-easing": [],
+  "termsquery-complexity": [],
+  "termsquery-language": [
+    {
+      "file": "/Users/future/l.blog/data/blog/projects/royal-stock-exchange/4-scaling.md",
+      "type": "blog",
+      "count": 1,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/system-design/graphql.md",
+      "type": "blog",
+      "count": 1,
+      "draft": false
+    }
+  ],
+  "termsquery-optimization": [
+    {
+      "file": "/Users/future/l.blog/data/blog/projects/royal-stock-exchange/4-scaling.md",
+      "type": "blog",
+      "count": 3,
+      "draft": false
+    }
+  ],
+  "termsquery-planner": [],
+  "termsqueue": [
+    {
+      "file": "/Users/future/l.blog/data/blog/software/system-design/build-message-queue.md",
+      "type": "blog",
+      "count": 18,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/data-structures-algorithms/cheatsheet.md",
+      "type": "blog",
+      "count": 9,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/data-structures-algorithms/graph.md",
+      "type": "blog",
+      "count": 8,
+      "draft": true
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/leetcode/742-network-delay-time.md",
+      "type": "blog",
+      "count": 6,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/data-structures-algorithms/graph-programming.md",
+      "type": "blog",
+      "count": 6,
+      "draft": true
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/data-structures-algorithms/patterns-graph.md",
+      "type": "blog",
+      "count": 6,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/data-structures-algorithms/priority-queue.md",
+      "type": "blog",
+      "count": 5,
+      "draft": true
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/data-structures-algorithms/algorithms/dijkstras.md",
+      "type": "blog",
+      "count": 2,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/data-structures-algorithms/graph-algorithms.md",
+      "type": "blog",
+      "count": 2,
+      "draft": true
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/finance/high-frequency-trading.md",
+      "type": "blog",
+      "count": 1,
+      "draft": true
+    }
+  ],
+  "termsquick-sort": [
+    {
+      "file": "/Users/future/l.blog/data/blog/software/data-structures-algorithms/algorithms/sorting-old.md",
+      "type": "blog",
+      "count": 2,
       "draft": true
     },
     {
@@ -1105,12 +22872,7843 @@ export const termBacklinks = {
       "type": "blog",
       "count": 2,
       "draft": false
+    }
+  ],
+  "termsquotient-rule": [
+    {
+      "file": "/Users/future/l.blog/data/blog/maths/calculus/calculus-1/calculus-1.md",
+      "type": "blog",
+      "count": 2,
+      "draft": true
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/maths/calculus/differentiation.md",
+      "type": "blog",
+      "count": 2,
+      "draft": true
+    }
+  ],
+  "termsrabin-karp": [],
+  "termsradius-of-convergence": [],
+  "termsradix-sort": [],
+  "termsrandom-forest": [],
+  "termsrandom-sampling": [],
+  "termsrandom-variable": [],
+  "termsrandomization": [],
+  "termsrange": [
+    {
+      "file": "/Users/future/l.blog/data/blog/software/languages/go/go-routines.md",
+      "type": "blog",
+      "count": 18,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/leetcode/200-number-of-islands.md",
+      "type": "blog",
+      "count": 6,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/data-structures-algorithms/algorithms/sorting.md",
+      "type": "blog",
+      "count": 4,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/finance/options/strategies/condor.md",
+      "type": "blog",
+      "count": 3,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/data-structures-algorithms/algorithms/sorting-old.md",
+      "type": "blog",
+      "count": 3,
+      "draft": true
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/finance/indicators/implied-volatility-rank.md",
+      "type": "blog",
+      "count": 2,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/finance/options/strategies/trading-strategies.md",
+      "type": "blog",
+      "count": 2,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/leetcode/1-two-sum.md",
+      "type": "blog",
+      "count": 2,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/leetcode/217-contains-duplicate.md",
+      "type": "blog",
+      "count": 2,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/leetcode/238-product-of-array-except-self.md",
+      "type": "blog",
+      "count": 2,
+      "draft": true
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/leetcode/463-island-perimeter.md",
+      "type": "blog",
+      "count": 2,
+      "draft": true
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/data-structures-algorithms/cheatsheet.md",
+      "type": "blog",
+      "count": 2,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/data-structures-algorithms/hash-table.md",
+      "type": "blog",
+      "count": 2,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/devops/gcp/vcp-connectors.md",
+      "type": "blog",
+      "count": 2,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/TEST/code-tab-groups.md",
+      "type": "blog",
+      "count": 1,
+      "draft": true
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/finance/indicators/relative-strength-index.md",
+      "type": "blog",
+      "count": 1,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/finance/options/strategies/straddle.md",
+      "type": "blog",
+      "count": 1,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/finance/terms/open-ended-funds.md",
+      "type": "blog",
+      "count": 1,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/leetcode/252-meeting-rooms.md",
+      "type": "blog",
+      "count": 1,
+      "draft": true
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/leetcode/322-coin-change.md",
+      "type": "blog",
+      "count": 1,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/leetcode/70-climbing-stairs.md",
+      "type": "blog",
+      "count": 1,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/projects/royal-stock-exchange/4-scaling.md",
+      "type": "blog",
+      "count": 1,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/data-structures-algorithms/graph-theory.md",
+      "type": "blog",
+      "count": 1,
+      "draft": true
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/devops/gcp/memory-store.md",
+      "type": "blog",
+      "count": 1,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/info-sec/over-the-wire-1-bandit.md",
+      "type": "blog",
+      "count": 1,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/info-sec/over-the-wire-3-natas.md",
+      "type": "blog",
+      "count": 1,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/system-design/process-deepdive.md",
+      "type": "blog",
+      "count": 1,
+      "draft": false
+    }
+  ],
+  "termsrank": [
+    {
+      "file": "/Users/future/l.blog/data/blog/finance/indicators/implied-volatility-rank.md",
+      "type": "blog",
+      "count": 3,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/TEST/deriving-ols-estimator.mdx",
+      "type": "blog",
+      "count": 2,
+      "draft": true
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/finance/quant/statistics.md",
+      "type": "blog",
+      "count": 1,
+      "draft": false
+    }
+  ],
+  "termsrate-of-change": [
+    {
+      "file": "/Users/future/l.blog/data/blog/maths/calculus/calculus-1/calculus-1.md",
+      "type": "blog",
+      "count": 3,
+      "draft": true
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/maths/calculus/fundamental-theorem-of-calculus.md",
+      "type": "blog",
+      "count": 3,
+      "draft": true
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/maths/calculus/intro.md",
+      "type": "blog",
+      "count": 2,
+      "draft": true
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/finance/formulas.md",
+      "type": "blog",
+      "count": 1,
+      "draft": true
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/finance/options/greeks.md",
+      "type": "blog",
+      "count": 1,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/maths/calculus/calculus-1/toc.md",
+      "type": "blog",
+      "count": 1,
+      "draft": true
+    }
+  ],
+  "termsratio-test": [
+    {
+      "file": "/Users/future/l.blog/data/blog/maths/calculus/calculus-2/calculus-2.md",
+      "type": "blog",
+      "count": 2,
+      "draft": true
+    }
+  ],
+  "termsrational-agent": [],
+  "termsrbac": [],
+  "termsre-render-optimization": [],
+  "termsreact-concurrency": [],
+  "termsreact-element": [],
+  "termsreact-framework": [],
+  "termsreact-memo": [],
+  "termsreact-native-cli": [],
+  "termsreact-native-gesture-handler": [],
+  "termsreact-native-reanimated": [],
+  "termsreact-native-styles": [],
+  "termsreact-native": [
+    {
+      "file": "/Users/future/l.blog/data/blog/opinions/why-flutter-is-better-than-react-native.md",
+      "type": "blog",
+      "count": 4,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/frameworks/logging-app-load-times-with-firebase.md",
+      "type": "blog",
+      "count": 3,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/system-design/appium-mocha.md",
+      "type": "blog",
+      "count": 3,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/mobile requirements.md",
+      "type": "blog",
+      "count": 2,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/cheatsheets/expo.md",
+      "type": "blog",
+      "count": 1,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/languages/java/java-spring.md",
+      "type": "blog",
+      "count": 1,
+      "draft": false
+    }
+  ],
+  "termsreact-navigation": [],
+  "termsreact-router": [],
+  "termsreact-server-components": [],
+  "termsreact-testing-library": [],
+  "termsreact": [
+    {
+      "file": "/Users/future/l.blog/data/blog/software/system-design/appium-mocha.md",
+      "type": "blog",
+      "count": 8,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/opinions/why-flutter-is-better-than-react-native.md",
+      "type": "blog",
+      "count": 7,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/same-problems-different-tools.md",
+      "type": "blog",
+      "count": 5,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/design patterns/observer.md",
+      "type": "blog",
+      "count": 4,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/frameworks/logging-app-load-times-with-firebase.md",
+      "type": "blog",
+      "count": 4,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/languages/java/java-spring.md",
+      "type": "blog",
+      "count": 3,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/TEST/MDX.mdx",
+      "type": "blog",
+      "count": 2,
+      "draft": true
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/TEST/introducing-tailwind-nextjs-starter-blog.mdx",
+      "type": "blog",
+      "count": 2,
+      "draft": true
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/mobile requirements.md",
+      "type": "blog",
+      "count": 2,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/kb/atom/CS/page-router-vs-app-router.md",
+      "type": "kb",
+      "count": 1,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/cheatsheets/expo.md",
+      "type": "blog",
+      "count": 1,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/finance/options/greeks.md",
+      "type": "blog",
+      "count": 1,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/finance/options/strategies/condor.md",
+      "type": "blog",
+      "count": 1,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/finance/quant/crash-course.md",
+      "type": "blog",
+      "count": 1,
+      "draft": true
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/devops/gcp/cloud-build-triggers.md",
+      "type": "blog",
+      "count": 1,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/frameworks/flutter/flutter-tiktok-1.md",
+      "type": "blog",
+      "count": 1,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/info-sec/xss.md",
+      "type": "blog",
+      "count": 1,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/system-design/build-message-queue.md",
+      "type": "blog",
+      "count": 1,
+      "draft": false
+    }
+  ],
+  "termsreactive-programming": [],
+  "termsread-amplification": [],
+  "termsread-write-execute": [],
+  "termsreal-time-apps": [],
+  "termsreanimated": [],
+  "termsrebalancing": [
+    {
+      "file": "/Users/future/l.blog/data/blog/finance/terms/index-fund.md",
+      "type": "blog",
+      "count": 1,
+      "draft": false
+    }
+  ],
+  "termsrecall": [],
+  "termsrecoil": [],
+  "termsreconciliation-loop": [],
+  "termsreconciliation": [],
+  "termsrecurrence-relation": [],
+  "termsrecursion-tree-method": [],
+  "termsrecursion-tree": [],
+  "termsrecursion": [
+    {
+      "file": "/Users/future/l.blog/data/blog/software/data-structures-algorithms/graph-theory.md",
+      "type": "blog",
+      "count": 4,
+      "draft": true
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/ai/ai-as-fractals.md",
+      "type": "blog",
+      "count": 3,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/data-structures-algorithms/dynamic-programming.md",
+      "type": "blog",
+      "count": 3,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/data-structures-algorithms/algorithms/dp.md",
+      "type": "blog",
+      "count": 2,
+      "draft": true
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/data-structures-algorithms/algorithms/sorting.md",
+      "type": "blog",
+      "count": 1,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/data-structures-algorithms/cheatsheet.md",
+      "type": "blog",
+      "count": 1,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/data-structures-algorithms/patterns-graph.md",
+      "type": "blog",
+      "count": 1,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/data-structures-algorithms/trees.md",
+      "type": "blog",
+      "count": 1,
+      "draft": true
+    }
+  ],
+  "termsrecursive-cte": [],
+  "termsredirection": [],
+  "termsredis": [
+    {
+      "file": "/Users/future/l.blog/data/blog/projects/royal-stock-exchange/4-scaling.md",
+      "type": "blog",
+      "count": 19,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/system-design/build-api-cache.md",
+      "type": "blog",
+      "count": 13,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/devops/gcp/memory-store.md",
+      "type": "blog",
+      "count": 9,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/system-design/build-message-queue.md",
+      "type": "blog",
+      "count": 5,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/exchange/intro-2.md",
+      "type": "blog",
+      "count": 4,
+      "draft": true
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/exchange/intro-7.md",
+      "type": "blog",
+      "count": 1,
+      "draft": true
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/devops/gcp/vcp-connectors.md",
+      "type": "blog",
+      "count": 1,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/system-design/build-backend-api.md",
+      "type": "blog",
+      "count": 1,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/system-design/key-numbers.md",
+      "type": "blog",
+      "count": 1,
+      "draft": false
+    }
+  ],
+  "termsredux": [],
+  "termsreferential-integrity": [],
+  "termsreflexive": [],
+  "termsregression": [
+    {
+      "file": "/Users/future/l.blog/data/blog/finance/quant/statistics.md",
+      "type": "blog",
+      "count": 4,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/finance/quant/crash-course.md",
+      "type": "blog",
+      "count": 1,
+      "draft": true
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/finance/quant/maths.md",
+      "type": "blog",
+      "count": 1,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/finance/quant/pair-trading.md",
+      "type": "blog",
+      "count": 1,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/finance/quant/symbols.md",
+      "type": "blog",
+      "count": 1,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/finance/toc.md",
+      "type": "blog",
+      "count": 1,
+      "draft": true
+    }
+  ],
+  "termsregular-languages": [],
+  "termsreinforcement-learning": [
+    {
+      "file": "/Users/future/l.blog/data/kb/atom/CS/AI.md",
+      "type": "kb",
+      "count": 3,
+      "draft": false
+    }
+  ],
+  "termsrelated-rates": [],
+  "termsrelation": [
+    {
+      "file": "/Users/future/l.blog/data/blog/finance/terms/open-ended-funds.md",
+      "type": "blog",
+      "count": 1,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/data-structures-algorithms/terms.md",
+      "type": "blog",
+      "count": 1,
+      "draft": true
+    }
+  ],
+  "termsrelational-database": [
+    {
+      "file": "/Users/future/l.blog/data/blog/projects/royal-stock-exchange/4-scaling.md",
+      "type": "blog",
+      "count": 3,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/databases/psql.md",
+      "type": "blog",
+      "count": 1,
+      "draft": false
+    }
+  ],
+  "termsrelationship": [
+    {
+      "file": "/Users/future/l.blog/data/blog/finance/quant/pair-trading.md",
+      "type": "blog",
+      "count": 6,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/kb/atom/CS/AI.md",
+      "type": "kb",
+      "count": 1,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/maths/calculus/fundamental-theorem-of-calculus.md",
+      "type": "blog",
+      "count": 1,
+      "draft": true
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/data-structures-algorithms/OOP.md",
+      "type": "blog",
+      "count": 1,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/data-structures-algorithms/cheatsheet.md",
+      "type": "blog",
+      "count": 1,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/data-structures-algorithms/graph-theory.md",
+      "type": "blog",
+      "count": 1,
+      "draft": true
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/design patterns/observer.md",
+      "type": "blog",
+      "count": 1,
+      "draft": false
+    }
+  ],
+  "termsrelu": [],
+  "termsremix": [],
+  "termsremove": [
+    {
+      "file": "/Users/future/l.blog/data/blog/software/system-design/system-design-auditing.md",
+      "type": "blog",
+      "count": 4,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/data-structures-algorithms/hash-table.md",
+      "type": "blog",
+      "count": 2,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/databases/sql/1_toc.md",
+      "type": "blog",
+      "count": 2,
+      "draft": true
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/design patterns/observer.md",
+      "type": "blog",
+      "count": 2,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/TEST/guide-to-using-images-in-nextjs.mdx",
+      "type": "blog",
+      "count": 1,
+      "draft": true
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/databases/sql/alter-tables.md",
+      "type": "blog",
+      "count": 1,
+      "draft": true
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/frameworks/flutter/flutter-tiktok-1.md",
+      "type": "blog",
+      "count": 1,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/frameworks/flutter/flutter-tiktok-2.md",
+      "type": "blog",
+      "count": 1,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/info-sec/over-the-wire-1-bandit.md",
+      "type": "blog",
+      "count": 1,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/languages/dart/dart.3.10.md",
+      "type": "blog",
+      "count": 1,
+      "draft": true
+    }
+  ],
+  "termsremoved": [
+    {
+      "file": "/Users/future/l.blog/data/blog/software/data-structures-algorithms/patterns-graph.md",
+      "type": "blog",
+      "count": 7,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/finance/terms/index-fund.md",
+      "type": "blog",
+      "count": 1,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/info-sec/over-the-wire-1-bandit.md",
+      "type": "blog",
+      "count": 1,
+      "draft": false
+    }
+  ],
+  "termsrender-function": [],
+  "termsrender-phase": [],
+  "termsrender-tree": [],
+  "termsrendering-pipeline": [],
+  "termsrendering": [
+    {
+      "file": "/Users/future/l.blog/data/kb/atom/CS/page-router-vs-app-router.md",
+      "type": "kb",
+      "count": 5,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/same-problems-different-tools.md",
+      "type": "blog",
+      "count": 1,
+      "draft": false
+    }
+  ],
+  "termsrepaint-boundary": [],
+  "termsreplica-count": [],
+  "termsreplica-management": [],
+  "termsreplica-set": [],
+  "termsreplica-sets": [],
+  "termsrepositories": [
+    {
+      "file": "/Users/future/l.blog/data/blog/projects/royal-stock-exchange/3-portfolio.md",
+      "type": "blog",
+      "count": 1,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/design patterns/repository.md",
+      "type": "blog",
+      "count": 1,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/devops/gcp/cloud-build-triggers.md",
+      "type": "blog",
+      "count": 1,
+      "draft": false
+    }
+  ],
+  "termsrequest-interception": [],
+  "termsrequest-response-cycle": [],
+  "termsrequest-waterfall": [],
+  "termsresiduals": [
+    {
+      "file": "/Users/future/l.blog/data/blog/finance/quant/symbols.md",
+      "type": "blog",
+      "count": 1,
+      "draft": false
+    }
+  ],
+  "termsresnet": [],
+  "termsresource-limits": [],
+  "termsresponsive-design": [],
+  "termsrest-api": [
+    {
+      "file": "/Users/future/l.blog/data/blog/software/system-design/build-api-cache.md",
+      "type": "blog",
+      "count": 3,
+      "draft": false
+    }
+  ],
+  "termsrest-architecture": [],
+  "termsrestart": [
+    {
+      "file": "/Users/future/l.blog/data/blog/software/system-design/build-db-cluster-docker.md",
+      "type": "blog",
+      "count": 4,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/projects/royal-stock-exchange/1-intro.md",
+      "type": "blog",
+      "count": 1,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/databases/sql/clone-db.md",
+      "type": "blog",
+      "count": 1,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/frameworks/flutter/navigators.md",
+      "type": "blog",
+      "count": 1,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/system-design/build-backend-api.md",
+      "type": "blog",
+      "count": 1,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/system-design/microservices.md",
+      "type": "blog",
+      "count": 1,
+      "draft": false
+    }
+  ],
+  "termsrevalidate-path": [],
+  "termsrevalidation": [],
+  "termsreversal-linked-list": [],
+  "termsreward-function": [
+    {
+      "file": "/Users/future/l.blog/data/kb/atom/CS/AI.md",
+      "type": "kb",
+      "count": 1,
+      "draft": false
+    }
+  ],
+  "termsreward-modeling": [],
+  "termsridge-regression": [],
+  "termsriemann-sum": [],
+  "termsright-join": [
+    {
+      "file": "/Users/future/l.blog/data/blog/software/databases/sql/1_toc.md",
+      "type": "blog",
+      "count": 1,
+      "draft": true
+    }
+  ],
+  "termsrisk-adjusted-return": [],
+  "termsrisk-modeling": [
+    {
+      "file": "/Users/future/l.blog/data/blog/finance/quant/calculus-for-quants.md",
+      "type": "blog",
+      "count": 1,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/finance/quant/maths.md",
+      "type": "blog",
+      "count": 1,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/finance/quant/symbols.md",
+      "type": "blog",
+      "count": 1,
+      "draft": false
+    }
+  ],
+  "termsrisk-sensitive-planning": [],
+  "termsriverpod": [],
+  "termsrlhf": [],
+  "termsrnn": [
+    {
+      "file": "/Users/future/l.blog/data/blog/finance/quant/crash-course.md",
+      "type": "blog",
+      "count": 1,
+      "draft": true
+    }
+  ],
+  "termsroc-curve": [],
+  "termsrole-based-access-control": [],
+  "termsrollback": [
+    {
+      "file": "/Users/future/l.blog/data/blog/same-problems-different-tools.md",
+      "type": "blog",
+      "count": 1,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/databases/sql/1_toc.md",
+      "type": "blog",
+      "count": 1,
+      "draft": true
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/devops/gcp/secret-manager.md",
+      "type": "blog",
+      "count": 1,
+      "draft": false
+    }
+  ],
+  "termsrolle-theorem": [],
+  "termsrolling-hash": [],
+  "termsrolling-update": [],
+  "termsrolling-updates": [],
+  "termsroot-directory": [
+    {
+      "file": "/Users/future/l.blog/data/blog/software/info-sec/over-the-wire-1-bandit.md",
+      "type": "blog",
+      "count": 1,
+      "draft": false
+    }
+  ],
+  "termsroot-node": [
+    {
+      "file": "/Users/future/l.blog/data/blog/software/data-structures-algorithms/graph-theory.md",
+      "type": "blog",
+      "count": 2,
+      "draft": true
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/data-structures-algorithms/algorithms/tree-traversals.md",
+      "type": "blog",
+      "count": 1,
+      "draft": true
+    }
+  ],
+  "termsroot-test": [],
+  "termsrotation-matrices": [],
+  "termsroute-handlers": [
+    {
+      "file": "/Users/future/l.blog/data/kb/atom/CS/page-router-vs-app-router.md",
+      "type": "kb",
+      "count": 2,
+      "draft": false
+    }
+  ],
+  "termsroute-matching": [],
+  "termsroute-segment": [],
+  "termsroute": [
+    {
+      "file": "/Users/future/l.blog/data/blog/software/system-design/build-backend-api.md",
+      "type": "blog",
+      "count": 11,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/system-design/build-api-cache.md",
+      "type": "blog",
+      "count": 5,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/TEST/introducing-tailwind-nextjs-starter-blog.mdx",
+      "type": "blog",
+      "count": 4,
+      "draft": true
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/frameworks/next/introducing-multi-part-posts-with-nested-routing.md",
+      "type": "blog",
+      "count": 4,
+      "draft": true
+    },
+    {
+      "file": "/Users/future/l.blog/data/kb/atom/CS/page-router-vs-app-router.md",
+      "type": "kb",
+      "count": 2,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/system-design/build-message-queue.md",
+      "type": "blog",
+      "count": 2,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/TEST/guide-to-using-images-in-nextjs.mdx",
+      "type": "blog",
+      "count": 1,
+      "draft": true
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/finance/index.md",
+      "type": "blog",
+      "count": 1,
+      "draft": true
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/devops/gcp/vcp-connectors.md",
+      "type": "blog",
+      "count": 1,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/info-sec/over-the-wire-3-natas.md",
+      "type": "blog",
+      "count": 1,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/languages/java/java-spring.md",
+      "type": "blog",
+      "count": 1,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/system-design/system-design-auditing.md",
+      "type": "blog",
+      "count": 1,
+      "draft": false
+    }
+  ],
+  "termsrouting-rules": [],
+  "termsrouting-system": [],
+  "termsrouting": [
+    {
+      "file": "/Users/future/l.blog/data/kb/atom/CS/page-router-vs-app-router.md",
+      "type": "kb",
+      "count": 5,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/frameworks/next/introducing-multi-part-posts-with-nested-routing.md",
+      "type": "blog",
+      "count": 3,
+      "draft": true
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/TEST/introducing-tailwind-nextjs-starter-blog.mdx",
+      "type": "blog",
+      "count": 2,
+      "draft": true
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/finance/quant/crash-course.md",
+      "type": "blog",
+      "count": 1,
+      "draft": true
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/data-structures-algorithms/patterns-graph.md",
+      "type": "blog",
+      "count": 1,
+      "draft": false
+    }
+  ],
+  "termsrow-number": [],
+  "termsrow-reduction": [],
+  "termsrow": [
+    {
+      "file": "/Users/future/l.blog/data/blog/software/languages/python/heapq.md",
+      "type": "blog",
+      "count": 5,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/data-structures-algorithms/patterns-graph.md",
+      "type": "blog",
+      "count": 4,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/frameworks/flutter/flutter-poker-1.md",
+      "type": "blog",
+      "count": 4,
+      "draft": true
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/databases/sql/lag.md",
+      "type": "blog",
+      "count": 3,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/frameworks/flutter/flutter-tiktok-1.md",
+      "type": "blog",
+      "count": 2,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/frameworks/flutter/flutter-tiktok-2.md",
+      "type": "blog",
+      "count": 2,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/TEST/deriving-ols-estimator.mdx",
+      "type": "blog",
+      "count": 1,
+      "draft": true
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/TEST/github-markdown-guide.mdx",
+      "type": "blog",
+      "count": 1,
+      "draft": true
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/finance/stock-market-size.md",
+      "type": "blog",
+      "count": 1,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/leetcode/463-island-perimeter.md",
+      "type": "blog",
+      "count": 1,
+      "draft": true
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/politics/1-go.md",
+      "type": "blog",
+      "count": 1,
+      "draft": true
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/databases/sql/1_toc.md",
+      "type": "blog",
+      "count": 1,
+      "draft": true
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/system-design/build-db-cluster-docker.md",
+      "type": "blog",
+      "count": 1,
+      "draft": false
+    }
+  ],
+  "termsrref": [],
+  "termsrsa": [
+    {
+      "file": "/Users/future/l.blog/data/blog/software/info-sec/over-the-wire-1-bandit.md",
+      "type": "blog",
+      "count": 2,
+      "draft": false
+    }
+  ],
+  "termsrun": [
+    {
+      "file": "/Users/future/l.blog/data/blog/software/devops/gcp/cloud-run-job.md",
+      "type": "blog",
+      "count": 13,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/devops/gcp/cloud-run.md",
+      "type": "blog",
+      "count": 12,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/system-design/appium-mocha.md",
+      "type": "blog",
+      "count": 10,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/system-design/microservices.md",
+      "type": "blog",
+      "count": 10,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/system-design/build-backend-api.md",
+      "type": "blog",
+      "count": 9,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/devops/gcp/memory-store.md",
+      "type": "blog",
+      "count": 8,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/devops/gcp/secret-manager.md",
+      "type": "blog",
+      "count": 5,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/devops/gcp/vcp-connectors.md",
+      "type": "blog",
+      "count": 5,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/info-sec/over-the-wire-1-bandit.md",
+      "type": "blog",
+      "count": 5,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/cheatsheets/expo.md",
+      "type": "blog",
+      "count": 4,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/devops/gcp/cloud-scheduler.md",
+      "type": "blog",
+      "count": 4,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/git/pre-commit.md",
+      "type": "blog",
+      "count": 4,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/info-sec/over-the-wire-2-leviathan.md",
+      "type": "blog",
+      "count": 4,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/languages/dart/dart.3.10.md",
+      "type": "blog",
+      "count": 4,
+      "draft": true
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/system-design/system-design-auditing.md",
+      "type": "blog",
+      "count": 4,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/TEST/introducing-tailwind-nextjs-starter-blog.mdx",
+      "type": "blog",
+      "count": 3,
+      "draft": true
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/languages/go/go-routines.md",
+      "type": "blog",
+      "count": 3,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/system-design/SQL Server Setup.md",
+      "type": "blog",
+      "count": 3,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/system-design/build-api-cache.md",
+      "type": "blog",
+      "count": 3,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/projects/royal-stock-exchange/2-seeding data.md",
+      "type": "blog",
+      "count": 2,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/databases/pgadmin.md",
+      "type": "blog",
+      "count": 2,
+      "draft": true
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/frameworks/flutter/flutter-tiktok-1.md",
+      "type": "blog",
+      "count": 2,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/git/partial-add.md",
+      "type": "blog",
+      "count": 2,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/info-sec/xss.md",
+      "type": "blog",
+      "count": 2,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/languages/python/flask-hot-reload.md",
+      "type": "blog",
+      "count": 2,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/kb/atom/CS/page-router-vs-app-router.md",
+      "type": "kb",
+      "count": 1,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/ai/ai-search-agent.md",
+      "type": "blog",
+      "count": 1,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/cheatsheets/dot-net-core.md",
+      "type": "blog",
+      "count": 1,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/cheatsheets/jetbrains.md",
+      "type": "blog",
+      "count": 1,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/cheatsheets/shell.md",
+      "type": "blog",
+      "count": 1,
+      "draft": true
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/finance/business/hostile-takeover.md",
+      "type": "blog",
+      "count": 1,
+      "draft": true
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/finance/options/black-scholes.md",
+      "type": "blog",
+      "count": 1,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/finance/quant/crash-course.md",
+      "type": "blog",
+      "count": 1,
+      "draft": true
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/projects/royal-stock-exchange/4-scaling.md",
+      "type": "blog",
+      "count": 1,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/data-structures-algorithms/algorithms/sorting.md",
+      "type": "blog",
+      "count": 1,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/data-structures-algorithms/pointers.md",
+      "type": "blog",
+      "count": 1,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/design patterns/decorator.md",
+      "type": "blog",
+      "count": 1,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/devops/gcp/cloud-build-triggers.md",
+      "type": "blog",
+      "count": 1,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/devops/gcp/gcp-pipeline.md",
+      "type": "blog",
+      "count": 1,
+      "draft": true
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/frameworks/logging-app-load-times-with-firebase.md",
+      "type": "blog",
+      "count": 1,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/languages/java/java-spring.md",
+      "type": "blog",
+      "count": 1,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/mobile requirements.md",
+      "type": "blog",
+      "count": 1,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/system-design/1-LeetCode.md",
+      "type": "blog",
+      "count": 1,
+      "draft": true
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/system-design/automated-tasks.md",
+      "type": "blog",
+      "count": 1,
+      "draft": true
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/system-design/build-db-cluster-docker.md",
+      "type": "blog",
+      "count": 1,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/system-design/build-message-queue.md",
+      "type": "blog",
+      "count": 1,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/system-design/flutter-netlify-deploy.md",
+      "type": "blog",
+      "count": 1,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/system-design/graphql.md",
+      "type": "blog",
+      "count": 1,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/system-design/process-overview.md",
+      "type": "blog",
+      "count": 1,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/system-design/system-design-distributed-systems.md",
+      "type": "blog",
+      "count": 1,
+      "draft": false
+    }
+  ],
+  "termsrunning": [
+    {
+      "file": "/Users/future/l.blog/data/blog/software/system-design/microservices.md",
+      "type": "blog",
+      "count": 4,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/devops/gcp/cloud-run-job.md",
+      "type": "blog",
+      "count": 3,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/git/pre-commit.md",
+      "type": "blog",
+      "count": 3,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/info-sec/over-the-wire-1-bandit.md",
+      "type": "blog",
+      "count": 3,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/system-design/appium-mocha.md",
+      "type": "blog",
+      "count": 3,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/system-design/build-backend-api.md",
+      "type": "blog",
+      "count": 3,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/leetcode/70-climbing-stairs.md",
+      "type": "blog",
+      "count": 2,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/projects/royal-stock-exchange/4-scaling.md",
+      "type": "blog",
+      "count": 2,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/devops/gcp/cloud-scheduler.md",
+      "type": "blog",
+      "count": 2,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/git/partial-add.md",
+      "type": "blog",
+      "count": 2,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/languages/python/flask-hot-reload.md",
+      "type": "blog",
+      "count": 2,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/ai/ai-as-fractals.md",
+      "type": "blog",
+      "count": 1,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/finance/toc.md",
+      "type": "blog",
+      "count": 1,
+      "draft": true
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/politics/1-go.md",
+      "type": "blog",
+      "count": 1,
+      "draft": true
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/questions/running-a-company.md",
+      "type": "blog",
+      "count": 1,
+      "draft": true
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/databases/pgadmin.md",
+      "type": "blog",
+      "count": 1,
+      "draft": true
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/databases/sql/clone-db.md",
+      "type": "blog",
+      "count": 1,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/databases/sql/remote-clone-to-local.md",
+      "type": "blog",
+      "count": 1,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/devops/gcp/cloud-run.md",
+      "type": "blog",
+      "count": 1,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/languages/java/java-spring.md",
+      "type": "blog",
+      "count": 1,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/system-design/build-db-cluster-docker.md",
+      "type": "blog",
+      "count": 1,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/system-design/build-message-queue.md",
+      "type": "blog",
+      "count": 1,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/system-design/system-design-1-bitly.md",
+      "type": "blog",
+      "count": 1,
+      "draft": false
+    }
+  ],
+  "termsruntime-environment": [],
+  "termsruntime-polymorphism": [],
+  "termsruntime": [
+    {
+      "file": "/Users/future/l.blog/data/blog/software/devops/gcp/secret-manager.md",
+      "type": "blog",
+      "count": 5,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/data-structures-algorithms/OOP.md",
+      "type": "blog",
+      "count": 2,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/design patterns/decorator.md",
+      "type": "blog",
+      "count": 1,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/design patterns/factory.md",
+      "type": "blog",
+      "count": 1,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/system-design/graphql.md",
+      "type": "blog",
+      "count": 1,
+      "draft": false
+    }
+  ],
+  "termssaddle-point": [],
+  "termssafety-in-ai": [],
+  "termssample-space": [],
+  "termssample": [
+    {
+      "file": "/Users/future/l.blog/data/blog/TEST/introducing-tailwind-nextjs-starter-blog.mdx",
+      "type": "blog",
+      "count": 1,
+      "draft": true
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/finance/high-frequency-trading.md",
+      "type": "blog",
+      "count": 1,
+      "draft": true
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/maths/calculus/intro.md",
+      "type": "blog",
+      "count": 1,
+      "draft": true
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/maths/statistics/variance-standard-deviation.md",
+      "type": "blog",
+      "count": 1,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/devops/gcp/cloud-build-triggers.md",
+      "type": "blog",
+      "count": 1,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/git/pre-commit.md",
+      "type": "blog",
+      "count": 1,
+      "draft": false
+    }
+  ],
+  "termssampling-bias": [],
+  "termssass": [],
+  "termssavepoint": [
+    {
+      "file": "/Users/future/l.blog/data/blog/software/databases/sql/1_toc.md",
+      "type": "blog",
+      "count": 1,
+      "draft": true
+    }
+  ],
+  "termsscaffold": [
+    {
+      "file": "/Users/future/l.blog/data/blog/software/frameworks/flutter/flutter-tiktok-1.md",
+      "type": "blog",
+      "count": 6,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/frameworks/flutter/flutter-tiktok-2.md",
+      "type": "blog",
+      "count": 5,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/frameworks/flutter/navigators.md",
+      "type": "blog",
+      "count": 2,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/system-design/flutter-theme.md",
+      "type": "blog",
+      "count": 1,
+      "draft": false
+    }
+  ],
+  "termsscalability-needs": [
+    {
+      "file": "/Users/future/l.blog/data/blog/projects/royal-stock-exchange/4-scaling.md",
+      "type": "blog",
+      "count": 1,
+      "draft": false
+    }
+  ],
+  "termsscalar-field": [],
+  "termsscalar-multiplication": [],
+  "termsscalar": [
+    {
+      "file": "/Users/future/l.blog/data/blog/maths/linear-algebra/vectors.md",
+      "type": "blog",
+      "count": 2,
+      "draft": true
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/TEST/deriving-ols-estimator.mdx",
+      "type": "blog",
+      "count": 1,
+      "draft": true
+    }
+  ],
+  "termsscaling-containers": [],
+  "termsscaling": [
+    {
+      "file": "/Users/future/l.blog/data/blog/projects/royal-stock-exchange/4-scaling.md",
+      "type": "blog",
+      "count": 9,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/system-design/process-deepdive.md",
+      "type": "blog",
+      "count": 2,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/finance/high-frequency-trading.md",
+      "type": "blog",
+      "count": 1,
+      "draft": true
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/maths/linear-algebra/vectors.md",
+      "type": "blog",
+      "count": 1,
+      "draft": true
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/same-problems-different-tools.md",
+      "type": "blog",
+      "count": 1,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/system-design/build-db-cluster-docker.md",
+      "type": "blog",
+      "count": 1,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/system-design/build-message-queue.md",
+      "type": "blog",
+      "count": 1,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/system-design/system-design-distributed-systems.md",
+      "type": "blog",
+      "count": 1,
+      "draft": false
+    }
+  ],
+  "termsscheduler-assigns-pod": [],
+  "termsscheduler": [
+    {
+      "file": "/Users/future/l.blog/data/blog/software/devops/gcp/cloud-run-job.md",
+      "type": "blog",
+      "count": 11,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/devops/gcp/cloud-scheduler.md",
+      "type": "blog",
+      "count": 8,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/info-sec/over-the-wire-1-bandit.md",
+      "type": "blog",
+      "count": 3,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/system-design/automated-tasks.md",
+      "type": "blog",
+      "count": 2,
+      "draft": true
+    }
+  ],
+  "termsscheduling": [
+    {
+      "file": "/Users/future/l.blog/data/blog/software/devops/gcp/cloud-run-job.md",
+      "type": "blog",
+      "count": 4,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/data-structures-algorithms/cheatsheet.md",
+      "type": "blog",
+      "count": 3,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/data-structures-algorithms/patterns-graph.md",
+      "type": "blog",
+      "count": 2,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/questions/running-a-company.md",
+      "type": "blog",
+      "count": 1,
+      "draft": true
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/devops/gcp/cloud-scheduler.md",
+      "type": "blog",
+      "count": 1,
+      "draft": false
+    }
+  ],
+  "termsschema-design": [
+    {
+      "file": "/Users/future/l.blog/data/blog/software/databases/nosql/mongodb.md",
+      "type": "blog",
+      "count": 1,
+      "draft": false
+    }
+  ],
+  "termsschema-flexibility-vs-rigid-schema": [],
+  "termsschema-less-database": [],
+  "termsschema": [
+    {
+      "file": "/Users/future/l.blog/data/blog/software/system-design/system-design-auditing.md",
+      "type": "blog",
+      "count": 11,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/databases/sql/remote-clone-to-local.md",
+      "type": "blog",
+      "count": 3,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/system-design/graphql.md",
+      "type": "blog",
+      "count": 3,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/TEST/code-blocks.md",
+      "type": "blog",
+      "count": 2,
+      "draft": true
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/projects/royal-stock-exchange/4-scaling.md",
+      "type": "blog",
+      "count": 2,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/databases/sql/procedures-list.md",
+      "type": "blog",
+      "count": 2,
+      "draft": true
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/projects/royal-stock-exchange/2-seeding data.md",
+      "type": "blog",
+      "count": 1,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/databases/nosql/mongodb.md",
+      "type": "blog",
+      "count": 1,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/databases/psql.md",
+      "type": "blog",
+      "count": 1,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/databases/sql/1_toc.md",
+      "type": "blog",
+      "count": 1,
+      "draft": true
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/databases/sql/clone-db.md",
+      "type": "blog",
+      "count": 1,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/system-design/build-db-cluster-docker.md",
+      "type": "blog",
+      "count": 1,
+      "draft": false
+    }
+  ],
+  "termsscope": [
+    {
+      "file": "/Users/future/l.blog/data/blog/software/languages/js/js-1.md",
+      "type": "blog",
+      "count": 3,
+      "draft": true
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/system-design/process-overview.md",
+      "type": "blog",
+      "count": 2,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/exchange/intro-3.md",
+      "type": "blog",
+      "count": 1,
+      "draft": true
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/system-design/1-ticketmaster.md",
+      "type": "blog",
+      "count": 1,
+      "draft": true
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/system-design/system-design-auditing.md",
+      "type": "blog",
+      "count": 1,
+      "draft": false
+    }
+  ],
+  "termsscripts": [
+    {
+      "file": "/Users/future/l.blog/data/blog/software/git/pre-commit.md",
+      "type": "blog",
+      "count": 4,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/info-sec/xss.md",
+      "type": "blog",
+      "count": 4,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/devops/gcp/cloud-run-job.md",
+      "type": "blog",
+      "count": 3,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/TEST/introducing-tailwind-nextjs-starter-blog.mdx",
+      "type": "blog",
+      "count": 2,
+      "draft": true
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/info-sec/over-the-wire-1-bandit.md",
+      "type": "blog",
+      "count": 2,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/TEST/TEST-TERMS.md",
+      "type": "blog",
+      "count": 1,
+      "draft": true
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/projects/royal-stock-exchange/3-portfolio.md",
+      "type": "blog",
+      "count": 1,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/info-sec/csrf.md",
+      "type": "blog",
+      "count": 1,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/languages/rust/rust-projects.md",
+      "type": "blog",
+      "count": 1,
+      "draft": true
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/system-design/microservices.md",
+      "type": "blog",
+      "count": 1,
+      "draft": false
+    }
+  ],
+  "termsscrollview": [],
+  "termssearch-problem": [],
+  "termssearch-space-reduction": [],
+  "termssearch": [
+    {
+      "file": "/Users/future/l.blog/data/blog/projects/royal-stock-exchange/4-scaling.md",
+      "type": "blog",
+      "count": 17,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/frameworks/flutter/navigators.md",
+      "type": "blog",
+      "count": 12,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/data-structures-algorithms/graph-theory.md",
+      "type": "blog",
+      "count": 8,
+      "draft": true
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/design patterns/decorator.md",
+      "type": "blog",
+      "count": 6,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/data-structures-algorithms/patterns-graph.md",
+      "type": "blog",
+      "count": 5,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/data-structures-algorithms/cheatsheet.md",
+      "type": "blog",
+      "count": 4,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/data-structures-algorithms/trees.md",
+      "type": "blog",
+      "count": 4,
+      "draft": true
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/info-sec/over-the-wire-1-bandit.md",
+      "type": "blog",
+      "count": 4,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/cheatsheets/jetbrains.md",
+      "type": "blog",
+      "count": 3,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/info-sec/over-the-wire-3-natas.md",
+      "type": "blog",
+      "count": 3,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/system-design/1-ticketmaster.md",
+      "type": "blog",
+      "count": 3,
+      "draft": true
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/ai/ai-search-agent.md",
+      "type": "blog",
+      "count": 2,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/data-structures-algorithms/algorithms/tree-traversals.md",
+      "type": "blog",
+      "count": 2,
+      "draft": true
     },
     {
       "file": "/Users/future/l.blog/data/blog/software/system-design/1-LeetCode.md",
       "type": "blog",
       "count": 2,
       "draft": true
+    },
+    {
+      "file": "/Users/future/l.blog/data/kb/atom/CS/AI.md",
+      "type": "kb",
+      "count": 1,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/TEST/introducing-tailwind-nextjs-starter-blog.mdx",
+      "type": "blog",
+      "count": 1,
+      "draft": true
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/cheatsheets/shell.md",
+      "type": "blog",
+      "count": 1,
+      "draft": true
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/cheatsheets/vscode.md",
+      "type": "blog",
+      "count": 1,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/info-sec/over-the-wire-2-leviathan.md",
+      "type": "blog",
+      "count": 1,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/info-sec/xss.md",
+      "type": "blog",
+      "count": 1,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/system-design/appium-mocha.md",
+      "type": "blog",
+      "count": 1,
+      "draft": false
     }
-  ]
+  ],
+  "termsseasonality": [],
+  "termssecond-derivative-test": [],
+  "termssecond-normal-form": [],
+  "termssecondary-index": [],
+  "termssecret": [
+    {
+      "file": "/Users/future/l.blog/data/blog/software/devops/gcp/secret-manager.md",
+      "type": "blog",
+      "count": 21,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/info-sec/over-the-wire-1-bandit.md",
+      "type": "blog",
+      "count": 1,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/info-sec/over-the-wire-3-natas.md",
+      "type": "blog",
+      "count": 1,
+      "draft": false
+    }
+  ],
+  "termssecrets-management": [],
+  "termssectionlist": [],
+  "termssegment-tree": [
+    {
+      "file": "/Users/future/l.blog/data/blog/software/data-structures-algorithms/cheatsheet.md",
+      "type": "blog",
+      "count": 2,
+      "draft": false
+    }
+  ],
+  "termsselect": [
+    {
+      "file": "/Users/future/l.blog/data/blog/software/databases/sql/1_toc.md",
+      "type": "blog",
+      "count": 5,
+      "draft": true
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/system-design/appium-mocha.md",
+      "type": "blog",
+      "count": 4,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/databases/sql/lag.md",
+      "type": "blog",
+      "count": 3,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/finance/RDO.md",
+      "type": "blog",
+      "count": 2,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/databases/sql/group-by.md",
+      "type": "blog",
+      "count": 2,
+      "draft": true
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/system-design/1-LeetCode.md",
+      "type": "blog",
+      "count": 2,
+      "draft": true
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/system-design/SQL Server Setup.md",
+      "type": "blog",
+      "count": 2,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/finance/terms/mutual-funds.md",
+      "type": "blog",
+      "count": 1,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/data-structures-algorithms/algorithms/sorting.md",
+      "type": "blog",
+      "count": 1,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/databases/pgadmin.md",
+      "type": "blog",
+      "count": 1,
+      "draft": true
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/databases/sql/inspect-table.md",
+      "type": "blog",
+      "count": 1,
+      "draft": true
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/databases/sql/optimization.md",
+      "type": "blog",
+      "count": 1,
+      "draft": true
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/databases/sql/procedures-list.md",
+      "type": "blog",
+      "count": 1,
+      "draft": true
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/frameworks/flutter/flutter-tiktok-1.md",
+      "type": "blog",
+      "count": 1,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/git/partial-add.md",
+      "type": "blog",
+      "count": 1,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/system-design/build-db-cluster-docker.md",
+      "type": "blog",
+      "count": 1,
+      "draft": false
+    }
+  ],
+  "termsselection-bias": [],
+  "termsselection-sort": [
+    {
+      "file": "/Users/future/l.blog/data/blog/software/data-structures-algorithms/algorithms/sorting.md",
+      "type": "blog",
+      "count": 4,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/data-structures-algorithms/algorithms/sorting-old.md",
+      "type": "blog",
+      "count": 2,
+      "draft": true
+    }
+  ],
+  "termsself-attention": [],
+  "termsself-healing-systems": [],
+  "termsselinux": [],
+  "termssemantic-html": [],
+  "termssentence-embeddings": [],
+  "termsseo": [
+    {
+      "file": "/Users/future/l.blog/data/blog/TEST/introducing-tailwind-nextjs-starter-blog.mdx",
+      "type": "blog",
+      "count": 2,
+      "draft": true
+    }
+  ],
+  "termssequence-diagram": [],
+  "termssequence": [
+    {
+      "file": "/Users/future/l.blog/data/blog/software/data-structures-algorithms/terms.md",
+      "type": "blog",
+      "count": 6,
+      "draft": true
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/finance/high-frequency-trading.md",
+      "type": "blog",
+      "count": 4,
+      "draft": true
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/data-structures-algorithms/algorithms/tree-traversals.md",
+      "type": "blog",
+      "count": 1,
+      "draft": true
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/data-structures-algorithms/dynamic-programming.md",
+      "type": "blog",
+      "count": 1,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/data-structures-algorithms/patterns-graph.md",
+      "type": "blog",
+      "count": 1,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/git/rebase.md",
+      "type": "blog",
+      "count": 1,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/info-sec/over-the-wire-1-bandit.md",
+      "type": "blog",
+      "count": 1,
+      "draft": false
+    }
+  ],
+  "termsseries": [
+    {
+      "file": "/Users/future/l.blog/data/blog/maths/calculus/calculus-2/calculus-2.md",
+      "type": "blog",
+      "count": 12,
+      "draft": true
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/projects/royal-stock-exchange/4-scaling.md",
+      "type": "blog",
+      "count": 10,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/finance/quant/crash-course.md",
+      "type": "blog",
+      "count": 5,
+      "draft": true
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/frameworks/next/introducing-multi-part-posts-with-nested-routing.md",
+      "type": "blog",
+      "count": 2,
+      "draft": true
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/finance/options/strategies/trading-strategies.md",
+      "type": "blog",
+      "count": 1,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/finance/quant/calculus-for-quants.md",
+      "type": "blog",
+      "count": 1,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/finance/quant/statistics.md",
+      "type": "blog",
+      "count": 1,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/finance/stock-market-size.md",
+      "type": "blog",
+      "count": 1,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/finance/toc.md",
+      "type": "blog",
+      "count": 1,
+      "draft": true
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/projects/royal-stock-exchange/2-seeding data.md",
+      "type": "blog",
+      "count": 1,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/frameworks/flutter/flutter-tiktok-1.md",
+      "type": "blog",
+      "count": 1,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/frameworks/flutter/flutter-tiktok-2.md",
+      "type": "blog",
+      "count": 1,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/info-sec/over-the-wire-1-bandit.md",
+      "type": "blog",
+      "count": 1,
+      "draft": false
+    }
+  ],
+  "termsserver-actions": [],
+  "termsserver-client-boundary": [],
+  "termsserver-components": [
+    {
+      "file": "/Users/future/l.blog/data/kb/atom/CS/page-router-vs-app-router.md",
+      "type": "kb",
+      "count": 2,
+      "draft": false
+    }
+  ],
+  "termsserver-data-fetching": [],
+  "termsserver-first-rendering": [],
+  "termsserver-side-fetch": [],
+  "termsserver-side-rendering": [],
+  "termsserver-side-routing": [],
+  "termsserver": [
+    {
+      "file": "/Users/future/l.blog/data/blog/software/system-design/system-design-auditing.md",
+      "type": "blog",
+      "count": 13,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/kb/atom/CS/page-router-vs-app-router.md",
+      "type": "kb",
+      "count": 9,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/info-sec/over-the-wire-3-natas.md",
+      "type": "blog",
+      "count": 8,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/system-design/build-backend-api.md",
+      "type": "blog",
+      "count": 7,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/projects/royal-stock-exchange/4-scaling.md",
+      "type": "blog",
+      "count": 5,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/info-sec/over-the-wire-1-bandit.md",
+      "type": "blog",
+      "count": 5,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/system-design/SQL Server Setup.md",
+      "type": "blog",
+      "count": 5,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/info-sec/over-the-wire-0-intro.md",
+      "type": "blog",
+      "count": 4,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/system-design/appium-mocha.md",
+      "type": "blog",
+      "count": 4,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/system-design/build-api-cache.md",
+      "type": "blog",
+      "count": 4,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/projects/royal-stock-exchange/1-intro.md",
+      "type": "blog",
+      "count": 3,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/system-design/build-db-cluster-docker.md",
+      "type": "blog",
+      "count": 3,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/TEST/introducing-tailwind-nextjs-starter-blog.mdx",
+      "type": "blog",
+      "count": 2,
+      "draft": true
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/databases/nosql/mongodb.md",
+      "type": "blog",
+      "count": 2,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/devops/gcp/cloud-run-job.md",
+      "type": "blog",
+      "count": 2,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/info-sec/csrf.md",
+      "type": "blog",
+      "count": 2,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/languages/dart/dart.3.10.md",
+      "type": "blog",
+      "count": 2,
+      "draft": true
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/languages/python/flask-hot-reload.md",
+      "type": "blog",
+      "count": 2,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/languages/rust/rust-projects.md",
+      "type": "blog",
+      "count": 2,
+      "draft": true
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/system-design/graphql.md",
+      "type": "blog",
+      "count": 2,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/exchange/intro-3.md",
+      "type": "blog",
+      "count": 1,
+      "draft": true
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/finance/high-frequency-trading.md",
+      "type": "blog",
+      "count": 1,
+      "draft": true
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/projects/royal-stock-exchange/3-portfolio.md",
+      "type": "blog",
+      "count": 1,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/databases/sql/remote-clone-to-local.md",
+      "type": "blog",
+      "count": 1,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/languages/java/java-spring.md",
+      "type": "blog",
+      "count": 1,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/languages/python/django.md",
+      "type": "blog",
+      "count": 1,
+      "draft": true
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/system-design/1-DSAFine-Mono.md",
+      "type": "blog",
+      "count": 1,
+      "draft": true
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/system-design/flutter-netlify-deploy.md",
+      "type": "blog",
+      "count": 1,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/system-design/microservices.md",
+      "type": "blog",
+      "count": 1,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/system-design/process-deepdive.md",
+      "type": "blog",
+      "count": 1,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/system-design/process-overview.md",
+      "type": "blog",
+      "count": 1,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/system-design/system-design-1-bitly.md",
+      "type": "blog",
+      "count": 1,
+      "draft": false
+    }
+  ],
+  "termsserverless-functions": [],
+  "termsserverless": [
+    {
+      "file": "/Users/future/l.blog/data/blog/software/devops/gcp/vcp-connectors.md",
+      "type": "blog",
+      "count": 6,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/devops/gcp/cloud-run-job.md",
+      "type": "blog",
+      "count": 3,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/devops/gcp/aws-lambda.md",
+      "type": "blog",
+      "count": 2,
+      "draft": true
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/devops/gcp/cloud-run.md",
+      "type": "blog",
+      "count": 2,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/TEST/guide-to-using-images-in-nextjs.mdx",
+      "type": "blog",
+      "count": 1,
+      "draft": true
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/devops/gcp/memory-store.md",
+      "type": "blog",
+      "count": 1,
+      "draft": false
+    }
+  ],
+  "termsservers": [
+    {
+      "file": "/Users/future/l.blog/data/blog/projects/royal-stock-exchange/4-scaling.md",
+      "type": "blog",
+      "count": 2,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/devops/gcp/cloud-run.md",
+      "type": "blog",
+      "count": 2,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/TEST/TEST-TERMS.md",
+      "type": "blog",
+      "count": 1,
+      "draft": true
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/exchange/intro-3.md",
+      "type": "blog",
+      "count": 1,
+      "draft": true
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/finance/high-frequency-trading.md",
+      "type": "blog",
+      "count": 1,
+      "draft": true
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/devops/gcp/cloud-scheduler.md",
+      "type": "blog",
+      "count": 1,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/devops/gcp/memory-store.md",
+      "type": "blog",
+      "count": 1,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/languages/go/go-routines.md",
+      "type": "blog",
+      "count": 1,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/system-design/process-deepdive.md",
+      "type": "blog",
+      "count": 1,
+      "draft": false
+    }
+  ],
+  "termsservice-account": [
+    {
+      "file": "/Users/future/l.blog/data/blog/software/devops/gcp/gcp-pipeline.md",
+      "type": "blog",
+      "count": 1,
+      "draft": true
+    }
+  ],
+  "termsservice-discovery": [
+    {
+      "file": "/Users/future/l.blog/data/blog/software/system-design/system-design-distributed-systems.md",
+      "type": "blog",
+      "count": 1,
+      "draft": false
+    }
+  ],
+  "termsservice-exposes-pod": [],
+  "termsservice-layer": [],
+  "termsservice-replication": [],
+  "termsservice-status": [],
+  "termsservice": [
+    {
+      "file": "/Users/future/l.blog/data/blog/software/system-design/microservices.md",
+      "type": "blog",
+      "count": 21,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/system-design/build-db-cluster-docker.md",
+      "type": "blog",
+      "count": 9,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/devops/gcp/memory-store.md",
+      "type": "blog",
+      "count": 8,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/devops/gcp/cloud-scheduler.md",
+      "type": "blog",
+      "count": 6,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/exchange/intro-2.md",
+      "type": "blog",
+      "count": 4,
+      "draft": true
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/devops/gcp/cloud-run-job.md",
+      "type": "blog",
+      "count": 3,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/devops/gcp/secret-manager.md",
+      "type": "blog",
+      "count": 3,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/devops/gcp/vcp-connectors.md",
+      "type": "blog",
+      "count": 3,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/projects/royal-stock-exchange/1-intro.md",
+      "type": "blog",
+      "count": 2,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/projects/royal-stock-exchange/3-portfolio.md",
+      "type": "blog",
+      "count": 2,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/system-design/process-deepdive.md",
+      "type": "blog",
+      "count": 2,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/system-design/system-design-distributed-systems.md",
+      "type": "blog",
+      "count": 2,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/exchange/intro-3.md",
+      "type": "blog",
+      "count": 1,
+      "draft": true
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/devops/gcp/gcp-pipeline.md",
+      "type": "blog",
+      "count": 1,
+      "draft": true
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/info-sec/vm tools.md",
+      "type": "blog",
+      "count": 1,
+      "draft": false
+    }
+  ],
+  "termsservices": [
+    {
+      "file": "/Users/future/l.blog/data/blog/exchange/intro-2.md",
+      "type": "blog",
+      "count": 6,
+      "draft": true
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/devops/gcp/vcp-connectors.md",
+      "type": "blog",
+      "count": 6,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/devops/gcp/aws-cloud-practiitioner.md",
+      "type": "blog",
+      "count": 5,
+      "draft": true
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/devops/gcp/secret-manager.md",
+      "type": "blog",
+      "count": 4,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/system-design/firebase environments.md",
+      "type": "blog",
+      "count": 4,
+      "draft": true
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/databases/sql/setup-pg-macos.md",
+      "type": "blog",
+      "count": 3,
+      "draft": true
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/devops/gcp/memory-store.md",
+      "type": "blog",
+      "count": 3,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/system-design/build-db-cluster-docker.md",
+      "type": "blog",
+      "count": 3,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/system-design/build-message-queue.md",
+      "type": "blog",
+      "count": 3,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/system-design/microservices.md",
+      "type": "blog",
+      "count": 3,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/politics/1-go.md",
+      "type": "blog",
+      "count": 2,
+      "draft": true
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/devops/gcp/cloud-run.md",
+      "type": "blog",
+      "count": 2,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/system-design/process-overview.md",
+      "type": "blog",
+      "count": 2,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/kb/atom/CS/git-worktree-git-submodule-git-monorepo.md",
+      "type": "kb",
+      "count": 1,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/TEST/TEST-TERMS.md",
+      "type": "blog",
+      "count": 1,
+      "draft": true
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/cheatsheets/kubernetes.md",
+      "type": "blog",
+      "count": 1,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/finance/federal-reserve-vs-treasury-department.md",
+      "type": "blog",
+      "count": 1,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/politics/communism.md",
+      "type": "blog",
+      "count": 1,
+      "draft": true
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/projects/royal-stock-exchange/1-intro.md",
+      "type": "blog",
+      "count": 1,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/projects/royal-stock-exchange/3-portfolio.md",
+      "type": "blog",
+      "count": 1,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/devops/gcp/aws-lambda.md",
+      "type": "blog",
+      "count": 1,
+      "draft": true
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/devops/gcp/gcp-pipeline.md",
+      "type": "blog",
+      "count": 1,
+      "draft": true
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/platforms/ios/template.md",
+      "type": "blog",
+      "count": 1,
+      "draft": true
+    }
+  ],
+  "termssessions": [
+    {
+      "file": "/Users/future/l.blog/data/blog/exchange/intro-5.md",
+      "type": "blog",
+      "count": 1,
+      "draft": true
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/devops/gcp/cloud-run-job.md",
+      "type": "blog",
+      "count": 1,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/info-sec/csrf.md",
+      "type": "blog",
+      "count": 1,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/languages/python/django.md",
+      "type": "blog",
+      "count": 1,
+      "draft": true
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/system-design/process-deepdive.md",
+      "type": "blog",
+      "count": 1,
+      "draft": false
+    }
+  ],
+  "termsset-identities": [],
+  "termsset-theory": [
+    {
+      "file": "/Users/future/l.blog/data/blog/maths/discrete-symbols.md",
+      "type": "blog",
+      "count": 1,
+      "draft": false
+    }
+  ],
+  "termsset": [
+    {
+      "file": "/Users/future/l.blog/data/blog/leetcode/200-number-of-islands.md",
+      "type": "blog",
+      "count": 29,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/maths/discrete-symbols.md",
+      "type": "blog",
+      "count": 19,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/projects/royal-stock-exchange/2-seeding data.md",
+      "type": "blog",
+      "count": 7,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/data-structures-algorithms/graph-programming.md",
+      "type": "blog",
+      "count": 6,
+      "draft": true
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/info-sec/over-the-wire-1-bandit.md",
+      "type": "blog",
+      "count": 5,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/leetcode/1-two-sum.md",
+      "type": "blog",
+      "count": 4,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/leetcode/742-network-delay-time.md",
+      "type": "blog",
+      "count": 4,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/projects/royal-stock-exchange/1-intro.md",
+      "type": "blog",
+      "count": 4,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/data-structures-algorithms/cheatsheet.md",
+      "type": "blog",
+      "count": 4,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/devops/gcp/cloud-scheduler.md",
+      "type": "blog",
+      "count": 3,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/finance/high-frequency-trading.md",
+      "type": "blog",
+      "count": 2,
+      "draft": true
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/maths/calculus/calculus-1/calculus-1.md",
+      "type": "blog",
+      "count": 2,
+      "draft": true
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/projects/royal-stock-exchange/4-scaling.md",
+      "type": "blog",
+      "count": 2,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/data-structures-algorithms/algorithms/union-find.md",
+      "type": "blog",
+      "count": 2,
+      "draft": true
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/data-structures-algorithms/terms.md",
+      "type": "blog",
+      "count": 2,
+      "draft": true
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/databases/psql.md",
+      "type": "blog",
+      "count": 2,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/devops/gcp/cloud-build-triggers.md",
+      "type": "blog",
+      "count": 2,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/system-design/system-design-1-bitly.md",
+      "type": "blog",
+      "count": 2,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/finance/indicators/leading-and-lagging-indicators.md",
+      "type": "blog",
+      "count": 1,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/finance/options/strategies/introduction.md",
+      "type": "blog",
+      "count": 1,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/finance/quant/maths.md",
+      "type": "blog",
+      "count": 1,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/finance/quant/slippage.md",
+      "type": "blog",
+      "count": 1,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/finance/terms/closed-ended-funds.md",
+      "type": "blog",
+      "count": 1,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/finance/thesis-jaime.md",
+      "type": "blog",
+      "count": 1,
+      "draft": true
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/leetcode/16-3-sum-closest.md",
+      "type": "blog",
+      "count": 1,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/leetcode/261-graph-valid-tree.md",
+      "type": "blog",
+      "count": 1,
+      "draft": true
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/leetcode/322-coin-change.md",
+      "type": "blog",
+      "count": 1,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/leetcode/463-island-perimeter.md",
+      "type": "blog",
+      "count": 1,
+      "draft": true
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/questions/leadership.md",
+      "type": "blog",
+      "count": 1,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/bike-shedding.md",
+      "type": "blog",
+      "count": 1,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/data-structures-algorithms/graph-algorithms.md",
+      "type": "blog",
+      "count": 1,
+      "draft": true
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/data-structures-algorithms/patterns-graph.md",
+      "type": "blog",
+      "count": 1,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/databases/nosql/mongodb.md",
+      "type": "blog",
+      "count": 1,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/databases/sql/1_toc.md",
+      "type": "blog",
+      "count": 1,
+      "draft": true
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/databases/sql/lag.md",
+      "type": "blog",
+      "count": 1,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/design patterns/repository.md",
+      "type": "blog",
+      "count": 1,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/devops/gcp/memory-store.md",
+      "type": "blog",
+      "count": 1,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/devops/gcp/vcp-connectors.md",
+      "type": "blog",
+      "count": 1,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/info-sec/over-the-wire-2-leviathan.md",
+      "type": "blog",
+      "count": 1,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/languages/python/flask-hot-reload.md",
+      "type": "blog",
+      "count": 1,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/system-design/appium-mocha.md",
+      "type": "blog",
+      "count": 1,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/system-design/build-api-cache.md",
+      "type": "blog",
+      "count": 1,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/system-design/build-db-cluster-docker.md",
+      "type": "blog",
+      "count": 1,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/system-design/graphql.md",
+      "type": "blog",
+      "count": 1,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/system-design/process-deepdive.md",
+      "type": "blog",
+      "count": 1,
+      "draft": false
+    }
+  ],
+  "termssetstate": [
+    {
+      "file": "/Users/future/l.blog/data/blog/software/frameworks/flutter/navigators.md",
+      "type": "blog",
+      "count": 4,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/frameworks/flutter/flutter-tiktok-1.md",
+      "type": "blog",
+      "count": 2,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/system-design/flutter-theme.md",
+      "type": "blog",
+      "count": 1,
+      "draft": false
+    }
+  ],
+  "termssetter": [],
+  "termssharding": [
+    {
+      "file": "/Users/future/l.blog/data/blog/projects/royal-stock-exchange/4-scaling.md",
+      "type": "blog",
+      "count": 3,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/system-design/process-deepdive.md",
+      "type": "blog",
+      "count": 2,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/system-design/process-overview.md",
+      "type": "blog",
+      "count": 1,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/system-design/system-design-distributed-systems.md",
+      "type": "blog",
+      "count": 1,
+      "draft": false
+    }
+  ],
+  "termsshared-data-between-containers": [],
+  "termsshared-network-namespace": [],
+  "termsshared-preferences": [],
+  "termsshared-storage-volume": [],
+  "termsshares": [
+    {
+      "file": "/Users/future/l.blog/data/blog/finance/terms/closed-ended-funds.md",
+      "type": "blog",
+      "count": 10,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/finance/RDO.md",
+      "type": "blog",
+      "count": 7,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/finance/options/strategies/trading-strategies.md",
+      "type": "blog",
+      "count": 6,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/finance/terms/net-asset-value.md",
+      "type": "blog",
+      "count": 5,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/finance/business/hostile-takeover.md",
+      "type": "blog",
+      "count": 4,
+      "draft": true
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/finance/terms/open-ended-funds.md",
+      "type": "blog",
+      "count": 4,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/finance/terms/mutual-funds.md",
+      "type": "blog",
+      "count": 2,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/finance/terms/secondary-market.md",
+      "type": "blog",
+      "count": 2,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/projects/royal-stock-exchange/2-seeding data.md",
+      "type": "blog",
+      "count": 2,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/kb/atom/CS/git-worktree-git-submodule-git-monorepo.md",
+      "type": "kb",
+      "count": 1,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/finance/index.md",
+      "type": "blog",
+      "count": 1,
+      "draft": true
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/finance/options/strategies/introduction.md",
+      "type": "blog",
+      "count": 1,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/finance/terms/exchange-traded-funds.md",
+      "type": "blog",
+      "count": 1,
+      "draft": false
+    }
+  ],
+  "termssharpe-ratio": [
+    {
+      "file": "/Users/future/l.blog/data/blog/finance/indicators/sharpe-ratio.md",
+      "type": "blog",
+      "count": 13,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/finance/formulas.md",
+      "type": "blog",
+      "count": 1,
+      "draft": true
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/finance/quant/crash-course.md",
+      "type": "blog",
+      "count": 1,
+      "draft": true
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/finance/quant/statistics.md",
+      "type": "blog",
+      "count": 1,
+      "draft": false
+    }
+  ],
+  "termsshell-method": [],
+  "termsshell-scripting": [],
+  "termsshell": [
+    {
+      "file": "/Users/future/l.blog/data/blog/software/info-sec/over-the-wire-1-bandit.md",
+      "type": "blog",
+      "count": 12,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/system-design/build-db-cluster-docker.md",
+      "type": "blog",
+      "count": 4,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/databases/sql/setup-pg-macos.md",
+      "type": "blog",
+      "count": 2,
+      "draft": true
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/languages/rust/rust-projects.md",
+      "type": "blog",
+      "count": 2,
+      "draft": true
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/cheatsheets/kubernetes.md",
+      "type": "blog",
+      "count": 1,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/cheatsheets/shell.md",
+      "type": "blog",
+      "count": 1,
+      "draft": true
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/databases/nosql/mongodb.md",
+      "type": "blog",
+      "count": 1,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/git/pre-commit.md",
+      "type": "blog",
+      "count": 1,
+      "draft": false
+    }
+  ],
+  "termsship-run-anywhere": [],
+  "termsshortest-path": [
+    {
+      "file": "/Users/future/l.blog/data/blog/software/data-structures-algorithms/patterns-graph.md",
+      "type": "blog",
+      "count": 13,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/data-structures-algorithms/graph-programming.md",
+      "type": "blog",
+      "count": 1,
+      "draft": true
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/data-structures-algorithms/priority-queue.md",
+      "type": "blog",
+      "count": 1,
+      "draft": true
+    }
+  ],
+  "termsshould-component-update": [],
+  "termsside-effects": [
+    {
+      "file": "/Users/future/l.blog/data/blog/exchange/intro-7.md",
+      "type": "blog",
+      "count": 1,
+      "draft": true
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/data-structures-algorithms/OOP.md",
+      "type": "blog",
+      "count": 1,
+      "draft": false
+    }
+  ],
+  "termssigmoid": [],
+  "termssignificance-level": [],
+  "termssimple-linear-regression": [],
+  "termssingle-codebase-cross-platform": [],
+  "termssingle-container-pod": [],
+  "termssingle-inheritance": [],
+  "termssingle-responsibility-principle": [],
+  "termssingleton-pattern": [
+    {
+      "file": "/Users/future/l.blog/data/blog/software/design patterns/singleton.md",
+      "type": "blog",
+      "count": 2,
+      "draft": false
+    }
+  ],
+  "termssingly-linked-list": [],
+  "termsskewness": [
+    {
+      "file": "/Users/future/l.blog/data/blog/finance/quant/statistics.md",
+      "type": "blog",
+      "count": 1,
+      "draft": false
+    }
+  ],
+  "termssliding-window": [
+    {
+      "file": "/Users/future/l.blog/data/blog/leetcode/239-sliding-window-maximum.md",
+      "type": "blog",
+      "count": 3,
+      "draft": true
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/leetcode/121-best-time-to-sell-stock.md",
+      "type": "blog",
+      "count": 1,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/leetcode/16-3-sum-closest.md",
+      "type": "blog",
+      "count": 1,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/data-structures-algorithms/cheatsheet.md",
+      "type": "blog",
+      "count": 1,
+      "draft": false
+    }
+  ],
+  "termssliver": [],
+  "termsslope": [
+    {
+      "file": "/Users/future/l.blog/data/blog/maths/calculus/intro.md",
+      "type": "blog",
+      "count": 2,
+      "draft": true
+    }
+  ],
+  "termsslug-params": [],
+  "termssmall-tools-do-one-thing-well": [],
+  "termssnap": [],
+  "termssockets": [
+    {
+      "file": "/Users/future/l.blog/data/blog/software/languages/rust/rust-projects.md",
+      "type": "blog",
+      "count": 1,
+      "draft": true
+    }
+  ],
+  "termssoftmax": [],
+  "termssolution-set": [],
+  "termssorting": [
+    {
+      "file": "/Users/future/l.blog/data/blog/software/data-structures-algorithms/algorithms/sorting.md",
+      "type": "blog",
+      "count": 5,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/data-structures-algorithms/patterns-graph.md",
+      "type": "blog",
+      "count": 4,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/data-structures-algorithms/algorithms/sorting-old.md",
+      "type": "blog",
+      "count": 2,
+      "draft": true
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/TEST/TEST-TERMS.md",
+      "type": "blog",
+      "count": 1,
+      "draft": true
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/data-structures-algorithms/cheatsheet.md",
+      "type": "blog",
+      "count": 1,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/databases/sql/1_toc.md",
+      "type": "blog",
+      "count": 1,
+      "draft": true
+    }
+  ],
+  "termssortino-ratio": [
+    {
+      "file": "/Users/future/l.blog/data/blog/finance/quant/statistics.md",
+      "type": "blog",
+      "count": 1,
+      "draft": false
+    }
+  ],
+  "termsspace-complexity": [
+    {
+      "file": "/Users/future/l.blog/data/blog/software/data-structures-algorithms/algorithms/sorting.md",
+      "type": "blog",
+      "count": 1,
+      "draft": false
+    }
+  ],
+  "termsspaces": [
+    {
+      "file": "/Users/future/l.blog/data/blog/software/info-sec/over-the-wire-1-bandit.md",
+      "type": "blog",
+      "count": 4,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/ai/ai-search-agent.md",
+      "type": "blog",
+      "count": 1,
+      "draft": false
+    }
+  ],
+  "termsspan": [],
+  "termsspectral-decomposition": [],
+  "termsspectral-radius": [],
+  "termsspherical-coordinates": [],
+  "termssql-injection": [],
+  "termssql": [
+    {
+      "file": "/Users/future/l.blog/data/blog/software/system-design/SQL Server Setup.md",
+      "type": "blog",
+      "count": 16,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/databases/sql/1_toc.md",
+      "type": "blog",
+      "count": 12,
+      "draft": true
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/projects/royal-stock-exchange/4-scaling.md",
+      "type": "blog",
+      "count": 7,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/databases/psql.md",
+      "type": "blog",
+      "count": 6,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/system-design/build-db-cluster-docker.md",
+      "type": "blog",
+      "count": 6,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/projects/royal-stock-exchange/2-seeding data.md",
+      "type": "blog",
+      "count": 4,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/devops/gcp/vcp-connectors.md",
+      "type": "blog",
+      "count": 4,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/projects/royal-stock-exchange/1-intro.md",
+      "type": "blog",
+      "count": 3,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/databases/sql/clone-db.md",
+      "type": "blog",
+      "count": 3,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/databases/sql/lag.md",
+      "type": "blog",
+      "count": 3,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/system-design/process-deepdive.md",
+      "type": "blog",
+      "count": 3,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/finance/quant/crash-course.md",
+      "type": "blog",
+      "count": 2,
+      "draft": true
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/databases/sql/alter-tables.md",
+      "type": "blog",
+      "count": 2,
+      "draft": true
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/databases/sql/group-by.md",
+      "type": "blog",
+      "count": 2,
+      "draft": true
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/databases/sql/optimization.md",
+      "type": "blog",
+      "count": 2,
+      "draft": true
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/databases/sql/procedures-list.md",
+      "type": "blog",
+      "count": 2,
+      "draft": true
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/devops/gcp/cloud-sql-commands.md",
+      "type": "blog",
+      "count": 2,
+      "draft": true
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/languages/rust/rust-projects.md",
+      "type": "blog",
+      "count": 2,
+      "draft": true
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/projects/royal-stock-exchange/3-portfolio.md",
+      "type": "blog",
+      "count": 1,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/databases/pgadmin.md",
+      "type": "blog",
+      "count": 1,
+      "draft": true
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/databases/sql/inspect-table.md",
+      "type": "blog",
+      "count": 1,
+      "draft": true
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/design patterns/repository.md",
+      "type": "blog",
+      "count": 1,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/system-design/process-overview.md",
+      "type": "blog",
+      "count": 1,
+      "draft": false
+    }
+  ],
+  "termssqlite": [
+    {
+      "file": "/Users/future/l.blog/data/blog/software/languages/rust/rust-projects.md",
+      "type": "blog",
+      "count": 1,
+      "draft": true
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/system-design/build-message-queue.md",
+      "type": "blog",
+      "count": 1,
+      "draft": false
+    }
+  ],
+  "termssquare-matrix": [],
+  "termsss": [
+    {
+      "file": "/Users/future/l.blog/data/blog/software/frameworks/flutter/semantic-stoic.md",
+      "type": "blog",
+      "count": 1,
+      "draft": false
+    }
+  ],
+  "termsssg": [
+    {
+      "file": "/Users/future/l.blog/data/kb/atom/CS/page-router-vs-app-router.md",
+      "type": "kb",
+      "count": 4,
+      "draft": false
+    }
+  ],
+  "termsssh-automation": [],
+  "termsssh": [
+    {
+      "file": "/Users/future/l.blog/data/blog/software/info-sec/over-the-wire-1-bandit.md",
+      "type": "blog",
+      "count": 61,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/info-sec/over-the-wire-2-leviathan.md",
+      "type": "blog",
+      "count": 8,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/info-sec/over-the-wire-0-intro.md",
+      "type": "blog",
+      "count": 1,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/system-design/SQL Server Setup.md",
+      "type": "blog",
+      "count": 1,
+      "draft": false
+    }
+  ],
+  "termsssr": [
+    {
+      "file": "/Users/future/l.blog/data/kb/atom/CS/page-router-vs-app-router.md",
+      "type": "kb",
+      "count": 3,
+      "draft": false
+    }
+  ],
+  "termsstability": [
+    {
+      "file": "/Users/future/l.blog/data/blog/finance/federal-reserve-vs-treasury-department.md",
+      "type": "blog",
+      "count": 2,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/finance/indicators/implied-volatility-rank.md",
+      "type": "blog",
+      "count": 1,
+      "draft": false
+    }
+  ],
+  "termsstable-networking": [],
+  "termsstack-navigation": [
+    {
+      "file": "/Users/future/l.blog/data/blog/projects/royal-stock-exchange/5-demo.md",
+      "type": "blog",
+      "count": 1,
+      "draft": false
+    }
+  ],
+  "termsstack-navigator": [
+    {
+      "file": "/Users/future/l.blog/data/blog/software/frameworks/flutter/navigators.md",
+      "type": "blog",
+      "count": 1,
+      "draft": false
+    }
+  ],
+  "termsstack": [
+    {
+      "file": "/Users/future/l.blog/data/blog/software/data-structures-algorithms/graph-theory.md",
+      "type": "blog",
+      "count": 9,
+      "draft": true
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/data-structures-algorithms/cheatsheet.md",
+      "type": "blog",
+      "count": 7,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/data-structures-algorithms/graph-programming.md",
+      "type": "blog",
+      "count": 6,
+      "draft": true
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/finance/high-frequency-trading.md",
+      "type": "blog",
+      "count": 5,
+      "draft": true
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/data-structures-algorithms/graph.md",
+      "type": "blog",
+      "count": 4,
+      "draft": true
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/same-problems-different-tools.md",
+      "type": "blog",
+      "count": 2,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/frameworks/flutter/navigators.md",
+      "type": "blog",
+      "count": 2,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/projects/royal-stock-exchange/5-demo.md",
+      "type": "blog",
+      "count": 1,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/questions/leadership.md",
+      "type": "blog",
+      "count": 1,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/data-structures-algorithms/graph-algorithms.md",
+      "type": "blog",
+      "count": 1,
+      "draft": true
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/data-structures-algorithms/patterns-graph.md",
+      "type": "blog",
+      "count": 1,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/databases/nosql/mongodb.md",
+      "type": "blog",
+      "count": 1,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/languages/rust/rust-projects.md",
+      "type": "blog",
+      "count": 1,
+      "draft": true
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/mobile requirements.md",
+      "type": "blog",
+      "count": 1,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/system-design/microservices.md",
+      "type": "blog",
+      "count": 1,
+      "draft": false
+    }
+  ],
+  "termsstandard-deviation": [
+    {
+      "file": "/Users/future/l.blog/data/blog/maths/statistics/variance-standard-deviation.md",
+      "type": "blog",
+      "count": 9,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/finance/indicators/sharpe-ratio.md",
+      "type": "blog",
+      "count": 5,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/finance/indicators/premium-flow-with-z-scores.md",
+      "type": "blog",
+      "count": 2,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/finance/quant/maths.md",
+      "type": "blog",
+      "count": 1,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/finance/quant/statistics.md",
+      "type": "blog",
+      "count": 1,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/finance/quant/symbols.md",
+      "type": "blog",
+      "count": 1,
+      "draft": false
+    }
+  ],
+  "termsstandardization": [
+    {
+      "file": "/Users/future/l.blog/data/blog/finance/futures.md",
+      "type": "blog",
+      "count": 2,
+      "draft": false
+    }
+  ],
+  "termsstart": [
+    {
+      "file": "/Users/future/l.blog/data/blog/software/system-design/microservices.md",
+      "type": "blog",
+      "count": 9,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/system-design/appium-mocha.md",
+      "type": "blog",
+      "count": 6,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/TEST/introducing-tailwind-nextjs-starter-blog.mdx",
+      "type": "blog",
+      "count": 4,
+      "draft": true
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/cheatsheets/expo.md",
+      "type": "blog",
+      "count": 4,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/leetcode/253-meeting-rooms-ii.md",
+      "type": "blog",
+      "count": 4,
+      "draft": true
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/data-structures-algorithms/algorithms/sorting.md",
+      "type": "blog",
+      "count": 4,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/system-design/build-db-cluster-docker.md",
+      "type": "blog",
+      "count": 4,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/leetcode/252-meeting-rooms.md",
+      "type": "blog",
+      "count": 3,
+      "draft": true
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/data-structures-algorithms/graph-programming.md",
+      "type": "blog",
+      "count": 3,
+      "draft": true
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/cheatsheets/kubernetes.md",
+      "type": "blog",
+      "count": 2,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/finance/high-frequency-trading.md",
+      "type": "blog",
+      "count": 2,
+      "draft": true
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/finance/options/strategies/introduction.md",
+      "type": "blog",
+      "count": 2,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/politics/1-go.md",
+      "type": "blog",
+      "count": 2,
+      "draft": true
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/data-structures-algorithms/dynamic-programming.md",
+      "type": "blog",
+      "count": 2,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/languages/dart/dart.3.10.md",
+      "type": "blog",
+      "count": 2,
+      "draft": true
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/languages/go/go-routines.md",
+      "type": "blog",
+      "count": 2,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/TEST/deriving-ols-estimator.mdx",
+      "type": "blog",
+      "count": 1,
+      "draft": true
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/exchange/intro-7.md",
+      "type": "blog",
+      "count": 1,
+      "draft": true
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/finance/options/strategies/spreads.md",
+      "type": "blog",
+      "count": 1,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/politics/communism.md",
+      "type": "blog",
+      "count": 1,
+      "draft": true
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/projects/royal-stock-exchange/2-seeding data.md",
+      "type": "blog",
+      "count": 1,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/projects/royal-stock-exchange/3-portfolio.md",
+      "type": "blog",
+      "count": 1,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/projects/royal-stock-exchange/5-demo.md",
+      "type": "blog",
+      "count": 1,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/questions/complexity.md",
+      "type": "blog",
+      "count": 1,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/same-problems-different-tools.md",
+      "type": "blog",
+      "count": 1,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/data-structures-algorithms/graph-theory.md",
+      "type": "blog",
+      "count": 1,
+      "draft": true
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/databases/pgadmin.md",
+      "type": "blog",
+      "count": 1,
+      "draft": true
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/databases/sql/setup-pg-macos.md",
+      "type": "blog",
+      "count": 1,
+      "draft": true
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/devops/gcp/aws-cloud-practiitioner.md",
+      "type": "blog",
+      "count": 1,
+      "draft": true
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/devops/gcp/cloud-run-job.md",
+      "type": "blog",
+      "count": 1,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/devops/gcp/cloud-sql-commands.md",
+      "type": "blog",
+      "count": 1,
+      "draft": true
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/git/pre-commit.md",
+      "type": "blog",
+      "count": 1,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/info-sec/over-the-wire-1-bandit.md",
+      "type": "blog",
+      "count": 1,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/languages/python/django.md",
+      "type": "blog",
+      "count": 1,
+      "draft": true
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/languages/rust/rust-projects.md",
+      "type": "blog",
+      "count": 1,
+      "draft": true
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/system-design/firebase environments.md",
+      "type": "blog",
+      "count": 1,
+      "draft": true
+    }
+  ],
+  "termsstartup-time-optimization": [],
+  "termsstartup-time": [],
+  "termsstate-colocation": [],
+  "termsstate-container-pattern": [],
+  "termsstate-lifting": [],
+  "termsstate-space": [],
+  "termsstate": [
+    {
+      "file": "/Users/future/l.blog/data/blog/software/frameworks/flutter/flutter-tiktok-1.md",
+      "type": "blog",
+      "count": 14,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/personal/stoicism.md",
+      "type": "blog",
+      "count": 5,
+      "draft": true
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/frameworks/flutter/flutter-tiktok-2.md",
+      "type": "blog",
+      "count": 5,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/system-design/process-overview.md",
+      "type": "blog",
+      "count": 5,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/frameworks/flutter/navigators.md",
+      "type": "blog",
+      "count": 4,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/ai/ai-search-agent.md",
+      "type": "blog",
+      "count": 3,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/exchange/intro-7.md",
+      "type": "blog",
+      "count": 3,
+      "draft": true
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/system-design/appium-mocha.md",
+      "type": "blog",
+      "count": 3,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/system-design/flutter-theme.md",
+      "type": "blog",
+      "count": 3,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/same-problems-different-tools.md",
+      "type": "blog",
+      "count": 2,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/data-structures-algorithms/OOP.md",
+      "type": "blog",
+      "count": 2,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/kb/atom/CS/AI.md",
+      "type": "kb",
+      "count": 1,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/TEST/the-time-machine.mdx",
+      "type": "blog",
+      "count": 1,
+      "draft": true
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/books/12.the-thing-you-can-see-only-when-you-slow-down.md",
+      "type": "blog",
+      "count": 1,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/exchange/intro-2.md",
+      "type": "blog",
+      "count": 1,
+      "draft": true
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/exchange/intro-6.md",
+      "type": "blog",
+      "count": 1,
+      "draft": true
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/politics/1-go.md",
+      "type": "blog",
+      "count": 1,
+      "draft": true
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/design patterns/observer.md",
+      "type": "blog",
+      "count": 1,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/design patterns/singleton.md",
+      "type": "blog",
+      "count": 1,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/mobile requirements.md",
+      "type": "blog",
+      "count": 1,
+      "draft": false
+    }
+  ],
+  "termsstateful-applications": [],
+  "termsstateful-set": [],
+  "termsstateful-widget": [
+    {
+      "file": "/Users/future/l.blog/data/blog/software/frameworks/flutter/flutter-tiktok-1.md",
+      "type": "blog",
+      "count": 1,
+      "draft": false
+    }
+  ],
+  "termsstateless-widget": [],
+  "termsstatic-optimization": [],
+  "termsstatic-site-generation": [],
+  "termsstationarity": [
+    {
+      "file": "/Users/future/l.blog/data/blog/finance/quant/crash-course.md",
+      "type": "blog",
+      "count": 1,
+      "draft": true
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/finance/quant/statistics.md",
+      "type": "blog",
+      "count": 1,
+      "draft": false
+    }
+  ],
+  "termsstatistic": [],
+  "termsstatistics": [
+    {
+      "file": "/Users/future/l.blog/data/blog/finance/quant/statistics.md",
+      "type": "blog",
+      "count": 11,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/finance/quant/symbols.md",
+      "type": "blog",
+      "count": 4,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/finance/quant/maths.md",
+      "type": "blog",
+      "count": 3,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/finance/quant/crash-course.md",
+      "type": "blog",
+      "count": 2,
+      "draft": true
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/finance/indicators/leading-and-lagging-indicators.md",
+      "type": "blog",
+      "count": 1,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/finance/toc.md",
+      "type": "blog",
+      "count": 1,
+      "draft": true
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/maths/statistics/variance-standard-deviation.md",
+      "type": "blog",
+      "count": 1,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/projects/royal-stock-exchange/4-scaling.md",
+      "type": "blog",
+      "count": 1,
+      "draft": false
+    }
+  ],
+  "termsstemming": [],
+  "termsstochastic-gradient-descent": [],
+  "termsstocks": [
+    {
+      "file": "/Users/future/l.blog/data/blog/projects/royal-stock-exchange/2-seeding data.md",
+      "type": "blog",
+      "count": 4,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/finance/terms/mutual-funds.md",
+      "type": "blog",
+      "count": 3,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/finance/terms/exchange-traded-funds.md",
+      "type": "blog",
+      "count": 2,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/finance/terms/intrinsic-value.md",
+      "type": "blog",
+      "count": 2,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/finance/index.md",
+      "type": "blog",
+      "count": 1,
+      "draft": true
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/finance/indicators/implied-volatility-rank.md",
+      "type": "blog",
+      "count": 1,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/finance/options/strategies/introduction.md",
+      "type": "blog",
+      "count": 1,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/finance/terms/closed-ended-funds.md",
+      "type": "blog",
+      "count": 1,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/finance/terms/index-fund.md",
+      "type": "blog",
+      "count": 1,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/finance/terms/secondary-market.md",
+      "type": "blog",
+      "count": 1,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/finance/toc.md",
+      "type": "blog",
+      "count": 1,
+      "draft": true
+    }
+  ],
+  "termsstokes-theorem": [],
+  "termsstop-words": [],
+  "termsstop": [
+    {
+      "file": "/Users/future/l.blog/data/blog/politics/1-go.md",
+      "type": "blog",
+      "count": 4,
+      "draft": true
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/politics/communism.md",
+      "type": "blog",
+      "count": 2,
+      "draft": true
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/system-design/microservices.md",
+      "type": "blog",
+      "count": 2,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/TEST/the-time-machine.mdx",
+      "type": "blog",
+      "count": 1,
+      "draft": true
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/exchange/intro-7.md",
+      "type": "blog",
+      "count": 1,
+      "draft": true
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/finance/index.md",
+      "type": "blog",
+      "count": 1,
+      "draft": true
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/finance/quant/crash-course.md",
+      "type": "blog",
+      "count": 1,
+      "draft": true
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/projects/royal-stock-exchange/1-intro.md",
+      "type": "blog",
+      "count": 1,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/projects/royal-stock-exchange/2-seeding data.md",
+      "type": "blog",
+      "count": 1,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/databases/sql/setup-pg-macos.md",
+      "type": "blog",
+      "count": 1,
+      "draft": true
+    }
+  ],
+  "termsstopped": [],
+  "termsstorage-class": [],
+  "termsstrategy-pattern": [],
+  "termsstratified-sampling": [],
+  "termsstream-builder": [],
+  "termsstream": [
+    {
+      "file": "/Users/future/l.blog/data/blog/software/data-structures-algorithms/priority-queue.md",
+      "type": "blog",
+      "count": 2,
+      "draft": true
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/devops/gcp/cloud-run-job.md",
+      "type": "blog",
+      "count": 1,
+      "draft": false
+    }
+  ],
+  "termsstreaming-rendering": [],
+  "termsstreaming-ssr": [],
+  "termsstrike-price": [
+    {
+      "file": "/Users/future/l.blog/data/blog/finance/options/strategies/introduction.md",
+      "type": "blog",
+      "count": 3,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/finance/options/strategies/straddle.md",
+      "type": "blog",
+      "count": 3,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/finance/formulas.md",
+      "type": "blog",
+      "count": 1,
+      "draft": true
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/finance/options/black-scholes.md",
+      "type": "blog",
+      "count": 1,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/finance/options/strategies/spreads.md",
+      "type": "blog",
+      "count": 1,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/finance/options/strategies/trading-strategies.md",
+      "type": "blog",
+      "count": 1,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/finance/terms/intrinsic-value.md",
+      "type": "blog",
+      "count": 1,
+      "draft": false
+    }
+  ],
+  "termsstring": [
+    {
+      "file": "/Users/future/l.blog/data/blog/leetcode/200-number-of-islands.md",
+      "type": "blog",
+      "count": 30,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/languages/go/go-routines.md",
+      "type": "blog",
+      "count": 30,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/system-design/system-design-auditing.md",
+      "type": "blog",
+      "count": 17,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/TEST/code-tab-groups.md",
+      "type": "blog",
+      "count": 8,
+      "draft": true
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/frameworks/logging-app-load-times-with-firebase.md",
+      "type": "blog",
+      "count": 8,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/data-structures-algorithms/graph-programming.md",
+      "type": "blog",
+      "count": 6,
+      "draft": true
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/languages/dart/handling-nullable-fields.md",
+      "type": "blog",
+      "count": 6,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/languages/java/java-spring.md",
+      "type": "blog",
+      "count": 6,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/data-structures-algorithms/patterns-graph.md",
+      "type": "blog",
+      "count": 4,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/design patterns/factory.md",
+      "type": "blog",
+      "count": 4,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/frameworks/flutter/flutter android customize app icon.md",
+      "type": "blog",
+      "count": 4,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/TEST/code-blocks.md",
+      "type": "blog",
+      "count": 3,
+      "draft": true
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/data-structures-algorithms/dynamic-programming.md",
+      "type": "blog",
+      "count": 3,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/projects/royal-stock-exchange/1-intro.md",
+      "type": "blog",
+      "count": 2,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/frameworks/flutter/navigators.md",
+      "type": "blog",
+      "count": 2,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/regex.md",
+      "type": "blog",
+      "count": 2,
+      "draft": true
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/system-design/graphql.md",
+      "type": "blog",
+      "count": 2,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/finance/high-frequency-trading.md",
+      "type": "blog",
+      "count": 1,
+      "draft": true
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/design patterns/repository.md",
+      "type": "blog",
+      "count": 1,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/frameworks/flutter/android connectivity issues - connection refused.md",
+      "type": "blog",
+      "count": 1,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/system-design/build-api-cache.md",
+      "type": "blog",
+      "count": 1,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/system-design/build-backend-api.md",
+      "type": "blog",
+      "count": 1,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/system-design/build-message-queue.md",
+      "type": "blog",
+      "count": 1,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/system-design/flutter-theme.md",
+      "type": "blog",
+      "count": 1,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/system-design/system-design-1-bitly.md",
+      "type": "blog",
+      "count": 1,
+      "draft": false
+    }
+  ],
+  "termsstripe": [],
+  "termsstrong-consistency": [
+    {
+      "file": "/Users/future/l.blog/data/blog/software/system-design/1-ticketmaster.md",
+      "type": "blog",
+      "count": 1,
+      "draft": true
+    }
+  ],
+  "termsstrong-induction": [],
+  "termsstyle-props": [],
+  "termsstyled-components": [],
+  "termsstylesheet": [
+    {
+      "file": "/Users/future/l.blog/data/blog/software/system-design/appium-mocha.md",
+      "type": "blog",
+      "count": 4,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/TEST/introducing-tailwind-nextjs-starter-blog.mdx",
+      "type": "blog",
+      "count": 1,
+      "draft": true
+    }
+  ],
+  "termssubclass": [
+    {
+      "file": "/Users/future/l.blog/data/blog/software/data-structures-algorithms/OOP.md",
+      "type": "blog",
+      "count": 5,
+      "draft": false
+    }
+  ],
+  "termssubquery": [
+    {
+      "file": "/Users/future/l.blog/data/blog/software/databases/sql/1_toc.md",
+      "type": "blog",
+      "count": 1,
+      "draft": true
+    }
+  ],
+  "termssubscriptions": [
+    {
+      "file": "/Users/future/l.blog/data/blog/software/system-design/graphql.md",
+      "type": "blog",
+      "count": 3,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/TEST/introducing-tailwind-nextjs-starter-blog.mdx",
+      "type": "blog",
+      "count": 1,
+      "draft": true
+    }
+  ],
+  "termssubset": [
+    {
+      "file": "/Users/future/l.blog/data/blog/maths/discrete-symbols.md",
+      "type": "blog",
+      "count": 4,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/kb/atom/CS/AI.md",
+      "type": "kb",
+      "count": 3,
+      "draft": false
+    }
+  ],
+  "termssubspace": [],
+  "termssubstitution-method": [],
+  "termssubstitution": [
+    {
+      "file": "/Users/future/l.blog/data/blog/maths/calculus/calculus-2/calculus-2.md",
+      "type": "blog",
+      "count": 2,
+      "draft": true
+    }
+  ],
+  "termssubstring": [],
+  "termssucceeded": [],
+  "termssudo": [],
+  "termssuffix-array": [],
+  "termssuffix-sum": [],
+  "termssuffix-tree": [],
+  "termssum": [
+    {
+      "file": "/Users/future/l.blog/data/blog/software/data-structures-algorithms/dynamic-programming.md",
+      "type": "blog",
+      "count": 11,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/leetcode/16-3-sum-closest.md",
+      "type": "blog",
+      "count": 6,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/data-structures-algorithms/graph-programming.md",
+      "type": "blog",
+      "count": 6,
+      "draft": true
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/TEST/deriving-ols-estimator.mdx",
+      "type": "blog",
+      "count": 5,
+      "draft": true
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/maths/calculus/differentiation.md",
+      "type": "blog",
+      "count": 4,
+      "draft": true
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/data-structures-algorithms/trees.md",
+      "type": "blog",
+      "count": 4,
+      "draft": true
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/leetcode/1-two-sum.md",
+      "type": "blog",
+      "count": 2,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/maths/calculus/calculus-1/calculus-1.md",
+      "type": "blog",
+      "count": 2,
+      "draft": true
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/maths/calculus/calculus-2/calculus-2.md",
+      "type": "blog",
+      "count": 2,
+      "draft": true
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/data-structures-algorithms/graph-theory.md",
+      "type": "blog",
+      "count": 2,
+      "draft": true
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/databases/sql/1_toc.md",
+      "type": "blog",
+      "count": 2,
+      "draft": true
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/TEST/code-tab-groups.md",
+      "type": "blog",
+      "count": 1,
+      "draft": true
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/leetcode/322-coin-change.md",
+      "type": "blog",
+      "count": 1,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/leetcode/70-climbing-stairs.md",
+      "type": "blog",
+      "count": 1,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/maths/calculus/fundamental-theorem-of-calculus.md",
+      "type": "blog",
+      "count": 1,
+      "draft": true
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/maths/statistics/mean-median-mode.md",
+      "type": "blog",
+      "count": 1,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/data-structures-algorithms/cheatsheet.md",
+      "type": "blog",
+      "count": 1,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/data-structures-algorithms/hash-table.md",
+      "type": "blog",
+      "count": 1,
+      "draft": false
+    }
+  ],
+  "termssuper-keyword": [],
+  "termssuperclass": [
+    {
+      "file": "/Users/future/l.blog/data/blog/software/data-structures-algorithms/OOP.md",
+      "type": "blog",
+      "count": 3,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/design patterns/factory.md",
+      "type": "blog",
+      "count": 1,
+      "draft": false
+    }
+  ],
+  "termssupport-vector-machine": [],
+  "termssurface-area": [],
+  "termssurjective": [],
+  "termssuspense-boundaries": [],
+  "termssuspense": [
+    {
+      "file": "/Users/future/l.blog/data/kb/atom/CS/page-router-vs-app-router.md",
+      "type": "kb",
+      "count": 1,
+      "draft": false
+    }
+  ],
+  "termssvd": [
+    {
+      "file": "/Users/future/l.blog/data/blog/finance/quant/crash-course.md",
+      "type": "blog",
+      "count": 1,
+      "draft": true
+    }
+  ],
+  "termssvelte": [
+    {
+      "file": "/Users/future/l.blog/data/blog/same-problems-different-tools.md",
+      "type": "blog",
+      "count": 1,
+      "draft": false
+    }
+  ],
+  "termsswap": [
+    {
+      "file": "/Users/future/l.blog/data/blog/software/data-structures-algorithms/pointers.md",
+      "type": "blog",
+      "count": 13,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/data-structures-algorithms/algorithms/sorting.md",
+      "type": "blog",
+      "count": 4,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/data-structures-algorithms/graph-theory.md",
+      "type": "blog",
+      "count": 1,
+      "draft": true
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/design patterns/repository.md",
+      "type": "blog",
+      "count": 1,
+      "draft": false
+    }
+  ],
+  "termsswaps": [
+    {
+      "file": "/Users/future/l.blog/data/blog/software/data-structures-algorithms/algorithms/sorting.md",
+      "type": "blog",
+      "count": 4,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/data-structures-algorithms/patterns-graph.md",
+      "type": "blog",
+      "count": 4,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/TEST/guide-to-using-images-in-nextjs.mdx",
+      "type": "blog",
+      "count": 1,
+      "draft": true
+    }
+  ],
+  "termssymbolic-links": [],
+  "termssymmetric-matrix": [],
+  "termssymmetric": [
+    {
+      "file": "/Users/future/l.blog/data/blog/finance/options/strategies/trading-strategies.md",
+      "type": "blog",
+      "count": 2,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/maths/discrete-symbols.md",
+      "type": "blog",
+      "count": 1,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/frameworks/flutter/navigators.md",
+      "type": "blog",
+      "count": 1,
+      "draft": false
+    }
+  ],
+  "termssystem-calls": [
+    {
+      "file": "/Users/future/l.blog/data/blog/software/languages/rust/rust-projects.md",
+      "type": "blog",
+      "count": 2,
+      "draft": true
+    }
+  ],
+  "termssystem-of-linear-equations": [],
+  "termssystematic-sampling": [],
+  "termssystemctl": [],
+  "termssystemd": [],
+  "termst-distribution": [],
+  "termst-sne": [
+    {
+      "file": "/Users/future/l.blog/data/blog/finance/quant/crash-course.md",
+      "type": "blog",
+      "count": 1,
+      "draft": true
+    }
+  ],
+  "termstab-navigator": [
+    {
+      "file": "/Users/future/l.blog/data/blog/software/frameworks/flutter/flutter-tiktok-2.md",
+      "type": "blog",
+      "count": 1,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/frameworks/flutter/navigators.md",
+      "type": "blog",
+      "count": 1,
+      "draft": false
+    }
+  ],
+  "termstable": [
+    {
+      "file": "/Users/future/l.blog/data/blog/software/data-structures-algorithms/dynamic-programming.md",
+      "type": "blog",
+      "count": 25,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/projects/royal-stock-exchange/2-seeding data.md",
+      "type": "blog",
+      "count": 9,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/data-structures-algorithms/hash-table.md",
+      "type": "blog",
+      "count": 7,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/databases/sql/1_toc.md",
+      "type": "blog",
+      "count": 5,
+      "draft": true
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/system-design/build-db-cluster-docker.md",
+      "type": "blog",
+      "count": 5,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/databases/sql/clone-db.md",
+      "type": "blog",
+      "count": 3,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/projects/royal-stock-exchange/4-scaling.md",
+      "type": "blog",
+      "count": 2,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/data-structures-algorithms/cheatsheet.md",
+      "type": "blog",
+      "count": 2,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/databases/sql/alter-tables.md",
+      "type": "blog",
+      "count": 2,
+      "draft": true
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/devops/gcp/aws-cloud-practiitioner.md",
+      "type": "blog",
+      "count": 2,
+      "draft": true
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/frameworks/flutter/flutter-poker-1.md",
+      "type": "blog",
+      "count": 2,
+      "draft": true
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/system-design/1-LeetCode.md",
+      "type": "blog",
+      "count": 2,
+      "draft": true
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/system-design/SQL Server Setup.md",
+      "type": "blog",
+      "count": 2,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/kb/KB-TOC.md",
+      "type": "kb",
+      "count": 1,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/kb/tool/obsidian/preview/theme1.md",
+      "type": "kb",
+      "count": 1,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/kb/tool/obsidian/preview/theme2.md",
+      "type": "kb",
+      "count": 1,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/TEST/introducing-tailwind-nextjs-starter-blog.mdx",
+      "type": "blog",
+      "count": 1,
+      "draft": true
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/ai/vibe-coders.md",
+      "type": "blog",
+      "count": 1,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/finance/IPO.md",
+      "type": "blog",
+      "count": 1,
+      "draft": true
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/finance/options/strategies/spreads.md",
+      "type": "blog",
+      "count": 1,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/maths/calculus/calculus-3/calculus-3.md",
+      "type": "blog",
+      "count": 1,
+      "draft": true
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/maths/calculus/differentiation.md",
+      "type": "blog",
+      "count": 1,
+      "draft": true
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/data-structures-algorithms/algorithms/tree-traversals.md",
+      "type": "blog",
+      "count": 1,
+      "draft": true
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/databases/sql/inspect-table.md",
+      "type": "blog",
+      "count": 1,
+      "draft": true
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/devops/gcp/aws-lambda.md",
+      "type": "blog",
+      "count": 1,
+      "draft": true
+    }
+  ],
+  "termstabulation": [
+    {
+      "file": "/Users/future/l.blog/data/blog/software/data-structures-algorithms/dynamic-programming.md",
+      "type": "blog",
+      "count": 4,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/leetcode/322-coin-change.md",
+      "type": "blog",
+      "count": 1,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/data-structures-algorithms/algorithms/dp.md",
+      "type": "blog",
+      "count": 1,
+      "draft": true
+    }
+  ],
+  "termstag-image": [],
+  "termstailwind-css": [
+    {
+      "file": "/Users/future/l.blog/data/blog/TEST/introducing-tailwind-nextjs-starter-blog.mdx",
+      "type": "blog",
+      "count": 2,
+      "draft": true
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/TEST/pictures-of-canada.mdx",
+      "type": "blog",
+      "count": 1,
+      "draft": true
+    }
+  ],
+  "termstangent-line": [
+    {
+      "file": "/Users/future/l.blog/data/blog/maths/calculus/intro.md",
+      "type": "blog",
+      "count": 1,
+      "draft": true
+    }
+  ],
+  "termstangent-plane": [],
+  "termstaylor-series": [
+    {
+      "file": "/Users/future/l.blog/data/blog/finance/quant/calculus-for-quants.md",
+      "type": "blog",
+      "count": 1,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/maths/calculus/calculus-2/calculus-2.md",
+      "type": "blog",
+      "count": 1,
+      "draft": true
+    }
+  ],
+  "termstcp": [
+    {
+      "file": "/Users/future/l.blog/data/blog/finance/high-frequency-trading.md",
+      "type": "blog",
+      "count": 3,
+      "draft": true
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/system-design/process-overview.md",
+      "type": "blog",
+      "count": 1,
+      "draft": false
+    }
+  ],
+  "termsterminal": [
+    {
+      "file": "/Users/future/l.blog/data/blog/software/info-sec/over-the-wire-1-bandit.md",
+      "type": "blog",
+      "count": 3,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/cheatsheets/kubernetes.md",
+      "type": "blog",
+      "count": 1,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/system-design/appium-mocha.md",
+      "type": "blog",
+      "count": 1,
+      "draft": false
+    }
+  ],
+  "termsterminating": [],
+  "termstest-set": [],
+  "termstext-streams": [],
+  "termstext-to-image": [],
+  "termstext": [
+    {
+      "file": "/Users/future/l.blog/data/blog/software/system-design/appium-mocha.md",
+      "type": "blog",
+      "count": 27,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/frameworks/flutter/navigators.md",
+      "type": "blog",
+      "count": 18,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/TEST/github-markdown-guide.mdx",
+      "type": "blog",
+      "count": 10,
+      "draft": true
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/frameworks/flutter/flutter-poker-1.md",
+      "type": "blog",
+      "count": 10,
+      "draft": true
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/frameworks/flutter/flutter-tiktok-2.md",
+      "type": "blog",
+      "count": 8,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/finance/indicators/sharpe-ratio.md",
+      "type": "blog",
+      "count": 4,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/info-sec/over-the-wire-1-bandit.md",
+      "type": "blog",
+      "count": 4,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/system-design/flutter-theme.md",
+      "type": "blog",
+      "count": 4,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/kb/tool/obsidian/preview/theme1.md",
+      "type": "kb",
+      "count": 3,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/kb/tool/obsidian/preview/theme2.md",
+      "type": "kb",
+      "count": 3,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/finance/RDO.md",
+      "type": "blog",
+      "count": 3,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/finance/quant/order-books.md",
+      "type": "blog",
+      "count": 3,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/projects/royal-stock-exchange/4-scaling.md",
+      "type": "blog",
+      "count": 3,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/TEST/MDX.mdx",
+      "type": "blog",
+      "count": 2,
+      "draft": true
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/TEST/deriving-ols-estimator.mdx",
+      "type": "blog",
+      "count": 2,
+      "draft": true
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/finance/quant/pair-trading.md",
+      "type": "blog",
+      "count": 2,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/opinions/why-flutter-is-better-than-react-native.md",
+      "type": "blog",
+      "count": 2,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/databases/pgadmin.md",
+      "type": "blog",
+      "count": 2,
+      "draft": true
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/devops/gcp/cloud-run-job.md",
+      "type": "blog",
+      "count": 2,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/languages/go/go-routines.md",
+      "type": "blog",
+      "count": 2,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/mobile requirements.md",
+      "type": "blog",
+      "count": 2,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/system-design/microservices.md",
+      "type": "blog",
+      "count": 2,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/finance/options/strategies/condor.md",
+      "type": "blog",
+      "count": 1,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/data-structures-algorithms/graph-algorithms.md",
+      "type": "blog",
+      "count": 1,
+      "draft": true
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/data-structures-algorithms/graph-programming.md",
+      "type": "blog",
+      "count": 1,
+      "draft": true
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/data-structures-algorithms/graph-theory.md",
+      "type": "blog",
+      "count": 1,
+      "draft": true
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/devops/gcp/aws-cloud-practiitioner.md",
+      "type": "blog",
+      "count": 1,
+      "draft": true
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/system-design/key-numbers.md",
+      "type": "blog",
+      "count": 1,
+      "draft": false
+    }
+  ],
+  "termstextfield": [
+    {
+      "file": "/Users/future/l.blog/data/blog/software/frameworks/flutter/navigators.md",
+      "type": "blog",
+      "count": 1,
+      "draft": false
+    }
+  ],
+  "termstextinput": [
+    {
+      "file": "/Users/future/l.blog/data/blog/software/system-design/appium-mocha.md",
+      "type": "blog",
+      "count": 3,
+      "draft": false
+    }
+  ],
+  "termstheme-data": [
+    {
+      "file": "/Users/future/l.blog/data/blog/software/system-design/flutter-theme.md",
+      "type": "blog",
+      "count": 1,
+      "draft": false
+    }
+  ],
+  "termsthere-exists": [
+    {
+      "file": "/Users/future/l.blog/data/blog/maths/discrete-symbols.md",
+      "type": "blog",
+      "count": 2,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/data-structures-algorithms/graph-programming.md",
+      "type": "blog",
+      "count": 1,
+      "draft": true
+    }
+  ],
+  "termsthird-normal-form": [],
+  "termsthread": [
+    {
+      "file": "/Users/future/l.blog/data/blog/finance/high-frequency-trading.md",
+      "type": "blog",
+      "count": 4,
+      "draft": true
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/languages/rust/rust-projects.md",
+      "type": "blog",
+      "count": 2,
+      "draft": true
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/TEST/introducing-tailwind-nextjs-starter-blog.mdx",
+      "type": "blog",
+      "count": 1,
+      "draft": true
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/politics/1-go.md",
+      "type": "blog",
+      "count": 1,
+      "draft": true
+    }
+  ],
+  "termstime-complexity": [
+    {
+      "file": "/Users/future/l.blog/data/blog/software/data-structures-algorithms/algorithms/sorting.md",
+      "type": "blog",
+      "count": 1,
+      "draft": false
+    }
+  ],
+  "termstime-series": [
+    {
+      "file": "/Users/future/l.blog/data/blog/projects/royal-stock-exchange/4-scaling.md",
+      "type": "blog",
+      "count": 9,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/finance/quant/crash-course.md",
+      "type": "blog",
+      "count": 4,
+      "draft": true
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/finance/quant/statistics.md",
+      "type": "blog",
+      "count": 1,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/projects/royal-stock-exchange/2-seeding data.md",
+      "type": "blog",
+      "count": 1,
+      "draft": false
+    }
+  ],
+  "termstmp": [
+    {
+      "file": "/Users/future/l.blog/data/blog/software/info-sec/over-the-wire-1-bandit.md",
+      "type": "blog",
+      "count": 19,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/leetcode/70-climbing-stairs.md",
+      "type": "blog",
+      "count": 12,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/info-sec/over-the-wire-2-leviathan.md",
+      "type": "blog",
+      "count": 12,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/system-design/build-db-cluster-docker.md",
+      "type": "blog",
+      "count": 4,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/kb/kb-dsl-code-tab-group.md",
+      "type": "kb",
+      "count": 2,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/data-structures-algorithms/graph-algorithms.md",
+      "type": "blog",
+      "count": 2,
+      "draft": true
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/databases/sql/clone-db.md",
+      "type": "blog",
+      "count": 2,
+      "draft": false
+    }
+  ],
+  "termstmpfs": [],
+  "termstokenization": [],
+  "termstool-use": [],
+  "termstop": [
+    {
+      "file": "/Users/future/l.blog/data/blog/software/data-structures-algorithms/dynamic-programming.md",
+      "type": "blog",
+      "count": 13,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/git/rebase.md",
+      "type": "blog",
+      "count": 3,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/leetcode/70-climbing-stairs.md",
+      "type": "blog",
+      "count": 2,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/data-structures-algorithms/cheatsheet.md",
+      "type": "blog",
+      "count": 2,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/frameworks/flutter/flutter-tiktok-2.md",
+      "type": "blog",
+      "count": 2,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/cheatsheets/vim.md",
+      "type": "blog",
+      "count": 1,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/finance/quant/order-books.md",
+      "type": "blog",
+      "count": 1,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/leetcode/200-number-of-islands.md",
+      "type": "blog",
+      "count": 1,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/projects/royal-stock-exchange/4-scaling.md",
+      "type": "blog",
+      "count": 1,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/projects/royal-stock-exchange/5-demo.md",
+      "type": "blog",
+      "count": 1,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/data-structures-algorithms/algorithms/dp.md",
+      "type": "blog",
+      "count": 1,
+      "draft": true
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/data-structures-algorithms/patterns-graph.md",
+      "type": "blog",
+      "count": 1,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/databases/sql/1_toc.md",
+      "type": "blog",
+      "count": 1,
+      "draft": true
+    }
+  ],
+  "termstopological-sort": [
+    {
+      "file": "/Users/future/l.blog/data/blog/software/data-structures-algorithms/patterns-graph.md",
+      "type": "blog",
+      "count": 2,
+      "draft": false
+    }
+  ],
+  "termstouchableopacity": [
+    {
+      "file": "/Users/future/l.blog/data/blog/software/system-design/appium-mocha.md",
+      "type": "blog",
+      "count": 8,
+      "draft": false
+    }
+  ],
+  "termstraceroute": [],
+  "termstraining-data": [],
+  "termstraining-set": [],
+  "termstraits": [
+    {
+      "file": "/Users/future/l.blog/data/kb/atom/CS/git-worktree-git-submodule-git-monorepo.md",
+      "type": "kb",
+      "count": 3,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/languages/rust/rust-projects.md",
+      "type": "blog",
+      "count": 1,
+      "draft": true
+    }
+  ],
+  "termstransaction": [
+    {
+      "file": "/Users/future/l.blog/data/blog/finance/terms/institutional-retail.md",
+      "type": "blog",
+      "count": 3,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/system-design/process-overview.md",
+      "type": "blog",
+      "count": 3,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/exchange/intro-7.md",
+      "type": "blog",
+      "count": 1,
+      "draft": true
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/finance/options/strategies/condor.md",
+      "type": "blog",
+      "count": 1,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/finance/options/strategies/trading-strategies.md",
+      "type": "blog",
+      "count": 1,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/finance/quant/pair-trading.md",
+      "type": "blog",
+      "count": 1,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/leetcode/121-best-time-to-sell-stock.md",
+      "type": "blog",
+      "count": 1,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/politics/communism.md",
+      "type": "blog",
+      "count": 1,
+      "draft": true
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/databases/psql.md",
+      "type": "blog",
+      "count": 1,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/databases/sql/clone-db.md",
+      "type": "blog",
+      "count": 1,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/system-design/build-message-queue.md",
+      "type": "blog",
+      "count": 1,
+      "draft": false
+    }
+  ],
+  "termstransactions": [
+    {
+      "file": "/Users/future/l.blog/data/blog/software/databases/sql/1_toc.md",
+      "type": "blog",
+      "count": 2,
+      "draft": true
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/system-design/process-overview.md",
+      "type": "blog",
+      "count": 2,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/exchange/intro-2.md",
+      "type": "blog",
+      "count": 1,
+      "draft": true
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/exchange/intro-3.md",
+      "type": "blog",
+      "count": 1,
+      "draft": true
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/finance/terms/net-asset-value.md",
+      "type": "blog",
+      "count": 1,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/finance/terms/secondary-market.md",
+      "type": "blog",
+      "count": 1,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/system-design/build-message-queue.md",
+      "type": "blog",
+      "count": 1,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/system-design/system-design-distributed-systems.md",
+      "type": "blog",
+      "count": 1,
+      "draft": false
+    }
+  ],
+  "termstransformations": [
+    {
+      "file": "/Users/future/l.blog/data/blog/finance/quant/maths.md",
+      "type": "blog",
+      "count": 2,
+      "draft": false
+    }
+  ],
+  "termstransformer-architecture": [],
+  "termstransformer-model": [],
+  "termstransformer": [],
+  "termstransition-model": [],
+  "termstransitions": [
+    {
+      "file": "/Users/future/l.blog/data/blog/exchange/intro-7.md",
+      "type": "blog",
+      "count": 2,
+      "draft": true
+    }
+  ],
+  "termstransitive": [],
+  "termstranslation": [
+    {
+      "file": "/Users/future/l.blog/data/blog/TEST/introducing-tailwind-nextjs-starter-blog.mdx",
+      "type": "blog",
+      "count": 1,
+      "draft": true
+    }
+  ],
+  "termstranspose": [],
+  "termstraversal-queries": [],
+  "termstreasury-bonds": [
+    {
+      "file": "/Users/future/l.blog/data/blog/finance/federal-reserve-vs-treasury-department.md",
+      "type": "blog",
+      "count": 1,
+      "draft": false
+    }
+  ],
+  "termstreatment-group": [],
+  "termstree-diffing": [],
+  "termstree-shaking": [],
+  "termstree": [
+    {
+      "file": "/Users/future/l.blog/data/blog/software/data-structures-algorithms/graph-theory.md",
+      "type": "blog",
+      "count": 30,
+      "draft": true
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/data-structures-algorithms/trees.md",
+      "type": "blog",
+      "count": 29,
+      "draft": true
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/data-structures-algorithms/patterns-graph.md",
+      "type": "blog",
+      "count": 18,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/data-structures-algorithms/cheatsheet.md",
+      "type": "blog",
+      "count": 15,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/data-structures-algorithms/algorithms/tree-traversals.md",
+      "type": "blog",
+      "count": 13,
+      "draft": true
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/languages/python/heapq.md",
+      "type": "blog",
+      "count": 4,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/TEST/introducing-tailwind-nextjs-starter-blog.mdx",
+      "type": "blog",
+      "count": 1,
+      "draft": true
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/finance/quant/crash-course.md",
+      "type": "blog",
+      "count": 1,
+      "draft": true
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/leetcode/261-graph-valid-tree.md",
+      "type": "blog",
+      "count": 1,
+      "draft": true
+    }
+  ],
+  "termstrend": [
+    {
+      "file": "/Users/future/l.blog/data/blog/finance/indicators/relative-strength-index.md",
+      "type": "blog",
+      "count": 1,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/data-structures-algorithms/terms.md",
+      "type": "blog",
+      "count": 1,
+      "draft": true
+    }
+  ],
+  "termstrie": [
+    {
+      "file": "/Users/future/l.blog/data/blog/software/data-structures-algorithms/graph-theory.md",
+      "type": "blog",
+      "count": 3,
+      "draft": true
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/data-structures-algorithms/cheatsheet.md",
+      "type": "blog",
+      "count": 2,
+      "draft": false
+    }
+  ],
+  "termstrigonometric-substitution": [
+    {
+      "file": "/Users/future/l.blog/data/blog/maths/calculus/calculus-2/calculus-2.md",
+      "type": "blog",
+      "count": 1,
+      "draft": true
+    }
+  ],
+  "termstriple-integral": [
+    {
+      "file": "/Users/future/l.blog/data/blog/maths/calculus/multivariable-calc.md",
+      "type": "blog",
+      "count": 1,
+      "draft": true
+    }
+  ],
+  "termstruth-tables": [],
+  "termsttfb": [],
+  "termsturing-machine": [],
+  "termstwo-pointers": [],
+  "termstype-1-error": [],
+  "termstype-2-error": [],
+  "termstypography": [],
+  "termsudp": [
+    {
+      "file": "/Users/future/l.blog/data/blog/finance/high-frequency-trading.md",
+      "type": "blog",
+      "count": 4,
+      "draft": true
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/system-design/process-overview.md",
+      "type": "blog",
+      "count": 1,
+      "draft": false
+    }
+  ],
+  "termsumap": [],
+  "termsumask": [],
+  "termsuml-diagram": [],
+  "termsunderfitting": [],
+  "termsundirected-graph": [
+    {
+      "file": "/Users/future/l.blog/data/blog/software/data-structures-algorithms/patterns-graph.md",
+      "type": "blog",
+      "count": 4,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/data-structures-algorithms/graph-programming.md",
+      "type": "blog",
+      "count": 1,
+      "draft": true
+    }
+  ],
+  "termsunemployment-rate": [
+    {
+      "file": "/Users/future/l.blog/data/blog/finance/indicators/leading-and-lagging-indicators.md",
+      "type": "blog",
+      "count": 1,
+      "draft": false
+    }
+  ],
+  "termsunidirectional-data-flow": [],
+  "termsuniform-cost-search": [],
+  "termsuniform-distribution": [],
+  "termsunion-find": [
+    {
+      "file": "/Users/future/l.blog/data/blog/software/data-structures-algorithms/algorithms/union-find.md",
+      "type": "blog",
+      "count": 5,
+      "draft": true
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/data-structures-algorithms/graph-algorithms.md",
+      "type": "blog",
+      "count": 1,
+      "draft": true
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/data-structures-algorithms/graph-programming.md",
+      "type": "blog",
+      "count": 1,
+      "draft": true
+    }
+  ],
+  "termsunion": [
+    {
+      "file": "/Users/future/l.blog/data/blog/software/data-structures-algorithms/algorithms/union-find.md",
+      "type": "blog",
+      "count": 5,
+      "draft": true
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/data-structures-algorithms/patterns-graph.md",
+      "type": "blog",
+      "count": 5,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/maths/discrete-symbols.md",
+      "type": "blog",
+      "count": 2,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/data-structures-algorithms/cheatsheet.md",
+      "type": "blog",
+      "count": 2,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/data-structures-algorithms/graph-algorithms.md",
+      "type": "blog",
+      "count": 1,
+      "draft": true
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/data-structures-algorithms/graph-programming.md",
+      "type": "blog",
+      "count": 1,
+      "draft": true
+    }
+  ],
+  "termsunique-constraint": [],
+  "termsunit-vector": [
+    {
+      "file": "/Users/future/l.blog/data/blog/maths/linear-algebra/vectors.md",
+      "type": "blog",
+      "count": 1,
+      "draft": true
+    }
+  ],
+  "termsuniversal-set": [
+    {
+      "file": "/Users/future/l.blog/data/blog/maths/discrete-symbols.md",
+      "type": "blog",
+      "count": 1,
+      "draft": false
+    }
+  ],
+  "termsunix": [
+    {
+      "file": "/Users/future/l.blog/data/blog/software/info-sec/over-the-wire-2-leviathan.md",
+      "type": "blog",
+      "count": 2,
+      "draft": false
+    }
+  ],
+  "termsunmounting": [],
+  "termsupdate-operators": [],
+  "termsupdate": [
+    {
+      "file": "/Users/future/l.blog/data/blog/software/design patterns/observer.md",
+      "type": "blog",
+      "count": 17,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/data-structures-algorithms/pointers.md",
+      "type": "blog",
+      "count": 9,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/devops/gcp/secret-manager.md",
+      "type": "blog",
+      "count": 7,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/system-design/system-design-auditing.md",
+      "type": "blog",
+      "count": 5,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/projects/royal-stock-exchange/4-scaling.md",
+      "type": "blog",
+      "count": 4,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/devops/gcp/memory-store.md",
+      "type": "blog",
+      "count": 3,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/kb/atom/CS/git-worktree-git-submodule-git-monorepo.md",
+      "type": "kb",
+      "count": 2,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/databases/sql/1_toc.md",
+      "type": "blog",
+      "count": 2,
+      "draft": true
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/git/rebase.md",
+      "type": "blog",
+      "count": 2,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/kb/atom/CS/AI.md",
+      "type": "kb",
+      "count": 1,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/exchange/intro-2.md",
+      "type": "blog",
+      "count": 1,
+      "draft": true
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/exchange/intro-5.md",
+      "type": "blog",
+      "count": 1,
+      "draft": true
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/finance/high-frequency-trading.md",
+      "type": "blog",
+      "count": 1,
+      "draft": true
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/leetcode/121-best-time-to-sell-stock.md",
+      "type": "blog",
+      "count": 1,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/leetcode/16-3-sum-closest.md",
+      "type": "blog",
+      "count": 1,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/leetcode/322-coin-change.md",
+      "type": "blog",
+      "count": 1,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/opinions/why-flutter-is-better-than-react-native.md",
+      "type": "blog",
+      "count": 1,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/projects/bakesuite.md",
+      "type": "blog",
+      "count": 1,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/projects/royal-stock-exchange/2-seeding data.md",
+      "type": "blog",
+      "count": 1,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/projects/royal-stock-exchange/5-demo.md",
+      "type": "blog",
+      "count": 1,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/databases/nosql/mongodb.md",
+      "type": "blog",
+      "count": 1,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/devops/gcp/gcp-pipeline.md",
+      "type": "blog",
+      "count": 1,
+      "draft": true
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/frameworks/flutter/flutter android customize app icon.md",
+      "type": "blog",
+      "count": 1,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/frameworks/flutter/flutter-poker-1.md",
+      "type": "blog",
+      "count": 1,
+      "draft": true
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/frameworks/flutter/flutter-tiktok-2.md",
+      "type": "blog",
+      "count": 1,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/languages/go/go-routines.md",
+      "type": "blog",
+      "count": 1,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/system-design/appium-mocha.md",
+      "type": "blog",
+      "count": 1,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/system-design/microservices.md",
+      "type": "blog",
+      "count": 1,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/system-design/process-overview.md",
+      "type": "blog",
+      "count": 1,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/system-design/system-design-1-bitly.md",
+      "type": "blog",
+      "count": 1,
+      "draft": false
+    }
+  ],
+  "termsupdates": [
+    {
+      "file": "/Users/future/l.blog/data/blog/projects/royal-stock-exchange/4-scaling.md",
+      "type": "blog",
+      "count": 4,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/exchange/intro-2.md",
+      "type": "blog",
+      "count": 2,
+      "draft": true
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/finance/terms/index-fund.md",
+      "type": "blog",
+      "count": 2,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/design patterns/observer.md",
+      "type": "blog",
+      "count": 2,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/languages/dart/dart.3.10.md",
+      "type": "blog",
+      "count": 2,
+      "draft": true
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/sprints.md",
+      "type": "blog",
+      "count": 2,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/system-design/process-overview.md",
+      "type": "blog",
+      "count": 2,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/kb/atom/CS/git-worktree-git-submodule-git-monorepo.md",
+      "type": "kb",
+      "count": 1,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/TEST/introducing-tailwind-nextjs-starter-blog.mdx",
+      "type": "blog",
+      "count": 1,
+      "draft": true
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/data-structures-algorithms/cheatsheet.md",
+      "type": "blog",
+      "count": 1,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/databases/nosql/mongodb.md",
+      "type": "blog",
+      "count": 1,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/system-design/flutter-theme.md",
+      "type": "blog",
+      "count": 1,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/system-design/graphql.md",
+      "type": "blog",
+      "count": 1,
+      "draft": false
+    }
+  ],
+  "termsupdating": [
+    {
+      "file": "/Users/future/l.blog/data/blog/exchange/intro-2.md",
+      "type": "blog",
+      "count": 1,
+      "draft": true
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/finance/quant/statistics.md",
+      "type": "blog",
+      "count": 1,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/leetcode/200-number-of-islands.md",
+      "type": "blog",
+      "count": 1,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/projects/royal-stock-exchange/4-scaling.md",
+      "type": "blog",
+      "count": 1,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/system-design/build-backend-api.md",
+      "type": "blog",
+      "count": 1,
+      "draft": false
+    }
+  ],
+  "termsuse-case-diagram": [],
+  "termsuse-client-directive": [],
+  "termsusecallback": [],
+  "termsusecontext": [],
+  "termsuseeffect-cleanup": [],
+  "termsuseeffect": [],
+  "termsuselayouteffect": [],
+  "termsusememo": [],
+  "termsuser-permissions": [],
+  "termsusereducer": [],
+  "termsuseref": [],
+  "termsusestate": [
+    {
+      "file": "/Users/future/l.blog/data/blog/software/system-design/appium-mocha.md",
+      "type": "blog",
+      "count": 6,
+      "draft": false
+    }
+  ],
+  "termsusr": [
+    {
+      "file": "/Users/future/l.blog/data/blog/software/info-sec/over-the-wire-1-bandit.md",
+      "type": "blog",
+      "count": 4,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/system-design/microservices.md",
+      "type": "blog",
+      "count": 3,
+      "draft": false
+    }
+  ],
+  "termsutility-function": [],
+  "termsv8-engine": [],
+  "termsvae": [],
+  "termsvalidation-set": [],
+  "termsvalue-function": [],
+  "termsvalue-investing": [],
+  "termsvar": [
+    {
+      "file": "/Users/future/l.blog/data/blog/leetcode/200-number-of-islands.md",
+      "type": "blog",
+      "count": 75,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/leetcode/16-3-sum-closest.md",
+      "type": "blog",
+      "count": 42,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/leetcode/121-best-time-to-sell-stock.md",
+      "type": "blog",
+      "count": 33,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/leetcode/1-two-sum.md",
+      "type": "blog",
+      "count": 18,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/leetcode/70-climbing-stairs.md",
+      "type": "blog",
+      "count": 17,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/leetcode/217-contains-duplicate.md",
+      "type": "blog",
+      "count": 12,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/devops/gcp/secret-manager.md",
+      "type": "blog",
+      "count": 5,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/system-design/build-db-cluster-docker.md",
+      "type": "blog",
+      "count": 5,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/leetcode/261-graph-valid-tree.md",
+      "type": "blog",
+      "count": 4,
+      "draft": true
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/info-sec/over-the-wire-1-bandit.md",
+      "type": "blog",
+      "count": 4,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/languages/js/js-1.md",
+      "type": "blog",
+      "count": 4,
+      "draft": true
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/system-design/appium-mocha.md",
+      "type": "blog",
+      "count": 3,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/TEST/code-blocks.md",
+      "type": "blog",
+      "count": 2,
+      "draft": true
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/finance/quant/crash-course.md",
+      "type": "blog",
+      "count": 2,
+      "draft": true
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/design patterns/factory.md",
+      "type": "blog",
+      "count": 2,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/design patterns/singleton.md",
+      "type": "blog",
+      "count": 2,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/system-design/microservices.md",
+      "type": "blog",
+      "count": 2,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/TEST/deriving-ols-estimator.mdx",
+      "type": "blog",
+      "count": 1,
+      "draft": true
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/finance/formulas.md",
+      "type": "blog",
+      "count": 1,
+      "draft": true
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/finance/quant/statistics.md",
+      "type": "blog",
+      "count": 1,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/finance/toc.md",
+      "type": "blog",
+      "count": 1,
+      "draft": true
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/databases/sql/setup-pg-macos.md",
+      "type": "blog",
+      "count": 1,
+      "draft": true
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/design patterns/observer.md",
+      "type": "blog",
+      "count": 1,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/frameworks/flutter/flutter-tiktok-1.md",
+      "type": "blog",
+      "count": 1,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/frameworks/logging-app-load-times-with-firebase.md",
+      "type": "blog",
+      "count": 1,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/languages/go/go-routines.md",
+      "type": "blog",
+      "count": 1,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/system-design/system-design-auditing.md",
+      "type": "blog",
+      "count": 1,
+      "draft": false
+    }
+  ],
+  "termsvariable": [
+    {
+      "file": "/Users/future/l.blog/data/blog/software/system-design/system-design-auditing.md",
+      "type": "blog",
+      "count": 6,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/leetcode/121-best-time-to-sell-stock.md",
+      "type": "blog",
+      "count": 3,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/maths/calculus/multivariable-calc.md",
+      "type": "blog",
+      "count": 2,
+      "draft": true
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/cheatsheets/kubernetes.md",
+      "type": "blog",
+      "count": 1,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/finance/quant/pair-trading.md",
+      "type": "blog",
+      "count": 1,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/maths/calculus/calculus-2/calculus-2.md",
+      "type": "blog",
+      "count": 1,
+      "draft": true
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/maths/calculus/calculus-3/calculus-3.md",
+      "type": "blog",
+      "count": 1,
+      "draft": true
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/projects/royal-stock-exchange/4-scaling.md",
+      "type": "blog",
+      "count": 1,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/data-structures-algorithms/pointers.md",
+      "type": "blog",
+      "count": 1,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/frameworks/flutter/flutter-tiktok-1.md",
+      "type": "blog",
+      "count": 1,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/info-sec/over-the-wire-1-bandit.md",
+      "type": "blog",
+      "count": 1,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/languages/ruby/ruby-lambda.md",
+      "type": "blog",
+      "count": 1,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/system-design/build-backend-api.md",
+      "type": "blog",
+      "count": 1,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/system-design/firebase environments.md",
+      "type": "blog",
+      "count": 1,
+      "draft": true
+    }
+  ],
+  "termsvariables": [
+    {
+      "file": "/Users/future/l.blog/data/blog/leetcode/121-best-time-to-sell-stock.md",
+      "type": "blog",
+      "count": 3,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/maths/calculus/calculus-3/calculus-3.md",
+      "type": "blog",
+      "count": 3,
+      "draft": true
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/opinions/why-flutter-is-better-than-react-native.md",
+      "type": "blog",
+      "count": 3,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/data-structures-algorithms/algorithms/sorting.md",
+      "type": "blog",
+      "count": 3,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/leetcode/742-network-delay-time.md",
+      "type": "blog",
+      "count": 2,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/languages/js/js-1.md",
+      "type": "blog",
+      "count": 2,
+      "draft": true
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/languages/ruby/ruby-lambda.md",
+      "type": "blog",
+      "count": 2,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/system-design/graphql.md",
+      "type": "blog",
+      "count": 2,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/TEST/deriving-ols-estimator.mdx",
+      "type": "blog",
+      "count": 1,
+      "draft": true
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/finance/formulas.md",
+      "type": "blog",
+      "count": 1,
+      "draft": true
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/finance/options/black-scholes.md",
+      "type": "blog",
+      "count": 1,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/finance/quant/calculus-for-quants.md",
+      "type": "blog",
+      "count": 1,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/finance/quant/statistics.md",
+      "type": "blog",
+      "count": 1,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/leetcode/16-3-sum-closest.md",
+      "type": "blog",
+      "count": 1,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/projects/royal-stock-exchange/2-seeding data.md",
+      "type": "blog",
+      "count": 1,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/data-structures-algorithms/pointers.md",
+      "type": "blog",
+      "count": 1,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/devops/gcp/secret-manager.md",
+      "type": "blog",
+      "count": 1,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/info-sec/over-the-wire-1-bandit.md",
+      "type": "blog",
+      "count": 1,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/languages/python/flask-hot-reload.md",
+      "type": "blog",
+      "count": 1,
+      "draft": false
+    }
+  ],
+  "termsvariance": [
+    {
+      "file": "/Users/future/l.blog/data/blog/maths/statistics/variance-standard-deviation.md",
+      "type": "blog",
+      "count": 13,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/finance/quant/statistics.md",
+      "type": "blog",
+      "count": 3,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/finance/quant/maths.md",
+      "type": "blog",
+      "count": 2,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/finance/formulas.md",
+      "type": "blog",
+      "count": 1,
+      "draft": true
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/finance/quant/crash-course.md",
+      "type": "blog",
+      "count": 1,
+      "draft": true
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/finance/quant/symbols.md",
+      "type": "blog",
+      "count": 1,
+      "draft": false
+    }
+  ],
+  "termsvariational-autoencoder": [],
+  "termsvector-addition": [],
+  "termsvector-field": [
+    {
+      "file": "/Users/future/l.blog/data/blog/maths/calculus/multivariable-calc.md",
+      "type": "blog",
+      "count": 3,
+      "draft": true
+    }
+  ],
+  "termsvector-projection": [],
+  "termsvector-space": [],
+  "termsvector": [
+    {
+      "file": "/Users/future/l.blog/data/blog/maths/calculus/multivariable-calc.md",
+      "type": "blog",
+      "count": 6,
+      "draft": true
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/TEST/deriving-ols-estimator.mdx",
+      "type": "blog",
+      "count": 5,
+      "draft": true
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/maths/linear-algebra/vectors.md",
+      "type": "blog",
+      "count": 5,
+      "draft": true
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/finance/high-frequency-trading.md",
+      "type": "blog",
+      "count": 4,
+      "draft": true
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/maths/calculus/calculus-3/calculus-3.md",
+      "type": "blog",
+      "count": 4,
+      "draft": true
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/info-sec/csrf.md",
+      "type": "blog",
+      "count": 1,
+      "draft": false
+    }
+  ],
+  "termsvercel": [
+    {
+      "file": "/Users/future/l.blog/data/blog/TEST/introducing-tailwind-nextjs-starter-blog.mdx",
+      "type": "blog",
+      "count": 18,
+      "draft": true
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/TEST/guide-to-using-images-in-nextjs.mdx",
+      "type": "blog",
+      "count": 2,
+      "draft": true
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/same-problems-different-tools.md",
+      "type": "blog",
+      "count": 1,
+      "draft": false
+    }
+  ],
+  "termsvertex": [
+    {
+      "file": "/Users/future/l.blog/data/blog/software/data-structures-algorithms/patterns-graph.md",
+      "type": "blog",
+      "count": 4,
+      "draft": false
+    }
+  ],
+  "termsvertical-scaling": [],
+  "termsview": [
+    {
+      "file": "/Users/future/l.blog/data/blog/software/system-design/appium-mocha.md",
+      "type": "blog",
+      "count": 6,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/cheatsheets/kubernetes.md",
+      "type": "blog",
+      "count": 4,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/languages/dart/handling-nullable-fields.md",
+      "type": "blog",
+      "count": 3,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/cheatsheets/expo.md",
+      "type": "blog",
+      "count": 2,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/data-structures-algorithms/trees.md",
+      "type": "blog",
+      "count": 2,
+      "draft": true
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/databases/sql/1_toc.md",
+      "type": "blog",
+      "count": 2,
+      "draft": true
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/info-sec/over-the-wire-1-bandit.md",
+      "type": "blog",
+      "count": 2,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/system-design/SQL Server Setup.md",
+      "type": "blog",
+      "count": 2,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/kb/atom/CS/AI.md",
+      "type": "kb",
+      "count": 1,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/TEST/introducing-tailwind-nextjs-starter-blog.mdx",
+      "type": "blog",
+      "count": 1,
+      "draft": true
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/cheatsheets/dot-net-core.md",
+      "type": "blog",
+      "count": 1,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/cheatsheets/jetbrains.md",
+      "type": "blog",
+      "count": 1,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/cheatsheets/shell.md",
+      "type": "blog",
+      "count": 1,
+      "draft": true
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/exchange/intro-2.md",
+      "type": "blog",
+      "count": 1,
+      "draft": true
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/finance/indicators/put-call-ratio.md",
+      "type": "blog",
+      "count": 1,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/finance/options/strategies/spreads.md",
+      "type": "blog",
+      "count": 1,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/finance/options/strategies/trading-strategies.md",
+      "type": "blog",
+      "count": 1,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/finance/thesis-jaime.md",
+      "type": "blog",
+      "count": 1,
+      "draft": true
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/opinions/why-flutter-is-better-than-react-native.md",
+      "type": "blog",
+      "count": 1,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/projects/royal-stock-exchange/1-intro.md",
+      "type": "blog",
+      "count": 1,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/databases/sql/inspect-table.md",
+      "type": "blog",
+      "count": 1,
+      "draft": true
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/databases/sql/optimization.md",
+      "type": "blog",
+      "count": 1,
+      "draft": true
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/design patterns/decorator.md",
+      "type": "blog",
+      "count": 1,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/devops/gcp/secret-manager.md",
+      "type": "blog",
+      "count": 1,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/info-sec/over-the-wire-2-leviathan.md",
+      "type": "blog",
+      "count": 1,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/languages/python/django.md",
+      "type": "blog",
+      "count": 1,
+      "draft": true
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/mobile requirements.md",
+      "type": "blog",
+      "count": 1,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/system-design/1-LeetCode.md",
+      "type": "blog",
+      "count": 1,
+      "draft": true
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/system-design/1-ticketmaster.md",
+      "type": "blog",
+      "count": 1,
+      "draft": true
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/system-design/build-db-cluster-docker.md",
+      "type": "blog",
+      "count": 1,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/system-design/microservices.md",
+      "type": "blog",
+      "count": 1,
+      "draft": false
+    }
+  ],
+  "termsvirtual-dom-diffing": [],
+  "termsvirtual-dom": [],
+  "termsvirtualization": [],
+  "termsvirtualized-list": [],
+  "termsvision-transformer": [],
+  "termsvite": [
+    {
+      "file": "/Users/future/l.blog/data/blog/opinions/why-flutter-is-better-than-react-native.md",
+      "type": "blog",
+      "count": 1,
+      "draft": false
+    }
+  ],
+  "termsvmstat": [],
+  "termsvolatility": [
+    {
+      "file": "/Users/future/l.blog/data/blog/finance/options/strategies/trading-strategies.md",
+      "type": "blog",
+      "count": 12,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/finance/indicators/implied-volatility-rank.md",
+      "type": "blog",
+      "count": 11,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/finance/indicators/sharpe-ratio.md",
+      "type": "blog",
+      "count": 9,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/finance/index.md",
+      "type": "blog",
+      "count": 6,
+      "draft": true
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/finance/options/greeks.md",
+      "type": "blog",
+      "count": 4,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/finance/options/strategies/straddle.md",
+      "type": "blog",
+      "count": 4,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/finance/terms/extrinsic-value.md",
+      "type": "blog",
+      "count": 4,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/finance/options/strategies/condor.md",
+      "type": "blog",
+      "count": 3,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/finance/options/strategies/strangle.md",
+      "type": "blog",
+      "count": 3,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/finance/quant/crash-course.md",
+      "type": "blog",
+      "count": 3,
+      "draft": true
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/finance/quant/slippage.md",
+      "type": "blog",
+      "count": 3,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/finance/options/strategies/introduction.md",
+      "type": "blog",
+      "count": 2,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/finance/options/strategies/neutral.md",
+      "type": "blog",
+      "count": 2,
+      "draft": true
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/finance/terms/implied-volatility.md",
+      "type": "blog",
+      "count": 2,
+      "draft": true
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/finance/terms/quadruple-witching.md",
+      "type": "blog",
+      "count": 2,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/finance/formulas.md",
+      "type": "blog",
+      "count": 1,
+      "draft": true
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/finance/indicators/premium-flow-with-z-scores.md",
+      "type": "blog",
+      "count": 1,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/finance/options/black-scholes.md",
+      "type": "blog",
+      "count": 1,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/finance/options/strategies/spreads.md",
+      "type": "blog",
+      "count": 1,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/finance/quant/charts/premium-flow-trends.md",
+      "type": "blog",
+      "count": 1,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/finance/quant/maths.md",
+      "type": "blog",
+      "count": 1,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/finance/quant/order-books.md",
+      "type": "blog",
+      "count": 1,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/finance/quant/statistics.md",
+      "type": "blog",
+      "count": 1,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/finance/quant/symbols.md",
+      "type": "blog",
+      "count": 1,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/projects/royal-stock-exchange/4-scaling.md",
+      "type": "blog",
+      "count": 1,
+      "draft": false
+    }
+  ],
+  "termsvolume-of-revolution": [],
+  "termsvolumes": [
+    {
+      "file": "/Users/future/l.blog/data/blog/software/system-design/build-db-cluster-docker.md",
+      "type": "blog",
+      "count": 5,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/system-design/microservices.md",
+      "type": "blog",
+      "count": 4,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/finance/terms/institutional-retail.md",
+      "type": "blog",
+      "count": 2,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/maths/calculus/calculus-1/calculus-1.md",
+      "type": "blog",
+      "count": 1,
+      "draft": true
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/maths/calculus/calculus-3/calculus-3.md",
+      "type": "blog",
+      "count": 1,
+      "draft": true
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/projects/royal-stock-exchange/4-scaling.md",
+      "type": "blog",
+      "count": 1,
+      "draft": false
+    }
+  ],
+  "termsvue": [
+    {
+      "file": "/Users/future/l.blog/data/blog/same-problems-different-tools.md",
+      "type": "blog",
+      "count": 5,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/frameworks/flutter/flutter-tiktok-1.md",
+      "type": "blog",
+      "count": 1,
+      "draft": false
+    }
+  ],
+  "termsvulnerabilities": [],
+  "termsweb-application": [
+    {
+      "file": "/Users/future/l.blog/data/blog/software/system-design/microservices.md",
+      "type": "blog",
+      "count": 2,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/devops/gcp/cloud-run.md",
+      "type": "blog",
+      "count": 1,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/info-sec/csrf.md",
+      "type": "blog",
+      "count": 1,
+      "draft": false
+    }
+  ],
+  "termsweb-page": [
+    {
+      "file": "/Users/future/l.blog/data/blog/software/system-design/key-numbers.md",
+      "type": "blog",
+      "count": 1,
+      "draft": false
+    }
+  ],
+  "termsweb": [
+    {
+      "file": "/Users/future/l.blog/data/blog/software/system-design/microservices.md",
+      "type": "blog",
+      "count": 9,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/exchange/intro-2.md",
+      "type": "blog",
+      "count": 7,
+      "draft": true
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/system-design/flutter-netlify-deploy.md",
+      "type": "blog",
+      "count": 6,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/frameworks/logging-app-load-times-with-firebase.md",
+      "type": "blog",
+      "count": 4,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/languages/dart/dart.3.10.md",
+      "type": "blog",
+      "count": 4,
+      "draft": true
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/languages/java/java-spring.md",
+      "type": "blog",
+      "count": 4,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/TEST/introducing-tailwind-nextjs-starter-blog.mdx",
+      "type": "blog",
+      "count": 2,
+      "draft": true
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/devops/gcp/cloud-run.md",
+      "type": "blog",
+      "count": 2,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/frameworks/flutter/flutter lacks webview support.md",
+      "type": "blog",
+      "count": 2,
+      "draft": true
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/system-design/key-numbers.md",
+      "type": "blog",
+      "count": 2,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/kb/atom/CS/git-worktree-git-submodule-git-monorepo.md",
+      "type": "kb",
+      "count": 1,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/kb/tool/obsidian/preview/theme1.md",
+      "type": "kb",
+      "count": 1,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/kb/tool/obsidian/preview/theme2.md",
+      "type": "kb",
+      "count": 1,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/TEST/github-markdown-guide.mdx",
+      "type": "blog",
+      "count": 1,
+      "draft": true
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/TEST/guide-to-using-images-in-nextjs.mdx",
+      "type": "blog",
+      "count": 1,
+      "draft": true
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/projects/royal-stock-exchange/5-demo.md",
+      "type": "blog",
+      "count": 1,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/devops/gcp/aws-lambda.md",
+      "type": "blog",
+      "count": 1,
+      "draft": true
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/frameworks/flutter/semantic-stoic.md",
+      "type": "blog",
+      "count": 1,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/info-sec/csrf.md",
+      "type": "blog",
+      "count": 1,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/info-sec/over-the-wire-3-natas.md",
+      "type": "blog",
+      "count": 1,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/info-sec/xss.md",
+      "type": "blog",
+      "count": 1,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/languages/js/js-1.md",
+      "type": "blog",
+      "count": 1,
+      "draft": true
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/languages/rust/rust-projects.md",
+      "type": "blog",
+      "count": 1,
+      "draft": true
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/system-design/build-backend-api.md",
+      "type": "blog",
+      "count": 1,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/system-design/flutter-theme.md",
+      "type": "blog",
+      "count": 1,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/system-design/process-overview.md",
+      "type": "blog",
+      "count": 1,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/system-design/system-design-auditing.md",
+      "type": "blog",
+      "count": 1,
+      "draft": false
+    }
+  ],
+  "termswebpack": [
+    {
+      "file": "/Users/future/l.blog/data/blog/TEST/github-markdown-guide.mdx",
+      "type": "blog",
+      "count": 1,
+      "draft": true
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/TEST/guide-to-using-images-in-nextjs.mdx",
+      "type": "blog",
+      "count": 1,
+      "draft": true
+    }
+  ],
+  "termswebsite": [
+    {
+      "file": "/Users/future/l.blog/data/blog/software/info-sec/csrf.md",
+      "type": "blog",
+      "count": 2,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/info-sec/xss.md",
+      "type": "blog",
+      "count": 2,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/frameworks/flutter/android connectivity issues - connection refused.md",
+      "type": "blog",
+      "count": 1,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/info-sec/over-the-wire-3-natas.md",
+      "type": "blog",
+      "count": 1,
+      "draft": false
+    }
+  ],
+  "termsweighted-graph": [
+    {
+      "file": "/Users/future/l.blog/data/blog/software/data-structures-algorithms/patterns-graph.md",
+      "type": "blog",
+      "count": 1,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/data-structures-algorithms/priority-queue.md",
+      "type": "blog",
+      "count": 1,
+      "draft": true
+    }
+  ],
+  "termswget": [],
+  "termswhere-clause": [],
+  "termswidget-inspector": [],
+  "termswidget-rebuild": [],
+  "termswidget-reuse": [],
+  "termswidget-tree": [],
+  "termswidget": [
+    {
+      "file": "/Users/future/l.blog/data/blog/software/frameworks/flutter/flutter-tiktok-1.md",
+      "type": "blog",
+      "count": 29,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/frameworks/flutter/navigators.md",
+      "type": "blog",
+      "count": 22,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/frameworks/flutter/flutter-tiktok-2.md",
+      "type": "blog",
+      "count": 12,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/opinions/why-flutter-is-better-than-react-native.md",
+      "type": "blog",
+      "count": 7,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/system-design/flutter-theme.md",
+      "type": "blog",
+      "count": 4,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/frameworks/flutter/flutter-poker-1.md",
+      "type": "blog",
+      "count": 1,
+      "draft": true
+    }
+  ],
+  "termswindow-function": [
+    {
+      "file": "/Users/future/l.blog/data/blog/software/databases/sql/lag.md",
+      "type": "blog",
+      "count": 1,
+      "draft": false
+    }
+  ],
+  "termswith-clause": [],
+  "termsword-embeddings": [],
+  "termsword2vec": [],
+  "termswork-integral": [],
+  "termsworkdir": [
+    {
+      "file": "/Users/future/l.blog/data/blog/software/system-design/microservices.md",
+      "type": "blog",
+      "count": 2,
+      "draft": false
+    }
+  ],
+  "termsworker-node": [],
+  "termsworst-case": [],
+  "termswrite-amplification": [],
+  "termswrite-once-run-anywhere": [],
+  "termsxor-tricks": [],
+  "termsxss": [
+    {
+      "file": "/Users/future/l.blog/data/blog/software/info-sec/xss.md",
+      "type": "blog",
+      "count": 9,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/software/info-sec/csrf.md",
+      "type": "blog",
+      "count": 3,
+      "draft": false
+    }
+  ],
+  "termsyaml-manifests": [],
+  "termsyield-curve": [
+    {
+      "file": "/Users/future/l.blog/data/blog/finance/indicators/leading-and-lagging-indicators.md",
+      "type": "blog",
+      "count": 1,
+      "draft": false
+    }
+  ],
+  "termsyolo": [],
+  "termsyum": [],
+  "termszero-bundle-components": [],
+  "termszsh": [],
+  "termszustand": []
 };
