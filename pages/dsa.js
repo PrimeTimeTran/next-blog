@@ -1,7 +1,7 @@
 import React, { useEffect, useMemo, useState, useRef, useCallback } from 'react'
 import { motion, AnimatePresence } from 'framer-motion'
 import siteMetadata from '@/data/site-metadata.js'
-import SolutionSnippet from '@/lib/dsa/solution.js'
+import SolutionSnippet from '@/components/Solution.jsx'
 import solutions from '@/lib/dsa/problems/solutions.js'
 import SectionContainer from '@/components/SectionContainer'
 import allProblems from '@/lib/dsa/problems/problems-all.json'
@@ -176,18 +176,31 @@ export default function DSA() {
     }
   }, [isSidebarOpen])
 
+  // useEffect(() => {
+  //   function handleClickOutside(e) {
+  //     if (isSidebarOpen && sidebarRef.current && !sidebarRef.current.contains(e.target)) {
+  //       setIsSidebarOpen(false)
+  //     }
+  //   }
+
+  //   document.addEventListener('mousedown', handleClickOutside)
+  //   return () => {
+  //     document.removeEventListener('mousedown', handleClickOutside)
+  //   }
+  // }, [isSidebarOpen])
+
   useEffect(() => {
     function handleClickOutside(e) {
-      if (isSidebarOpen && sidebarRef.current && !sidebarRef.current.contains(e.target)) {
-        setIsSidebarOpen(false)
-      }
+      requestAnimationFrame(() => {
+        if (sidebarRef.current && !sidebarRef.current.contains(e.target)) {
+          setIsSidebarOpen(false)
+        }
+      })
     }
 
-    document.addEventListener('mousedown', handleClickOutside)
-    return () => {
-      document.removeEventListener('mousedown', handleClickOutside)
-    }
-  }, [isSidebarOpen])
+    document.addEventListener('click', handleClickOutside)
+    return () => document.removeEventListener('click', handleClickOutside)
+  }, [])
 
   useEffect(() => {
     const onKeyDown = (e) => {
@@ -240,11 +253,13 @@ export default function DSA() {
     }
   }
 
-  const loadSolution = (problem) => {
+  const showProblemSolutions = (e, problem) => {
+    e.preventDefault()
+    e.stopPropagation()
     const solution = solutions.find((s) => s.id === problem.lc.id)
     if (solution) {
-      setIsSidebarOpen(true)
       setFocusedSolution(solution)
+      if (!isSidebarOpen) setIsSidebarOpen(true)
     }
   }
 
@@ -447,7 +462,6 @@ export default function DSA() {
         </div>
       </div>
       <hr className="my-3 border-gray-600" />
-
       <AnimatePresence>
         {(displayedProblems ?? []).map((problem, i) => (
           <motion.div
@@ -458,17 +472,17 @@ export default function DSA() {
             exit={{ opacity: 0, y: -6 }}
             transition={{ duration: 0.2 }}
           >
-            <div className="flex items-start gap-2">
-              <span className="w-12 text-right">{i + 1}. </span>
-              <a
-                href={problem.url}
-                target="_blank"
-                className="flex items-start gap-2 text-2xl text-meta hover:text-primary-500 dark:text-meta hover:dark:text-primary-400"
-                rel="noreferrer"
-                onClick={() => markAttempted(problem)}
-              >
+            <a
+              href={problem.url}
+              target="_blank"
+              className="gap-2 text-2xl text-meta dark:text-meta group"
+              rel="noreferrer"
+              onClick={() => markAttempted(problem)}
+            >
+              <div className="flex items-start gap-2 w-full group-hover:text-link">
+                <span className="w-12 text-right">{i + 1}. </span>
                 <span
-                  className={`${
+                  className={` ${
                     randomlySelected.includes(problem.lc.id)
                       ? 'line-through decoration-amber-300 dark:decoration-slate-600'
                       : ''
@@ -476,12 +490,14 @@ export default function DSA() {
                 >
                   {problem.title}
                 </span>
-              </a>
-              <span className={'text-sm ' + getDifficulty(problem.difficulty)}>
-                [{problem.difficulty}]
-              </span>
-              {hasSolution(problem) && <button onClick={() => loadSolution(problem)}>📝</button>}
-            </div>
+                <span className={'text-sm ' + getDifficulty(problem.difficulty)}>
+                  [{problem.difficulty}]
+                </span>
+                {hasSolution(problem) && (
+                  <button onClick={(e) => showProblemSolutions(e, problem)}>📝</button>
+                )}
+              </div>
+            </a>
           </motion.div>
         ))}
       </AnimatePresence>

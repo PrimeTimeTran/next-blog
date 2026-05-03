@@ -127,7 +127,7 @@ export default function ListLayout({
                     <h3 className="text-2xl font-bold tracking-tight">
                       <Link
                         href={buildContentUrl('blog', slug)}
-                        className="block w-full text-3xl font-semibold text-text transition-colors group-hover:text-link"
+                        className="block w-full text-3xl font-semibold  transition-colors group-hover:text-link"
                       >
                         {title}
                       </Link>

@@ -4,7 +4,7 @@ import 'ace-builds/src-noconflict/theme-monokai'
 import 'ace-builds/src-noconflict/theme-github'
 
 export default function Solution({ solution }) {
-  const isDark = document.documentElement.classList.contains('dark')
+  // const isDark = document.documentElement.classList.contains('dark')
 
   return (
     <div>

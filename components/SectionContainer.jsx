@@ -11,7 +11,7 @@ export default function SectionContainer({ isSnippets = false, children }) {
         isKB
           ? 'flex h-full w-full flex-col px-2'
           : isBlog || isSnippets
-            ? 'w-full px-4 sm:px-6 lg:px-8'
+            ? 'w-full px-4 sm:px-6 lg:px-8 '
             : 'mx-auto max-w-3xl xl:max-w-5xl'
       }
     >

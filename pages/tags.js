@@ -31,7 +31,7 @@ import {
 
 function renderTags(tags, t) {
   return (
-    <div key={t} className="mb-2 mr-5 mt-2">
+    <div key={t} className="my-1 mr-5 ">
       <Tag text={t} />
       <Link
         href={`/tags/${kebabCase(t)}`}
@@ -50,12 +50,14 @@ function Category({ title, tags, sortedTags, filter, icon }) {
   })
   const Icon = icon
   return (
-    <div className="w-full">
+    <div className="w-full group">
       <button className="w-full text-left" onClick={() => setOpen((o) => !o)} aria-expanded={open}>
         <div className="flex items-center justify-between w-full">
           <div className="flex items-center gap-2">
             {Icon && <Icon className="w-5 h-5" />}
-            <h1 className="text-3xl font-bold">{title}</h1>
+            <h1 className="block w-full text-3xl font-semibold  transition-colors group-hover:text-link">
+              {title}
+            </h1>
           </div>
 
           <span className="ml-2 text-lg text-gray-600">
@@ -64,18 +66,14 @@ function Category({ title, tags, sortedTags, filter, icon }) {
         </div>
       </button>
 
-      {/* Animated container */}
       <div
         className={`overflow-hidden transition-all duration-300 ease-in-out ${
           open ? 'max-h-[500px] opacity-100 mt-4' : 'max-h-0 opacity-0'
         }`}
       >
-        <div className="mb-6 flex flex-wrap">
-          {(categoryTags ?? []).map((t) => renderTags(tags, t))}
-        </div>
+        <div className="flex flex-wrap">{(categoryTags ?? []).map((t) => renderTags(tags, t))}</div>
       </div>
-
-      <hr className="mb-12" />
+      <hr className="my-2" />
     </div>
   )
 }
@@ -165,7 +163,7 @@ export default function Tags({ tags }) {
           />
           <div className="w-full">
             <h1 className="text-2xl font-bold">Misc</h1>
-            <div className="mb-6 flex flex-wrap">
+            <div className="flex flex-wrap">
               {(sortedTags ?? []).map((t) => {
                 if (misc.includes(t.toLowerCase())) return null
                 return renderTags(tags, t)

@@ -12,7 +12,7 @@ export function BlogHeader({ title, date, shrunk }) {
         style={{ color: '#E6DB74' }}
         className={[
           'transition-[font-size,line-height,opacity,transform] duration-300 ease-in-out',
-          'darl:text-green-300 text-green-600',
+          'text-primary-400 dark:text-primary-600',
 
           shrunk
             ? 'text-xl font-bold leading-7 opacity-90'

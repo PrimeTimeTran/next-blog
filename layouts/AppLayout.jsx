@@ -1,15 +1,16 @@
-import { Link } from '@/components/mdx'
-import Footer from './Footer'
-import Logo from '@/data/logo.svg'
-import MobileNav from './MobileNav'
-import ThemeSwitch from './ThemeSwitch'
 import { useRouter } from 'next/router'
-import SectionContainer from './SectionContainer'
 
-import siteMetadata from '@/data/site-metadata'
+import Logo from '@/data/logo.svg'
+import { Link } from '@/components/mdx'
 import headerNavLinks from '@/data/nav-links'
+import siteMetadata from '@/data/site-metadata'
 
-const LayoutWrapper = ({ children }) => {
+import Footer from '@/components/Footer'
+import MobileNav from '@/components/MobileNav'
+import ThemeSwitch from '@/components/ThemeSwitch'
+import SectionContainer from '@/components/SectionContainer'
+
+const AppLayout = ({ children }) => {
   const router = useRouter()
   const currentRoute = router.asPath
 
@@ -64,4 +65,4 @@ const LayoutWrapper = ({ children }) => {
   )
 }
 
-export default LayoutWrapper
+export default AppLayout

@@ -25,7 +25,7 @@ import '@fontsource/inter/variable-full.css'
 
 import siteMetadata from '@/data/site-metadata'
 import Analytics from '@/components/analytics'
-import LayoutWrapper from '@/components/LayoutWrapper'
+import AppLayout from '@/layouts/AppLayout'
 import { ClientReload } from '@/components/ClientReload'
 import PreviewTailwind from './PreviewTailwind'
 import PreviewDesignSystem from './PreviewDesignSystem'
@@ -53,9 +53,9 @@ export default function App({ Component, pageProps }) {
         strategy="lazyOnload"
         src={`https://www.googletagmanager.com/gtag/js?id=${process.env.NEXT_PUBLIC_GOOGLE_ANALYTICS}`}
       />
-      <LayoutWrapper>
+      <AppLayout>
         <Component {...pageProps} />
-      </LayoutWrapper>
+      </AppLayout>
       <Script strategy="lazyOnload">
         {`
             window.dataLayer = window.dataLayer || [];
