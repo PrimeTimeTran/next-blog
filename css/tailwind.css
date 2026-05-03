@@ -16,6 +16,10 @@ html {
   print-color-adjust: exact;
 }
 
+body {
+  @apply bg-white dark:bg-black;
+}
+
 /* =========================================================
    TYPOGRAPHY / PROSE (MDX / content rendering)
 ========================================================= */
