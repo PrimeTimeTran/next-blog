@@ -1,5 +1,5 @@
 const siteMetadata = {
-  title: 'Loi Tran - Tech, Finance, Sports & More',
+  title: 'Blog & Knowledge for Tech, Finance, Sports & More',
   author: 'Loi Tran',
   headerTitle: 'PrimeTimeTran',
   description:
@@ -10,7 +10,7 @@ const siteMetadata = {
   theme: 'system', // system, dark or light
   siteUrl: 'https://loi-tran-blog.netlify.app',
   siteRepo: 'https://github.com/PrimeTimeTran/kb-blog',
-  siteLogo: '/static/images/logo.png',
+  siteLogo: '/static/images/logo.svg',
   image: '/static/images/avatar.png',
   socialBanner: '/static/images/25-10-02-dkng-cds.png',
   email: 'primetimetran@gmail.com',

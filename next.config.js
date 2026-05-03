@@ -12,7 +12,11 @@ const nextConfig = {
   },
   webpack(config) {
     const originalEmitWarning = process.emitWarning
-
+    config.module.rules.push({
+      test: /\.svg$/i,
+      issuer: /\.[jt]sx?$/,
+      use: ['@svgr/webpack'],
+    })
     process.emitWarning = (warning, ...args) => {
       if (typeof warning === 'string' && warning.includes('color-adjust')) return
 

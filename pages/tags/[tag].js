@@ -6,8 +6,8 @@ import generateRss from '@/lib/generate-rss'
 import kebabCase from '@/lib/utils/kebab-case'
 import ListLayout from '@/layouts/ListLayout'
 import siteMetadata from '@/data/site-metadata'
-
-const root = process.cwd()
+import { getAllBlogPosts } from '@/lib/content/server/blog.server'
+import { ROOT } from '@/lib/content/core/constants.js'
 
 export async function getStaticPaths() {
   const { getAllTags } = await import('@/lib/tags')
@@ -23,8 +23,21 @@ export async function getStaticPaths() {
   }
 }
 
+const abbreviations = {
+  GCP: 'GCP',
+  VPC: 'VPC',
+  SQL: 'SQL',
+  AI: 'AI',
+  CICD: 'CICD',
+  XSS: 'XSS',
+  CSRF: 'CSRF',
+  IPO: 'IPO',
+  RDO: 'RDO',
+  VMS: 'VMS',
+}
+
 export async function getStaticProps({ params }) {
-  const { getAllBlogPosts } = await import('@/lib/content/server/blog.server')
+  // const { getAllBlogPosts } = await import('@/lib/content/server/blog.server')
   const allPosts = await getAllBlogPosts('blog')
   const filteredPosts = (allPosts ?? [])?.filter((post) => {
     if (post.draft) return false
@@ -37,7 +50,7 @@ export async function getStaticProps({ params }) {
   if (filteredPosts.length > 0) {
     const rss = await generateRss(filteredPosts, `tags/${params.tag}/feed.xml`)
 
-    const rssPath = path.join(root, 'public', 'tags', params.tag)
+    const rssPath = path.join(ROOT, 'public', 'tags', params.tag)
     fs.mkdirSync(rssPath, { recursive: true })
 
     fs.writeFileSync(path.join(rssPath, 'feed.xml'), rss)
@@ -47,12 +60,15 @@ export async function getStaticProps({ params }) {
 }
 
 export default function Tag({ posts, tag }) {
-  const title = tag[0].toUpperCase() + tag.split(' ').join('-').slice(1)
+  let title = tag[0].toUpperCase() + tag.split(' ').join('-').slice(1)
+  if (abbreviations[tag.toUpperCase()]) {
+    title = title.toUpperCase()
+  }
   return (
     <>
       <TagSEO
-        title={`${tag} - ${siteMetadata.author}`}
-        description={`${tag} tags - ${siteMetadata.author}`}
+        title={`${title} - ${siteMetadata.author}`}
+        description={`${title} tags - ${siteMetadata.author}`}
       />
       <ListLayout type="tag" posts={posts} title={title} />
     </>

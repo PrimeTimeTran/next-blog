@@ -42,6 +42,12 @@ export default function App({ Component, pageProps }) {
     <ThemeProvider attribute="class" defaultTheme={siteMetadata.theme}>
       <Head>
         <title>KB & Blog of Loi Tran</title>
+
+        {/* SVG favicon */}
+        <link rel="icon" href="/static/images/logo.svg" type="image/svg+xml" />
+
+        {/* fallback for older browsers */}
+        <link rel="alternate icon" href="/static/images/logo.png" />
       </Head>
       <Script
         strategy="lazyOnload"

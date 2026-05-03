@@ -20,6 +20,7 @@ const LayoutWrapper = ({ children }) => {
       <header className="flex shrink-0 items-center justify-between p-4 sm:px-6">
         <Link href="/" aria-label={siteMetadata.headerTitle}>
           <div className="flex items-center">
+            <Logo />
             <div className="ml-3 hidden text-2xl font-semibold sm:block">
               {siteMetadata.headerTitle}
             </div>

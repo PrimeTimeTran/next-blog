@@ -60,7 +60,7 @@ export default [
   },
 
   {
-    files: ['scratchpads/**/*', 'data/**/*'],
+    files: ['scratchpads/**/*', 'data/**/*', 'next.config.js', 'pages/_app.js'],
 
     languageOptions: {
       globals: {
