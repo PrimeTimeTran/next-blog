@@ -20,23 +20,16 @@ body {
   @apply bg-white dark:bg-black;
 }
 
+strong {
+  @apply text-blue-300 dark:text-blue-600;
+}
+
 /* =========================================================
    TYPOGRAPHY / PROSE (MDX / content rendering)
 ========================================================= */
 
-.prose blockquote {
-  border-color: #ccc;
-  background-color: #ddd;
-}
-
-.dark .prose {
-  color: white !important;
-}
-
-.dark .prose blockquote {
-  color: white;
-  border-color: rgb(124, 124, 142);
-  background-color: #262626;
+.prose code:not(pre code) {
+  @apply dark:bg-zinc-800;
 }
 
 /* =========================================================
@@ -75,59 +68,6 @@ input:-webkit-autofill:focus {
 }
 
 /* =========================================================
-   TABS SYSTEM (MDX UI COMPONENTS)
-========================================================= */
-
-.tab {
-  overflow: hidden;
-  border: 1px solid #ccc;
-  background-color: #f1f1f1;
-}
-
-.tab button {
-  color: #3b82f6;
-  background-color: inherit;
-  float: left;
-  border: none;
-  outline: none;
-  cursor: pointer;
-  padding: 14px 16px;
-  transition: 0.3s;
-}
-
-.tab button:hover {
-  background-color: #ddd;
-}
-
-.tablinks {
-  opacity: 0.5;
-}
-
-.tablinks.active {
-  opacity: 1;
-  font-weight: 600;
-}
-
-.tabcontent {
-  display: none;
-  padding: 6px 12px;
-  border-top: none;
-  background-color: #262626;
-}
-
-.tabcontent > .relative > pre {
-  margin: 0px !important;
-}
-
-.tab-group > .tabcontent {
-  display: block;
-}
-
-.tab-group > .tabcontent ~ .tabcontent {
-  display: none;
-}
-
-/* =========================================================
    TABLES
 ========================================================= */
 
@@ -157,6 +97,8 @@ table {
 .kb-embed {
   font-size: 0.8rem;
   line-height: 1.4;
+  width: 100%;
+  max-width: 100%;
 }
 
 /* =========================================================

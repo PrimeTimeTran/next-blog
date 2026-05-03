@@ -3,18 +3,18 @@ draft: false
 ---
 
 ```tabgroup
-:::py
+!!!!!!!py
 def hello_world():
     print("Hello world")
-:::
+py!!!!!!!
 
-:::js
+!!!!!js
 function helloWorld() {
   console.log('Hi world')
 }
-:::
+js!!!!!
 
-:::js
+!!!!!go
 func climbStairs(n int) int {
   if n == 1 {
     return n
@@ -30,5 +30,5 @@ func climbStairs(n int) int {
   }
   return two
 }
-:::
+go!!!!!
 ```

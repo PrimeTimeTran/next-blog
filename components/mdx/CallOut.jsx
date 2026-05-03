@@ -49,9 +49,21 @@ export function CallOut({
 
   const Icon = calloutIcons[type]
   const theme = callOutTheme[type] ?? callOutTheme.note
+  function handleContentClick(e) {
+    const target = e.target
+
+    // ignore interactive elements
+    const interactive = target.closest('a, button, input, textarea, select, [data-no-close]')
+
+    if (interactive) return
+
+    if (collapsible) {
+      setOpen(false)
+    }
+  }
 
   return (
-    <div className={`my-3 w-full rounded-lg border-l-4 p-1 ${theme.border} ${theme.bg}`}>
+    <div className={`w-full my-2 rounded-lg border-l-4 ${theme.border} ${theme.bg}`}>
       <div
         className="flex cursor-pointer items-center justify-between gap-2 rounded-md px-2 py-2 hover:bg-black/5 dark:hover:bg-white/5"
         onClick={() => collapsible && setOpen((v) => !v)}
@@ -61,14 +73,28 @@ export function CallOut({
           <span className={theme.text}>{title || type}</span>
         </div>
 
-        {collapsible && <span className="text-xs opacity-60">{open ? '▾' : '▸'}</span>}
+        {collapsible && (
+          <span
+            className={`text-lg transition-transform duration-200 ${
+              open ? 'rotate-0' : '-rotate-90'
+            }`}
+          >
+            ▾
+          </span>
+        )}
       </div>
 
-      {open && (
-        <div className={`mt-2 text-sm leading-relaxed ${hasEmbed ? 'px-8 py-4' : 'p-2'}`}>
-          {children}
-        </div>
-      )}
+      {/* Animated container */}
+      <div
+        onClick={handleContentClick}
+        className={`
+        border-t border-slate-200 dark:border-slate-800 text-sm leading-relaxed
+        overflow-hidden transition-all duration-300 ease-in-out
+        ${open ? 'max-h-[600px] opacity-100 p-2' : 'max-h-0 opacity-0 p-0 pointer-events-none'}
+      `}
+      >
+        {children}
+      </div>
     </div>
   )
 }

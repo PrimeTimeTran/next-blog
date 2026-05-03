@@ -71,7 +71,7 @@ export function Pre(props) {
   return (
     <div className="not-prose overflow-hidden bg-slate-50 dark:bg-[#0d1117] text-slate-200">
       {title && (
-        <div className="px-4 py-2 font-mono text-xs text-slate-400 border-l-2 border-blue-500 bg-blue-500/10">
+        <div className="w-full px-4 py-2 font-mono text-xs text-slate-400 border-l-2 border-blue-500 bg-blue-500/10">
           {title}
         </div>
       )}
@@ -91,9 +91,7 @@ export function TabGroup({ tabs }) {
   if (!parsed?.length) return null
 
   return (
-    // <div className="my-6 overflow-hidden border border-slate-200 bg-[#0d1117] dark:border-slate-800">
     <div className="not-prose overflow-hidden bg-slate-50 dark:bg-[#0d1117] text-slate-200">
-      {/* Header (distinct surface) */}
       <div className="px-4 py-2 font-mono text-xs text-slate-400 border-l-2 border-blue-500 bg-blue-500/10">
         <div className="flex gap-1">
           {(parsed ?? []).map((tab, i) => {
@@ -123,7 +121,7 @@ export function TabGroup({ tabs }) {
       </div>
 
       {/* Panels */}
-      <div className="max-h-[600px] min-h-[300px] overflow-auto bg-slate-100 transition-colors duration-200 dark:bg-slate-950">
+      <div className="max-h-[600px]  overflow-auto bg-slate-100 transition-colors duration-200 dark:bg-slate-950">
         <div className="relative">
           {(parsed ?? []).map((tab, i) => {
             const isActive = i === active
