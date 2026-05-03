@@ -1,11 +1,22 @@
+import { GiGiftOfKnowledge } from 'react-icons/gi'
+import { GoProjectSymlink } from 'react-icons/go'
+import { SiThealgorithms } from 'react-icons/si'
+import { TiTags } from 'react-icons/ti'
+import { RiBloggerLine } from 'react-icons/ri'
+import { SiLibreofficewriter } from 'react-icons/si'
+
 const headerNavLinks = [
-  { href: '/kb/tool/obsidian/preview/theme1', title: 'Knowledge Base' },
-  { href: '/', title: 'Blog' },
-  { href: '/tags', title: 'Tags' },
-  { href: '/dsa', title: 'DSA' },
+  {
+    href: '/kb/tool/obsidian/preview/theme1',
+    title: 'Knowledge Base',
+    icon: GiGiftOfKnowledge,
+  },
+  { href: '/', title: 'Blog', icon: RiBloggerLine },
+  { href: '/tags', title: 'Tags', icon: TiTags },
+  { href: '/dsa', title: 'DSA', icon: SiThealgorithms },
   // { href: '/snippets', title: 'Snippets' },
-  { href: '/projects', title: 'Projects' },
-  { href: '/about', title: 'About' },
+  { href: '/projects', title: 'Projects', icon: GoProjectSymlink },
+  { href: '/about', title: 'About', icon: SiLibreofficewriter },
 ]
 
 export default headerNavLinks

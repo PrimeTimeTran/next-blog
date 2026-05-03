@@ -30,7 +30,6 @@ export default function Blog({ posts, initialDisplayPosts, pagination }) {
     <SectionContainer>
       <PageSEO title={`Blog - ${siteMetadata.author}`} description={siteMetadata.description} />
       <ListLayout
-        type2="pages/blog.js"
         posts={posts}
         initialDisplayPosts={initialDisplayPosts}
         pagination={pagination}

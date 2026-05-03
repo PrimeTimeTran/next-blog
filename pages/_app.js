@@ -40,7 +40,9 @@ export default function App({ Component, pageProps }) {
   // return <PreviewDesignSystem />
   return (
     <ThemeProvider attribute="class" defaultTheme={siteMetadata.theme}>
-      <Head></Head>
+      <Head>
+        <title>KB & Blog of Loi Tran</title>
+      </Head>
       <Script
         strategy="lazyOnload"
         src={`https://www.googletagmanager.com/gtag/js?id=${process.env.NEXT_PUBLIC_GOOGLE_ANALYTICS}`}

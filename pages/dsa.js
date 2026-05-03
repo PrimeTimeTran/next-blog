@@ -1,10 +1,12 @@
-import React, { useEffect, useState, useRef, useCallback } from 'react'
+import React, { useEffect, useMemo, useState, useRef, useCallback } from 'react'
+import { motion, AnimatePresence } from 'framer-motion'
 import siteMetadata from '@/data/site-metadata.js'
+import SolutionSnippet from '@/lib/dsa/solution.js'
+import solutions from '@/lib/dsa/problems/solutions.js'
 import SectionContainer from '@/components/SectionContainer'
-import solutions from '../lib/dsa/problems/solutions.js'
-import SolutionSnippet from '../lib/dsa/solution.js'
-import allProblems from '../lib/dsa/problems/problems-all.json'
-import { listPareto, listBlind75, neetCode150, neetCode250 } from '../lib/dsa/problems/lists.js'
+import allProblems from '@/lib/dsa/problems/problems-all.json'
+import { listPareto, listBlind75, neetCode150, neetCode250 } from '@/lib/dsa/problems/lists.js'
+import { buttonVariants } from '@/lib/ui/buttonVariants'
 
 const problemCategories = [
   'String',
@@ -40,70 +42,123 @@ orderedTags.forEach((tag) => {
   tagCounts[tag] = (allProblems ?? []).filter((problem) => problem.tags.includes(tag)).length
 })
 
+function shuffleArray(arr, seed) {
+  let current = seed
+  const random = () => {
+    current = (current * 9301 + 49297) % 233280
+    return current / 233280
+  }
+
+  const copy = [...arr]
+
+  for (let i = copy.length - 1; i > 0; i--) {
+    const j = Math.floor(random() * (i + 1))
+    ;[copy[i], copy[j]] = [copy[j], copy[i]]
+  }
+
+  return copy
+}
+
 export default function DSA() {
   const sidebarRef = useRef(null)
   const [sortBy, setSortBy] = useState('none')
-  const [filteredProblems, setFilteredProblems] = useState(allProblems || [])
+  const [shuffleSeed, setShuffleSeed] = useState(0)
   const [selectedTags, setSelectedTags] = useState([])
-  const [selectedDifficulties, setSelectedDifficulties] = useState(['e', 'm', 'h'])
   const [selectedList, setSelectedList] = useState('all')
-  const [selectedPremium, setSelectedPremium] = useState('all')
   const [isSidebarOpen, setIsSidebarOpen] = useState(false)
-  const [focusedSolution, setFocusedSolution] = useState({ solutions: [] })
   const [randomlySelected, setRandomlySelected] = useState([])
+  const [selectedPremium, setSelectedPremium] = useState('all')
+  const [focusedSolution, setFocusedSolution] = useState({ solutions: [] })
+  const [selectedDifficulties, setSelectedDifficulties] = useState(['e', 'm', 'h'])
 
-  useEffect(() => {
-    let problems = allProblems
+  const filteredProblems = useMemo(() => {
+    let problems = allProblems ?? []
 
     // Filter by list
     if (selectedList === 'pareto') {
-      problems = (problems ?? []).filter((problem) => listPareto.includes(problem.lc.id))
+      problems = problems.filter((p) => listPareto.includes(p.lc.id))
     } else if (selectedList === 'blind75') {
-      problems = (problems ?? []).filter((problem) => listBlind75.includes(problem.lc.id))
+      problems = problems.filter((p) => listBlind75.includes(p.lc.id))
     } else if (selectedList === 'neetCode150') {
-      problems = (problems ?? []).filter((problem) => neetCode150.includes(problem.lc.id))
+      problems = problems.filter((p) => neetCode150.includes(p.lc.id))
     } else if (selectedList === 'neetCode250') {
-      problems = (problems ?? []).filter((problem) => neetCode250.includes(problem.lc.id))
+      problems = problems.filter((p) => neetCode250.includes(p.lc.id))
     }
 
-    // Filter by tags
+    // Tags
     if (selectedTags.length > 0) {
-      problems = (problems ?? []).filter((problem) =>
+      problems = problems.filter((p) =>
         selectedTags.some((tag) =>
-          (problem.tags ?? []).map((t) => t.toLowerCase()).includes(tag.toLowerCase())
+          (p.tags ?? []).map((t) => t.toLowerCase()).includes(tag.toLowerCase())
         )
       )
     }
 
-    // Filter by difficulties
+    // Difficulty
     if (selectedDifficulties.length > 0) {
-      problems = (problems ?? []).filter((problem) =>
-        selectedDifficulties.includes(problem.difficulty)
-      )
+      problems = problems.filter((p) => selectedDifficulties.includes(p.difficulty))
     }
 
-    // Filter by premium
+    // Premium
     if (selectedPremium === 'free') {
-      problems = (problems ?? []).filter((problem) => !problem.lc.premium)
+      problems = problems.filter((p) => !p.lc.premium)
     } else if (selectedPremium === 'premium') {
-      problems = (problems ?? []).filter((problem) => problem.lc.premium)
+      problems = problems.filter((p) => p.lc.premium)
     }
 
     // Sort
     if (sortBy === 'difficulty-asc') {
-      problems = [...problems].sort((a, b) => {
-        const order = { e: 0, m: 1, h: 2 }
-        return order[a.difficulty] - order[b.difficulty]
-      })
+      const order = { e: 0, m: 1, h: 2 }
+      problems = [...problems].sort((a, b) => order[a.difficulty] - order[b.difficulty])
     } else if (sortBy === 'difficulty-desc') {
-      problems = [...problems].sort((a, b) => {
-        const order = { e: 0, m: 1, h: 2 }
-        return order[b.difficulty] - order[a.difficulty]
-      })
+      const order = { e: 0, m: 1, h: 2 }
+      problems = [...problems].sort((a, b) => order[b.difficulty] - order[a.difficulty])
     }
 
-    setFilteredProblems(problems)
+    return problems
   }, [selectedTags, selectedDifficulties, selectedList, selectedPremium, sortBy])
+
+  const displayedProblems = useMemo(() => {
+    const arr = [...filteredProblems]
+
+    if (!shuffleSeed) return arr
+
+    return shuffleArray(arr, shuffleSeed)
+  }, [filteredProblems, shuffleSeed])
+
+  const handleShuffle = useCallback(() => {
+    setShuffleSeed(Date.now())
+  }, [])
+
+  const markAttempted = (p) => {
+    setRandomlySelected((prev) => (prev.includes(p.lc.id) ? prev : [...prev, p.lc.id]))
+  }
+
+  const handleNext = useCallback(() => {
+    setRandomlySelected((prev) => {
+      const problem = (filteredProblems ?? []).find((p) => !prev.includes(p.lc.id))
+
+      if (!problem) return prev
+
+      window.open(problem.url, '_blank', 'noopener,noreferrer')
+
+      return [...prev, problem.lc.id]
+    })
+  }, [filteredProblems])
+
+  const handleRandom = useCallback(() => {
+    setRandomlySelected((prev) => {
+      const unseen = (filteredProblems ?? []).filter((p) => !prev.includes(p.lc.id))
+
+      if (!unseen.length) return prev
+
+      const problem = unseen[Math.floor(Math.random() * unseen.length)]
+
+      window.open(problem.url, '_blank', 'noopener,noreferrer')
+
+      return [...prev, problem.lc.id]
+    })
+  }, [filteredProblems])
 
   useEffect(() => {
     if (isSidebarOpen) {
@@ -153,7 +208,7 @@ export default function DSA() {
 
     window.addEventListener('keydown', onKeyDown)
     return () => window.removeEventListener('keydown', onKeyDown)
-  }, [filteredProblems])
+  }, [handleNext, handleRandom, handleShuffle, filteredProblems])
 
   const onTagSelect = (tag) => {
     setSelectedTags((prev) => {
@@ -197,267 +252,227 @@ export default function DSA() {
     return solutions.find((s) => s.id === problem.lc.id)
   }
 
-  const handleShuffle = useCallback(() => {
-    const shuffled = (filteredProblems ?? []).sort(() => 0.5 - Math.random())
-    setFilteredProblems(shuffled)
-  }, [filteredProblems])
-
-  const markAttempted = (problem) => {
-    setRandomlySelected((prev) => (prev.includes(problem.lc.id) ? prev : [...prev, problem.lc.id]))
-  }
-
-  const handleNext = useCallback(() => {
-    setRandomlySelected((prev) => {
-      const problem = (filteredProblems ?? []).find((p) => !prev.includes(p.lc.id))
-
-      if (!problem) return prev
-
-      window.open(problem.url, '_blank', 'noopener,noreferrer')
-
-      return [...prev, problem.lc.id]
-    })
-  }, [filteredProblems])
-
-  const handleRandom = useCallback(() => {
-    setRandomlySelected((prev) => {
-      const unseen = (filteredProblems ?? []).filter((p) => !prev.includes(p.lc.id))
-
-      if (!unseen.length) return prev
-
-      const problem = unseen[Math.floor(Math.random() * unseen.length)]
-
-      window.open(problem.url, '_blank', 'noopener,noreferrer')
-
-      return [...prev, problem.lc.id]
-    })
-  }, [filteredProblems])
-
   return (
     <SectionContainer>
       <div>
-        <div className="flex flex-col space-y-2 pb-8 pt-6 md:space-y-5">
+        <div className="flex flex-col space-y-2 pt-6 md:space-y-5">
           <h1 className="text-2xl font-extrabold leading-9 tracking-tight text-gray-900 dark:text-gray-100 sm:text-4xl sm:leading-10 md:text-4xl md:leading-14">
             Data Structures & Algorithms
           </h1>
-          <p className="text-lg leading-7 text-gray-500 dark:text-gray-400">{siteMetadata.dsa}</p>
-          <div className="flex w-full flex-row flex-wrap">
-            {(orderedTags ?? []).map((tag) => (
-              <div key={tag} className="space-x-6 space-y-2">
+
+          <div className="flex w-full flex-wrap gap-2">
+            {(orderedTags ?? []).map((tag) => {
+              const active = selectedTags.includes(tag)
+              // return <div>di</div>
+
+              return (
                 <button
+                  key={tag}
                   type="button"
                   onClick={() => onTagSelect(tag)}
-                  className={
-                    'mx-1 my-1 min-w-fit rounded px-2 py-1 text-xs text-white ' +
-                    (selectedTags.includes(tag) ? 'bg-green-500' : 'bg-gray-700')
-                  }
+                  className={buttonVariants({
+                    tone: 'default',
+                    active,
+                  })}
                 >
                   <span>
                     {tag.toUpperCase()}
                     <span className="ml-1 text-gray-400">({tagCounts[tag]})</span>
                   </span>
                 </button>
-              </div>
-            ))}
+              )
+            })}
           </div>
         </div>
       </div>
-      <hr className="border-gray-600" />
-      <div className="flex-end flex w-full justify-end">
-        <button
-          type="button"
-          className={
-            'mx-1 my-1 min-w-fit rounded bg-yellow-700 px-2 py-1 text-xs text-white ' +
-            (selectedTags.length === 0 ? ' invisible' : '')
-          }
-          onClick={() => setSelectedTags([])}
-        >
-          Clear Tags
-        </button>
-        <button
-          type="button"
-          className={`mx-1 my-1 min-w-fit rounded px-2 py-1 text-xs text-white ${
-            selectedPremium === 'all' ? 'bg-green-600' : 'bg-gray-700'
-          }`}
-          onClick={() => togglePremium('all')}
-        >
-          All
-        </button>
-        <button
-          type="button"
-          className={`mx-1 my-1 min-w-fit rounded px-2 py-1 text-xs text-white ${
-            selectedPremium === 'free' ? 'bg-green-600' : 'bg-gray-700'
-          }`}
-          onClick={() => togglePremium('free')}
-        >
-          Free 🆓
-        </button>
-        <button
-          type="button"
-          className={`mx-1 my-1 min-w-fit rounded px-2 py-1 text-xs text-white ${
-            selectedPremium === 'premium' ? 'bg-green-600' : 'bg-gray-700'
-          }`}
-          onClick={() => togglePremium('premium')}
-        >
-          Premium 💵
-        </button>
-      </div>
-      <hr className="border-gray-600" />
-      <div className="flex flex-row justify-between">
-        <h2 className="text-3xl font-bold">Lists</h2>
-        <span>
+      <hr className="my-3 border-gray-600" />
+      <div className="flex w-full items-center justify-center gap-4 flex-wrap">
+        {/* LEFT: Filters */}
+        <div className="flex items-center gap-2 flex-wrap">
+          {/* Clear */}
           <button
             type="button"
-            className={`mx-1 my-1 min-w-fit rounded px-2 py-1 text-xs text-white ${
-              selectedList === 'all' ? 'bg-green-600' : 'bg-gray-700'
+            onClick={() => setSelectedTags([])}
+            className={`px-2 py-1 text-xs rounded transition-colors ${
+              selectedTags.length === 0
+                ? 'invisible'
+                : 'bg-yellow-600 text-white hover:bg-yellow-500 dark:bg-yellow-700 dark:hover:bg-yellow-600'
             }`}
-            onClick={() => setSelectedList('all')}
           >
-            All Lists <span className="text-gray-500">({allProblems.length})</span>
+            Clear Tags
           </button>
-          <button
-            type="button"
-            className={`mx-1 my-1 min-w-fit rounded px-2 py-1 text-xs text-white ${
-              selectedList === 'pareto' ? 'bg-green-600' : 'bg-gray-700'
-            }`}
-            onClick={() => setSelectedList('pareto')}
-          >
-            Pareto <span className="text-gray-500">({listPareto.length})</span>
-          </button>
-          <button
-            type="button"
-            className={`mx-1 my-1 min-w-fit rounded px-2 py-1 text-xs text-white ${
-              selectedList === 'blind75' ? 'bg-green-600' : 'bg-gray-700'
-            }`}
-            onClick={() => setSelectedList('blind75')}
-          >
-            Blind 75 <span className="text-gray-500">({listBlind75.length})</span>
-          </button>
-          <button
-            type="button"
-            className={`mx-1 my-1 min-w-fit rounded px-2 py-1 text-xs text-white ${
-              selectedList === 'neetCode150' ? 'bg-green-600' : 'bg-gray-700'
-            }`}
-            onClick={() => setSelectedList('neetCode150')}
-          >
-            NeetCode 150 <span className="text-gray-500">({neetCode150.length})</span>
-          </button>
-          <button
-            type="button"
-            className={`mx-1 my-1 min-w-fit rounded px-2 py-1 text-xs text-white ${
-              selectedList === 'neetCode250' ? 'bg-green-600' : 'bg-gray-700'
-            }`}
-            onClick={() => setSelectedList('neetCode250')}
-          >
-            NeetCode 250 <span className="text-gray-500">({neetCode250.length})</span>
-          </button>
-        </span>
-      </div>
-      <hr className="border-gray-600" />
-      <div>
-        <div className="flex w-full justify-between">
-          <div>
+
+          {/* Premium */}
+          <div className="flex items-center gap-1 ml-2">
             <button
-              onClick={() => toggleDifficulty('e')}
-              type="button"
-              className={`mx-1 my-1 min-w-fit rounded px-2 py-1 text-xs text-white ${
-                selectedDifficulties.includes('e') ? 'bg-green-600' : 'bg-gray-700'
+              onClick={() => togglePremium('all')}
+              className={`px-2 py-1 text-xs rounded transition-colors ${
+                selectedPremium === 'all'
+                  ? 'bg-green-600 text-white dark:bg-green-500'
+                  : 'bg-surface text-meta hover:text-primary dark:bg-gray-800 dark:text-gray-300 dark:hover:text-gray-100'
               }`}
             >
-              Easy
+              All
             </button>
 
             <button
-              onClick={() => toggleDifficulty('m')}
-              type="button"
-              className={`mx-1 my-1 min-w-fit rounded px-2 py-1 text-xs text-white ${
-                selectedDifficulties.includes('m') ? 'bg-yellow-600' : 'bg-gray-700'
+              onClick={() => togglePremium('free')}
+              className={`px-2 py-1 text-xs rounded transition-colors ${
+                selectedPremium === 'free'
+                  ? 'bg-green-600 text-white dark:bg-green-500'
+                  : 'bg-surface text-meta hover:text-primary dark:bg-gray-800 dark:text-gray-300 dark:hover:text-gray-100'
               }`}
             >
-              Medium
+              Free 🆓
             </button>
 
             <button
-              onClick={() => toggleDifficulty('h')}
-              type="button"
-              className={`mx-1 my-1 min-w-fit rounded px-2 py-1 text-xs text-white ${
-                selectedDifficulties.includes('h') ? 'bg-red-600' : 'bg-gray-700'
+              onClick={() => togglePremium('premium')}
+              className={`px-2 py-1 text-xs rounded transition-colors ${
+                selectedPremium === 'premium'
+                  ? 'bg-green-600 text-white dark:bg-green-500'
+                  : 'bg-surface text-meta hover:text-primary dark:bg-gray-800 dark:text-gray-300 dark:hover:text-gray-100'
               }`}
             >
-              Hard
-            </button>
-          </div>
-
-          <div>
-            <button
-              type="button"
-              className="mx-1 my-1 min-w-fit rounded bg-blue-700 px-2 py-1 text-xs text-white"
-              onClick={handleShuffle}
-            >
-              Shuffle 🎲 (⌥ + O)
-            </button>
-            <button
-              type="button"
-              className="mx-1 my-1 min-w-fit rounded bg-blue-700 px-2 py-1 text-xs text-white"
-              onClick={handleRandom}
-            >
-              Next ⏭️ (⌥ + P)
-            </button>
-            <button
-              type="button"
-              className="mx-1 my-1 min-w-fit rounded bg-blue-700 px-2 py-1 text-xs text-white"
-              onClick={handleRandom}
-            >
-              Random 👻 (⌥ + R)
-            </button>
-          </div>
-          <div>
-            <button
-              type="button"
-              className={`mx-1 my-1 min-w-fit rounded px-2 py-1 text-xs text-white ${
-                sortBy === 'none' ? 'bg-green-600' : 'bg-gray-700'
-              }`}
-              onClick={() => setSortBy('none')}
-            >
-              None
-            </button>
-            <button
-              type="button"
-              className={`mx-1 my-1 min-w-fit rounded px-2 py-1 text-xs text-white ${
-                sortBy === 'difficulty-asc' ? 'bg-green-600' : 'bg-gray-700'
-              }`}
-              onClick={() => setSortBy('difficulty-asc')}
-            >
-              ↑
-            </button>
-            <button
-              type="button"
-              className={`mx-1 my-1 min-w-fit rounded px-2 py-1 text-xs text-white ${
-                sortBy === 'difficulty-desc' ? 'bg-green-600' : 'bg-gray-700'
-              }`}
-              onClick={() => setSortBy('difficulty-desc')}
-            >
-              ↓
+              Premium 💵
             </button>
           </div>
         </div>
+
+        <span className="mx-2 text-meta/50">|</span>
+
+        {/* RIGHT: Lists */}
+        <div className="flex items-center gap-1 flex-wrap">
+          {[
+            ['all', `All (${allProblems.length})`],
+            ['pareto', `Pareto (${listPareto.length})`],
+            ['blind75', `Blind 75 (${listBlind75.length})`],
+            ['neetCode150', `NeetCode 150 (${neetCode150.length})`],
+            ['neetCode250', `NeetCode 250 (${neetCode250.length})`],
+          ].map(([key, label]) => (
+            <button
+              key={key}
+              onClick={() => setSelectedList(key)}
+              className={buttonVariants({
+                tone: 'list',
+                active: selectedList === key,
+              })}
+            >
+              {label}
+            </button>
+          ))}
+        </div>
       </div>
-      <hr className="border-gray-600" />
-      <div>
-        {(filteredProblems ?? []).map((problem, i) => (
-          <div key={problem.lc.id}>
+      <hr className="my-3 border-gray-600" />
+
+      <div className="flex items-center justify-between gap-4 flex-wrap">
+        {/* LEFT */}
+        <div className="flex items-center gap-2 flex-wrap">
+          {/* Difficulty */}
+          <button
+            onClick={() => toggleDifficulty('e')}
+            className={buttonVariants({
+              tone: 'difficulty',
+              active: selectedDifficulties.includes('e'),
+            })}
+          >
+            Easy
+          </button>
+          <button
+            onClick={() => toggleDifficulty('m')}
+            className={buttonVariants({
+              tone: 'difficulty',
+              active: selectedDifficulties.includes('m'),
+            })}
+          >
+            Medium
+          </button>
+          <button
+            onClick={() => toggleDifficulty('h')}
+            className={buttonVariants({
+              tone: 'difficulty',
+              active: selectedDifficulties.includes('h'),
+            })}
+          >
+            Hard
+          </button>
+
+          <span className="mx-2 text-meta/50 dark:text-gray-600">|</span>
+
+          {/* Sort */}
+          <button
+            onClick={() => setSortBy('none')}
+            className={buttonVariants({
+              tone: 'primary',
+              active: sortBy === 'none',
+            })}
+          >
+            None
+          </button>
+
+          <button
+            onClick={() => setSortBy('difficulty-asc')}
+            className={buttonVariants({
+              tone: 'primary',
+              active: sortBy === 'difficulty-asc',
+            })}
+          >
+            ↑
+          </button>
+
+          <button
+            onClick={() => setSortBy('difficulty-desc')}
+            className={buttonVariants({
+              tone: 'primary',
+              active: sortBy === 'difficulty-desc',
+            })}
+          >
+            ↓
+          </button>
+        </div>
+
+        {/* RIGHT */}
+        <div className="flex items-center gap-2">
+          <button onClick={handleShuffle} className={buttonVariants({ tone: 'action' })}>
+            🎲 Shuffle
+          </button>
+
+          <button onClick={handleRandom} className={buttonVariants({ tone: 'action' })}>
+            ⏭️ Next
+          </button>
+
+          <button onClick={handleRandom} className={buttonVariants({ tone: 'action' })}>
+            👻 Random
+          </button>
+        </div>
+      </div>
+      <hr className="my-3 border-gray-600" />
+
+      <AnimatePresence>
+        {(displayedProblems ?? []).map((problem, i) => (
+          <motion.div
+            key={problem.lc.id}
+            layout
+            initial={{ opacity: 0, y: 6 }}
+            animate={{ opacity: 1, y: 0 }}
+            exit={{ opacity: 0, y: -6 }}
+            transition={{ duration: 0.2 }}
+          >
             <div className="flex items-start gap-2">
               <span className="w-12 text-right">{i + 1}. </span>
               <a
                 href={problem.url}
                 target="_blank"
-                className="flex items-start gap-2 text-primary-500"
+                className="flex items-start gap-2 text-2xl text-meta hover:text-primary-500 dark:text-meta hover:dark:text-primary-400"
                 rel="noreferrer"
                 onClick={() => markAttempted(problem)}
               >
                 <span
-                  className={
-                    randomlySelected.includes(problem.lc.id) && 'line-through decoration-white'
-                  }
+                  className={`${
+                    randomlySelected.includes(problem.lc.id)
+                      ? 'line-through decoration-amber-300 dark:decoration-slate-600'
+                      : ''
+                  }`}
                 >
                   {problem.title}
                 </span>
@@ -467,9 +482,9 @@ export default function DSA() {
               </span>
               {hasSolution(problem) && <button onClick={() => loadSolution(problem)}>📝</button>}
             </div>
-          </div>
+          </motion.div>
         ))}
-      </div>
+      </AnimatePresence>
       <div
         ref={sidebarRef}
         className={`fixed right-0 top-0 h-full w-1/3 overflow-y-auto border bg-white py-2 transition-transform duration-300 ease-in-out dark:bg-gray-900 ${

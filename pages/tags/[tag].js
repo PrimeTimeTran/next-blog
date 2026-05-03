@@ -54,7 +54,7 @@ export default function Tag({ posts, tag }) {
         title={`${tag} - ${siteMetadata.author}`}
         description={`${tag} tags - ${siteMetadata.author}`}
       />
-      <ListLayout type2="pages/blog/page/[page].js" type="tag" posts={posts} title={title} />
+      <ListLayout type="tag" posts={posts} title={title} />
     </>
   )
 }

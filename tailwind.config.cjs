@@ -1,19 +1,12 @@
-const defaultTheme = require('tailwindcss/defaultTheme')
 const colors = require('tailwindcss/colors')
-const { safeList } = require('./lib/theme/tailwind-class-generators.cjs')
+const defaultTheme = require('tailwindcss/defaultTheme')
 const { callOutTheme } = require('./lib/theme/theme.cjs')
+const { safeList } = require('./lib/theme/tailwind-class-generators.cjs')
 
 const flatten = (obj) => Object.values(obj).flatMap((v) => Object.values(v).flat())
 
-const safelist = [
-  ...safeList,
-  ...flatten(callOutTheme),
-  'text-[#b58cff]',
-  'text-[#ff7ac6]',
-  'text-[#8bdfff]',
-  'text-[#5ee38a]',
-  'text-[#f7e26b]',
-]
+// Solution for styles going missing in embedded TW V3 pages
+const safelist = [...safeList, ...flatten(callOutTheme)]
 
 module.exports = {
   darkMode: 'class',
@@ -45,14 +38,32 @@ module.exports = {
       fontFamily: {
         sans: ['InterVariable', ...defaultTheme.fontFamily.sans],
       },
+
       colors: {
+        text: {
+          DEFAULT: colors.neutral[700],
+          muted: colors.neutral[500],
+        },
+        link: {
+          DEFAULT: colors.blue[600],
+          hover: colors.blue[700],
+        },
+        meta: {
+          DEFAULT: colors.neutral[500],
+          hover: colors.neutral[700],
+        },
         primary: colors.blue,
-        gray: colors.neutral,
+        // semantic surface system
+        background: colors.neutral[50],
+        surface: colors.neutral[100],
+        elevated: colors.neutral[200],
       },
+
       typography: (theme) => ({
         DEFAULT: {
           css: {
-            color: theme('colors.gray.700'),
+            color: theme('colors.neutral.700'),
+
             a: {
               color: theme('colors.primary.600'),
               '&:hover': {
@@ -63,31 +74,31 @@ module.exports = {
             h1: {
               fontWeight: '700',
               letterSpacing: theme('letterSpacing.tight'),
-              color: theme('colors.gray.900'),
+              color: theme('colors.neutral.900'),
             },
 
             h2: {
               fontWeight: '700',
               letterSpacing: theme('letterSpacing.tight'),
-              color: theme('colors.gray.900'),
+              color: theme('colors.neutral.900'),
             },
 
             h3: {
               fontWeight: '600',
-              color: theme('colors.gray.900'),
+              color: theme('colors.neutral.900'),
             },
 
             'h4,h5,h6': {
-              color: theme('colors.gray.900'),
+              color: theme('colors.neutral.900'),
             },
 
             pre: {
-              backgroundColor: theme('colors.gray.900'),
+              backgroundColor: theme('colors.neutral.900'),
             },
 
             code: {
               color: theme('colors.pink.500'),
-              backgroundColor: theme('colors.gray.100'),
+              backgroundColor: theme('colors.neutral.100'),
               borderRadius: '0.25rem',
               padding: '2px 4px',
             },
@@ -101,22 +112,23 @@ module.exports = {
             },
 
             hr: {
-              borderColor: theme('colors.gray.200'),
+              borderColor: theme('colors.neutral.200'),
             },
 
             strong: {
-              color: theme('colors.gray.900'),
+              color: theme('colors.neutral.900'),
             },
 
             blockquote: {
-              color: theme('colors.gray.700'),
-              borderLeftColor: theme('colors.gray.300'),
+              color: theme('colors.neutral.700'),
+              borderLeftColor: theme('colors.neutral.300'),
             },
           },
         },
+
         dark: {
           css: {
-            color: theme('colors.gray.300'),
+            color: theme('colors.neutral.200'),
 
             a: {
               color: theme('colors.primary.400'),
@@ -126,44 +138,49 @@ module.exports = {
             },
 
             h1: {
-              color: theme('colors.gray.100'),
+              color: theme('colors.neutral.100'),
               fontWeight: '700',
             },
 
             h2: {
-              color: theme('colors.gray.100'),
+              color: theme('colors.neutral.100'),
               fontWeight: '700',
             },
 
             h3: {
-              color: theme('colors.gray.100'),
+              color: theme('colors.neutral.100'),
               fontWeight: '600',
             },
 
+            'h4,h5,h6': {
+              color: theme('colors.neutral.100'),
+            },
+
             pre: {
-              backgroundColor: theme('colors.gray.900'),
+              backgroundColor: theme('colors.neutral.900'),
             },
 
             code: {
-              backgroundColor: theme('colors.gray.800'),
+              backgroundColor: theme('colors.neutral.800'),
             },
 
             hr: {
-              borderColor: theme('colors.gray.700'),
+              borderColor: theme('colors.neutral.700'),
             },
 
             strong: {
-              color: theme('colors.gray.100'),
+              color: theme('colors.neutral.100'),
             },
 
             blockquote: {
-              color: theme('colors.gray.300'),
-              borderLeftColor: theme('colors.gray.700'),
+              color: theme('colors.neutral.300'),
+              borderLeftColor: theme('colors.neutral.700'),
             },
           },
         },
       }),
     },
   },
+
   plugins: [require('@tailwindcss/forms'), require('@tailwindcss/typography')],
 }

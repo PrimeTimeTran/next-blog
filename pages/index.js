@@ -7,10 +7,11 @@ import siteMetadata from '@/data/site-metadata'
 import NewsletterForm from '@/components/NewsletterForm'
 import SectionContainer from '@/components/SectionContainer'
 
+import { getAllBlogPosts } from '@/lib/content/server/blog.server'
+
 import { TOPICS, MAX_DISPLAY } from '@/data/constants'
 
 export async function getStaticProps() {
-  const { getAllBlogPosts } = await import('@/lib/content/server/blog.server')
   const posts = await getAllBlogPosts()
 
   return {
@@ -22,23 +23,31 @@ export async function getStaticProps() {
 
 export default function Home({ posts }) {
   const [searchTerm, setSearchTerm] = useState('')
-  const [activeTopic, setActiveTopic] = useState(null)
+  const [activeTopics, setActiveTopics] = useState([])
+
+  const toggleTopic = (topicName) => {
+    setActiveTopics((prev) => {
+      if (prev.includes(topicName)) {
+        return prev.filter((t) => t !== topicName)
+      }
+      return [...prev, topicName]
+    })
+  }
 
   // Topic filter
   const filteredPosts = useMemo(() => {
     let result = posts
-    if (activeTopic) {
-      const topicTags = (TOPICS[activeTopic] ?? []).map((tag) =>
-        tag.replace(' ', '-').toLowerCase()
-      )
+    if (activeTopics.length > 0) {
+      result = (result ?? []).filter((post) => {
+        const postTags = (post.tags ?? []).map((tag) => tag.replace(' ', '-').toLowerCase())
 
-      result = (result ?? [])?.filter(
-        (post) =>
-          post.tags &&
-          post.tags.some((tag) => topicTags.includes(tag.replace(' ', '-').toLowerCase()))
-      )
+        return activeTopics.some((topic) => {
+          const topicTags = (TOPICS[topic] ?? []).map((tag) => tag.replace(' ', '-').toLowerCase())
+
+          return topicTags.some((t) => postTags.includes(t))
+        })
+      })
     }
-
     // Search filter
     if (searchTerm) {
       const term = searchTerm.toLowerCase()
@@ -53,14 +62,13 @@ export default function Home({ posts }) {
     }
 
     return result
-  }, [posts, searchTerm, activeTopic])
+  }, [posts, searchTerm, activeTopics])
 
   return (
     <SectionContainer>
       <PageSEO title={siteMetadata.title} description={siteMetadata.description} />
       {/* Posts */}
       <ListLayout
-        type2="pages/index.js"
         pagination={1}
         title="Latest"
         posts={filteredPosts}
@@ -72,12 +80,16 @@ export default function Home({ posts }) {
               Topics
             </h1>
 
-            <div className="my-1 mb-6 flex space-x-2 overflow-x-auto text-primary-500">
+            <div className="my-1 mb-6 flex space-x-2 overflow-x-auto">
               {(Object.entries(TOPICS) ?? []).map(([topicName, topics]) => (
                 <button
                   key={topicName}
-                  onClick={() => setActiveTopic(activeTopic === topicName ? null : topicName)}
-                  className={activeTopic === topicName ? 'font-bold underline' : ''}
+                  onClick={() => toggleTopic(topicName)}
+                  className={`${
+                    activeTopics.includes(topicName)
+                      ? 'font-semibold underline text-link-active'
+                      : ' text-meta hover:text-meta-hover'
+                  }`}
                 >
                   {topicName} <span className="text-gray-500">({topics.length})</span>
                 </button>

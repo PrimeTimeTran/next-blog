@@ -1,5 +1,5 @@
-export const POSTS_PER_PAGE = 20
 export const MAX_DISPLAY = 300
+export const POSTS_PER_PAGE = 20
 export const DEV_MODE = process.env.NODE_ENV === 'development'
 
 export const LANG_MAP = {

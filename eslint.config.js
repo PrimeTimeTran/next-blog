@@ -39,8 +39,6 @@ export default [
       'react/react-in-jsx-scope': 'off',
       'react/no-unescaped-entities': 'off',
       'react/prop-types': 'warn',
-      // ❌ REMOVE THIS
-      // 'no-undef': 'off',
     },
   },
 
@@ -62,7 +60,7 @@ export default [
   },
 
   {
-    files: ['scratchpads/**/*'],
+    files: ['scratchpads/**/*', 'data/**/*'],
 
     languageOptions: {
       globals: {
@@ -71,10 +69,6 @@ export default [
         fetch: true,
         URL: true,
         document: true, // if browser-like scripts
-      },
-      env: {
-        browser: true,
-        node: true,
       },
     },
 
