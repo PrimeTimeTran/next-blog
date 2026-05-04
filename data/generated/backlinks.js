@@ -683,6 +683,12 @@ export const termBacklinks = {
       "draft": true
     },
     {
+      "file": "/Users/future/l.blog/data/blog/ks-with-nextjs.md",
+      "type": "blog",
+      "count": 14,
+      "draft": false
+    },
+    {
       "file": "/Users/future/l.blog/data/blog/finance/terms/index-fund.md",
       "type": "blog",
       "count": 13,
@@ -1993,6 +1999,12 @@ export const termBacklinks = {
       "type": "kb",
       "count": 6,
       "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/ks-with-nextjs.md",
+      "type": "blog",
+      "count": 2,
+      "draft": false
     }
   ],
   "termsapp-store-deployment": [],
@@ -2914,6 +2926,12 @@ export const termBacklinks = {
     },
     {
       "file": "/Users/future/l.blog/data/blog/finance/terms/secondary-market.md",
+      "type": "blog",
+      "count": 1,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/ks-with-nextjs.md",
       "type": "blog",
       "count": 1,
       "draft": false
@@ -3975,6 +3993,12 @@ export const termBacklinks = {
       "draft": true
     },
     {
+      "file": "/Users/future/l.blog/data/blog/ks-with-nextjs.md",
+      "type": "blog",
+      "count": 1,
+      "draft": false
+    },
+    {
       "file": "/Users/future/l.blog/data/blog/software/data-structures-algorithms/cheatsheet.md",
       "type": "blog",
       "count": 1,
@@ -4628,6 +4652,12 @@ export const termBacklinks = {
       "draft": false
     },
     {
+      "file": "/Users/future/l.blog/data/blog/ks-with-nextjs.md",
+      "type": "blog",
+      "count": 1,
+      "draft": false
+    },
+    {
       "file": "/Users/future/l.blog/data/blog/software/databases/pgadmin.md",
       "type": "blog",
       "count": 1,
@@ -4998,6 +5028,12 @@ export const termBacklinks = {
       "draft": true
     },
     {
+      "file": "/Users/future/l.blog/data/blog/ks-with-nextjs.md",
+      "type": "blog",
+      "count": 4,
+      "draft": false
+    },
+    {
       "file": "/Users/future/l.blog/data/blog/opinions/why-flutter-is-better-than-react-native.md",
       "type": "blog",
       "count": 3,
@@ -5099,6 +5135,12 @@ export const termBacklinks = {
       "file": "/Users/future/l.blog/data/blog/software/data-structures-algorithms/patterns-graph.md",
       "type": "blog",
       "count": 11,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/ks-with-nextjs.md",
+      "type": "blog",
+      "count": 6,
       "draft": false
     },
     {
@@ -7185,6 +7227,12 @@ export const termBacklinks = {
       "draft": true
     },
     {
+      "file": "/Users/future/l.blog/data/blog/ks-with-nextjs.md",
+      "type": "blog",
+      "count": 1,
+      "draft": false
+    },
+    {
       "file": "/Users/future/l.blog/data/blog/leetcode/742-network-delay-time.md",
       "type": "blog",
       "count": 1,
@@ -7362,6 +7410,12 @@ export const termBacklinks = {
       "draft": true
     },
     {
+      "file": "/Users/future/l.blog/data/blog/ks-with-nextjs.md",
+      "type": "blog",
+      "count": 1,
+      "draft": false
+    },
+    {
       "file": "/Users/future/l.blog/data/blog/projects/royal-stock-exchange/3-portfolio.md",
       "type": "blog",
       "count": 1,
@@ -7443,6 +7497,12 @@ export const termBacklinks = {
     },
     {
       "file": "/Users/future/l.blog/data/blog/finance/stock-market-size.md",
+      "type": "blog",
+      "count": 1,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/ks-with-nextjs.md",
       "type": "blog",
       "count": 1,
       "draft": false
@@ -8786,6 +8846,12 @@ export const termBacklinks = {
       "type": "kb",
       "count": 1,
       "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/ks-with-nextjs.md",
+      "type": "blog",
+      "count": 1,
+      "draft": false
     }
   ],
   "termsdynamodb": [
@@ -8853,6 +8919,12 @@ export const termBacklinks = {
     },
     {
       "file": "/Users/future/l.blog/data/blog/finance/terms/extrinsic-value.md",
+      "type": "blog",
+      "count": 1,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/ks-with-nextjs.md",
       "type": "blog",
       "count": 1,
       "draft": false
@@ -9065,7 +9137,14 @@ export const termBacklinks = {
       "draft": false
     }
   ],
-  "termsembeddings": [],
+  "termsembeddings": [
+    {
+      "file": "/Users/future/l.blog/data/blog/ks-with-nextjs.md",
+      "type": "blog",
+      "count": 1,
+      "draft": false
+    }
+  ],
   "termsempty-set": [
     {
       "file": "/Users/future/l.blog/data/blog/maths/discrete-symbols.md",
@@ -10021,6 +10100,12 @@ export const termBacklinks = {
       "draft": false
     },
     {
+      "file": "/Users/future/l.blog/data/blog/ks-with-nextjs.md",
+      "type": "blog",
+      "count": 1,
+      "draft": false
+    },
+    {
       "file": "/Users/future/l.blog/data/blog/opinions/why-flutter-is-better-than-react-native.md",
       "type": "blog",
       "count": 1,
@@ -10193,6 +10278,12 @@ export const termBacklinks = {
   "termsfilesystem-sandbox": [],
   "termsfilesystem-types": [],
   "termsfiltering": [
+    {
+      "file": "/Users/future/l.blog/data/blog/ks-with-nextjs.md",
+      "type": "blog",
+      "count": 2,
+      "draft": false
+    },
     {
       "file": "/Users/future/l.blog/data/blog/ai/ai-as-fractals.md",
       "type": "blog",
@@ -10556,6 +10647,12 @@ export const termBacklinks = {
     },
     {
       "file": "/Users/future/l.blog/data/blog/finance/options/strategies/trading-strategies.md",
+      "type": "blog",
+      "count": 1,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/ks-with-nextjs.md",
       "type": "blog",
       "count": 1,
       "draft": false
@@ -11234,6 +11331,12 @@ export const termBacklinks = {
     },
     {
       "file": "/Users/future/l.blog/data/blog/finance/stock-market-size.md",
+      "type": "blog",
+      "count": 2,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/ks-with-nextjs.md",
       "type": "blog",
       "count": 2,
       "draft": false
@@ -12217,6 +12320,12 @@ export const termBacklinks = {
       "draft": true
     },
     {
+      "file": "/Users/future/l.blog/data/blog/ks-with-nextjs.md",
+      "type": "blog",
+      "count": 1,
+      "draft": false
+    },
+    {
       "file": "/Users/future/l.blog/data/blog/opinions/why-flutter-is-better-than-react-native.md",
       "type": "blog",
       "count": 1,
@@ -12434,6 +12543,12 @@ export const termBacklinks = {
     },
     {
       "file": "/Users/future/l.blog/data/blog/ai/ai-search-agent.md",
+      "type": "blog",
+      "count": 1,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/ks-with-nextjs.md",
       "type": "blog",
       "count": 1,
       "draft": false
@@ -14739,6 +14854,12 @@ export const termBacklinks = {
       "draft": true
     },
     {
+      "file": "/Users/future/l.blog/data/blog/ks-with-nextjs.md",
+      "type": "blog",
+      "count": 3,
+      "draft": false
+    },
+    {
       "file": "/Users/future/l.blog/data/blog/leetcode/463-island-perimeter.md",
       "type": "blog",
       "count": 3,
@@ -15242,6 +15363,12 @@ export const termBacklinks = {
     },
     {
       "file": "/Users/future/l.blog/data/blog/finance/futures.md",
+      "type": "blog",
+      "count": 3,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/ks-with-nextjs.md",
       "type": "blog",
       "count": 3,
       "draft": false
@@ -15818,6 +15945,12 @@ export const termBacklinks = {
       "draft": true
     },
     {
+      "file": "/Users/future/l.blog/data/blog/ks-with-nextjs.md",
+      "type": "blog",
+      "count": 2,
+      "draft": false
+    },
+    {
       "file": "/Users/future/l.blog/data/blog/same-problems-different-tools.md",
       "type": "blog",
       "count": 1,
@@ -16053,6 +16186,12 @@ export const termBacklinks = {
       "file": "/Users/future/l.blog/data/kb/atom/CS/page-router-vs-app-router.md",
       "type": "kb",
       "count": 2,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/ks-with-nextjs.md",
+      "type": "blog",
+      "count": 1,
       "draft": false
     }
   ],
@@ -16359,6 +16498,12 @@ export const termBacklinks = {
       "type": "blog",
       "count": 1,
       "draft": true
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/ks-with-nextjs.md",
+      "type": "blog",
+      "count": 1,
+      "draft": false
     }
   ],
   "termsknowledge-representation": [],
@@ -16510,6 +16655,12 @@ export const termBacklinks = {
       "draft": true
     },
     {
+      "file": "/Users/future/l.blog/data/blog/ks-with-nextjs.md",
+      "type": "blog",
+      "count": 1,
+      "draft": false
+    },
+    {
       "file": "/Users/future/l.blog/data/blog/software/design patterns/decorator.md",
       "type": "blog",
       "count": 1,
@@ -16541,6 +16692,12 @@ export const termBacklinks = {
       "type": "kb",
       "count": 1,
       "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/ks-with-nextjs.md",
+      "type": "blog",
+      "count": 1,
+      "draft": false
     }
   ],
   "termslayout-builder": [],
@@ -16565,6 +16722,12 @@ export const termBacklinks = {
       "type": "blog",
       "count": 3,
       "draft": true
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/ks-with-nextjs.md",
+      "type": "blog",
+      "count": 2,
+      "draft": false
     },
     {
       "file": "/Users/future/l.blog/data/blog/software/system-design/microservices.md",
@@ -16633,6 +16796,12 @@ export const termBacklinks = {
   ],
   "termslifting-state-up": [],
   "termslike": [
+    {
+      "file": "/Users/future/l.blog/data/blog/ks-with-nextjs.md",
+      "type": "blog",
+      "count": 7,
+      "draft": false
+    },
     {
       "file": "/Users/future/l.blog/data/blog/software/languages/rust/rust-projects.md",
       "type": "blog",
@@ -17392,6 +17561,12 @@ export const termBacklinks = {
     },
     {
       "file": "/Users/future/l.blog/data/blog/finance/quant/pair-trading.md",
+      "type": "blog",
+      "count": 1,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/ks-with-nextjs.md",
       "type": "blog",
       "count": 1,
       "draft": false
@@ -18556,6 +18731,12 @@ export const termBacklinks = {
       "draft": true
     },
     {
+      "file": "/Users/future/l.blog/data/blog/ks-with-nextjs.md",
+      "type": "blog",
+      "count": 2,
+      "draft": false
+    },
+    {
       "file": "/Users/future/l.blog/data/blog/projects/royal-stock-exchange/3-portfolio.md",
       "type": "blog",
       "count": 1,
@@ -18669,13 +18850,26 @@ export const termBacklinks = {
   "termsnext-greater-element": [],
   "termsnext-image": [],
   "termsnext-token-prediction": [],
-  "termsnextjs-routing": [],
+  "termsnextjs-routing": [
+    {
+      "file": "/Users/future/l.blog/data/blog/ks-with-nextjs.md",
+      "type": "blog",
+      "count": 1,
+      "draft": false
+    }
+  ],
   "termsnextjs": [
     {
       "file": "/Users/future/l.blog/data/blog/TEST/introducing-tailwind-nextjs-starter-blog.mdx",
       "type": "blog",
       "count": 7,
       "draft": true
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/ks-with-nextjs.md",
+      "type": "blog",
+      "count": 6,
+      "draft": false
     },
     {
       "file": "/Users/future/l.blog/data/kb/atom/CS/page-router-vs-app-router.md",
@@ -20120,6 +20314,12 @@ export const termBacklinks = {
       "draft": false
     },
     {
+      "file": "/Users/future/l.blog/data/blog/ks-with-nextjs.md",
+      "type": "blog",
+      "count": 7,
+      "draft": false
+    },
+    {
       "file": "/Users/future/l.blog/data/blog/politics/1-go.md",
       "type": "blog",
       "count": 7,
@@ -21006,6 +21206,12 @@ export const termBacklinks = {
       "file": "/Users/future/l.blog/data/blog/software/languages/dart/handling-nullable-fields.md",
       "type": "blog",
       "count": 3,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/ks-with-nextjs.md",
+      "type": "blog",
+      "count": 2,
       "draft": false
     },
     {
@@ -23180,6 +23386,12 @@ export const termBacklinks = {
   "termsreact-testing-library": [],
   "termsreact": [
     {
+      "file": "/Users/future/l.blog/data/blog/ks-with-nextjs.md",
+      "type": "blog",
+      "count": 8,
+      "draft": false
+    },
+    {
       "file": "/Users/future/l.blog/data/blog/software/system-design/appium-mocha.md",
       "type": "blog",
       "count": 8,
@@ -23635,6 +23847,12 @@ export const termBacklinks = {
       "draft": false
     },
     {
+      "file": "/Users/future/l.blog/data/blog/ks-with-nextjs.md",
+      "type": "blog",
+      "count": 1,
+      "draft": false
+    },
+    {
       "file": "/Users/future/l.blog/data/blog/same-problems-different-tools.md",
       "type": "blog",
       "count": 1,
@@ -23891,6 +24109,12 @@ export const termBacklinks = {
       "draft": true
     },
     {
+      "file": "/Users/future/l.blog/data/blog/ks-with-nextjs.md",
+      "type": "blog",
+      "count": 1,
+      "draft": false
+    },
+    {
       "file": "/Users/future/l.blog/data/blog/software/devops/gcp/vcp-connectors.md",
       "type": "blog",
       "count": 1,
@@ -23922,6 +24146,12 @@ export const termBacklinks = {
       "file": "/Users/future/l.blog/data/kb/atom/CS/page-router-vs-app-router.md",
       "type": "kb",
       "count": 5,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/ks-with-nextjs.md",
+      "type": "blog",
+      "count": 3,
       "draft": false
     },
     {
@@ -24638,6 +24868,12 @@ export const termBacklinks = {
       "draft": true
     },
     {
+      "file": "/Users/future/l.blog/data/blog/ks-with-nextjs.md",
+      "type": "blog",
+      "count": 1,
+      "draft": false
+    },
+    {
       "file": "/Users/future/l.blog/data/blog/maths/linear-algebra/vectors.md",
       "type": "blog",
       "count": 1,
@@ -24934,6 +25170,12 @@ export const termBacklinks = {
       "draft": false
     },
     {
+      "file": "/Users/future/l.blog/data/blog/ks-with-nextjs.md",
+      "type": "blog",
+      "count": 5,
+      "draft": false
+    },
+    {
       "file": "/Users/future/l.blog/data/blog/software/data-structures-algorithms/patterns-graph.md",
       "type": "blog",
       "count": 5,
@@ -25194,6 +25436,12 @@ export const termBacklinks = {
       "type": "blog",
       "count": 2,
       "draft": true
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/ks-with-nextjs.md",
+      "type": "blog",
+      "count": 1,
+      "draft": false
     }
   ],
   "termssequence-diagram": [],
@@ -25468,6 +25716,12 @@ export const termBacklinks = {
       "type": "blog",
       "count": 1,
       "draft": true
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/ks-with-nextjs.md",
+      "type": "blog",
+      "count": 1,
+      "draft": false
     },
     {
       "file": "/Users/future/l.blog/data/blog/projects/royal-stock-exchange/3-portfolio.md",
@@ -26064,6 +26318,12 @@ export const termBacklinks = {
       "draft": true
     },
     {
+      "file": "/Users/future/l.blog/data/blog/ks-with-nextjs.md",
+      "type": "blog",
+      "count": 1,
+      "draft": false
+    },
+    {
       "file": "/Users/future/l.blog/data/blog/leetcode/16-3-sum-closest.md",
       "type": "blog",
       "count": 1,
@@ -26518,6 +26778,12 @@ export const termBacklinks = {
       "file": "/Users/future/l.blog/data/blog/software/data-structures-algorithms/patterns-graph.md",
       "type": "blog",
       "count": 4,
+      "draft": false
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/ks-with-nextjs.md",
+      "type": "blog",
+      "count": 3,
       "draft": false
     },
     {
@@ -28394,6 +28660,12 @@ export const termBacklinks = {
       "draft": false
     },
     {
+      "file": "/Users/future/l.blog/data/blog/ks-with-nextjs.md",
+      "type": "blog",
+      "count": 3,
+      "draft": false
+    },
+    {
       "file": "/Users/future/l.blog/data/blog/projects/royal-stock-exchange/4-scaling.md",
       "type": "blog",
       "count": 3,
@@ -29380,6 +29652,12 @@ export const termBacklinks = {
       "type": "blog",
       "count": 1,
       "draft": true
+    },
+    {
+      "file": "/Users/future/l.blog/data/blog/ks-with-nextjs.md",
+      "type": "blog",
+      "count": 1,
+      "draft": false
     },
     {
       "file": "/Users/future/l.blog/data/blog/software/data-structures-algorithms/cheatsheet.md",

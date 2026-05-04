@@ -8,9 +8,9 @@ tags: ['KB/MD/Obsidian/Blog']
 isDev: true
 ---
 
-
 # Page 1
+
+Confirm links work
 
 - [[page2]]
 - [[page3]]
-

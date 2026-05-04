@@ -10,6 +10,8 @@ isDev: true
 
 # Theme 2
 
+Confirm Markdown, Obsidian, MDX are wired up correctly
+
 ## Table of Contents (TOC)
 
 - [[#Markdown Elements]]
@@ -89,6 +91,7 @@ This line has an ~~strikethrough~~.
 ```
 
 #### MDX & KB Obsidian
+
 ```html showLineNumbers
 <html>
   <head></head>
@@ -96,8 +99,9 @@ This line has an ~~strikethrough~~.
 ```
 
 #### Code Tab Group
+
 - starts with <code>\`\`\`tabgroup</code> and ends with <code>\`\`\`</code>
-- define each language with opening ...py`  and closing `...`
+- define each language with opening ...py` and closing`...`
 
 > [!tip]- Create Code Tab Group
 > ![[kb-dsl-code-tab-group]]
@@ -151,30 +155,29 @@ This line has an ~~strikethrough~~.
 ## Links
 
 - External(Note) Links
-    - [[theme1.md]]
-        - theme1.md note
-    - [[theme1.md]]
-        - theme1.md with capitalized display text.
-    - [[theme1.md#Markdown Elements|Another Note]]
-        - theme1.md and section.
-    - [[theme1#Lists|theme1 > Lists]]
-        - `note#Header|Display Text`
-        - Aliased with ending `|`
-    - [[theme1#Block Quote|theme1 > Block Quote > Single]]
-        - "Breadcrumbs"
-    - [[theme1#Code|theme1 > Code]]
-        - "Note with Heading"
-    - [[theme1#Code#Code Block|theme1 > Code > Code Block]]
-        - "Note with Heading breadcrumb"
-    - [[tool/obsidian/preview/theme1.md]]
-        - Path link.
-    - [[tool/obsidian/preview/theme1.md|Theme 2 Preview]]
-        - Path link aliased.
+  - [[theme1.md]]
+    - theme1.md note
+  - [[theme1.md]]
+    - theme1.md with capitalized display text.
+  - [[theme1.md#Markdown Elements|Another Note]]
+    - theme1.md and section.
+  - [[theme1#Lists|theme1 > Lists]]
+    - `note#Header|Display Text`
+    - Aliased with ending `|`
+  - [[theme1#Block Quote|theme1 > Block Quote > Single]]
+    - "Breadcrumbs"
+  - [[theme1#Code|theme1 > Code]]
+    - "Note with Heading"
+  - [[theme1#Code#Code Block|theme1 > Code > Code Block]]
+    - "Note with Heading breadcrumb"
+  - [[tool/obsidian/preview/theme1.md]]
+    - Path link.
+  - [[tool/obsidian/preview/theme1.md|Theme 2 Preview]]
+    - Path link aliased.
 - External(Web) Links
-    - Link to URL: [OpenAI](https://openai.com)
-    - Link with titles: [Wikipedia](https://wikipedia.org 'Free encyclopedia')
-    - Reference link: [Google][2]
-
+  - Link to URL: [OpenAI](https://openai.com)
+  - Link with titles: [Wikipedia](https://wikipedia.org 'Free encyclopedia')
+  - Reference link: [Google][2]
 
 # Reference
 

@@ -10,5 +10,7 @@ isDev: true
 
 # Page 3
 
+Confirm links work
+
 - [[page1]]
 - [[page2]]

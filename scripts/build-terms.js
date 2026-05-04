@@ -1,26 +1,19 @@
 import fs from 'fs'
 import path from 'path'
-import { getAllFiles } from '../lib/content/server/files.js'
-import { buildTermsGraph, buildTermsRegistry } from '../lib/content/terms/buildTermsRegistry.js'
-import { KB_DIR, BLOG_DIR } from '../lib/content/core/constants.js'
+import { buildPipeline } from '../lib/content/pipeline/buildPipeline.js'
 
 function build() {
-  const registry = buildTermsRegistry()
+  const { registry, terms, backlinks } = buildPipeline()
 
-  const files = [
-    ...getAllFiles(KB_DIR).map((f) => ({ file: f, type: 'kb' })),
-    ...getAllFiles(BLOG_DIR).map((f) => ({ file: f, type: 'blog' })),
-  ]
-
-  const { terms, backlinks } = buildTermsGraph(files)
+  const outDir = path.join(process.cwd(), 'data/generated')
 
   fs.writeFileSync(
-    path.join(process.cwd(), 'data/generated/terms.js'),
+    path.join(outDir, 'terms.js'),
     `export const terms = ${JSON.stringify(terms, null, 2)};`
   )
 
   fs.writeFileSync(
-    path.join(process.cwd(), 'data/generated/backlinks.js'),
+    path.join(outDir, 'backlinks.js'),
     `export const termBacklinks = ${JSON.stringify(backlinks, null, 2)};`
   )
 
